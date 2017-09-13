@@ -1,0 +1,48 @@
+<Questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://hl7.org/fhir Validation/questionnaire.xsd" xmlns="http://hl7.org/fhir">
+    <id  value="NHSN-HAI-Prototype-Procedure-Denominator"/>
+    
+    <!-- Text representation of questionnaire -->
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <pre>
+                [TODO]: Fill this out
+            </pre>
+            
+        </div>
+    </text>
+    
+    <url value="http://hl7.org/fhir/us/core/Questionnaire/NHSN-HAI-Prototype-Procedure-Denominator"/>
+    <identifier></identifier>
+    <version value="R3D3"/>
+    <title value="Denominator-for-Procedure"/>
+    <status value="draft"/>
+    <date value="2017-09-13"/>
+    <publisher value="NHSN"/>
+    <description value="This report records a procedure performed.
+        Preferred document title:  “Denominator for Procedure Report”
+        Key encounter data:
+        
+        •  The encounter type (inpatient or outpatient) is required.
+        •  If the patient was an inpatient, a value for admission date is required.
+        •  The facility id is required. Unit identifier and unit type are not reported.
+        
+        Other dates and locations:
+        •  The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).
+        
+        Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports.">
+    </description>
+    <jurisdiction>
+        <coding> 
+            <system value="urn:iso:std:iso:3166"/> 
+            <code value="US"/> 
+        </coding> 
+    </jurisdiction>
+    
+    <code>
+        <system value="http://loinc.org/"/>
+        <code value="51897-7"/>
+        <display value="Healthcare Associated Infection Report"/>
+    </code>
+</Questionnaire>
