@@ -45,4 +45,42 @@
         <code value="51897-7"/>
         <display value="Healthcare Associated Infection Report"/>
     </code>
+    
+    <subjectType value="Patient"/>
+    
+    <!-- Facility ID -->
+    <!-- EP: Unsure how to reference HAI-Location here -->
+    <item>
+        <linkId value="facility-id"/>
+        <type value="reference"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    
+    <!-- Patient Information, including:
+        - Patient ID
+        - Social Security #
+        - Medicare #
+        - Patient Name
+        - Patient Gender
+        - Patient Date of Birth
+        - Patient Ethnicity
+        - Patient Race
+    -->
+    <!-- EP: Unsure how to reference HAI-Patient as the expected answer here -->
+    <item>
+        <linkId value="hai-patient"/>
+        <type value="reference"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    
+    <!-- Procedure Information -->
+    
+    <!-- Procedure Details -->
+    <item>
+        <linkId value="procedure-details"/>
+        <type value="group"/>
+        
+    </item>
 </Questionnaire>
