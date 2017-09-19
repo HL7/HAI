@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+    <id value="NHSN-HAI-Prototype-Procedure-Denominator"/> 
+    <text> 
+        <status value="generated"/> 
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <pre> 
+              Response to the Procedure Denominator Questionnaire
+          </pre> 
+        </div> 
+    </text> 
+    <identifier>
+        <value value="http://hl7.org/fhir/us/core/Questionnaire/NHSN-HAI-Prototype-Procedure-Denominator"/>
+    </identifier>
+    <status value="completed"/>
+    <subject> 
+        <reference value="????"/> 
+        <display value="Henry Jones"/> 
+    </subject> 
+    <authored value="2017-09-15T00:00:00+01:00"/> 
+    <author> 
+        <reference value="????"/> 
+        <display value="Ronald Bone"/> 
+    </author> 
+    <source> 
+        <reference value="????"/> 
+        <display value="Community Health and Hospitals"/> 
+    </source> 
+    <!--   Answers to general questions   -->
+    <item> 
+        <linkId value="facility-id"/> 
+    </item>
+    <item> 
+        <linkId value="hai-patient"/> 
+    </item> 
+    <item> 
+        <!--   Answers to Procedure Details  -->
+        <linkId value="procedure-details"/> 
+    </item> 
+</QuestionnaireResponse> 
