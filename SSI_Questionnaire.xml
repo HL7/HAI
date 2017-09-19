@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire
+    xmlns="http://hl7.org/fhir">
+    <id value="4953"/>
+    <contained>
+        <ValueSet>
+            <id value="4961"/>
+            <meta>
+                <versionId value="1"/>
+                <lastUpdated value="2017-09-19T14:42:22.572-04:00"/>
+            </meta>
+            <url value="urn:oid:2.16.840.1.113883.13.17"/>
+            <name value="NHSNProcedureCategoryCode"/>
+            <status value="active"/>
+            <description value="Code System: cdcNHSN 2.16.840.1.113883.6.277&#xD;&#xA;&#xD;&#xA;NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                &#xD;&#xA;&#xD;&#xA;The full table is shown in the hai_voc.xls file provided with this package."/>
+            <compose>
+                <include>
+                    <system value="urn:oid:2.16.840.1.113883.6.277"/>
+                    <concept>
+                        <code value="2105-5"/>
+                        <display value="Abdominal aortic aneurysm repair"/>
+                    </concept>
+                    <concept>
+                        <code value="2107-1"/>
+                        <display value="Abdominal hysterectomy"/>
+                    </concept>
+                    <concept>
+                        <code value="2108-9"/>
+                        <display value="Appendix surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2102-2"/>
+                        <display value="AV shunt for dialysis"/>
+                    </concept>
+                    <concept>
+                        <code value="2109-7"/>
+                        <display value="Bile duct, liver or pancreatic surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2110-5"/>
+                        <display value="Breast surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2111-3"/>
+                        <display value="Cardiac Surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2114-7"/>
+                        <display value="Carotid endarterectomy"/>
+                    </concept>
+                    <concept>
+                        <code value="2115-4"/>
+                        <display value="Cesarean section"/>
+                    </concept>
+                    <concept>
+                        <code value="2116-2"/>
+                        <display value="Colon surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2112-1"/>
+                        <display value="Coronary artery bypass graft with both chest and donor site incisions"/>
+                    </concept>
+                    <concept>
+                        <code value="2113-9"/>
+                        <display value="Coronary artery bypass graft with chest incision only"/>
+                    </concept>
+                    <concept>
+                        <code value="2117-0"/>
+                        <display value="Craniotomy"/>
+                    </concept>
+                    <concept>
+                        <code value="2118-8"/>
+                        <display value="Exploratory abdominal surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2119-6"/>
+                        <display value="Gallbladder surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2120-4"/>
+                        <display value="Gastric surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2121-2"/>
+                        <display value="Heart transplant"/>
+                    </concept>
+                    <concept>
+                        <code value="2106-3"/>
+                        <display value="Herniorrhaphy"/>
+                    </concept>
+                    <concept>
+                        <code value="2101-4"/>
+                        <display value="Hip Replacement"/>
+                    </concept>
+                    <concept>
+                        <code value="2122-0"/>
+                        <display value="Kidney surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2123-8"/>
+                        <display value="Kidney transplant"/>
+                    </concept>
+                    <concept>
+                        <code value="2124-6"/>
+                        <display value="Knee prosthesis"/>
+                    </concept>
+                    <concept>
+                        <code value="2125-3"/>
+                        <display value="Laminectomy"/>
+                    </concept>
+                    <concept>
+                        <code value="2126-1"/>
+                        <display value="Limb amputation"/>
+                    </concept>
+                    <concept>
+                        <code value="2127-9"/>
+                        <display value="Liver transplant"/>
+                    </concept>
+                    <concept>
+                        <code value="2128-7"/>
+                        <display value="Neck surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2103-0"/>
+                        <display value="Not an NHSN operation"/>
+                    </concept>
+                    <concept>
+                        <code value="2129-5"/>
+                        <display value="Open reduction of fracture"/>
+                    </concept>
+                    <concept>
+                        <code value="2104-8"/>
+                        <display value="Other operations"/>
+                    </concept>
+                    <concept>
+                        <code value="2130-3"/>
+                        <display value="Ovarian surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2131-1"/>
+                        <display value="Pacemaker surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2132-9"/>
+                        <display value="Peripheral vascular bypass surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2133-7"/>
+                        <display value="Prostate surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2134-5"/>
+                        <display value="Rectal surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2135-2"/>
+                        <display value="Refusion of spine"/>
+                    </concept>
+                    <concept>
+                        <code value="2136-0"/>
+                        <display value="Small bowel surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2137-8"/>
+                        <display value="Spinal fusion"/>
+                    </concept>
+                    <concept>
+                        <code value="2138-6"/>
+                        <display value="Spleen surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2139-4"/>
+                        <display value="Thoracic surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2140-2"/>
+                        <display value="Thyroid and/or parathyroid surgery"/>
+                    </concept>
+                    <concept>
+                        <code value="2141-0"/>
+                        <display value="Vaginal hysterectomy"/>
+                    </concept>
+                    <concept>
+                        <code value="2142-8"/>
+                        <display value="Ventricular shunt"/>
+                    </concept>
+                    <concept>
+                        <code value="2102-2"/>
+                        <display value="Shunt for dialysis"/>
+                    </concept>
+                </include>
+            </compose>
+        </ValueSet>
+    </contained>
+    <contained>
+        <ValueSet>
+            <id value="4963"/>
+            <meta>
+                <versionId value="1"/>
+                <lastUpdated value="2017-09-19T17:46:47.015-04:00"/>
+            </meta>
+            <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-code"/>
+            <name value="NHSNPathogenCode"/>
+            <status value="active"/>
+            <description value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package."/>
+            <compose>
+                <include>
+                    <system value="urn:oid:2.16.840.1.113883.6.96"/>
+                    <concept>
+                        <code value="50471002"/>
+                        <display value="Zika virus (organism)"/>
+                    </concept>
+                    <concept>
+                        <code value="2423009"/>
+                        <display value="Chikungunya virus (organism)"/>
+                    </concept>
+                </include>
+            </compose>
+        </ValueSet>
+    </contained>
+    <contained>
+        <ValueSet>
+            <id value="4964"/>
+            <meta>
+                <versionId value="1"/>
+                <lastUpdated value="2017-09-19T17:47:25.946-04:00"/>
+            </meta>
+            <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-tests-code"/>
+            <name value="NHSNDrugSusceptibilityTestsCode"/>
+            <status value="active"/>
+            <description value="Code System: LOINC 2.16.840.1.113883.6.1 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package."/>
+            <compose>
+                <include>
+                    <system value="urn:oid:2.16.840.1.113883.6.1"/>
+                    <concept>
+                        <code value="18855-7"/>
+                        <display value="5-fluorocytosine Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18860-7"/>
+                        <display value="Amikacin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18862-3"/>
+                        <display value="Amoxicillin+Clav Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18864-9"/>
+                        <display value="Ampicillin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18865-6"/>
+                        <display value="Ampicillin+Sulbac Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="57095-2"/>
+                        <display value="Anidulafungin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18866-4"/>
+                        <display value="Azithromycin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18868-0"/>
+                        <display value="Aztreonam Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="32378-2"/>
+                        <display value="Caspofungin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18878-9"/>
+                        <display value="Cefazolin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18879-7"/>
+                        <display value="Cefepime Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18886-2"/>
+                        <display value="Cefotaxime Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18887-0"/>
+                        <display value="Cefotetan Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18888-8"/>
+                        <display value="Cefoxitin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18893-8"/>
+                        <display value="Ceftazidime Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18895-3"/>
+                        <display value="Ceftriaxone Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="35783-0"/>
+                        <display value="Cefuroxime Oral Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18900-1"/>
+                        <display value="Cephalothin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18903-5"/>
+                        <display value="Chloramphen Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18906-8"/>
+                        <display value="Ciprofloxacin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18907-6"/>
+                        <display value="Clarithro Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18908-4"/>
+                        <display value="Clindamycin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18912-6"/>
+                        <display value="Colistin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="35789-7"/>
+                        <display value="Daptomycin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="60535-2"/>
+                        <display value="Doripenem Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18917-5"/>
+                        <display value="Doxycycline Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="35802-8"/>
+                        <display value="Ertapenem Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18919-1"/>
+                        <display value="Erythromycin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18924-1"/>
+                        <display value="Fluconazole Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="31038-3"/>
+                        <display value="Gatifloxacin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18928-2"/>
+                        <display value="Gentamicin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18929-0"/>
+                        <display value="Gentamicin Synergy Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18932-4"/>
+                        <display value="Imipenem Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="32603-3"/>
+                        <display value="Itraconaz Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="20629-2"/>
+                        <display value="L-Floxacin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="29258-1"/>
+                        <display value="Linezolid Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18943-1"/>
+                        <display value="Meropenem Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18945-6"/>
+                        <display value="Methicillin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18946-4"/>
+                        <display value="Metronidazole Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18948-0"/>
+                        <display value="Minocycline Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="31039-1"/>
+                        <display value="Moxifloxacin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18959-7"/>
+                        <display value="Ofloxacin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18961-3"/>
+                        <display value="Oxacillin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18965-4"/>
+                        <display value="Penicillin G Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18969-6"/>
+                        <display value="Piperacillin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18970-4"/>
+                        <display value="Piperacillin+Tazobac Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18972-0"/>
+                        <display value="Polymyxin B Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="23640-6"/>
+                        <display value="Quinupristin+Dalfoprist Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18974-6"/>
+                        <display value="Rifampin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18983-7"/>
+                        <display value="Streptomycin High Pot Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18993-6"/>
+                        <display value="Tetracycline Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18994-4"/>
+                        <display value="Ticarcillin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18995-1"/>
+                        <display value="Ticarcillin+Clav Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="42357-4"/>
+                        <display value="Tigecycline Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18998-5"/>
+                        <display value="TMP SMX Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18996-9"/>
+                        <display value="Tobramycin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="19000-9"/>
+                        <display value="Vancomycin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="32379-0"/>
+                        <display value="Voriconazole Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18955-5"/>
+                        <display value="Nitrofurantoin"/>
+                    </concept>
+                    <concept>
+                        <code value="18861-5"/>
+                        <display value="Amoxicillin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="35816-8 "/>
+                        <display value="Gemifloxacin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18939-9"/>
+                        <display value="Lomefloxacin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18956-3"/>
+                        <display value="Norfloxacin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18966-2"/>
+                        <display value="Penicillin V Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="54188-8 "/>
+                        <display value="Posaconazole Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18982-9 "/>
+                        <display value="Streptomycin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18986-0"/>
+                        <display value="Sulfisoxaz Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="35845-7 "/>
+                        <display value="Telithromycin Susc Islt"/>
+                    </concept>
+                    <concept>
+                        <code value="18997-7"/>
+                        <display value="Trimethoprim Susc Islt"/>
+                    </concept>
+                </include>
+                <include>
+                    <system value="urn:oid:2.16.840.1.113883.6.277"/>
+                    <concept>
+                        <code value="2526-2"/>
+                        <display value="Micafungin Susc Islt"/>
+                    </concept>
+                </include>
+            </compose>
+        </ValueSet>
+    </contained>
+    <contained>
+        <ValueSet>
+            <id value="4965"/>
+            <meta>
+                <versionId value="1"/>
+                <lastUpdated value="2017-09-19T17:56:58.041-04:00"/>
+            </meta>
+            <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-finding-code"/>
+            <name value="NHSNDrugSusceptibilityFindingCode"/>
+            <status value="active"/>
+            <description value="Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package."/>
+            <compose>
+                <include>
+                    <system value="urn:oid:2.16.840.1.113883.5.83"/>
+                    <concept>
+                        <code value="I"/>
+                        <display value="Intermediate"/>
+                    </concept>
+                    <concept>
+                        <code value="R"/>
+                        <display value="Resistant"/>
+                    </concept>
+                    <concept>
+                        <code value="S"/>
+                        <display value="Susceptible"/>
+                    </concept>
+                    <concept>
+                        <code value="NS"/>
+                        <display value="Non-Susceptible"/>
+                    </concept>
+                    <concept>
+                        <code value="S-DD"/>
+                        <display value="Susceptible-dose dependant"/>
+                    </concept>
+                </include>
+            </compose>
+        </ValueSet>
+    </contained>
+    <version value="1"/>
+    <title value="Surgical Site Infection"/>
+    <status value="draft"/>
+    <code>
+        <system value="TODO"/>
+        <code value="TODO"/>
+        <display value="SSI"/>
+    </code>
+    <item>
+        <linkId value="6706"/>
+        <text value="Patient"/>
+        <type value="reference"/>
+        <required value="true"/>
+    </item>
+    <item>
+        <linkId value="1"/>
+        <text value="Date of Event"/>
+        <type value="date"/>
+        <required value="true"/>
+    </item>
+    <item>
+        <linkId value="2"/>
+        <text value="NHSN Procedure Code"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <options>
+            <reference value="ValueSet/4961"/>
+            <display value="NHSNProcedureCategoryCode"/>
+        </options>
+    </item>
+    <item>
+        <linkId value="3"/>
+        <text value="ICD-10-PCS or CPT Procedure Code"/>
+        <type value="choice"/>
+        <required value="true"/>
+    </item>
+    <item>
+        <linkId value="4"/>
+        <text value="Date of Procedure"/>
+        <type value="date"/>
+        <required value="true"/>
+    </item>
+    <item>
+        <linkId value="5"/>
+        <text value="Outpatient Procedure"/>
+        <type value="boolean"/>
+        <required value="true"/>
+    </item>
+    <item>
+        <linkId value="6"/>
+        <text value="MDRO Infection Surveillance"/>
+        <type value="boolean"/>
+        <required value="true"/>
+    </item>
+    <item>
+        <linkId value="7"/>
+        <text value="Date Admitted to Facility:"/>
+        <type value="date"/>
+        <required value="true"/>
+    </item>
+    <item>
+        <linkId value="8"/>
+        <text value="Location"/>
+        <type value="text"/>
+        <required value="false"/>
+    </item>
+    <item>
+        <linkId value="9392"/>
+        <text value="Pathogen"/>
+        <type value="group"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <item>
+            <linkId value="3745"/>
+            <text value="Number"/>
+            <type value="integer"/>
+            <required value="true"/>
+        </item>
+        <item>
+            <extension url="http://www.lantanagroup.com/fhir/questionnaire-item-note">
+                <valueString value="Ex: Staphylococcus coagulase-negative"/>
+            </extension>
+            <linkId value="3139"/>
+            <text value="Type"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <options>
+                <reference value="ValueSet/4963"/>
+                <display value="NHSNPathogenCode"/>
+            </options>
+        </item>
+        <item>
+            <linkId value="4656"/>
+            <text value="Susceptibility"/>
+            <type value="group"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <item>
+                <extension url="http://www.lantanagroup.com/fhir/questionnaire-item-note">
+                    <valueString value="Ex: DAPTO"/>
+                </extension>
+                <linkId value="6192"/>
+                <text value="Test"/>
+                <type value="choice"/>
+                <required value="false"/>
+                <options>
+                    <reference value="ValueSet/4964"/>
+                    <display value="NHSNDrugSusceptibilityTestsCode"/>
+                </options>
+            </item>
+            <item>
+                <extension url="http://www.lantanagroup.com/fhir/questionnaire-item-note">
+                    <valueString value="Ex: S, NS, or N"/>
+                </extension>
+                <linkId value="8204"/>
+                <text value="Interpretation"/>
+                <type value="choice"/>
+                <required value="false"/>
+                <options>
+                    <reference value="ValueSet/4965"/>
+                    <display value="NHSNDrugSusceptibilityFindingCode"/>
+                </options>
+            </item>
+        </item>
+    </item>
+</Questionnaire>

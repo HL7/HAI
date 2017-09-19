@@ -67,13 +67,18 @@
         - Patient Ethnicity
         - Patient Race
     -->
-    <!-- EP: Unsure how to reference HAI-Patient as the expected answer here -->
-    <item>
-        <linkId value="hai-patient"/>
-        <type value="reference"/>
-        <required value="true"/>
-        <repeats value="false"/>
-    </item>
+<!-- EP: QA referencing profiles as an answer to a questionnaire  -->
+<item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
+        <valueReference>
+            <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+        </valueReference>
+    </extension>
+    <linkId value="hai-patient"/>
+    <type value="reference"/>
+    <required value="true"/>
+    <repeats value="false"/>
+</item>
     
     <!-- Procedure Information -->
     
@@ -81,6 +86,11 @@
     <item>
         <linkId value="procedure-details"/>
         <type value="group"/>
-        
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+            <linkId></linkId>
+            <type></type>
+        </item>
     </item>
 </Questionnaire>
