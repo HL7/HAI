@@ -1466,6 +1466,11 @@
         <display value="Healthcare Associated Infection Report"/>
     </code>
     <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
+            <valueReference>
+                <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+            </valueReference>
+        </extension>
         <linkId value="6706"/>
         <text value="Patient"/>
         <type value="reference"/>
