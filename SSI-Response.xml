@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+    <id value="4953"/> 
+    <text> 
+        <status value="generated"/> 
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <pre> 
+              Response to the Surgical Site Infection Report Questionnaire
+          </pre> 
+        </div> 
+    </text> 
+    <questionnaire>
+        <reference value="???"/>
+    </questionnaire>
+    <status value="completed"/>
+    <!--   Answers to general questions   -->
+    <item> 
+        <linkId value="6706"/> 
+        <text value="Patient"/>
+        <answer>
+            <valueReference>
+                <reference value="..."/>
+                <display value="A patient" />
+            </valueReference>
+        </answer>
+    </item>
+    <item> 
+        <linkId value="1"/> 
+        <text value="Date of Event"/>
+        <answer>
+            <valueDate value="2017-09-15"/>
+        </answer>
+    </item>
+    <!--   Answers to Procedure Details  -->
+    <item> 
+        <linkId value="2"/> 
+        <text value="NHSN Procedure Code"/>
+        <answer>
+            <valueCoding>
+                <code value="2108-9" />
+                <system value="http://snomed.info/sct" />
+                <display value="Appendix surgery"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item> 
+        <linkId value="3"/> 
+        <text value="ICD-10-PCS or CPT Procedure Code"/>
+        <answer>
+            <valueCoding>
+                <code value="0BDJ0ZZ" />
+                <system value="https://icd.codes" />
+                <display value="Excision of Appendix, Open Approach"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item> 
+        <linkId value="4"/> 
+        <text value="Date of Procedure"/>
+        <answer>
+            <valueDate value="2017-09-15"/>
+        </answer>
+    </item>
+    <item> 
+        <linkId value="5"/> 
+        <text value="Outpatient Procedure"/>
+        <answer>
+            <valueBoolean value="true"/>
+        </answer>
+    </item>
+    <item> 
+        <linkId value="6"/> 
+        <text value="MDRO Infection Surveillance"/>
+        <answer>
+            <valueBoolean value="true"/>
+        </answer>
+    </item>
+    <item> 
+        <linkId value="7"/> 
+        <text value="Date Admitted to Facility"/>
+        <answer>
+            <valueDate value="2017-09-15"/>
+        </answer>
+    </item>
+    <item> 
+        <linkId value="8"/> 
+        <text value="Location"/>
+        <answer>
+            <valueCoding>
+                <code value="1166-8" />
+                <system value="urn:oid:2.16.840.1.113883.6.259" />
+                <display value="Ambulatory Surgery Center" />
+            </valueCoding>
+        </answer>
+    </item>
+    <!--   Answers to Surgical Site Infection Details -->
+    <item> 
+        <linkId value="9392"/> 
+        <text value="Pathogen"/> 
+            <item> 
+                <linkId value="3745"/> 
+                <text value="Number"/>
+                <answer>
+                    <valueInteger value="1"/>
+                </answer>
+                <item> 
+                    <linkId value="3139"/> 
+                    <text value="NHSN Pathogen"/> 
+                    <answer> 
+                        <valueString value="Group B streptococcus [43492007]"/> 
+                    </answer> 
+                </item> 
+                <!-- Test Set 1 -->
+                <item> 
+                    <linkId value="4656"/> 
+                    <text value="Susceptibility Group"/> 
+                    <item> 
+                        <linkId value="6192"/> 
+                        <text value="NHSN Drug Susceptibility Test"/> 
+                        <answer> 
+                            <valueString value="Streptomycin Susc Islt [18982-9]"/> 
+                        </answer> 
+                    </item> 
+                    <item> 
+                        <linkId value="8204"/> 
+                        <text value="NHSN Drug Susceptibility Finding"/> 
+                        <answer> 
+                            <valueString value="Susceptible [S]"/> 
+                        </answer> 
+                    </item> 
+                </item> 
+            </item> 
+    </item> 
+</QuestionnaireResponse> 
