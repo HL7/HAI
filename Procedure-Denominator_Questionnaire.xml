@@ -67,7 +67,6 @@
         - Patient Ethnicity
         - Patient Race
     -->
-<!-- EP: QA referencing profiles as an answer to a questionnaire  -->
 <item>
     <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
         <valueReference>
@@ -80,17 +79,34 @@
     <repeats value="false"/>
 </item>
     
-    <!-- Procedure Information -->
-    
-    <!-- Procedure Details -->
+    <!-- Procedure Information 
+    - Location
+    - Procedure Type
+    - Procedure Code -->
     <item>
         <linkId value="procedure-details"/>
         <type value="group"/>
         <required value="true"/>
         <repeats value="false"/>
         <item>
-            <linkId></linkId>
-            <type></type>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
+                <valueReference>
+                    <reference value="http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-encounter"/>
+                </valueReference>
+            </extension>
+            <linkId value="encounter-information"/>
+            <type value="reference"/>
+            <required value="true"/>
+            <repeats value="false"/>
         </item>
     </item>
+    
+    <!-- Procedure Details -->
+    <item>
+        <linkId value="procedure-details"></linkId>
+        <type value="group"></type>
+        <required value="true"></required>
+        <repeats value="false"></repeats>
+    </item>
+    
 </Questionnaire>
