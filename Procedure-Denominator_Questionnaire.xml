@@ -1200,6 +1200,45 @@
             </compose>
         </ValueSet>
     </contained>
+    <!-- NHSN Wound Class -->
+    <contained>
+        <ValueSet xmlns="http://hl7.org/fhir">
+            <id value="2.16.840.1.113883.13.9"/>
+            <meta id="45"/>
+            <url value="urn:oid:2.16.840.1.113883.13.9"/>
+            <name value="NHSNWoundClassCode"/>
+            <status value="active"/>
+            <description
+                value="Code System: SNOMED CT 2.16.840.1.113883.6.96&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package."/>
+            <compose>
+                <include>
+                    <system value="urn:oid:2.16.840.1.113883.6.96"/>
+                    <concept>
+                        <code value="418780004"/>
+                        <display value="Class I/Clean (Clean)"/>
+                    </concept>
+                    <concept>
+                        <code value="418115006"/>
+                        <display value="Class II/Clean Contaminated (Clean-contaminated)"/>
+                    </concept>
+                    <concept>
+                        <code value="419877002"/>
+                        <display value="Class III/Contaminated (Contaminated)"/>
+                    </concept>
+                    <concept>
+                        <code value="418422005"/>
+                        <display value="Class IV/Dirty Infected (Dirty)"/>
+                    </concept>
+                </include>
+            </compose>
+        </ValueSet>
+    </contained>
+
+
+
+
+
+
     <url value="http://hl7.org/fhir/us/core/Questionnaire/NHSN-HAI-Prototype-Procedure-Denominator"/>
     <identifier/>
     <version value="R3D3"/>
@@ -1400,25 +1439,36 @@
             <repeats value="false"/>
             <options>
                 <reference value="#2.16.840.1.114222.4.11.6051"/>
-                <display value="NHSNClosureTechniqueCode"></display>
+                <display value="NHSNClosureTechniqueCode"/>
             </options>
         </item>
 
 
-        <!-- Surgeon Code -->
+        <!-- Revision Associated with Prior Infection -->
         <item>
-            <linkId/>
+            <linkId value="revision-associated-with-prior-infection"/>
             <code>
-                <system/>
-                <code/>
-                <display/>
+                <system value="urn:oid:2.16.840.1.113883.6.277"/>
+                <code value="1239-3"/>
+                <display value="Revision associated with prior infection at index joint"/>
             </code>
-            <text/>
-            <type/>
+            <text value="Revision associated with prior infection at index joint?"/>
+            <type value="boolean"/>
             <required value="false"/>
             <repeats value="false"/>
         </item>
+
+        <!-- Surgeon Code -->
+        <item>
+            <linkId value="surgeon-code"/>
+            <text value="Surgeon "/>
+            <type value="string"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
     </item>
+
+
 
 
     <!-- Infection Risk Factors -->
@@ -1447,7 +1497,7 @@
             <item>
                 <linkId value="emergency"/>
                 <code>
-                    <system value="http://snomed.info/sct"/>
+                    <system value="http://www.snomed.info/sct"/>
                     <code value="373110003"/>
                     <display value="Emergency procedure"/>
                 </code>
@@ -1459,58 +1509,62 @@
 
             <!-- Endoscope Used -->
             <item>
-                <linkId/>
+                <linkId value="endoscope-used"/>
                 <code>
-                    <system/>
-                    <code/>
-                    <display/>
+                    <system value="http://www.snomed.info/sct"/>
+                    <code value="423827005"/>
+                    <display value="Endoscope Used"/>
                 </code>
-                <text/>
-                <type/>
-                <required value="true"/>
+                <text value="Endoscope used?"/>
+                <type value="boolean"/>
+                <required value="false"/>
                 <repeats value="false"/>
             </item>
 
             <!-- Wound Class -->
             <item>
-                <linkId/>
+                <linkId value="wound-class"/>
                 <code>
-                    <system/>
-                    <code/>
-                    <display/>
+                    <system value="http://www.snomed.info/sct"/>
+                    <code value="420089007"/>
+                    <display value="CDC Wound Classification Category"/>
                 </code>
-                <text/>
-                <type/>
+                <text value="Wound Classification"/>
+                <type value="choice"/>
                 <required value="true"/>
                 <repeats value="false"/>
+                <options>
+                    <reference value="#2.16.840.1.113883.13.9"/>
+                    <display value="CDC Wound Classification Category Codes"/>
+                </options>
             </item>
         </item>
 
 
         <!-- Trauma -->
         <item>
-            <linkId/>
+            <linkId value="trauma"/>
             <code>
-                <system/>
-                <code/>
-                <display/>
+                <system value="http://snomed.info/sct"/>
+                <code value="417746004"/>
+                <display value="Trauma"/>
             </code>
-            <text/>
-            <type/>
+            <text value="Trauma?"/>
+            <type value="boolean"/>
             <required value="true"/>
             <repeats value="false"/>
         </item>
 
         <!-- Diabetes -->
         <item>
-            <linkId/>
+            <linkId value="diabetes"/>
             <code>
-                <system/>
-                <code/>
-                <display/>
+                <system value="http://snomed.info/sct"/>
+                <code value="73211009"/>
+                <display value="Diabetes Mellitus"/>
             </code>
-            <text/>
-            <type/>
+            <text value="Diabetes?"/>
+            <type value="boolean"/>
             <required value="true"/>
             <repeats value="false"/>
         </item>
