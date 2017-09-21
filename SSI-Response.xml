@@ -15,14 +15,13 @@
     <status value="completed"/>
     <!--   Answers to general questions   -->
     <item> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
+            <valueReference>
+                <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+            </valueReference>
+        </extension>
         <linkId value="6706"/> 
         <text value="Patient"/>
-        <answer>
-            <valueReference>
-                <reference value="..."/>
-                <display value="A patient" />
-            </valueReference>
-        </answer>
     </item>
     <item> 
         <linkId value="1"/> 
@@ -37,8 +36,8 @@
         <text value="NHSN Procedure Code"/>
         <answer>
             <valueCoding>
+                <system value="http://snomed.info/sct"/>
                 <code value="2108-9" />
-                <system value="http://snomed.info/sct" />
                 <display value="Appendix surgery"/>
             </valueCoding>
         </answer>
@@ -48,8 +47,8 @@
         <text value="ICD-10-PCS or CPT Procedure Code"/>
         <answer>
             <valueCoding>
-                <code value="0BDJ0ZZ" />
                 <system value="https://icd.codes" />
+                <code value="0BDJ0ZZ" />
                 <display value="Excision of Appendix, Open Approach"/>
             </valueCoding>
         </answer>
@@ -87,8 +86,8 @@
         <text value="Location"/>
         <answer>
             <valueCoding>
-                <code value="1166-8" />
                 <system value="urn:oid:2.16.840.1.113883.6.259" />
+                <code value="1166-8" />
                 <display value="Ambulatory Surgery Center" />
             </valueCoding>
         </answer>
@@ -97,38 +96,50 @@
     <item> 
         <linkId value="9392"/> 
         <text value="Pathogen"/> 
+        <item> 
+            <linkId value="3745"/> 
+            <text value="Number"/>
+            <answer>
+                <valueInteger value="1"/>
+            </answer>
             <item> 
-                <linkId value="3745"/> 
-                <text value="Number"/>
+                <linkId value="3139"/> 
+                <text value="NHSN Pathogen"/> 
                 <answer>
-                    <valueInteger value="1"/>
+                    <valueCoding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="43492007" />
+                        <display value="Group B streptococcus"/>
+                    </valueCoding>
                 </answer>
+            </item> 
+            <!-- Test Set 1 -->
+            <item> 
+                <linkId value="4656"/> 
+                <text value="Susceptibility Group"/> 
                 <item> 
-                    <linkId value="3139"/> 
-                    <text value="NHSN Pathogen"/> 
+                    <linkId value="6192"/> 
+                    <text value="NHSN Drug Susceptibility Test"/> 
                     <answer> 
-                        <valueString value="Group B streptococcus [43492007]"/> 
+                        <valueCoding>
+                            <system value="https://loinc.org/"/>
+                            <code value="18982-9" />
+                            <display value="Streptomycin Susc Islt"/>
+                        </valueCoding>
                     </answer> 
                 </item> 
-                <!-- Test Set 1 -->
                 <item> 
-                    <linkId value="4656"/> 
-                    <text value="Susceptibility Group"/> 
-                    <item> 
-                        <linkId value="6192"/> 
-                        <text value="NHSN Drug Susceptibility Test"/> 
-                        <answer> 
-                            <valueString value="Streptomycin Susc Islt [18982-9]"/> 
-                        </answer> 
-                    </item> 
-                    <item> 
-                        <linkId value="8204"/> 
-                        <text value="NHSN Drug Susceptibility Finding"/> 
-                        <answer> 
-                            <valueString value="Susceptible [S]"/> 
-                        </answer> 
-                    </item> 
+                    <linkId value="8204"/> 
+                    <text value="NHSN Drug Susceptibility Finding"/> 
+                    <answer> 
+                        <valueCoding>
+                            <system value="https://www.hl7.org/fhir/valueset-observation-interpretation.html"/>
+                            <code value="S" />
+                            <display value="Susceptible"/>
+                        </valueCoding> 
+                    </answer> 
                 </item> 
             </item> 
+        </item> 
     </item> 
 </QuestionnaireResponse> 
