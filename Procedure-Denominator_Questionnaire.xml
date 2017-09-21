@@ -1238,7 +1238,6 @@
 
 
 
-
     <url value="http://hl7.org/fhir/us/core/Questionnaire/NHSN-HAI-Prototype-Procedure-Denominator"/>
     <identifier/>
     <version value="R3D3"/>
@@ -1265,15 +1264,12 @@
             <code value="US"/>
         </coding>
     </jurisdiction>
-
     <code>
         <system value="http://loinc.org/"/>
         <code value="51897-7"/>
         <display value="Healthcare Associated Infection Report"/>
     </code>
-
     <subjectType value="Patient"/>
-
     <!-- Patient Information, including:
         - Patient ID
         - Social Security #
@@ -1295,7 +1291,6 @@
         <required value="true"/>
         <repeats value="false"/>
     </item>
-
     <!-- Procedure Details -->
     <item>
         <linkId value="procedure-details"/>
@@ -1308,7 +1303,6 @@
         <type value="group"/>
         <required value="true"/>
         <repeats value="false"/>
-
         <!-- Date of Procedure -->
         <item>
             <linkId value="date-of-procdure"/>
@@ -1317,7 +1311,6 @@
             <required value="true"/>
             <repeats value="false"/>
         </item>
-
         <!-- Facility -->
         <item>
             <linkId value="procedure-location"/>
@@ -1328,7 +1321,6 @@
             <repeats value="false"/>
 
         </item>
-
         <!-- Facility Location -->
         <item>
             <linkId value="facility-location"/>
@@ -1341,7 +1333,6 @@
                 <display value="NHSN Healthcare Service Location Code"/>
             </options>
         </item>
-
         <!-- EP: Not sure how to handle this one -->
         <!-- Event Type -->
         <item>
@@ -1351,8 +1342,6 @@
             <required value="false"/>
             <repeats value="false"/>
         </item>
-
-
         <!-- NHSN Procedure Code -->
         <item>
             <linkId value="NHSN-procdure-code"/>
@@ -1366,7 +1355,6 @@
             </options>
 
         </item>
-
         <!-- ICD-10-PCS or CPT Procedure Code -->
         <!-- EP: Unsure how to make options cover two whole code systems -->
         <item>
@@ -1389,7 +1377,6 @@
             </options>
 
         </item>
-
         <!-- Duration -->
         <item>
             <linkId value="procedure-duration"/>
@@ -1411,7 +1398,6 @@
             <required value="true"/>
             <repeats value="false"/>
         </item>
-
         <!-- Spinal Fusion Level -->
         <item>
             <linkId value="spinal-fusion"/>
@@ -1424,7 +1410,6 @@
                 <display value="Spinal Fusion Level Code"/>
             </options>
         </item>
-
         <!-- Closure Technique -->
         <item>
             <linkId value="closure-technique"/>
@@ -1442,8 +1427,6 @@
                 <display value="NHSNClosureTechniqueCode"/>
             </options>
         </item>
-
-
         <!-- Revision Associated with Prior Infection -->
         <item>
             <linkId value="revision-associated-with-prior-infection"/>
@@ -1457,7 +1440,6 @@
             <required value="false"/>
             <repeats value="false"/>
         </item>
-
         <!-- Surgeon Code -->
         <item>
             <linkId value="surgeon-code"/>
@@ -1467,10 +1449,6 @@
             <repeats value="false"/>
         </item>
     </item>
-
-
-
-
     <!-- Infection Risk Factors -->
     <item>
         <linkId value="infection-risk-factors"/>
@@ -1483,7 +1461,6 @@
         <type value="group"/>
         <required value="true"/>
         <repeats value="false"/>
-
         <!-- Procedure Risk Factors -->
         <item>
             <linkId value="procedure-risk-factors"/>
@@ -1539,8 +1516,6 @@
                 </options>
             </item>
         </item>
-
-
         <!-- Trauma -->
         <item>
             <linkId value="trauma"/>
@@ -1554,7 +1529,6 @@
             <required value="true"/>
             <repeats value="false"/>
         </item>
-
         <!-- Diabetes -->
         <item>
             <linkId value="diabetes"/>
@@ -1568,7 +1542,6 @@
             <required value="true"/>
             <repeats value="false"/>
         </item>
-
         <!-- Height -->
         <item>
             <linkId/>
@@ -1582,7 +1555,6 @@
             <required value="true"/>
             <repeats value="false"/>
         </item>
-
         <!-- Weight -->
         <item>
             <linkId/>
@@ -1596,8 +1568,6 @@
             <required value="true"/>
             <repeats value="false"/>
         </item>
-
-
         <!-- ASA Score -->
         <item>
             <linkId/>
