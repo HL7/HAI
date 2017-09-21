@@ -1457,6 +1457,31 @@
             </compose>
         </ValueSet>
     </contained>
+    <contained>
+        <ValueSet xmlns="http://hl7.org/fhir">
+            <id value="NHSNPathogenIdentifiedOrder"/>
+            <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-identified-order"/>
+            <name value="NHSNPathogenIdentifiedOrder"/>
+            <status value="draft"/>
+            <compose>
+                <include>
+                    <system value="urn:oid:2.16.840.1.113883.6.96"/>
+                    <concept>
+                        <code value="255216001"/>
+                        <display value="First"/>
+                    </concept>
+                    <concept>
+                        <code value="81170007"/>
+                        <display value="Second"/>
+                    </concept>
+                    <concept>
+                        <code value="70905002"/>
+                        <display value="Third"/>
+                    </concept>
+                </include>
+            </compose>
+        </ValueSet>
+    </contained>
     <version value="1"/>
     <title value="Surgical Site Infection"/>
     <status value="draft"/>
@@ -1544,9 +1569,13 @@
         <repeats value="true"/>
         <item>
             <linkId value="3745"/>
-            <text value="Number"/>
-            <type value="integer"/>
+            <text value="Ranking"/>
+            <type value="choice"/>
             <required value="true"/>
+            <options>
+                <reference value="#NHSNPathogenIdentifiedOrder"/>
+                <display value="NHSNPathogenIdentifiedOrder"/>
+            </options>
         </item>
         <item>
             <extension url="http://www.lantanagroup.com/fhir/questionnaire-item-note">
