@@ -1132,6 +1132,74 @@
             </compose>
         </ValueSet>
     </contained>
+    <!-- NHSN Spinal Fusion Level Code -->
+    <contained>
+        <ValueSet xmlns="http://hl7.org/fhir">
+            <id value="2.16.840.1.113883.13.11"/>
+            <meta id="34"/>
+            <url value="urn:oid:2.16.840.1.113883.13.11"/>
+            <name value="NHSNSpinalFusionLevelCode"/>
+            <status value="active"/>
+            <description
+                value="Code System: cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package."/>
+            <compose>
+                <include>
+                    <system value="urn:oid:2.16.840.1.113883.6.277"/>
+                    <concept>
+                        <code value="1101-5"/>
+                        <display value="atlas-axis (C1-C2 only)"/>
+                    </concept>
+                    <concept>
+                        <code value="1102-3"/>
+                        <display value="atlas-axis/cervical (C1-C7: any combination)"/>
+                    </concept>
+                    <concept>
+                        <code value="1103-1"/>
+                        <display value="cervical (C3-C7: any combination)"/>
+                    </concept>
+                    <concept>
+                        <code value="1104-9"/>
+                        <display
+                            value="cervical/dorsal/dorsolumbar (Extends from any cervical through any lumbar levels )"
+                        />
+                    </concept>
+                    <concept>
+                        <code value="1105-6"/>
+                        <display value="dorsal/dorsolumbar (T1-L5: any combination)"/>
+                    </concept>
+                    <concept>
+                        <code value="1106-4"/>
+                        <display value="lumbar/lumbosacral (L1-S5: any combination)"/>
+                    </concept>
+                </include>
+            </compose>
+        </ValueSet>
+    </contained>
+    <!-- NHSN Closure Technique -->
+    <contained>
+        <ValueSet xmlns="http://hl7.org/fhir">
+            <id value="2.16.840.1.114222.4.11.6051"/>
+            <meta id="281"/>
+            <url value="urn:oid:2.16.840.1.114222.4.11.6051"/>
+            <name value="NHSNClosureTechniqueCode"/>
+            <status value="active"/>
+            <description
+                value="Code System: cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package."/>
+            <compose>
+                <include>
+                    <system value="urn:oid:2.16.840.1.113883.6.277"/>
+                    <concept>
+                        <code value="2406-7"/>
+                        <display value="Primary"/>
+                    </concept>
+                    <concept>
+                        <code value="2407-5"/>
+                        <display value="Other than Primary"/>
+                    </concept>
+                </include>
+            </compose>
+        </ValueSet>
+    </contained>
     <url value="http://hl7.org/fhir/us/core/Questionnaire/NHSN-HAI-Prototype-Procedure-Denominator"/>
     <identifier/>
     <version value="R3D3"/>
@@ -1201,6 +1269,7 @@
         <type value="group"/>
         <required value="true"/>
         <repeats value="false"/>
+
         <!-- Date of Procedure -->
         <item>
             <linkId value="date-of-procdure"/>
@@ -1271,11 +1340,6 @@
         <!-- Outpatient Yes/No -->
         <item>
             <linkId value="outpatient"/>
-            <code>
-                <system/>
-                <code/>
-                <display/>
-            </code>
             <text value="Outpatient"/>
             <type value="choice"/>
             <required value="true"/>
@@ -1295,78 +1359,52 @@
             <required value="true"/>
             <repeats value="false"/>
         </item>
-
-        <!-- Wound Class -->
-        <item>
-            <linkId/>
-            <code>
-                <system/>
-                <code/>
-                <display/>
-            </code>
-            <text/>
-            <type/>
-            <required value="true"/>
-            <repeats value="false"/>
-        </item>
-
         <!-- General Anesthesia -->
         <item>
-            <linkId/>
+            <linkId value="general-anesthesia"/>
             <code>
-                <system/>
-                <code/>
-                <display/>
+                <system value="http://snomed.info/sct"/>
+                <code value="84451006"/>
+                <display value="General Anesthesia"/>
             </code>
-            <text/>
-            <type/>
+            <text value="General Anesthesia used?"/>
+            <type value="boolean"/>
             <required value="true"/>
             <repeats value="false"/>
         </item>
 
-        <!-- Emergency -->
+        <!-- Spinal Fusion Level -->
         <item>
-            <linkId/>
-            <code>
-                <system/>
-                <code/>
-                <display/>
-            </code>
-            <text/>
-            <type/>
-            <required value="true"/>
+            <linkId value="spinal-fusion"/>
+            <text value="Spinal Fusion Level Observed"/>
+            <type value="choice"/>
+            <required value="false"/>
             <repeats value="false"/>
+            <options>
+                <reference value="#urn:oid:2.16.840.1.113883.13.11"/>
+                <display value="Spinal Fusion Level Code"/>
+            </options>
         </item>
-
-
-        <!-- Scope -->
-        <item>
-            <linkId/>
-            <code>
-                <system/>
-                <code/>
-                <display/>
-            </code>
-            <text/>
-            <type/>
-            <required value="true"/>
-            <repeats value="false"/>
-        </item>
-
 
         <!-- Closure Technique -->
         <item>
-            <linkId/>
+            <linkId value="closure-technique"/>
             <code>
-                <system/>
-                <code/>
-                <display/>
+                <system value="http://www.snomed.info/sct"/>
+                <code value="112695004"/>
+                <display value="Surgical Closure"/>
             </code>
-            <text/>
-            <type/>
+            <text value="Surgical Closure Technique"/>
+            <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
+            <options>
+                <reference value="#2.16.840.1.114222.4.11.6051"/>
+                <display value="NHSNClosureTechniqueCode"></display>
+            </options>
         </item>
+
+
         <!-- Surgeon Code -->
         <item>
             <linkId/>
@@ -1383,10 +1421,11 @@
     </item>
 
 
+    <!-- Infection Risk Factors -->
     <item>
-        <linkId value="procedure-details"/>
+        <linkId value="infection-risk-factors"/>
         <code>
-            <system value="http://www.loing.org"/>
+            <system value="http://www.loinc.org"/>
             <code value="51898-5"/>
             <display value="Risk Factors"/>
         </code>
@@ -1394,6 +1433,58 @@
         <type value="group"/>
         <required value="true"/>
         <repeats value="false"/>
+
+        <!-- Procedure Risk Factors -->
+        <item>
+            <linkId value="procedure-risk-factors"/>
+            <code/>
+            <text value="Procedure Specific Risk Factors"/>
+            <type value="group"/>
+            <required value="true"/>
+            <repeats value="false"/>
+
+            <!-- Emergency -->
+            <item>
+                <linkId value="emergency"/>
+                <code>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="373110003"/>
+                    <display value="Emergency procedure"/>
+                </code>
+                <text value="Emergency Procedure?"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+
+            <!-- Endoscope Used -->
+            <item>
+                <linkId/>
+                <code>
+                    <system/>
+                    <code/>
+                    <display/>
+                </code>
+                <text/>
+                <type/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+
+            <!-- Wound Class -->
+            <item>
+                <linkId/>
+                <code>
+                    <system/>
+                    <code/>
+                    <display/>
+                </code>
+                <text/>
+                <type/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+        </item>
 
 
         <!-- Trauma -->
@@ -1437,6 +1528,7 @@
             <required value="true"/>
             <repeats value="false"/>
         </item>
+
         <!-- Weight -->
         <item>
             <linkId/>
