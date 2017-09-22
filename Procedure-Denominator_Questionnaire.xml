@@ -1233,11 +1233,45 @@
             </compose>
         </ValueSet>
     </contained>
-
-
-
-
-
+    <!-- NHSN ASA Class Code -->
+    <contained>
+        <ValueSet xmlns="http://hl7.org/fhir">
+            <id value="2.16.840.1.113883.13.10"/>
+            <meta id="33"/>
+            <url value="urn:oid:2.16.840.1.113883.13.10"/>
+            <name value="NHSNASAClassCode"/>
+            <status value="active"/>
+            <description
+                value="Code System: SNOMED CT 2.16.840.1.113883.6.96&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package."/>
+            <compose>
+                <include>
+                    <system value="urn:oid:2.16.840.1.113883.6.96"/>
+                    <concept>
+                        <code value="413495001"/>
+                        <display value="Normally healthy patient"/>
+                    </concept>
+                    <concept>
+                        <code value="413496000"/>
+                        <display value="Patient with mild systemic disease"/>
+                    </concept>
+                    <concept>
+                        <code value="413497009"/>
+                        <display value="Patient with severe systemic disease, not incapacitating"/>
+                    </concept>
+                    <concept>
+                        <code value="413498004"/>
+                        <display
+                            value="Patient with incapacitating systemic disease, constant threat to life"
+                        />
+                    </concept>
+                    <concept>
+                        <code value="413499007"/>
+                        <display value="Moribund patient, &amp;lt; 24-hour life expectancy"/>
+                    </concept>
+                </include>
+            </compose>
+        </ValueSet>
+    </contained>
     <url value="http://hl7.org/fhir/us/core/Questionnaire/NHSN-HAI-Prototype-Procedure-Denominator"/>
     <identifier/>
     <version value="R3D3"/>
@@ -1544,42 +1578,64 @@
         </item>
         <!-- Height -->
         <item>
-            <linkId/>
+            <!-- Extenstion to set response units -->
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+                <valueCoding>
+                    <system value="http://unitsofmeasure.org/"/>
+                    <code value="[ft_i]"/>
+                    <display value="Feet"/>
+                </valueCoding>
+            </extension>
+            <linkId value="height"/>
             <code>
-                <system/>
-                <code/>
-                <display/>
+                <system value="http://snomed.info/sct"/>
+                <code value="50373000"/>
+                <display value="Body Height"/>
             </code>
-            <text/>
-            <type/>
+            <text value="Height"/>
+            <type value="quantity"/>
             <required value="true"/>
             <repeats value="false"/>
         </item>
         <!-- Weight -->
         <item>
-            <linkId/>
+            <!-- Extension to set response units -->
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+                <valueCoding>
+                    <system value="http://unitsofmeasure.org/"/>
+                    <code value="[lb_av]"/>
+                    <display value="Pounds"/>
+                </valueCoding>
+            </extension>
+            <linkId value="weight"/>
             <code>
-                <system/>
-                <code/>
-                <display/>
+                <system value="http://snomed.info/sct"/>
+                <code value="27113001"/>
+                <display value="Body Weight"/>
             </code>
-            <text/>
-            <type/>
+            <text value="Weight"/>
+            <type value="quantity"/>
             <required value="true"/>
             <repeats value="false"/>
         </item>
         <!-- ASA Score -->
         <item>
-            <linkId/>
+            <linkId value="asa-score"/>
             <code>
-                <system/>
-                <code/>
-                <display/>
+                <system value="http://snomed.info/sct"/>
+                <code value="413347006"/>
+                <display
+                    value="Finding of American Society of Anesthesiologists physical status classification"
+                />
             </code>
-            <text/>
-            <type/>
-            <required value="true"/>
+            <text value="ASA Score"/>
+            <type value="choice"/>
+            <required value="false"/>
             <repeats value="false"/>
+            <options>
+                <reference value="#2.16.840.1.113883.13.10"/>
+                <display value="NHSN ASA Class Code"/>                
+            </options>
         </item>
     </item>
 </Questionnaire>
