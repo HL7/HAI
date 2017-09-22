@@ -1409,7 +1409,6 @@
                 <reference value="#nhsn-encounter-type-code"/>
                 <display value="nhsn-encounter-type-code"/>
             </options>
-
         </item>
         <!-- Duration -->
         <item>
