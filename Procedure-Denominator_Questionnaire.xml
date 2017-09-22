@@ -17,7 +17,6 @@
     <contained>
         <ValueSet xmlns="http://hl7.org/fhir">
             <id value="nhsn-encounter-type-code"/>
-            <meta id="32"/>
             <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code"/>
             <name value="NHSNEncounterTypeCode"/>
             <status value="active"/>
@@ -42,7 +41,6 @@
     <contained>
         <ValueSet xmlns="http://hl7.org/fhir">
             <id value="nhsn-healthcare-service-location-code"/>
-            <meta id="41"/>
             <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code"/>
             <name value="NHSNHealthcareServiceLocationCode"/>
             <status value="active"/>
@@ -945,7 +943,6 @@
     <contained>
         <ValueSet xmlns="http://hl7.org/fhir">
             <id value="2.16.840.1.113883.13.17"/>
-            <meta id="40"/>
             <url value="urn:oid:2.16.840.1.113883.13.17"/>
             <name value="NHSNProcedureCategoryCode"/>
             <status value="active"/>
@@ -1136,7 +1133,6 @@
     <contained>
         <ValueSet xmlns="http://hl7.org/fhir">
             <id value="2.16.840.1.113883.13.11"/>
-            <meta id="34"/>
             <url value="urn:oid:2.16.840.1.113883.13.11"/>
             <name value="NHSNSpinalFusionLevelCode"/>
             <status value="active"/>
@@ -1179,7 +1175,6 @@
     <contained>
         <ValueSet xmlns="http://hl7.org/fhir">
             <id value="2.16.840.1.114222.4.11.6051"/>
-            <meta id="281"/>
             <url value="urn:oid:2.16.840.1.114222.4.11.6051"/>
             <name value="NHSNClosureTechniqueCode"/>
             <status value="active"/>
@@ -1204,7 +1199,6 @@
     <contained>
         <ValueSet xmlns="http://hl7.org/fhir">
             <id value="2.16.840.1.113883.13.9"/>
-            <meta id="45"/>
             <url value="urn:oid:2.16.840.1.113883.13.9"/>
             <name value="NHSNWoundClassCode"/>
             <status value="active"/>
@@ -1237,7 +1231,6 @@
     <contained>
         <ValueSet xmlns="http://hl7.org/fhir">
             <id value="2.16.840.1.113883.13.10"/>
-            <meta id="33"/>
             <url value="urn:oid:2.16.840.1.113883.13.10"/>
             <name value="NHSNASAClassCode"/>
             <status value="active"/>
@@ -1273,7 +1266,9 @@
         </ValueSet>
     </contained>
     <url value="http://hl7.org/fhir/us/core/Questionnaire/NHSN-HAI-Prototype-Procedure-Denominator"/>
-    <identifier/>
+    <identifier>
+        <value value="FHIR Procedure Denominator Prototype - Questionnaire"/>
+    </identifier>
     <version value="R3D3"/>
     <title value="Denominator-for-Procedure"/>
     <status value="draft"/>
@@ -1497,7 +1492,6 @@
         <!-- Procedure Risk Factors -->
         <item>
             <linkId value="procedure-risk-factors"/>
-            <code/>
             <text value="Procedure Specific Risk Factors"/>
             <type value="group"/>
             <required value="true"/>
