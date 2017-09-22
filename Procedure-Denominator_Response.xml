@@ -10,7 +10,7 @@
         </div> 
     </text> 
     <questionnaire>
-        <reference value="???"/>
+        <reference value="NHSN-HAI-Prototype-Procedure-Denominator"/>
     </questionnaire>
     <status value="completed"/>
     <!--   Responses to general questions   -->
@@ -320,6 +320,7 @@
                </valueQuantity> 
            </answer> 
        </item>
+      <!-- ASA Score -->
        <item> 
            <linkId value="asa-score"/> 
            <text value="NHSN ASA Class Code"/> 
