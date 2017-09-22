@@ -66,6 +66,13 @@
         <answer>
             <valueBoolean value="true"/>
         </answer>
+      <answer>
+        <valueCoding>
+          <system value="HL7 ActCode" />
+          <code value="AMB" />
+          <display value="Outpatient"/>
+        </valueCoding>
+      </answer>
     </item>
     <item> 
         <linkId value="6"/> 
