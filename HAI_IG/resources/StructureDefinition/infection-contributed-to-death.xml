@@ -1,0 +1,102 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id
+    value="infection-contributed-to-death" />
+  <url
+    value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death" />
+  <name
+    value="infection-contributed-to-death" />
+  <status
+    value="draft" />
+  <publisher
+    value="Lantana Consulting Group" />
+  <contact>
+    <name
+      value="Sarah Gaunt" />
+    <telecom>
+      <system
+        value="phone" />
+      <value
+        value="+6 141-029-2506" />
+      <use
+        value="work" />
+    </telecom>
+    <telecom>
+      <system
+        value="email" />
+      <value
+        value="sarah.gaunt@lantanagroup.com" />
+      <use
+        value="work" />
+    </telecom>
+  </contact>
+  <description
+    value="If true, the Condition associated with this infection contributed to the death of the patient." />
+  <kind
+    value="complex-type" />
+  <abstract
+    value="false" />
+  <contextType
+    value="resource" />
+  <context
+    value="Extension" />
+  <type
+    value="Extension" />
+  <baseDefinition
+    value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation
+    value="constraint" />
+  <differential>
+    <element
+      id="Extension">
+      <path
+        value="Extension" />
+    </element>
+    <element
+      id="@url">
+      <path
+        value="Extension.url" />
+      <short
+        value="@url" />
+      <definition
+        value="SHALL contain exactly one [1..1] @url=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death&quot; (CONF:3347-162)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="value[x]">
+      <path
+        value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type
+            value="value" />
+          <path
+            value="@type" />
+        </discriminator>
+        <rules
+          value="open" />
+      </slicing>
+      <short
+        value="value[x]" />
+      <definition
+        value="MAY contain zero or one [0..1] value[x], where value[x] is (CONF:3347-161)" />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="value[x].valueBoolean">
+      <path
+        value="Extension.valueBoolean" />
+      <label
+        value="If the infection contributed to death, set valueBoolean=true. If the infection did not contribute to the death, set the valueBoolean=false." />
+      <short
+        value="If the infection contributed to death, set valueBoolean=true. If the infection did not contribute to the death, set the valueBoolean=false." />
+      <definition
+        value="valueBoolean (CONF:3347-163)" />
+    </element>
+  </differential>
+</StructureDefinition>

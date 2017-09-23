@@ -1,0 +1,40 @@
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="ASA-Class-Example"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/asa-class"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="55555555"/>
+    </identifier>
+    <clinicalStatus value="active"/>
+    <verificationStatus value="confirmed"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="433202001"/>
+            <display value="Surgical Site Infection"/>
+        </coding>
+    </category>
+    <severity>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="24484000"/>
+            <display value="Severe"/>
+        </coding>
+    </severity>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="413495001"/>
+            <display
+                value="Normally healthy patient"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+        <display value="Henry Seven"/>
+    </subject>
+    <onsetDateTime value="2017-09-15"/>
+</Condition>

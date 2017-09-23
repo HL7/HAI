@@ -1,0 +1,191 @@
+<StructureDefinition
+  xmlns="http://hl7.org/fhir">
+  <id value="hai-surgical-site-infection-report-ssi" />
+  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-surgical-site-infection-report-ssi" />
+  <name value="HAI Surgical Site Infection Report (SSI)" />
+  <status value="draft" />
+  <publisher value="Lantana Consulting Group" />
+  <contact>
+    <name value="Sarah Gaunt" />
+    <telecom>
+      <system value="phone" />
+      <value value="+6 141-029-2506" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="sarah.gaunt@lantanagroup.com" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="This report type records a surgical site infection event. &#xA;Preferred document title:  Surgical Site Infection Report (SSI). &#xA;Key encounter data:&#xA;     The encounter type (inpatient or outpatient) is required.&#xA;     A value for admission date is required.&#xA;     A discharge date may be recorded.&#xA;     The facility id is required. &#xA;Other dates and locations:&#xA;     The date of the infection is recorded as effectiveTime in the Infection-Type Observation.&#xA;Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in an Infection-Type Report. NHSN uses this to establish a link between Procedure and SSI Reports. " />
+  <kind value="resource" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Composition" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-generic-constraints" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition">
+      <path value="Composition" />
+    </element>
+    <element id="type">
+      <path value="Composition.type" />
+      <short value="type" />
+      <definition value="SHALL contain exactly one [1..1] type=&quot;51897-7&quot; Healthcare Associated Infection Report (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1 STATIC) (CONF:3347-79)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.6.1" />
+          <code value="51897-7" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="encounter">
+      <path value="Composition.encounter" />
+      <short value="encounter" />
+      <definition value="SHALL contain exactly one [1..1] HAI SSI Encounter (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter) (CONF:3347-89)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter" />
+      </type>
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="SHALL contain exactly one [1..1] section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-62) such that it" />
+    </element>
+    <element id="Composition.section:section3">
+      <path value="Composition.section" />
+      <sliceName value="section3" />
+      <label value="Infection Details Section in an SSI Report" />
+      <short value="Infection Details Section in an SSI Report" />
+      <definition value="SHALL contain exactly one [1..1] section (CONF:3347-61) such that it" />
+      <comment value="Infection Details Section in an SSI Report" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:section3.title">
+      <path value="Composition.section.title" />
+      <short value="title" />
+      <definition value="MAY contain zero or one [0..1] title (CONF:3347-97)." />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:section3.code">
+      <path value="Composition.section.code" />
+      <short value="code" />
+      <definition value="SHALL contain exactly one [1..1] code=&quot;51899-3&quot; Details Section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-66)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.6.1" />
+          <code value="51899-3" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:section3.text">
+      <path value="Composition.section.text" />
+      <short value="text" />
+      <definition value="SHALL contain exactly one [1..1] text (CONF:3347-67)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:section3.entry">
+      <path value="Composition.section.entry" />
+      <short value="entry" />
+      <definition value="SHALL contain exactly one [1..1] Infection Condition (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/infection-condition) (CONF:3347-140)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-condition" />
+      </type>
+    </element>
+    <element id="Composition.section:section4">
+      <path value="Composition.section" />
+      <sliceName value="section4" />
+      <label value="Findings Section in an Infection-Type Report" />
+      <short value="Findings Section in an Infection-Type Report" />
+      <definition value="SHALL contain exactly one [1..1] section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-62) such that it" />
+      <comment value="Findings Section in an Infection-Type Report" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:section4.title">
+      <path value="Composition.section.title" />
+      <short value="title" />
+      <definition value="SHALL contain exactly one [1..1] title (CONF:3347-68)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:section4.code">
+      <path value="Composition.section.code" />
+      <short value="code" />
+      <definition value="SHALL contain exactly one [1..1] code=&quot;18769-0&quot; Findings Section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-69)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:oid:2.16.840.1.113883.6.1" />
+          <code value="18769-0" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:section4.text">
+      <path value="Composition.section.text" />
+      <short value="text" />
+      <definition value="SHALL contain exactly one [1..1] text (CONF:3347-70)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <!-- SG: Commented out and moved pathogen-identified below to make it a simple choice rather than a slice -->
+    <!--<element id="Composition.section:section4.entry">
+      <path value="Composition.section.entry" />
+      <short value="entry" />
+      <definition value="MAY contain [0..3] Pathogen Identified (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified) (CONF:3347-125)." />
+      <min value="0" />
+      <max value="3" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified" />
+      </type>
+    </element>-->
+    <element id="Composition.section:section4.entry">
+      <path value="Composition.section.entry" />
+      <short value="entry" />
+      <definition value="MAY contain zero or one [0..1] MDRO/CDI Observation (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation) (CONF:3347-136)." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation" />
+      </type>
+      <!-- SG: Moved from commented out element above -->
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

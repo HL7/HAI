@@ -1,0 +1,274 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id
+    value="healthcare-associated-infection-report" />
+  <url
+    value="http://hl7.org/fhir/us/hai/StructureDefinition/healthcare-associated-infection-report" />
+  <name
+    value="Healthcare Associated Infection Report" />
+  <status
+    value="draft" />
+  <publisher
+    value="Lantana Consulting Group" />
+  <contact>
+    <name
+      value="Sarah Gaunt" />
+    <telecom>
+      <system
+        value="phone" />
+      <value
+        value="+6 141-029-2506" />
+      <use
+        value="work" />
+    </telecom>
+    <telecom>
+      <system
+        value="email" />
+      <value
+        value="sarah.gaunt@lantanagroup.com" />
+      <use
+        value="work" />
+    </telecom>
+  </contact>
+  <description
+    value="This profile further constraints the C-CDA on FHIR US Realm Header profile. It specifies the generic constraints for all NHSN Healthcare Associated Infection Reports. Further constraints are found in the specialization profiles for single-patient and population summary reports, and in the profiles for specific report types." />
+  <kind
+    value="resource" />
+  <abstract
+    value="false" />
+  <contextType
+    value="resource" />
+  <context
+    value="Composition" />
+  <type
+    value="Composition" />
+  <!--<baseDefinition
+    value="hl7.org/fhir/us/ccda/StructureDefinition-CCDA-on-FHIR-US-Realm-Header" />-->
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+  <derivation
+    value="constraint" />
+  <differential>
+    <element
+      id="Composition">
+      <path
+        value="Composition" />
+    </element>
+    <element
+      id="id">
+      <path
+        value="Composition.id" />
+      <short
+        value="id" />
+      <definition
+        value="SHALL contain exactly one [1..1] id (CONF:3347-42)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="language">
+      <path
+        value="Composition.language" />
+      <short
+        value="language" />
+      <definition
+        value="SHALL contain exactly one [1..1] language=&quot;en-US&quot; (CONF:3347-1)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="code" />
+      </type>
+      <patternCode
+        value="en-US" />
+    </element>
+    <element
+      id="identifier">
+      <path
+        value="Composition.identifier" />
+      <short
+        value="identifier" />
+      <definition
+        value="SHALL contain exactly one [1..1] identifier (CONF:3347-38)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="identifier.type">
+      <path
+        value="Composition.identifier.type" />
+      <short
+        value="type" />
+      <definition
+        value="This identifier SHOULD contain zero or one [0..1] type (CONF:3347-39)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="identifier.system">
+      <path
+        value="Composition.identifier.system" />
+      <short
+        value="system" />
+      <definition
+        value="This identifier SHALL contain exactly one [1..1] system (CONF:3347-40)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="identifier.value">
+      <path
+        value="Composition.identifier.value" />
+      <short
+        value="value" />
+      <definition
+        value="This identifier SHALL contain exactly one [1..1] value (CONF:3347-41)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="type">
+      <path
+        value="Composition.type" />
+      <short
+        value="type" />
+      <definition
+        value="SHALL contain exactly one [1..1] type=&quot;51897-7&quot; Healthcare Associated Infection Report (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-2)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="CodeableConcept" />
+      </type>
+      <patternCodeableConcept>
+        <coding>
+          <system
+            value="urn:oid:2.16.840.1.113883.6.1" />
+          <code
+            value="51897-7" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element
+      id="date">
+      <path
+        value="Composition.date" />
+      <short
+        value="date" />
+      <definition
+        value="SHALL contain exactly one [1..1] date (CONF:3347-4)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="author">
+      <path
+        value="Composition.author" />
+      <short
+        value="author" />
+      <definition
+        value="SHALL contain at least one [1..*] Device (identifier: http://hl7.org/fhir/StructureDefinition/Device) (CONF:3347-37)." />
+      <min
+        value="1" />
+      <max
+        value="*" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/StructureDefinition/Device" />
+      </type>
+    </element>
+    <element
+      id="title">
+      <path
+        value="Composition.title" />
+      <short
+        value="title" />
+      <definition
+        value="SHALL contain exactly one [1..1] title (CONF:3347-5)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="attester">
+      <path
+        value="Composition.attester" />
+      <short
+        value="attester" />
+      <definition
+        value="SHOULD contain zero or one [0..1] attester (CONF:3347-51)." />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="attester.mode">
+      <path
+        value="Composition.attester.mode" />
+      <short
+        value="mode" />
+      <definition
+        value="The attester, if present, SHALL contain at least one [1..*] mode=&quot;legal&quot; (CodeSystem: FHIR CompositionAttestationMode http://hl7.org/fhir/composition-attestation-mode) (CONF:3347-52)." />
+      <min
+        value="1" />
+      <max
+        value="*" />
+      <type>
+        <code
+          value="code" />
+      </type>
+      <patternString
+        value="legal" />
+    </element>
+    <element
+      id="attester.party">
+      <path
+        value="Composition.attester.party" />
+      <short
+        value="party" />
+      <definition
+        value="The attester, if present, SHALL contain exactly one [1..1] party (CONF:3347-53)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="custodian">
+      <path
+        value="Composition.custodian" />
+      <short
+        value="custodian" />
+      <definition
+        value="SHALL contain exactly one [1..1] HAI Custodian (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian) (CONF:3347-43)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,191 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id
+    value="procedure-details" />
+  <url
+    value="http://hl7.org/fhir/us/hai/StructureDefinition/procedure-details" />
+  <name
+    value="Procedure Details" />
+  <status
+    value="draft" />
+  <publisher
+    value="Lantana Consulting Group" />
+  <contact>
+    <name
+      value="Eric Parapini" />
+    <telecom>
+      <system
+        value="phone" />
+      <value
+        value="+13604405780" />
+      <use
+        value="work" />
+    </telecom>
+    <telecom>
+      <system
+        value="email" />
+      <value
+        value="eric.parapini@lantanagroup.com" />
+      <use
+        value="work" />
+    </telecom>
+  </contact>
+  <kind
+    value="resource" />
+  <abstract
+    value="false" />
+  <contextType
+    value="resource" />
+  <context
+    value="Procedure" />
+  <type
+    value="Procedure" />
+  <baseDefinition
+    value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure" />
+  <derivation
+    value="constraint" />
+  <differential>
+    <element
+      id="Procedure">
+      <path
+        value="Procedure" />
+    </element>
+    <element
+      id="partOf">
+      <path
+        value="Procedure.partOf" />
+      <short
+        value="partOf" />
+      <definition
+        value="MAY contain zero or more [0..*] partOf (CONF:3347-185)." />
+      <min
+        value="0" />
+      <max
+        value="*" />
+    </element>
+    <element
+      id="category">
+      <path
+        value="Procedure.category" />
+      <short
+        value="category" />
+      <definition
+        value="SHALL contain exactly one [1..1] category (CONF:3347-186)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="code">
+      <path
+        value="Procedure.code" />
+      <short
+        value="code" />
+      <definition
+        value="SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet NHSNProcedureCategoryCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code DYNAMIC (CONF:3347-187)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength
+          value="required" />
+        <valueSetReference>
+          <reference
+            value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code" />
+          <display
+            value="NHSNProcedureCategoryCode" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element
+      id="subject">
+      <path
+        value="Procedure.subject" />
+      <short
+        value="subject" />
+      <definition
+        value="SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-182)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" />
+      </type>
+    </element>
+    <element
+      id="performer">
+      <path
+        value="Procedure.performer" />
+      <short
+        value="performer" />
+      <definition
+        value="MAY contain zero or more [0..*] performer (CONF:3347-183)." />
+      <min
+        value="0" />
+      <max
+        value="*" />
+    </element>
+    <element
+      id="performer.actor">
+      <path
+        value="Procedure.performer.actor" />
+      <short
+        value="actor" />
+      <definition
+        value="The performer, if present, SHALL contain exactly one [1..1] actor (CONF:3347-184)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="performer.actor.identifier">
+      <path
+        value="Procedure.performer.actor.identifier" />
+      <short
+        value="identifier" />
+      <definition
+        value="This actor SHALL contain exactly one [1..1] identifier (CONF:3347-188)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="bodySite">
+      <path
+        value="Procedure.bodySite" />
+      <short
+        value="bodySite" />
+      <definition
+        value="MAY contain zero or more [0..*] bodySite, which SHALL be selected from ValueSet NHSNSpinalFusionApproachCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-spinal-fusion-approach-code (CONF:3347-189)." />
+      <min
+        value="0" />
+      <max
+        value="*" />
+      <type>
+        <code
+          value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength
+          value="required" />
+        <valueSetReference>
+          <reference
+            value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-spinal-fusion-approach-code" />
+          <display
+            value="NHSNSpinalFusionApproachCode" />
+        </valueSetReference>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

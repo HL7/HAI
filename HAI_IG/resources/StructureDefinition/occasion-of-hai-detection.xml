@@ -1,0 +1,110 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id
+    value="occasion-of-hai-detection" />
+  <url
+    value="http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection" />
+  <name
+    value="occasion-of-hai-detection" />
+  <status
+    value="draft" />
+  <publisher
+    value="Lantana Consulting Group" />
+  <contact>
+    <name
+      value="Sarah Gaunt" />
+    <telecom>
+      <system
+        value="phone" />
+      <value
+        value="+6 141-029-2506" />
+      <use
+        value="work" />
+    </telecom>
+    <telecom>
+      <system
+        value="email" />
+      <value
+        value="sarah.gaunt@lantanagroup.com" />
+      <use
+        value="work" />
+    </telecom>
+  </contact>
+  <description
+    value="This extension records when, in relation to an admission (a surgery stay), an HAI was detected." />
+  <kind
+    value="complex-type" />
+  <abstract
+    value="false" />
+  <contextType
+    value="resource" />
+  <context
+    value="Extension" />
+  <type
+    value="Extension" />
+  <baseDefinition
+    value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation
+    value="constraint" />
+  <differential>
+    <element
+      id="Extension">
+      <path
+        value="Extension" />
+    </element>
+    <element
+      id="@url">
+      <path
+        value="Extension.url" />
+      <short
+        value="@url" />
+      <definition
+        value="SHALL contain exactly one [1..1] @url=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection&quot; (CONF:3347-166)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="value[x]">
+      <path
+        value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type
+            value="value" />
+          <path
+            value="@type" />
+        </discriminator>
+        <rules
+          value="open" />
+      </slicing>
+      <short
+        value="value[x]" />
+      <definition
+        value="MAY contain zero or one [0..1] value[x], where value[x] is (CONF:3347-165)" />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="value[x].valueCodeableConcept">
+      <path
+        value="Extension.valueCodeableConcept" />
+      <short
+        value="valueCodeableConcept" />
+      <definition
+        value="valueCodeableConcept, which SHALL be selected from ValueSet NHSNOccasionOfDetectionCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection (CONF:3347-167)" />
+      <binding>
+        <strength
+          value="required" />
+        <valueSetReference>
+          <reference
+            value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection" />
+          <display
+            value="NHSNOccasionOfDetectionCode" />
+        </valueSetReference>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

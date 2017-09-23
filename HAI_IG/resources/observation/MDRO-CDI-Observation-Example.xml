@@ -1,0 +1,42 @@
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="MDRO-CDI-Observation-Example"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2017-09-15T08:16:14Z"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p>
+                <b> id</b>MDRO-CDI-Observation-Example
+            
+            </p>
+            <p>
+                <b> status</b> : final
+            
+            </p>
+            <p>
+                <b> code</b> : Blood culture 
+                
+                
+                <span> (Details :{cdcNHSN code '2318-4' = 'MDRO Organism or C.difficile Infection'})</span>
+            </p>
+            <p>
+                <b> value</b> : true
+            
+            </p>
+        </div>
+    </text>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="https://phinvads.cdc.gov/vads"/>
+            <code value="2318-4"/>
+            <display value="MDRO Organism or C.difficile Infection"/>
+        </coding>
+    </code>
+    <valueBoolean value="true"/>
+</Observation>

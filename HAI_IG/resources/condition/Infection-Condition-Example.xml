@@ -1,0 +1,64 @@
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="Infection-Condition-Example"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-condition"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death">
+        <valueReference>
+            <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death"/>
+        </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection">
+        <valueReference>
+            <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection"/>
+        </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery">
+        <valueReference>
+            <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery"/>
+        </valueReference>
+    </extension>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="44444444"/>
+    </identifier>
+    <clinicalStatus value="active"/>
+    <verificationStatus value="confirmed"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="433202001"/>
+            <display value="Surgical Site Infection"/>
+        </coding>
+    </category>
+    <severity>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="24484000"/>
+            <display value="Severe"/>
+        </coding>
+    </severity>
+    <code>
+        <coding>
+            <system value="urn:oid:2.16.840.1.113883.6.277"/>
+            <code value="1604-8"/>
+            <display
+                value="Deep incisional primary SSI"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+        <display value="Henry Seven"/>
+    </subject>
+    <onsetDateTime value="2017-09-15"/>
+    <evidence>
+        <code>
+            <coding>
+                <system value="urn:oid:2.16.840.1.113883.6.277"/>
+                <code value="1953-9"/>
+                <display value="Positive culture of pathogen"/>
+            </coding>
+        </code>
+    </evidence>
+</Condition>

@@ -1,0 +1,31 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id
+    value="nhsn-pathogen-code" />
+  
+  <url
+    value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-code" />
+  <name
+    value="NHSNPathogenCode" />
+  <status
+    value="active" />
+  <description
+    value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+  <compose>
+    <include>
+      <system
+        value="urn:oid:2.16.840.1.113883.6.96" />
+      <concept>
+        <code
+          value="50471002" />
+        <display
+          value="Zika virus (organism)" />
+      </concept>
+      <concept>
+        <code
+          value="2423009" />
+        <display
+          value="Chikungunya virus (organism)" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

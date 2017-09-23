@@ -1,0 +1,42 @@
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="Diabetes-Melitus-Condition-Example"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="33333333"/>
+    </identifier>
+    <clinicalStatus value="active"/>
+    <verificationStatus value="confirmed"/>
+    <category>
+        <coding>
+            <system value="http://hl7.org/fhir/us/core/CodeSystem/condition-category"/>
+            <code value="problem"/>
+            <display value="Problem"/>
+        </coding>
+        <text value="Problem"/>
+    </category>
+    <severity>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="24484000"/>
+            <display value="Severe"/>
+        </coding>
+    </severity>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="73211009"/>
+            <display
+                value="Diabetes Melitus"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+        <display value="Henry Seven"/>
+    </subject>
+    <onsetDateTime value="2017-09-15"/>
+    <assertedDate value="2017-09-15"/>
+</Condition>

@@ -1,0 +1,102 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id
+    value="infection-present-at-time-of-surgery" />
+  <url
+    value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery" />
+  <name
+    value="infection-present-at-time-of-surgery" />
+  <status
+    value="draft" />
+  <publisher
+    value="Lantana Consulting Group" />
+  <contact>
+    <name
+      value="Sarah Gaunt" />
+    <telecom>
+      <system
+        value="phone" />
+      <value
+        value="+6 141-029-2506" />
+      <use
+        value="work" />
+    </telecom>
+    <telecom>
+      <system
+        value="email" />
+      <value
+        value="sarah.gaunt@lantanagroup.com" />
+      <use
+        value="work" />
+    </telecom>
+  </contact>
+  <description
+    value="This extension records whether or not an infection was present at the time that a surgical procedure was performed." />
+  <kind
+    value="complex-type" />
+  <abstract
+    value="false" />
+  <contextType
+    value="resource" />
+  <context
+    value="Extension" />
+  <type
+    value="Extension" />
+  <baseDefinition
+    value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation
+    value="constraint" />
+  <differential>
+    <element
+      id="Extension">
+      <path
+        value="Extension" />
+    </element>
+    <element
+      id="@url">
+      <path
+        value="Extension.url" />
+      <short
+        value="@url" />
+      <definition
+        value="SHALL contain exactly one [1..1] @url=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery&quot; (CONF:3347-170)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="value[x]">
+      <path
+        value="Extension.value[x]" />
+      <label
+        value="If the infection was present at the time of surgery, set valueBoolean=true. If the infection was not present at the time of surgery, set the valueBoolean=false." />
+      <slicing>
+        <discriminator>
+          <type
+            value="value" />
+          <path
+            value="@type" />
+        </discriminator>
+        <rules
+          value="open" />
+      </slicing>
+      <short
+        value="If the infection was present at the time of surgery, set valueBoolean=true. If the infection was not present at the time of surgery, set the valueBoolean=false." />
+      <definition
+        value="MAY contain zero or one [0..1] value[x], where value[x] is (CONF:3347-169)" />
+      <min
+        value="0" />
+      <max
+        value="1" />
+    </element>
+    <element
+      id="value[x].valueBoolean">
+      <path
+        value="Extension.valueBoolean" />
+      <short
+        value="valueBoolean" />
+      <definition
+        value="valueBoolean (CONF:3347-171)" />
+    </element>
+  </differential>
+</StructureDefinition>

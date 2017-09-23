@@ -1,0 +1,66 @@
+<Composition
+    xmlns="http://hl7.org/fhir">
+    <id value="HAI-Procedure-Denominator-Report-Example"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2017-09-15T08:16:14Z"/>
+        <profile value="http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-report"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p>Denominator for Procedure Report</p>
+            <p>Managed by Community Health and Hospitals</p>
+            <p>This report records a procedure performed.  The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).
+                The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports </p>
+        </div>
+    </text>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="12345"/>
+    </identifier>
+    <status value="preliminary"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="51897-7"/>
+            <display value="Healthcare Associated Infection Report"/>
+        </coding>
+    </type>
+    <!--  Patient Resource -->
+    <subject>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+        <display value="Henry Jones"/>
+    </subject>
+    <!--  Encounter Resource -->
+    <encounter>
+        <reference value="http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-encounter"/>
+    </encounter>
+    <date value="2017-09-15T09:10:14Z"/>
+    <!--  Practitioner Resource Reference-->
+    <author>
+        <reference value="Practitioner/practitioner-1"/>
+        <display value="Ronald Bone, MD"/>
+    </author>
+    <!--  Device Resource Reference -->
+    <author>
+        <reference value="https://www.hl7.org/fhir/device-example-ihe-pcd.xml"/>
+        <display value="Vital Signs Monitor"/>
+    </author>
+    <title value="Denominator for Procedure Report"/>
+    <attester>
+        <mode value="legal"/>
+        <time value="2017-09-15T09:10:14Z"/>
+        <party>
+            <reference value="Practitioner/practitioner-1"/>
+            <display value="Ronald Bone, MD"/>
+        </party>
+    </attester>
+    <!--  Organization Resource -->
+    <custodian>
+        <reference value="http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian"/>
+        <display value="Community Health and Hospitals"/>
+    </custodian>
+</Composition>
