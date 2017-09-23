@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="occasion-of-hai-detection"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7-fhir.github.io/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7-fhir.github.io/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7-fhir.github.io/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7-fhir.github.io/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7-fhir.github.io/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7-fhir.github.io/formats.html#table" title="Legend for this format"><img src="http://hl7-fhir.github.io/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span title="null">Extension</span><a name="Extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span title="SHALL contain exactly one [1..1] @url=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection&quot; (CONF:3347-166).">url</span><a name="Extension.url"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">@url</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> <span style="font-style: italic" title="MAY contain zero or one [0..1] value[x], where value[x] is (CONF:3347-165)">value[x]</span><a name="Extension.value_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#base64Binary">base64Binary</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#boolean">boolean</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#code">code</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#date">date</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#dateTime">dateTime</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#decimal">decimal</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#id">id</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#instant">instant</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#integer">integer</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#markdown">markdown</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#oid">oid</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#positiveInt">positiveInt</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#string">string</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#time">time</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#unsignedInt">unsignedInt</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#uri">uri</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Address">Address</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Age">Age</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Annotation">Annotation</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Attachment">Attachment</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#CodeableConcept">CodeableConcept</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Coding">Coding</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#ContactPoint">ContactPoint</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Count">Count</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Distance">Distance</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Duration">Duration</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#HumanName">HumanName</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Identifier">Identifier</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Money">Money</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Period">Period</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Quantity">Quantity</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Range">Range</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Ratio">Ratio</a><span style="opacity: 0.4; font-style: italic">, </span><a style="font-style: italic" href="http://hl7-fhir.github.io/references.html">Reference</a><span style="font-style: italic">(</span><span style="font-style: italic">)</span><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#SampledData">SampledData</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Signature">Signature</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Timing">Timing</a><span style="opacity: 0.4; font-style: italic">, </span><a style="opacity: 0.4; font-style: italic" href="http://hl7-fhir.github.io/datatypes.html#Meta">Meta</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">value[x]</span><br style="font-style: italic"/><span style="font-weight:bold; font-style: italic">Slice: </span><span style="font-style: italic">Unordered, Open by value:@type</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span title="valueCodeableConcept, which SHALL be selected from ValueSet NHSNOccasionOfDetectionCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection (CONF:3347-167)">valueCodeableConcept</span><a name="Extension.valueCodeableConcept"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#base64Binary">base64Binary</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#boolean">boolean</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#code">code</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#date">date</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#dateTime">dateTime</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#decimal">decimal</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#id">id</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#instant">instant</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#integer">integer</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#markdown">markdown</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#oid">oid</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#positiveInt">positiveInt</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#string">string</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#time">time</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#unsignedInt">unsignedInt</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#uri">uri</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Address">Address</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Age">Age</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Annotation">Annotation</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Attachment">Attachment</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#CodeableConcept">CodeableConcept</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Coding">Coding</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#ContactPoint">ContactPoint</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Count">Count</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Distance">Distance</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Duration">Duration</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#HumanName">HumanName</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Identifier">Identifier</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Money">Money</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Period">Period</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Quantity">Quantity</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Range">Range</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Ratio">Ratio</a><span style="opacity: 0.4">, </span><a href="http://hl7-fhir.github.io/references.html">Reference</a>()<span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#SampledData">SampledData</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Signature">Signature</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Timing">Timing</a><span style="opacity: 0.4">, </span><a style="opacity: 0.4" href="http://hl7-fhir.github.io/datatypes.html#Meta">Meta</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">valueCodeableConcept<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-nhsn-occasion-of-detection.html">NHSNOccasionOfDetectionCode</a> (<a href="http://hl7-fhir.github.io/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set">required</a>)</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7-fhir.github.io/formats.html#table" title="Legend for this format"><img src="http://hl7-fhir.github.io/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection"/>
+  <name value="occasion-of-hai-detection"/>
+  <status value="draft"/>
+  <date value="2017-09-23T15:59:00+10:00"/>
+  <publisher value="Lantana Consulting Group"/>
+  <contact>
+    <name value="Sarah Gaunt"/>
+    <telecom>
+      <system value="phone"/>
+      <value value="+6 141-029-2506"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="sarah.gaunt@lantanagroup.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This extension records when, in relation to an admission (a surgery stay), an HAI was detected."/>
+  <fhirVersion value="3.1.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <contextType value="resource"/>
+  <context value="Extension"/>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="Extension"/>
+      </constraint>
+    </element>
+    <element id="Extension.id">
+      <path value="Extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="@url"/>
+      <definition value="SHALL contain exactly one [1..1] @url=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection&quot; (CONF:3347-166)."/>
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="@type"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <short value="value[x]"/>
+      <definition value="MAY contain zero or one [0..1] value[x], where value[x] is (CONF:3347-165)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="base64Binary"/>
+      </type>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <type>
+        <code value="code"/>
+      </type>
+      <type>
+        <code value="date"/>
+      </type>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <type>
+        <code value="id"/>
+      </type>
+      <type>
+        <code value="instant"/>
+      </type>
+      <type>
+        <code value="integer"/>
+      </type>
+      <type>
+        <code value="markdown"/>
+      </type>
+      <type>
+        <code value="oid"/>
+      </type>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="time"/>
+      </type>
+      <type>
+        <code value="unsignedInt"/>
+      </type>
+      <type>
+        <code value="uri"/>
+      </type>
+      <type>
+        <code value="Address"/>
+      </type>
+      <type>
+        <code value="Age"/>
+      </type>
+      <type>
+        <code value="Annotation"/>
+      </type>
+      <type>
+        <code value="Attachment"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <type>
+        <code value="ContactPoint"/>
+      </type>
+      <type>
+        <code value="Count"/>
+      </type>
+      <type>
+        <code value="Distance"/>
+      </type>
+      <type>
+        <code value="Duration"/>
+      </type>
+      <type>
+        <code value="HumanName"/>
+      </type>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <type>
+        <code value="Money"/>
+      </type>
+      <type>
+        <code value="Period"/>
+      </type>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="Range"/>
+      </type>
+      <type>
+        <code value="Ratio"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+      </type>
+      <type>
+        <code value="SampledData"/>
+      </type>
+      <type>
+        <code value="Signature"/>
+      </type>
+      <type>
+        <code value="Timing"/>
+      </type>
+      <type>
+        <code value="Meta"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <short value="valueCodeableConcept"/>
+      <definition value="valueCodeableConcept, which SHALL be selected from ValueSet NHSNOccasionOfDetectionCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection (CONF:3347-167)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="base64Binary"/>
+      </type>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <type>
+        <code value="code"/>
+      </type>
+      <type>
+        <code value="date"/>
+      </type>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <type>
+        <code value="id"/>
+      </type>
+      <type>
+        <code value="instant"/>
+      </type>
+      <type>
+        <code value="integer"/>
+      </type>
+      <type>
+        <code value="markdown"/>
+      </type>
+      <type>
+        <code value="oid"/>
+      </type>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="time"/>
+      </type>
+      <type>
+        <code value="unsignedInt"/>
+      </type>
+      <type>
+        <code value="uri"/>
+      </type>
+      <type>
+        <code value="Address"/>
+      </type>
+      <type>
+        <code value="Age"/>
+      </type>
+      <type>
+        <code value="Annotation"/>
+      </type>
+      <type>
+        <code value="Attachment"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <type>
+        <code value="ContactPoint"/>
+      </type>
+      <type>
+        <code value="Count"/>
+      </type>
+      <type>
+        <code value="Distance"/>
+      </type>
+      <type>
+        <code value="Duration"/>
+      </type>
+      <type>
+        <code value="HumanName"/>
+      </type>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <type>
+        <code value="Money"/>
+      </type>
+      <type>
+        <code value="Period"/>
+      </type>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="Range"/>
+      </type>
+      <type>
+        <code value="Ratio"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+      </type>
+      <type>
+        <code value="SampledData"/>
+      </type>
+      <type>
+        <code value="Signature"/>
+      </type>
+      <type>
+        <code value="Timing"/>
+      </type>
+      <type>
+        <code value="Meta"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection"/>
+          <display value="NHSNOccasionOfDetectionCode"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <short value="@url"/>
+      <definition value="SHALL contain exactly one [1..1] @url=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection&quot; (CONF:3347-166)."/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="@type"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <short value="value[x]"/>
+      <definition value="MAY contain zero or one [0..1] value[x], where value[x] is (CONF:3347-165)"/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <short value="valueCodeableConcept"/>
+      <definition value="valueCodeableConcept, which SHALL be selected from ValueSet NHSNOccasionOfDetectionCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection (CONF:3347-167)"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection"/>
+          <display value="NHSNOccasionOfDetectionCode"/>
+        </valueSetReference>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,207 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nhsn-procedure-category-code"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSNProcedureCategoryCode</h2><div><p>Code System: cdcNHSN 2.16.840.1.113883.6.277</p>\n<p>NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.�������� ������� ������� ������� ������� �������</p>\n<p>The full table is shown in the hai_voc.xls file provided with this package.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.277</code><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2105-5</td><td>Abdominal aortic aneurysm repair</td><td/></tr><tr><td>2107-1</td><td>Abdominal hysterectomy</td><td/></tr><tr><td>2108-9</td><td>Appendix surgery</td><td/></tr><tr><td>2102-2</td><td>AV shunt for dialysis</td><td/></tr><tr><td>2109-7</td><td>Bile duct, liver or pancreatic surgery</td><td/></tr><tr><td>2110-5</td><td>Breast surgery</td><td/></tr><tr><td>2111-3</td><td>Cardiac Surgery</td><td/></tr><tr><td>2114-7</td><td>Carotid endarterectomy</td><td/></tr><tr><td>2115-4</td><td>Cesarean section</td><td/></tr><tr><td>2116-2</td><td>Colon surgery</td><td/></tr><tr><td>2112-1</td><td>Coronary artery bypass graft with both chest and donor site incisions</td><td/></tr><tr><td>2113-9</td><td>Coronary artery bypass graft with chest incision only</td><td/></tr><tr><td>2117-0</td><td>Craniotomy</td><td/></tr><tr><td>2118-8</td><td>Exploratory abdominal surgery</td><td/></tr><tr><td>2119-6</td><td>Gallbladder surgery</td><td/></tr><tr><td>2120-4</td><td>Gastric surgery</td><td/></tr><tr><td>2121-2</td><td>Heart transplant</td><td/></tr><tr><td>2106-3</td><td>Herniorrhaphy</td><td/></tr><tr><td>2101-4</td><td>Hip Replacement</td><td/></tr><tr><td>2122-0</td><td>Kidney surgery</td><td/></tr><tr><td>2123-8</td><td>Kidney transplant</td><td/></tr><tr><td>2124-6</td><td>Knee prosthesis</td><td/></tr><tr><td>2125-3</td><td>Laminectomy</td><td/></tr><tr><td>2126-1</td><td>Limb amputation</td><td/></tr><tr><td>2127-9</td><td>Liver transplant</td><td/></tr><tr><td>2128-7</td><td>Neck surgery</td><td/></tr><tr><td>2103-0</td><td>Not an NHSN operation</td><td/></tr><tr><td>2129-5</td><td>Open reduction of fracture</td><td/></tr><tr><td>2104-8</td><td>Other operations</td><td/></tr><tr><td>2130-3</td><td>Ovarian surgery</td><td/></tr><tr><td>2131-1</td><td>Pacemaker surgery</td><td/></tr><tr><td>2132-9</td><td>Peripheral vascular bypass surgery</td><td/></tr><tr><td>2133-7</td><td>Prostate surgery</td><td/></tr><tr><td>2134-5</td><td>Rectal surgery</td><td/></tr><tr><td>2135-2</td><td>Refusion of spine</td><td/></tr><tr><td>2136-0</td><td>Small bowel surgery</td><td/></tr><tr><td>2137-8</td><td>Spinal fusion</td><td/></tr><tr><td>2138-6</td><td>Spleen surgery</td><td/></tr><tr><td>2139-4</td><td>Thoracic surgery</td><td/></tr><tr><td>2140-2</td><td>Thyroid and/or parathyroid surgery</td><td/></tr><tr><td>2141-0</td><td>Vaginal hysterectomy</td><td/></tr><tr><td>2142-8</td><td>Ventricular shunt</td><td/></tr><tr><td>2102-2</td><td>Shunt for dialysis</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code"];
+  fhir:ValueSet.name [ fhir:value "NHSNProcedureCategoryCode"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2017-09-23T15:59:00+10:00"^^xsd:dateTime];
+  fhir:ValueSet.description [ fhir:value "Code System: cdcNHSN 2.16.840.1.113883.6.277\r\n\r\nNHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.�������� ������� ������� ������� ������� �������\r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2105-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abdominal aortic aneurysm repair" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2107-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abdominal hysterectomy" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2108-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Appendix surgery" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2102-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "AV shunt for dialysis" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2109-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bile duct, liver or pancreatic surgery" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2110-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Breast surgery" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2111-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac Surgery" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2114-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Carotid endarterectomy" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2115-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cesarean section" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2116-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Colon surgery" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2112-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coronary artery bypass graft with both chest and donor site incisions" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2113-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coronary artery bypass graft with chest incision only" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2117-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Craniotomy" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2118-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exploratory abdominal surgery" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2119-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gallbladder surgery" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2120-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastric surgery" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2121-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heart transplant" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2106-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Herniorrhaphy" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2101-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hip Replacement" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2122-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kidney surgery" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2123-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kidney transplant" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2124-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Knee prosthesis" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2125-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laminectomy" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2126-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Limb amputation" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2127-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Liver transplant" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2128-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neck surgery" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2103-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not an NHSN operation" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2129-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Open reduction of fracture" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2104-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other operations" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2130-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ovarian surgery" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2131-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pacemaker surgery" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2132-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peripheral vascular bypass surgery" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2133-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Prostate surgery" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2134-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rectal surgery" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2135-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Refusion of spine" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2136-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Small bowel surgery" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2137-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spinal fusion" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2138-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spleen surgery" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2139-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoracic surgery" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2140-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Thyroid and/or parathyroid surgery" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2141-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaginal hysterectomy" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2142-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventricular shunt" ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2102-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Shunt for dialysis" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/hai/ValueSet/nhsn-procedure-category-code.ttl> .
+
+# -------------------------------------------------------------------------------------
+

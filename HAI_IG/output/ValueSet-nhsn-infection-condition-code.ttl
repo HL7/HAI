@@ -1,0 +1,263 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nhsn-infection-condition-code"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSNInfectionConditionCode</h2><div><p>Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277</p>\n<p>A full listing of codes can be found in the hai_voc.xls file provided with this package.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.96</code><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2707005</td><td>Necrotizing enterocolitis</td><td/></tr><tr><td>9826008</td><td>Conjunctivitis</td><td/></tr><tr><td>12463005</td><td>Infectious gastroenteritis</td><td/></tr><tr><td>19824006</td><td>Skin</td><td/></tr><tr><td>25374005</td><td>Gastroenteritis</td><td/></tr><tr><td>36971009</td><td>Sinusitis</td><td/></tr><tr><td>47597000</td><td>Mediastinitis</td><td/></tr><tr><td>56819008</td><td>Endocarditis</td><td/></tr><tr><td>60168000</td><td>Osteomyelitis</td><td/></tr><tr><td>78623009</td><td>Endometritis</td><td/></tr><tr><td>128241005</td><td>Hepatitis</td><td/></tr><tr><td>239095007</td><td>Omphalitis</td><td/></tr><tr><td>300927001</td><td>Episiotomy</td><td/></tr><tr><td>302935008</td><td>Disc space</td><td/></tr><tr><td>312157006</td><td>Infectious mediastinitis</td><td/></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.277</code><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1601-4</td><td>Breast abscess or mastitis</td><td/></tr><tr><td>1602-2</td><td>Myocarditis or pericarditis</td><td/></tr><tr><td>1603-0</td><td>Clinical sepsis</td><td/></tr><tr><td>1604-8</td><td>Deep incisional primary SSI</td><td/></tr><tr><td>1605-5</td><td>Deep incisional secondary SSI</td><td/></tr><tr><td>1606-3</td><td>Vertebral disc space infection</td><td/></tr><tr><td>1607-1</td><td>Ear or mastoid infection (otitis externa, otitis media, otitis interna, mastoiditis)</td><td/></tr><tr><td>1608-9</td><td>Eye infection, other than conjunctivitis</td><td/></tr><tr><td>1609-7</td><td>Gastrointestinal tract infection (esophagus, stomach, small and large bowel, and rectum) excluding gastroenteritis and appendicitis</td><td/></tr><tr><td>1610-5</td><td>Intraabdominal infection, not specified elsewhere including gallbladder, bile ducts, liver (excluding viral hepatitis), spleen, pancreas, peritoneum, subphrenic or subdiaphragmatic space, or other intraabdominal tissue or area not specified elsewhere</td><td/></tr><tr><td>1611-3</td><td>Intracranial infection (brain abscess, subdural or epidural infection, encephalitis)</td><td/></tr><tr><td>1612-1</td><td>Joint or bursa infection</td><td/></tr><tr><td>1613-9</td><td>Laboratory-confirmed bloodstream infection</td><td/></tr><tr><td>1614-7</td><td>Other infections of the lower respiratory tract, other than pneumonia</td><td/></tr><tr><td>1615-4</td><td>Meningitis or ventriculitis</td><td/></tr><tr><td>1616-2</td><td>Oral cavity infection (mouth, tongue, or gums)</td><td/></tr><tr><td>1617-0</td><td>Other infections of the male or female reproductive tract (epididymis, testes, prostate, vagina, ovaries, uterus, or other deep pelvic tissues, excluding endometritis or vaginal cuff infections)</td><td/></tr><tr><td>1618-8</td><td>Other infections of the urinary tract (kidney, ureter, bladder, urethra, or tissue surrounding the retroperitoneal or perinephric space)</td><td/></tr><tr><td>1619-6</td><td>Spinal abscess without meningitis</td><td/></tr><tr><td>1620-4</td><td>Superficial incisional primary SSI</td><td/></tr><tr><td>1621-2</td><td>Superficial incisional secondary SSI</td><td/></tr><tr><td>1622-0</td><td>Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis</td><td/></tr><tr><td>1623-8</td><td>Arterial or venous infection</td><td/></tr><tr><td>1624-6</td><td>Vaginal cuff infection</td><td/></tr><tr><td>1625-3</td><td>Symptomatic UTI (SUTI)</td><td/></tr><tr><td>1626-1</td><td>PNU1</td><td/></tr><tr><td>1631-1</td><td>PNU2</td><td/></tr><tr><td>1632-9</td><td>PNU3</td><td/></tr><tr><td>1671-7</td><td>Bronchitis, tracheitis</td><td/></tr><tr><td>1672-5</td><td>Burn</td><td/></tr><tr><td>1673-3</td><td>Decubitus ulcer</td><td/></tr><tr><td>1674-1</td><td>Disseminated infection</td><td/></tr><tr><td>1675-8</td><td>Infant pustulosis</td><td/></tr><tr><td>1676-6</td><td>Newborn circumcision</td><td/></tr><tr><td>1677-4</td><td>Soft tissue, muscle, lymph node, or salivary gland</td><td/></tr><tr><td>2402-6</td><td>Asymptomatic Bacteremic UTI (ABUTI)</td><td/></tr><tr><td>1970-3</td><td>Periprosthetic Joint Infection</td><td/></tr><tr><td>1640-2</td><td>Organ/space</td><td/></tr><tr><td>2343-4</td><td>VAC - Ventilator-Associated Condition</td><td/></tr><tr><td>2344-2</td><td>IVAC - Infection-related Ventilator-Associated Complication</td><td/></tr><tr><td>2345-0</td><td>PVAP - Possible Ventilator-Associated Pneumonia</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code"];
+  fhir:ValueSet.name [ fhir:value "NHSNInfectionConditionCode"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2017-09-23T15:59:00+10:00"^^xsd:dateTime];
+  fhir:ValueSet.description [ fhir:value "Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.6.96" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2707005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Necrotizing enterocolitis" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9826008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Conjunctivitis" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12463005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Infectious gastroenteritis" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19824006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Skin" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "25374005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastroenteritis" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "36971009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sinusitis" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "47597000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mediastinitis" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "56819008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endocarditis" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "60168000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Osteomyelitis" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78623009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endometritis" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "128241005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hepatitis" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "239095007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Omphalitis" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "300927001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Episiotomy" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "302935008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Disc space" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "312157006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Infectious mediastinitis" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1601-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Breast abscess or mastitis" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1602-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myocarditis or pericarditis" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1603-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Clinical sepsis" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1604-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deep incisional primary SSI" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1605-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Deep incisional secondary SSI" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1606-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vertebral disc space infection" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1607-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ear or mastoid infection (otitis externa, otitis media, otitis interna, mastoiditis)" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1608-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Eye infection, other than conjunctivitis" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1609-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastrointestinal tract infection (esophagus, stomach, small and large bowel, and rectum) excluding gastroenteritis and appendicitis" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1610-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intraabdominal infection, not specified elsewhere including gallbladder, bile ducts, liver (excluding viral hepatitis), spleen, pancreas, peritoneum, subphrenic or subdiaphragmatic space, or other intraabdominal tissue or area not specified elsewhere" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1611-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intracranial infection (brain abscess, subdural or epidural infection, encephalitis)" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1612-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Joint or bursa infection" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1613-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Laboratory-confirmed bloodstream infection" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1614-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other infections of the lower respiratory tract, other than pneumonia" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1615-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Meningitis or ventriculitis" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1616-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral cavity infection (mouth, tongue, or gums)" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1617-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other infections of the male or female reproductive tract (epididymis, testes, prostate, vagina, ovaries, uterus, or other deep pelvic tissues, excluding endometritis or vaginal cuff infections)" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1618-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other infections of the urinary tract (kidney, ureter, bladder, urethra, or tissue surrounding the retroperitoneal or perinephric space)" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1619-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Spinal abscess without meningitis" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1620-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superficial incisional primary SSI" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1621-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Superficial incisional secondary SSI" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1622-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1623-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arterial or venous infection" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1624-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaginal cuff infection" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1625-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Symptomatic UTI (SUTI)" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1626-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PNU1" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1631-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PNU2" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1632-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PNU3" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1671-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bronchitis, tracheitis" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1672-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1673-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Decubitus ulcer" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1674-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Disseminated infection" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1675-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Infant pustulosis" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1676-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Newborn circumcision" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1677-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Soft tissue, muscle, lymph node, or salivary gland" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2402-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Asymptomatic Bacteremic UTI (ABUTI)" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1970-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Periprosthetic Joint Infection" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1640-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Organ/space" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2343-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "VAC - Ventilator-Associated Condition" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2344-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "IVAC - Infection-related Ventilator-Associated Complication" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2345-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PVAP - Possible Ventilator-Associated Pneumonia" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/hai/ValueSet/nhsn-infection-condition-code.ttl> .
+
+# -------------------------------------------------------------------------------------
+

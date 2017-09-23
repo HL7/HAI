@@ -1,0 +1,33 @@
+{
+  "resourceType": "Location",
+  "id": "HAI-Healthcare-Facility-Example",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2017-09-15T08:16:14Z",
+    "profile": [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Community Health and Hospitals, South Wing, second floor, Orthopaedic Operation Room 1\n        </div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "1.2"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code",
+        "code": "1166-8",
+        "display": "Ambulatory Surgery Center"
+      }
+    ]
+  },
+  "partOf": {
+    "reference": "Location/1"
+  }
+}

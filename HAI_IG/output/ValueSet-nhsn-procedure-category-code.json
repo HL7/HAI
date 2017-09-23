@@ -1,0 +1,194 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nhsn-procedure-category-code",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSNProcedureCategoryCode</h2><div><p>Code System: cdcNHSN 2.16.840.1.113883.6.277</p>\n<p>NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.�������� ������� ������� ������� ������� �������</p>\n<p>The full table is shown in the hai_voc.xls file provided with this package.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.277</code><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2105-5</td><td>Abdominal aortic aneurysm repair</td><td/></tr><tr><td>2107-1</td><td>Abdominal hysterectomy</td><td/></tr><tr><td>2108-9</td><td>Appendix surgery</td><td/></tr><tr><td>2102-2</td><td>AV shunt for dialysis</td><td/></tr><tr><td>2109-7</td><td>Bile duct, liver or pancreatic surgery</td><td/></tr><tr><td>2110-5</td><td>Breast surgery</td><td/></tr><tr><td>2111-3</td><td>Cardiac Surgery</td><td/></tr><tr><td>2114-7</td><td>Carotid endarterectomy</td><td/></tr><tr><td>2115-4</td><td>Cesarean section</td><td/></tr><tr><td>2116-2</td><td>Colon surgery</td><td/></tr><tr><td>2112-1</td><td>Coronary artery bypass graft with both chest and donor site incisions</td><td/></tr><tr><td>2113-9</td><td>Coronary artery bypass graft with chest incision only</td><td/></tr><tr><td>2117-0</td><td>Craniotomy</td><td/></tr><tr><td>2118-8</td><td>Exploratory abdominal surgery</td><td/></tr><tr><td>2119-6</td><td>Gallbladder surgery</td><td/></tr><tr><td>2120-4</td><td>Gastric surgery</td><td/></tr><tr><td>2121-2</td><td>Heart transplant</td><td/></tr><tr><td>2106-3</td><td>Herniorrhaphy</td><td/></tr><tr><td>2101-4</td><td>Hip Replacement</td><td/></tr><tr><td>2122-0</td><td>Kidney surgery</td><td/></tr><tr><td>2123-8</td><td>Kidney transplant</td><td/></tr><tr><td>2124-6</td><td>Knee prosthesis</td><td/></tr><tr><td>2125-3</td><td>Laminectomy</td><td/></tr><tr><td>2126-1</td><td>Limb amputation</td><td/></tr><tr><td>2127-9</td><td>Liver transplant</td><td/></tr><tr><td>2128-7</td><td>Neck surgery</td><td/></tr><tr><td>2103-0</td><td>Not an NHSN operation</td><td/></tr><tr><td>2129-5</td><td>Open reduction of fracture</td><td/></tr><tr><td>2104-8</td><td>Other operations</td><td/></tr><tr><td>2130-3</td><td>Ovarian surgery</td><td/></tr><tr><td>2131-1</td><td>Pacemaker surgery</td><td/></tr><tr><td>2132-9</td><td>Peripheral vascular bypass surgery</td><td/></tr><tr><td>2133-7</td><td>Prostate surgery</td><td/></tr><tr><td>2134-5</td><td>Rectal surgery</td><td/></tr><tr><td>2135-2</td><td>Refusion of spine</td><td/></tr><tr><td>2136-0</td><td>Small bowel surgery</td><td/></tr><tr><td>2137-8</td><td>Spinal fusion</td><td/></tr><tr><td>2138-6</td><td>Spleen surgery</td><td/></tr><tr><td>2139-4</td><td>Thoracic surgery</td><td/></tr><tr><td>2140-2</td><td>Thyroid and/or parathyroid surgery</td><td/></tr><tr><td>2141-0</td><td>Vaginal hysterectomy</td><td/></tr><tr><td>2142-8</td><td>Ventricular shunt</td><td/></tr><tr><td>2102-2</td><td>Shunt for dialysis</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code",
+  "name": "NHSNProcedureCategoryCode",
+  "status": "active",
+  "date": "2017-09-23T15:59:00+10:00",
+  "description": "Code System: cdcNHSN 2.16.840.1.113883.6.277\r\n\r\nNHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.�������� ������� ������� ������� ������� �������\r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.6.277",
+        "concept": [
+          {
+            "code": "2105-5",
+            "display": "Abdominal aortic aneurysm repair"
+          },
+          {
+            "code": "2107-1",
+            "display": "Abdominal hysterectomy"
+          },
+          {
+            "code": "2108-9",
+            "display": "Appendix surgery"
+          },
+          {
+            "code": "2102-2",
+            "display": "AV shunt for dialysis"
+          },
+          {
+            "code": "2109-7",
+            "display": "Bile duct, liver or pancreatic surgery"
+          },
+          {
+            "code": "2110-5",
+            "display": "Breast surgery"
+          },
+          {
+            "code": "2111-3",
+            "display": "Cardiac Surgery"
+          },
+          {
+            "code": "2114-7",
+            "display": "Carotid endarterectomy"
+          },
+          {
+            "code": "2115-4",
+            "display": "Cesarean section"
+          },
+          {
+            "code": "2116-2",
+            "display": "Colon surgery"
+          },
+          {
+            "code": "2112-1",
+            "display": "Coronary artery bypass graft with both chest and donor site incisions"
+          },
+          {
+            "code": "2113-9",
+            "display": "Coronary artery bypass graft with chest incision only"
+          },
+          {
+            "code": "2117-0",
+            "display": "Craniotomy"
+          },
+          {
+            "code": "2118-8",
+            "display": "Exploratory abdominal surgery"
+          },
+          {
+            "code": "2119-6",
+            "display": "Gallbladder surgery"
+          },
+          {
+            "code": "2120-4",
+            "display": "Gastric surgery"
+          },
+          {
+            "code": "2121-2",
+            "display": "Heart transplant"
+          },
+          {
+            "code": "2106-3",
+            "display": "Herniorrhaphy"
+          },
+          {
+            "code": "2101-4",
+            "display": "Hip Replacement"
+          },
+          {
+            "code": "2122-0",
+            "display": "Kidney surgery"
+          },
+          {
+            "code": "2123-8",
+            "display": "Kidney transplant"
+          },
+          {
+            "code": "2124-6",
+            "display": "Knee prosthesis"
+          },
+          {
+            "code": "2125-3",
+            "display": "Laminectomy"
+          },
+          {
+            "code": "2126-1",
+            "display": "Limb amputation"
+          },
+          {
+            "code": "2127-9",
+            "display": "Liver transplant"
+          },
+          {
+            "code": "2128-7",
+            "display": "Neck surgery"
+          },
+          {
+            "code": "2103-0",
+            "display": "Not an NHSN operation"
+          },
+          {
+            "code": "2129-5",
+            "display": "Open reduction of fracture"
+          },
+          {
+            "code": "2104-8",
+            "display": "Other operations"
+          },
+          {
+            "code": "2130-3",
+            "display": "Ovarian surgery"
+          },
+          {
+            "code": "2131-1",
+            "display": "Pacemaker surgery"
+          },
+          {
+            "code": "2132-9",
+            "display": "Peripheral vascular bypass surgery"
+          },
+          {
+            "code": "2133-7",
+            "display": "Prostate surgery"
+          },
+          {
+            "code": "2134-5",
+            "display": "Rectal surgery"
+          },
+          {
+            "code": "2135-2",
+            "display": "Refusion of spine"
+          },
+          {
+            "code": "2136-0",
+            "display": "Small bowel surgery"
+          },
+          {
+            "code": "2137-8",
+            "display": "Spinal fusion"
+          },
+          {
+            "code": "2138-6",
+            "display": "Spleen surgery"
+          },
+          {
+            "code": "2139-4",
+            "display": "Thoracic surgery"
+          },
+          {
+            "code": "2140-2",
+            "display": "Thyroid and/or parathyroid surgery"
+          },
+          {
+            "code": "2141-0",
+            "display": "Vaginal hysterectomy"
+          },
+          {
+            "code": "2142-8",
+            "display": "Ventricular shunt"
+          },
+          {
+            "code": "2102-2",
+            "display": "Shunt for dialysis"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "resourceType": "Condition",
+  "id": "Infection-Condition-Example",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/infection-condition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 44444444</p><p><b>clinicalStatus</b>: ACTIVE</p><p><b>verificationStatus</b>: CONFIRMED</p><p><b>category</b>: Surgical Site Infection <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '433202001' = 'Surgical site infection (disorder)', given as 'Surgical Site Infection'})</span></p><p><b>severity</b>: Severe <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '24484000' = 'Severe (severity modifier)', given as 'Severe'})</span></p><p><b>code</b>: Deep incisional primary SSI <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.6.277 code '1604-8' = '1604-8', given as 'Deep incisional primary SSI'})</span></p><p><b>subject</b>: <a href=\"http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient\">Henry Seven</a></p><p><b>onset</b>: 15/09/2017</p><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Positive culture of pathogen <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.6.277 code '1953-9' = '1953-9', given as 'Positive culture of pathogen'})</span></td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death",
+      "valueReference": {
+        "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection",
+      "valueReference": {
+        "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery",
+      "valueReference": {
+        "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "44444444"
+    }
+  ],
+  "clinicalStatus": "active",
+  "verificationStatus": "confirmed",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "433202001",
+          "display": "Surgical Site Infection"
+        }
+      ]
+    }
+  ],
+  "severity": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "24484000",
+        "display": "Severe"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.6.277",
+        "code": "1604-8",
+        "display": "Deep incisional primary SSI"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
+    "display": "Henry Seven"
+  },
+  "onsetDateTime": "2017-09-15",
+  "evidence": [
+    {
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.277",
+              "code": "1953-9",
+              "display": "Positive culture of pathogen"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

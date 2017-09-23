@@ -1,0 +1,92 @@
+{
+  "resourceType": "Composition",
+  "id": "HAI-Surgical-Site-Infection-Report-SSI-Example",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2017-09-15T08:16:14Z",
+    "profile": [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/hai-surgical-site-infection-report-ssi"
+    ]
+  },
+  "language": "en-US",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>Surgical Site Infection Report (SSI)</p>\n            <p>Managed by Community Health and Hospitals</p>\n            <p>This section records the infection type, with details. It records whether the infection was present \n                at the time of surgery and whether the SSI was identified through the use of discharge diagnosis \n                or procedure codes. If the patient died, NHSN protocol requires that the death be recorded.</p>\n        </div>"
+  },
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "22222222"
+  },
+  "status": "preliminary",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "51897-7",
+        "display": "Healthcare Associated Infection Report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
+    "display": "Henry Jones"
+  },
+  "encounter": {
+    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter"
+  },
+  "date": "2017-09-15T09:10:14Z",
+  "author": [
+    {
+      "reference": "Practitioner/practitioner-1",
+      "display": "Ronald Bone, MD"
+    }
+  ],
+  "title": "Healthcare Associated Infection Report - SSI",
+  "confidentiality": "N",
+  "custodian": {
+    "reference": "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian",
+    "display": "Community Health and Hospitals"
+  },
+  "section": [
+    {
+      "title": "Infection Details Section",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "51899-3",
+            "display": "Infection Details"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                <table>\n                    <tr>\n                        <td>\n                            <b>Status</b>\n                        </td>\n                        <td>\n                            <b>Code</b>\n                        </td>\n                        <td>\n                            <b>Value</b>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>final</td>\n                        <td>2318-4</td>\n                        <td>Y</td>\n                    </tr>\n                </table>\n            </div>"
+      }
+    },
+    {
+      "title": "Findings Section",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "18769-0",
+            "display": "Findings Section"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                <table>\n                    <tr>\n                        <td>\n                            <b>Type</b>\n                        </td>\n                        <td>\n                            <b>Status</b>\n                        </td>\n                        <td>\n                            <b>Code</b>\n                        </td>\n                        <td>\n                            <b>Code Display</b>\n                        </td>\n                        <td>\n                            <b>Value Code</b>\n                        </td>\n                        <td>\n                            <b>Value Display</b>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>Pathogen Identified</td>\n                        <td>final</td>\n                        <td>41852-5</td>\n                        <td>Microorganism identified</td>\n                        <td>50875003</td>\n                        <td>Acanthamoeba (organism)</td>\n                    </tr>\n                </table>\n                <table>\n                    <tr>\n                        <td>\n                            <b>Type</b>\n                        </td>\n                        <td>\n                            <b>Status</b>\n                        </td>\n                        <td>\n                            <b>Code</b>\n                        </td>\n                        <td>\n                            <b>Code Display</b>\n                        </td>\n                        <td>\n                            <b>Value Boolean</b>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>MRDO/CDI Observation</td>\n                        <td>final</td>\n                        <td>2318-4</td>\n                        <td>MDRO Infection of C.difficile infection</td>\n                        <td>false</td>\n                    </tr>\n                </table>\n            </div>"
+      },
+      "entry": [
+        {
+          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified"
+        },
+        {
+          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nhsn-drug-susceptibility-finding-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NHSNDrugSusceptibilityFindingCode</h2><div><p>Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83</p>
+<p>A full listing of codes can be found in the hai_voc.xls file provided with this package.</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.5.83</code><table class="none"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>I</td><td>Intermediate</td><td/></tr><tr><td>R</td><td>Resistant</td><td/></tr><tr><td>S</td><td>Susceptible</td><td/></tr><tr><td>NS</td><td>Non-Susceptible</td><td/></tr><tr><td>S-DD</td><td>Susceptible-dose dependant</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-finding-code"/>
+  <name value="NHSNDrugSusceptibilityFindingCode"/>
+  <status value="active"/>
+  <date value="2017-09-23T15:59:00+10:00"/>
+  <description value="Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package."/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.5.83"/>
+      <concept>
+        <code value="I"/>
+        <display value="Intermediate"/>
+      </concept>
+      <concept>
+        <code value="R"/>
+        <display value="Resistant"/>
+      </concept>
+      <concept>
+        <code value="S"/>
+        <display value="Susceptible"/>
+      </concept>
+      <concept>
+        <code value="NS"/>
+        <display value="Non-Susceptible"/>
+      </concept>
+      <concept>
+        <code value="S-DD"/>
+        <display value="Susceptible-dose dependant"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

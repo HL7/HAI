@@ -1,0 +1,477 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Healthcare Associated Infection Reports FHIR SSI Prototype</title>
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+    
+    <style type="text/css">
+      pre{
+          width: auto !important;
+      }
+    </style>
+  </head>
+  <body>
+     <div id="segment-header" class="segment">  <!-- segment-header -->
+  <div class="container">  <!-- container -->
+   <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/> </a>
+   <div id="hl7-status">
+    <b>Current Build</b> 
+   </div>
+
+   <div id="hl7-nav">
+     <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+     <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
+    </a>
+   </div>
+   <div id="hl7-nav"><a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a></div>
+  </div>
+  <div class="container">  <!-- container -->
+ </div></div>  <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+      <a class="navbar-brand hidden" href="http://hl7-fhir.github.io/index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+              
+        <li><a href="http://hl7-fhir.github.io/index.html">Home</a></li>
+        <li><a href="http://hl7-fhir.github.io/documentation.html">Documentation</a></li>
+        <li><a href="http://hl7-fhir.github.io/modules.html">Modules</a></li>
+        <li><a href="http://hl7-fhir.github.io/resourcelist.html">Resources</a></li>
+        <li><a href="http://hl7-fhir.github.io/profilelist.html">Profiles</a></li>
+        <li><a href="http://hl7-fhir.github.io/extensibility-registry.html">Extensions</a></li>
+        <li><a href="http://hl7-fhir.github.io/operationslist.html">Operations</a></li>
+
+      </ul>
+     </div>  <!-- /.nav-collapse -->
+    </div>  <!-- /.container -->
+   </nav>  <!-- /.navbar -->
+
+  <!-- /HEADER CONTENT -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-navbar -->
+    
+    <div id="segment-breadcrumb" class="segmnt">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li title="Healthcare Associated Infection Reports FHIR SSI Prototype"><a href="index.html"><b>Healthcare Associated Infection Reports FHIR SSI Prototype</b></a></li>
+          
+          
+          <li><b>nhsn-drug-susceptibility-tests-code Details</b></li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div id="segment-content" class="segment">
+      <div class="container">
+        <div class="row">
+          <div class="inner-wrapper">
+            <div class="col-12">
+              <ul class="nav nav-tabs">
+                <li><a href="ValueSet-nhsn-drug-susceptibility-tests-code.html">Content</a></li>
+                <li class=""><a href="ValueSet-nhsn-drug-susceptibility-tests-code.xml.html">XML</a></li>
+                <li class="active"><a href="ValueSet-nhsn-drug-susceptibility-tests-code.json.html">JSON</a></li>
+              </ul>
+              
+              <br/>
+              <pre class="json">
+{
+  "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.id">id</a>" : "nhsn-drug-susceptibility-tests-code",
+  "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7-fhir.github.io/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7-fhir.github.io/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;NHSNDrugSusceptibilityTestsCode&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Code System: LOINC 2.16.840.1.113883.6.1 or cdcNHSN 2.16.840.1.113883.6.277&lt;/p&gt;
+&lt;p&gt;A full listing of codes can be found in the hai_voc.xls file provided with this package.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:2.16.840.1.113883.6.1&lt;/code&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18855-7&lt;/td&gt;&lt;td&gt;5-fluorocytosine Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18860-7&lt;/td&gt;&lt;td&gt;Amikacin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18862-3&lt;/td&gt;&lt;td&gt;Amoxicillin+Clav Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18864-9&lt;/td&gt;&lt;td&gt;Ampicillin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18865-6&lt;/td&gt;&lt;td&gt;Ampicillin+Sulbac Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;57095-2&lt;/td&gt;&lt;td&gt;Anidulafungin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18866-4&lt;/td&gt;&lt;td&gt;Azithromycin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18868-0&lt;/td&gt;&lt;td&gt;Aztreonam Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;32378-2&lt;/td&gt;&lt;td&gt;Caspofungin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18878-9&lt;/td&gt;&lt;td&gt;Cefazolin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18879-7&lt;/td&gt;&lt;td&gt;Cefepime Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18886-2&lt;/td&gt;&lt;td&gt;Cefotaxime Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18887-0&lt;/td&gt;&lt;td&gt;Cefotetan Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18888-8&lt;/td&gt;&lt;td&gt;Cefoxitin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18893-8&lt;/td&gt;&lt;td&gt;Ceftazidime Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18895-3&lt;/td&gt;&lt;td&gt;Ceftriaxone Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;35783-0&lt;/td&gt;&lt;td&gt;Cefuroxime Oral Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18900-1&lt;/td&gt;&lt;td&gt;Cephalothin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18903-5&lt;/td&gt;&lt;td&gt;Chloramphen Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18906-8&lt;/td&gt;&lt;td&gt;Ciprofloxacin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18907-6&lt;/td&gt;&lt;td&gt;Clarithro Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18908-4&lt;/td&gt;&lt;td&gt;Clindamycin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18912-6&lt;/td&gt;&lt;td&gt;Colistin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;35789-7&lt;/td&gt;&lt;td&gt;Daptomycin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;60535-2&lt;/td&gt;&lt;td&gt;Doripenem Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18917-5&lt;/td&gt;&lt;td&gt;Doxycycline Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;35802-8&lt;/td&gt;&lt;td&gt;Ertapenem Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18919-1&lt;/td&gt;&lt;td&gt;Erythromycin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18924-1&lt;/td&gt;&lt;td&gt;Fluconazole Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31038-3&lt;/td&gt;&lt;td&gt;Gatifloxacin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18928-2&lt;/td&gt;&lt;td&gt;Gentamicin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18929-0&lt;/td&gt;&lt;td&gt;Gentamicin Synergy Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18932-4&lt;/td&gt;&lt;td&gt;Imipenem Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;32603-3&lt;/td&gt;&lt;td&gt;Itraconaz Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;20629-2&lt;/td&gt;&lt;td&gt;L-Floxacin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;29258-1&lt;/td&gt;&lt;td&gt;Linezolid Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18943-1&lt;/td&gt;&lt;td&gt;Meropenem Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18945-6&lt;/td&gt;&lt;td&gt;Methicillin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18946-4&lt;/td&gt;&lt;td&gt;Metronidazole Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18948-0&lt;/td&gt;&lt;td&gt;Minocycline Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31039-1&lt;/td&gt;&lt;td&gt;Moxifloxacin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18959-7&lt;/td&gt;&lt;td&gt;Ofloxacin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18961-3&lt;/td&gt;&lt;td&gt;Oxacillin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18965-4&lt;/td&gt;&lt;td&gt;Penicillin G Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18969-6&lt;/td&gt;&lt;td&gt;Piperacillin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18970-4&lt;/td&gt;&lt;td&gt;Piperacillin+Tazobac Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18972-0&lt;/td&gt;&lt;td&gt;Polymyxin B Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;23640-6&lt;/td&gt;&lt;td&gt;Quinupristin+Dalfoprist Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18974-6&lt;/td&gt;&lt;td&gt;Rifampin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18983-7&lt;/td&gt;&lt;td&gt;Streptomycin High Pot Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18993-6&lt;/td&gt;&lt;td&gt;Tetracycline Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18994-4&lt;/td&gt;&lt;td&gt;Ticarcillin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18995-1&lt;/td&gt;&lt;td&gt;Ticarcillin+Clav Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;42357-4&lt;/td&gt;&lt;td&gt;Tigecycline Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18998-5&lt;/td&gt;&lt;td&gt;TMP SMX Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18996-9&lt;/td&gt;&lt;td&gt;Tobramycin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;19000-9&lt;/td&gt;&lt;td&gt;Vancomycin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;32379-0&lt;/td&gt;&lt;td&gt;Voriconazole Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18955-5&lt;/td&gt;&lt;td&gt;Nitrofurantoin&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18861-5&lt;/td&gt;&lt;td&gt;Amoxicillin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;35816-8 &lt;/td&gt;&lt;td&gt;Gemifloxacin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18939-9&lt;/td&gt;&lt;td&gt;Lomefloxacin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18956-3&lt;/td&gt;&lt;td&gt;Norfloxacin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18966-2&lt;/td&gt;&lt;td&gt;Penicillin V Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;54188-8�&lt;/td&gt;&lt;td&gt;Posaconazole Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18982-9 &lt;/td&gt;&lt;td&gt;Streptomycin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18986-0&lt;/td&gt;&lt;td&gt;Sulfisoxaz Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;35845-7�&lt;/td&gt;&lt;td&gt;Telithromycin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;18997-7&lt;/td&gt;&lt;td&gt;Trimethoprim Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:2.16.840.1.113883.6.277&lt;/code&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2526-2&lt;/td&gt;&lt;td&gt;Micafungin Susc Islt&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-tests-code",
+  "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.name">name</a>" : "NHSNDrugSusceptibilityTestsCode",
+  "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.date">date</a>" : "2017-09-23T15:59:00+10:00",
+  "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.description">description</a>" : "Code System: LOINC 2.16.840.1.113883.6.1 or cdcNHSN 2.16.840.1.113883.6.277
+
+A full listing of codes can be found in the hai_voc.xls file provided with this package.",
+  "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:2.16.840.1.113883.6.1",
+        "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18855-7",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "5-fluorocytosine Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18860-7",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Amikacin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18862-3",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Amoxicillin+Clav Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18864-9",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ampicillin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18865-6",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ampicillin+Sulbac Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "57095-2",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Anidulafungin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18866-4",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Azithromycin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18868-0",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Aztreonam Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "32378-2",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Caspofungin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18878-9",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cefazolin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18879-7",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cefepime Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18886-2",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cefotaxime Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18887-0",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cefotetan Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18888-8",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cefoxitin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18893-8",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ceftazidime Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18895-3",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ceftriaxone Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "35783-0",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cefuroxime Oral Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18900-1",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cephalothin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18903-5",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Chloramphen Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18906-8",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ciprofloxacin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18907-6",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Clarithro Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18908-4",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Clindamycin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18912-6",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Colistin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "35789-7",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Daptomycin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "60535-2",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Doripenem Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18917-5",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Doxycycline Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "35802-8",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ertapenem Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18919-1",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Erythromycin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18924-1",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Fluconazole Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "31038-3",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Gatifloxacin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18928-2",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Gentamicin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18929-0",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Gentamicin Synergy Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18932-4",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Imipenem Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "32603-3",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Itraconaz Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "20629-2",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "L-Floxacin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "29258-1",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Linezolid Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18943-1",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Meropenem Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18945-6",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Methicillin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18946-4",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Metronidazole Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18948-0",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Minocycline Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "31039-1",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Moxifloxacin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18959-7",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ofloxacin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18961-3",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Oxacillin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18965-4",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Penicillin G Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18969-6",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Piperacillin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18970-4",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Piperacillin+Tazobac Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18972-0",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Polymyxin B Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "23640-6",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Quinupristin+Dalfoprist Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18974-6",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rifampin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18983-7",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Streptomycin High Pot Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18993-6",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tetracycline Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18994-4",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ticarcillin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18995-1",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ticarcillin+Clav Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "42357-4",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tigecycline Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18998-5",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "TMP SMX Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18996-9",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Tobramycin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "19000-9",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Vancomycin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "32379-0",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Voriconazole Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18955-5",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Nitrofurantoin"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18861-5",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Amoxicillin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "35816-8 ",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Gemifloxacin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18939-9",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Lomefloxacin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18956-3",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Norfloxacin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18966-2",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Penicillin V Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "54188-8�",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Posaconazole Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18982-9 ",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Streptomycin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18986-0",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sulfisoxaz Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "35845-7�",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Telithromycin Susc Islt"
+          },
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "18997-7",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Trimethoprim Susc Islt"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:2.16.840.1.113883.6.277",
+        "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2526-2",
+            "<a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Micafungin Susc Islt"
+          }
+        ]
+      }
+    ]
+  }
+}</pre>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="segment-footer" class="segment">  <!-- segment-footer -->
+  <div class="container">  <!-- container -->
+   <div class="inner-wrapper">
+    <p>
+      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Sat, Sep 23, 2017 15:59+1000. <a href="qa.html">QA Page</a>
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="http://hl7.org/fhir/search.cfm">Search <img style="text-align: baseline" src="external.png"/></a> |
+          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/history.html">Version History</a> |
+          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/toc.html">Table of Contents</a> |
+          <a style="color: #81BEF7" rel="license" href="http://hl7-fhir.github.io/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+          <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img style="text-align: baseline" src="external.png"/></a>
+        </span>
+        </p>
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-post-footer -->
+
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="jquery-3.2.1.min.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="jquery-ui.min.js"> </script>
+<script src="dist/js/bootstrap.min.js"> </script>
+<script src="assets/js/respond.min.js"> </script>
+
+<script src="assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+ 
+  </body>
+</html>

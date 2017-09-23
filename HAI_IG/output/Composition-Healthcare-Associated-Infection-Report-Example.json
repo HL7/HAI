@@ -1,0 +1,51 @@
+{
+  "resourceType": "Composition",
+  "id": "Healthcare-Associated-Infection-Report-Example",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2017-09-15T08:16:14Z",
+    "profile": [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/healthcare-associated-infection-report"
+    ]
+  },
+  "language": "en-US",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>Healthcare Associated Infection Report</p>\n            <p>Managed by Community Health and Hospitals</p>\n            <p>This profile further constraints the C-CDA on FHIR US Realm Header profile. \n                It specifies the generic constraints for all NHSN Healthcare Associated Infection Reports. \n                Further constraints are found in the specialization profiles for single-patient and \n                population summary reports, and in the profiles for specific report types..</p>\n        </div>"
+  },
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "11111111"
+  },
+  "status": "preliminary",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "51897-7",
+        "display": "Healthcare Associated Infection Report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
+    "display": "Henry Jones"
+  },
+  "date": "2017-09-15T09:10:14Z",
+  "author": [
+    {
+      "reference": "Practitioner/practitioner-1",
+      "display": "Ronald Bone, MD"
+    },
+    {
+      "reference": "https://www.hl7.org/fhir/device-example-ihe-pcd.xml",
+      "display": "Vital Signs Monitor"
+    }
+  ],
+  "title": "Healthcare Associated Infection Report",
+  "confidentiality": "N",
+  "custodian": {
+    "reference": "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian",
+    "display": "Community Health and Hospitals"
+  }
+}

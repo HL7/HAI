@@ -1,0 +1,31 @@
+{
+  "resourceType": "Organization",
+  "id": "hl7",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>active</b>: true</p><p><b>name</b>: Community Health and Hospitals</p><p><b>telecom</b>: ph: (+1) 555-555-1002, fax: (+1) 555-555-1005</p><p><b>address</b>: 1002 Healthcare Drive Portland OR 99123 USA </p></div>"
+  },
+  "active": true,
+  "name": "Community Health and Hospitals",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(+1) 555-555-1002"
+    },
+    {
+      "system": "fax",
+      "value": "(+1) 555-555-1005"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "1002 Healthcare Drive"
+      ],
+      "city": "Portland",
+      "state": "OR",
+      "postalCode": "99123",
+      "country": "USA"
+    }
+  ]
+}

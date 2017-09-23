@@ -1,0 +1,183 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/QuestionnaireResponse/ssi-questionnaire-response> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ssi-questionnaire-response"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre> \n              Response to the Surgical Site Infection Report Questionnaire\n          </pre>\n    </div>"
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:Reference.reference [ fhir:value "ssi-questionnaire" ]
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient>;
+         fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" ]
+       ]
+     ];
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "6706" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Patient" ]
+  ], [
+     fhir:index 1;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "1" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Date of Event" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2017-09-15"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "2" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "NHSN Procedure Code" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         a sct:2108-9;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "2108-9" ];
+         fhir:Coding.display [ fhir:value "Appendix surgery" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "3" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "ICD-10-PCS or CPT Procedure Code" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         fhir:Coding.system [ fhir:value "https://icd.codes" ];
+         fhir:Coding.code [ fhir:value "0BDJ0ZZ" ];
+         fhir:Coding.display [ fhir:value "Excision of Appendix, Open Approach" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "4" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Date of Procedure" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2017-09-15"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "5" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Outpatient Procedure" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         fhir:Coding.system [ fhir:value "HL7 ActCode" ];
+         fhir:Coding.code [ fhir:value "AMB" ];
+         fhir:Coding.display [ fhir:value "Outpatient" ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "6" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "MDRO Infection Surveillance" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "7" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Date Admitted to Facility" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2017-09-15"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "8" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Location" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.259" ];
+         fhir:Coding.code [ fhir:value "1166-8" ];
+         fhir:Coding.display [ fhir:value "Ambulatory Surgery Center" ]
+       ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "9392" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Pathogen" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "3745" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Number" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueInteger [ fhir:value "1"^^xsd:integer ]
+       ];
+       fhir:QuestionnaireResponse.item.item [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "3139" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "NHSN Pathogen" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueCoding [
+             a sct:43492007;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+             fhir:Coding.code [ fhir:value "43492007" ];
+             fhir:Coding.display [ fhir:value "Group B streptococcus" ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "4656" ];
+         fhir:QuestionnaireResponse.item.text [ fhir:value "Susceptibility Group" ];
+         fhir:QuestionnaireResponse.item.item [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "6192" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "NHSN Drug Susceptibility Test" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               fhir:Coding.system [ fhir:value "https://loinc.org/" ];
+               fhir:Coding.code [ fhir:value "18982-9" ];
+               fhir:Coding.display [ fhir:value "Streptomycin Susc Islt" ]
+             ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:QuestionnaireResponse.item.linkId [ fhir:value "8204" ];
+           fhir:QuestionnaireResponse.item.text [ fhir:value "NHSN Drug Susceptibility Finding" ];
+           fhir:QuestionnaireResponse.item.answer [
+             fhir:index 0;
+             fhir:QuestionnaireResponse.item.answer.valueCoding [
+               fhir:Coding.system [ fhir:value "https://www.hl7.org/fhir/valueset-observation-interpretation.html" ];
+               fhir:Coding.code [ fhir:value "S" ];
+               fhir:Coding.display [ fhir:value "Susceptible" ]
+             ]
+           ]
+         ]
+       ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/QuestionnaireResponse/ssi-questionnaire-response.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/hai/QuestionnaireResponse/ssi-questionnaire-response.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nhsn-asa-class-code",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSNASAClassCode</h2><div><p>Code System: SNOMED CT 2.16.840.1.113883.6.96</p>\n<p>A full listing of codes can be found in the hai_voc.xls file provided with this package.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.96</code><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>413495001</td><td>Normally healthy patient</td><td/></tr><tr><td>413496000</td><td>Patient with mild systemic disease</td><td/></tr><tr><td>413497009</td><td>Patient with severe systemic disease, not incapacitating</td><td/></tr><tr><td>413498004</td><td>Patient with incapacitating systemic disease, constant threat to life</td><td/></tr><tr><td>413499007</td><td>Moribund patient, &amp;lt; 24-hour life expectancy</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-asa-class-code",
+  "name": "NHSNASAClassCode",
+  "status": "active",
+  "date": "2017-09-23T15:59:00+10:00",
+  "description": "Code System: SNOMED CT 2.16.840.1.113883.6.96\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.6.96",
+        "concept": [
+          {
+            "code": "413495001",
+            "display": "Normally healthy patient"
+          },
+          {
+            "code": "413496000",
+            "display": "Patient with mild systemic disease"
+          },
+          {
+            "code": "413497009",
+            "display": "Patient with severe systemic disease, not incapacitating"
+          },
+          {
+            "code": "413498004",
+            "display": "Patient with incapacitating systemic disease, constant threat to life"
+          },
+          {
+            "code": "413499007",
+            "display": "Moribund patient, &lt; 24-hour life expectancy"
+          }
+        ]
+      }
+    ]
+  }
+}

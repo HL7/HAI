@@ -1,0 +1,868 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Healthcare Associated Infection Reports FHIR SSI Prototype</title>
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+    
+    <style type="text/css">
+      pre{
+          width: auto !important;
+      }
+    </style>
+  </head>
+  <body>
+     <div id="segment-header" class="segment">  <!-- segment-header -->
+  <div class="container">  <!-- container -->
+   <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/> </a>
+   <div id="hl7-status">
+    <b>Current Build</b> 
+   </div>
+
+   <div id="hl7-nav">
+     <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+     <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
+    </a>
+   </div>
+   <div id="hl7-nav"><a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a></div>
+  </div>
+  <div class="container">  <!-- container -->
+ </div></div>  <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+      <a class="navbar-brand hidden" href="http://hl7-fhir.github.io/index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+              
+        <li><a href="http://hl7-fhir.github.io/index.html">Home</a></li>
+        <li><a href="http://hl7-fhir.github.io/documentation.html">Documentation</a></li>
+        <li><a href="http://hl7-fhir.github.io/modules.html">Modules</a></li>
+        <li><a href="http://hl7-fhir.github.io/resourcelist.html">Resources</a></li>
+        <li><a href="http://hl7-fhir.github.io/profilelist.html">Profiles</a></li>
+        <li><a href="http://hl7-fhir.github.io/extensibility-registry.html">Extensions</a></li>
+        <li><a href="http://hl7-fhir.github.io/operationslist.html">Operations</a></li>
+
+      </ul>
+     </div>  <!-- /.nav-collapse -->
+    </div>  <!-- /.container -->
+   </nav>  <!-- /.navbar -->
+
+  <!-- /HEADER CONTENT -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-navbar -->
+    
+    <div id="segment-breadcrumb" class="segmnt">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li title="Healthcare Associated Infection Reports FHIR SSI Prototype"><a href="index.html"><b>Healthcare Associated Infection Reports FHIR SSI Prototype</b></a></li>
+          
+          
+          <li><b>3347 Details</b></li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div id="segment-content" class="segment">
+      <div class="container">
+        <div class="row">
+          <div class="inner-wrapper">
+            <div class="col-12">
+              <ul class="nav nav-tabs">
+                <li><a href="ImplementationGuide-3347.html">Content</a></li>
+                <li class=""><a href="ImplementationGuide-3347.xml.html">XML</a></li>
+                <li class="active"><a href="ImplementationGuide-3347.json.html">JSON</a></li>
+              </ul>
+              
+              <br/>
+              <pre class="json">
+{
+  "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide">resourceType</a>" : "ImplementationGuide",
+  "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.id">id</a>" : "3347",
+  "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.text">text</a>" : {
+    "<a href="http://hl7-fhir.github.io/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7-fhir.github.io/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;Healthcare Associated Infection Reports FHIR SSI Prototype&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://hl7.org/fhir/us/hai/ImplementationGuide/3347&lt;/pre&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.url">url</a>" : "http://hl7.org/fhir/us/hai/ImplementationGuide/3347",
+  "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.name">name</a>" : "Healthcare Associated Infection Reports FHIR SSI Prototype",
+  "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.status">status</a>" : "draft",
+  "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package">package</a>" : [
+    {
+      "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.name">name</a>" : "Profiles in this Implementation Guide",
+      "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource">resource</a>" : [
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-hai-custodian.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-custodian",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Custodian"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-hai-patient.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-patient",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Patient"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-hai-healthcare-facility.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-healthcare-facility",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Healthcare Facility"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-hai-ssi-encounter.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-ssi-encounter",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI SSI Encounter"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-healthcare-associated-infection-report.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/healthcare-associated-infection-report",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Healthcare Associated Infection Report"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-hai-single-person-generic-constraints.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-single-person-generic-constraints",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Single-Person Report Generic Constraints"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-hai-procedure-denominator-report.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-procedure-denominator-report",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Procedure Denominator Report"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-hai-surgical-site-infection-report-ssi.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-surgical-site-infection-report-ssi",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Surgical Site Infection Report (SSI)"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-hai-procedure-denominator-encounter.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-procedure-denominator-encounter",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Procedure Denominator Encounter"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-infection-contributed-to-death.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/infection-contributed-to-death",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "infection-contributed-to-death"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-infection-present-at-time-of-surgery.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/infection-present-at-time-of-surgery",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "infection-present-at-time-of-surgery"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-occasion-of-hai-detection.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/occasion-of-hai-detection",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "occasion-of-hai-detection"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-mdro-cdi-observation.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/mdro-cdi-observation",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "MDRO/CDI Observation"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-pathogen-identified.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/pathogen-identified",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Pathogen Identified"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-asa-class.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/asa-class",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "ASA Class"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-diabetes-melitus.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/diabetes-melitus",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Diabetes Melitus"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-infection-condition.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/infection-condition",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Infection Condition"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-procedure-details.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/procedure-details",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Procedure Details"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-anesthesia-delivered.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/anesthesia-delivered",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Anesthesia Delivered"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-asa-class-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-asa-class-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNASAClassCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-infection-type-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-infection-type-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNInfectionTypeCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-infection-condition-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-infection-condition-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNInfectionConditionCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-criterion-of-diagnosis-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-criterion-of-diagnosis-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNCriterionOfDiagnosisCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-encounter-type-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-encounter-type-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNEncounterTypeCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-occasion-of-detection.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-occasion-of-detection",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNOccasionOfDetectionCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-healthcare-service-location-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-healthcare-service-location-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNHealthcareServiceLocationCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-pathogen-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-pathogen-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNPathogenCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-pathogen-ranking.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-pathogen-ranking",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNPathogenRanking"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-drug-susceptibility-tests-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-drug-susceptibility-tests-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNDrugSusceptibilityTestsCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-drug-susceptibility-finding-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-drug-susceptibility-finding-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNDrugSusceptibilityFindingCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-procedure-category-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-procedure-category-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNProcedureCategoryCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "ValueSet-nhsn-spinal-fusion-approach-code.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "ValueSet/nhsn-spinal-fusion-approach-code",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "NHSNSpinalFusionApproachCode"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Questionnaire-ssi-questionnaire.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Questionnaire/ssi-questionnaire",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "SSI-Questionnaire.xml"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "QuestionnaireResponse-ssi-questionnaire-response.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : false,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "QuestionnaireResponse/ssi-questionnaire-response",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "SSI-QuestionnaireResponse.xml"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Composition-HAI-Procedure-Denominator-Report-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Composition/HAI-Procedure-Denominator-Report-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI-Procedure-Denominator-Report-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-procedure-denominator-report",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Procedure Denominator Report"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Composition-HAI-Single-Person-Report-Generic-Constraints-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Composition/HAI-Single-Person-Report-Generic-Constraints-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI-Single-Person-Report-Generic-Constraints-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-single-person-generic-constraints",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Single-Person Report Generic Constraints"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Composition-HAI-Surgical-Site-Infection-Report-SSI-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Composition/HAI-Surgical-Site-Infection-Report-SSI-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI-Surgical-Site-Infection-Report-SSI-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-surgical-site-infection-report-ssi",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Surgical Site Infection Report (SSI)"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Composition-Healthcare-Associated-Infection-Report-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Composition/Healthcare-Associated-Infection-Report-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Healthcare-Associated-Infection-Report-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/healthcare-associated-infection-report",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Healthcare Associated Infection Report"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Condition-ASA-Class-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Condition/ASA-Class-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "ASA-Class-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/asa-class",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "ASA Class"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Condition-Diabetes-Melitus-Condition-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Condition/Diabetes-Melitus-Condition-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Diabetes-Melitus-Condition-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/diabetes-melitus",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Diabetes Melitus"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Condition-Infection-Condition-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Condition/Infection-Condition-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Infection-Condition-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/infection-condition",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Infection Condition"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Encounter-HAI-Procedure-Denominator-Encounter-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Encounter/HAI-Procedure-Denominator-Encounter-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI-Procedure-Denominator-Encounter-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-procedure-denominator-encounter",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Procedure Denominator Encounter"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Encounter-HAI-SSI-Encounter-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Encounter/HAI-SSI-Encounter-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI-SSI-Encounter-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-ssi-encounter",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI SSI Encounter"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Location-HAI-Healthcare-Facility-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Location/HAI-Healthcare-Facility-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-healthcare-facility",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Healthcare Facility"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Observation-MDRO-CDI-Observation-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Observation/MDRO-CDI-Observation-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "MDRO-CDI-Observation-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/mdro-cdi-observation",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "MDRO/CDI Observation"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Observation-Pathogen-Identified-Example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Observation/Pathogen-Identified-Example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Pathogen-Identified-Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/pathogen-identified",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Pathogen Identified"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Organization-hl7.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Organization/hl7",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "Community Health and Hospitals"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-custodian",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Custodian"
+          }
+        },
+        {
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.extension">extension</a>" : [
+            {
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueUri</a>" : "Patient-example.html"
+            }
+          ],
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.example">example</a>" : true,
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.source[x]">sourceReference</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/example",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "U.S._DAF_Patient_Profile_Example"
+          },
+          "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.package.resource.exampleFor">exampleFor</a>" : {
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/hai-patient",
+            "<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.display">display</a>" : "HAI Patient"
+          }
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.page">page</a>" : {
+    "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.page.source">source</a>" : "http://test.com/IG/View/3347",
+    "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.page.title">title</a>" : "Healthcare Associated Infection Reports FHIR SSI Prototype",
+    "<a href="http://hl7-fhir.github.io/implementationguide.html#ImplementationGuide.page.kind">kind</a>" : "page"
+  }
+}</pre>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="segment-footer" class="segment">  <!-- segment-footer -->
+  <div class="container">  <!-- container -->
+   <div class="inner-wrapper">
+    <p>
+      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Sat, Sep 23, 2017 15:59+1000. <a href="qa.html">QA Page</a>
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="http://hl7.org/fhir/search.cfm">Search <img style="text-align: baseline" src="external.png"/></a> |
+          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/history.html">Version History</a> |
+          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/toc.html">Table of Contents</a> |
+          <a style="color: #81BEF7" rel="license" href="http://hl7-fhir.github.io/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+          <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img style="text-align: baseline" src="external.png"/></a>
+        </span>
+        </p>
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-post-footer -->
+
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="jquery-3.2.1.min.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="jquery-ui.min.js"> </script>
+<script src="dist/js/bootstrap.min.js"> </script>
+<script src="assets/js/respond.min.js"> </script>
+
+<script src="assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+ 
+  </body>
+</html>

@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/Observation/MDRO-CDI-Observation-Example> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MDRO-CDI-Observation-Example"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2017-09-15T08:16:14Z"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n                <b> id</b>MDRO-CDI-Observation-Example\n            \n            </p>\n            <p>\n                <b> status</b> : final\n            \n            </p>\n            <p>\n                <b> code</b> : Blood culture \n                \n                \n                <span> (Details :{cdcNHSN code '2318-4' = 'MDRO Organism or C.difficile Infection'})</span>\n            </p>\n            <p>\n                <b> value</b> : true\n            \n            </p>\n        </div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://phinvads.cdc.gov/vads" ];
+       fhir:Coding.code [ fhir:value "2318-4" ];
+       fhir:Coding.display [ fhir:value "MDRO Organism or C.difficile Infection" ]
+     ]
+  ];
+  fhir:Observation.valueBoolean [ fhir:value "true"^^xsd:boolean] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/Observation/MDRO-CDI-Observation-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/hai/Observation/MDRO-CDI-Observation-Example.ttl> .
+
+# -------------------------------------------------------------------------------------
+

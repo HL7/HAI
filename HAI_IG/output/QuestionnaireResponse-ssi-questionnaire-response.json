@@ -1,0 +1,179 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "ssi-questionnaire-response",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre> \n              Response to the Surgical Site Infection Report Questionnaire\n          </pre>\n    </div>"
+  },
+  "questionnaire": {
+    "reference": "ssi-questionnaire"
+  },
+  "status": "completed",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+          "valueReference": {
+            "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"
+          }
+        }
+      ],
+      "linkId": "6706",
+      "text": "Patient"
+    },
+    {
+      "linkId": "1",
+      "text": "Date of Event",
+      "answer": [
+        {
+          "valueDate": "2017-09-15"
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "NHSN Procedure Code",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "2108-9",
+            "display": "Appendix surgery"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "ICD-10-PCS or CPT Procedure Code",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://icd.codes",
+            "code": "0BDJ0ZZ",
+            "display": "Excision of Appendix, Open Approach"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Date of Procedure",
+      "answer": [
+        {
+          "valueDate": "2017-09-15"
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Outpatient Procedure",
+      "answer": [
+        {
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "HL7 ActCode",
+            "code": "AMB",
+            "display": "Outpatient"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "MDRO Infection Surveillance",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "text": "Date Admitted to Facility",
+      "answer": [
+        {
+          "valueDate": "2017-09-15"
+        }
+      ]
+    },
+    {
+      "linkId": "8",
+      "text": "Location",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.259",
+            "code": "1166-8",
+            "display": "Ambulatory Surgery Center"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "9392",
+      "text": "Pathogen",
+      "item": [
+        {
+          "linkId": "3745",
+          "text": "Number",
+          "answer": [
+            {
+              "valueInteger": 1
+            }
+          ],
+          "item": [
+            {
+              "linkId": "3139",
+              "text": "NHSN Pathogen",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "43492007",
+                    "display": "Group B streptococcus"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "4656",
+              "text": "Susceptibility Group",
+              "item": [
+                {
+                  "linkId": "6192",
+                  "text": "NHSN Drug Susceptibility Test",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "https://loinc.org/",
+                        "code": "18982-9",
+                        "display": "Streptomycin Susc Islt"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "8204",
+                  "text": "NHSN Drug Susceptibility Finding",
+                  "answer": [
+                    {
+                      "valueCoding": {
+                        "system": "https://www.hl7.org/fhir/valueset-observation-interpretation.html",
+                        "code": "S",
+                        "display": "Susceptible"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

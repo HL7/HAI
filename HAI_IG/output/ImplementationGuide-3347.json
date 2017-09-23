@@ -1,0 +1,702 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "3347",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Healthcare Associated Infection Reports FHIR SSI Prototype</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/hai/ImplementationGuide/3347</pre></div>"
+  },
+  "url": "http://hl7.org/fhir/us/hai/ImplementationGuide/3347",
+  "name": "Healthcare Associated Infection Reports FHIR SSI Prototype",
+  "status": "draft",
+  "package": [
+    {
+      "name": "Profiles in this Implementation Guide",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-custodian.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-custodian",
+            "display": "HAI Custodian"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-patient.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-patient",
+            "display": "HAI Patient"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-healthcare-facility.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-healthcare-facility",
+            "display": "HAI Healthcare Facility"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-ssi-encounter.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-ssi-encounter",
+            "display": "HAI SSI Encounter"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-healthcare-associated-infection-report.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/healthcare-associated-infection-report",
+            "display": "Healthcare Associated Infection Report"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-single-person-generic-constraints.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-single-person-generic-constraints",
+            "display": "HAI Single-Person Report Generic Constraints"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-procedure-denominator-report.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-procedure-denominator-report",
+            "display": "HAI Procedure Denominator Report"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-surgical-site-infection-report-ssi.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-surgical-site-infection-report-ssi",
+            "display": "HAI Surgical Site Infection Report (SSI)"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-procedure-denominator-encounter.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-procedure-denominator-encounter",
+            "display": "HAI Procedure Denominator Encounter"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-infection-contributed-to-death.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/infection-contributed-to-death",
+            "display": "infection-contributed-to-death"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-infection-present-at-time-of-surgery.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/infection-present-at-time-of-surgery",
+            "display": "infection-present-at-time-of-surgery"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-occasion-of-hai-detection.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/occasion-of-hai-detection",
+            "display": "occasion-of-hai-detection"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-mdro-cdi-observation.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/mdro-cdi-observation",
+            "display": "MDRO/CDI Observation"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-pathogen-identified.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/pathogen-identified",
+            "display": "Pathogen Identified"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-asa-class.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/asa-class",
+            "display": "ASA Class"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-diabetes-melitus.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/diabetes-melitus",
+            "display": "Diabetes Melitus"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-infection-condition.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/infection-condition",
+            "display": "Infection Condition"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-procedure-details.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/procedure-details",
+            "display": "Procedure Details"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-anesthesia-delivered.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/anesthesia-delivered",
+            "display": "Anesthesia Delivered"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-asa-class-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-asa-class-code",
+            "display": "NHSNASAClassCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-infection-type-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-infection-type-code",
+            "display": "NHSNInfectionTypeCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-infection-condition-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-infection-condition-code",
+            "display": "NHSNInfectionConditionCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-criterion-of-diagnosis-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-criterion-of-diagnosis-code",
+            "display": "NHSNCriterionOfDiagnosisCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-encounter-type-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-encounter-type-code",
+            "display": "NHSNEncounterTypeCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-occasion-of-detection.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-occasion-of-detection",
+            "display": "NHSNOccasionOfDetectionCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-healthcare-service-location-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-healthcare-service-location-code",
+            "display": "NHSNHealthcareServiceLocationCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-pathogen-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-pathogen-code",
+            "display": "NHSNPathogenCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-pathogen-ranking.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-pathogen-ranking",
+            "display": "NHSNPathogenRanking"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-drug-susceptibility-tests-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-drug-susceptibility-tests-code",
+            "display": "NHSNDrugSusceptibilityTestsCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-drug-susceptibility-finding-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-drug-susceptibility-finding-code",
+            "display": "NHSNDrugSusceptibilityFindingCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-procedure-category-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-procedure-category-code",
+            "display": "NHSNProcedureCategoryCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-spinal-fusion-approach-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-spinal-fusion-approach-code",
+            "display": "NHSNSpinalFusionApproachCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Questionnaire-ssi-questionnaire.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "Questionnaire/ssi-questionnaire",
+            "display": "SSI-Questionnaire.xml"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-ssi-questionnaire-response.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/ssi-questionnaire-response",
+            "display": "SSI-QuestionnaireResponse.xml"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Composition-HAI-Procedure-Denominator-Report-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Composition/HAI-Procedure-Denominator-Report-Example",
+            "display": "HAI-Procedure-Denominator-Report-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-procedure-denominator-report",
+            "display": "HAI Procedure Denominator Report"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Composition-HAI-Single-Person-Report-Generic-Constraints-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Composition/HAI-Single-Person-Report-Generic-Constraints-Example",
+            "display": "HAI-Single-Person-Report-Generic-Constraints-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-single-person-generic-constraints",
+            "display": "HAI Single-Person Report Generic Constraints"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Composition-HAI-Surgical-Site-Infection-Report-SSI-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Composition/HAI-Surgical-Site-Infection-Report-SSI-Example",
+            "display": "HAI-Surgical-Site-Infection-Report-SSI-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-surgical-site-infection-report-ssi",
+            "display": "HAI Surgical Site Infection Report (SSI)"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Composition-Healthcare-Associated-Infection-Report-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Composition/Healthcare-Associated-Infection-Report-Example",
+            "display": "Healthcare-Associated-Infection-Report-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/healthcare-associated-infection-report",
+            "display": "Healthcare Associated Infection Report"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Condition-ASA-Class-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Condition/ASA-Class-Example",
+            "display": "ASA-Class-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/asa-class",
+            "display": "ASA Class"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Condition-Diabetes-Melitus-Condition-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Condition/Diabetes-Melitus-Condition-Example",
+            "display": "Diabetes-Melitus-Condition-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/diabetes-melitus",
+            "display": "Diabetes Melitus"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Condition-Infection-Condition-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Condition/Infection-Condition-Example",
+            "display": "Infection-Condition-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/infection-condition",
+            "display": "Infection Condition"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Encounter-HAI-Procedure-Denominator-Encounter-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Encounter/HAI-Procedure-Denominator-Encounter-Example",
+            "display": "HAI-Procedure-Denominator-Encounter-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-procedure-denominator-encounter",
+            "display": "HAI Procedure Denominator Encounter"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Encounter-HAI-SSI-Encounter-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Encounter/HAI-SSI-Encounter-Example",
+            "display": "HAI-SSI-Encounter-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-ssi-encounter",
+            "display": "HAI SSI Encounter"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Location-HAI-Healthcare-Facility-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Location/HAI-Healthcare-Facility-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-healthcare-facility",
+            "display": "HAI Healthcare Facility"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-MDRO-CDI-Observation-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/MDRO-CDI-Observation-Example",
+            "display": "MDRO-CDI-Observation-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/mdro-cdi-observation",
+            "display": "MDRO/CDI Observation"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Observation-Pathogen-Identified-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Observation/Pathogen-Identified-Example",
+            "display": "Pathogen-Identified-Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/pathogen-identified",
+            "display": "Pathogen Identified"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Organization-hl7.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Organization/hl7",
+            "display": "Community Health and Hospitals"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-custodian",
+            "display": "HAI Custodian"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Patient-example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Patient/example",
+            "display": "U.S._DAF_Patient_Profile_Example"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-patient",
+            "display": "HAI Patient"
+          }
+        }
+      ]
+    }
+  ],
+  "page": {
+    "source": "http://test.com/IG/View/3347",
+    "title": "Healthcare Associated Infection Reports FHIR SSI Prototype",
+    "kind": "page"
+  }
+}

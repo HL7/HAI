@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/Composition/HAI-Procedure-Denominator-Report-Example> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HAI-Procedure-Denominator-Report-Example"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2017-09-15T08:16:14Z"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-report";
+       fhir:index 0
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "en-US"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>Denominator for Procedure Report</p>\n            <p>Managed by Community Health and Hospitals</p>\n            <p>This report records a procedure performed.  The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).\n                The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports </p>\n        </div>"
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "12345" ]
+  ];
+  fhir:Composition.status [ fhir:value "preliminary"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:51897-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "51897-7" ];
+       fhir:Coding.display [ fhir:value "Healthcare Associated Infection Report" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" ];
+     fhir:Reference.display [ fhir:value "Henry Jones" ]
+  ];
+  fhir:Composition.encounter [
+     fhir:link <http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-encounter>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-encounter" ]
+  ];
+  fhir:Composition.date [ fhir:value "2017-09-15T09:10:14Z"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/hai/Practitioner/practitioner-1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ];
+     fhir:Reference.display [ fhir:value "Ronald Bone, MD" ]
+  ], [
+     fhir:index 1;
+     fhir:link <https://www.hl7.org/fhir/device-example-ihe-pcd.xml>;
+     fhir:Reference.reference [ fhir:value "https://www.hl7.org/fhir/device-example-ihe-pcd.xml" ];
+     fhir:Reference.display [ fhir:value "Vital Signs Monitor" ]
+  ];
+  fhir:Composition.title [ fhir:value "Denominator for Procedure Report"];
+  fhir:Composition.attester [
+     fhir:index 0;
+     fhir:Composition.attester.mode [
+       fhir:value "legal";
+       fhir:index 0
+     ];
+     fhir:Composition.attester.time [ fhir:value "2017-09-15T09:10:14Z"^^xsd:dateTime ];
+     fhir:Composition.attester.party [
+       fhir:link <http://hl7.org/fhir/us/hai/Practitioner/practitioner-1>;
+       fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ];
+       fhir:Reference.display [ fhir:value "Ronald Bone, MD" ]
+     ]
+  ];
+  fhir:Composition.custodian [
+     fhir:link <http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian" ];
+     fhir:Reference.display [ fhir:value "Community Health and Hospitals" ]
+  ] .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient> a fhir:us .
+
+<http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-encounter> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/Practitioner/practitioner-1> a fhir:us .
+
+<http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/Composition/HAI-Procedure-Denominator-Report-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/hai/Composition/HAI-Procedure-Denominator-Report-Example.ttl> .
+
+# -------------------------------------------------------------------------------------
+
