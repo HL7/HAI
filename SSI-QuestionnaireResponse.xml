@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
-    <id value="4953"/> 
+    <id value="ssi-questionnaire-response"/> 
     <text> 
         <status value="generated"/> 
         <div xmlns="http://www.w3.org/1999/xhtml">
@@ -10,7 +10,7 @@
         </div> 
     </text> 
     <questionnaire>
-        <reference value="???"/>
+      <reference value="ssi-questionnaire"/>
     </questionnaire>
     <status value="completed"/>
     <!--   Answers to general questions   -->

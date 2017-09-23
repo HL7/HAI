@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Questionnaire xmlns="http://hl7.org/fhir">
-  <id value="4953" />
+  <id value="ssi-questionnaire" />
   <!-- ValueSet: NHSNProcedureCategoryCode -->
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-procedure-category-code" />
-      <meta id="40" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code" />
       <name value="NHSNProcedureCategoryCode" />
       <status value="active" />
@@ -195,7 +194,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-pathogen-code" />
-      <meta id="4211" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-code" />
       <name value="NHSNPathogenCode" />
       <status value="active" />
@@ -220,7 +218,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-drug-susceptibility-tests-code" />
-      <meta id="38" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-tests-code" />
       <name value="NHSNDrugSusceptibilityTestsCode" />
       <status value="active" />
@@ -520,7 +517,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-drug-susceptibility-finding-code" />
-      <meta id="36" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-finding-code" />
       <name value="NHSNDrugSusceptibilityFindingCode" />
       <status value="active" />
@@ -557,7 +553,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-healthcare-service-location-code" />
-      <meta id="41" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code" />
       <name value="NHSNHealthcareServiceLocationCode" />
       <status value="active" />
@@ -1457,7 +1452,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-pathogen-ranking" />
-      <meta id="4423" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking" />
       <name value="NHSNPathogenRanking" />
       <status value="draft" />
@@ -1485,7 +1479,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-encounter-type-code" />
-      <meta id="32" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code" />
       <name value="NHSNEncounterTypeCode" />
       <status value="active" />
@@ -1510,7 +1503,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-infection-condition-code" />
-      <meta id="69" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code" />
       <name value="NHSNInfectionConditionCode" />
       <status value="active" />
@@ -1762,7 +1754,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-criterion-of-diagnosis-code" />
-      <meta id="68" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code" />
       <name value="NHSNCriterionOfDiagnosisCode" />
       <status value="active" />
@@ -2346,7 +2337,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-occasion-of-detection" />
-      <meta id="35" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection" />
       <name value="NHSNOccasionOfDetectionCode" />
       <status value="active" />
@@ -2409,7 +2399,7 @@
     <type value="choice" />
     <required value="true" />
     <options>
-      <reference value="#NHSNProcedureCategoryCode" />
+      <reference value="#nhsn-procedure-category-code" />
       <display value="NHSNProcedureCategoryCode" />
     </options>
   </item>
@@ -2483,7 +2473,7 @@
     <type value="choice" />
     <required value="true" />
     <options>
-      <reference value="#NHSNInfectionConditionCode" />
+      <reference value="#nhsn-infection-condition-code" />
       <display value="NHSNInfectionConditionCode" />
     </options>
   </item>
@@ -2511,7 +2501,7 @@
     <required value="true" />
     <repeats value="true" />
     <options>
-      <reference value="#NHSNCriterionOfDiagnosisCode" />
+      <reference value="#nhsn-criterion-of-diagnosis-code" />
       <display value="NHSNCriterionOfDiagnosisCode" />
     </options>
   </item>
@@ -2524,7 +2514,7 @@
     <type value="choice" />
     <required value="true" />
     <options>
-      <reference value="#NHSNOccasionOfDetectionCode" />
+      <reference value="#nhsn-occasion-of-detection" />
       <display value="NHSNOccasionOfDetectionCode" />
     </options>
   </item>
