@@ -4,7 +4,7 @@
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2017-09-15T08:16:14Z"/>
-        <profile value="http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-report"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-report"/>
     </meta>
     <language value="en-US"/>
     <text>
@@ -36,7 +36,7 @@
     </subject>
     <!--  Encounter Resource -->
     <encounter>
-        <reference value="http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-encounter"/>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter"/>
     </encounter>
     <date value="2017-09-15T09:10:14Z"/>
     <!--  Practitioner Resource Reference-->
@@ -60,7 +60,7 @@
     </attester>
     <!--  Organization Resource -->
     <custodian>
-        <reference value="http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian"/>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian"/>
         <display value="Community Health and Hospitals"/>
     </custodian>
 </Composition>

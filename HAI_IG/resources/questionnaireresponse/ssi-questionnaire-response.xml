@@ -12,7 +12,7 @@
   </text>
   <questionnaire>
     <reference
-      value="ssi-questionnaire" />
+      value="http://hl7.org/fhir/us/hai/questionnaire/ssi-questionnaire" />
   </questionnaire>
   <status
     value="completed" />
@@ -63,7 +63,7 @@
     <answer>
       <valueCoding>
         <system
-          value="https://icd.codes" />
+          value="http://hl7.org/fhir/sid/icd-10" />
         <code
           value="0BDJ0ZZ" />
         <display

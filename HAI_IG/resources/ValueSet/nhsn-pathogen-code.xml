@@ -1,7 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id
     value="nhsn-pathogen-code" />
-  
   <url
     value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-code" />
   <name

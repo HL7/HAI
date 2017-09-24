@@ -1,7 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id
     value="nhsn-drug-susceptibility-tests-code" />
-  
   <url
     value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-tests-code" />
   <name
@@ -376,7 +375,7 @@
       </concept>
       <concept>
         <code
-          value="35816-8 " />
+          value="35816-8" />
         <display
           value="Gemifloxacin Susc Islt" />
       </concept>
@@ -406,7 +405,7 @@
       </concept>
       <concept>
         <code
-          value="18982-9 " />
+          value="18982-9" />
         <display
           value="Streptomycin Susc Islt" />
       </concept>

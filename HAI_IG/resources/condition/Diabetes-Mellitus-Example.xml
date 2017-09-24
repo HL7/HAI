@@ -1,8 +1,8 @@
 <Condition
     xmlns="http://hl7.org/fhir">
-    <id value="Diabetes-Melitus-Condition-Example"/>
+    <id value="Diabetes-Mellitus-Example"/>
     <meta>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+      <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -30,7 +30,7 @@
             <system value="http://snomed.info/sct"/>
             <code value="73211009"/>
             <display
-                value="Diabetes Melitus"/>
+              value="Diabetes Mellitus"/>
         </coding>
     </code>
     <subject>

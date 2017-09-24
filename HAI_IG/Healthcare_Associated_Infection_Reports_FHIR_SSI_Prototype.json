@@ -1,0 +1,188 @@
+{
+  "tool": "jekyll",
+  "paths": {
+    "resources": [
+      "resources"
+    ],
+    "pages": "pages",
+    "temp": "temp",
+    "output": "output",
+    "qa": "qa",
+    "specification": "http://hl7.org/fhir/STU3/"
+  },
+  "defaults": {
+    "Any": {
+      "template-format": "instance-template-format.html",
+      "template-base": "instance-template-base.html"
+    },
+    "StructureDefinition": {
+      "template-base": "instance-template-sd.html"
+    }
+  },
+  "canonicalBase": "http://hl7.org/fhir/us/hai",
+  "dependencyList": [{
+    "name": "USCore",
+    "location": "http://hl7.org/fhir/us/core/" 
+  },{
+    "name": "ccda",
+    "location": "http://build.fhir.org/ig/HL7/ccda-on-fhir/"
+    }],
+  "source": "ImplementationGuide/ImplementationGuide_3347.xml",
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "special-urls": [],
+  "resources": {
+    "StructureDefinition/hai-single-person-generic-constraints": {
+      "base": "StructureDefinition-hai-single-person-generic-constraints.html"
+    },
+    "StructureDefinition/healthcare-associated-infection-report": {
+      "base": "StructureDefinition-healthcare-associated-infection-report.html"
+    },
+    "StructureDefinition/hai-patient": {
+      "base": "StructureDefinition-hai-patient.html"
+    },
+    "StructureDefinition/hai-custodian": {
+      "base": "StructureDefinition-hai-custodian.html"
+    },
+    "StructureDefinition/hai-surgical-site-infection-report-ssi": {
+      "base": "StructureDefinition-hai-surgical-site-infection-report-ssi.html"
+    },
+    "StructureDefinition/hai-ssi-encounter": {
+      "base": "StructureDefinition-hai-ssi-encounter.html"
+    },
+    "StructureDefinition/hai-healthcare-facility": {
+      "base": "StructureDefinition-hai-healthcare-facility.html"
+    },
+    "StructureDefinition/pathogen-identified": {
+      "base": "StructureDefinition-pathogen-identified.html"
+    },
+    "StructureDefinition/mdro-cdi-observation": {
+      "base": "StructureDefinition-mdro-cdi-observation.html"
+    },
+    "StructureDefinition/hai-procedure-denominator-report": {
+      "base": "StructureDefinition-hai-procedure-denominator-report.html"
+    },
+    "StructureDefinition/hai-procedure-denominator-encounter": {
+      "base": "StructureDefinition-hai-procedure-denominator-encounter.html"
+    },
+    "StructureDefinition/infection-condition": {
+      "base": "StructureDefinition-infection-condition.html"
+    },
+    "StructureDefinition/infection-contributed-to-death": {
+      "base": "StructureDefinition-infection-contributed-to-death.html"
+    },
+    "StructureDefinition/occasion-of-hai-detection": {
+      "base": "StructureDefinition-occasion-of-hai-detection.html"
+    },
+    "StructureDefinition/infection-present-at-time-of-surgery": {
+      "base": "StructureDefinition-infection-present-at-time-of-surgery.html"
+    },
+    "StructureDefinition/asa-class": {
+      "base": "StructureDefinition-asa-class.html"
+    },
+    "StructureDefinition/diabetes-mellitus": {
+      "base": "StructureDefinition-diabetes-mellitus.html"
+    },
+    "StructureDefinition/procedure-details": {
+      "base": "StructureDefinition-procedure-details.html"
+    },
+    "StructureDefinition/anesthesia-delivered": {
+      "base": "StructureDefinition-anesthesia-delivered.html"
+    },
+    "StructureDefinition/closure-technique": {
+      "base": "StructureDefinition-closure-technique.html"
+    },
+    "StructureDefinition/revision-associated-with-prior-infection": {
+      "base": "StructureDefinition-revision-associated-with-prior-infection.html"
+    },
+    "StructureDefinition/spinal-fusion-level": {
+      "base": "StructureDefinition-spinal-fusion-level.html"
+    },
+    "StructureDefinition/questionnaire-item-note": {
+      "base": "StructureDefinition-questionnaire-item-note.html"
+    },
+    "ValueSet/nhsn-encounter-type-code": {
+      "base": "ValueSet-nhsn-encounter-type-code.html"
+    },
+    "ValueSet/nhsn-healthcare-service-location-code": {
+      "base": "ValueSet-nhsn-healthcare-service-location-code.html"
+    },
+    "ValueSet/nhsn-pathogen-code": {
+      "base": "ValueSet-nhsn-pathogen-code.html"
+    },
+    "ValueSet/nhsn-pathogen-ranking": {
+      "base": "ValueSet-nhsn-pathogen-ranking.html"
+    },
+    "ValueSet/nhsn-drug-susceptibility-tests-code": {
+      "base": "ValueSet-nhsn-drug-susceptibility-tests-code.html"
+    },
+    "ValueSet/nhsn-drug-susceptibility-finding-code": {
+      "base": "ValueSet-nhsn-drug-susceptibility-finding-code.html"
+    },
+    "ValueSet/nhsn-infection-type-code": {
+      "base": "ValueSet-nhsn-infection-type-code.html"
+    },
+    "ValueSet/nhsn-infection-condition-code": {
+      "base": "ValueSet-nhsn-infection-condition-code.html"
+    },
+    "ValueSet/nhsn-criterion-of-diagnosis-code": {
+      "base": "ValueSet-nhsn-criterion-of-diagnosis-code.html"
+    },
+    "ValueSet/nhsn-occasion-of-detection": {
+      "base": "ValueSet-nhsn-occasion-of-detection.html"
+    },
+    "ValueSet/nhsn-asa-class-code": {
+      "base": "ValueSet-nhsn-asa-class-code.html"
+    },
+    "ValueSet/nhsn-procedure-category-code": {
+      "base": "ValueSet-nhsn-procedure-category-code.html"
+    },
+    "ValueSet/nhsn-closure-technique-code": {
+      "base": "ValueSet-nhsn-closure-technique-code.html"
+    },
+    "ValueSet/nhsn-spinal-fusion-approach-code": {
+      "base": "ValueSet-nhsn-spinal-fusion-approach-code.html"
+    },
+    "Composition/HAI-Single-Person-Report-Generic-Constraints-Example": {
+      "base": "Composition-HAI-Single-Person-Report-Generic-Constraints-Example.html"
+    },
+    "Composition/Healthcare-Associated-Infection-Report-Example": {
+      "base": "Composition-Healthcare-Associated-Infection-Report-Example.html"
+    },
+    "Patient/example": {
+      "base": "Patient-example.html"
+    },
+    "Organization/hl7": {
+      "base": "Organization-hl7.html"
+    },
+    "Composition/HAI-Surgical-Site-Infection-Report-SSI-Example": {
+      "base": "Composition-HAI-Surgical-Site-Infection-Report-SSI-Example.html"
+    },
+    "Encounter/HAI-SSI-Encounter-Example": {
+      "base": "Encounter-HAI-SSI-Encounter-Example.html"
+    },
+    "Location/HAI-Healthcare-Facility-Example": {
+      "base": "Location-HAI-Healthcare-Facility-Example.html"
+    },
+    "Observation/Pathogen-Identified-Example": {
+      "base": "Observation-Pathogen-Identified-Example.html"
+    },
+    "Observation/MDRO-CDI-Observation-Example": {
+      "base": "Observation-MDRO-CDI-Observation-Example.html"
+    },
+    "Composition/HAI-Procedure-Denominator-Report-Example": {
+      "base": "Composition-HAI-Procedure-Denominator-Report-Example.html"
+    },
+    "Encounter/HAI-Procedure-Denominator-Encounter-Example": {
+      "base": "Encounter-HAI-Procedure-Denominator-Encounter-Example.html"
+    },
+    "Condition/Infection-Condition-Example": {
+      "base": "Condition-Infection-Condition-Example.html"
+    },
+    "Condition/ASA-Class-Example": {
+      "base": "Condition-ASA-Class-Example.html"
+    },
+    "Condition/Diabetes-Mellitus-Example": {
+      "base": "Condition-Diabetes-Mellitus-Example.html"
+    }
+  }
+}

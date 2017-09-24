@@ -15,23 +15,21 @@
         value="false" />
       <sourceReference>
         <reference
-          value="StructureDefinition/hai-custodian" />
-        <display
-          value="HAI Custodian" />
-      </sourceReference>
-    </resource>
-    
-    <resource>
-      <example
-        value="false" />
-      <sourceReference>
-        <reference
           value="StructureDefinition/hai-patient" />
         <display
           value="HAI Patient" />
       </sourceReference>
     </resource>
-    
+    <resource>
+      <example
+        value="false" />
+      <sourceReference>
+        <reference
+          value="StructureDefinition/hai-custodian" />
+        <display
+          value="HAI Custodian" />
+      </sourceReference>
+    </resource>
     <resource>
       <example
         value="false" />
@@ -42,7 +40,6 @@
           value="HAI Healthcare Facility" />
       </sourceReference>
     </resource>
-    
     <resource>
       <example
         value="false" />
@@ -53,6 +50,7 @@
           value="HAI SSI Encounter" />
       </sourceReference>
     </resource>
+    
     <resource>
       <example
         value="false" />
@@ -73,16 +71,7 @@
           value="HAI Single-Person Report Generic Constraints" />
       </sourceReference>
     </resource>
-    <resource>
-      <example
-        value="false" />
-      <sourceReference>
-        <reference
-          value="StructureDefinition/hai-procedure-denominator-report" />
-        <display
-          value="HAI Procedure Denominator Report" />
-      </sourceReference>
-    </resource>
+    
     <resource>
       <example
         value="false" />
@@ -91,6 +80,16 @@
           value="StructureDefinition/hai-surgical-site-infection-report-ssi" />
         <display
           value="HAI Surgical Site Infection Report (SSI)" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example
+        value="false" />
+      <sourceReference>
+        <reference
+          value="StructureDefinition/hai-procedure-denominator-report" />
+        <display
+          value="HAI Procedure Denominator Report" />
       </sourceReference>
     </resource>
     <resource>
@@ -134,7 +133,27 @@
           value="occasion-of-hai-detection" />
       </sourceReference>
     </resource>
+    <resource>
+      <example
+        value="false" />
+      <sourceReference>
+        <reference
+          value="StructureDefinition/questionnaire-item-note" />
+        <display
+          value="questionnaire-item-note" />
+      </sourceReference>
+    </resource>
     
+    <resource>
+      <example
+        value="false" />
+      <sourceReference>
+        <reference
+          value="StructureDefinition/anesthesia-delivered" />
+        <display
+          value="Anesthesia Delivered" />
+      </sourceReference>
+    </resource>
     <resource>
       <example
         value="false" />
@@ -155,6 +174,27 @@
           value="Pathogen Identified" />
       </sourceReference>
     </resource>
+    <resource>
+      <example
+        value="false" />
+      <sourceReference>
+        <reference
+          value="StructureDefinition/revision-associated-with-prior-infection" />
+        <display
+          value="Revision Associated with Prior Infection Observation" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example
+        value="false" />
+      <sourceReference>
+        <reference
+          value="StructureDefinition/spinal-fusion-level" />
+        <display
+          value="Spinal Fusion Level" />
+      </sourceReference>
+    </resource>
+    
     
     <resource>
       <example
@@ -171,9 +211,9 @@
         value="false" />
       <sourceReference>
         <reference
-          value="StructureDefinition/diabetes-melitus" />
+          value="StructureDefinition/diabetes-mellitus" />
         <display
-          value="Diabetes Melitus" />
+          value="Diabetes Mellitus" />
       </sourceReference>
     </resource>
     <resource>
@@ -191,9 +231,9 @@
         value="false" />
       <sourceReference>
         <reference
-          value="StructureDefinition/procedure-details" />
+          value="StructureDefinition/closure-technique" />
         <display
-          value="Procedure Details" />
+          value="Closure Technique" />
       </sourceReference>
     </resource>
     <resource>
@@ -201,12 +241,11 @@
         value="false" />
       <sourceReference>
         <reference
-          value="StructureDefinition/anesthesia-delivered" />
+          value="StructureDefinition/procedure-details" />
         <display
-          value="Anesthesia Delivered" />
+          value="Procedure Details" />
       </sourceReference>
     </resource>
-    
     
     <resource>
       <example
@@ -323,9 +362,9 @@
         value="false" />
       <sourceReference>
         <reference
-          value="ValueSet/nhsn-procedure-category-code" />
+          value="ValueSet/nhsn-spinal-fusion-approach-code" />
         <display
-          value="NHSNProcedureCategoryCode" />
+          value="NHSNSpinalFusionApproachCode" />
       </sourceReference>
     </resource>
     <resource>
@@ -333,9 +372,19 @@
         value="false" />
       <sourceReference>
         <reference
-          value="ValueSet/nhsn-spinal-fusion-approach-code" />
+          value="ValueSet/nhsn-closure-technique-code" />
         <display
-          value="NHSNSpinalFusionApproachCode" />
+          value="NHSNClosureTechniqueCode" />
+      </sourceReference>
+    </resource>
+    <resource>
+      <example
+        value="false" />
+      <sourceReference>
+        <reference
+          value="ValueSet/nhsn-procedure-category-code" />
+        <display
+          value="NHSNProcedureCategoryCode" />
       </sourceReference>
     </resource>
     <resource>
@@ -443,15 +492,15 @@
         value="true" />
       <sourceReference>
         <reference
-          value="Condition/Diabetes-Melitus-Condition-Example" />
+          value="Condition/Diabetes-Mellitus-Example" />
         <display
-          value="Diabetes-Melitus-Condition-Example" />
+          value="Diabetes-Mellitus-Example" />
       </sourceReference>
       <exampleFor>
         <reference
-          value="StructureDefinition/diabetes-melitus" />
+          value="StructureDefinition/diabetes-mellitus" />
         <display
-          value="Diabetes Melitus" />
+          value="Diabetes Mellitus" />
       </exampleFor>
     </resource>
     <resource>
