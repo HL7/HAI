@@ -467,7 +467,7 @@
             <display value="Amoxicillin Susc Islt" />
           </concept>
           <concept>
-            <code value="35816-8 " />
+            <code value="35816-8" />
             <display value="Gemifloxacin Susc Islt" />
           </concept>
           <concept>
@@ -483,11 +483,11 @@
             <display value="Penicillin V Susc Islt" />
           </concept>
           <concept>
-            <code value="54188-8 " />
+            <code value="54188-8" />
             <display value="Posaconazole Susc Islt" />
           </concept>
           <concept>
-            <code value="18982-9 " />
+            <code value="18982-9" />
             <display value="Streptomycin Susc Islt" />
           </concept>
           <concept>
@@ -495,7 +495,7 @@
             <display value="Sulfisoxaz Susc Islt" />
           </concept>
           <concept>
-            <code value="35845-7 " />
+            <code value="35845-7" />
             <display value="Telithromycin Susc Islt" />
           </concept>
           <concept>
@@ -2072,7 +2072,7 @@
           </concept>
           <concept>
             <code value="2363-2" />
-            <display value="Criterion 3 - Positive Diagnostic test for Legionella species " />
+            <display value="Criterion 3 - Positive Diagnostic test for Legionella species" />
           </concept>
           <concept>
             <code value="2364-0" />
@@ -2410,7 +2410,7 @@
     <type value="choice" />
     <required value="true" />
     <options>
-      <reference value="https://icd.codes" />
+      <reference value="http://hl7.org/fhir/sid/icd-10" />
       <display value="ICD-10-PCS" />
     </options>
   </item>
@@ -2425,7 +2425,7 @@
        CDA: ClinicalDocument/componentOf/encompassingEncounter/code -->
   <!-- Used code rather than boolean to use codes from CDA -->
   <item>
-    <linkId value="outpatient_procedure" />
+    <linkId value="outpatient-procedure" />
     <text value="Outpatient Procedure" />
     <type value="choice" />
     <required value="true" />
@@ -2468,7 +2468,7 @@
   <!-- Specific Event
        CDA: Infection Condition Observation -->
   <item>
-    <linkId value="specific_event" />
+    <linkId value="specific-event" />
     <text value="Specific Event" />
     <type value="choice" />
     <required value="true" />
@@ -2481,7 +2481,7 @@
   <!-- Infection present at the time of surgery (PATOS):
        CDA: Infection Present at the Time of Surgery Observation -->
   <item>
-    <linkId value="infection_present" />
+    <linkId value="infection-present" />
     <code>
       <system value="http://snomed.info/sct" />
       <code value="1237-7" />
@@ -2495,7 +2495,7 @@
   <!-- Specify Criteria Used (check all that apply)
        CDA: Criterion of Diagnosis Observation -->
   <item>
-    <linkId value="criteria_used" />
+    <linkId value="criteria-used" />
     <text value="Specify Criteria Used (check all that apply)" />
     <type value="choice" />
     <required value="true" />
@@ -2522,7 +2522,7 @@
   <!-- Secondary Bloodstream Infection
        CDA: Secondary Bloodstream Infection Observation  -->
   <item>
-    <linkId value="secondary_bsi" />
+    <linkId value="secondary-bsi" />
     <code>
       <system value="urn:oid:2.16.840.1.113883.6.277" />
       <code value="3111-2" />
@@ -2550,7 +2550,7 @@
   <!-- SSI Contributed to Death: Yes/No
        CDA: SSI Contributed to Death Observation -->
   <item>
-    <linkId value="ssi_contributed_to_death"/>
+    <linkId value="ssi-contributed-to-death"/>
     <text value="SSI Contributed to Death"/>
     <type value="boolean"/>
     <enableWhen>
@@ -2563,7 +2563,7 @@
   <!-- Discharge Date
        CDA: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high -->
   <item>
-    <linkId value="date_admitted_to_facility" />
+    <linkId value="date-admitted-to-facility" />
     <text value="Date Admitted to Facility:" />
     <type value="date" />
     <required value="false" />  
@@ -2572,56 +2572,57 @@
   <!-- Pathogens Identified: Yes/No
        CDA: -->
   <item>
-    <linkId value="pathogens_identified"/>
+    <linkId value="pathogens-identified"/>
     <text value="Pathogens Identified"/>
     <type value="boolean"/>    
     <required value="true"/>
   </item>
   
-  <!-- Findings
+  <!-- Findings Grouop
        CDA: Findings Organizer
        Each group relates to a single identified pathogen  -->
   <item>
-    <linkId value="9392" />
+    <linkId value="findings-group" />
     <text value="Findings Group" />
     <type value="group" />
     <enableWhen>
-      <question value="pathogens_identified"/>
+      <question value="pathogens-identified"/>
       <hasAnswer value="true"/>
     </enableWhen>
     <required value="false" />
     <repeats value="true" />
-    <!-- Pathogen Code
+    
+    <!-- Pathogen Identified
          CDA: Pathogen Identified Observation -->
     <item>
-      <extension url="http://www.lantanagroup.com/fhir/questionnaire-item-note">
+      <extension url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
         <valueString value="Ex: Staphylococcus coagulase-negative" />
       </extension>
-      <linkId value="3139" />
-      <text value="Type" />
+      <linkId value="pathogen-identified" />
+      <text value="Pathogen Identified" />
       <type value="choice" />
       <required value="true" />
       <options>
-        <reference value="#NHSNPathogenCode" />
+        <reference value="#nhsn-pathogen-code" />
         <display value="NHSNPathogenCode" />
       </options>
     </item>
     <!-- Pathogen Ranking
          CDA: Pathogen Ranking Observation-->
     <item>
-      <linkId value="3745" />
+      <linkId value="pathogen-ranking" />
       <text value="Pathogen Ranking" />
       <type value="choice" />
       <required value="true" />
       <options>
-        <reference value="#NHSNPathogenRanking" />
+        <reference value="#nhsn-pathogen-ranking" />
         <display value="NHSNPathogenRanking" />
       </options>
     </item>
     <!-- Drug Susceptibility Test
          CDA: Drug Susceptibility Test Observation-->
     <item>
-      <linkId value="4656" />
+      <linkId value="drug-susceptibility-test" />
       <text value="Drug Susceptibility Test" />
       <type value="group" />
       <required value="false" />
@@ -2629,7 +2630,7 @@
       <!-- Drug Susceptibilty Test Code 
            CDA: CDA: Drug-Susceptibility Test Observation/code -->
       <item>
-        <extension url="http://www.lantanagroup.com/fhir/questionnaire-item-note">
+        <extension url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
           <valueString value="Ex: DAPTO" />
         </extension>
         <linkId value="6192" />
@@ -2637,22 +2638,22 @@
         <type value="choice" />
         <required value="true" />
         <options>
-          <reference value="#NHSNDrugSusceptibilityTestsCode" />
+          <reference value="#nhsn-drug-susceptibility-tests-code" />
           <display value="NHSNDrugSusceptibilityTestsCode" />
         </options>
       </item>
       <!-- Drug Susceptibilty Finding
            CDA: Drug-Susceptibility Test Observation/interpretationCode -->
       <item>
-        <extension url="http://www.lantanagroup.com/fhir/questionnaire-item-note">
+        <extension url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
           <valueString value="Ex: S, NS, or N" />
         </extension>
-        <linkId value="8204" />
-        <text value="Interpretation" />
+        <linkId value="drug-susceptibility-finding" />
+        <text value="Drug Susceptibility Finding" />
         <type value="choice" />
         <required value="false" />
         <options>
-          <reference value="#NHSNDrugSusceptibilityFindingCode" />
+          <reference value="#nhsn-drug-susceptibility-finding-code" />
           <display value="NHSNDrugSusceptibilityFindingCode" />
         </options>
       </item>

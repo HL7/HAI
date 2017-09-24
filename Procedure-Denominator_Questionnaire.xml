@@ -1174,8 +1174,8 @@
     <!-- NHSN Closure Technique -->
     <contained>
         <ValueSet xmlns="http://hl7.org/fhir">
-            <id value="2.16.840.1.114222.4.11.6051"/>
-            <url value="urn:oid:2.16.840.1.114222.4.11.6051"/>
+          <id value="nhsn-closure-technique-code"/>
+          <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code"/>
             <name value="NHSNClosureTechniqueCode"/>
             <status value="active"/>
             <description
@@ -1451,7 +1451,7 @@
             <required value="true"/>
             <repeats value="false"/>
             <options>
-                <reference value="#2.16.840.1.114222.4.11.6051"/>
+              <reference value="#nhsn-closure-technique-code"/>
                 <display value="NHSNClosureTechniqueCode"/>
             </options>
         </item>
