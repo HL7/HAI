@@ -39,55 +39,90 @@
     </style>
   </head>
   <body>
-     <div id="segment-header" class="segment">  <!-- segment-header -->
-  <div class="container">  <!-- container -->
-   <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/> </a>
-   <div id="hl7-status">
-    <b>Current Build</b> 
-   </div>
-
-   <div id="hl7-nav">
-     <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
-     <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
-    </a>
-   </div>
-   <div id="hl7-nav"><a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a></div>
-  </div>
-  <div class="container">  <!-- container -->
- </div></div>  <!-- /segment-header -->
-
- <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
-  <div id="stripe"> </div>
-  <div class="container">  <!-- container -->
-   <!-- HEADER CONTENT -->
-
-   <nav class="navbar navbar-inverse">
+    <div>
+  <div id="segment-header" class="segment">
+    <!-- segment-header -->
     <div class="container">
-     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
-      <span class="icon-bar"> </span>
-      <span class="icon-bar"> </span>
-      <span class="icon-bar"> </span>
-     </button>
-      <a class="navbar-brand hidden" href="http://hl7-fhir.github.io/index.html">FHIR</a>
-     <div class="nav-collapse collapse navbar-inverse-collapse">
-      <ul class="nav navbar-nav">
-              
-        <li><a href="http://hl7-fhir.github.io/index.html">Home</a></li>
-        <li><a href="http://hl7-fhir.github.io/documentation.html">Documentation</a></li>
-        <li><a href="http://hl7-fhir.github.io/modules.html">Modules</a></li>
-        <li><a href="http://hl7-fhir.github.io/resourcelist.html">Resources</a></li>
-        <li><a href="http://hl7-fhir.github.io/profilelist.html">Profiles</a></li>
-        <li><a href="http://hl7-fhir.github.io/extensibility-registry.html">Extensions</a></li>
-        <li><a href="http://hl7-fhir.github.io/operationslist.html">Operations</a></li>
+      <!-- container -->
+      <a id="logo" no-external="true" href="http://hl7.org/fhir">
+        <img alt="logo fhir" src="assets/images/fhir-logo-www.png" />
+      </a>
+      <div id="hl7-status">
+        <b>Current Build</b>
+      </div>
 
-      </ul>
-     </div>  <!-- /.nav-collapse -->
-    </div>  <!-- /.container -->
-   </nav>  <!-- /.navbar -->
+      <div id="hl7-nav">
+        <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+          <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png" />
+        </a>
+      </div>
+      <div id="hl7-nav">
+        <a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm">
+          <img alt="Search FHIR" src="assets/images/search.png" />
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- container -->
+    </div>
+  </div>
+  <!-- /segment-header -->
 
-  <!-- /HEADER CONTENT -->
-  </div>  <!-- /container -->
- </div>  <!-- /segment-navbar -->
+  <div id="segment-navbar" class="segment">
+    <!-- segment-navbar -->
+    <div id="stripe"> </div>
+    <div class="container">
+      <!-- container -->
+      <!-- HEADER CONTENT -->
+
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+          </button>
+          <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+          <div class="nav-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+
+              <li>
+                <a href="http://hl7.org/fhir/STU3/index.html">Home</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/documentation.html">Documentation</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/modules.html">Modules</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/resourcelist.html">Resources</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/profilelist.html">Profiles</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/extensibility-registry.html">Extensions</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/operationslist.html">Operations</a>
+              </li>
+
+            </ul>
+          </div>
+          <!-- /.nav-collapse -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- /HEADER CONTENT -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-navbar -->
+</div>
+
     
     <div id="segment-breadcrumb" class="segmnt">
       <div class="container">
@@ -122,37 +157,37 @@
 # - resource -------------------------------------------------------------------
 
  a fhir:ValueSet;
-  <a href="http://hl7-fhir.github.io/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#id">fhir:value</a> &quot;nhsn-drug-susceptibility-finding-code&quot;];
-  <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7-fhir.github.io/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+  <a href="http://hl7.org/fhir/STU3/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;nhsn-drug-susceptibility-finding-code&quot;];
+  <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;NHSNDrugSusceptibilityFindingCode&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83&lt;/p&gt;\n&lt;p&gt;A full listing of codes can be found in the hai_voc.xls file provided with this package.&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:2.16.840.1.113883.5.83&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;I&lt;/td&gt;&lt;td&gt;Intermediate&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;R&lt;/td&gt;&lt;td&gt;Resistant&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;Susceptible&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;NS&lt;/td&gt;&lt;td&gt;Non-Susceptible&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;S-DD&lt;/td&gt;&lt;td&gt;Susceptible-dose dependant&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
   ];
-  <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-finding-code&quot;];
-  <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#string">fhir:value</a> &quot;NHSNDrugSusceptibilityFindingCode&quot;];
-  <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#dateTime">fhir:value</a> &quot;2017-09-23T15:59:00+10:00&quot;^^xsd:dateTime];
-  <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#markdown">fhir:value</a> &quot;Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.&quot;];
-  <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
-     <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
-       <a href="http://hl7-fhir.github.io/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#uri">fhir:value</a> &quot;urn:oid:2.16.840.1.113883.5.83&quot; ];
-       <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
-         <a href="http://hl7-fhir.github.io/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#code">fhir:value</a> &quot;I&quot; ];
-         <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#string">fhir:value</a> &quot;Intermediate&quot; ]       ], [
-         <a href="http://hl7-fhir.github.io/rdf.html#index">fhir:index</a> 1;
-         <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#code">fhir:value</a> &quot;R&quot; ];
-         <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#string">fhir:value</a> &quot;Resistant&quot; ]       ], [
-         <a href="http://hl7-fhir.github.io/rdf.html#index">fhir:index</a> 2;
-         <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#code">fhir:value</a> &quot;S&quot; ];
-         <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#string">fhir:value</a> &quot;Susceptible&quot; ]       ], [
-         <a href="http://hl7-fhir.github.io/rdf.html#index">fhir:index</a> 3;
-         <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#code">fhir:value</a> &quot;NS&quot; ];
-         <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#string">fhir:value</a> &quot;Non-Susceptible&quot; ]       ], [
-         <a href="http://hl7-fhir.github.io/rdf.html#index">fhir:index</a> 4;
-         <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#code">fhir:value</a> &quot;S-DD&quot; ];
-         <a href="http://hl7-fhir.github.io/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7-fhir.github.io/datatypes.html#string">fhir:value</a> &quot;Susceptible-dose dependant&quot; ]       ]     ]
+  <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-finding-code&quot;];
+  <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;NHSNDrugSusceptibilityFindingCode&quot;];
+  <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;active&quot;];
+  <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2017-09-24T19:29:43+10:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">fhir:value</a> &quot;Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.&quot;];
+  <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
+     <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
+       <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;urn:oid:2.16.840.1.113883.5.83&quot; ];
+       <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;I&quot; ];
+         <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Intermediate&quot; ]       ], [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
+         <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;R&quot; ];
+         <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Resistant&quot; ]       ], [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2;
+         <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;S&quot; ];
+         <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Susceptible&quot; ]       ], [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 3;
+         <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;NS&quot; ];
+         <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Non-Susceptible&quot; ]       ], [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 4;
+         <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;S-DD&quot; ];
+         <a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Susceptible-dose dependant&quot; ]       ]     ]
   ].
 
 # - ontology header ------------------------------------------------------------
@@ -174,13 +209,13 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Sat, Sep 23, 2017 15:59+1000. <a href="qa.html">QA Page</a>
+      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Sun, Sep 24, 2017 19:29+1000. <a href="qa.html">QA Page</a>
         <br/>
         <span style="color: #FFFF77">
         Links: <a style="color: #81BEF7" href="http://hl7.org/fhir/search.cfm">Search <img style="text-align: baseline" src="external.png"/></a> |
-          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/history.html">Version History</a> |
-          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/toc.html">Table of Contents</a> |
-          <a style="color: #81BEF7" rel="license" href="http://hl7-fhir.github.io/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+          <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/history.html">Version History</a> |
+          <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/toc.html">Table of Contents</a> |
+          <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
           <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img style="text-align: baseline" src="external.png"/></a>
         </span>
         </p>

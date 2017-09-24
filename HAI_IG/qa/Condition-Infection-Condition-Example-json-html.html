@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+  <title>Condition-Infection-Condition-Example-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition">resourceType</a>" : "Condition",
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.id">id</a>" : "Infection-Condition-Example",
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/infection-condition"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 44444444&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: ACTIVE&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: CONFIRMED&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Surgical Site Infection &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {SNOMED CT code '433202001' = 'Surgical site infection (disorder)', given as 'Surgical Site Infection'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;severity&lt;/b&gt;: Severe &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {SNOMED CT code '24484000' = 'Severe (severity modifier)', given as 'Severe'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Deep incisional primary SSI &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {urn:oid:2.16.840.1.113883.6.277 code '1604-8' = '1604-8', given as 'Deep incisional primary SSI'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient&quot;&gt;Henry Seven&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 15/09/2017&lt;/p&gt;&lt;h3&gt;Evidences&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Positive culture of pathogen &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {urn:oid:2.16.840.1.113883.6.277 code '1953-9' = '1953-9', given as 'Positive culture of pathogen'})&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueReference</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueReference</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueReference</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "44444444"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.clinicalStatus">clinicalStatus</a>" : "active",
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.verificationStatus">verificationStatus</a>" : "confirmed",
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.category">category</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "433202001",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Surgical Site Infection"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.severity">severity</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "24484000",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Severe"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.code">code</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.6.277",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "1604-8",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Deep incisional primary SSI"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Henry Seven"
+  },
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.onset[x]">onsetDateTime</a>" : "2017-09-15",
+  "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.evidence">evidence</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/condition.html#Condition.evidence.code">code</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.6.277",
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "1953-9",
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Positive culture of pathogen"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</pre>
+</body>
+</html>

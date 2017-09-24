@@ -33,55 +33,90 @@
   <link rel="shortcut icon" href="assets/ico/favicon.png"/>
     </head>
     <body>
-         <div id="segment-header" class="segment">  <!-- segment-header -->
-  <div class="container">  <!-- container -->
-   <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/> </a>
-   <div id="hl7-status">
-    <b>Current Build</b> 
-   </div>
-
-   <div id="hl7-nav">
-     <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
-     <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
-    </a>
-   </div>
-   <div id="hl7-nav"><a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a></div>
-  </div>
-  <div class="container">  <!-- container -->
- </div></div>  <!-- /segment-header -->
-
- <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
-  <div id="stripe"> </div>
-  <div class="container">  <!-- container -->
-   <!-- HEADER CONTENT -->
-
-   <nav class="navbar navbar-inverse">
+        <div>
+  <div id="segment-header" class="segment">
+    <!-- segment-header -->
     <div class="container">
-     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
-      <span class="icon-bar"> </span>
-      <span class="icon-bar"> </span>
-      <span class="icon-bar"> </span>
-     </button>
-      <a class="navbar-brand hidden" href="http://hl7-fhir.github.io/index.html">FHIR</a>
-     <div class="nav-collapse collapse navbar-inverse-collapse">
-      <ul class="nav navbar-nav">
-              
-        <li><a href="http://hl7-fhir.github.io/index.html">Home</a></li>
-        <li><a href="http://hl7-fhir.github.io/documentation.html">Documentation</a></li>
-        <li><a href="http://hl7-fhir.github.io/modules.html">Modules</a></li>
-        <li><a href="http://hl7-fhir.github.io/resourcelist.html">Resources</a></li>
-        <li><a href="http://hl7-fhir.github.io/profilelist.html">Profiles</a></li>
-        <li><a href="http://hl7-fhir.github.io/extensibility-registry.html">Extensions</a></li>
-        <li><a href="http://hl7-fhir.github.io/operationslist.html">Operations</a></li>
+      <!-- container -->
+      <a id="logo" no-external="true" href="http://hl7.org/fhir">
+        <img alt="logo fhir" src="assets/images/fhir-logo-www.png" />
+      </a>
+      <div id="hl7-status">
+        <b>Current Build</b>
+      </div>
 
-      </ul>
-     </div>  <!-- /.nav-collapse -->
-    </div>  <!-- /.container -->
-   </nav>  <!-- /.navbar -->
+      <div id="hl7-nav">
+        <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+          <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png" />
+        </a>
+      </div>
+      <div id="hl7-nav">
+        <a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm">
+          <img alt="Search FHIR" src="assets/images/search.png" />
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- container -->
+    </div>
+  </div>
+  <!-- /segment-header -->
 
-  <!-- /HEADER CONTENT -->
-  </div>  <!-- /container -->
- </div>  <!-- /segment-navbar -->
+  <div id="segment-navbar" class="segment">
+    <!-- segment-navbar -->
+    <div id="stripe"> </div>
+    <div class="container">
+      <!-- container -->
+      <!-- HEADER CONTENT -->
+
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+          </button>
+          <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+          <div class="nav-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+
+              <li>
+                <a href="http://hl7.org/fhir/STU3/index.html">Home</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/documentation.html">Documentation</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/modules.html">Modules</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/resourcelist.html">Resources</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/profilelist.html">Profiles</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/extensibility-registry.html">Extensions</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/operationslist.html">Operations</a>
+              </li>
+
+            </ul>
+          </div>
+          <!-- /.nav-collapse -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- /HEADER CONTENT -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-navbar -->
+</div>
+
         
         <div id="segment-breadcrumb" class="segmnt">
             <div class="container">
@@ -107,7 +142,7 @@
                             
                             <div xmlns="http://www.w3.org/1999/xhtml"><h2>NHSNCriterionOfDiagnosisCode</h2><div><p>Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277</p>
 <p>A full listing of codes can be found in the hai_voc.xls file provided with this package.</p>
-</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.277</code><table class="none"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1901-8</td><td>Not cultured</td><td/></tr><tr><td>1964-6</td><td>Allo-SCT with Grade &gt; 3 GI GVHD</td><td/></tr><tr><td>1965-3</td><td>Allo- SCT with diarrhea</td><td/></tr><tr><td>1966-1</td><td>Positive culture from greater than or equal to two separate tissue or fluid samples from affected joint</td><td/></tr><tr><td>1902-6</td><td>Blood culture not done or no organisms detected in blood</td><td/></tr><tr><td>1929-9</td><td>&amp;gt;=2 positive cultures with &amp;gt;=10^2 col/ml of same uropathogen from nonvoided specimen</td><td/></tr><tr><td>1931-5</td><td>&amp;gt;=2 positive urine cultures with &amp;gt;=10^5 col/cc with no more than 2 organisms</td><td/></tr><tr><td>1923-3</td><td>&amp;gt;=5% BAL cells w/bacteria</td><td/></tr><tr><td>1942-2</td><td>&amp;gt;15 colonies cultured from IV cannula tip using semiquantitative culture method</td><td/></tr><tr><td>1927-3</td><td>1 positive culture with &amp;gt;=10^5 col/cc with no more than 2 organisms</td><td/></tr><tr><td>2403-4</td><td>1 positive culture with &amp;gt;=103 CFU/ml and &amp;lt;105 CFU/ml with no more than 2 species of microorganisms</td><td/></tr><tr><td>1930-7</td><td>1 positive culture with &amp;lt;=10^5 col/ml of a single uropathogen in patient being treated with an effective antimicrobial agent for UTI</td><td/></tr><tr><td>1938-0</td><td>4-fold rise in L. pneumophila antibody titer</td><td/></tr><tr><td>1935-6</td><td>4-fold rise in paired sera for pathogen</td><td/></tr><tr><td>1944-8</td><td>Common skin contaminant from &amp;gt;2 blood cultures (see NHSN protocol for definition of skin contaminant)</td><td/></tr><tr><td>1937-2</td><td>L pneumophila serogroup 1 antigens in urine</td><td/></tr><tr><td>1939-8</td><td>Matching positive blood and sputum cultures w/ Candida spp</td><td/></tr><tr><td>1941-4</td><td>Other positive laboratory tests</td><td/></tr><tr><td>1955-4</td><td>Positive blood culture</td><td/></tr><tr><td>1952-1</td><td>Positive culture</td><td/></tr><tr><td>1953-9</td><td>Positive culture of pathogen</td><td/></tr><tr><td>1954-7</td><td>Positive culture of skin contaminant</td><td/></tr><tr><td>1948-9</td><td>Positive culture of virus or Chlamydia</td><td/></tr><tr><td>1936-4</td><td>Positive culture or micro-IF of Legionella spp</td><td/></tr><tr><td>1934-9</td><td>Positive detection of viral antigen or antibody</td><td/></tr><tr><td>1928-1</td><td>Positive dipstick for leukocyte esterase or nitrate</td><td/></tr><tr><td>1943-0</td><td>Positive Gram stain when culture is negative or not done</td><td/></tr><tr><td>1950-5</td><td>Positive micro-IF test for Chlamydia</td><td/></tr><tr><td>1949-7</td><td>Positive PCR for Chlamydia or Mycoplasma</td><td/></tr><tr><td>1946-3</td><td>Positive pleural fluid culture</td><td/></tr><tr><td>1947-1</td><td>Positive quantitative culture from LRT specimen</td><td/></tr><tr><td>1924-0</td><td>Radiographic evidence of infection</td><td/></tr><tr><td>1951-3</td><td>Recognized pathogen from one or more blood cultures</td><td/></tr><tr><td>1957-0</td><td>Acute onset of diarrhea (liquid stools for &amp;gt; 12 hours)</td><td/></tr><tr><td>1959-6</td><td>Apnea, tachycardia, nasal flaring with retraction of chest wall or grunting</td><td/></tr><tr><td>2513-0</td><td>Bilateral infiltrates on chest x-ray</td><td/></tr><tr><td>1908-3</td><td>Bradycardia or tachycardia</td><td/></tr><tr><td>2516-3</td><td>Criterion not otherwise specified</td><td/></tr><tr><td>2514-8</td><td>Diffuse hemorrhage</td><td/></tr><tr><td>1940-6</td><td>Fungi or Pneumocytis carinii from LRT specimen</td><td/></tr><tr><td>1956-2</td><td>Histopathologic exam w/ abscess formation, positive quantitative culture of lung parenchyma, or positive quantitative culture of lung parenchyma, or lung parenchyma invasion by fungal hyphae</td><td/></tr><tr><td>1967-9</td><td>Incision deliberately opened or otherwise drained by physician</td><td/></tr><tr><td>1920-8</td><td>Localized swelling</td><td/></tr><tr><td>2515-5</td><td>Nausea/vomiting</td><td/></tr><tr><td>1903-4</td><td>New onset/change in sputum</td><td/></tr><tr><td>1907-5</td><td>New onset/change in sputum, increased secretions   or increased suctioning</td><td/></tr><tr><td>1904-2</td><td>New onset/worsening cough, dyspnea, tachypnea</td><td/></tr><tr><td>1925-7</td><td>New or progressive and persistent infiltrate</td><td/></tr><tr><td>1905-9</td><td>Other evidence of infection found on direct exam, during surgery, or by diagnostic tests</td><td/></tr><tr><td>1906-7</td><td>Other signs and symptoms</td><td/></tr><tr><td>2517-1</td><td>Pain not otherwise specified</td><td/></tr><tr><td>1960-4</td><td>Pain or tenderness</td><td/></tr><tr><td>1909-1</td><td>Persistent microscopic or gross blood in stools</td><td/></tr><tr><td>1963-8</td><td>Physician diagnosis of this event type</td><td/></tr><tr><td>1962-0</td><td>Physician institutes appropriate antimicrobial therapy</td><td/></tr><tr><td>1926-5</td><td>Pneumatoceles (in &amp;lt;=1 y.o.)</td><td/></tr><tr><td>1921-6</td><td>Rales or bronchial breath sounds</td><td/></tr><tr><td>2518-9</td><td>Rash not otherwise specified</td><td/></tr><tr><td>1968-7</td><td>Sinus tract</td><td/></tr><tr><td>1922-4</td><td>Wheezing, rales or rhonchi</td><td/></tr><tr><td>1958-8</td><td>Worsening gas exchange</td><td/></tr><tr><td>2320-0</td><td>Wound (not related to vascular access) with pus or increased redness</td><td/></tr><tr><td>1971-1</td><td>Acute pain, swelling, or tenderness of testes, epididymis, or prostate</td><td/></tr><tr><td>1972-9</td><td>Urine not tested for WBC</td><td/></tr><tr><td>2351-1</td><td>Criterion 1 - Positive culture from Endotracheal aspirate without purulent respiratory secretions</td><td/></tr><tr><td>2352-5</td><td>Criterion 1 - Positive culture from Bronchoalveolar lavage without purulent respiratory secretions</td><td/></tr><tr><td>2353-3</td><td>Criterion 1 - Positive culture from Lung tissue without purulent respiratory secretions</td><td/></tr><tr><td>2354-1</td><td>Criterion 1 - Positive culture from Protected specimen brush without purulent respiratory secretions</td><td/></tr><tr><td>2355-9</td><td>Criterion 2 - Purulent respiratory secretions plus organism(s)</td><td/></tr><tr><td>2356-4</td><td>Criterion 2 - Organisms from Sputum cluture with purulent respiratory secretions</td><td/></tr><tr><td>2357-2</td><td>Criterion 2 - Organisms from Endotracheal aspirate culture with purulent respiratory secretions</td><td/></tr><tr><td>2358-0</td><td>Criterion 2 - Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions</td><td/></tr><tr><td>2359-8</td><td>Criterion 2 - Organisms from Lung tissue culture with purulent respiratory secretions</td><td/></tr><tr><td>2360-1</td><td>Criterion 2 - Organisms from Protected specimen brush culture with purulent respiratory secretions</td><td/></tr><tr><td>2361-0</td><td>Criterion 3 - Positive test Organism(s) identified from pleural fluid</td><td/></tr><tr><td>2362-4</td><td>Criterion 3 - Positive test for Lung histopathology</td><td/></tr><tr><td>2363-2</td><td>Criterion 3 - Positive Diagnostic test for Legionella species </td><td/></tr><tr><td>2364-0</td><td>Criterion 3 - Positive Diagnostic test for selected viral pathogens</td><td/></tr><tr><td>2346-5</td><td>Daily min FiO2 increase &amp;gt; 0.20 (20 points) for &amp;gt; 2 days</td><td/></tr><tr><td>2347-3</td><td>Daily min PEEP increase &amp;gt; 3 cm H2O for &amp;gt; 2 days</td><td/></tr><tr><td>2348-1</td><td>Temperature &amp;gt; 380 C or &amp;lt; 360 C</td><td/></tr><tr><td>2349-9</td><td>White blood cell count &amp;gt;= 12,000 or &amp;lt;= 4,000 cells/mm3</td><td/></tr><tr><td>2350-2</td><td>A new antimicrobial agent(s) is started, and is continued for &amp;gt;= 4 days</td><td/></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.96</code><table class="none"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>165517008</td><td>Neutropenia</td><td/></tr><tr><td>21522001</td><td>Abdominal pain</td><td/></tr><tr><td>128477000</td><td>Abscess</td><td/></tr><tr><td>419284004</td><td>Altered mental status (in &amp;gt;=70 y.o.)</td><td/></tr><tr><td>1023001</td><td>Apnea</td><td/></tr><tr><td>161891005</td><td>Back pain</td><td/></tr><tr><td>48867003</td><td>Bradycardia</td><td/></tr><tr><td>301863008</td><td>Cavitation</td><td/></tr><tr><td>128045006</td><td>Cellulitis</td><td/></tr><tr><td>29857009</td><td>Chest pain</td><td/></tr><tr><td>43724002</td><td>Chills</td><td/></tr><tr><td>95436008</td><td>Consolidation</td><td/></tr><tr><td>102830001</td><td>Costovertebral angle tenderness or pain</td><td/></tr><tr><td>49727002</td><td>Cough</td><td/></tr><tr><td>49650001</td><td>Dysuria</td><td/></tr><tr><td>267038008</td><td>Edema</td><td/></tr><tr><td>386661006</td><td>Fever</td><td/></tr><tr><td>12763006</td><td>Blood pressure decrease</td><td/></tr><tr><td>24184005</td><td>Blood pressure increase</td><td/></tr><tr><td>247355005</td><td>Flank pain</td><td/></tr><tr><td>248213001</td><td>Flushing</td><td/></tr><tr><td>162116003</td><td>Frequency of urination</td><td/></tr><tr><td>25064002</td><td>Headache</td><td/></tr><tr><td>304214002</td><td>Heat</td><td/></tr><tr><td>34436003</td><td>Hematuria</td><td/></tr><tr><td>123767004</td><td>Hemoglobinemia</td><td/></tr><tr><td>66857006</td><td>Hemoptysis</td><td/></tr><tr><td>247472004</td><td>Hives</td><td/></tr><tr><td>45007003</td><td>Hypotension</td><td/></tr><tr><td>386689009</td><td>Hypothermia</td><td/></tr><tr><td>389087006</td><td>hypoxemia</td><td/></tr><tr><td>165775009</td><td>Positive antibody screen</td><td/></tr><tr><td>95388000</td><td>Injection site pain</td><td/></tr><tr><td>418290006</td><td>Itching</td><td/></tr><tr><td>18165001</td><td>Jaundice</td><td/></tr><tr><td>214264003</td><td>Lethargy</td><td/></tr><tr><td>422587007</td><td>Nausea</td><td/></tr><tr><td>83128009</td><td>oliguria</td><td/></tr><tr><td>2237002</td><td>Pleuritic chest pain</td><td/></tr><tr><td>255320000</td><td>Purulent drainage or material</td><td/></tr><tr><td>4800001</td><td>Pyuria</td><td/></tr><tr><td>386713009</td><td>Redness</td><td/></tr><tr><td>128601007</td><td>Respiratory infection (including pneumonia)</td><td/></tr><tr><td>38880002</td><td>Rigors</td><td/></tr><tr><td>89138009</td><td>Shock</td><td/></tr><tr><td>267036007</td><td>SOB - Shortness of breath</td><td/></tr><tr><td>162053006</td><td>Suprapubic tenderness</td><td/></tr><tr><td>3424008</td><td>Tachycardia</td><td/></tr><tr><td>85623003</td><td>Temperature instability</td><td/></tr><tr><td>75088002</td><td>Urgency</td><td/></tr><tr><td>39575007</td><td>Dark urine</td><td/></tr><tr><td>126485001</td><td>Urticaria</td><td/></tr><tr><td>422400008</td><td>Vomiting</td><td/></tr><tr><td>56018004</td><td>Wheezing</td><td/></tr><tr><td>225553008</td><td>Wound spontaneously dehisces</td><td/></tr><tr><td>68566005</td><td>Urinary tract infection</td><td/></tr><tr><td>414478003</td><td>Leukocytosis</td><td/></tr></table></li></ul></div>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.277</code><table class="none"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1901-8</td><td>Not cultured</td><td/></tr><tr><td>1964-6</td><td>Allo-SCT with Grade &gt; 3 GI GVHD</td><td/></tr><tr><td>1965-3</td><td>Allo- SCT with diarrhea</td><td/></tr><tr><td>1966-1</td><td>Positive culture from greater than or equal to two separate tissue or fluid samples from affected joint</td><td/></tr><tr><td>1902-6</td><td>Blood culture not done or no organisms detected in blood</td><td/></tr><tr><td>1929-9</td><td>&amp;gt;=2 positive cultures with &amp;gt;=10^2 col/ml of same uropathogen from nonvoided specimen</td><td/></tr><tr><td>1931-5</td><td>&amp;gt;=2 positive urine cultures with &amp;gt;=10^5 col/cc with no more than 2 organisms</td><td/></tr><tr><td>1923-3</td><td>&amp;gt;=5% BAL cells w/bacteria</td><td/></tr><tr><td>1942-2</td><td>&amp;gt;15 colonies cultured from IV cannula tip using semiquantitative culture method</td><td/></tr><tr><td>1927-3</td><td>1 positive culture with &amp;gt;=10^5 col/cc with no more than 2 organisms</td><td/></tr><tr><td>2403-4</td><td>1 positive culture with &amp;gt;=103 CFU/ml and &amp;lt;105 CFU/ml with no more than 2 species of microorganisms</td><td/></tr><tr><td>1930-7</td><td>1 positive culture with &amp;lt;=10^5 col/ml of a single uropathogen in patient being treated with an effective antimicrobial agent for UTI</td><td/></tr><tr><td>1938-0</td><td>4-fold rise in L. pneumophila antibody titer</td><td/></tr><tr><td>1935-6</td><td>4-fold rise in paired sera for pathogen</td><td/></tr><tr><td>1944-8</td><td>Common skin contaminant from &amp;gt;2 blood cultures (see NHSN protocol for definition of skin contaminant)</td><td/></tr><tr><td>1937-2</td><td>L pneumophila serogroup 1 antigens in urine</td><td/></tr><tr><td>1939-8</td><td>Matching positive blood and sputum cultures w/ Candida spp</td><td/></tr><tr><td>1941-4</td><td>Other positive laboratory tests</td><td/></tr><tr><td>1955-4</td><td>Positive blood culture</td><td/></tr><tr><td>1952-1</td><td>Positive culture</td><td/></tr><tr><td>1953-9</td><td>Positive culture of pathogen</td><td/></tr><tr><td>1954-7</td><td>Positive culture of skin contaminant</td><td/></tr><tr><td>1948-9</td><td>Positive culture of virus or Chlamydia</td><td/></tr><tr><td>1936-4</td><td>Positive culture or micro-IF of Legionella spp</td><td/></tr><tr><td>1934-9</td><td>Positive detection of viral antigen or antibody</td><td/></tr><tr><td>1928-1</td><td>Positive dipstick for leukocyte esterase or nitrate</td><td/></tr><tr><td>1943-0</td><td>Positive Gram stain when culture is negative or not done</td><td/></tr><tr><td>1950-5</td><td>Positive micro-IF test for Chlamydia</td><td/></tr><tr><td>1949-7</td><td>Positive PCR for Chlamydia or Mycoplasma</td><td/></tr><tr><td>1946-3</td><td>Positive pleural fluid culture</td><td/></tr><tr><td>1947-1</td><td>Positive quantitative culture from LRT specimen</td><td/></tr><tr><td>1924-0</td><td>Radiographic evidence of infection</td><td/></tr><tr><td>1951-3</td><td>Recognized pathogen from one or more blood cultures</td><td/></tr><tr><td>1957-0</td><td>Acute onset of diarrhea (liquid stools for &amp;gt; 12 hours)</td><td/></tr><tr><td>1959-6</td><td>Apnea, tachycardia, nasal flaring with retraction of chest wall or grunting</td><td/></tr><tr><td>2513-0</td><td>Bilateral infiltrates on chest x-ray</td><td/></tr><tr><td>1908-3</td><td>Bradycardia or tachycardia</td><td/></tr><tr><td>2516-3</td><td>Criterion not otherwise specified</td><td/></tr><tr><td>2514-8</td><td>Diffuse hemorrhage</td><td/></tr><tr><td>1940-6</td><td>Fungi or Pneumocytis carinii from LRT specimen</td><td/></tr><tr><td>1956-2</td><td>Histopathologic exam w/ abscess formation, positive quantitative culture of lung parenchyma, or positive quantitative culture of lung parenchyma, or lung parenchyma invasion by fungal hyphae</td><td/></tr><tr><td>1967-9</td><td>Incision deliberately opened or otherwise drained by physician</td><td/></tr><tr><td>1920-8</td><td>Localized swelling</td><td/></tr><tr><td>2515-5</td><td>Nausea/vomiting</td><td/></tr><tr><td>1903-4</td><td>New onset/change in sputum</td><td/></tr><tr><td>1907-5</td><td>New onset/change in sputum, increased secretions   or increased suctioning</td><td/></tr><tr><td>1904-2</td><td>New onset/worsening cough, dyspnea, tachypnea</td><td/></tr><tr><td>1925-7</td><td>New or progressive and persistent infiltrate</td><td/></tr><tr><td>1905-9</td><td>Other evidence of infection found on direct exam, during surgery, or by diagnostic tests</td><td/></tr><tr><td>1906-7</td><td>Other signs and symptoms</td><td/></tr><tr><td>2517-1</td><td>Pain not otherwise specified</td><td/></tr><tr><td>1960-4</td><td>Pain or tenderness</td><td/></tr><tr><td>1909-1</td><td>Persistent microscopic or gross blood in stools</td><td/></tr><tr><td>1963-8</td><td>Physician diagnosis of this event type</td><td/></tr><tr><td>1962-0</td><td>Physician institutes appropriate antimicrobial therapy</td><td/></tr><tr><td>1926-5</td><td>Pneumatoceles (in &amp;lt;=1 y.o.)</td><td/></tr><tr><td>1921-6</td><td>Rales or bronchial breath sounds</td><td/></tr><tr><td>2518-9</td><td>Rash not otherwise specified</td><td/></tr><tr><td>1968-7</td><td>Sinus tract</td><td/></tr><tr><td>1922-4</td><td>Wheezing, rales or rhonchi</td><td/></tr><tr><td>1958-8</td><td>Worsening gas exchange</td><td/></tr><tr><td>2320-0</td><td>Wound (not related to vascular access) with pus or increased redness</td><td/></tr><tr><td>1971-1</td><td>Acute pain, swelling, or tenderness of testes, epididymis, or prostate</td><td/></tr><tr><td>1972-9</td><td>Urine not tested for WBC</td><td/></tr><tr><td>2351-1</td><td>Criterion 1 - Positive culture from Endotracheal aspirate without purulent respiratory secretions</td><td/></tr><tr><td>2352-5</td><td>Criterion 1 - Positive culture from Bronchoalveolar lavage without purulent respiratory secretions</td><td/></tr><tr><td>2353-3</td><td>Criterion 1 - Positive culture from Lung tissue without purulent respiratory secretions</td><td/></tr><tr><td>2354-1</td><td>Criterion 1 - Positive culture from Protected specimen brush without purulent respiratory secretions</td><td/></tr><tr><td>2355-9</td><td>Criterion 2 - Purulent respiratory secretions plus organism(s)</td><td/></tr><tr><td>2356-4</td><td>Criterion 2 - Organisms from Sputum cluture with purulent respiratory secretions</td><td/></tr><tr><td>2357-2</td><td>Criterion 2 - Organisms from Endotracheal aspirate culture with purulent respiratory secretions</td><td/></tr><tr><td>2358-0</td><td>Criterion 2 - Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions</td><td/></tr><tr><td>2359-8</td><td>Criterion 2 - Organisms from Lung tissue culture with purulent respiratory secretions</td><td/></tr><tr><td>2360-1</td><td>Criterion 2 - Organisms from Protected specimen brush culture with purulent respiratory secretions</td><td/></tr><tr><td>2361-0</td><td>Criterion 3 - Positive test Organism(s) identified from pleural fluid</td><td/></tr><tr><td>2362-4</td><td>Criterion 3 - Positive test for Lung histopathology</td><td/></tr><tr><td>2363-2</td><td>Criterion 3 - Positive Diagnostic test for Legionella species</td><td/></tr><tr><td>2364-0</td><td>Criterion 3 - Positive Diagnostic test for selected viral pathogens</td><td/></tr><tr><td>2346-5</td><td>Daily min FiO2 increase &amp;gt; 0.20 (20 points) for &amp;gt; 2 days</td><td/></tr><tr><td>2347-3</td><td>Daily min PEEP increase &amp;gt; 3 cm H2O for &amp;gt; 2 days</td><td/></tr><tr><td>2348-1</td><td>Temperature &amp;gt; 380 C or &amp;lt; 360 C</td><td/></tr><tr><td>2349-9</td><td>White blood cell count &amp;gt;= 12,000 or &amp;lt;= 4,000 cells/mm3</td><td/></tr><tr><td>2350-2</td><td>A new antimicrobial agent(s) is started, and is continued for &amp;gt;= 4 days</td><td/></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.96</code><table class="none"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>165517008</td><td>Neutropenia</td><td/></tr><tr><td>21522001</td><td>Abdominal pain</td><td/></tr><tr><td>128477000</td><td>Abscess</td><td/></tr><tr><td>419284004</td><td>Altered mental status (in &amp;gt;=70 y.o.)</td><td/></tr><tr><td>1023001</td><td>Apnea</td><td/></tr><tr><td>161891005</td><td>Back pain</td><td/></tr><tr><td>48867003</td><td>Bradycardia</td><td/></tr><tr><td>301863008</td><td>Cavitation</td><td/></tr><tr><td>128045006</td><td>Cellulitis</td><td/></tr><tr><td>29857009</td><td>Chest pain</td><td/></tr><tr><td>43724002</td><td>Chills</td><td/></tr><tr><td>95436008</td><td>Consolidation</td><td/></tr><tr><td>102830001</td><td>Costovertebral angle tenderness or pain</td><td/></tr><tr><td>49727002</td><td>Cough</td><td/></tr><tr><td>49650001</td><td>Dysuria</td><td/></tr><tr><td>267038008</td><td>Edema</td><td/></tr><tr><td>386661006</td><td>Fever</td><td/></tr><tr><td>12763006</td><td>Blood pressure decrease</td><td/></tr><tr><td>24184005</td><td>Blood pressure increase</td><td/></tr><tr><td>247355005</td><td>Flank pain</td><td/></tr><tr><td>248213001</td><td>Flushing</td><td/></tr><tr><td>162116003</td><td>Frequency of urination</td><td/></tr><tr><td>25064002</td><td>Headache</td><td/></tr><tr><td>304214002</td><td>Heat</td><td/></tr><tr><td>34436003</td><td>Hematuria</td><td/></tr><tr><td>123767004</td><td>Hemoglobinemia</td><td/></tr><tr><td>66857006</td><td>Hemoptysis</td><td/></tr><tr><td>247472004</td><td>Hives</td><td/></tr><tr><td>45007003</td><td>Hypotension</td><td/></tr><tr><td>386689009</td><td>Hypothermia</td><td/></tr><tr><td>389087006</td><td>hypoxemia</td><td/></tr><tr><td>165775009</td><td>Positive antibody screen</td><td/></tr><tr><td>95388000</td><td>Injection site pain</td><td/></tr><tr><td>418290006</td><td>Itching</td><td/></tr><tr><td>18165001</td><td>Jaundice</td><td/></tr><tr><td>214264003</td><td>Lethargy</td><td/></tr><tr><td>422587007</td><td>Nausea</td><td/></tr><tr><td>83128009</td><td>oliguria</td><td/></tr><tr><td>2237002</td><td>Pleuritic chest pain</td><td/></tr><tr><td>255320000</td><td>Purulent drainage or material</td><td/></tr><tr><td>4800001</td><td>Pyuria</td><td/></tr><tr><td>386713009</td><td>Redness</td><td/></tr><tr><td>128601007</td><td>Respiratory infection (including pneumonia)</td><td/></tr><tr><td>38880002</td><td>Rigors</td><td/></tr><tr><td>89138009</td><td>Shock</td><td/></tr><tr><td>267036007</td><td>SOB - Shortness of breath</td><td/></tr><tr><td>162053006</td><td>Suprapubic tenderness</td><td/></tr><tr><td>3424008</td><td>Tachycardia</td><td/></tr><tr><td>85623003</td><td>Temperature instability</td><td/></tr><tr><td>75088002</td><td>Urgency</td><td/></tr><tr><td>39575007</td><td>Dark urine</td><td/></tr><tr><td>126485001</td><td>Urticaria</td><td/></tr><tr><td>422400008</td><td>Vomiting</td><td/></tr><tr><td>56018004</td><td>Wheezing</td><td/></tr><tr><td>225553008</td><td>Wound spontaneously dehisces</td><td/></tr><tr><td>68566005</td><td>Urinary tract infection</td><td/></tr><tr><td>414478003</td><td>Leukocytosis</td><td/></tr></table></li></ul></div>
                         </div>
                     </div>
                 </div>
@@ -118,13 +153,13 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Sat, Sep 23, 2017 15:59+1000. <a href="qa.html">QA Page</a>
+      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Sun, Sep 24, 2017 19:29+1000. <a href="qa.html">QA Page</a>
         <br/>
         <span style="color: #FFFF77">
         Links: <a style="color: #81BEF7" href="http://hl7.org/fhir/search.cfm">Search <img style="text-align: baseline" src="external.png"/></a> |
-          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/history.html">Version History</a> |
-          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/toc.html">Table of Contents</a> |
-          <a style="color: #81BEF7" rel="license" href="http://hl7-fhir.github.io/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+          <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/history.html">Version History</a> |
+          <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/toc.html">Table of Contents</a> |
+          <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
           <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img style="text-align: baseline" src="external.png"/></a>
         </span>
         </p>

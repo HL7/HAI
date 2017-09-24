@@ -14,7 +14,8 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre> \n              Response to the Surgical Site Infection Report Questionnaire\n          </pre>\n    </div>"
   ];
   fhir:QuestionnaireResponse.questionnaire [
-     fhir:Reference.reference [ fhir:value "ssi-questionnaire" ]
+     fhir:link <http://hl7.org/fhir/us/hai/questionnaire/ssi-questionnaire>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/questionnaire/ssi-questionnaire" ]
   ];
   fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.item [
@@ -57,7 +58,7 @@
      fhir:QuestionnaireResponse.item.answer [
        fhir:index 0;
        fhir:QuestionnaireResponse.item.answer.valueCoding [
-         fhir:Coding.system [ fhir:value "https://icd.codes" ];
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10" ];
          fhir:Coding.code [ fhir:value "0BDJ0ZZ" ];
          fhir:Coding.display [ fhir:value "Excision of Appendix, Open Approach" ]
        ]
@@ -170,6 +171,8 @@
        ]
      ]
   ] .
+
+<http://hl7.org/fhir/us/hai/questionnaire/ssi-questionnaire> a fhir:us .
 
 <http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient> a fhir:us .
 

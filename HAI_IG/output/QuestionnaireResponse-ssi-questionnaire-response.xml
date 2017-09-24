@@ -10,7 +10,7 @@
     </div>
   </text>
   <questionnaire>
-    <reference value="ssi-questionnaire"/>
+    <reference value="http://hl7.org/fhir/us/hai/questionnaire/ssi-questionnaire"/>
   </questionnaire>
   <status value="completed"/>
   <item>
@@ -45,7 +45,7 @@
     <text value="ICD-10-PCS or CPT Procedure Code"/>
     <answer>
       <valueCoding>
-        <system value="https://icd.codes"/>
+        <system value="http://hl7.org/fhir/sid/icd-10"/>
         <code value="0BDJ0ZZ"/>
         <display value="Excision of Appendix, Open Approach"/>
       </valueCoding>

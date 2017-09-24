@@ -39,55 +39,90 @@
     </style>
   </head>
   <body>
-     <div id="segment-header" class="segment">  <!-- segment-header -->
-  <div class="container">  <!-- container -->
-   <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/> </a>
-   <div id="hl7-status">
-    <b>Current Build</b> 
-   </div>
-
-   <div id="hl7-nav">
-     <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
-     <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
-    </a>
-   </div>
-   <div id="hl7-nav"><a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a></div>
-  </div>
-  <div class="container">  <!-- container -->
- </div></div>  <!-- /segment-header -->
-
- <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
-  <div id="stripe"> </div>
-  <div class="container">  <!-- container -->
-   <!-- HEADER CONTENT -->
-
-   <nav class="navbar navbar-inverse">
+    <div>
+  <div id="segment-header" class="segment">
+    <!-- segment-header -->
     <div class="container">
-     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
-      <span class="icon-bar"> </span>
-      <span class="icon-bar"> </span>
-      <span class="icon-bar"> </span>
-     </button>
-      <a class="navbar-brand hidden" href="http://hl7-fhir.github.io/index.html">FHIR</a>
-     <div class="nav-collapse collapse navbar-inverse-collapse">
-      <ul class="nav navbar-nav">
-              
-        <li><a href="http://hl7-fhir.github.io/index.html">Home</a></li>
-        <li><a href="http://hl7-fhir.github.io/documentation.html">Documentation</a></li>
-        <li><a href="http://hl7-fhir.github.io/modules.html">Modules</a></li>
-        <li><a href="http://hl7-fhir.github.io/resourcelist.html">Resources</a></li>
-        <li><a href="http://hl7-fhir.github.io/profilelist.html">Profiles</a></li>
-        <li><a href="http://hl7-fhir.github.io/extensibility-registry.html">Extensions</a></li>
-        <li><a href="http://hl7-fhir.github.io/operationslist.html">Operations</a></li>
+      <!-- container -->
+      <a id="logo" no-external="true" href="http://hl7.org/fhir">
+        <img alt="logo fhir" src="assets/images/fhir-logo-www.png" />
+      </a>
+      <div id="hl7-status">
+        <b>Current Build</b>
+      </div>
 
-      </ul>
-     </div>  <!-- /.nav-collapse -->
-    </div>  <!-- /.container -->
-   </nav>  <!-- /.navbar -->
+      <div id="hl7-nav">
+        <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+          <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png" />
+        </a>
+      </div>
+      <div id="hl7-nav">
+        <a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm">
+          <img alt="Search FHIR" src="assets/images/search.png" />
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- container -->
+    </div>
+  </div>
+  <!-- /segment-header -->
 
-  <!-- /HEADER CONTENT -->
-  </div>  <!-- /container -->
- </div>  <!-- /segment-navbar -->
+  <div id="segment-navbar" class="segment">
+    <!-- segment-navbar -->
+    <div id="stripe"> </div>
+    <div class="container">
+      <!-- container -->
+      <!-- HEADER CONTENT -->
+
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+          </button>
+          <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+          <div class="nav-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+
+              <li>
+                <a href="http://hl7.org/fhir/STU3/index.html">Home</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/documentation.html">Documentation</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/modules.html">Modules</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/resourcelist.html">Resources</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/profilelist.html">Profiles</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/extensibility-registry.html">Extensions</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/operationslist.html">Operations</a>
+              </li>
+
+            </ul>
+          </div>
+          <!-- /.nav-collapse -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- /HEADER CONTENT -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-navbar -->
+</div>
+
     
     <div id="segment-breadcrumb" class="segmnt">
       <div class="container">
@@ -115,16 +150,16 @@
               <br/>
               <pre class="xml">
 
-&lt;<a href="http://hl7-fhir.github.io/observation.html#Observation">Observation</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7-fhir.github.io/observation.html#Observation.id">id</a> <a href="http://hl7-fhir.github.io/datatypes.html#id">value</a>=&quot;MDRO-CDI-Observation-Example&quot;/&gt;
-  &lt;<a href="http://hl7-fhir.github.io/observation.html#Observation.meta">meta</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Meta#Meta.versionId">versionId</a> <a href="http://hl7-fhir.github.io/datatypes.html#id">value</a>=&quot;1&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7-fhir.github.io/datatypes.html#instant">value</a>=&quot;2017-09-15T08:16:14Z&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7-fhir.github.io/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation&quot;/&gt;
+&lt;<a href="http://hl7.org/fhir/STU3/observation.html#Observation">Observation</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;MDRO-CDI-Observation-Example&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/observation.html#Observation.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.versionId">versionId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">value</a>=&quot;2017-09-15T08:16:14Z&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation&quot;/&gt;
   &lt;/meta&gt;
-  &lt;<a href="http://hl7-fhir.github.io/observation.html#Observation.text">text</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/observation.html#Observation.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
             &lt;p&gt;
                 &lt;b&gt; id&lt;/b&gt;MDRO-CDI-Observation-Example
@@ -146,15 +181,15 @@
             &lt;/p&gt;
         &lt;/div&gt;
   &lt;/text&gt;
-  &lt;<a href="http://hl7-fhir.github.io/observation.html#Observation.status">status</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
-  &lt;<a href="http://hl7-fhir.github.io/observation.html#Observation.code">code</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7-fhir.github.io/datatypes.html#uri">value</a>=&quot;https://phinvads.cdc.gov/vads&quot;/&gt;
-      &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;2318-4&quot;/&gt;
-      &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;MDRO Organism or C.difficile Infection&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/observation.html#Observation.code">code</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;https://phinvads.cdc.gov/vads&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;2318-4&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;MDRO Organism or C.difficile Infection&quot;/&gt;
     &lt;/coding&gt;
   &lt;/code&gt;
-  &lt;<a href="http://hl7-fhir.github.io/observation.html#Observation.value[x]">valueBoolean</a> <a href="http://hl7-fhir.github.io/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/observation.html#Observation.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
 &lt;/Observation&gt;</pre>
 
             
@@ -168,13 +203,13 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Sat, Sep 23, 2017 15:59+1000. <a href="qa.html">QA Page</a>
+      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Sun, Sep 24, 2017 19:29+1000. <a href="qa.html">QA Page</a>
         <br/>
         <span style="color: #FFFF77">
         Links: <a style="color: #81BEF7" href="http://hl7.org/fhir/search.cfm">Search <img style="text-align: baseline" src="external.png"/></a> |
-          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/history.html">Version History</a> |
-          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/toc.html">Table of Contents</a> |
-          <a style="color: #81BEF7" rel="license" href="http://hl7-fhir.github.io/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+          <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/history.html">Version History</a> |
+          <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/toc.html">Table of Contents</a> |
+          <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
           <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img style="text-align: baseline" src="external.png"/></a>
         </span>
         </p>

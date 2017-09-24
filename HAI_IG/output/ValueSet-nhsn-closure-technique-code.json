@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nhsn-closure-technique-code",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSNClosureTechniqueCode</h2><div><p>Code System: cdcNHSN 2.16.840.1.113883.6.277</p>\n<p>A full listing of codes can be found in the hai_voc.xls file provided with this package.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.277</code><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>2406-7</td><td>Primary</td><td/></tr><tr><td>2407-5</td><td>Other than Primary</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code",
+  "name": "NHSNClosureTechniqueCode",
+  "status": "active",
+  "date": "2017-09-24T19:29:43+10:00",
+  "description": "Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.6.277",
+        "concept": [
+          {
+            "code": "2406-7",
+            "display": "Primary"
+          },
+          {
+            "code": "2407-5",
+            "display": "Other than Primary"
+          }
+        ]
+      }
+    ]
+  }
+}

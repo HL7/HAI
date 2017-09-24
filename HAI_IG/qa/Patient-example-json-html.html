@@ -1,0 +1,115 @@
+﻿<html>
+<head>
+  <title>Patient-example-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient">resourceType</a>" : "Patient",
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.id">id</a>" : "example",
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Medical record number = 12345&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Henry Jones (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: (360) 555 1212(HOME), ph: (360) 444 1212(WORK)&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: MALE&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 25/08/1985&lt;/p&gt;&lt;p&gt;&lt;b&gt;deceased&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 534 Anywhere St Tomorrowland WA 98001 US &lt;/p&gt;&lt;p&gt;&lt;b&gt;maritalStatus&lt;/b&gt;: Married &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/v3/MaritalStatus code 'M' = 'Married', given as 'Married'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;multipleBirth&lt;/b&gt;: true&lt;/p&gt;&lt;h3&gt;Contacts&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Telecom&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Address&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;family &lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt;(Details : {http://hl7.org/fhir/patient-contact-relationship code 'family' = 'family)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;De-Estu-Too Phire &lt;/td&gt;&lt;td&gt;ph: (360) 666-1212&lt;/td&gt;&lt;td&gt;534 Anywhere St Tomorrowland WA 98001 US &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v2/0203",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "MR"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "http://hl7.org/fhir/StructureDefinition/daf-patient",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "12345",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.period">period</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.start">start</a>" : "2016-01-08"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.active">active</a>" : true,
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.name">name</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.use">use</a>" : "official",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.family">family</a>" : "Jones",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a>" : [
+        "Henry"
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.telecom">telecom</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "(360) 555 1212",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "home"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "(360) 444 1212",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "work"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.gender">gender</a>" : "male",
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.birthDate">birthDate</a>" : "1985-08-25",
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.deceased[x]">deceasedBoolean</a>" : false,
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.address">address</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.line">line</a>" : [
+        "534 Anywhere St"
+      ],
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.city">city</a>" : "Tomorrowland",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.state">state</a>" : "WA",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.postalCode">postalCode</a>" : "98001",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.country">country</a>" : "US"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.maritalStatus">maritalStatus</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/MaritalStatus",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "M",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Married"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.multipleBirth[x]">multipleBirthBoolean</a>" : true,
+  "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.contact.relationship">relationship</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/patient-contact-relationship",
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "family"
+            }
+          ]
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.contact.name">name</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.family">family</a>" : "Phire",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a>" : [
+          "De-Estu-Too"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.contact.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "(360) 666-1212"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.contact.address">address</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.line">line</a>" : [
+          "534 Anywhere St"
+        ],
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.city">city</a>" : "Tomorrowland",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.state">state</a>" : "WA",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.postalCode">postalCode</a>" : "98001",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.country">country</a>" : "US"
+      }
+    }
+  ]
+}</pre>
+</body>
+</html>

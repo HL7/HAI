@@ -3,7 +3,7 @@
   "id": "ssi-questionnaire",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>version</b>: 1</p><p><b>title</b>: Surgical Site Infection</p><p><b>status</b>: DRAFT</p><p><b>version</b>: 1</p><p><b>title</b>: Surgical Site Infection</p><p><b>status</b>: DRAFT</p><p><b>code</b>: Healthcare Associated Infection Report (Details: LOINC code 51897-7 = 'Healthcare Associated Infection report Document', stated as 'Healthcare Associated Infection Report')</p><blockquote><p><b>item</b></p><p><b>linkId</b>: 6706</p><p><b>text</b>: Patient</p><p><b>type</b>: REFERENCE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 1</p><p><b>text</b>: Date of Event</p><p><b>type</b>: DATE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 2</p><p><b>text</b>: NHSN Procedure Code</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: NHSNProcedureCategoryCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\r\n\r\nNHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\r\n\r\nNHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 3</p><p><b>text</b>: ICD-10-PCS or CPT Procedure Code</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: <a href=\"https://icd.codes\">ICD-10-PCS</a></p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 4</p><p><b>text</b>: Date of Procedure</p><p><b>type</b>: DATE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: outpatient_procedure</p><p><b>text</b>: Outpatient Procedure</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>repeats</b>: false</p><p><b>options</b>: nhsn-encounter-type-code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 6</p><p><b>text</b>: MDRO Infection Surveillance</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 7</p><p><b>text</b>: Date Admitted to Facility:</p><p><b>type</b>: DATE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 8</p><p><b>text</b>: Location</p><p><b>type</b>: CHOICE</p><p><b>required</b>: false</p><p><b>options</b>: NHSNHealthcareServiceLocationCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: specific_event</p><p><b>text</b>: Specific Event</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: NHSNInfectionConditionCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code; name: NHSNInfectionConditionCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code; name: NHSNInfectionConditionCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: infection_present</p><p><b>code</b>: Infection present at the time of surgery (Details: SNOMED CT code 1237-7 = '1237-7', stated as 'Infection present at the time of surgery')</p><p><b>text</b>: Infection Present at Time of Surgery (PATOS)</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: criteria_used</p><p><b>text</b>: Specify Criteria Used (check all that apply)</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>repeats</b>: true</p><p><b>options</b>: NHSNCriterionOfDiagnosisCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code; name: NHSNCriterionOfDiagnosisCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code; name: NHSNCriterionOfDiagnosisCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: detected</p><p><b>text</b>: Detected</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: NHSNOccasionOfDetectionCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection; name: NHSNOccasionOfDetectionCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection; name: NHSNOccasionOfDetectionCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: secondary_bsi</p><p><b>code</b>: Secondary bloodstream infection (Details: urn:oid:2.16.840.1.113883.6.277 code 3111-2 = '3111-2', stated as 'Secondary bloodstream infection')</p><p><b>text</b>: Secondary Bloodstream Infection</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: died</p><p><b>code</b>: Dead (Details: SNOMED CT code 419099009 = 'Dead (finding)', stated as 'Dead')</p><p><b>text</b>: Died</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: ssi_contributed_to_death</p><p><b>text</b>: SSI Contributed to Death</p><p><b>type</b>: BOOLEAN</p><h3>EnableWhens</h3><table class=\"grid\"><tr><td>-</td><td><b>Question</b></td><td><b>HasAnswer</b></td></tr><tr><td>*</td><td>died</td><td>true</td></tr></table><p><b>required</b>: false</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: date_admitted_to_facility</p><p><b>text</b>: Date Admitted to Facility:</p><p><b>type</b>: DATE</p><p><b>required</b>: false</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: pathogens_identified</p><p><b>text</b>: Pathogens Identified</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 9392</p><p><b>text</b>: Findings Group</p><p><b>type</b>: GROUP</p><h3>EnableWhens</h3><table class=\"grid\"><tr><td>-</td><td><b>Question</b></td><td><b>HasAnswer</b></td></tr><tr><td>*</td><td>pathogens_identified</td><td>true</td></tr></table><p><b>required</b>: false</p><p><b>repeats</b>: true</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>version</b>: 1</p><p><b>title</b>: Surgical Site Infection</p><p><b>status</b>: DRAFT</p><p><b>version</b>: 1</p><p><b>title</b>: Surgical Site Infection</p><p><b>status</b>: DRAFT</p><p><b>code</b>: Healthcare Associated Infection Report (Details: LOINC code 51897-7 = 'Healthcare Associated Infection report Document', stated as 'Healthcare Associated Infection Report')</p><blockquote><p><b>item</b></p><p><b>linkId</b>: 6706</p><p><b>text</b>: Patient</p><p><b>type</b>: REFERENCE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 1</p><p><b>text</b>: Date of Event</p><p><b>type</b>: DATE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 2</p><p><b>text</b>: NHSN Procedure Code</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: NHSNProcedureCategoryCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\r\n\r\nNHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\r\n\r\nNHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 3</p><p><b>text</b>: ICD-10-PCS or CPT Procedure Code</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: <a href=\"http://hl7.org/fhir/sid/icd-10\">ICD-10-PCS</a></p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 4</p><p><b>text</b>: Date of Procedure</p><p><b>type</b>: DATE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: outpatient-procedure</p><p><b>text</b>: Outpatient Procedure</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>repeats</b>: false</p><p><b>options</b>: nhsn-encounter-type-code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 6</p><p><b>text</b>: MDRO Infection Surveillance</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 7</p><p><b>text</b>: Date Admitted to Facility:</p><p><b>type</b>: DATE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 8</p><p><b>text</b>: Location</p><p><b>type</b>: CHOICE</p><p><b>required</b>: false</p><p><b>options</b>: NHSNHealthcareServiceLocationCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: specific-event</p><p><b>text</b>: Specific Event</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: NHSNInfectionConditionCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code; name: NHSNInfectionConditionCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code; name: NHSNInfectionConditionCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: infection-present</p><p><b>code</b>: Infection present at the time of surgery (Details: SNOMED CT code 1237-7 = '1237-7', stated as 'Infection present at the time of surgery')</p><p><b>text</b>: Infection Present at Time of Surgery (PATOS)</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: criteria-used</p><p><b>text</b>: Specify Criteria Used (check all that apply)</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>repeats</b>: true</p><p><b>options</b>: NHSNCriterionOfDiagnosisCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code; name: NHSNCriterionOfDiagnosisCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code; name: NHSNCriterionOfDiagnosisCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: detected</p><p><b>text</b>: Detected</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: NHSNOccasionOfDetectionCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection; name: NHSNOccasionOfDetectionCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection; name: NHSNOccasionOfDetectionCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: secondary-bsi</p><p><b>code</b>: Secondary bloodstream infection (Details: urn:oid:2.16.840.1.113883.6.277 code 3111-2 = '3111-2', stated as 'Secondary bloodstream infection')</p><p><b>text</b>: Secondary Bloodstream Infection</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: died</p><p><b>code</b>: Dead (Details: SNOMED CT code 419099009 = 'Dead (finding)', stated as 'Dead')</p><p><b>text</b>: Died</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: ssi-contributed-to-death</p><p><b>text</b>: SSI Contributed to Death</p><p><b>type</b>: BOOLEAN</p><h3>EnableWhens</h3><table class=\"grid\"><tr><td>-</td><td><b>Question</b></td><td><b>HasAnswer</b></td></tr><tr><td>*</td><td>died</td><td>true</td></tr></table><p><b>required</b>: false</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: date-admitted-to-facility</p><p><b>text</b>: Date Admitted to Facility:</p><p><b>type</b>: DATE</p><p><b>required</b>: false</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: pathogens-identified</p><p><b>text</b>: Pathogens Identified</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: findings-group</p><p><b>text</b>: Findings Group</p><p><b>type</b>: GROUP</p><h3>EnableWhens</h3><table class=\"grid\"><tr><td>-</td><td><b>Question</b></td><td><b>HasAnswer</b></td></tr><tr><td>*</td><td>pathogens-identified</td><td>true</td></tr></table><p><b>required</b>: false</p><p><b>repeats</b>: true</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote></div>"
   },
   "contained": [
     {
@@ -473,7 +473,7 @@
                 "display": "Amoxicillin Susc Islt"
               },
               {
-                "code": "35816-8 ",
+                "code": "35816-8",
                 "display": "Gemifloxacin Susc Islt"
               },
               {
@@ -489,11 +489,11 @@
                 "display": "Penicillin V Susc Islt"
               },
               {
-                "code": "54188-8 ",
+                "code": "54188-8",
                 "display": "Posaconazole Susc Islt"
               },
               {
-                "code": "18982-9 ",
+                "code": "18982-9",
                 "display": "Streptomycin Susc Islt"
               },
               {
@@ -501,7 +501,7 @@
                 "display": "Sulfisoxaz Susc Islt"
               },
               {
-                "code": "35845-7 ",
+                "code": "35845-7",
                 "display": "Telithromycin Susc Islt"
               },
               {
@@ -2079,7 +2079,7 @@
               },
               {
                 "code": "2363-2",
-                "display": "Criterion 3 - Positive Diagnostic test for Legionella species "
+                "display": "Criterion 3 - Positive Diagnostic test for Legionella species"
               },
               {
                 "code": "2364-0",
@@ -2424,7 +2424,7 @@
       "type": "choice",
       "required": true,
       "options": {
-        "reference": "https://icd.codes",
+        "reference": "http://hl7.org/fhir/sid/icd-10",
         "display": "ICD-10-PCS"
       }
     },
@@ -2435,7 +2435,7 @@
       "required": true
     },
     {
-      "linkId": "outpatient_procedure",
+      "linkId": "outpatient-procedure",
       "text": "Outpatient Procedure",
       "type": "choice",
       "required": true,
@@ -2468,7 +2468,7 @@
       }
     },
     {
-      "linkId": "specific_event",
+      "linkId": "specific-event",
       "text": "Specific Event",
       "type": "choice",
       "required": true,
@@ -2478,7 +2478,7 @@
       }
     },
     {
-      "linkId": "infection_present",
+      "linkId": "infection-present",
       "code": [
         {
           "system": "http://snomed.info/sct",
@@ -2491,7 +2491,7 @@
       "required": true
     },
     {
-      "linkId": "criteria_used",
+      "linkId": "criteria-used",
       "text": "Specify Criteria Used (check all that apply)",
       "type": "choice",
       "required": true,
@@ -2512,7 +2512,7 @@
       }
     },
     {
-      "linkId": "secondary_bsi",
+      "linkId": "secondary-bsi",
       "code": [
         {
           "system": "urn:oid:2.16.840.1.113883.6.277",
@@ -2538,7 +2538,7 @@
       "required": true
     },
     {
-      "linkId": "ssi_contributed_to_death",
+      "linkId": "ssi-contributed-to-death",
       "text": "SSI Contributed to Death",
       "type": "boolean",
       "enableWhen": [
@@ -2550,24 +2550,24 @@
       "required": false
     },
     {
-      "linkId": "date_admitted_to_facility",
+      "linkId": "date-admitted-to-facility",
       "text": "Date Admitted to Facility:",
       "type": "date",
       "required": false
     },
     {
-      "linkId": "pathogens_identified",
+      "linkId": "pathogens-identified",
       "text": "Pathogens Identified",
       "type": "boolean",
       "required": true
     },
     {
-      "linkId": "9392",
+      "linkId": "findings-group",
       "text": "Findings Group",
       "type": "group",
       "enableWhen": [
         {
-          "question": "pathogens_identified",
+          "question": "pathogens-identified",
           "hasAnswer": true
         }
       ],
@@ -2577,31 +2577,31 @@
         {
           "extension": [
             {
-              "url": "http://www.lantanagroup.com/fhir/questionnaire-item-note",
+              "url": "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
               "valueString": "Ex: Staphylococcus coagulase-negative"
             }
           ],
-          "linkId": "3139",
-          "text": "Type",
+          "linkId": "pathogen-identified",
+          "text": "Pathogen Identified",
           "type": "choice",
           "required": true,
           "options": {
-            "reference": "#NHSNPathogenCode",
+            "reference": "#nhsn-pathogen-code",
             "display": "NHSNPathogenCode"
           }
         },
         {
-          "linkId": "3745",
+          "linkId": "pathogen-ranking",
           "text": "Pathogen Ranking",
           "type": "choice",
           "required": true,
           "options": {
-            "reference": "#NHSNPathogenRanking",
+            "reference": "#nhsn-pathogen-ranking",
             "display": "NHSNPathogenRanking"
           }
         },
         {
-          "linkId": "4656",
+          "linkId": "drug-susceptibility-test",
           "text": "Drug Susceptibility Test",
           "type": "group",
           "required": false,
@@ -2610,7 +2610,7 @@
             {
               "extension": [
                 {
-                  "url": "http://www.lantanagroup.com/fhir/questionnaire-item-note",
+                  "url": "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
                   "valueString": "Ex: DAPTO"
                 }
               ],
@@ -2619,23 +2619,23 @@
               "type": "choice",
               "required": true,
               "options": {
-                "reference": "#NHSNDrugSusceptibilityTestsCode",
+                "reference": "#nhsn-drug-susceptibility-tests-code",
                 "display": "NHSNDrugSusceptibilityTestsCode"
               }
             },
             {
               "extension": [
                 {
-                  "url": "http://www.lantanagroup.com/fhir/questionnaire-item-note",
+                  "url": "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
                   "valueString": "Ex: S, NS, or N"
                 }
               ],
-              "linkId": "8204",
-              "text": "Interpretation",
+              "linkId": "drug-susceptibility-finding",
+              "text": "Drug Susceptibility Finding",
               "type": "choice",
               "required": false,
               "options": {
-                "reference": "#NHSNDrugSusceptibilityFindingCode",
+                "reference": "#nhsn-drug-susceptibility-finding-code",
                 "display": "NHSNDrugSusceptibilityFindingCode"
               }
             }

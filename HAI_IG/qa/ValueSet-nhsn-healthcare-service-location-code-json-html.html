@@ -1,0 +1,920 @@
+﻿<html>
+<head>
+  <title>ValueSet-nhsn-healthcare-service-location-code-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.id">id</a>" : "nhsn-healthcare-service-location-code",
+  "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;NHSNHealthcareServiceLocationCode&lt;/h2&gt;&lt;div&gt;&lt;p&gt;A classification of patient care locations within healthcare facilities for public health surveillance purposes.&lt;/p&gt;
+&lt;p&gt;A full listing of codes can be found in the hai_voc.xls file provided with this package.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:2.16.840.1.113883.6.259&lt;/code&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1250-0&lt;/td&gt;&lt;td&gt;All Inpatient Locations [FACWIDEIN]&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1251-8&lt;/td&gt;&lt;td&gt;All Outpatient Locations [FACWIDEOUT]&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1025-6&lt;/td&gt;&lt;td&gt;Trauma Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1026-4&lt;/td&gt;&lt;td&gt;Burn Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1027-2&lt;/td&gt;&lt;td&gt;Medical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1028-0&lt;/td&gt;&lt;td&gt;Medical Cardiac Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1029-8&lt;/td&gt;&lt;td&gt;Medical/Surgical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1030-6&lt;/td&gt;&lt;td&gt;Surgical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1031-4&lt;/td&gt;&lt;td&gt;Neurosurgical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1032-2&lt;/td&gt;&lt;td&gt;Surgical Cardiothoracic Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1033-0&lt;/td&gt;&lt;td&gt;Respiratory Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1034-8&lt;/td&gt;&lt;td&gt;Prenatal Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1035-5&lt;/td&gt;&lt;td&gt;Neurologic Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1038-9&lt;/td&gt;&lt;td&gt;Inpatient Well Baby Nursery (Level I)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1039-7&lt;/td&gt;&lt;td&gt;Neonatal Critical Care(Level II/III)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1040-5&lt;/td&gt;&lt;td&gt;Neonatal Critical Care (Level III)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1041-3&lt;/td&gt;&lt;td&gt;Step down Neonatal ICU (Level II)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1042-1&lt;/td&gt;&lt;td&gt;Pediatric Burn Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1043-9&lt;/td&gt;&lt;td&gt;Pediatric Cardiothoracic Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1044-7&lt;/td&gt;&lt;td&gt;Pediatric Medical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1045-4&lt;/td&gt;&lt;td&gt;Pediatric Medical/Surgical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1046-2&lt;/td&gt;&lt;td&gt;Pediatric Neurosurgical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1047-0&lt;/td&gt;&lt;td&gt;Pediatric Respiratory Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1048-8&lt;/td&gt;&lt;td&gt;Pediatric Surgical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1049-6&lt;/td&gt;&lt;td&gt;Pediatric Trauma Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1022-3&lt;/td&gt;&lt;td&gt;Bone Marrow Transplant SCA&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1023-1&lt;/td&gt;&lt;td&gt;Pediatric Bone Marrow Transplant SCA&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1088-4&lt;/td&gt;&lt;td&gt;Hematology/Oncology SCA&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1089-2&lt;/td&gt;&lt;td&gt;Pediatric Hematology/Oncology SCA&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1091-8&lt;/td&gt;&lt;td&gt;Pediatric Dialysis SCA&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1092-6&lt;/td&gt;&lt;td&gt;Solid Organ Transplant SCA&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1093-4&lt;/td&gt;&lt;td&gt;Pediatric Solid Organ Transplant SCA&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1198-1&lt;/td&gt;&lt;td&gt;Inpatient Acute Dialysis SCA&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1051-2&lt;/td&gt;&lt;td&gt;Inpatient Behavioral Health/Psych Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1052-0&lt;/td&gt;&lt;td&gt;Inpatient Burn Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1053-8&lt;/td&gt;&lt;td&gt;Inpatient Ear/Nose/Throat Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1054-6&lt;/td&gt;&lt;td&gt;Inpatient Gastrointestinal Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1055-3&lt;/td&gt;&lt;td&gt;Inpatient Genitourinary Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1056-1&lt;/td&gt;&lt;td&gt;Inpatient Gerontology Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1057-9&lt;/td&gt;&lt;td&gt;Inpatient Gynecology Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1058-7&lt;/td&gt;&lt;td&gt;Labor and Delivery Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1059-5&lt;/td&gt;&lt;td&gt;Labor, Delivery, Recovery, Postpartum Suite (LDRP)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1060-3&lt;/td&gt;&lt;td&gt;Inpatient Medical Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1061-1&lt;/td&gt;&lt;td&gt;Inpatient Medical/Surgical Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1062-9&lt;/td&gt;&lt;td&gt;Inpatient Neurology Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1063-7&lt;/td&gt;&lt;td&gt;Inpatient Neurosurgical Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1064-5&lt;/td&gt;&lt;td&gt;Inpatient Ophthalmology Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1065-2&lt;/td&gt;&lt;td&gt;Inpatient Orthopedic Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1066-0&lt;/td&gt;&lt;td&gt;Inpatient Orthopedic Trauma Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1067-8&lt;/td&gt;&lt;td&gt;Inpatient Plastic Surgery Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1068-6&lt;/td&gt;&lt;td&gt;Inpatient Postpartum Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1069-4&lt;/td&gt;&lt;td&gt;Inpatient Pulmonary Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1070-2&lt;/td&gt;&lt;td&gt;Inpatient Rehabilitation Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1071-0&lt;/td&gt;&lt;td&gt;Acute Stroke Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1072-8&lt;/td&gt;&lt;td&gt;Inpatient Surgical Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1073-6&lt;/td&gt;&lt;td&gt;Inpatient Vascular Surgery Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1171-8&lt;/td&gt;&lt;td&gt;Inpatient Jail Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1172-6&lt;/td&gt;&lt;td&gt;Inpatient School Infirmary&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1205-4&lt;/td&gt;&lt;td&gt;Inpatient Antenatal Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1075-1&lt;/td&gt;&lt;td&gt;Inpatient Adolescent Behavioral Health Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1076-9&lt;/td&gt;&lt;td&gt;Inpatient Medical Pediatric Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1077-7&lt;/td&gt;&lt;td&gt;Inpatient Pediatric Behavioral Health Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1078-5&lt;/td&gt;&lt;td&gt;Inpatient Pediatric Burn Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1079-3&lt;/td&gt;&lt;td&gt;Inpatient Pediatric Ear, Nose, Throat Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1080-1&lt;/td&gt;&lt;td&gt;Inpatient Pediatric Genitourinary Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1081-9&lt;/td&gt;&lt;td&gt;Inpatient Pediatric Med/Surg Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1082-7&lt;/td&gt;&lt;td&gt;Inpatient Pediatric Neurology Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1083-5&lt;/td&gt;&lt;td&gt;Inpatient Pediatric Neurosurgical Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1084-3&lt;/td&gt;&lt;td&gt;Inpatient Pediatric Orthopedic Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1085-0&lt;/td&gt;&lt;td&gt;Pediatric Rehabilitation Ward - Within ACH&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1086-8&lt;/td&gt;&lt;td&gt;Inpatient Pediatric Surgical Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1099-1&lt;/td&gt;&lt;td&gt;Adult Step Down Unit (post-critical care)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1100-7&lt;/td&gt;&lt;td&gt;Pediatric Step Down Unit (post-critical care)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1005-8&lt;/td&gt;&lt;td&gt;Cardiac Catheterization Room/Suite&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1095-9&lt;/td&gt;&lt;td&gt;Cesarean Section Room/Suite&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1096-7&lt;/td&gt;&lt;td&gt;Inpatient Operating Room/Suite&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1097-5&lt;/td&gt;&lt;td&gt;Post-Anesthesia Care Unit/Recovery Room&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1203-9&lt;/td&gt;&lt;td&gt;Interventional Radiology&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1009-0&lt;/td&gt;&lt;td&gt;Pulmonary Function Testing&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1020-7&lt;/td&gt;&lt;td&gt;Sleep Studies (for in- and outpatients)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1178-3&lt;/td&gt;&lt;td&gt;Transport Service&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1190-8&lt;/td&gt;&lt;td&gt;Soiled Utility Area&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1208-8&lt;/td&gt;&lt;td&gt;Telemetry Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1209-6&lt;/td&gt;&lt;td&gt;Treatment Room&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1211-2&lt;/td&gt;&lt;td&gt;Pediatric Mixed Acuity Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1210-4&lt;/td&gt;&lt;td&gt;Adult Mixed Acuity Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1212-0&lt;/td&gt;&lt;td&gt;Any Age Mixed Acuity Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1102-3&lt;/td&gt;&lt;td&gt;Long-Term Care Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1103-1&lt;/td&gt;&lt;td&gt;Long-Term Care Alzheimer's Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1104-9&lt;/td&gt;&lt;td&gt;Long-Term Care Behavioral Health/Psych Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1105-6&lt;/td&gt;&lt;td&gt;Long-Term Care Rehabilitation Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1164-3&lt;/td&gt;&lt;td&gt;Ventilator Dependent Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1165-0&lt;/td&gt;&lt;td&gt;Inpatient Hospice&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1260-9&lt;/td&gt;&lt;td&gt;LTCF Bariatric Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1255-9&lt;/td&gt;&lt;td&gt;LTCF Dementia Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1258-3&lt;/td&gt;&lt;td&gt;LTCF General Nursing Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1254-2&lt;/td&gt;&lt;td&gt;LTCF Inpatient Hospice Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1256-7&lt;/td&gt;&lt;td&gt;LTCF Psychiatric Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1257-5&lt;/td&gt;&lt;td&gt;LTCF Skilled Nursing/Short Term Rehabilitation Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1259-1&lt;/td&gt;&lt;td&gt;LTCF Ventilator Dependent Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1220-3&lt;/td&gt;&lt;td&gt;LTAC ICU&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1221-1&lt;/td&gt;&lt;td&gt;LTAC Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1222-9&lt;/td&gt;&lt;td&gt;LTAC Pediatric ICU&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1214-6&lt;/td&gt;&lt;td&gt;LTAC Pediatric Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1217-9&lt;/td&gt;&lt;td&gt;Rehabilitation Ward - Freestanding IRF&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1218-7&lt;/td&gt;&lt;td&gt;Rehabilitation Pediatric Ward - Freestanding IRF&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1108-0&lt;/td&gt;&lt;td&gt;Emergency Department&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1109-8&lt;/td&gt;&lt;td&gt;Pediatric Emergency Department&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1160-1&lt;/td&gt;&lt;td&gt;Urgent Care Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1162-7&lt;/td&gt;&lt;td&gt;24-Hour Observation Area&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1169-2&lt;/td&gt;&lt;td&gt;Outpatient Surgery Recovery Room/Post-Anesthesia Care Unit&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1174-2&lt;/td&gt;&lt;td&gt;Mobile Emergency Services/EMS&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1007-4&lt;/td&gt;&lt;td&gt;Endoscopy Suite&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1008-2&lt;/td&gt;&lt;td&gt;Radiology (includes Nuclear Medicine)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1017-3&lt;/td&gt;&lt;td&gt;Hyperbaric Oxygen Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1018-1&lt;/td&gt;&lt;td&gt;Infusion Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1019-9&lt;/td&gt;&lt;td&gt;Specimen Collection Area (Healthcare)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1110-6&lt;/td&gt;&lt;td&gt;Allergy Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1112-2&lt;/td&gt;&lt;td&gt;Cardiac Rehabilitation Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1113-0&lt;/td&gt;&lt;td&gt;Cardiology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1115-5&lt;/td&gt;&lt;td&gt;Dermatology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1116-3&lt;/td&gt;&lt;td&gt;Diabetes/Endocrinology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1117-1&lt;/td&gt;&lt;td&gt;Family Medicine Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1118-9&lt;/td&gt;&lt;td&gt;Outpatient Gastrointestinal (GI) Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1119-7&lt;/td&gt;&lt;td&gt;Pediatric Gastrointestinal Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1120-5&lt;/td&gt;&lt;td&gt;Outpatient Medical Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1121-3&lt;/td&gt;&lt;td&gt;Gynecology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1122-1&lt;/td&gt;&lt;td&gt;Genetics Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1123-9&lt;/td&gt;&lt;td&gt;Neurology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1124-7&lt;/td&gt;&lt;td&gt;Ophthalmology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1125-4&lt;/td&gt;&lt;td&gt;Orthopedic Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1126-2&lt;/td&gt;&lt;td&gt;Ear, Nose, Throat Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1127-0&lt;/td&gt;&lt;td&gt;Pain Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1128-8&lt;/td&gt;&lt;td&gt;Pediatric Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1129-6&lt;/td&gt;&lt;td&gt;Pediatric Cardiology Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1130-4&lt;/td&gt;&lt;td&gt;Pediatric Dental Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1131-2&lt;/td&gt;&lt;td&gt;Pediatric Dermatology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1132-0&lt;/td&gt;&lt;td&gt;Pediatric Diabetes/Endocrinology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1133-8&lt;/td&gt;&lt;td&gt;Pediatric Orthopedic Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1134-6&lt;/td&gt;&lt;td&gt;Pediatric Scoliosis Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1136-1&lt;/td&gt;&lt;td&gt;Pediatric Hematology/Oncology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1137-9&lt;/td&gt;&lt;td&gt;Pediatric Nephrology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1138-7&lt;/td&gt;&lt;td&gt;Pediatric Rheumatology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1139-5&lt;/td&gt;&lt;td&gt;Well Baby Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1140-3&lt;/td&gt;&lt;td&gt;Podiatry Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1141-1&lt;/td&gt;&lt;td&gt;Physician's Office&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1142-9&lt;/td&gt;&lt;td&gt;Rheumatology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1143-7&lt;/td&gt;&lt;td&gt;Surgical Services Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1144-5&lt;/td&gt;&lt;td&gt;Wound Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1145-2&lt;/td&gt;&lt;td&gt;Behavioral Health Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1146-0&lt;/td&gt;&lt;td&gt;Pediatric Behavioral Health Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1147-8&lt;/td&gt;&lt;td&gt;Blood Collection Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1148-6&lt;/td&gt;&lt;td&gt;Continence Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1149-4&lt;/td&gt;&lt;td&gt;Ostomy Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1150-2&lt;/td&gt;&lt;td&gt;Outpatient Dental Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1151-0&lt;/td&gt;&lt;td&gt;Occupational Health Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1152-8&lt;/td&gt;&lt;td&gt;Occupational Therapy Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1153-6&lt;/td&gt;&lt;td&gt;Outpatient Hemodialysis Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1154-4&lt;/td&gt;&lt;td&gt;Outpatient HIV Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1155-1&lt;/td&gt;&lt;td&gt;Outpatient Rehabilitation Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1156-9&lt;/td&gt;&lt;td&gt;Prenatal Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1157-7&lt;/td&gt;&lt;td&gt;Pulmonary Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1158-5&lt;/td&gt;&lt;td&gt;Speech Therapy Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1159-3&lt;/td&gt;&lt;td&gt;Wound Ostomy Continence Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1161-9&lt;/td&gt;&lt;td&gt;Holistic Medicine Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1170-0&lt;/td&gt;&lt;td&gt;School or Prison Infirmary&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1175-9&lt;/td&gt;&lt;td&gt;Mobile MRI/CT&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1176-7&lt;/td&gt;&lt;td&gt;Mobile Blood Collection center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1200-5&lt;/td&gt;&lt;td&gt;Outpatient Hematology/Oncology Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1202-1&lt;/td&gt;&lt;td&gt;Physical Therapy Clinic&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1207-0&lt;/td&gt;&lt;td&gt;Donor Apheresis Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1192-4&lt;/td&gt;&lt;td&gt;Home Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1194-0&lt;/td&gt;&lt;td&gt;Home-based Hospice&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1195-7&lt;/td&gt;&lt;td&gt;Blood Collection (Blood Drive Campaign)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1196-5&lt;/td&gt;&lt;td&gt;Specimen Collection Area (Community)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1204-7&lt;/td&gt;&lt;td&gt;Location outside facility&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1262-1&lt;/td&gt;&lt;td&gt;Home Care -  Dialysis&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1010-8&lt;/td&gt;&lt;td&gt;General Laboratory&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1011-6&lt;/td&gt;&lt;td&gt;Clinical Chemistry&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1012-4&lt;/td&gt;&lt;td&gt;Hematology&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1013-2&lt;/td&gt;&lt;td&gt;Histology/Surgical Pathology&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1014-0&lt;/td&gt;&lt;td&gt;Microbiology&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1015-7&lt;/td&gt;&lt;td&gt;Serology Lab&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1016-5&lt;/td&gt;&lt;td&gt;Virology Lab&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1106-4&lt;/td&gt;&lt;td&gt;Assisted Living Area&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1179-1&lt;/td&gt;&lt;td&gt;Pharmacy&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1180-9&lt;/td&gt;&lt;td&gt;Public Area in Facility&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1181-7&lt;/td&gt;&lt;td&gt;Physical Plant Operations Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1182-5&lt;/td&gt;&lt;td&gt;Housekeeping/Environmental Services&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1183-3&lt;/td&gt;&lt;td&gt;Laundry Room&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1184-1&lt;/td&gt;&lt;td&gt;Administrative Areas&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1185-8&lt;/td&gt;&lt;td&gt;Blood Bank&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1186-6&lt;/td&gt;&lt;td&gt;Central Sterile Supply&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1187-4&lt;/td&gt;&lt;td&gt;Central Trash Area&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1188-2&lt;/td&gt;&lt;td&gt;Facility Grounds&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1189-0&lt;/td&gt;&lt;td&gt;Morgue/Autopsy Room&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1261-7&lt;/td&gt;&lt;td&gt;Centralized Transfusion Service&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1223-7&lt;/td&gt;&lt;td&gt;ONC Medical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1224-5&lt;/td&gt;&lt;td&gt;ONC Surgical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1225-2&lt;/td&gt;&lt;td&gt;ONC Medical-Surgical Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1226-0&lt;/td&gt;&lt;td&gt;ONC Leukemia Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1228-6&lt;/td&gt;&lt;td&gt;ONC Lymphoma Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1229-4&lt;/td&gt;&lt;td&gt;ONC Leukemia/Lymphoma Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1230-2&lt;/td&gt;&lt;td&gt;ONC Solid Tumor Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1231-0&lt;/td&gt;&lt;td&gt;ONC Hematopoietic Stem Cell Transplant Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1232-8&lt;/td&gt;&lt;td&gt;ONC General Hematology/Oncology Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1233-6&lt;/td&gt;&lt;td&gt;Pediatric Oncology Critical Care&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1234-4&lt;/td&gt;&lt;td&gt;Inpatient Pediatric Hematopoietic Stem Cell Transplant Oncology Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1235-1&lt;/td&gt;&lt;td&gt;Inpatient Pediatric General Hematology/Oncology Ward&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1227-8&lt;/td&gt;&lt;td&gt;Oncology Step Down Unit (post-critical care)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1236-9&lt;/td&gt;&lt;td&gt;ONC Mixed Acuity Unit (all ages)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1243-5&lt;/td&gt;&lt;td&gt;Ambulatory Surgery Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1242-7&lt;/td&gt;&lt;td&gt;Outpatient Operating Room/Suite_Attached&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1244-3&lt;/td&gt;&lt;td&gt;Outpatient Operating Room/Suite_Detached&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1248-4&lt;/td&gt;&lt;td&gt;Pediatric Outpatient Operating Room/Suite_Attached&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1249-2&lt;/td&gt;&lt;td&gt;Pediatric Outpatient Operating Room/Suite_Detached&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1246-8&lt;/td&gt;&lt;td&gt;Outpatient Ambulatory Pediatric Surgery Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1245-0&lt;/td&gt;&lt;td&gt;Ambulatory Surgery Recovery Room&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1247-6&lt;/td&gt;&lt;td&gt;Outpatient Ambulatory Plastic Surgery Center&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;urn:oid:2.16.840.1.113883.6.277&lt;/code&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1206-2&lt;/td&gt;&lt;td&gt;Float&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code",
+  "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.name">name</a>" : "NHSNHealthcareServiceLocationCode",
+  "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.date">date</a>" : "2017-09-24T19:29:43+10:00",
+  "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.description">description</a>" : "A classification of patient care locations within healthcare facilities for public health surveillance purposes.
+
+A full listing of codes can be found in the hai_voc.xls file provided with this package.",
+  "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:2.16.840.1.113883.6.259",
+        "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1250-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "All Inpatient Locations [FACWIDEIN]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1251-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "All Outpatient Locations [FACWIDEOUT]"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1025-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Trauma Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1026-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Burn Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1027-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Medical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1028-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Medical Cardiac Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1029-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Medical/Surgical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1030-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Surgical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1031-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Neurosurgical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1032-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Surgical Cardiothoracic Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1033-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Respiratory Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1034-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Prenatal Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1035-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Neurologic Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1038-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Well Baby Nursery (Level I)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1039-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Neonatal Critical Care(Level II/III)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1040-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Neonatal Critical Care (Level III)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1041-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Step down Neonatal ICU (Level II)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1042-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Burn Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1043-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Cardiothoracic Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1044-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Medical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1045-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Medical/Surgical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1046-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Neurosurgical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1047-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Respiratory Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1048-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Surgical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1049-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Trauma Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1022-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Bone Marrow Transplant SCA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1023-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Bone Marrow Transplant SCA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1088-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hematology/Oncology SCA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1089-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Hematology/Oncology SCA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1091-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Dialysis SCA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1092-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Solid Organ Transplant SCA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1093-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Solid Organ Transplant SCA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1198-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Acute Dialysis SCA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1051-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Behavioral Health/Psych Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1052-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Burn Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1053-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Ear/Nose/Throat Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1054-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Gastrointestinal Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1055-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Genitourinary Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1056-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Gerontology Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1057-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Gynecology Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1058-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Labor and Delivery Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1059-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Labor, Delivery, Recovery, Postpartum Suite (LDRP)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1060-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Medical Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1061-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Medical/Surgical Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1062-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Neurology Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1063-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Neurosurgical Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1064-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Ophthalmology Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1065-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Orthopedic Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1066-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Orthopedic Trauma Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1067-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Plastic Surgery Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1068-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Postpartum Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1069-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pulmonary Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1070-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Rehabilitation Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1071-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Acute Stroke Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1072-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Surgical Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1073-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Vascular Surgery Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1171-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Jail Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1172-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient School Infirmary"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1205-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Antenatal Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1075-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Adolescent Behavioral Health Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1076-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Medical Pediatric Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1077-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric Behavioral Health Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1078-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric Burn Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1079-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric Ear, Nose, Throat Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1080-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric Genitourinary Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1081-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric Med/Surg Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1082-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric Neurology Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1083-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric Neurosurgical Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1084-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric Orthopedic Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1085-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Rehabilitation Ward - Within ACH"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1086-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric Surgical Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1099-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Adult Step Down Unit (post-critical care)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1100-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Step Down Unit (post-critical care)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1005-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cardiac Catheterization Room/Suite"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1095-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cesarean Section Room/Suite"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1096-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Operating Room/Suite"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1097-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Post-Anesthesia Care Unit/Recovery Room"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1203-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Interventional Radiology"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1009-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pulmonary Function Testing"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1020-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sleep Studies (for in- and outpatients)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1178-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Transport Service"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1190-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Soiled Utility Area"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1208-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Telemetry Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1209-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Treatment Room"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1211-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Mixed Acuity Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1210-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Adult Mixed Acuity Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1212-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Any Age Mixed Acuity Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1102-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Long-Term Care Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1103-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Long-Term Care Alzheimer's Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1104-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Long-Term Care Behavioral Health/Psych Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1105-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Long-Term Care Rehabilitation Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1164-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ventilator Dependent Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1165-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Hospice"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1260-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTCF Bariatric Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1255-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTCF Dementia Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1258-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTCF General Nursing Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1254-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTCF Inpatient Hospice Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1256-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTCF Psychiatric Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1257-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTCF Skilled Nursing/Short Term Rehabilitation Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1259-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTCF Ventilator Dependent Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1220-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTAC ICU"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1221-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTAC Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1222-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTAC Pediatric ICU"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1214-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "LTAC Pediatric Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1217-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rehabilitation Ward - Freestanding IRF"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1218-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rehabilitation Pediatric Ward - Freestanding IRF"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1108-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Emergency Department"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1109-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Emergency Department"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1160-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Urgent Care Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1162-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "24-Hour Observation Area"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1169-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Surgery Recovery Room/Post-Anesthesia Care Unit"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1174-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Mobile Emergency Services/EMS"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1007-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Endoscopy Suite"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1008-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Radiology (includes Nuclear Medicine)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1017-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hyperbaric Oxygen Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1018-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Infusion Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1019-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Specimen Collection Area (Healthcare)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1110-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Allergy Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1112-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cardiac Rehabilitation Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1113-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Cardiology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1115-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Dermatology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1116-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Diabetes/Endocrinology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1117-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Family Medicine Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1118-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Gastrointestinal (GI) Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1119-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Gastrointestinal Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1120-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Medical Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1121-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Gynecology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1122-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Genetics Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1123-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Neurology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1124-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ophthalmology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1125-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Orthopedic Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1126-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ear, Nose, Throat Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1127-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pain Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1128-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1129-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Cardiology Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1130-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Dental Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1131-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Dermatology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1132-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Diabetes/Endocrinology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1133-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Orthopedic Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1134-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Scoliosis Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1136-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Hematology/Oncology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1137-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Nephrology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1138-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Rheumatology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1139-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Well Baby Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1140-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Podiatry Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1141-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Physician's Office"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1142-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Rheumatology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1143-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Surgical Services Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1144-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Wound Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1145-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Behavioral Health Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1146-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Behavioral Health Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1147-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Blood Collection Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1148-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Continence Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1149-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ostomy Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1150-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Dental Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1151-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Occupational Health Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1152-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Occupational Therapy Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1153-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Hemodialysis Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1154-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient HIV Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1155-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Rehabilitation Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1156-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Prenatal Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1157-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pulmonary Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1158-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Speech Therapy Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1159-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Wound Ostomy Continence Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1161-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Holistic Medicine Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1170-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "School or Prison Infirmary"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1175-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Mobile MRI/CT"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1176-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Mobile Blood Collection center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1200-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Hematology/Oncology Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1202-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Physical Therapy Clinic"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1207-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Donor Apheresis Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1192-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Home Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1194-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Home-based Hospice"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1195-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Blood Collection (Blood Drive Campaign)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1196-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Specimen Collection Area (Community)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1204-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Location outside facility"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1262-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Home Care -  Dialysis"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1010-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "General Laboratory"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1011-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Clinical Chemistry"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1012-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Hematology"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1013-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Histology/Surgical Pathology"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1014-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Microbiology"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1015-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Serology Lab"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1016-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Virology Lab"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1106-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Assisted Living Area"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1179-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pharmacy"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1180-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Public Area in Facility"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1181-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Physical Plant Operations Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1182-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Housekeeping/Environmental Services"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1183-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Laundry Room"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1184-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Administrative Areas"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1185-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Blood Bank"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1186-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Central Sterile Supply"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1187-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Central Trash Area"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1188-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Facility Grounds"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1189-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Morgue/Autopsy Room"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1261-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Centralized Transfusion Service"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1223-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ONC Medical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1224-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ONC Surgical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1225-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ONC Medical-Surgical Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1226-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ONC Leukemia Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1228-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ONC Lymphoma Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1229-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ONC Leukemia/Lymphoma Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1230-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ONC Solid Tumor Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1231-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ONC Hematopoietic Stem Cell Transplant Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1232-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ONC General Hematology/Oncology Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1233-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Oncology Critical Care"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1234-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric Hematopoietic Stem Cell Transplant Oncology Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1235-1",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Inpatient Pediatric General Hematology/Oncology Ward"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1227-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Oncology Step Down Unit (post-critical care)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1236-9",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "ONC Mixed Acuity Unit (all ages)"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1243-5",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ambulatory Surgery Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1242-7",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Operating Room/Suite_Attached"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1244-3",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Operating Room/Suite_Detached"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1248-4",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Outpatient Operating Room/Suite_Attached"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1249-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pediatric Outpatient Operating Room/Suite_Detached"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1246-8",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Ambulatory Pediatric Surgery Center"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1245-0",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Ambulatory Surgery Recovery Room"
+          },
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1247-6",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Outpatient Ambulatory Plastic Surgery Center"
+          }
+        ]
+      },
+      {
+        "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:2.16.840.1.113883.6.277",
+        "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1206-2",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Float"
+          }
+        ]
+      }
+    ]
+  }
+}</pre>
+</body>
+</html>

@@ -1,0 +1,183 @@
+﻿<html>
+<head>
+  <title>Composition-HAI-Surgical-Site-Infection-Report-SSI-Example-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition">resourceType</a>" : "Composition",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.id">id</a>" : "HAI-Surgical-Site-Infection-Report-SSI-Example",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.versionId">versionId</a>" : "1",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2017-09-15T08:16:14Z",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/hai-surgical-site-infection-report-ssi"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.language">language</a>" : "en-US",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+            &lt;p&gt;Surgical Site Infection Report (SSI)&lt;/p&gt;
+            &lt;p&gt;Managed by Community Health and Hospitals&lt;/p&gt;
+            &lt;p&gt;This section records the infection type, with details. It records whether the infection was present 
+                at the time of surgery and whether the SSI was identified through the use of discharge diagnosis 
+                or procedure codes. If the patient died, NHSN protocol requires that the death be recorded.&lt;/p&gt;
+        &lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.identifier">identifier</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "22222222"
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.status">status</a>" : "preliminary",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "51897-7",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Healthcare Associated Infection Report"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Henry Jones"
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.encounter">encounter</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter"
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.date">date</a>" : "2017-09-15T09:10:14Z",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/practitioner-1",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Ronald Bone, MD"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.title">title</a>" : "Healthcare Associated Infection Report - SSI",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.confidentiality">confidentiality</a>" : "N",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.custodian">custodian</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Community Health and Hospitals"
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section">section</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.title">title</a>" : "Infection Details Section",
+      "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "51899-3",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Infection Details"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Status&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Code&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Value&lt;/b&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;final&lt;/td&gt;
+                        &lt;td&gt;2318-4&lt;/td&gt;
+                        &lt;td&gt;Y&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.title">title</a>" : "Findings Section",
+      "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "18769-0",
+            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Findings Section"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Type&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Status&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Code&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Code Display&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Value Code&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Value Display&lt;/b&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Pathogen Identified&lt;/td&gt;
+                        &lt;td&gt;final&lt;/td&gt;
+                        &lt;td&gt;41852-5&lt;/td&gt;
+                        &lt;td&gt;Microorganism identified&lt;/td&gt;
+                        &lt;td&gt;50875003&lt;/td&gt;
+                        &lt;td&gt;Acanthamoeba (organism)&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Type&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Status&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Code&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Code Display&lt;/b&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;b&gt;Value Boolean&lt;/b&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;MRDO/CDI Observation&lt;/td&gt;
+                        &lt;td&gt;final&lt;/td&gt;
+                        &lt;td&gt;2318-4&lt;/td&gt;
+                        &lt;td&gt;MDRO Infection of C.difficile infection&lt;/td&gt;
+                        &lt;td&gt;false&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;"
+      },
+      "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.entry">entry</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified"
+        },
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation"
+        }
+      ]
+    }
+  ]
+}</pre>
+</body>
+</html>

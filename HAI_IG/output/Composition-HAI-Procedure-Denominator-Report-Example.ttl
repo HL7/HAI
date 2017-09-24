@@ -13,7 +13,7 @@
      fhir:Meta.versionId [ fhir:value "1" ];
      fhir:Meta.lastUpdated [ fhir:value "2017-09-15T08:16:14Z"^^xsd:dateTime ];
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-report";
+       fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-report";
        fhir:index 0
      ]
   ];
@@ -42,8 +42,8 @@
      fhir:Reference.display [ fhir:value "Henry Jones" ]
   ];
   fhir:Composition.encounter [
-     fhir:link <http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-encounter>;
-     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-encounter" ]
+     fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter" ]
   ];
   fhir:Composition.date [ fhir:value "2017-09-15T09:10:14Z"^^xsd:dateTime];
   fhir:Composition.author [
@@ -72,18 +72,18 @@
      ]
   ];
   fhir:Composition.custodian [
-     fhir:link <http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian>;
-     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian" ];
+     fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian" ];
      fhir:Reference.display [ fhir:value "Community Health and Hospitals" ]
   ] .
 
 <http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient> a fhir:us .
 
-<http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-encounter> a fhir:us .
+<http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter> a fhir:us .
 
 <http://hl7.org/fhir/us/hai/Practitioner/practitioner-1> a fhir:us .
 
-<http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian> a fhir:us .
+<http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

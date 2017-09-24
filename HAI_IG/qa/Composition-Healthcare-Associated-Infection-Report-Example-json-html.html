@@ -1,0 +1,67 @@
+﻿<html>
+<head>
+  <title>Composition-Healthcare-Associated-Infection-Report-Example-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition">resourceType</a>" : "Composition",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.id">id</a>" : "Healthcare-Associated-Infection-Report-Example",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.versionId">versionId</a>" : "1",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2017-09-15T08:16:14Z",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/healthcare-associated-infection-report"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.language">language</a>" : "en-US",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+            &lt;p&gt;Healthcare Associated Infection Report&lt;/p&gt;
+            &lt;p&gt;Managed by Community Health and Hospitals&lt;/p&gt;
+            &lt;p&gt;This profile further constraints the C-CDA on FHIR US Realm Header profile. 
+                It specifies the generic constraints for all NHSN Healthcare Associated Infection Reports. 
+                Further constraints are found in the specialization profiles for single-patient and 
+                population summary reports, and in the profiles for specific report types..&lt;/p&gt;
+        &lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.identifier">identifier</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "11111111"
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.status">status</a>" : "preliminary",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "51897-7",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Healthcare Associated Infection Report"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Henry Jones"
+  },
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.date">date</a>" : "2017-09-15T09:10:14Z",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.author">author</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/practitioner-1",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Ronald Bone, MD"
+    },
+    {
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "https://www.hl7.org/fhir/device-example-ihe-pcd.xml",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Vital Signs Monitor"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.title">title</a>" : "Healthcare Associated Infection Report",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.confidentiality">confidentiality</a>" : "N",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.custodian">custodian</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Community Health and Hospitals"
+  }
+}</pre>
+</body>
+</html>

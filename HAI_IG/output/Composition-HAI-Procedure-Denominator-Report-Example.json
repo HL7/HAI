@@ -5,7 +5,7 @@
     "versionId": "1",
     "lastUpdated": "2017-09-15T08:16:14Z",
     "profile": [
-      "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-report"
+      "http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-report"
     ]
   },
   "language": "en-US",
@@ -32,7 +32,7 @@
     "display": "Henry Jones"
   },
   "encounter": {
-    "reference": "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-procedure-denominator-encounter"
+    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter"
   },
   "date": "2017-09-15T09:10:14Z",
   "author": [
@@ -59,7 +59,7 @@
     }
   ],
   "custodian": {
-    "reference": "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian",
+    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian",
     "display": "Community Health and Hospitals"
   }
 }

@@ -39,55 +39,90 @@
     </style>
   </head>
   <body>
-     <div id="segment-header" class="segment">  <!-- segment-header -->
-  <div class="container">  <!-- container -->
-   <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="logo fhir" src="assets/images/fhir-logo-www.png"/> </a>
-   <div id="hl7-status">
-    <b>Current Build</b> 
-   </div>
-
-   <div id="hl7-nav">
-     <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
-     <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png"/>
-    </a>
-   </div>
-   <div id="hl7-nav"><a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a></div>
-  </div>
-  <div class="container">  <!-- container -->
- </div></div>  <!-- /segment-header -->
-
- <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
-  <div id="stripe"> </div>
-  <div class="container">  <!-- container -->
-   <!-- HEADER CONTENT -->
-
-   <nav class="navbar navbar-inverse">
+    <div>
+  <div id="segment-header" class="segment">
+    <!-- segment-header -->
     <div class="container">
-     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
-      <span class="icon-bar"> </span>
-      <span class="icon-bar"> </span>
-      <span class="icon-bar"> </span>
-     </button>
-      <a class="navbar-brand hidden" href="http://hl7-fhir.github.io/index.html">FHIR</a>
-     <div class="nav-collapse collapse navbar-inverse-collapse">
-      <ul class="nav navbar-nav">
-              
-        <li><a href="http://hl7-fhir.github.io/index.html">Home</a></li>
-        <li><a href="http://hl7-fhir.github.io/documentation.html">Documentation</a></li>
-        <li><a href="http://hl7-fhir.github.io/modules.html">Modules</a></li>
-        <li><a href="http://hl7-fhir.github.io/resourcelist.html">Resources</a></li>
-        <li><a href="http://hl7-fhir.github.io/profilelist.html">Profiles</a></li>
-        <li><a href="http://hl7-fhir.github.io/extensibility-registry.html">Extensions</a></li>
-        <li><a href="http://hl7-fhir.github.io/operationslist.html">Operations</a></li>
+      <!-- container -->
+      <a id="logo" no-external="true" href="http://hl7.org/fhir">
+        <img alt="logo fhir" src="assets/images/fhir-logo-www.png" />
+      </a>
+      <div id="hl7-status">
+        <b>Current Build</b>
+      </div>
 
-      </ul>
-     </div>  <!-- /.nav-collapse -->
-    </div>  <!-- /.container -->
-   </nav>  <!-- /.navbar -->
+      <div id="hl7-nav">
+        <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+          <img height="50" alt="visit the hl7 website" width="42" src="assets/images/hl7-logo.png" />
+        </a>
+      </div>
+      <div id="hl7-nav">
+        <a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm">
+          <img alt="Search FHIR" src="assets/images/search.png" />
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- container -->
+    </div>
+  </div>
+  <!-- /segment-header -->
 
-  <!-- /HEADER CONTENT -->
-  </div>  <!-- /container -->
- </div>  <!-- /segment-navbar -->
+  <div id="segment-navbar" class="segment">
+    <!-- segment-navbar -->
+    <div id="stripe"> </div>
+    <div class="container">
+      <!-- container -->
+      <!-- HEADER CONTENT -->
+
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+          </button>
+          <a class="navbar-brand hidden" href="http://hl7.org/fhir/STU3/index.html">FHIR</a>
+          <div class="nav-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+
+              <li>
+                <a href="http://hl7.org/fhir/STU3/index.html">Home</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/documentation.html">Documentation</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/modules.html">Modules</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/resourcelist.html">Resources</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/profilelist.html">Profiles</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/extensibility-registry.html">Extensions</a>
+              </li>
+              <li>
+                <a href="http://hl7.org/fhir/STU3/operationslist.html">Operations</a>
+              </li>
+
+            </ul>
+          </div>
+          <!-- /.nav-collapse -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- /HEADER CONTENT -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-navbar -->
+</div>
+
     
     <div id="segment-breadcrumb" class="segmnt">
       <div class="container">
@@ -115,149 +150,150 @@
               <br/>
               <pre class="xml">
 
-&lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse">QuestionnaireResponse</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.id">id</a> <a href="http://hl7-fhir.github.io/datatypes.html#id">value</a>=&quot;ssi-questionnaire-response&quot;/&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.text">text</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+&lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse">QuestionnaireResponse</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;ssi-questionnaire-response&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
       &lt;pre&gt; 
               Response to the Surgical Site Infection Report Questionnaire
           &lt;/pre&gt;
     &lt;/div&gt;
   &lt;/text&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.questionnaire">questionnaire</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;ssi-questionnaire&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.questionnaire">questionnaire</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
+               <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/questionnaire/ssi-questionnaire&quot;/&gt;
   &lt;/questionnaire&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.status">status</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;completed&quot;/&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>
-               <a href="http://hl7-fhir.github.io/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile&quot;&gt;
-      &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Extension#Extension.value[x]">valueReference</a>&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Reference#Reference.reference">reference</a>
-                   <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;completed&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>
+               <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
+                   <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient&quot;/&gt;
       &lt;/valueReference&gt;
     &lt;/extension&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;6706&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Patient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;6706&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient&quot;/&gt;
   &lt;/item&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Date of Event&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueDate</a> <a href="http://hl7-fhir.github.io/datatypes.html#date">value</a>=&quot;2017-09-15&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Date of Event&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueDate</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#date">value</a>=&quot;2017-09-15&quot;/&gt;
     &lt;/answer&gt;
   &lt;/item&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;2&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;NHSN Procedure Code&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7-fhir.github.io/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;2108-9&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Appendix surgery&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;2&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;NHSN Procedure Code&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;2108-9&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Appendix surgery&quot;/&gt;
       &lt;/valueCoding&gt;
     &lt;/answer&gt;
   &lt;/item&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;3&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;ICD-10-PCS or CPT Procedure Code&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7-fhir.github.io/datatypes.html#uri">value</a>=&quot;https://icd.codes&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;0BDJ0ZZ&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Excision of Appendix, Open Approach&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;3&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;ICD-10-PCS or CPT Procedure Code&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;0BDJ0ZZ&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Excision of Appendix, Open Approach&quot;/&gt;
       &lt;/valueCoding&gt;
     &lt;/answer&gt;
   &lt;/item&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;4&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Date of Procedure&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueDate</a> <a href="http://hl7-fhir.github.io/datatypes.html#date">value</a>=&quot;2017-09-15&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;4&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Date of Procedure&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueDate</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#date">value</a>=&quot;2017-09-15&quot;/&gt;
     &lt;/answer&gt;
   &lt;/item&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;5&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Outpatient Procedure&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueBoolean</a> <a href="http://hl7-fhir.github.io/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;5&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Outpatient Procedure&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/answer&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7-fhir.github.io/datatypes.html#uri">value</a>=&quot;HL7 ActCode&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;AMB&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Outpatient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;HL7 ActCode&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;AMB&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Outpatient&quot;/&gt;
       &lt;/valueCoding&gt;
     &lt;/answer&gt;
   &lt;/item&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;6&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;MDRO Infection Surveillance&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueBoolean</a> <a href="http://hl7-fhir.github.io/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;6&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;MDRO Infection Surveillance&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/answer&gt;
   &lt;/item&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;7&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Date Admitted to Facility&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueDate</a> <a href="http://hl7-fhir.github.io/datatypes.html#date">value</a>=&quot;2017-09-15&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;7&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Date Admitted to Facility&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueDate</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#date">value</a>=&quot;2017-09-15&quot;/&gt;
     &lt;/answer&gt;
   &lt;/item&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;8&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Location&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7-fhir.github.io/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.840.1.113883.6.259&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;1166-8&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Ambulatory Surgery Center&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;8&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Location&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.840.1.113883.6.259&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;1166-8&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Ambulatory Surgery Center&quot;/&gt;
       &lt;/valueCoding&gt;
     &lt;/answer&gt;
   &lt;/item&gt;
-  &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;9392&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Pathogen&quot;/&gt;
-    &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;3745&quot;/&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Number&quot;/&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-        &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a> <a href="http://hl7-fhir.github.io/datatypes.html#integer">value</a>=&quot;1&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;9392&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Pathogen&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;3745&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Number&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#integer">value</a>=&quot;1&quot;/&gt;
       &lt;/answer&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-        &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;3139&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;NHSN Pathogen&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-          &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
-            &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7-fhir.github.io/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
-            &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;43492007&quot;/&gt;
-            &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Group B streptococcus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;3139&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;NHSN Pathogen&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;43492007&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Group B streptococcus&quot;/&gt;
           &lt;/valueCoding&gt;
         &lt;/answer&gt;
       &lt;/item&gt;
-      &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-        &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;4656&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Susceptibility Group&quot;/&gt;
-        &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-          &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;6192&quot;/&gt;
-          &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;NHSN Drug Susceptibility Test&quot;/&gt;
-          &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-            &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
-              &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7-fhir.github.io/datatypes.html#uri">value</a>=&quot;https://loinc.org/&quot;/&gt;
-              &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;18982-9&quot;/&gt;
-              &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Streptomycin Susc Islt&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;4656&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Susceptibility Group&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;6192&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;NHSN Drug Susceptibility Test&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;https://loinc.org/&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;18982-9&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Streptomycin Susc Islt&quot;/&gt;
             &lt;/valueCoding&gt;
           &lt;/answer&gt;
         &lt;/item&gt;
-        &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-          &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;8204&quot;/&gt;
-          &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;NHSN Drug Susceptibility Finding&quot;/&gt;
-          &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-            &lt;<a href="http://hl7-fhir.github.io/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
-              &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.system">system</a>
-                      <a href="http://hl7-fhir.github.io/datatypes.html#uri">value</a>=&quot;https://www.hl7.org/fhir/valueset-observation-interpretation.html&quot;/&gt;
-              &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7-fhir.github.io/datatypes.html#code">value</a>=&quot;S&quot;/&gt;
-              &lt;<a href="http://hl7-fhir.github.io/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7-fhir.github.io/datatypes.html#string">value</a>=&quot;Susceptible&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;8204&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;NHSN Drug Susceptibility Finding&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;https://www.hl7.org/fhir/valueset-observation-interpretation.html&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;S&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Susceptible&quot;/&gt;
             &lt;/valueCoding&gt;
           &lt;/answer&gt;
         &lt;/item&gt;
@@ -277,13 +313,13 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Sat, Sep 23, 2017 15:59+1000. <a href="qa.html">QA Page</a>
+      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Sun, Sep 24, 2017 19:29+1000. <a href="qa.html">QA Page</a>
         <br/>
         <span style="color: #FFFF77">
         Links: <a style="color: #81BEF7" href="http://hl7.org/fhir/search.cfm">Search <img style="text-align: baseline" src="external.png"/></a> |
-          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/history.html">Version History</a> |
-          <a style="color: #81BEF7" href="http://hl7-fhir.github.io/toc.html">Table of Contents</a> |
-          <a style="color: #81BEF7" rel="license" href="http://hl7-fhir.github.io/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+          <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/history.html">Version History</a> |
+          <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/toc.html">Table of Contents</a> |
+          <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
           <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change <img style="text-align: baseline" src="external.png"/></a>
         </span>
         </p>

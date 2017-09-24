@@ -1,0 +1,74 @@
+﻿<html>
+<head>
+  <title>list-structuredefinitions</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+ <li><a href="StructureDefinition-hai-patient.html">HAI Patient</a> This profile is based on the US Core Patient Profile and defines HAI specific patient constraints:
+  A patient identifier representing the facility-assigned patient ID is required. Other identifiers for the person can also be present, such as a United States Social Security Number (id/@root = 2.16.840.1.113883.4.1), a Medicare beneficiary identifier (id/@root = 2.16.840.1.113883.4.338), or secondary patient IDs (id/@root = the appropriate facility OID for patient IDs).
+     The patient name is optional; consult the NHSN reporting protocol and requirements. *TODO** - this is required for US Core Patient
+     Patient gender and birthdate are required.</li>
+ <li><a href="StructureDefinition-hai-custodian.html">HAI Custodian</a> Defines NHSN custodian constraints and extensions on the Organization resource for use in HAI reports. NHSN is the custodain of NHSN HAI Reports.</li>
+ <li><a href="StructureDefinition-hai-healthcare-facility.html">HAI Healthcare Facility</a> HAI Healthcare Facility</li>
+ <li><a href="StructureDefinition-hai-ssi-encounter.html">HAI SSI Encounter</a> Key encounter data:
+     The encounter type (inpatient or outpatient) is required.
+     A value for admission date is required.
+     A discharge date may be recorded.</li>
+ <li><a href="StructureDefinition-healthcare-associated-infection-report.html">Healthcare Associated Infection Report</a> This profile further constraints the C-CDA on FHIR US Realm Header profile. It specifies the generic constraints for all NHSN Healthcare Associated Infection Reports. Further constraints are found in the specialization profiles for single-patient and population summary reports, and in the profiles for specific report types.</li>
+ <li><a href="StructureDefinition-hai-single-person-generic-constraints.html">HAI Single-Person Report Generic Constraints</a> This profile records the constraints for HAI single-person reports. It is used by all numerator reports covered by this guide. It is also used by the Procedure Denominator Report.
+
+A single-person report must conform to the Healthcare Associated Infection Report profile. In addition, key data about the patient are recorded in the HAI Patient profile referenced in the subject. 
+   
+The report-specific requirements specify the encounter data to record for each single-person report type. These data always include an identifier for the reporting facility, and usually include the encounter type (inpatient or outpatient), the admission date or encounter date, and the facility unit identifier and type. </li>
+ <li><a href="StructureDefinition-hai-surgical-site-infection-report-ssi.html">HAI Surgical Site Infection Report (SSI)</a> This report type records a surgical site infection event. 
+Preferred document title:  Surgical Site Infection Report (SSI). 
+Key encounter data:
+     The encounter type (inpatient or outpatient) is required.
+     A value for admission date is required.
+     A discharge date may be recorded.
+     The facility id is required. 
+Other dates and locations:
+     The date of the infection is recorded as effectiveTime in the Infection-Type Observation.
+Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in an Infection-Type Report. NHSN uses this to establish a link between Procedure and SSI Reports. </li>
+ <li><a href="StructureDefinition-hai-procedure-denominator-report.html">HAI Procedure Denominator Report</a> Note: The section on Template Ids in this Guide includes a containment table showing all the entries within each report type.
+
+This report records a procedure performed. 
+
+Preferred document title:  Denominator for Procedure Report
+
+Key encounter data:
+
+     The encounter type (inpatient or outpatient) is required.
+
+     If the patient was an inpatient, a value for admission date is required.
+
+     The facility id is required. Unit identifier and unit type are not reported.
+
+Other dates and locations:
+
+     The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).
+
+Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports</li>
+ <li><a href="StructureDefinition-hai-procedure-denominator-encounter.html">HAI Procedure Denominator Encounter</a> HAI Procedure Denominator Encounter</li>
+ <li><a href="StructureDefinition-infection-contributed-to-death.html">infection-contributed-to-death</a> If true, the Condition associated with this infection contributed to the death of the patient.</li>
+ <li><a href="StructureDefinition-infection-present-at-time-of-surgery.html">infection-present-at-time-of-surgery</a> This extension records whether or not an infection was present at the time that a surgical procedure was performed.</li>
+ <li><a href="StructureDefinition-occasion-of-hai-detection.html">occasion-of-hai-detection</a> This extension records when, in relation to an admission (a surgery stay), an HAI was detected.</li>
+ <li><a href="StructureDefinition-questionnaire-item-note.html">questionnaire-item-note</a> A note about the questionnaire item.</li>
+ <li><a href="StructureDefinition-anesthesia-delivered.html">Anesthesia Delivered</a> This profile reports whether anesthesia was administered.</li>
+ <li><a href="StructureDefinition-mdro-cdi-observation.html">MDRO/CDI Observation</a> This observation records whether the primary infection being reported was caused by a multi-drug-resistant organism (MDRO). It is a general or summary observation not associated with any individual pathogen in the Findings Section.
+
+If the infection organism was multi-drug resistant, set the value to true. If the infection organism was not multi-drug resistant, set the value to false.</li>
+ <li><a href="StructureDefinition-pathogen-identified.html">Pathogen Identified</a> This profile either represents a pathogen identified or, using a code from the NHSN Pathogens Code value set, records that no pathogens were identified.
+
+The value set table provides codes for several unspecified speciesfor example &quot;Acidaminococcus species&quot; (SNOMED CT 131202007, NHSN ACISP)for use when a more precise code is not available. The code for an unspecified species is preferred to a genus-level code.
+
+Each Pathogen Identified profile represents a set of information concerning a single pathogen identified. The profile contains two component elements that record the pathogen and its rank in regard to the other pathogens identified, and can contain additional component elements recording drug-susceptibility test findings. For pathogen antibiogram reporting requirements, refer to the NHSN protocol and the Information Data Model (IDM).</li>
+ <li><a href="StructureDefinition-revision-associated-with-prior-infection.html">Revision Associated with Prior Infection Observation</a> This profile records whether or not a surgical procedure was performed as a result of a previous infection.  In the NHSN context, this observation only applies to arthroplasty procedures.</li>
+ <li><a href="StructureDefinition-spinal-fusion-level.html">Spinal Fusion Level</a> This profile records the spinal level of a spinal fusion procedure.</li>
+ <li><a href="StructureDefinition-asa-class.html">ASA Class</a> This profile records the patients physical status using the American Society of Anesthesiologists (ASA) Class Codes. The SNOMED CT representation of ASA Class Codes includes a sixth value (413500003 ASA physical status class 6 for brain-dead patients taken to the operating room to remove organs for transplant). This sixth value is not part of the value set allowed in a submission to NHSN.</li>
+ <li><a href="StructureDefinition-diabetes-mellitus.html">Diabetes Mellitus</a> This profile records whether the person had diabetes mellitus.</li>
+ <li><a href="StructureDefinition-infection-condition.html">Infection Condition</a> This profile records the infection condition being reported.</li>
+ <li><a href="StructureDefinition-closure-technique.html">Closure Technique</a> This procedure identifies the closure technique used in surgical procedures.</li>
+ <li><a href="StructureDefinition-procedure-details.html">Procedure Details</a> This profile records the detail required in a Procedure Report about a procedure. NHSN uses the procedure id, along with other data, to establish a link between a Procedure Report and an SSI Report; the value of the procedure id must be the same in both the report of a procedure and the report of a surgical-site infection resulting from that procedure. In this profile, the priority code represents the main or primary procedure for the patient in the context of this report.</li>
+</body>
+</html>

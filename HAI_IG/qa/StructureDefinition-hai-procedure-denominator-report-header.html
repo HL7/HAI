@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-hai-procedure-denominator-report-header</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<p>
+The official URL for this profile is:
+</p>
+<pre>http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-report</pre>
+<p>
+<p>Note: The section on Template Ids in this Guide includes a containment table showing all the entries within each report type.</p>
+<p>This report records a procedure performed.</p>
+<p>Preferred document title:  Denominator for Procedure Report</p>
+<p>Key encounter data:</p>
+<pre><code> The encounter type (inpatient or outpatient) is required.
+
+ If the patient was an inpatient, a value for admission date is required.
+
+ The facility id is required. Unit identifier and unit type are not reported.
+</code></pre>
+<p>Other dates and locations:</p>
+<pre><code> The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).
+</code></pre>
+<p>Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports</p>
+</p>
+<p>
+This profile builds on <a href="StructureDefinition-hai-single-person-generic-constraints.html">HAI Single-Person Report Generic Constraints</a>.</p>
+<p>
+This profile was published on Sun Sep 24 19:29:43 AEST 2017 as a draft by Lantana Consulting Group.
+</p>
+</body>
+</html>

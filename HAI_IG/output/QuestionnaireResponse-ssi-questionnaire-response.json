@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre> \n              Response to the Surgical Site Infection Report Questionnaire\n          </pre>\n    </div>"
   },
   "questionnaire": {
-    "reference": "ssi-questionnaire"
+    "reference": "http://hl7.org/fhir/us/hai/questionnaire/ssi-questionnaire"
   },
   "status": "completed",
   "item": [
@@ -50,7 +50,7 @@
       "answer": [
         {
           "valueCoding": {
-            "system": "https://icd.codes",
+            "system": "http://hl7.org/fhir/sid/icd-10",
             "code": "0BDJ0ZZ",
             "display": "Excision of Appendix, Open Approach"
           }

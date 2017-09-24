@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code",
   "name": "NHSNEncounterTypeCode",
   "status": "active",
-  "date": "2017-09-23T15:59:00+10:00",
+  "date": "2017-09-24T19:29:43+10:00",
   "description": "Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.",
   "compose": {
     "include": [

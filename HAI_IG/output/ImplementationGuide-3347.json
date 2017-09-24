@@ -16,19 +16,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-hai-custodian.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/hai-custodian",
-            "display": "HAI Custodian"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-hai-patient.html"
             }
           ],
@@ -36,6 +23,19 @@
           "sourceReference": {
             "reference": "StructureDefinition/hai-patient",
             "display": "HAI Patient"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-custodian.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-custodian",
+            "display": "HAI Custodian"
           }
         },
         {
@@ -94,19 +94,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-hai-procedure-denominator-report.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/hai-procedure-denominator-report",
-            "display": "HAI Procedure Denominator Report"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-hai-surgical-site-infection-report-ssi.html"
             }
           ],
@@ -114,6 +101,19 @@
           "sourceReference": {
             "reference": "StructureDefinition/hai-surgical-site-infection-report-ssi",
             "display": "HAI Surgical Site Infection Report (SSI)"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-procedure-denominator-report.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-procedure-denominator-report",
+            "display": "HAI Procedure Denominator Report"
           }
         },
         {
@@ -172,6 +172,32 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-questionnaire-item-note.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/questionnaire-item-note",
+            "display": "questionnaire-item-note"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-anesthesia-delivered.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/anesthesia-delivered",
+            "display": "Anesthesia Delivered"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-mdro-cdi-observation.html"
             }
           ],
@@ -198,6 +224,32 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-revision-associated-with-prior-infection.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/revision-associated-with-prior-infection",
+            "display": "Revision Associated with Prior Infection Observation"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-spinal-fusion-level.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/spinal-fusion-level",
+            "display": "Spinal Fusion Level"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-asa-class.html"
             }
           ],
@@ -211,13 +263,13 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-diabetes-melitus.html"
+              "valueUri": "StructureDefinition-diabetes-mellitus.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/diabetes-melitus",
-            "display": "Diabetes Melitus"
+            "reference": "StructureDefinition/diabetes-mellitus",
+            "display": "Diabetes Mellitus"
           }
         },
         {
@@ -237,6 +289,19 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-closure-technique.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/closure-technique",
+            "display": "Closure Technique"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-procedure-details.html"
             }
           ],
@@ -244,19 +309,6 @@
           "sourceReference": {
             "reference": "StructureDefinition/procedure-details",
             "display": "Procedure Details"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-anesthesia-delivered.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/anesthesia-delivered",
-            "display": "Anesthesia Delivered"
           }
         },
         {
@@ -406,19 +458,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "ValueSet-nhsn-procedure-category-code.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "ValueSet/nhsn-procedure-category-code",
-            "display": "NHSNProcedureCategoryCode"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "ValueSet-nhsn-spinal-fusion-approach-code.html"
             }
           ],
@@ -426,6 +465,32 @@
           "sourceReference": {
             "reference": "ValueSet/nhsn-spinal-fusion-approach-code",
             "display": "NHSNSpinalFusionApproachCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-closure-technique-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-closure-technique-code",
+            "display": "NHSNClosureTechniqueCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-procedure-category-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-procedure-category-code",
+            "display": "NHSNProcedureCategoryCode"
           }
         },
         {
@@ -543,17 +608,17 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Condition-Diabetes-Melitus-Condition-Example.html"
+              "valueUri": "Condition-Diabetes-Mellitus-Example.html"
             }
           ],
           "example": true,
           "sourceReference": {
-            "reference": "Condition/Diabetes-Melitus-Condition-Example",
-            "display": "Diabetes-Melitus-Condition-Example"
+            "reference": "Condition/Diabetes-Mellitus-Example",
+            "display": "Diabetes-Mellitus-Example"
           },
           "exampleFor": {
-            "reference": "StructureDefinition/diabetes-melitus",
-            "display": "Diabetes Melitus"
+            "reference": "StructureDefinition/diabetes-mellitus",
+            "display": "Diabetes Mellitus"
           }
         },
         {

@@ -12,22 +12,22 @@
     <name value="Profiles in this Implementation Guide"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-hai-custodian.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/hai-custodian"/>
-        <display value="HAI Custodian"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-hai-patient.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/hai-patient"/>
         <display value="HAI Patient"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hai-custodian.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hai-custodian"/>
+        <display value="HAI Custodian"/>
       </sourceReference>
     </resource>
     <resource>
@@ -72,22 +72,22 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-hai-procedure-denominator-report.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/hai-procedure-denominator-report"/>
-        <display value="HAI Procedure Denominator Report"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-hai-surgical-site-infection-report-ssi.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/hai-surgical-site-infection-report-ssi"/>
         <display value="HAI Surgical Site Infection Report (SSI)"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hai-procedure-denominator-report.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hai-procedure-denominator-report"/>
+        <display value="HAI Procedure Denominator Report"/>
       </sourceReference>
     </resource>
     <resource>
@@ -132,6 +132,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-questionnaire-item-note.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/questionnaire-item-note"/>
+        <display value="questionnaire-item-note"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-anesthesia-delivered.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/anesthesia-delivered"/>
+        <display value="Anesthesia Delivered"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-mdro-cdi-observation.html"/>
       </extension>
       <example value="false"/>
@@ -152,6 +172,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-revision-associated-with-prior-infection.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/revision-associated-with-prior-infection"/>
+        <display value="Revision Associated with Prior Infection Observation"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-spinal-fusion-level.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/spinal-fusion-level"/>
+        <display value="Spinal Fusion Level"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-asa-class.html"/>
       </extension>
       <example value="false"/>
@@ -162,12 +202,12 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-diabetes-melitus.html"/>
+        <valueUri value="StructureDefinition-diabetes-mellitus.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/diabetes-melitus"/>
-        <display value="Diabetes Melitus"/>
+        <reference value="StructureDefinition/diabetes-mellitus"/>
+        <display value="Diabetes Mellitus"/>
       </sourceReference>
     </resource>
     <resource>
@@ -182,22 +222,22 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-closure-technique.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/closure-technique"/>
+        <display value="Closure Technique"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-procedure-details.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/procedure-details"/>
         <display value="Procedure Details"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-anesthesia-delivered.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/anesthesia-delivered"/>
-        <display value="Anesthesia Delivered"/>
       </sourceReference>
     </resource>
     <resource>
@@ -312,22 +352,32 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-nhsn-procedure-category-code.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="ValueSet/nhsn-procedure-category-code"/>
-        <display value="NHSNProcedureCategoryCode"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-nhsn-spinal-fusion-approach-code.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/nhsn-spinal-fusion-approach-code"/>
         <display value="NHSNSpinalFusionApproachCode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-nhsn-closure-technique-code.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/nhsn-closure-technique-code"/>
+        <display value="NHSNClosureTechniqueCode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-nhsn-procedure-category-code.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/nhsn-procedure-category-code"/>
+        <display value="NHSNProcedureCategoryCode"/>
       </sourceReference>
     </resource>
     <resource>
@@ -422,16 +472,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Condition-Diabetes-Melitus-Condition-Example.html"/>
+        <valueUri value="Condition-Diabetes-Mellitus-Example.html"/>
       </extension>
       <example value="true"/>
       <sourceReference>
-        <reference value="Condition/Diabetes-Melitus-Condition-Example"/>
-        <display value="Diabetes-Melitus-Condition-Example"/>
+        <reference value="Condition/Diabetes-Mellitus-Example"/>
+        <display value="Diabetes-Mellitus-Example"/>
       </sourceReference>
       <exampleFor>
-        <reference value="StructureDefinition/diabetes-melitus"/>
-        <display value="Diabetes Melitus"/>
+        <reference value="StructureDefinition/diabetes-mellitus"/>
+        <display value="Diabetes Mellitus"/>
       </exampleFor>
     </resource>
     <resource>

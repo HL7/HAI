@@ -1,0 +1,114 @@
+{
+  "hai-single-person-generic-constraints": {
+    "examples": [
+      {
+        "type": "Composition",
+        "id": "HAI-Single-Person-Report-Generic-Constraints-Example"
+      }
+    ]
+  },
+  "healthcare-associated-infection-report": {
+    "examples": [
+      {
+        "type": "Composition",
+        "id": "Healthcare-Associated-Infection-Report-Example"
+      }
+    ]
+  },
+  "hai-patient": {
+    "examples": [
+      {
+        "type": "Patient",
+        "id": "example"
+      }
+    ]
+  },
+  "hai-custodian": {
+    "examples": [
+      {
+        "type": "Organization",
+        "id": "hl7"
+      }
+    ]
+  },
+  "hai-surgical-site-infection-report-ssi": {
+    "examples": [
+      {
+        "type": "Composition",
+        "id": "HAI-Surgical-Site-Infection-Report-SSI-Example"
+      }
+    ]
+  },
+  "hai-ssi-encounter": {
+    "examples": [
+      {
+        "type": "Encounter",
+        "id": "HAI-SSI-Encounter-Example"
+      }
+    ]
+  },
+  "hai-healthcare-facility": {
+    "examples": [
+      {
+        "type": "Location",
+        "id": "HAI-Healthcare-Facility-Example"
+      }
+    ]
+  },
+  "pathogen-identified": {
+    "examples": [
+      {
+        "type": "Observation",
+        "id": "Pathogen-Identified-Example"
+      }
+    ]
+  },
+  "mdro-cdi-observation": {
+    "examples": [
+      {
+        "type": "Observation",
+        "id": "MDRO-CDI-Observation-Example"
+      }
+    ]
+  },
+  "hai-procedure-denominator-report": {
+    "examples": [
+      {
+        "type": "Composition",
+        "id": "HAI-Procedure-Denominator-Report-Example"
+      }
+    ]
+  },
+  "hai-procedure-denominator-encounter": {
+    "examples": [
+      {
+        "type": "Encounter",
+        "id": "HAI-Procedure-Denominator-Encounter-Example"
+      }
+    ]
+  },
+  "infection-condition": {
+    "examples": [
+      {
+        "type": "Condition",
+        "id": "Infection-Condition-Example"
+      }
+    ]
+  },
+  "asa-class": {
+    "examples": [
+      {
+        "type": "Condition",
+        "id": "ASA-Class-Example"
+      }
+    ]
+  },
+  "diabetes-mellitus": {
+    "examples": [
+      {
+        "type": "Condition",
+        "id": "Diabetes-Mellitus-Example"
+      }
+    ]
+  }
+}
