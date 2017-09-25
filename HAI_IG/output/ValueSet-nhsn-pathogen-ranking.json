@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking",
   "name": "NHSNPathogenRanking",
   "status": "draft",
-  "date": "2017-09-25T19:40:25+10:00",
+  "date": "2017-09-25T20:26:03+10:00",
   "description": "Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection.",
   "compose": {
     "include": [

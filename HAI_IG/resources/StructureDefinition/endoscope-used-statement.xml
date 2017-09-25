@@ -1,0 +1,93 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id
+    value="endoscope-used-statement" />
+  <url
+    value="http://hl7.org/fhir/us/hai/StructureDefinition/endoscope-used-statement" />
+  <name
+    value="Endoscope Used Statement" />
+  <status
+    value="draft" />
+  <publisher
+    value="Lantana Consulting Group" />
+  <contact>
+    <name
+      value="Eric Parapini" />
+    <telecom>
+      <system
+        value="phone" />
+      <value
+        value="+13604405780" />
+      <use
+        value="work" />
+    </telecom>
+    <telecom>
+      <system
+        value="email" />
+      <value
+        value="eric.parapini@lantanagroup.com" />
+      <use
+        value="work" />
+    </telecom>
+  </contact>
+  <description
+    value="This profile records whether an endoscope was used." />
+  <kind
+    value="resource" />
+  <abstract
+    value="false" />
+  <contextType
+    value="resource" />
+  <context
+    value="DeviceUseStatement" />
+  <type
+    value="DeviceUseStatement" />
+  <baseDefinition
+    value="http://hl7.org/fhir/StructureDefinition/DeviceUseStatement" />
+  <derivation
+    value="constraint" />
+  <differential>
+    <element
+      id="DeviceUseStatement">
+      <path
+        value="DeviceUseStatement" />
+    </element>
+    <element
+      id="status">
+      <path
+        value="DeviceUseStatement.status" />
+      <short
+        value="status" />
+      <definition
+        value="SHALL contain exactly one [1..1] status=&quot;completed&quot; (CONF:3347-228)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="code" />
+      </type>
+      <patternString
+        value="completed" />
+    </element>
+    <element
+      id="device">
+      <path
+        value="DeviceUseStatement.device" />
+      <short
+        value="device" />
+      <definition
+        value="SHALL contain exactly one [1..1] Endoscope (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/endoscope) (CONF:3347-229)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
+      <type>
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/us/hai/StructureDefinition/endoscope" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

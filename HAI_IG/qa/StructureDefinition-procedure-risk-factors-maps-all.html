@@ -1,0 +1,88 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-procedure-risk-factors-maps-all</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<a name="rim"> </a><h3>Mappings for RIM Mapping (http://hl7.org/v3)</h3><table class="grid">
+ <tr><td colspan="3"><b>Procedure Risk Factors</b></td></tr>
+ <tr><td>List</td><td>Entity. Role, or Act</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;implicitRules</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;language</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.status[current=active;retired=obsolete;entered-in-error=nullified]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;mode</td><td>.outBoundRelationship[typeCode=COMP].target[classCode=OBS&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;title</td><td>.title</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode&lt;SUB].role (and sometimes .player)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>.participation[typeCode&lt;AUT].time[type=TS]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;source</td><td>.participation[typeCode&lt;AUT].role[classCode=REL].player[classCode=PSN,determinerCode=INST] or .participation[typeCode&lt;AUT].role[classCode=REL].player[classCode=DEV,determinerCode=INST]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;orderedBy</td><td>.outboundRelationship[typeCode=COMP].sequenceNumber &gt; 1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ].act.text</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry</td><td>.outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flag</td><td>.outBoundRelationship[typeCode=COMP].target[classCode=OBS&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deleted</td><td>added: .updateMode=(&quot;A&quot;,&quot;AR&quot;)  retained: .updateMode=&quot;NC&quot;  updated: .updateMode=&quot;R&quot;  deleted: .updateMode=&quot;D&quot;</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date</td><td>.availabilityTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item</td><td>.target or .role or .role.entity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (entry3)</td><td>.outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flag</td><td>.outBoundRelationship[typeCode=COMP].target[classCode=OBS&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deleted</td><td>added: .updateMode=(&quot;A&quot;,&quot;AR&quot;)  retained: .updateMode=&quot;NC&quot;  updated: .updateMode=&quot;R&quot;  deleted: .updateMode=&quot;D&quot;</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date</td><td>.availabilityTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item</td><td>.target or .role or .role.entity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;emptyReason</td><td>.inboundRelationship[typeCode=SUBJ,code&lt;ListEmptyReason].value[type=CD]</td> </tr>
+</table>
+<a name="w5"> </a><h3>Mappings for W5 Mapping (http://hl7.org/fhir/w5)</h3><table class="grid">
+ <tr><td colspan="3"><b>Procedure Risk Factors</b></td></tr>
+ <tr><td>List</td><td>infrastructure.documents</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;implicitRules</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;language</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;text</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>id</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;mode</td><td>class</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;title</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>what</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>who.focus</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;date</td><td>when.recorded</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;source</td><td>who.author</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;orderedBy</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flag</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deleted</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (entry3)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flag</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deleted</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;emptyReason</td><td></td> </tr>
+</table>
+</body>
+</html>

@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-asa-class-code",
   "name": "NHSNASAClassCode",
   "status": "active",
-  "date": "2017-09-25T19:40:25+10:00",
+  "date": "2017-09-25T20:26:03+10:00",
   "description": "Code System: SNOMED CT 2.16.840.1.113883.6.96\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.",
   "compose": {
     "include": [

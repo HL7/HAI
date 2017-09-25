@@ -134,10 +134,10 @@
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a></td></tr>
   <tr><td colspan="2" class="structure"><a name="Encounter.class"> </a><b>Encounter.class</b></td></tr>
-  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] class (CONF:3347-129).</p>
+  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] class, which SHALL be selected from ValueSet NHSNEncounterTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code (CONF:3347-129).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Classification of the encounter<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/v3/ActEncounterCode/vs.html">ActEncounterCode</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-nhsn-encounter-type-code.html">NHSNEncounterTypeCode</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
   <tr><td colspan="2" class="structure"><a name="Encounter.classHistory"> </a><b>Encounter.classHistory</b></td></tr>
   <tr><td>Definition</td><td><p>The class history permits the tracking of the encounters transitions without needing to go  through the resource history.</p>
@@ -181,10 +181,10 @@
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a></td></tr>
   <tr><td colspan="2" class="structure"><a name="Encounter.type"> </a><b>Encounter.type</b></td></tr>
-  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet NHSNEncounterTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code (CONF:3347-180).</p>
+  <tr><td>Definition</td><td><p>Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-nhsn-encounter-type-code.html">NHSNEncounterTypeCode</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The type of encounter<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-encounter-type.html">EncounterType</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Comments</td><td><p>Since there are many ways to further classify encounters, this element is 0..*.</p>
 </td></tr>

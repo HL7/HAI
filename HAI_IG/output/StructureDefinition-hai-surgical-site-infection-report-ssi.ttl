@@ -15,7 +15,7 @@
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-surgical-site-infection-report-ssi"];
   fhir:StructureDefinition.name [ fhir:value "HAI Surgical Site Infection Report (SSI)"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2017-09-25T19:40:25+10:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2017-09-25T20:26:03+10:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Lantana Consulting Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

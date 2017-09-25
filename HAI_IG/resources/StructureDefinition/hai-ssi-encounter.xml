@@ -30,7 +30,7 @@
     </telecom>
   </contact>
   <description
-    value="Key encounter data:&#xA;     The encounter type (inpatient or outpatient) is required.&#xA;     A value for admission date is required.&#xA;     A discharge date may be recorded." />
+    value="Key encounter data:&#xA;     The encounter type (inpatient or outpatient) is required.&#xA;     A value for admission date is required.&#xA;     A discharge date may be recorded.&#xA;" />
   <kind
     value="resource" />
   <abstract
@@ -77,7 +77,7 @@
       <short
         value="class" />
       <definition
-        value="SHALL contain exactly one [1..1] class (ValueSet: NHSNEncounterTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code) (CONF:3347-84)." />
+        value="SHALL contain exactly one [1..1] class, which SHALL be selected from ValueSet NHSNEncounterTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code (CONF:3347-84)." />
       <min
         value="1" />
       <max

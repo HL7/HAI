@@ -29,6 +29,8 @@
         value="work" />
     </telecom>
   </contact>
+  <description
+    value="This profile records location information such as the facility id. The facility ID is an NHSN assigned faciltiy OID and if there is an extension it must be a value registered with NHSN. " />
   <kind
     value="resource" />
   <abstract

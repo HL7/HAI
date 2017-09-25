@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter",
   "name": "HAI Procedure Denominator Encounter",
   "status": "draft",
-  "date": "2017-09-25T19:40:25+10:00",
+  "date": "2017-09-25T20:26:03+10:00",
   "publisher": "Lantana Consulting Group",
   "contact": [
     {

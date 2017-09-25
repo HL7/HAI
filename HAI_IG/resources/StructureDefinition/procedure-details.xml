@@ -17,7 +17,8 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="This profile records the detail required in a Procedure Report about a procedure. NHSN uses the procedure id, along with other data, to establish a link between a Procedure Report and an SSI Report; the value of the procedure id must be the same in both the report of a procedure and the report of a surgical-site infection resulting from that procedure. In this profile, the priority code represents the main or primary procedure for the patient in the context of this report."/>
+  <description
+    value="This profile records the detail required in a Procedure Report about a procedure.&#xA;&#xA;NHSN uses the procedure id, along with other data, to establish a link between a Procedure Report and an SSI Report; the value of the procedure id must be the same in both the report of a procedure and the report of a surgical-site infection resulting from that procedure. In this profile, the priority code represents the main or primary procedure for the patient in the context of this report." />
   <kind value="resource" />
   <abstract value="false" />
   <contextType value="resource" />
@@ -52,8 +53,11 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/revision-associated-with-prior-infection" />
       </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/procedure-risk-factors" />
+      </type>
     </element>
-    <!-- SG: Commented out and moved choices up to make it a simple choice rather than a slice -->
     <!--<element id="partOf2">
       <path value="Procedure.partOf" />
       <short value="partOf" />
@@ -65,8 +69,8 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/closure-technique" />
       </type>
-    </element>-->
-    <!--<element id="partOf3">
+    </element>
+    <element id="partOf3">
       <path value="Procedure.partOf" />
       <short value="partOf" />
       <definition
@@ -77,8 +81,8 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/spinal-fusion-level" />
       </type>
-    </element>-->
-    <!--<element id="partOf4">
+    </element>
+    <element id="partOf4">
       <path value="Procedure.partOf" />
       <short value="partOf" />
       <definition
@@ -88,6 +92,18 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/revision-associated-with-prior-infection" />
+      </type>
+    </element>
+    <element id="partOf5">
+      <path value="Procedure.partOf" />
+      <short value="partOf" />
+      <definition
+        value="SHALL contain exactly one [1..1] Procedure Risk Factors (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/procedure-risk-factors) (CONF:3347-233)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/procedure-risk-factors" />
       </type>
     </element>-->
     <element id="category">

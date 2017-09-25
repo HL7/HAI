@@ -2,7 +2,7 @@
     xmlns="http://hl7.org/fhir">
     <id value="Diabetes-Mellitus-Example"/>
     <meta>
-      <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -30,7 +30,7 @@
             <system value="http://snomed.info/sct"/>
             <code value="73211009"/>
             <display
-              value="Diabetes Mellitus"/>
+                value="Diabetes Mellitus"/>
         </coding>
     </code>
     <subject>

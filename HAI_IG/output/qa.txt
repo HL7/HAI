@@ -2,7 +2,7 @@
 =========================================
 
 err = , warn = , info = 
-Generated Mon Sep 25 19:47:41 AEST 2017. FHIR version 3.1.0 for 3.1.0
+Generated Mon Sep 25 20:32:07 AEST 2017. FHIR version 3.1.0 for 3.1.0
 
  Build Errors : 5 / 0
  C:\Users\minigrrl\Documents\Work\Lantana\GIT\HL7\HAI\HAI_IG\resources\ImplementationGuide\ImplementationGuide_3347 : 0 / 1
@@ -20,7 +20,7 @@ Generated Mon Sep 25 19:47:41 AEST 2017. FHIR version 3.1.0 for 3.1.0
  C:\Users\minigrrl\Documents\Work\Lantana\GIT\HL7\HAI\HAI_IG\resources\observation\Pathogen-Identified-Example : 4 / 3
  C:\Users\minigrrl\Documents\Work\Lantana\GIT\HL7\HAI\HAI_IG\resources\organization\hl7 : 0 / 0
  C:\Users\minigrrl\Documents\Work\Lantana\GIT\HL7\HAI\HAI_IG\resources\patient\example : 0 / 2
- C:\Users\minigrrl\Documents\Work\Lantana\GIT\HL7\HAI\HAI_IG\resources\questionnaire\ssi-questionnaire : 6 / 0
+ C:\Users\minigrrl\Documents\Work\Lantana\GIT\HL7\HAI\HAI_IG\resources\questionnaire\ssi-questionnaire : 5 / 0
  C:\Users\minigrrl\Documents\Work\Lantana\GIT\HL7\HAI\HAI_IG\resources\questionnaireresponse\ssi-questionnaire-response : 3 / 1
  C:\Users\minigrrl\Documents\Work\Lantana\GIT\HL7\HAI\HAI_IG\resources\structuredefinition\anesthesia-delivered : 0 / 0
  C:\Users\minigrrl\Documents\Work\Lantana\GIT\HL7\HAI\HAI_IG\resources\structuredefinition\asa-class : 0 / 0
@@ -181,7 +181,6 @@ WARNING: Observation/Pathogen-Identified-Example: Observation.component[2].inter
 WARNING: Patient/example: Patient.contact.relationship: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/v2-0131 (http://hl7.org/fhir/ValueSet/v2-0131, and a code should come from this value set unless it has no suitable code) (codes = http://hl7.org/fhir/patient-contact-relationship#family)
 WARNING: Patient/example: Patient.contact.relationship.coding: Unknown Code System http://hl7.org/fhir/patient-contact-relationship
 == C:\Users\minigrrl\Documents\Work\Lantana\GIT\HL7\HAI\HAI_IG\resources\questionnaire\ssi-questionnaire.xml ==
-ERROR: Questionnaire/ssi-questionnaire: Questionnaire.item[3].options: Unable to resolve resource 'http://hl7.org/fhir/us/hai/ValueSet/random-value-set-for-testing'
 ERROR: Questionnaire/ssi-questionnaire: Questionnaire.item[4].options: Unable to resolve resource 'http://hl7.org/fhir/sid/icd-10'
 ERROR: Questionnaire/ssi-questionnaire: Questionnaire.item[11].code: Found content ("-") after end of expression at character 5
 ERROR: Questionnaire/ssi-questionnaire: Questionnaire.item[19].item[1].extension.valueString: Error at 1, 1: Premature ExpressionNode termination at unexpected token "type"

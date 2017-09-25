@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <description
-    value="Note: The section on Template Ids in this Guide includes a containment table showing all the entries within each report type.&#xA;&#xA;This report records a procedure performed. &#xA;&#xA;Preferred document title:  Denominator for Procedure Report&#xA;&#xA;Key encounter data:&#xA;&#xA;     The encounter type (inpatient or outpatient) is required.&#xA;&#xA;     If the patient was an inpatient, a value for admission date is required.&#xA;&#xA;     The facility id is required. Unit identifier and unit type are not reported.&#xA;&#xA;Other dates and locations:&#xA;&#xA;     The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).&#xA;&#xA;Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports" />
+    value="This report records a procedure performed. &#xA;&#xA;Preferred document title:  Denominator for Procedure Report&#xA;&#xA;Key encounter data:&#xA;&#xA;     The encounter type (inpatient or outpatient) is required.&#xA;&#xA;     If the patient was an inpatient, a value for admission date is required.&#xA;&#xA;     The facility id is required. Unit identifier and unit type are not reported.&#xA;&#xA;Other dates and locations:&#xA;&#xA;     The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).&#xA;&#xA;Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports" />
   <kind value="resource" />
   <abstract value="false" />
   <contextType value="resource" />
@@ -52,6 +52,22 @@
         <discriminator>
           <type value="value" />
           <path value="code" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="entry" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="entry" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="entry" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="entry" />
         </discriminator>
         <discriminator>
           <type value="value" />
@@ -162,18 +178,84 @@
       <path value="Composition.section.entry" />
       <short value="entry" />
       <definition
-        value="SHALL contain exactly one [1..1] Diabetes Mellitus (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus) (CONF:3347-219)." />
+        value="SHALL contain exactly one [1..1] Diabetes Melitus (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus) (CONF:3347-219)." />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus" />
       </type>
       <!-- SG: Moved from commented out element above -->
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/asa-class" />
       </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/height-observation" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation" />
+      </type>
     </element>
+
+    <!--<element id="Composition.section:section3.entry">
+      <path value="Composition.section.entry" />
+      <short value="entry" />
+      <definition
+        value="SHALL contain exactly one [1..1] Height Observation (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/height-observation) (CONF:3347-247)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/height-observation" />
+      </type>
+      
+    </element>-->
+    <!--<element id="Composition.section:section3.entry">
+      <path value="Composition.section.entry" />
+      <short value="entry" />
+      <definition
+        value="SHALL contain exactly one [1..1] Weight Observation (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation) (CONF:3347-248)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation" />
+      </type>
+    </element>-->
+    <!--<element id="Composition.section:section3.entry">
+      <path value="Composition.section.entry" />
+      <short value="entry" />
+      <definition
+        value="SHALL contain exactly one [1..1] Duration of Labor  (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor) (CONF:3347-254)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor" />
+      </type>
+    </element>-->
+    <!--<element id="Composition.section:section3.entry">
+      <path value="Composition.section.entry" />
+      <short value="entry" />
+      <definition
+        value="SHALL contain exactly one [1..1] Trauma Observation (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation) (CONF:3347-258)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation" />
+      </type>
+    </element>-->
   </differential>
 </StructureDefinition>

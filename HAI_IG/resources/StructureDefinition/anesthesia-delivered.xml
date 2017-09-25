@@ -1,78 +1,127 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="anesthesia-delivered" />
-  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/anesthesia-delivered" />
-  <name value="Anesthesia Delivered" />
-  <status value="draft" />
-  <publisher value="Lantana Consulting Group" />
+  <id
+    value="anesthesia-delivered" />
+  <url
+    value="http://hl7.org/fhir/us/hai/StructureDefinition/anesthesia-delivered" />
+  <name
+    value="Anesthesia Delivered" />
+  <status
+    value="draft" />
+  <publisher
+    value="Lantana Consulting Group" />
   <contact>
-    <name value="Eric Parapini" />
+    <name
+      value="Eric Parapini" />
     <telecom>
-      <system value="phone" />
-      <value value="+13604405780" />
-      <use value="work" />
+      <system
+        value="phone" />
+      <value
+        value="+13604405780" />
+      <use
+        value="work" />
     </telecom>
     <telecom>
-      <system value="email" />
-      <value value="eric.parapini@lantanagroup.com" />
-      <use value="work" />
+      <system
+        value="email" />
+      <value
+        value="eric.parapini@lantanagroup.com" />
+      <use
+        value="work" />
     </telecom>
   </contact>
-  <description value="This profile reports whether anesthesia was administered."/>
-  <kind value="resource" />
-  <abstract value="false" />
-  <contextType value="resource" />
-  <context value="MedicationAdministration" />
-  <type value="MedicationAdministration" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
-  <derivation value="constraint" />
+  <description
+    value="This profile reports whether anesthesia was administered." />
+  <kind
+    value="resource" />
+  <abstract
+    value="false" />
+  <contextType
+    value="resource" />
+  <context
+    value="MedicationAdministration" />
+  <type
+    value="MedicationAdministration" />
+  <baseDefinition
+    value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
+  <derivation
+    value="constraint" />
   <differential>
-    <element id="MedicationAdministration">
-      <path value="MedicationAdministration" />
+    <element
+      id="MedicationAdministration">
+      <path
+        value="MedicationAdministration" />
     </element>
-    <element id="medication[x]">
-      <path value="MedicationAdministration.medication[x]" />
+    <element
+      id="medication[x]">
+      <path
+        value="MedicationAdministration.medication[x]" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="@type" />
+          <type
+            value="value" />
+          <path
+            value="@type" />
         </discriminator>
-        <rules value="open" />
+        <rules
+          value="open" />
       </slicing>
-      <short value="medication[x]" />
-      <definition value="SHALL contain exactly one [1..1] medication[x], where medication[x] is (CONF:3347-192)" />
-      <min value="1" />
-      <max value="1" />
+      <short
+        value="medication[x]" />
+      <definition
+        value="SHALL contain exactly one [1..1] medication[x], where medication[x] is (CONF:3347-192)" />
+      <min
+        value="1" />
+      <max
+        value="1" />
     </element>
-    <element id="medication[x].medicationCodeableConcept">
-      <path value="MedicationAdministration.medicationCodeableConcept" />
-      <short value="medicationCodeableConcept" />
+    <element
+      id="medication[x].medicationCodeableConcept">
+      <path
+        value="MedicationAdministration.medicationCodeableConcept" />
+      <short
+        value="medicationCodeableConcept" />
       <definition
         value="medicationCodeableConcept=&quot;84451006&quot; General Anesthesia (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-194)" />
       <patternCodeableConcept>
         <coding>
-          <system value="urn:oid:2.16.840.1.113883.6.96" />
-          <code value="84451006" />
+          <system
+            value="urn:oid:2.16.840.1.113883.6.96" />
+          <code
+            value="84451006" />
         </coding>
       </patternCodeableConcept>
     </element>
-    <element id="subject">
-      <path value="MedicationAdministration.subject" />
-      <short value="subject" />
+    <element
+      id="subject">
+      <path
+        value="MedicationAdministration.subject" />
+      <short
+        value="subject" />
       <definition
         value="SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-193)." />
-      <min value="1" />
-      <max value="1" />
+      <min
+        value="1" />
+      <max
+        value="1" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" />
+        <code
+          value="Reference" />
+        <targetProfile
+          value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" />
       </type>
     </element>
-    <element id="notGiven">
-      <path value="MedicationAdministration.notGiven" />
-      <short value="notGiven" />
-      <definition value="SHALL contain exactly one [1..1] notGiven (CONF:3347-195)." />
-      <min value="1" />
-      <max value="1" />
+    <element
+      id="notGiven">
+      <path
+        value="MedicationAdministration.notGiven" />
+      <short
+        value="notGiven" />
+      <definition
+        value="SHALL contain exactly one [1..1] notGiven (CONF:3347-195)." />
+      <min
+        value="1" />
+      <max
+        value="1" />
     </element>
   </differential>
 </StructureDefinition>

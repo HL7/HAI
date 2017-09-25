@@ -82,15 +82,16 @@
   <tr><td>Requirements</td><td><p>Need to allow connection to a wider workflow.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Condition:uscorevitalsigns.clinicalStatus"> </a><a name="Condition.clinicalStatus"> </a><b>Condition.clinicalStatus</b></td></tr>
-  <tr><td>Definition</td><td><p>The clinical status of the condition.</p>
+  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] clinicalStatus=&quot;active&quot; (CONF:3347-236).</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: con-3, con-4</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: con-3, con-4</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-condition-clinical.html">Condition Clinical Status Codes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>This element is labeled as a modifier because the status contains codes that mark the condition as not currently valid or of concern.</p>
 </td></tr>
+  <tr><td>Pattern Value</td><td>active</td></tr>
   <tr><td colspan="2" class="structure"><a name="Condition:uscorevitalsigns.verificationStatus"> </a><a name="Condition.verificationStatus"> </a><b>Condition.verificationStatus</b></td></tr>
   <tr><td>Definition</td><td><p>The verification status to support the clinical status of the condition.</p>
 </td></tr>

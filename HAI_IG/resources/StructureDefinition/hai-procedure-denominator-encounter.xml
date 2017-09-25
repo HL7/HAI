@@ -29,6 +29,8 @@
         value="work" />
     </telecom>
   </contact>
+  <description
+    value="Key encounter data:&#xA;     The encounter type (inpatient or outpatient) is required.&#xA;     If the patient was an inpatient, a value for admission date is required." />
   <kind
     value="resource" />
   <abstract
@@ -75,27 +77,14 @@
       <short
         value="class" />
       <definition
-        value="SHALL contain exactly one [1..1] class (CONF:3347-129)." />
-      <min
-        value="1" />
-      <max
-        value="1" />
-    </element>
-    <element
-      id="type">
-      <path
-        value="Encounter.type" />
-      <short
-        value="type" />
-      <definition
-        value="SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet NHSNEncounterTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code (CONF:3347-180)." />
+        value="SHALL contain exactly one [1..1] class, which SHALL be selected from ValueSet NHSNEncounterTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code (CONF:3347-129)." />
       <min
         value="1" />
       <max
         value="1" />
       <type>
         <code
-          value="CodeableConcept" />
+          value="Coding" />
       </type>
       <binding>
         <strength

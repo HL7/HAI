@@ -11,7 +11,7 @@
   <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code"/>
   <name value="NHSNProcedureCategoryCode"/>
   <status value="active"/>
-  <date value="2017-09-25T19:40:25+10:00"/>
+  <date value="2017-09-25T20:26:03+10:00"/>
   <description value="Code System: cdcNHSN 2.16.840.1.113883.6.277&#xD;&#xA;&#xD;&#xA;NHSN&#39;s value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD; &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD; &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD; &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD; &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD; &#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xFFFD;&#xD;&#xA;&#xD;&#xA;The full table is shown in the hai_voc.xls file provided with this package."/>
   <compose>
     <include>

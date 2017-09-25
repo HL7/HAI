@@ -4,20 +4,6 @@
   <link rel="stylesheet" href="fhir.css"/>
 </head>
 <body>
- <tr><td><a href="StructureDefinition-hai-patient.json.html">HAI Patient</a> </td><td><p>This profile is based on the US Core Patient Profile and defines HAI specific patient constraints:
-A patient identifier representing the facility-assigned patient ID is required. Other identifiers for the person can also be present, such as a United States Social Security Number (id/@root = 2.16.840.1.113883.4.1), a Medicare beneficiary identifier (id/@root = 2.16.840.1.113883.4.338), or secondary patient IDs (id/@root = the appropriate facility OID for patient IDs).
-The patient name is optional; consult the NHSN reporting protocol and requirements. <em>TODO</em>* - this is required for US Core Patient
-Patient gender and birthdate are required.</p>
-</td></tr>
- <tr><td><a href="StructureDefinition-hai-custodian.json.html">HAI Custodian</a> </td><td><p>Defines NHSN custodian constraints and extensions on the Organization resource for use in HAI reports. NHSN is the custodain of NHSN HAI Reports.</p>
-</td></tr>
- <tr><td><a href="StructureDefinition-hai-healthcare-facility.json.html">HAI Healthcare Facility</a> </td><td><p>HAI Healthcare Facility</p>
-</td></tr>
- <tr><td><a href="StructureDefinition-hai-ssi-encounter.json.html">HAI SSI Encounter</a> </td><td><p>Key encounter data:
-The encounter type (inpatient or outpatient) is required.
-A value for admission date is required.
-A discharge date may be recorded.</p>
-</td></tr>
  <tr><td><a href="StructureDefinition-healthcare-associated-infection-report.json.html">Healthcare Associated Infection Report</a> </td><td><p>This profile further constraints the C-CDA on FHIR US Realm Header profile. It specifies the generic constraints for all NHSN Healthcare Associated Infection Reports. Further constraints are found in the specialization profiles for single-patient and population summary reports, and in the profiles for specific report types.</p>
 </td></tr>
  <tr><td><a href="StructureDefinition-hai-single-person-generic-constraints.json.html">HAI Single-Person Report Generic Constraints</a> </td><td><p>This profile records the constraints for HAI single-person reports. It is used by all numerator reports covered by this guide. It is also used by the Procedure Denominator Report.</p>
@@ -35,8 +21,7 @@ Other dates and locations:
 The date of the infection is recorded as effectiveTime in the Infection-Type Observation.
 Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in an Infection-Type Report. NHSN uses this to establish a link between Procedure and SSI Reports.</p>
 </td></tr>
- <tr><td><a href="StructureDefinition-hai-procedure-denominator-report.json.html">HAI Procedure Denominator Report</a> </td><td><p>Note: The section on Template Ids in this Guide includes a containment table showing all the entries within each report type.</p>
-<p>This report records a procedure performed.</p>
+ <tr><td><a href="StructureDefinition-hai-procedure-denominator-report.json.html">HAI Procedure Denominator Report</a> </td><td><p>This report records a procedure performed.</p>
 <p>Preferred document title:  Denominator for Procedure Report</p>
 <p>Key encounter data:</p>
 <pre><code> The encounter type (inpatient or outpatient) is required.
@@ -50,7 +35,20 @@ Other notes: The procedure id is recorded in the Procedure Details Clinical Stat
 </code></pre>
 <p>Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports</p>
 </td></tr>
- <tr><td><a href="StructureDefinition-hai-procedure-denominator-encounter.json.html">HAI Procedure Denominator Encounter</a> </td><td><p>HAI Procedure Denominator Encounter</p>
+ <tr><td><a href="StructureDefinition-hai-ssi-report-questionnaire-bundle.json.html">HAI SSI Report Questionnaire Bundle</a> </td><td><p>This bundle groups the resources used in the HAI SSI Report Questionnaire.</p>
+</td></tr>
+ <tr><td><a href="StructureDefinition-endoscope.json.html">Endoscope</a> </td><td><p>This profile represents an endoscope device.</p>
+</td></tr>
+ <tr><td><a href="StructureDefinition-endoscope-used-statement.json.html">Endoscope Used Statement</a> </td><td><p>This profile records whether an endoscope was used.</p>
+</td></tr>
+ <tr><td><a href="StructureDefinition-hai-procedure-denominator-encounter.json.html">HAI Procedure Denominator Encounter</a> </td><td><p>Key encounter data:
+The encounter type (inpatient or outpatient) is required.
+If the patient was an inpatient, a value for admission date is required.</p>
+</td></tr>
+ <tr><td><a href="StructureDefinition-hai-ssi-encounter.json.html">HAI SSI Encounter</a> </td><td><p>Key encounter data:
+The encounter type (inpatient or outpatient) is required.
+A value for admission date is required.
+A discharge date may be recorded.</p>
 </td></tr>
  <tr><td><a href="StructureDefinition-infection-contributed-to-death.json.html">infection-contributed-to-death</a> </td><td><p>If true, the Condition associated with this infection contributed to the death of the patient.</p>
 </td></tr>
@@ -60,7 +58,15 @@ Other notes: The procedure id is recorded in the Procedure Details Clinical Stat
 </td></tr>
  <tr><td><a href="StructureDefinition-questionnaire-item-note.json.html">questionnaire-item-note</a> </td><td><p>A note about the questionnaire item.</p>
 </td></tr>
+ <tr><td><a href="StructureDefinition-procedure-risk-factors.json.html">Procedure Risk Factors</a> </td><td><p>This profile records the detail required in a Procedure Report about the circumstances in which a procedure was performed.</p>
+</td></tr>
+ <tr><td><a href="StructureDefinition-hai-healthcare-facility.json.html">HAI Healthcare Facility</a> </td><td><p>This profile records location information such as the facility id. The facility ID is an NHSN assigned faciltiy OID and if there is an extension it must be a value registered with NHSN.</p>
+</td></tr>
  <tr><td><a href="StructureDefinition-anesthesia-delivered.json.html">Anesthesia Delivered</a> </td><td><p>This profile reports whether anesthesia was administered.</p>
+</td></tr>
+ <tr><td><a href="StructureDefinition-duration-of-labor.json.html">Duration of Labor </a> </td><td><p>This observation records the duration of labor in value/width. NHSN protocol requires that the duration be expressed as an integer.</p>
+</td></tr>
+ <tr><td><a href="StructureDefinition-height-observation.json.html">Height Observation</a> </td><td><p>This observation records a body height.</p>
 </td></tr>
  <tr><td><a href="StructureDefinition-mdro-cdi-observation.json.html">MDRO/CDI Observation</a> </td><td><p>This observation records whether the primary infection being reported was caused by a multi-drug-resistant organism (MDRO). It is a general or summary observation not associated with any individual pathogen in the Findings Section.</p>
 <p>If the infection organism was multi-drug resistant, set the value to true. If the infection organism was not multi-drug resistant, set the value to false.</p>
@@ -73,15 +79,29 @@ Other notes: The procedure id is recorded in the Procedure Details Clinical Stat
 </td></tr>
  <tr><td><a href="StructureDefinition-spinal-fusion-level.json.html">Spinal Fusion Level</a> </td><td><p>This profile records the spinal level of a spinal fusion procedure.</p>
 </td></tr>
+ <tr><td><a href="StructureDefinition-weight-observation.json.html">Weight Observation</a> </td><td><p>This observation records a body weight. NHSN protocol requires that the value be an integer.</p>
+</td></tr>
+ <tr><td><a href="StructureDefinition-hai-custodian.json.html">HAI Custodian</a> </td><td><p>Defines NHSN custodian constraints and extensions on the Organization resource for use in HAI reports. NHSN is the custodain of NHSN HAI Reports.</p>
+</td></tr>
+ <tr><td><a href="StructureDefinition-hai-patient.json.html">HAI Patient</a> </td><td><p>This profile is based on the US Core Patient Profile and defines HAI specific patient constraints:
+A patient identifier representing the facility-assigned patient ID is required. Other identifiers for the person can also be present, such as a United States Social Security Number (id/@root = 2.16.840.1.113883.4.1), a Medicare beneficiary identifier (id/@root = 2.16.840.1.113883.4.338), or secondary patient IDs (id/@root = the appropriate facility OID for patient IDs).
+The patient name is optional; consult the NHSN reporting protocol and requirements. <em>TODO</em>* - this is required for US Core Patient
+Patient gender and birthdate are required.</p>
+</td></tr>
  <tr><td><a href="StructureDefinition-asa-class.json.html">ASA Class</a> </td><td><p>This profile records the patients physical status using the American Society of Anesthesiologists (ASA) Class Codes. The SNOMED CT representation of ASA Class Codes includes a sixth value (413500003 ASA physical status class 6 for brain-dead patients taken to the operating room to remove organs for transplant). This sixth value is not part of the value set allowed in a submission to NHSN.</p>
 </td></tr>
- <tr><td><a href="StructureDefinition-diabetes-mellitus.json.html">Diabetes Mellitus</a> </td><td><p>This profile records whether the person had diabetes mellitus.</p>
+ <tr><td><a href="StructureDefinition-diabetes-melllitus.json.html">Diabetes Mellitus</a> </td><td><p>This profile records whether the person had diabetes mellitus.</p>
 </td></tr>
  <tr><td><a href="StructureDefinition-infection-condition.json.html">Infection Condition</a> </td><td><p>This profile records the infection condition being reported.</p>
 </td></tr>
+ <tr><td><a href="StructureDefinition-trauma-observation.json.html">Trauma Observation</a> </td><td><p>This observation records whether the person had trauma. It is used in reporting the circumstances of a procedure.</p>
+</td></tr>
+ <tr><td><a href="StructureDefinition-wound-class.json.html">Wound Class</a> </td><td><p>NHSN patient safety protocol on this topic is an adaptation of (not a change to) the American College of Surgeons (ACoS) definitions, which are the definitions used by SNOMED. Thus, SNOMED wound-class codes are appropriate for use with this observation.</p>
+</td></tr>
  <tr><td><a href="StructureDefinition-closure-technique.json.html">Closure Technique</a> </td><td><p>This procedure identifies the closure technique used in surgical procedures.</p>
 </td></tr>
- <tr><td><a href="StructureDefinition-procedure-details.json.html">Procedure Details</a> </td><td><p>This profile records the detail required in a Procedure Report about a procedure. NHSN uses the procedure id, along with other data, to establish a link between a Procedure Report and an SSI Report; the value of the procedure id must be the same in both the report of a procedure and the report of a surgical-site infection resulting from that procedure. In this profile, the priority code represents the main or primary procedure for the patient in the context of this report.</p>
+ <tr><td><a href="StructureDefinition-procedure-details.json.html">Procedure Details</a> </td><td><p>This profile records the detail required in a Procedure Report about a procedure.</p>
+<p>NHSN uses the procedure id, along with other data, to establish a link between a Procedure Report and an SSI Report; the value of the procedure id must be the same in both the report of a procedure and the report of a surgical-site infection resulting from that procedure. In this profile, the priority code represents the main or primary procedure for the patient in the context of this report.</p>
 </td></tr>
 </body>
 </html>

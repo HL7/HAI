@@ -79,8 +79,8 @@
     "StructureDefinition/asa-class": {
       "base": "StructureDefinition-asa-class.html"
     },
-    "StructureDefinition/diabetes-mellitus": {
-      "base": "StructureDefinition-diabetes-mellitus.html"
+    "StructureDefinition/diabetes-melllitus": {
+      "base": "StructureDefinition-diabetes-melllitus.html"
     },
     "StructureDefinition/procedure-details": {
       "base": "StructureDefinition-procedure-details.html"
@@ -99,6 +99,33 @@
     },
     "StructureDefinition/questionnaire-item-note": {
       "base": "StructureDefinition-questionnaire-item-note.html"
+    },
+    "StructureDefinition/procedure-risk-factors": {
+      "base": "StructureDefinition-procedure-risk-factors.html"
+    },
+    "StructureDefinition/endoscope-used-statement": {
+      "base": "StructureDefinition-endoscope-used-statement.html"
+    },
+    "StructureDefinition/endoscope": {
+      "base": "StructureDefinition-endoscope.html"
+    },
+    "StructureDefinition/wound-class": {
+      "base": "StructureDefinition-wound-class.html"
+    },
+    "StructureDefinition/weight-observation": {
+      "base": "StructureDefinition-weight-observation.html"
+    },
+    "StructureDefinition/height-observation": {
+      "base": "StructureDefinition-height-observation.html"
+    },
+    "StructureDefinition/duration-of-labor": {
+      "base": "StructureDefinition-duration-of-labor.html"
+    },
+    "StructureDefinition/trauma-observation": {
+      "base": "StructureDefinition-trauma-observation.html"
+    },
+    "StructureDefinition/hai-ssi-report-questionnaire-bundle": {
+      "base": "StructureDefinition-hai-ssi-report-questionnaire-bundle.html"
     },
     "ValueSet/nhsn-encounter-type-code": {
       "base": "ValueSet-nhsn-encounter-type-code.html"
@@ -141,6 +168,9 @@
     },
     "ValueSet/nhsn-spinal-fusion-approach-code": {
       "base": "ValueSet-nhsn-spinal-fusion-approach-code.html"
+    },
+    "ValueSet/nhsn-wound-class-code": {
+      "base": "ValueSet-nhsn-wound-class-code.html"
     },
     "Composition/HAI-Single-Person-Report-Generic-Constraints-Example": {
       "base": "Composition-HAI-Single-Person-Report-Generic-Constraints-Example.html"
