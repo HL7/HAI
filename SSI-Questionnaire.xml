@@ -189,6 +189,7 @@
       </compose>
     </ValueSet>
   </contained>
+  
   <!-- ValueSet: NHSNPathogenCode -->
   <!-- **TODO** This isn't the full set of codes - this is a dynamic binding -->
   <contained>
@@ -2399,7 +2400,7 @@
     <type value="choice" />
     <required value="true" />
     <options>
-      <reference value="#nhsn-procedure-category-code" />
+      <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code" />
       <display value="NHSNProcedureCategoryCode" />
     </options>
   </item>
