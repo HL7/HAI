@@ -54,7 +54,7 @@ This element is labeled as a modifier because it indicates that a procedure didn
 </valueCodeableConcept>","","","","",,"example","A code that classifies a procedure for searching, sorting and display purposes.","http://hl7.org/fhir/ValueSet/procedure-category","",,,,"Procedure.category",0,1,"","",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","class"
 "Procedure.code","","type
 ","",1,1,"Y","","Y","CodeableConcept
-","code","SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet NHSNClosureTechniqueCode urn:oid:2.16.840.1.114222.4.11.6051 (CONF:3347-200).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code","",,,,"Procedure.code",0,1,"","","Procedure.code",".code","what","OBR-44/OBR-45"
+","code","SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet NHSNClosureTechniqueCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code (CONF:3347-200).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code","",,,,"Procedure.code",0,1,"","","Procedure.code",".code","what","OBR-44/OBR-45"
 "Procedure.subject","","patient
 ","",1,1,"Y","","Y","Reference {http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient}
 ","subject","SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-198).","","","","","","","","","",,,,,"",,,,"Procedure.subject",1,1,"","","Procedure.subject",".participation[typeCode=SBJ].role","who.focus","PID-3"

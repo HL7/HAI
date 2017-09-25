@@ -3,15 +3,7 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
   <id value="ssi-questionnaire"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>version</b>: 1</p><p><b>title</b>: Surgical Site Infection</p><p><b>status</b>: DRAFT</p><p><b>version</b>: 1</p><p><b>title</b>: Surgical Site Infection</p><p><b>status</b>: DRAFT</p><p><b>code</b>: Healthcare Associated Infection Report (Details: LOINC code 51897-7 = 'Healthcare Associated Infection report Document', stated as 'Healthcare Associated Infection Report')</p><blockquote><p><b>item</b></p><p><b>linkId</b>: 6706</p><p><b>text</b>: Patient</p><p><b>type</b>: REFERENCE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 1</p><p><b>text</b>: Date of Event</p><p><b>type</b>: DATE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 2</p><p><b>text</b>: NHSN Procedure Code</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: NHSNProcedureCategoryCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277
-
-NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                
-
-The full table is shown in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277
-
-NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                
-
-The full table is shown in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 3</p><p><b>text</b>: ICD-10-PCS or CPT Procedure Code</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: <a href="http://hl7.org/fhir/sid/icd-10">ICD-10-PCS</a></p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 4</p><p><b>text</b>: Date of Procedure</p><p><b>type</b>: DATE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: outpatient-procedure</p><p><b>text</b>: Outpatient Procedure</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>repeats</b>: false</p><p><b>options</b>: nhsn-encounter-type-code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>version</b>: 1</p><p><b>title</b>: Surgical Site Infection</p><p><b>status</b>: DRAFT</p><p><b>version</b>: 1</p><p><b>title</b>: Surgical Site Infection</p><p><b>status</b>: DRAFT</p><p><b>code</b>: Healthcare Associated Infection Report (Details: LOINC code 51897-7 = 'Healthcare Associated Infection report Document', stated as 'Healthcare Associated Infection Report')</p><blockquote><p><b>item</b></p><p><b>linkId</b>: 6706</p><p><b>text</b>: Patient</p><p><b>type</b>: REFERENCE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 1</p><p><b>text</b>: Date of Event</p><p><b>type</b>: DATE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 2</p><p><b>text</b>: NHSN Procedure Code</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: <a href="http://hl7.org/fhir/us/hai/ValueSet/random-value-set-for-testing">NHSNProcedureCategoryCode</a></p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 3</p><p><b>text</b>: ICD-10-PCS or CPT Procedure Code</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>options</b>: <a href="http://hl7.org/fhir/sid/icd-10">ICD-10-PCS</a></p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: 4</p><p><b>text</b>: Date of Procedure</p><p><b>type</b>: DATE</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: outpatient-procedure</p><p><b>text</b>: Outpatient Procedure</p><p><b>type</b>: CHOICE</p><p><b>required</b>: true</p><p><b>repeats</b>: false</p><p><b>options</b>: nhsn-encounter-type-code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4
 
 A full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4
 
@@ -33,192 +25,6 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
 
 A full listing of codes can be found in the hai_voc.xls file provided with this package.</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: secondary-bsi</p><p><b>code</b>: Secondary bloodstream infection (Details: urn:oid:2.16.840.1.113883.6.277 code 3111-2 = '3111-2', stated as 'Secondary bloodstream infection')</p><p><b>text</b>: Secondary Bloodstream Infection</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: died</p><p><b>code</b>: Dead (Details: SNOMED CT code 419099009 = 'Dead (finding)', stated as 'Dead')</p><p><b>text</b>: Died</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: ssi-contributed-to-death</p><p><b>text</b>: SSI Contributed to Death</p><p><b>type</b>: BOOLEAN</p><h3>EnableWhens</h3><table class="grid"><tr><td>-</td><td><b>Question</b></td><td><b>HasAnswer</b></td></tr><tr><td>*</td><td>died</td><td>true</td></tr></table><p><b>required</b>: false</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: date-admitted-to-facility</p><p><b>text</b>: Date Admitted to Facility:</p><p><b>type</b>: DATE</p><p><b>required</b>: false</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: pathogens-identified</p><p><b>text</b>: Pathogens Identified</p><p><b>type</b>: BOOLEAN</p><p><b>required</b>: true</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: findings-group</p><p><b>text</b>: Findings Group</p><p><b>type</b>: GROUP</p><h3>EnableWhens</h3><table class="grid"><tr><td>-</td><td><b>Question</b></td><td><b>HasAnswer</b></td></tr><tr><td>*</td><td>pathogens-identified</td><td>true</td></tr></table><p><b>required</b>: false</p><p><b>repeats</b>: true</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote></div>
   </text>
-  <contained>
-    <ValueSet>
-      <id value="nhsn-procedure-category-code"/>
-      <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code"/>
-      <name value="NHSNProcedureCategoryCode"/>
-      <status value="active"/>
-      <description value="Code System: cdcNHSN 2.16.840.1.113883.6.277&#xD;&#xA;&#xD;&#xA;NHSN&#39;s value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                &#xD;&#xA;&#xD;&#xA;The full table is shown in the hai_voc.xls file provided with this package."/>
-      <compose>
-        <include>
-          <system value="urn:oid:2.16.840.1.113883.6.277"/>
-          <concept>
-            <code value="2105-5"/>
-            <display value="Abdominal aortic aneurysm repair"/>
-          </concept>
-          <concept>
-            <code value="2107-1"/>
-            <display value="Abdominal hysterectomy"/>
-          </concept>
-          <concept>
-            <code value="2108-9"/>
-            <display value="Appendix surgery"/>
-          </concept>
-          <concept>
-            <code value="2102-2"/>
-            <display value="AV shunt for dialysis"/>
-          </concept>
-          <concept>
-            <code value="2109-7"/>
-            <display value="Bile duct, liver or pancreatic surgery"/>
-          </concept>
-          <concept>
-            <code value="2110-5"/>
-            <display value="Breast surgery"/>
-          </concept>
-          <concept>
-            <code value="2111-3"/>
-            <display value="Cardiac Surgery"/>
-          </concept>
-          <concept>
-            <code value="2114-7"/>
-            <display value="Carotid endarterectomy"/>
-          </concept>
-          <concept>
-            <code value="2115-4"/>
-            <display value="Cesarean section"/>
-          </concept>
-          <concept>
-            <code value="2116-2"/>
-            <display value="Colon surgery"/>
-          </concept>
-          <concept>
-            <code value="2112-1"/>
-            <display value="Coronary artery bypass graft with both chest and donor site incisions"/>
-          </concept>
-          <concept>
-            <code value="2113-9"/>
-            <display value="Coronary artery bypass graft with chest incision only"/>
-          </concept>
-          <concept>
-            <code value="2117-0"/>
-            <display value="Craniotomy"/>
-          </concept>
-          <concept>
-            <code value="2118-8"/>
-            <display value="Exploratory abdominal surgery"/>
-          </concept>
-          <concept>
-            <code value="2119-6"/>
-            <display value="Gallbladder surgery"/>
-          </concept>
-          <concept>
-            <code value="2120-4"/>
-            <display value="Gastric surgery"/>
-          </concept>
-          <concept>
-            <code value="2121-2"/>
-            <display value="Heart transplant"/>
-          </concept>
-          <concept>
-            <code value="2106-3"/>
-            <display value="Herniorrhaphy"/>
-          </concept>
-          <concept>
-            <code value="2101-4"/>
-            <display value="Hip Replacement"/>
-          </concept>
-          <concept>
-            <code value="2122-0"/>
-            <display value="Kidney surgery"/>
-          </concept>
-          <concept>
-            <code value="2123-8"/>
-            <display value="Kidney transplant"/>
-          </concept>
-          <concept>
-            <code value="2124-6"/>
-            <display value="Knee prosthesis"/>
-          </concept>
-          <concept>
-            <code value="2125-3"/>
-            <display value="Laminectomy"/>
-          </concept>
-          <concept>
-            <code value="2126-1"/>
-            <display value="Limb amputation"/>
-          </concept>
-          <concept>
-            <code value="2127-9"/>
-            <display value="Liver transplant"/>
-          </concept>
-          <concept>
-            <code value="2128-7"/>
-            <display value="Neck surgery"/>
-          </concept>
-          <concept>
-            <code value="2103-0"/>
-            <display value="Not an NHSN operation"/>
-          </concept>
-          <concept>
-            <code value="2129-5"/>
-            <display value="Open reduction of fracture"/>
-          </concept>
-          <concept>
-            <code value="2104-8"/>
-            <display value="Other operations"/>
-          </concept>
-          <concept>
-            <code value="2130-3"/>
-            <display value="Ovarian surgery"/>
-          </concept>
-          <concept>
-            <code value="2131-1"/>
-            <display value="Pacemaker surgery"/>
-          </concept>
-          <concept>
-            <code value="2132-9"/>
-            <display value="Peripheral vascular bypass surgery"/>
-          </concept>
-          <concept>
-            <code value="2133-7"/>
-            <display value="Prostate surgery"/>
-          </concept>
-          <concept>
-            <code value="2134-5"/>
-            <display value="Rectal surgery"/>
-          </concept>
-          <concept>
-            <code value="2135-2"/>
-            <display value="Refusion of spine"/>
-          </concept>
-          <concept>
-            <code value="2136-0"/>
-            <display value="Small bowel surgery"/>
-          </concept>
-          <concept>
-            <code value="2137-8"/>
-            <display value="Spinal fusion"/>
-          </concept>
-          <concept>
-            <code value="2138-6"/>
-            <display value="Spleen surgery"/>
-          </concept>
-          <concept>
-            <code value="2139-4"/>
-            <display value="Thoracic surgery"/>
-          </concept>
-          <concept>
-            <code value="2140-2"/>
-            <display value="Thyroid and/or parathyroid surgery"/>
-          </concept>
-          <concept>
-            <code value="2141-0"/>
-            <display value="Vaginal hysterectomy"/>
-          </concept>
-          <concept>
-            <code value="2142-8"/>
-            <display value="Ventricular shunt"/>
-          </concept>
-          <concept>
-            <code value="2102-2"/>
-            <display value="Shunt for dialysis"/>
-          </concept>
-        </include>
-      </compose>
-    </ValueSet>
-  </contained>
   <contained>
     <ValueSet>
       <id value="nhsn-pathogen-code"/>
@@ -2396,7 +2202,7 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
     <type value="choice"/>
     <required value="true"/>
     <options>
-      <reference value="#nhsn-procedure-category-code"/>
+      <reference value="http://hl7.org/fhir/us/hai/ValueSet/random-value-set-for-testing"/>
       <display value="NHSNProcedureCategoryCode"/>
     </options>
   </item>

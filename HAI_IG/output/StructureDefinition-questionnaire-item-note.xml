@@ -12,7 +12,7 @@
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note"/>
   <name value="questionnaire-item-note"/>
   <status value="draft"/>
-  <date value="2017-09-24T19:29:43+10:00"/>
+  <date value="2017-09-25T19:40:25+10:00"/>
   <publisher value="Lantana Consulting Group"/>
   <contact>
     <name value="Sarah Gaunt"/>

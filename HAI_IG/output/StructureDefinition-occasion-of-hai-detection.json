@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection",
   "name": "occasion-of-hai-detection",
   "status": "draft",
-  "date": "2017-09-24T19:29:43+10:00",
+  "date": "2017-09-25T19:40:25+10:00",
   "publisher": "Lantana Consulting Group",
   "contact": [
     {

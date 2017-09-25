@@ -8,7 +8,7 @@
   "url": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code",
   "name": "NHSNHealthcareServiceLocationCode",
   "status": "active",
-  "date": "2017-09-24T19:29:43+10:00",
+  "date": "2017-09-25T19:40:25+10:00",
   "description": "A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.",
   "compose": {
     "include": [

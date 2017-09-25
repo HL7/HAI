@@ -47,7 +47,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension
 "Encounter.statusHistory.period","","","",1,1,"","","","Period
 ","The time that the episode was in the specified status","The time that the episode was in the specified status.","","","","","","","","","",,,,,"",,,,"Encounter.statusHistory.period",1,1,"","","n/a"
 "Encounter.class","","","",1,1,"","","Y","Coding
-","class","SHALL contain exactly one [1..1] class (CONF:3347-129).","","","","","","","","","",,"extensible","Classification of the encounter","http://hl7.org/fhir/ValueSet/v3-ActEncounterCode","",,,,"Encounter.class",0,1,"","",".inboundRelationship[typeCode=SUBJ].source[classCode=LIST].code","class","PV1-2"
+","class","SHALL contain exactly one [1..1] class, which SHALL be selected from ValueSet NHSNEncounterTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code (CONF:3347-129).","","","","","","","","","",,"required","","http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code","",,,,"Encounter.class",0,1,"","",".inboundRelationship[typeCode=SUBJ].source[classCode=LIST].code","class","PV1-2"
 "Encounter.classHistory","","","",0,*,"","","","BackboneElement
 ","List of past encounter classes","The class history permits the tracking of the encounters transitions without needing to go  through the resource history.
 
@@ -65,8 +65,8 @@ user contentmodifiers","",0,*,"","Y","Y","Extension
 ","inpatient | outpatient | ambulatory | emergency +","inpatient | outpatient | ambulatory | emergency +.","","","","","","","","","",,"extensible","Classification of the encounter","http://hl7.org/fhir/ValueSet/v3-ActEncounterCode","",,,,"Encounter.classHistory.class",1,1,"","","n/a"
 "Encounter.classHistory.period","","","",1,1,"","","","Period
 ","The time that the episode was in the specified class","The time that the episode was in the specified class.","","","","","","","","","",,,,,"",,,,"Encounter.classHistory.period",1,1,"","","n/a"
-"Encounter.type","","","",1,1,"","","Y","CodeableConcept
-","type","SHALL contain exactly one [1..1] type, which SHALL be selected from ValueSet NHSNEncounterTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code (CONF:3347-180).","Since there are many ways to further classify encounters, this element is 0..*.","","","","","","","","",,"required","","http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code","",,,,"Encounter.type",0,*,"","",".code","class","PV1-4 / PV1-18"
+"Encounter.type","","","",0,*,"","","Y","CodeableConcept
+","Specific type of encounter","Specific type of encounter (e.g. e-mail consultation, surgical day-care, skilled nursing, rehabilitation).","Since there are many ways to further classify encounters, this element is 0..*.","","","","","","","","",,"example","The type of encounter","http://hl7.org/fhir/ValueSet/encounter-type","",,,,"Encounter.type",0,*,"","",".code","class","PV1-4 / PV1-18"
 "Encounter.priority","","","",0,1,"","","","CodeableConcept
 ","Indicates the urgency of the encounter","Indicates the urgency of the encounter.","","","","","","","","","",,"example","Indicates the urgency of the encounter.","http://hl7.org/fhir/ValueSet/v3-ActPriority","",,,,"Encounter.priority",0,1,"","",".priorityCode","grade","PV2-25"
 "Encounter.subject","","patient

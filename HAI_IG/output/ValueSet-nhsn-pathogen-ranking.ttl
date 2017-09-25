@@ -15,7 +15,7 @@
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"];
   fhir:ValueSet.name [ fhir:value "NHSNPathogenRanking"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2017-09-24T19:29:43+10:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2017-09-25T19:40:25+10:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [

@@ -15,7 +15,7 @@
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-generic-constraints"/>
   <name value="HAI Single-Person Report Generic Constraints"/>
   <status value="draft"/>
-  <date value="2017-09-24T19:29:43+10:00"/>
+  <date value="2017-09-25T19:40:25+10:00"/>
   <publisher value="Lantana Consulting Group"/>
   <contact>
     <name value="Sarah Gaunt"/>

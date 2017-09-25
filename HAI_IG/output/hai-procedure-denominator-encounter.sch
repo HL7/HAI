@@ -13,8 +13,6 @@
     <sch:title>f:Encounter</sch:title>
     <sch:rule context="f:Encounter">
       <sch:assert test="count(f:class) &gt;= 1">class: minimum cardinality of 'class' is 1</sch:assert>
-      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
-      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:period) &gt;= 1">period: minimum cardinality of 'period' is 1</sch:assert>
       <sch:assert test="count(f:location) &gt;= 1">location: minimum cardinality of 'location' is 1</sch:assert>
       <sch:assert test="count(f:location) &lt;= 1">location: maximum cardinality of 'location' is 1</sch:assert>

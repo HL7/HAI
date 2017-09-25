@@ -16,58 +16,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-hai-patient.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/hai-patient",
-            "display": "HAI Patient"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-hai-custodian.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/hai-custodian",
-            "display": "HAI Custodian"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-hai-healthcare-facility.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/hai-healthcare-facility",
-            "display": "HAI Healthcare Facility"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-hai-ssi-encounter.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/hai-ssi-encounter",
-            "display": "HAI SSI Encounter"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-healthcare-associated-infection-report.html"
             }
           ],
@@ -120,6 +68,45 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-ssi-report-questionnaire-bundle.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-ssi-report-questionnaire-bundle",
+            "display": "HAI SSI Report Questionnaire Bundle"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-endoscope.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/endoscope",
+            "display": "Endoscope"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-endoscope-used-statement.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/endoscope-used-statement",
+            "display": "Endoscope Used Statement"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-hai-procedure-denominator-encounter.html"
             }
           ],
@@ -127,6 +114,19 @@
           "sourceReference": {
             "reference": "StructureDefinition/hai-procedure-denominator-encounter",
             "display": "HAI Procedure Denominator Encounter"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-ssi-encounter.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-ssi-encounter",
+            "display": "HAI SSI Encounter"
           }
         },
         {
@@ -185,6 +185,32 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-procedure-risk-factors.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/procedure-risk-factors",
+            "display": "Procedure Risk Factors"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-healthcare-facility.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-healthcare-facility",
+            "display": "HAI Healthcare Facility"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-anesthesia-delivered.html"
             }
           ],
@@ -192,6 +218,32 @@
           "sourceReference": {
             "reference": "StructureDefinition/anesthesia-delivered",
             "display": "Anesthesia Delivered"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-duration-of-labor.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/duration-of-labor",
+            "display": "Duration of Labor "
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-height-observation.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/height-observation",
+            "display": "Height Observation"
           }
         },
         {
@@ -250,6 +302,45 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-weight-observation.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/weight-observation",
+            "display": "Weight Observation"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-custodian.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-custodian",
+            "display": "HAI Custodian"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-patient.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-patient",
+            "display": "HAI Patient"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-asa-class.html"
             }
           ],
@@ -263,12 +354,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-diabetes-mellitus.html"
+              "valueUri": "StructureDefinition-diabetes-melllitus.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/diabetes-mellitus",
+            "reference": "StructureDefinition/diabetes-melllitus",
             "display": "Diabetes Mellitus"
           }
         },
@@ -283,6 +374,32 @@
           "sourceReference": {
             "reference": "StructureDefinition/infection-condition",
             "display": "Infection Condition"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-trauma-observation.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/trauma-observation",
+            "display": "Trauma Observation"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-wound-class.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/wound-class",
+            "display": "Wound Class"
           }
         },
         {
@@ -361,6 +478,19 @@
           "sourceReference": {
             "reference": "ValueSet/nhsn-criterion-of-diagnosis-code",
             "display": "NHSNCriterionOfDiagnosisCode"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-nhsn-wound-class-code.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/nhsn-wound-class-code",
+            "display": "NHSNWoundClassCode"
           }
         },
         {
@@ -503,7 +633,7 @@
           "example": false,
           "sourceReference": {
             "reference": "Questionnaire/ssi-questionnaire",
-            "display": "SSI-Questionnaire.xml"
+            "display": "ssi-questionnaire.xml"
           }
         },
         {
@@ -516,7 +646,7 @@
           "example": false,
           "sourceReference": {
             "reference": "QuestionnaireResponse/ssi-questionnaire-response",
-            "display": "SSI-QuestionnaireResponse.xml"
+            "display": "ssi-questionnaire-response.xml"
           }
         },
         {
@@ -617,7 +747,7 @@
             "display": "Diabetes-Mellitus-Example"
           },
           "exampleFor": {
-            "reference": "StructureDefinition/diabetes-mellitus",
+            "reference": "StructureDefinition/diabetes-melllitus",
             "display": "Diabetes Mellitus"
           }
         },

@@ -1,14 +1,14 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "diabetes-mellitus",
+  "id": "trauma-observation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span title=\"null\">Condition</span><a name=\"Condition\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span title=\"SHALL contain exactly one [1..1] verificationStatus (CONF:3347-177).\">verificationStatus</span><a name=\"Condition.verificationStatus\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">verificationStatus</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span title=\"SHALL contain exactly one [1..1] code=&quot;73211009&quot; Diabetes Mellitus (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-178).\">code</span><a name=\"Condition.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">code<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">{&quot;coding&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.6.96&quot;,&quot;code&quot;:&quot;73211009&quot;}]}</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <span title=\"SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-176).\">subject</span><a name=\"Condition.subject\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/references.html\">Reference</a>(<a href=\"StructureDefinition-hai-patient.html\">HAI Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">subject</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span title=\"null\">Condition</span><a name=\"Condition\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span title=\"SHALL contain exactly one [1..1] clinicalStatus=&quot;active&quot; (CONF:3347-256).\">clinicalStatus</span><a name=\"Condition.clinicalStatus\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">clinicalStatus<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">active</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span title=\"SHALL contain exactly one [1..1] code=&quot;417746004&quot; Trauma (CONF:3347-257).\">code</span><a name=\"Condition.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.4\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">code<br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">{&quot;coding&quot;:[{&quot;code&quot;:&quot;417746004&quot;}]}</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <span title=\"SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-255).\">subject</span><a name=\"Condition.subject\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.4\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.4\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/references.html\">Reference</a>(<a href=\"StructureDefinition-hai-patient.html\">HAI Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">subject</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/STU3/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/STU3/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
-  "url": "http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus",
-  "name": "Diabetes Mellitus",
+  "url": "http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation",
+  "name": "Trauma Observation",
   "status": "draft",
-  "date": "2017-09-24T19:29:43+10:00",
+  "date": "2017-09-25T19:40:25+10:00",
   "publisher": "Lantana Consulting Group",
   "contact": [
     {
@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "This profile records whether the person had diabetes mellitus.",
+  "description": "This observation records whether the person had trauma. It is used in reporting the circumstances of a procedure.",
   "fhirVersion": "3.1.0",
   "mapping": [
     {
@@ -435,10 +435,10 @@
       {
         "id": "Condition:uscorevitalsigns.clinicalStatus",
         "path": "Condition.clinicalStatus",
-        "short": "active | recurrence | inactive | remission | resolved",
-        "definition": "The clinical status of the condition.",
+        "short": "clinicalStatus",
+        "definition": "SHALL contain exactly one [1..1] clinicalStatus=\"active\" (CONF:3347-256).",
         "comment": "This element is labeled as a modifier because the status contains codes that mark the condition as not currently valid or of concern.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Condition.clinicalStatus",
@@ -450,6 +450,7 @@
             "code": "code"
           }
         ],
+        "patternString": "active",
         "condition": [
           "con-3",
           "con-4"
@@ -489,8 +490,8 @@
       {
         "id": "Condition:uscorevitalsigns.verificationStatus",
         "path": "Condition.verificationStatus",
-        "short": "verificationStatus",
-        "definition": "SHALL contain exactly one [1..1] verificationStatus (CONF:3347-177).",
+        "short": "provisional | differential | confirmed | refuted | entered-in-error | unknown",
+        "definition": "The verification status to support the clinical status of the condition.",
         "comment": "verificationStatus is not required.  For example, when a patient has abdominal pain in the ED, there is not likely going to be a verification status.\n\nThis element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid.",
         "min": 1,
         "max": "1",
@@ -650,7 +651,7 @@
         "id": "Condition:uscorevitalsigns.code",
         "path": "Condition.code",
         "short": "code",
-        "definition": "SHALL contain exactly one [1..1] code=\"73211009\" Diabetes Mellitus (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-178).",
+        "definition": "SHALL contain exactly one [1..1] code=\"417746004\" Trauma (CONF:3347-257).",
         "requirements": "0..1 to account for primarily narrative only resources.",
         "alias": [
           "type"
@@ -670,8 +671,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "system": "urn:oid:2.16.840.1.113883.6.96",
-              "code": "73211009"
+              "code": "417746004"
             }
           ]
         },
@@ -762,7 +762,7 @@
         "id": "Condition:uscorevitalsigns.subject",
         "path": "Condition.subject",
         "short": "subject",
-        "definition": "SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-176).",
+        "definition": "SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-255).",
         "requirements": "Group is typically used for veterinary or public health use cases.",
         "alias": [
           "patient"
@@ -1474,18 +1474,24 @@
         "path": "Condition"
       },
       {
-        "id": "Condition.verificationStatus",
-        "path": "Condition.verificationStatus",
-        "short": "verificationStatus",
-        "definition": "SHALL contain exactly one [1..1] verificationStatus (CONF:3347-177).",
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "short": "clinicalStatus",
+        "definition": "SHALL contain exactly one [1..1] clinicalStatus=\"active\" (CONF:3347-256).",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "patternString": "active"
       },
       {
         "id": "Condition.code",
         "path": "Condition.code",
         "short": "code",
-        "definition": "SHALL contain exactly one [1..1] code=\"73211009\" Diabetes Mellitus (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-178).",
+        "definition": "SHALL contain exactly one [1..1] code=\"417746004\" Trauma (CONF:3347-257).",
         "min": 1,
         "max": "1",
         "type": [
@@ -1496,8 +1502,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "system": "urn:oid:2.16.840.1.113883.6.96",
-              "code": "73211009"
+              "code": "417746004"
             }
           ]
         }
@@ -1506,7 +1511,7 @@
         "id": "Condition.subject",
         "path": "Condition.subject",
         "short": "subject",
-        "definition": "SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-176).",
+        "definition": "SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-255).",
         "min": 1,
         "max": "1",
         "type": [

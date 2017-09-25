@@ -5,7 +5,7 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span title="null">Composition</span><a name="Composition"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.4">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.4">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span title="SHALL contain exactly one [1..1] HAI Procedure Denominator Encounter (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter) (CONF:3347-130).">encounter</span><a name="Composition.encounter"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-hai-procedure-denominator-encounter.html">HAI Procedure Denominator Encounter</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">encounter</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> <span style="font-style: italic" title="SHALL contain exactly one [1..1] section (CONF:3347-215) such that it">section</span><a name="Composition.section"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4; font-style: italic" href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold; font-style: italic">Slice: </span><span style="font-style: italic">Unordered, Open by value:title, value:code, value:entry, value:entry</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> <span style="font-style: italic" title="SHALL contain exactly one [1..1] section (CONF:3347-215) such that it">section</span><a name="Composition.section"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4; font-style: italic" href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-weight:bold; font-style: italic">Slice: </span><span style="font-style: italic">Unordered, Open by value:title, value:code, value:entry, value:entry, value:entry, value:entry, value:entry, value:entry</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span title="Slice section2: SHALL contain exactly one [1..1] section (CONF:3347-211) such that it">section</span><a name="Composition.section"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">section</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span title="SHALL contain exactly one [1..1] title=&quot;Procedure Details Section in a Procedure Report&quot; (CONF:3347-213).">title</span><a name="Composition.section.title"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">title<br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">Procedure Details Section in a Procedure Report</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="SHALL contain exactly one [1..1] code=&quot;51899-3&quot; Details Section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-214).">code</span><a name="Composition.section.code"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">code<br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">{&quot;coding&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.6.1&quot;,&quot;code&quot;:&quot;51899-3&quot;}]}</span></td></tr>
@@ -13,13 +13,13 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span title="Slice section3: SHALL contain exactly one [1..1] section (CONF:3347-215) such that it">section</span><a name="Composition.section"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">section</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span title="SHALL contain exactly one [1..1] title (CONF:3347-216).">title</span><a name="Composition.section.title"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">title</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="SHALL contain exactly one [1..1] code=&quot;51898-5&quot; Risk Factors Section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-217).">code</span><a name="Composition.section.code"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.4" href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">code<br/><span style="font-weight:bold">Required Pattern: </span><span style="color: darkgreen">{&quot;coding&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.6.1&quot;,&quot;code&quot;:&quot;51898-5&quot;}]}</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span title="SHALL contain exactly one [1..1] Diabetes Mellitus (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus) (CONF:3347-219).">entry</span><a name="Composition.section.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-diabetes-mellitus.html">Diabetes Mellitus</a>), <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-asa-class.html">ASA Class</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">entry</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span title="SHALL contain exactly one [1..1] Diabetes Melitus (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus) (CONF:3347-219).">entry</span><a name="Composition.section.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus), <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-asa-class.html">ASA Class</a>), <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-height-observation.html">Height Observation</a>), <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-weight-observation.html">Weight Observation</a>), <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-duration-of-labor.html">Duration of Labor </a>), <a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-trauma-observation.html">Trauma Observation</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">entry</td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/STU3/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/STU3/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-report"/>
   <name value="HAI Procedure Denominator Report"/>
   <status value="draft"/>
-  <date value="2017-09-24T19:29:43+10:00"/>
+  <date value="2017-09-25T19:40:25+10:00"/>
   <publisher value="Lantana Consulting Group"/>
   <contact>
     <name value="Eric Parapini"/>
@@ -34,7 +34,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Note: The section on Template Ids in this Guide includes a containment table showing all the entries within each report type.&#xA;&#xA;This report records a procedure performed. &#xA;&#xA;Preferred document title:  Denominator for Procedure Report&#xA;&#xA;Key encounter data:&#xA;&#xA;     The encounter type (inpatient or outpatient) is required.&#xA;&#xA;     If the patient was an inpatient, a value for admission date is required.&#xA;&#xA;     The facility id is required. Unit identifier and unit type are not reported.&#xA;&#xA;Other dates and locations:&#xA;&#xA;     The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).&#xA;&#xA;Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports"/>
+  <description value="This report records a procedure performed. &#xA;&#xA;Preferred document title:  Denominator for Procedure Report&#xA;&#xA;Key encounter data:&#xA;&#xA;     The encounter type (inpatient or outpatient) is required.&#xA;&#xA;     If the patient was an inpatient, a value for admission date is required.&#xA;&#xA;     The facility id is required. Unit identifier and unit type are not reported.&#xA;&#xA;Other dates and locations:&#xA;&#xA;     The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).&#xA;&#xA;Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports"/>
   <fhirVersion value="3.1.0"/>
   <mapping>
     <identity value="rim"/>
@@ -2990,6 +2990,22 @@
           <type value="value"/>
           <path value="entry"/>
         </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="entry"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="entry"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="entry"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="entry"/>
+        </discriminator>
         <rules value="open"/>
       </slicing>
       <short value="Composition is broken into sections"/>
@@ -4018,7 +4034,7 @@
     <element id="Composition.section:section3.entry">
       <path value="Composition.section.entry"/>
       <short value="entry"/>
-      <definition value="SHALL contain exactly one [1..1] Diabetes Mellitus (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus) (CONF:3347-219)."/>
+      <definition value="SHALL contain exactly one [1..1] Diabetes Melitus (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus) (CONF:3347-219)."/>
       <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
       <min value="1"/>
       <max value="1"/>
@@ -4029,11 +4045,27 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus"/>
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus"/>
       </type>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/asa-class"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/height-observation"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation"/>
       </type>
       <condition value="cmp-2"/>
       <mapping>
@@ -4139,6 +4171,22 @@
           <type value="value"/>
           <path value="entry"/>
         </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="entry"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="entry"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="entry"/>
+        </discriminator>
+        <discriminator>
+          <type value="value"/>
+          <path value="entry"/>
+        </discriminator>
         <rules value="open"/>
       </slicing>
       <definition value="SHALL contain exactly one [1..1] section (CONF:3347-215) such that it"/>
@@ -4223,16 +4271,32 @@
     <element id="Composition.section:section3.entry">
       <path value="Composition.section.entry"/>
       <short value="entry"/>
-      <definition value="SHALL contain exactly one [1..1] Diabetes Mellitus (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus) (CONF:3347-219)."/>
+      <definition value="SHALL contain exactly one [1..1] Diabetes Melitus (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus) (CONF:3347-219)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus"/>
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus"/>
       </type>
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/asa-class"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/height-observation"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation"/>
       </type>
     </element>
   </differential>

@@ -11,7 +11,7 @@
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility"/>
   <name value="HAI Healthcare Facility"/>
   <status value="draft"/>
-  <date value="2017-09-24T19:29:43+10:00"/>
+  <date value="2017-09-25T19:40:25+10:00"/>
   <publisher value="Lantana Consulting Group"/>
   <contact>
     <name value="Sarah Gaunt"/>
@@ -26,6 +26,7 @@
       <use value="work"/>
     </telecom>
   </contact>
+  <description value="This profile records location information such as the facility id. The facility ID is an NHSN assigned faciltiy OID and if there is an extension it must be a value registered with NHSN. "/>
   <fhirVersion value="3.1.0"/>
   <mapping>
     <identity value="rim"/>

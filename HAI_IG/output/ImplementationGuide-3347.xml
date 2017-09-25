@@ -12,46 +12,6 @@
     <name value="Profiles in this Implementation Guide"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-hai-patient.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/hai-patient"/>
-        <display value="HAI Patient"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-hai-custodian.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/hai-custodian"/>
-        <display value="HAI Custodian"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-hai-healthcare-facility.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/hai-healthcare-facility"/>
-        <display value="HAI Healthcare Facility"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-hai-ssi-encounter.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/hai-ssi-encounter"/>
-        <display value="HAI SSI Encounter"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-healthcare-associated-infection-report.html"/>
       </extension>
       <example value="false"/>
@@ -92,12 +52,52 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hai-ssi-report-questionnaire-bundle.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hai-ssi-report-questionnaire-bundle"/>
+        <display value="HAI SSI Report Questionnaire Bundle"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-endoscope.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/endoscope"/>
+        <display value="Endoscope"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-endoscope-used-statement.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/endoscope-used-statement"/>
+        <display value="Endoscope Used Statement"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-hai-procedure-denominator-encounter.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/hai-procedure-denominator-encounter"/>
         <display value="HAI Procedure Denominator Encounter"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hai-ssi-encounter.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hai-ssi-encounter"/>
+        <display value="HAI SSI Encounter"/>
       </sourceReference>
     </resource>
     <resource>
@@ -142,12 +142,52 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-procedure-risk-factors.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/procedure-risk-factors"/>
+        <display value="Procedure Risk Factors"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hai-healthcare-facility.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hai-healthcare-facility"/>
+        <display value="HAI Healthcare Facility"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-anesthesia-delivered.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/anesthesia-delivered"/>
         <display value="Anesthesia Delivered"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-duration-of-labor.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/duration-of-labor"/>
+        <display value="Duration of Labor "/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-height-observation.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/height-observation"/>
+        <display value="Height Observation"/>
       </sourceReference>
     </resource>
     <resource>
@@ -192,6 +232,36 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-weight-observation.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/weight-observation"/>
+        <display value="Weight Observation"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hai-custodian.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hai-custodian"/>
+        <display value="HAI Custodian"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-hai-patient.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/hai-patient"/>
+        <display value="HAI Patient"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-asa-class.html"/>
       </extension>
       <example value="false"/>
@@ -202,11 +272,11 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-diabetes-mellitus.html"/>
+        <valueUri value="StructureDefinition-diabetes-melllitus.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/diabetes-mellitus"/>
+        <reference value="StructureDefinition/diabetes-melllitus"/>
         <display value="Diabetes Mellitus"/>
       </sourceReference>
     </resource>
@@ -218,6 +288,26 @@
       <sourceReference>
         <reference value="StructureDefinition/infection-condition"/>
         <display value="Infection Condition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-trauma-observation.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/trauma-observation"/>
+        <display value="Trauma Observation"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-wound-class.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/wound-class"/>
+        <display value="Wound Class"/>
       </sourceReference>
     </resource>
     <resource>
@@ -278,6 +368,16 @@
       <sourceReference>
         <reference value="ValueSet/nhsn-criterion-of-diagnosis-code"/>
         <display value="NHSNCriterionOfDiagnosisCode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-nhsn-wound-class-code.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/nhsn-wound-class-code"/>
+        <display value="NHSNWoundClassCode"/>
       </sourceReference>
     </resource>
     <resource>
@@ -387,7 +487,7 @@
       <example value="false"/>
       <sourceReference>
         <reference value="Questionnaire/ssi-questionnaire"/>
-        <display value="SSI-Questionnaire.xml"/>
+        <display value="ssi-questionnaire.xml"/>
       </sourceReference>
     </resource>
     <resource>
@@ -397,7 +497,7 @@
       <example value="false"/>
       <sourceReference>
         <reference value="QuestionnaireResponse/ssi-questionnaire-response"/>
-        <display value="SSI-QuestionnaireResponse.xml"/>
+        <display value="ssi-questionnaire-response.xml"/>
       </sourceReference>
     </resource>
     <resource>
@@ -480,7 +580,7 @@
         <display value="Diabetes-Mellitus-Example"/>
       </sourceReference>
       <exampleFor>
-        <reference value="StructureDefinition/diabetes-mellitus"/>
+        <reference value="StructureDefinition/diabetes-melllitus"/>
         <display value="Diabetes Mellitus"/>
       </exampleFor>
     </resource>

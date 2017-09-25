@@ -47,7 +47,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension
 "Encounter.statusHistory.period","","","",1,1,"","","","Period
 ","The time that the episode was in the specified status","The time that the episode was in the specified status.","","","","","","","","","",,,,,"",,,,"Encounter.statusHistory.period",1,1,"","","n/a"
 "Encounter.class","","","",1,1,"","","Y","Coding
-","class","SHALL contain exactly one [1..1] class (ValueSet: NHSNEncounterTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code) (CONF:3347-84).","","","","","","","","","",,"required","","http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code","",,,,"Encounter.class",0,1,"","",".inboundRelationship[typeCode=SUBJ].source[classCode=LIST].code","class","PV1-2"
+","class","SHALL contain exactly one [1..1] class, which SHALL be selected from ValueSet NHSNEncounterTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code (CONF:3347-84).","","","","","","","","","",,"required","","http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code","",,,,"Encounter.class",0,1,"","",".inboundRelationship[typeCode=SUBJ].source[classCode=LIST].code","class","PV1-2"
 "Encounter.classHistory","","","",0,*,"","","","BackboneElement
 ","List of past encounter classes","The class history permits the tracking of the encounters transitions without needing to go  through the resource history.
 

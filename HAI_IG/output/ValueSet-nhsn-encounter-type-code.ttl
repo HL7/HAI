@@ -15,7 +15,7 @@
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code"];
   fhir:ValueSet.name [ fhir:value "NHSNEncounterTypeCode"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2017-09-24T19:29:43+10:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2017-09-25T19:40:25+10:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [

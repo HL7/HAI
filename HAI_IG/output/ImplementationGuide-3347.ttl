@@ -23,58 +23,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hai-patient.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/hai-patient" ];
-         fhir:Reference.display [ fhir:value "HAI Patient" ]
-       ]
-     ], [
-       fhir:index 1;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hai-custodian.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/hai-custodian" ];
-         fhir:Reference.display [ fhir:value "HAI Custodian" ]
-       ]
-     ], [
-       fhir:index 2;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hai-healthcare-facility.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/hai-healthcare-facility" ];
-         fhir:Reference.display [ fhir:value "HAI Healthcare Facility" ]
-       ]
-     ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hai-ssi-encounter.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/hai-ssi-encounter" ];
-         fhir:Reference.display [ fhir:value "HAI SSI Encounter" ]
-       ]
-     ], [
-       fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-healthcare-associated-infection-report.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
@@ -84,7 +32,7 @@
          fhir:Reference.display [ fhir:value "Healthcare Associated Infection Report" ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -97,7 +45,7 @@
          fhir:Reference.display [ fhir:value "HAI Single-Person Report Generic Constraints" ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -110,7 +58,7 @@
          fhir:Reference.display [ fhir:value "HAI Surgical Site Infection Report (SSI)" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -123,7 +71,46 @@
          fhir:Reference.display [ fhir:value "HAI Procedure Denominator Report" ]
        ]
      ], [
-       fhir:index 8;
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hai-ssi-report-questionnaire-bundle.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-report-questionnaire-bundle>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hai-ssi-report-questionnaire-bundle" ];
+         fhir:Reference.display [ fhir:value "HAI SSI Report Questionnaire Bundle" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-endoscope.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/endoscope>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/endoscope" ];
+         fhir:Reference.display [ fhir:value "Endoscope" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-endoscope-used-statement.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/endoscope-used-statement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/endoscope-used-statement" ];
+         fhir:Reference.display [ fhir:value "Endoscope Used Statement" ]
+       ]
+     ], [
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -134,6 +121,19 @@
          fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/hai-procedure-denominator-encounter" ];
          fhir:Reference.display [ fhir:value "HAI Procedure Denominator Encounter" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hai-ssi-encounter.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hai-ssi-encounter" ];
+         fhir:Reference.display [ fhir:value "HAI SSI Encounter" ]
        ]
      ], [
        fhir:index 9;
@@ -192,6 +192,32 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-procedure-risk-factors.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/procedure-risk-factors>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/procedure-risk-factors" ];
+         fhir:Reference.display [ fhir:value "Procedure Risk Factors" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hai-healthcare-facility.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hai-healthcare-facility" ];
+         fhir:Reference.display [ fhir:value "HAI Healthcare Facility" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-anesthesia-delivered.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
@@ -201,7 +227,33 @@
          fhir:Reference.display [ fhir:value "Anesthesia Delivered" ]
        ]
      ], [
-       fhir:index 14;
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-duration-of-labor.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/duration-of-labor" ];
+         fhir:Reference.display [ fhir:value "Duration of Labor " ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-height-observation.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/height-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/height-observation" ];
+         fhir:Reference.display [ fhir:value "Height Observation" ]
+       ]
+     ], [
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -214,7 +266,7 @@
          fhir:Reference.display [ fhir:value "MDRO/CDI Observation" ]
        ]
      ], [
-       fhir:index 15;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -227,7 +279,7 @@
          fhir:Reference.display [ fhir:value "Pathogen Identified" ]
        ]
      ], [
-       fhir:index 16;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -240,7 +292,7 @@
          fhir:Reference.display [ fhir:value "Revision Associated with Prior Infection Observation" ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -253,7 +305,46 @@
          fhir:Reference.display [ fhir:value "Spinal Fusion Level" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-weight-observation.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/weight-observation" ];
+         fhir:Reference.display [ fhir:value "Weight Observation" ]
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hai-custodian.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hai-custodian" ];
+         fhir:Reference.display [ fhir:value "HAI Custodian" ]
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-hai-patient.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hai-patient" ];
+         fhir:Reference.display [ fhir:value "HAI Patient" ]
+       ]
+     ], [
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -266,20 +357,20 @@
          fhir:Reference.display [ fhir:value "ASA Class" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-diabetes-mellitus.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-diabetes-melllitus.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/diabetes-mellitus" ];
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melllitus>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/diabetes-melllitus" ];
          fhir:Reference.display [ fhir:value "Diabetes Mellitus" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -292,7 +383,33 @@
          fhir:Reference.display [ fhir:value "Infection Condition" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-trauma-observation.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/trauma-observation" ];
+         fhir:Reference.display [ fhir:value "Trauma Observation" ]
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-wound-class.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/wound-class>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/wound-class" ];
+         fhir:Reference.display [ fhir:value "Wound Class" ]
+       ]
+     ], [
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -305,7 +422,7 @@
          fhir:Reference.display [ fhir:value "Closure Technique" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -318,7 +435,7 @@
          fhir:Reference.display [ fhir:value "Procedure Details" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -331,7 +448,7 @@
          fhir:Reference.display [ fhir:value "NHSNASAClassCode" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -344,7 +461,7 @@
          fhir:Reference.display [ fhir:value "NHSNInfectionTypeCode" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -357,7 +474,7 @@
          fhir:Reference.display [ fhir:value "NHSNInfectionConditionCode" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -370,7 +487,20 @@
          fhir:Reference.display [ fhir:value "NHSNCriterionOfDiagnosisCode" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-nhsn-wound-class-code.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/hai/ValueSet/nhsn-wound-class-code>;
+         fhir:Reference.reference [ fhir:value "ValueSet/nhsn-wound-class-code" ];
+         fhir:Reference.display [ fhir:value "NHSNWoundClassCode" ]
+       ]
+     ], [
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -383,7 +513,7 @@
          fhir:Reference.display [ fhir:value "NHSNEncounterTypeCode" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -396,7 +526,7 @@
          fhir:Reference.display [ fhir:value "NHSNOccasionOfDetectionCode" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -409,7 +539,7 @@
          fhir:Reference.display [ fhir:value "NHSNHealthcareServiceLocationCode" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -422,7 +552,7 @@
          fhir:Reference.display [ fhir:value "NHSNPathogenCode" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -435,7 +565,7 @@
          fhir:Reference.display [ fhir:value "NHSNPathogenRanking" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -448,7 +578,7 @@
          fhir:Reference.display [ fhir:value "NHSNDrugSusceptibilityTestsCode" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -461,7 +591,7 @@
          fhir:Reference.display [ fhir:value "NHSNDrugSusceptibilityFindingCode" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -474,7 +604,7 @@
          fhir:Reference.display [ fhir:value "NHSNSpinalFusionApproachCode" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -487,7 +617,7 @@
          fhir:Reference.display [ fhir:value "NHSNClosureTechniqueCode" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -500,7 +630,7 @@
          fhir:Reference.display [ fhir:value "NHSNProcedureCategoryCode" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -510,10 +640,10 @@
        fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://hl7.org/fhir/us/hai/Questionnaire/ssi-questionnaire>;
          fhir:Reference.reference [ fhir:value "Questionnaire/ssi-questionnaire" ];
-         fhir:Reference.display [ fhir:value "SSI-Questionnaire.xml" ]
+         fhir:Reference.display [ fhir:value "ssi-questionnaire.xml" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -523,10 +653,10 @@
        fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://hl7.org/fhir/us/hai/QuestionnaireResponse/ssi-questionnaire-response>;
          fhir:Reference.reference [ fhir:value "QuestionnaireResponse/ssi-questionnaire-response" ];
-         fhir:Reference.display [ fhir:value "SSI-QuestionnaireResponse.xml" ]
+         fhir:Reference.display [ fhir:value "ssi-questionnaire-response.xml" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -544,7 +674,7 @@
          fhir:Reference.display [ fhir:value "HAI Procedure Denominator Report" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -562,7 +692,7 @@
          fhir:Reference.display [ fhir:value "HAI Single-Person Report Generic Constraints" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -580,7 +710,7 @@
          fhir:Reference.display [ fhir:value "HAI Surgical Site Infection Report (SSI)" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -598,7 +728,7 @@
          fhir:Reference.display [ fhir:value "Healthcare Associated Infection Report" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -616,7 +746,7 @@
          fhir:Reference.display [ fhir:value "ASA Class" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -629,12 +759,12 @@
          fhir:Reference.display [ fhir:value "Diabetes-Mellitus-Example" ]
        ];
        fhir:ImplementationGuide.package.resource.exampleFor [
-         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/diabetes-mellitus" ];
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melllitus>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/diabetes-melllitus" ];
          fhir:Reference.display [ fhir:value "Diabetes Mellitus" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -652,7 +782,7 @@
          fhir:Reference.display [ fhir:value "Infection Condition" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -670,7 +800,7 @@
          fhir:Reference.display [ fhir:value "HAI Procedure Denominator Encounter" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -688,7 +818,7 @@
          fhir:Reference.display [ fhir:value "HAI SSI Encounter" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -705,7 +835,7 @@
          fhir:Reference.display [ fhir:value "HAI Healthcare Facility" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -723,7 +853,7 @@
          fhir:Reference.display [ fhir:value "MDRO/CDI Observation" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -741,7 +871,7 @@
          fhir:Reference.display [ fhir:value "Pathogen Identified" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -759,7 +889,7 @@
          fhir:Reference.display [ fhir:value "HAI Custodian" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -784,14 +914,6 @@
      fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
   ] .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient> a fhir:us .
-
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian> a fhir:us .
-
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility> a fhir:us .
-
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter> a fhir:us .
-
 <http://hl7.org/fhir/us/hai/StructureDefinition/healthcare-associated-infection-report> a fhir:us .
 
 <http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-generic-constraints> a fhir:us .
@@ -800,7 +922,15 @@
 
 <http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-report> a fhir:us .
 
+<http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-report-questionnaire-bundle> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/endoscope> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/endoscope-used-statement> a fhir:us .
+
 <http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter> a fhir:us .
 
 <http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death> a fhir:us .
 
@@ -810,7 +940,15 @@
 
 <http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note> a fhir:us .
 
+<http://hl7.org/fhir/us/hai/StructureDefinition/procedure-risk-factors> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility> a fhir:us .
+
 <http://hl7.org/fhir/us/hai/StructureDefinition/anesthesia-delivered> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/height-observation> a fhir:us .
 
 <http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation> a fhir:us .
 
@@ -820,11 +958,21 @@
 
 <http://hl7.org/fhir/us/hai/StructureDefinition/spinal-fusion-level> a fhir:us .
 
+<http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient> a fhir:us .
+
 <http://hl7.org/fhir/us/hai/StructureDefinition/asa-class> a fhir:us .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus> a fhir:us .
+<http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melllitus> a fhir:us .
 
 <http://hl7.org/fhir/us/hai/StructureDefinition/infection-condition> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/wound-class> a fhir:us .
 
 <http://hl7.org/fhir/us/hai/StructureDefinition/closure-technique> a fhir:us .
 
@@ -837,6 +985,8 @@
 <http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code> a fhir:us .
 
 <http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/ValueSet/nhsn-wound-class-code> a fhir:us .
 
 <http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code> a fhir:us .
 
