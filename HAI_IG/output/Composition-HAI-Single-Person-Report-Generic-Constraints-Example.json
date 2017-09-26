@@ -28,24 +28,25 @@
     ]
   },
   "subject": {
-    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
+    "reference": "Patient/HAI-Patient-Example",
     "display": "Henry Jones"
   },
   "encounter": {
-    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter"
+    "reference": "Encounter/HAI-SSI-Encounter-Example"
   },
   "date": "2017-09-15T09:10:14Z",
   "author": [
     {
-      "reference": "Practitioner/practitioner-1",
+      "reference": "Practitioner/us-core-practitioner-example",
       "display": "Ronald Bone, MD"
     },
     {
-      "reference": "https://www.hl7.org/fhir/device-example-ihe-pcd.xml",
-      "display": "Vital Signs Monitor"
+      "reference": "Device/Endoscope-Example",
+      "display": "Endoscope Device"
     }
   ],
   "title": "Healthcare Associated Infection Report",
+  "confidentiality": "N",
   "attester": [
     {
       "mode": [
@@ -53,13 +54,13 @@
       ],
       "time": "2017-09-15T09:10:14Z",
       "party": {
-        "reference": "Practitioner/practitioner-1",
+        "reference": "Practitioner/us-core-practitioner-example",
         "display": "Ronald Bone, MD"
       }
     }
   ],
   "custodian": {
-    "reference": "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian",
+    "reference": "Organization/HAI-Custodian-Example",
     "display": "Community Health and Hospitals"
   }
 }

@@ -142,7 +142,7 @@
       <short
         value="type" />
       <definition
-        value="SHALL contain exactly one [1..1] type=&quot;51897-7&quot; Healthcare Associated Infection Report (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-2)." />
+        value="SHALL contain exactly one [1..1] type=&quot;51897-7&quot; Healthcare Associated Infection Report (CodeSystem: LOINC http://loinc.org) (CONF:3347-2)." />
       <min
         value="1" />
       <max
@@ -154,7 +154,7 @@
       <patternCodeableConcept>
         <coding>
           <system
-            value="urn:oid:2.16.840.1.113883.6.1" />
+            value="http://loinc.org" />
           <code
             value="51897-7" />
         </coding>

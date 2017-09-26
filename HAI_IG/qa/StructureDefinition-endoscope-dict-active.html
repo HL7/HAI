@@ -182,12 +182,12 @@ http://hl7.org/fhir/NamingSystem/iccbba-other-di.</p>
   <tr><td>Comments</td><td><p>This element is labeled as a modifier because the status contains the codes inactive and entered-in-error that mark the device (record)as not currently valid.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Device.type"> </a><b>Device.type</b></td></tr>
-  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] type=&quot;37270008&quot; Endoscope, Device (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-230).</p>
+  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] type=&quot;37270008&quot; Endoscope, Device (CodeSystem: SNOMED CT http://snomed.info/sct) (CONF:3347-230).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes to identify medical devices<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-device-kind.html">FHIR Device Types</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;urn:oid:2.16.840.1.113883.6.96&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;37270008&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://snomed.info/sct&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;37270008&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td colspan="2" class="structure"><a name="Device.lotNumber"> </a><b>Device.lotNumber</b></td></tr>
   <tr><td>Definition</td><td><p>Lot number assigned by the manufacturer.</p>
 </td></tr>

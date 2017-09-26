@@ -36,9 +36,9 @@ Reference {http://hl7.org/fhir/StructureDefinition/DeviceRequest}Reference {http
 ","Classification of  type of observation","A code that classifies the general type of observation being made.","In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.","Used for filtering what observations are retrieved and displayed.","","","","","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","class"
 "Observation.code","","Name
 ","",1,1,"","","Y","CodeableConcept
-","code","SHALL contain exactly one [1..1] code=""41852-5"" Microorganism identified (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-103).","","Knowing what kind of observation is being made is essential to understanding the observation.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","code","SHALL contain exactly one [1..1] code=""41852-5"" Microorganism identified (CodeSystem: LOINC http://loinc.org) (CONF:3347-103).","","Knowing what kind of observation is being made is essential to understanding the observation.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""urn:oid:2.16.840.1.113883.6.1""/>
+    <system value=""http://loinc.org""/>
     <code value=""41852-5""/>
   </coding>
 </valueCodeableConcept>","","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes","",,,,"Observation.code",1,1,"","","Event.code","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","what","116680003 |Is a|"
@@ -152,9 +152,9 @@ user content","",0,*,"","","","Extension
 user contentmodifiers","",0,*,"","Y","Y","Extension
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","","N/A"
 "Observation.component.code","","","",1,1,"","","Y","CodeableConcept
-","code","SHALL contain exactly one [1..1] code=""TEMP_LOINC_PATHOGEN_RANKING"" Pathogen Ranking (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1 STATIC) (CONF:3347-118).","","Knowing what kind of observation is being made is essential to understanding the observation.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","code","SHALL contain exactly one [1..1] code=""TEMP_LOINC_PATHOGEN_RANKING"" Pathogen Ranking (CodeSystem: LOINC http://loinc.org STATIC) (CONF:3347-118).","","Knowing what kind of observation is being made is essential to understanding the observation.","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""urn:oid:2.16.840.1.113883.6.1""/>
+    <system value=""http://loinc.org""/>
     <code value=""TEMP_LOINC_PATHOGEN_RANKING""/>
   </coding>
 </valueCodeableConcept>","","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes","",,,,"Observation.component.code",1,1,"","","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","what"

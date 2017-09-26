@@ -5,7 +5,8 @@
   <status value="draft" />
   <package>
     <name value="Profiles in this Implementation Guide" />
-    
+
+    <!-- StructureDefnition -->
     <resource>
       <example value="false" />
       <sourceReference>
@@ -13,7 +14,7 @@
         <display value="Healthcare Associated Infection Report" />
       </sourceReference>
     </resource>
-    
+
     <resource>
       <example value="false" />
       <sourceReference>
@@ -21,7 +22,7 @@
         <display value="HAI Single-Person Report Generic Constraints" />
       </sourceReference>
     </resource>
-    
+
     <resource>
       <example value="false" />
       <sourceReference>
@@ -29,7 +30,7 @@
         <display value="HAI Surgical Site Infection Report (SSI)" />
       </sourceReference>
     </resource>
-    
+
     <resource>
       <example value="false" />
       <sourceReference>
@@ -37,14 +38,8 @@
         <display value="HAI Procedure Denominator Report" />
       </sourceReference>
     </resource>
-    
-    <resource>
-      <example value="false" />
-      <sourceReference>
-        <reference value="StructureDefinition/hai-ssi-report-questionnaire-bundle" />
-        <display value="HAI SSI Report Questionnaire Bundle" />
-      </sourceReference>
-    </resource>
+
+
     <resource>
       <example value="false" />
       <sourceReference>
@@ -196,7 +191,7 @@
     <resource>
       <example value="false" />
       <sourceReference>
-        <reference value="StructureDefinition/diabetes-melllitus" />
+        <reference value="StructureDefinition/diabetes-mellitus" />
         <display value="Diabetes Mellitus" />
       </sourceReference>
     </resource>
@@ -235,7 +230,24 @@
         <display value="Procedure Details" />
       </sourceReference>
     </resource>
-
+    
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="StructureDefinition/hai-report-questionnaire" />
+        <display value="hai-report-questionnaire.xml" />
+      </sourceReference>
+    </resource>
+    
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="StructureDefinition/hai-report-questionnaire-response" />
+        <display value="hai-report-questionnaire-response.xml" />
+      </sourceReference>
+    </resource>
+    
+    <!-- ValueSet -->
     <resource>
       <example value="false" />
       <sourceReference>
@@ -341,20 +353,9 @@
         <display value="NHSNProcedureCategoryCode" />
       </sourceReference>
     </resource>
-    <resource>
-      <example value="false" />
-      <sourceReference>
-        <reference value="Questionnaire/ssi-questionnaire" />
-        <display value="ssi-questionnaire.xml" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <sourceReference>
-        <reference value="QuestionnaireResponse/ssi-questionnaire-response" />
-        <display value="ssi-questionnaire-response.xml" />
-      </sourceReference>
-    </resource>
+    
+    
+    <!-- Examples -->
     <resource>
       <example value="true" />
       <sourceReference>
@@ -417,7 +418,7 @@
         <display value="Diabetes-Mellitus-Example" />
       </sourceReference>
       <exampleFor>
-        <reference value="StructureDefinition/diabetes-melllitus" />
+        <reference value="StructureDefinition/diabetes-mellitus" />
         <display value="Diabetes Mellitus" />
       </exampleFor>
     </resource>
@@ -458,6 +459,7 @@
       <example value="true" />
       <sourceReference>
         <reference value="Location/HAI-Healthcare-Facility-Example" />
+        <display value="HAI Healthcare Facility Example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/hai-healthcare-facility" />
@@ -486,28 +488,91 @@
         <display value="Pathogen Identified" />
       </exampleFor>
     </resource>
+    
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Organization/hl7" />
-        <display value="Community Health and Hospitals" />
+        <reference value="Organization/HAI-Custodian-Example" />
+        <display value="HAI-Custodian-Example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/hai-custodian" />
         <display value="HAI Custodian" />
       </exampleFor>
     </resource>
+    
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Patient/example" />
-        <display value="U.S._DAF_Patient_Profile_Example" />
+        <reference value="Patient/HAI-Patient-Example" />
+        <display value="Henry Seven" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/hai-patient" />
         <display value="HAI Patient" />
       </exampleFor>
     </resource>
+    
+    <resource>
+      <example value="true" />
+      <sourceReference>
+        <reference value="Device/Endoscope-Example" />
+        <display value="Endoscope" />
+      </sourceReference>
+      <exampleFor>
+        <reference value="StructureDefinition/endoscope" />
+        <display value="Endoscope" />
+      </exampleFor>
+    </resource>
+    
+    <resource>
+      <example value="true" />
+      <sourceReference>
+        <reference value="Questionnaire/SSI-Questionnaire" />
+        <display value="Surgical Site Infection Questionnaire" />
+      </sourceReference>
+      <exampleFor>
+        <reference value="StructureDefinition/hai-report-questionnaire" />
+        <display value="Healthcare Associated Infection Report Questionnaire" />
+      </exampleFor>
+    </resource>
+    
+    <resource>
+      <example value="true" />
+      <sourceReference>
+        <reference value="Questionnaire/Procedure-Denominator-Questionnaire" />
+        <display value="Procedure Denominator Questionnaire" />
+      </sourceReference>
+      <exampleFor>
+        <reference value="StructureDefinition/hai-report-questionnaire" />
+        <display value="Healthcare Associated Infection Report Questionnaire" />
+      </exampleFor>
+    </resource>
+    
+    <resource>
+      <example value="true" />
+      <sourceReference>
+        <reference value="QuestionnaireResponse/SSI-Questionnaire-Response" />
+        <display value="Surgical Site Infection Questionnaire Response" />
+      </sourceReference>
+      <exampleFor>
+        <reference value="StructureDefinition/hai-report-questionnaire-response" />
+        <display value="Healthcare Associated Infection Report Questionnaire Response" />
+      </exampleFor>
+    </resource>
+    
+    <resource>
+      <example value="true" />
+      <sourceReference>
+        <reference value="QuestionnaireResponse/Procedure-Denominator-Questionnaire-Response" />
+        <display value="Procedure Denominator Questionnaire Response" />
+      </sourceReference>
+      <exampleFor>
+        <reference value="StructureDefinition/hai-report-questionnaire-response" />
+        <display value="Healthcare Associated Infection Report Questionnaire Response" />
+      </exampleFor>
+    </resource>
+    
   </package>
   <page>
     <source value="http://test.com/IG/View/3347" />

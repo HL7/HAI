@@ -12,7 +12,7 @@
   <compose>
     <include>
       <system
-        value="urn:oid:2.16.840.1.113883.6.1" />
+        value="http://loinc.org" />
       <concept>
         <code
           value="18855-7" />

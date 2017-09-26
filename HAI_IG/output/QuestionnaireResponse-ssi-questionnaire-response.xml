@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
-  <id value="ssi-questionnaire-response"/>
+  <id value="SSI-Questionnaire-Response"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire-response"/>
+  </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
-      <pre> 
-              Response to the Surgical Site Infection Report Questionnaire
-          </pre>
+      <pre>Response to the Surgical Site Infection Report Questionnaire</pre>
     </div>
   </text>
   <questionnaire>
-    <reference value="http://hl7.org/fhir/us/hai/questionnaire/ssi-questionnaire"/>
+    <reference value="http://hl7.org/fhir/us/hai/Questionnaire/SSI-Questionnaire"/>
   </questionnaire>
   <status value="completed"/>
   <item>
@@ -19,18 +20,18 @@
         <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
       </valueReference>
     </extension>
-    <linkId value="6706"/>
+    <linkId value="patient"/>
     <text value="Patient"/>
   </item>
   <item>
-    <linkId value="1"/>
+    <linkId value="date-of-event"/>
     <text value="Date of Event"/>
     <answer>
       <valueDate value="2017-09-15"/>
     </answer>
   </item>
   <item>
-    <linkId value="2"/>
+    <linkId value="nhsn-procedure-code"/>
     <text value="NHSN Procedure Code"/>
     <answer>
       <valueCoding>
@@ -41,7 +42,7 @@
     </answer>
   </item>
   <item>
-    <linkId value="3"/>
+    <linkId value="icd-procedure-code"/>
     <text value="ICD-10-PCS or CPT Procedure Code"/>
     <answer>
       <valueCoding>
@@ -52,14 +53,14 @@
     </answer>
   </item>
   <item>
-    <linkId value="4"/>
+    <linkId value="date-of-procedure"/>
     <text value="Date of Procedure"/>
     <answer>
       <valueDate value="2017-09-15"/>
     </answer>
   </item>
   <item>
-    <linkId value="5"/>
+    <linkId value="outpatient-procedure"/>
     <text value="Outpatient Procedure"/>
     <answer>
       <valueBoolean value="true"/>
@@ -73,22 +74,22 @@
     </answer>
   </item>
   <item>
-    <linkId value="6"/>
+    <linkId value="mdro-infection-surveillance"/>
     <text value="MDRO Infection Surveillance"/>
     <answer>
       <valueBoolean value="true"/>
     </answer>
   </item>
   <item>
-    <linkId value="7"/>
+    <linkId value="date-admitted-to-facility"/>
     <text value="Date Admitted to Facility"/>
     <answer>
       <valueDate value="2017-09-15"/>
     </answer>
   </item>
   <item>
-    <linkId value="8"/>
-    <text value="Location"/>
+    <linkId value="location-code"/>
+    <text value="Location Code"/>
     <answer>
       <valueCoding>
         <system value="urn:oid:2.16.840.1.113883.6.259"/>
@@ -98,50 +99,211 @@
     </answer>
   </item>
   <item>
-    <linkId value="9392"/>
-    <text value="Pathogen"/>
+    <linkId value="specific-event"/>
+    <text value="Specific Event"/>
+    <answer>
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.277"/>
+        <code value="1602-2"/>
+        <display value="Myocarditis/pericard"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="infection-present-at-time-of-surgery"/>
+    <text value="Infection Present at Time of Surgery (PATOS)"/>
+    <answer>
+      <valueBoolean value="true"/>
+    </answer>
+  </item>
+<!--  Specify Criteria Used (check all that apply)
+       CDA: Criterion of Diagnosis Observation  -->
+  <item>
+    <linkId value="criteria-used"/>
+    <text value="Specify Criteria Used (check all that apply)"/>
+    <answer>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="128477000"/>
+        <display value="Abcess"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="criteria-used"/>
+    <text value="Specify Criteria Used (check all that apply)"/>
+    <answer>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="1023001"/>
+        <display value="Apnea"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="criteria-used"/>
+    <text value="Specify Criteria Used (check all that apply)"/>
+    <answer>
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.277"/>
+        <code value="1902-6"/>
+        <display value="Blood Culture Not Done"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="criteria-used"/>
+    <text value="Specify Criteria Used (check all that apply)"/>
+    <answer>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="48867003"/>
+        <display value="Bradycardia"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="criteria-used"/>
+    <text value="Specify Criteria Used (check all that apply)"/>
+    <answer>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="49727002"/>
+        <display value="Cough"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="criteria-used"/>
+    <text value="Specify Criteria Used (check all that apply)"/>
+    <answer>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="49650001"/>
+        <display value="Dysuria"/>
+      </valueCoding>
+    </answer>
+  </item>
+<!--  Detected
+       CDA: 3.19	Occasion of HAI Detection Observation  -->
+  <item>
+    <linkId value="when-detected"/>
+    <text value="When Detected"/>
+    <answer>
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.277"/>
+        <code value="1510-7"/>
+        <display value="During Admission (stay)"/>
+      </valueCoding>
+    </answer>
+  </item>
+<!--  Secondary Bloodstream Infection
+       CDA: Secondary Bloodstream Infection Observation   -->
+  <item>
+    <linkId value="secondary-bsi"/>
+    <text value="Secondary Bloodstream Infection"/>
+    <answer>
+      <valueBoolean value="true"/>
+    </answer>
+  </item>
+<!--  Died: Yes/No
+       CDA: Death Observation   -->
+  <item>
+    <linkId value="died"/>
+    <text value="Died"/>
+    <answer>
+      <valueBoolean value="true"/>
+    </answer>
+  </item>
+<!--  SSI Contributed to Death: Yes/No
+       CDA: SSI Contributed to Death Observation  -->
+  <item>
+    <linkId value="ssi-contributed-to-death"/>
+    <text value="SSI Contributed to Death"/>
+    <answer>
+      <valueBoolean value="true"/>
+    </answer>
+  </item>
+<!--  Discharge Date
+       CDA: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high  -->
+  <item>
+    <linkId value="date-discharged-from-facility"/>
+    <text value="Date Discharged From Facility:"/>
+    <answer>
+      <valueDate value="2008-09-01"/>
+    </answer>
+  </item>
+<!--  Pathogens Identified: Yes/No
+       CDA:  -->
+  <item>
+    <linkId value="pathogens-identified"/>
+    <text value="Pathogens Identified"/>
+    <answer>
+      <valueBoolean value="true"/>
+    </answer>
+  </item>
+<!--  Findings Grouop
+       CDA: Findings Organizer
+       Each group relates to a single identified pathogen   -->
+  <item>
+    <linkId value="findings-group"/>
+    <text value="Findings Group"/>
+  <!--  Pathogen Identified
+         CDA: Pathogen Identified Observation  -->
     <item>
-      <linkId value="3745"/>
-      <text value="Number"/>
+      <linkId value="pathogen-identified"/>
+      <text value="Pathogen Identified"/>
       <answer>
-        <valueInteger value="1"/>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="43492007"/>
+          <display value="Group B streptococcus"/>
+        </valueCoding>
       </answer>
+    </item>
+  <!--  Pathogen Ranking
+         CDA: Pathogen Ranking Observation -->
+    <item>
+      <linkId value="pathogen-ranking"/>
+      <text value="Pathogen Ranking"/>
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="255216001"/>
+          <display value="First"/>
+        </valueCoding>
+      </answer>
+    </item>
+  <!--  Drug Susceptibility Test
+         CDA: Drug Susceptibility Test Observation -->
+    <item>
+      <linkId value="drug-susceptibility-test-group"/>
+      <text value="Drug Susceptibility Test Group"/>
+    <!--  Drug Susceptibilty Test Code 
+           CDA: CDA: Drug-Susceptibility Test Observation/code  -->
       <item>
-        <linkId value="3139"/>
-        <text value="NHSN Pathogen"/>
+        <linkId value="drug-susceptibility-test"/>
+        <text value="Drug Susceptibility Test"/>
         <answer>
           <valueCoding>
-            <system value="http://snomed.info/sct"/>
-            <code value="43492007"/>
-            <display value="Group B streptococcus"/>
+            <system value="https://loinc.org/"/>
+            <code value="18982-9"/>
+            <display value="Streptomycin Susc Islt"/>
           </valueCoding>
         </answer>
       </item>
+    <!--  Drug Susceptibilty Finding
+           CDA: Drug-Susceptibility Test Observation/interpretationCode  -->
       <item>
-        <linkId value="4656"/>
-        <text value="Susceptibility Group"/>
-        <item>
-          <linkId value="6192"/>
-          <text value="NHSN Drug Susceptibility Test"/>
-          <answer>
-            <valueCoding>
-              <system value="https://loinc.org/"/>
-              <code value="18982-9"/>
-              <display value="Streptomycin Susc Islt"/>
-            </valueCoding>
-          </answer>
-        </item>
-        <item>
-          <linkId value="8204"/>
-          <text value="NHSN Drug Susceptibility Finding"/>
-          <answer>
-            <valueCoding>
-              <system value="https://www.hl7.org/fhir/valueset-observation-interpretation.html"/>
-              <code value="S"/>
-              <display value="Susceptible"/>
-            </valueCoding>
-          </answer>
-        </item>
+        <linkId value="drug-susceptibility-finding"/>
+        <text value="Drug Susceptibility Finding"/>
+        <answer>
+          <valueCoding>
+            <system value="https://www.hl7.org/fhir/valueset-observation-interpretation.html"/>
+            <code value="S"/>
+            <display value="Susceptible"/>
+          </valueCoding>
+        </answer>
       </item>
     </item>
   </item>

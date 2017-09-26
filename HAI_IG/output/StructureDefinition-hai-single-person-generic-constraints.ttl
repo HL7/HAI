@@ -1,4 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -15,7 +16,7 @@
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-generic-constraints"];
   fhir:StructureDefinition.name [ fhir:value "HAI Single-Person Report Generic Constraints"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2017-09-25T20:26:03+10:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2017-09-26T23:36:52+10:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Lantana Consulting Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1868,7 +1869,8 @@
        fhir:ElementDefinition.patternCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.1" ];
+           a loinc:51897-7;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
            fhir:Coding.code [ fhir:value "51897-7" ]
          ]
        ];

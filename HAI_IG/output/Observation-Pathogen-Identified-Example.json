@@ -10,7 +10,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n                <b> id</b>Pathogen-Identified-Example\n            </p>\n            <p>\n                <b> status</b> : final\n            </p>\n            <p>\n                <b> code</b> Blood culture \n                <span> \n                    (Details :{LOINC code '41852-5' = 'Microorganism or agent identified'})</span>\n            </p>\n            <p>\n                <b> value</b> : Group B streptococcus\n                \n                <span> (Details : {SNOMED CT code '43492007' = 'Group B streptococcus',})</span>\n            </p>\n            <blockquote>\n                <p>\n                    <b> component</b>\n                </p>\n                <p>\n                    <b> code</b> : Pathogen Ranking \n                    \n                    <span> (Details : {LOINC code '?????' = 'Pathogen Ranking'})</span>\n                </p>\n                <p>\n                    <b> value</b> : First \n                    \n                    <span> (Details : {SNOMED CT code '255216001' = 'First'</span>\n                </p>\n            </blockquote>\n            <blockquote>\n                <p>\n                    <b> component</b>\n                </p>\n                <p>\n                    <b> code</b> Streptomycin Susc Islt \n                    <span> (Details\n                        : {LOINC code '18982-9' = 'Streptomycin Susc Islt'})</span>\n                </p>\n                <p>\n                    <b> value</b> : Susceptible \n                    <span> (Details : {code 'S' =\n                        'Susceptible'})</span>\n                </p>\n            </blockquote>\n        </div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>\n        <b> id</b>Pathogen-Identified-Example\n            \n            \n            \n            \n            </p>\n      <p>\n        <b> status</b> : final\n            \n            \n            \n            \n            </p>\n      <p>\n        <b> code</b> Blood culture \n                \n                \n                \n                \n                <span> \n                    (Details :{LOINC code '41852-5' = 'Microorganism or agent identified'})</span>\n      </p>\n      <p>\n        <b> value</b> : Group B streptococcus\n                \n                \n                \n                \n                \n                <span> (Details : {SNOMED CT code '43492007' = 'Group B streptococcus',})</span>\n      </p>\n      <blockquote>\n        <p>\n          <b> component</b>\n        </p>\n        <p>\n          <b> code</b> : Pathogen Ranking \n                    \n                    \n                    \n                    \n                    \n                    <span> (Details : {LOINC code '?????' = 'Pathogen Ranking'})</span>\n        </p>\n        <p>\n          <b> value</b> : First \n                    \n                    \n                    \n                    \n                    \n                    <span> (Details : {SNOMED CT code '255216001' = 'First'</span>\n        </p>\n      </blockquote>\n      <blockquote>\n        <p>\n          <b> component</b>\n        </p>\n        <p>\n          <b> code</b> Streptomycin Susc Islt \n                    \n                    \n                    \n                    \n                    <span> (Details\n                        : {LOINC code '18982-9' = 'Streptomycin Susc Islt'})</span>\n        </p>\n        <p>\n          <b> value</b> : Susceptible \n                    \n                    \n                    \n                    \n                    <span> (Details : {code 'S' =\n                        'Susceptible'})</span>\n        </p>\n      </blockquote>\n    </div>"
   },
   "status": "final",
   "code": {
@@ -45,7 +45,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking",
+            "system": "http://snomed.info/sct",
             "code": "255216001",
             "display": "First"
           }
@@ -56,7 +56,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-tests-code",
+            "system": "http://loinc.org",
             "code": "18982-9",
             "display": "Streptomycin Susc Islt"
           }
@@ -65,7 +65,7 @@
       "interpretation": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-finding-code",
+            "system": "urn:oid: 2.16.840.1.113883.5.83",
             "code": "S",
             "display": "Susceptible"
           }

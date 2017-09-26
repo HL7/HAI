@@ -26,7 +26,7 @@
     </period>
     <location>
         <location>
-            <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility"/>
+            <reference value="Location/HAI-Healthcare-Facility-Example"/>
         </location>
     </location>
 </Encounter>

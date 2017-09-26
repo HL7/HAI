@@ -115,7 +115,7 @@
   <tr><td>Comments</td><td><p>In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Observation.code"> </a><b>Observation.code</b></td></tr>
-  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] code=&quot;41852-5&quot; Microorganism identified (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-103).</p>
+  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] code=&quot;41852-5&quot; Microorganism identified (CodeSystem: LOINC http://loinc.org) (CONF:3347-103).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes identifying names of simple observations.<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-observation-codes.html">LOINC Codes</a></td></tr>
@@ -123,7 +123,7 @@
   <tr><td>Requirements</td><td><p>Knowing what kind of observation is being made is essential to understanding the observation.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Name</td></tr>
-  <tr><td>Fixed Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;urn:oid:2.16.840.1.113883.6.1&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;41852-5&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Fixed Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://loinc.org&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;41852-5&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td colspan="2" class="structure"><a name="Observation.subject"> </a><b>Observation.subject</b></td></tr>
   <tr><td>Definition</td><td><p>The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.</p>
 </td></tr>
@@ -488,14 +488,14 @@
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Observation.component:component4.code"> </a><a name="Observation.component.code"> </a><b>Observation.component.code</b></td></tr>
-  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] code=&quot;TEMP<em>LOINC</em>PATHOGEN_RANKING&quot; Pathogen Ranking (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1 STATIC) (CONF:3347-118).</p>
+  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] code=&quot;TEMP<em>LOINC</em>PATHOGEN_RANKING&quot; Pathogen Ranking (CodeSystem: LOINC http://loinc.org STATIC) (CONF:3347-118).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes identifying names of simple observations.<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-observation-codes.html">LOINC Codes</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Requirements</td><td><p>Knowing what kind of observation is being made is essential to understanding the observation.</p>
 </td></tr>
-  <tr><td>Fixed Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;urn:oid:2.16.840.1.113883.6.1&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;TEMP_LOINC_PATHOGEN_RANKING&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Fixed Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://loinc.org&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;TEMP_LOINC_PATHOGEN_RANKING&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td colspan="2" class="structure"><a name="Observation.component:component4.value[x]"> </a><a name="Observation.component:component4.valueQuantity"> </a><a name="Observation.component:component4.valueCodeableConcept"> </a><a name="Observation.component:component4.valueString"> </a><a name="Observation.component:component4.valueBoolean"> </a><a name="Observation.component:component4.valueInteger"> </a><a name="Observation.component:component4.valueRange"> </a><a name="Observation.component:component4.valueRatio"> </a><a name="Observation.component:component4.valueSampledData"> </a><a name="Observation.component:component4.valueAttachment"> </a><a name="Observation.component:component4.valueTime"> </a><a name="Observation.component:component4.valueDateTime"> </a><a name="Observation.component:component4.valuePeriod"> </a><a name="Observation.component:component4.valueQuantity"> </a><a name="Observation.component:component4.valueCodeableConcept"> </a><a name="Observation.component:component4.valueString"> </a><a name="Observation.component:component4.valueBoolean"> </a><a name="Observation.component:component4.valueInteger"> </a><a name="Observation.component:component4.valueRange"> </a><a name="Observation.component:component4.valueRatio"> </a><a name="Observation.component:component4.valueSampledData"> </a><a name="Observation.component:component4.valueAttachment"> </a><a name="Observation.component:component4.valueTime"> </a><a name="Observation.component:component4.valueDateTime"> </a><a name="Observation.component:component4.valuePeriod"> </a><b>Observation.component.value[x]</b></td></tr>
   <tr><td>Definition</td><td><p>MAY contain zero or one [0..1] value[x], where value[x] is (CONF:3347-131)</p>
 </td></tr>

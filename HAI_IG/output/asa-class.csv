@@ -47,9 +47,9 @@ This element is labeled as a modifier because the status contains the code refut
 ","","Condition.verificationStatus","< 410514004 |Finding context value|","PRB-13","Observation ACT
 .inboundRelationship[typeCode=COMP].source[classCode=OBS, code=""verificationStatus"", moodCode=EVN].value","status","408729009"
 "Condition.category","","","",1,1,"Y","","","CodeableConcept
-","category","SHALL contain exactly one [1..1] category=""55607006"" Problem (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-223).","The categorization is often highly contextual and may appear poorly differentiated or not very useful in other contexts.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","category","SHALL contain exactly one [1..1] category=""55607006"" Problem (CodeSystem: SNOMED CT http://snomed.info/sct) (CONF:3347-223).","The categorization is often highly contextual and may appear poorly differentiated or not very useful in other contexts.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""urn:oid:2.16.840.1.113883.6.96""/>
+    <system value=""http://snomed.info/sct""/>
     <code value=""55607006""/>
   </coding>
 </valueCodeableConcept>","","","","",,"preferred","","http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category","",,,,"Condition.category",0,*,"","","Condition.category","< 404684003 |Clinical finding|","'problem' if from PRB-3. 'diagnosis' if from DG1 segment in PV1 message",".code","class"

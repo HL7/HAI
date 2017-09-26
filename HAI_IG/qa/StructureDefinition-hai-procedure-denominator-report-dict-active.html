@@ -401,7 +401,7 @@
 </td></tr>
   <tr><td>Comments</td><td><p>For Composition type, LOINC is ubiquitous and strongly endorsed by HL7. Most implementation guides will require a specific LOINC code, or use LOINC as an extensible binding.</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;urn:oid:2.16.840.1.113883.6.1&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;51897-7&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://loinc.org&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;51897-7&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition.class"> </a><b>Composition.class</b></td></tr>
   <tr><td>Definition</td><td><p>A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type.</p>
 </td></tr>
@@ -939,7 +939,7 @@
 </td></tr>
   <tr><td>Pattern Value</td><td>Procedure Details Section in a Procedure Report</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition.section:section2.code"> </a><a name="Composition.section.code"> </a><b>Composition.section.code</b></td></tr>
-  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] code=&quot;51899-3&quot; Details Section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-214).</p>
+  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] code=&quot;51899-3&quot; Details Section (CodeSystem: LOINC http://loinc.org) (CONF:3347-214).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Classification of a section of a composition/document.<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-doc-section-codes.html">Document Section Codes</a></td></tr>
@@ -948,7 +948,7 @@
 </td></tr>
   <tr><td>Comments</td><td><p>The code identifies the section for an automated processor of the document. This is particularly relevant when using profiles to control the structure of the document.   If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code.</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;urn:oid:2.16.840.1.113883.6.1&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;51899-3&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://loinc.org&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;51899-3&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition.section:section2.text"> </a><a name="Composition.section.text"> </a><b>Composition.section.text</b></td></tr>
   <tr><td>Definition</td><td><p>A human-readable narrative that contains the attested content of the section, used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative.</p>
 </td></tr>
@@ -1041,7 +1041,7 @@
   <tr><td>Comments</td><td><p>The title identifies the section for a human reader. The title must be consistent with the narrative of the resource that is the target of the section.content reference. Generally, sections SHOULD have titles, but in some documents, it is unnecessary or inappropriate. Typically, this is where a section has subsections that have their own adequately distinguishing title,  or documents that only have a single section. Most Implementation Guides will make section title to be a required element.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition.section:section3.code"> </a><a name="Composition.section.code"> </a><b>Composition.section.code</b></td></tr>
-  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] code=&quot;51898-5&quot; Risk Factors Section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-217).</p>
+  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] code=&quot;51898-5&quot; Risk Factors Section (CodeSystem: LOINC http://loinc.org) (CONF:3347-217).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Classification of a section of a composition/document.<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-doc-section-codes.html">Document Section Codes</a></td></tr>
@@ -1050,7 +1050,7 @@
 </td></tr>
   <tr><td>Comments</td><td><p>The code identifies the section for an automated processor of the document. This is particularly relevant when using profiles to control the structure of the document.   If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code.</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;urn:oid:2.16.840.1.113883.6.1&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;51898-5&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://loinc.org&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;51898-5&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition.section:section3.text"> </a><a name="Composition.section.text"> </a><b>Composition.section.text</b></td></tr>
   <tr><td>Definition</td><td><p>A human-readable narrative that contains the attested content of the section, used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative.</p>
 </td></tr>
@@ -1083,7 +1083,7 @@
   <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] Diabetes Melitus (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus) (CONF:3347-219).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-asa-class.html" title="http://hl7.org/fhir/us/hai/StructureDefinition/asa-class">ASA Class</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-height-observation.html" title="http://hl7.org/fhir/us/hai/StructureDefinition/height-observation">Height Observation</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-weight-observation.html" title="http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation">Weight Observation</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-duration-of-labor.html" title="http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor">Duration of Labor </a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-trauma-observation.html" title="http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation">Trauma Observation</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-melitus), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-asa-class.html" title="http://hl7.org/fhir/us/hai/StructureDefinition/asa-class">ASA Class</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-height-observation.html" title="http://hl7.org/fhir/us/hai/StructureDefinition/height-observation">Height Observation</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-weight-observation.html" title="http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation">Weight Observation</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-duration-of-labor.html" title="http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor">Duration of Labor</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-trauma-observation.html" title="http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation">Trauma Observation</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition.section:section3.emptyReason"> </a><a name="Composition.section.emptyReason"> </a><b>Composition.section.emptyReason</b></td></tr>

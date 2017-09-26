@@ -37,27 +37,28 @@
      ]
   ];
   fhir:Composition.subject [
-     fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient>;
-     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" ];
+     fhir:link <http://hl7.org/fhir/us/hai/Patient/HAI-Patient-Example>;
+     fhir:Reference.reference [ fhir:value "Patient/HAI-Patient-Example" ];
      fhir:Reference.display [ fhir:value "Henry Jones" ]
   ];
   fhir:Composition.encounter [
-     fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter>;
-     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter" ]
+     fhir:link <http://hl7.org/fhir/us/hai/Encounter/HAI-Procedure-Denominator-Encounter-Example>;
+     fhir:Reference.reference [ fhir:value "Encounter/HAI-Procedure-Denominator-Encounter-Example" ]
   ];
   fhir:Composition.date [ fhir:value "2017-09-15T09:10:14Z"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/hai/Practitioner/practitioner-1>;
-     fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ];
+     fhir:link <http://hl7.org/fhir/us/hai/Practitioner/us-core-practitioner-example>;
+     fhir:Reference.reference [ fhir:value "Practitioner/us-core-practitioner-example" ];
      fhir:Reference.display [ fhir:value "Ronald Bone, MD" ]
   ], [
      fhir:index 1;
-     fhir:link <https://www.hl7.org/fhir/device-example-ihe-pcd.xml>;
-     fhir:Reference.reference [ fhir:value "https://www.hl7.org/fhir/device-example-ihe-pcd.xml" ];
-     fhir:Reference.display [ fhir:value "Vital Signs Monitor" ]
+     fhir:link <http://hl7.org/fhir/us/hai/Device/endoscope>;
+     fhir:Reference.reference [ fhir:value "Device/endoscope" ];
+     fhir:Reference.display [ fhir:value "Endoscope Device" ]
   ];
   fhir:Composition.title [ fhir:value "Denominator for Procedure Report"];
+  fhir:Composition.confidentiality [ fhir:value "N"];
   fhir:Composition.attester [
      fhir:index 0;
      fhir:Composition.attester.mode [
@@ -66,24 +67,104 @@
      ];
      fhir:Composition.attester.time [ fhir:value "2017-09-15T09:10:14Z"^^xsd:dateTime ];
      fhir:Composition.attester.party [
-       fhir:link <http://hl7.org/fhir/us/hai/Practitioner/practitioner-1>;
-       fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ];
+       fhir:link <http://hl7.org/fhir/us/hai/Practitioner/us-core-practitioner-example>;
+       fhir:Reference.reference [ fhir:value "Practitioner/us-core-practitioner-example" ];
        fhir:Reference.display [ fhir:value "Ronald Bone, MD" ]
      ]
   ];
   fhir:Composition.custodian [
-     fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian>;
-     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian" ];
+     fhir:link <http://hl7.org/fhir/us/hai/Organization/HAI-Custodian-Example>;
+     fhir:Reference.reference [ fhir:value "Organization/HAI-Custodian-Example" ];
      fhir:Reference.display [ fhir:value "Community Health and Hospitals" ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Procedure Details Section in a Procedure Report" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:51899-3;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "51899-3" ];
+         fhir:Coding.display [ fhir:value "Details Section " ]
+       ]
+     ];
+     fhir:Composition.section.mode [ fhir:value "snapshot" ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/procedure-details>;
+       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/procedure-details" ];
+       fhir:Reference.display [ fhir:value "Procedure Details" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "Risk Factors Section" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:51898-5;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "51898-5" ];
+         fhir:Coding.display [ fhir:value "Risk Factors Section" ]
+       ]
+     ];
+     fhir:Composition.section.mode [ fhir:value "snapshot" ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/asa-class>;
+       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/asa-class" ];
+       fhir:Reference.display [ fhir:value "ASA Class" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus>;
+       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus" ];
+       fhir:Reference.display [ fhir:value "Diabetes Melllitus" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/height-observation>;
+       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/height-observation" ];
+       fhir:Reference.display [ fhir:value "Height" ]
+     ], [
+       fhir:index 3;
+       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation>;
+       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation" ];
+       fhir:Reference.display [ fhir:value "Weight" ]
+     ], [
+       fhir:index 4;
+       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor>;
+       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor" ];
+       fhir:Reference.display [ fhir:value "Duration of Labor" ]
+     ], [
+       fhir:index 5;
+       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation>;
+       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation" ];
+       fhir:Reference.display [ fhir:value "Trauma" ]
+     ]
   ] .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient> a fhir:us .
+<http://hl7.org/fhir/us/hai/Patient/HAI-Patient-Example> a fhir:us .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter> a fhir:us .
+<http://hl7.org/fhir/us/hai/Encounter/HAI-Procedure-Denominator-Encounter-Example> a fhir:us .
 
-<http://hl7.org/fhir/us/hai/Practitioner/practitioner-1> a fhir:us .
+<http://hl7.org/fhir/us/hai/Practitioner/us-core-practitioner-example> a fhir:us .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian> a fhir:us .
+<http://hl7.org/fhir/us/hai/Device/endoscope> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/Organization/HAI-Custodian-Example> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/procedure-details> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/asa-class> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/height-observation> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor> a fhir:us .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

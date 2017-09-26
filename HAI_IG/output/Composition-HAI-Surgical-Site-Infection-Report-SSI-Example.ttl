@@ -37,26 +37,26 @@
      ]
   ];
   fhir:Composition.subject [
-     fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient>;
-     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" ];
-     fhir:Reference.display [ fhir:value "Henry Jones" ]
+     fhir:link <http://hl7.org/fhir/us/hai/Patient/HAI-Patient-Example>;
+     fhir:Reference.reference [ fhir:value "Patient/HAI-Patient-Example" ];
+     fhir:Reference.display [ fhir:value "Henry Seven" ]
   ];
   fhir:Composition.encounter [
-     fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter>;
-     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter" ]
+     fhir:link <http://hl7.org/fhir/us/hai/Encounter/HAI-SSI-Encounter-Example>;
+     fhir:Reference.reference [ fhir:value "Encounter/HAI-SSI-Encounter-Example" ]
   ];
   fhir:Composition.date [ fhir:value "2017-09-15T09:10:14Z"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:link <http://hl7.org/fhir/us/hai/Practitioner/practitioner-1>;
-     fhir:Reference.reference [ fhir:value "Practitioner/practitioner-1" ];
+     fhir:link <http://hl7.org/fhir/us/hai/Practitioner/us-core-practitioner-example>;
+     fhir:Reference.reference [ fhir:value "Practitioner/us-core-practitioner-example" ];
      fhir:Reference.display [ fhir:value "Ronald Bone, MD" ]
   ];
   fhir:Composition.title [ fhir:value "Healthcare Associated Infection Report - SSI"];
   fhir:Composition.confidentiality [ fhir:value "N"];
   fhir:Composition.custodian [
-     fhir:link <http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian>;
-     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian" ];
+     fhir:link <http://hl7.org/fhir/us/hai/Organization/HAI-Custodian-Example>;
+     fhir:Reference.reference [ fhir:value "Organization/HAI-Custodian-Example" ];
      fhir:Reference.display [ fhir:value "Community Health and Hospitals" ]
   ];
   fhir:Composition.section [
@@ -93,26 +93,26 @@
      ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified>;
-       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified" ]
+       fhir:link <http://hl7.org/fhir/us/hai/Observation/Pathogen-Identified-Example>;
+       fhir:Reference.reference [ fhir:value "Observation/Pathogen-Identified-Example" ]
      ], [
        fhir:index 1;
-       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation>;
-       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation" ]
+       fhir:link <http://hl7.org/fhir/us/hai/Observation/MDRO-CDI-Observation-Example>;
+       fhir:Reference.reference [ fhir:value "Observation/MDRO-CDI-Observation-Example" ]
      ]
   ] .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient> a fhir:us .
+<http://hl7.org/fhir/us/hai/Patient/HAI-Patient-Example> a fhir:us .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter> a fhir:us .
+<http://hl7.org/fhir/us/hai/Encounter/HAI-SSI-Encounter-Example> a fhir:us .
 
-<http://hl7.org/fhir/us/hai/Practitioner/practitioner-1> a fhir:us .
+<http://hl7.org/fhir/us/hai/Practitioner/us-core-practitioner-example> a fhir:us .
 
-<http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian> a fhir:us .
+<http://hl7.org/fhir/us/hai/Organization/HAI-Custodian-Example> a fhir:us .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified> a fhir:us .
+<http://hl7.org/fhir/us/hai/Observation/Pathogen-Identified-Example> a fhir:us .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation> a fhir:us .
+<http://hl7.org/fhir/us/hai/Observation/MDRO-CDI-Observation-Example> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

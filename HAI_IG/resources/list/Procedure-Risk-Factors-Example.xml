@@ -1,0 +1,20 @@
+<List xmlns="http://hl7.org/fhir">
+    <id value="Procedure-Risk-Factors-Example"/> 
+    <meta>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/procedure-risk-factors"/>
+    </meta> 
+    <status value="current"/> 
+    <mode value="snapshot"/> 
+    <entry> 
+        <item> 
+            <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/endoscope-used-statement"/> 
+            <display value="Endoscope Used Statement"/> 
+        </item>  
+    </entry> 
+    <entry> 
+        <item> 
+            <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/wound-class"/> 
+            <display value="Wound Class"/> 
+        </item>  
+    </entry>
+</List>

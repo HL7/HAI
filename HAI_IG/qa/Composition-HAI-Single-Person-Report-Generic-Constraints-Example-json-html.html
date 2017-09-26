@@ -42,24 +42,25 @@
     ]
   },
   "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.subject">subject</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/HAI-Patient-Example",
     "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Henry Jones"
   },
   "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.encounter">encounter</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter"
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Encounter/HAI-SSI-Encounter-Example"
   },
   "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.date">date</a>" : "2017-09-15T09:10:14Z",
   "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.author">author</a>" : [
     {
-      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/practitioner-1",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/us-core-practitioner-example",
       "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Ronald Bone, MD"
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "https://www.hl7.org/fhir/device-example-ihe-pcd.xml",
-      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Vital Signs Monitor"
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Device/Endoscope-Example",
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Endoscope Device"
     }
   ],
   "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.title">title</a>" : "Healthcare Associated Infection Report",
+  "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.confidentiality">confidentiality</a>" : "N",
   "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.attester">attester</a>" : [
     {
       "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.attester.mode">mode</a>" : [
@@ -67,13 +68,13 @@
       ],
       "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.attester.time">time</a>" : "2017-09-15T09:10:14Z",
       "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.attester.party">party</a>" : {
-        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/practitioner-1",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/us-core-practitioner-example",
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Ronald Bone, MD"
       }
     }
   ],
   "<a href="http://hl7.org/fhir/STU3/composition.html#Composition.custodian">custodian</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian",
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>" : "Organization/HAI-Custodian-Example",
     "<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a>" : "Community Health and Hospitals"
   }
 }</pre>

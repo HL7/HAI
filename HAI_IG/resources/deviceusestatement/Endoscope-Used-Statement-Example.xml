@@ -1,0 +1,14 @@
+<DeviceUseStatement
+    xmlns="http://hl7.org/fhir">
+    <id value="Endoscope-Used-Statement-Example"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/endoscope-used-statement"/>
+    </meta>
+    <status value="completed"/>
+    <subject>
+        <reference value="Patient/HAI-Patient-Example"/>
+    </subject>
+    <device>
+        <reference value="Device/Endoscope-Example"/>
+    </device>
+</DeviceUseStatement>

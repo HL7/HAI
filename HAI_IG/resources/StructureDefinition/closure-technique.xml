@@ -77,7 +77,7 @@
       <short
         value="category" />
       <definition
-        value="SHALL contain exactly one [1..1] category=&quot;112695004&quot; Closure (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-201)." />
+        value="SHALL contain exactly one [1..1] category=&quot;112695004&quot; Closure (CodeSystem: SNOMED CT http://snomed.info/sct) (CONF:3347-201)." />
       <min
         value="1" />
       <max
@@ -89,7 +89,7 @@
       <fixedCodeableConcept>
         <coding>
           <system
-            value="urn:oid:2.16.840.1.113883.6.96" />
+            value="http://snomed.info/sct" />
           <code
             value="112695004" />
         </coding>

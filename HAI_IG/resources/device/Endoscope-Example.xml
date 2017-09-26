@@ -1,0 +1,14 @@
+<Device
+    xmlns="http://hl7.org/fhir">
+    <id value="Endoscope-Example"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/endoscope"/>
+    </meta>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="37270008"/>
+            <display value="Endoscope, Device"/>
+        </coding>
+    </type>
+</Device>

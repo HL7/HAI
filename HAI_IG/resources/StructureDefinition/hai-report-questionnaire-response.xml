@@ -1,0 +1,79 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="hai-report-questionnaire-response" />
+  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire-response" />
+  <name value="Healthcare Associated Infection Report QuestionnaireResponse" />
+  <status value="draft" />
+  <publisher value="Lantana Consulting Group" />
+  <contact>
+    <name value="Sarah Gaunt" />
+    <telecom>
+      <system value="phone" />
+      <value value="+6 141-029-2506" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="sarah.gaunt@lantanagroup.com" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="This profile represents the Healthcare Associated Infection Report as a FHIR QuestionnaireResponse." />
+  <kind value="resource" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="QuestionnaireResponse" />
+  <type value="QuestionnaireResponse" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="QuestionnaireResponse">
+      <path value="QuestionnaireResponse" />
+    </element>
+    <element id="QuestionnaireResponse.item">
+      <path value="QuestionnaireResponse.item" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="text" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="SHALL contain at least one [1..*] item (CONF:3347-277) such that it" />
+    </element>
+    <element id="QuestionnaireResponse.item:item1">
+      <path value="QuestionnaireResponse.item" />
+      <sliceName value="item1" />
+      <short value="item" />
+      <definition value="SHALL contain exactly one [1..1] item (CONF:3347-275) such that it" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="QuestionnaireResponse.item:item1.extension">
+      <path value="QuestionnaireResponse.item.extension" />
+      <short value="extension" />
+      <definition
+        value="SHALL contain exactly one [1..1] allowedProfile (identifier: http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile) (CONF:3347-276)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" />
+      </type>
+    </element>
+    <element id="QuestionnaireResponse.item:item2">
+      <path value="QuestionnaireResponse.item" />
+      <sliceName value="item2" />
+      <short value="item" />
+      <definition value="SHALL contain at least one [1..*] item (CONF:3347-277) such that it" />
+      <min value="1" />
+      <max value="*" />
+    </element>
+    <element id="QuestionnaireResponse.item:item2.text">
+      <path value="QuestionnaireResponse.item.text" />
+      <short value="text" />
+      <definition value="SHALL contain exactly one [1..1] text (CONF:3347-278)." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

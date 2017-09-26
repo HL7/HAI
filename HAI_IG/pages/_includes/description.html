@@ -1,15 +1,27 @@
 <div class="row">
   <div class="inner-wrapper">
     <div class="col-9">
-      <h2> Healthcare Associated Infection Implementation Guide (IG) (Prototype) </h2>
+      <h2>Healthcare Associated Infection Implementation Guide (IG) (Prototype)</h2>
       <div>
-        <h3> Purpose </h3>
+        <h3>Purpose</h3>
       </div>
       <p> The purpose of this prototype FHIR implementation guide (IG) is to specify standards for electronic submission of Healthcare Associated Infection (HAI ) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN. </p>
       <br />
-      <p> Throughout this process, CDC remains the authority on NHSN data collection protocols. When healthcare enterprises choose to participate in NHSN, they must report to CDC occurrences such as specific reportable procedures, even those without complications, and events such as a bloodstream infection, either confirmed by a positive blood culture or supported by a patient’s clinical symptoms. This specification opens the channel for data submission by all applications compliant with the data coding requirements defined here. </p>
+      <p>Throughout this process, CDC remains the authority on NHSN data collection protocols. When healthcare enterprises choose to participate in NHSN, they must report to CDC occurrences such as specific reportable procedures, even those without complications, and events such as a bloodstream infection, either confirmed by a positive blood culture or supported by a patient’s clinical symptoms. This specification opens the channel for data submission by all applications compliant with the data coding requirements defined here. </p>
       <br />
-
+      <div>
+        <h3>Prototype Options</h3>
+      </div>
+      <p>This prototype specifies two alternate approaches to representing the NHSN HAI forms in FHIR: 
+        <ul>
+          <li>Questionnaire-based: This approach takes advantage of the FHIR Questionnaire resource that has been desigened as an organized collection of questions intended to solicit information from individuals involved in the healthcare domain. This closely mirrors the actual NHSN forms.</li>
+          <li>Resource-based: This approach closely mirrors the CDA effort and separate resources (Condition, Observaiton, Procedure, etc.) are used to model each item on the form</li>
+        </ul>
+      </p>
+      <p>Specifying the two approaches will allow stakeholders to consider the benefits and disadvantages of each. For further information see: <a
+          href="http://build.fhir.org/questionnaire.html#qversusr">Using Questionnaires versus using Resources</a>
+      </p>
+      <br />
       <p> Note that participation in the NHSN requires enrollment and filing of reporting plans, which are not defined by this specification. For an overview of NHSN and full information on NHSN participation requirements, see: <a
           href="http://www.cdc.gov/nhsn"
         >http://www.cdc.gov/nhsn</a>. Provisions of the Public Health Service Act protect all data reported to NHSN from discovery through the Freedom of Information Act (FOIA). </p>

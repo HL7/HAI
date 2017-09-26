@@ -28,24 +28,25 @@
     ]
   },
   "subject": {
-    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
+    "reference": "Patient/HAI-Patient-Example",
     "display": "Henry Jones"
   },
   "encounter": {
-    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter"
+    "reference": "Encounter/HAI-Procedure-Denominator-Encounter-Example"
   },
   "date": "2017-09-15T09:10:14Z",
   "author": [
     {
-      "reference": "Practitioner/practitioner-1",
+      "reference": "Practitioner/us-core-practitioner-example",
       "display": "Ronald Bone, MD"
     },
     {
-      "reference": "https://www.hl7.org/fhir/device-example-ihe-pcd.xml",
-      "display": "Vital Signs Monitor"
+      "reference": "Device/endoscope",
+      "display": "Endoscope Device"
     }
   ],
   "title": "Denominator for Procedure Report",
+  "confidentiality": "N",
   "attester": [
     {
       "mode": [
@@ -53,13 +54,73 @@
       ],
       "time": "2017-09-15T09:10:14Z",
       "party": {
-        "reference": "Practitioner/practitioner-1",
+        "reference": "Practitioner/us-core-practitioner-example",
         "display": "Ronald Bone, MD"
       }
     }
   ],
   "custodian": {
-    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian",
+    "reference": "Organization/HAI-Custodian-Example",
     "display": "Community Health and Hospitals"
-  }
+  },
+  "section": [
+    {
+      "title": "Procedure Details Section in a Procedure Report",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "51899-3",
+            "display": "Details Section "
+          }
+        ]
+      },
+      "mode": "snapshot",
+      "entry": [
+        {
+          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/procedure-details",
+          "display": "Procedure Details"
+        }
+      ]
+    },
+    {
+      "title": "Risk Factors Section",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "51898-5",
+            "display": "Risk Factors Section"
+          }
+        ]
+      },
+      "mode": "snapshot",
+      "entry": [
+        {
+          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/asa-class",
+          "display": "ASA Class"
+        },
+        {
+          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus",
+          "display": "Diabetes Melllitus"
+        },
+        {
+          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/height-observation",
+          "display": "Height"
+        },
+        {
+          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation",
+          "display": "Weight"
+        },
+        {
+          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor",
+          "display": "Duration of Labor"
+        },
+        {
+          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation",
+          "display": "Trauma"
+        }
+      ]
+    }
+  ]
 }

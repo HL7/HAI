@@ -58,7 +58,7 @@
       <short
         value="type" />
       <definition
-        value="SHALL contain exactly one [1..1] type=&quot;51897-7&quot; Healthcare Associated Infection Report (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1 STATIC) (CONF:3347-79)." />
+        value="SHALL contain exactly one [1..1] type=&quot;51897-7&quot; Healthcare Associated Infection Report (CodeSystem: LOINC http://loinc.org STATIC) (CONF:3347-79)." />
       <min
         value="1" />
       <max
@@ -70,7 +70,7 @@
       <patternCodeableConcept>
         <coding>
           <system
-            value="urn:oid:2.16.840.1.113883.6.1" />
+            value="http://loinc.org" />
           <code
             value="51897-7" />
         </coding>
@@ -109,7 +109,7 @@
           value="open" />
       </slicing>
       <definition
-        value="SHALL contain exactly one [1..1] section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-62) such that it" />
+        value="SHALL contain exactly one [1..1] section (CodeSystem: LOINC http://loinc.org) (CONF:3347-62) such that it" />
     </element>
     <element
       id="Composition.section:section3">
@@ -150,7 +150,7 @@
       <short
         value="code" />
       <definition
-        value="SHALL contain exactly one [1..1] code=&quot;51899-3&quot; Details Section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-66)." />
+        value="SHALL contain exactly one [1..1] code=&quot;51899-3&quot; Details Section (CodeSystem: LOINC http://loinc.org) (CONF:3347-66)." />
       <min
         value="1" />
       <max
@@ -162,7 +162,7 @@
       <patternCodeableConcept>
         <coding>
           <system
-            value="urn:oid:2.16.840.1.113883.6.1" />
+            value="http://loinc.org" />
           <code
             value="51899-3" />
         </coding>
@@ -211,7 +211,7 @@
       <short
         value="Findings Section in an Infection-Type Report" />
       <definition
-        value="SHALL contain exactly one [1..1] section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-62) such that it" />
+        value="SHALL contain exactly one [1..1] section (CodeSystem: LOINC http://loinc.org) (CONF:3347-62) such that it" />
       <comment
         value="Findings Section in an Infection-Type Report" />
       <min
@@ -239,7 +239,7 @@
       <short
         value="code" />
       <definition
-        value="SHALL contain exactly one [1..1] code=&quot;18769-0&quot; Findings Section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-69)." />
+        value="SHALL contain exactly one [1..1] code=&quot;18769-0&quot; Findings Section (CodeSystem: LOINC http://loinc.org) (CONF:3347-69)." />
       <min
         value="1" />
       <max
@@ -251,7 +251,7 @@
       <patternCodeableConcept>
         <coding>
           <system
-            value="urn:oid:2.16.840.1.113883.6.1" />
+            value="http://loinc.org" />
           <code
             value="18769-0" />
         </coding>

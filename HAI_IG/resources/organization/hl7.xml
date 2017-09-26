@@ -1,6 +1,6 @@
 <Organization
     xmlns="http://hl7.org/fhir">
-    <id value="hl7"/>
+    <id value="HL7"/>
     <!-- Organization.active is optional in FHIR DSTU2 and SHOULD in Trifolia http://hl7.org/fhir/StructureDefinition/daf-organization - have added the default value of "true"    -->
     <active value="true"/>
     <name value="Community Health and Hospitals"/>

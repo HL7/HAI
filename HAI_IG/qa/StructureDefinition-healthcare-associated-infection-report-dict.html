@@ -392,7 +392,7 @@
 <p>Some reporting work flows require that the original narrative of a final document never be altered; instead, only new narrative can be added. The composition resource has no explicit status for explicitly noting whether this business rule is in effect. This would be handled by an extension if required.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition.type"> </a><b>Composition.type</b></td></tr>
-  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] type=&quot;51897-7&quot; Healthcare Associated Infection Report (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-2).</p>
+  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] type=&quot;51897-7&quot; Healthcare Associated Infection Report (CodeSystem: LOINC http://loinc.org) (CONF:3347-2).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Type of a composition.<br/>The codes SHOULD be taken from <a href="http://hl7.org/fhir/STU3/valueset-doc-typecodes.html">FHIR Document Type Codes</a></td></tr>
@@ -401,7 +401,7 @@
 </td></tr>
   <tr><td>Comments</td><td><p>For Composition type, LOINC is ubiquitous and strongly endorsed by HL7. Most implementation guides will require a specific LOINC code, or use LOINC as an extensible binding.</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;urn:oid:2.16.840.1.113883.6.1&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;51897-7&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://loinc.org&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;51897-7&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition.class"> </a><b>Composition.class</b></td></tr>
   <tr><td>Definition</td><td><p>A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type.</p>
 </td></tr>

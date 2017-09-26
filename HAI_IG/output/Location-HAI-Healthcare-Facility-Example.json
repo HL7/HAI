@@ -10,7 +10,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Community Health and Hospitals, South Wing, second floor, Orthopaedic Operation Room 1\n        </div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Community Health and Hospitals, South Wing, second\n            floor, Orthopaedic Operation Room 1 \n        </div>"
   },
   "identifier": [
     {
@@ -21,13 +21,10 @@
   "type": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code",
-        "code": "1166-8",
+        "system": "urn:oid:2.16.840.1.113883.6.259",
+        "code": "1243-5",
         "display": "Ambulatory Surgery Center"
       }
     ]
-  },
-  "partOf": {
-    "reference": "Location/1"
   }
 }

@@ -5,19 +5,19 @@
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-condition"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death">
-        <valueReference>
-            <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death"/>
-        </valueReference>
+        <valueBoolean value="false"/>
     </extension>
     <extension url="http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection">
-        <valueReference>
-            <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection"/>
-        </valueReference>
+        <valueCodeableConcept>
+            <coding>
+                <system value="urn:oid:2.16.840.1.113883.6.277"/>
+                <code value="1510-7"/>
+                <display value="Admission (during the stay in which the surgery was performed)"/>
+            </coding>
+        </valueCodeableConcept>
     </extension>
     <extension url="http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery">
-        <valueReference>
-            <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery"/>
-        </valueReference>
+        <valueBoolean value="false"/>
     </extension>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -42,20 +42,20 @@
     <code>
         <coding>
             <system value="urn:oid:2.16.840.1.113883.6.277"/>
-            <code value="1604-8"/>
+            <code value="1924-0"/>
             <display
-                value="Deep incisional primary SSI"/>
+                value="Radiographic evidence of infection"/>
         </coding>
     </code>
     <subject>
-        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+        <reference value="Patient/HAI-Patient-Example"/>
         <display value="Henry Seven"/>
     </subject>
     <onsetDateTime value="2017-09-15"/>
     <evidence>
         <code>
             <coding>
-                <system value="urn:oid:2.16.840.1.113883.6.277"/>
+                <system value="urn:oid: 2.16.840.1.113883.6.277"/>
                 <code value="1953-9"/>
                 <display value="Positive culture of pathogen"/>
             </coding>

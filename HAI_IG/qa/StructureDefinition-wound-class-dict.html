@@ -122,7 +122,7 @@
   <tr><td>Comments</td><td><p>Coding of the severity with a terminology is preferred, where possible.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="Condition:uscorevitalsigns.code"> </a><a name="Condition.code"> </a><b>Condition.code</b></td></tr>
-  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] code=&quot;420089007&quot; CDC Wound Classification Category (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-231).</p>
+  <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] code=&quot;420089007&quot; CDC Wound Classification Category (CodeSystem: SNOMED CT http://snomed.info/sct) (CONF:3347-231).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Valueset to describe the actual problem experienced by the patient<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/us/core//ValueSet-us-core-problem.html">Problem Value Set</a>; other codes may be used where these codes are not suitable</td></tr>
@@ -131,7 +131,7 @@
   <tr><td>Requirements</td><td><p>0..1 to account for primarily narrative only resources.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>type</td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;urn:oid:2.16.840.1.113883.6.96&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;420089007&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://snomed.info/sct&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;420089007&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td colspan="2" class="structure"><a name="Condition:uscorevitalsigns.bodySite"> </a><a name="Condition.bodySite"> </a><b>Condition.bodySite</b></td></tr>
   <tr><td>Definition</td><td><p>The anatomical location where this condition manifests itself.</p>
 </td></tr>

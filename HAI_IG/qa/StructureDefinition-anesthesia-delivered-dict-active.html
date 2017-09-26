@@ -116,7 +116,7 @@
   <tr><td>Comments</td><td><p>If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example if you require form or lot number, then you must reference the Medication resource. .</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationAdministration.medication[x]"> </a><a name="MedicationAdministration.medicationCodeableConcept"> </a><a name="MedicationAdministration.medicationReference"> </a><a name="MedicationAdministration.medicationCodeableConcept"> </a><a name="MedicationAdministration.medicationReference"> </a><a name="MedicationAdministration.medicationCodeableConcept"> </a><a name="MedicationAdministration.medicationReference"> </a><b>MedicationAdministration.medication[x]</b></td></tr>
-  <tr><td>Definition</td><td><p>medicationCodeableConcept=&quot;84451006&quot; General Anesthesia (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-194)</p>
+  <tr><td>Definition</td><td><p>medicationCodeableConcept=&quot;84451006&quot; General Anesthesia (CodeSystem: SNOMED CT http://snomed.info/sct) (CONF:3347-194)</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes identifying substance or product that can be administered.<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-medication-codes.html">SNOMED CT Medication Codes</a></td></tr>
@@ -124,7 +124,7 @@
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Comments</td><td><p>If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example if you require form or lot number, then you must reference the Medication resource. .</p>
 </td></tr>
-  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;urn:oid:2.16.840.1.113883.6.96&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;84451006&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://snomed.info/sct&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;84451006&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationAdministration.subject"> </a><b>MedicationAdministration.subject</b></td></tr>
   <tr><td>Definition</td><td><p>SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-193).</p>
 </td></tr>

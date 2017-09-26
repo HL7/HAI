@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Community Health and Hospitals, South Wing, second floor, Orthopaedic Operation Room 1\n        </div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Community Health and Hospitals, South Wing, second\n            floor, Orthopaedic Operation Room 1 \n        </div>"
   ];
   fhir:Location.identifier [
      fhir:index 0;
@@ -28,17 +28,11 @@
   fhir:Location.type [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code" ];
-       fhir:Coding.code [ fhir:value "1166-8" ];
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.259" ];
+       fhir:Coding.code [ fhir:value "1243-5" ];
        fhir:Coding.display [ fhir:value "Ambulatory Surgery Center" ]
      ]
-  ];
-  fhir:Location.partOf [
-     fhir:link <http://hl7.org/fhir/us/hai/Location/1>;
-     fhir:Reference.reference [ fhir:value "Location/1" ]
   ] .
-
-<http://hl7.org/fhir/us/hai/Location/1> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

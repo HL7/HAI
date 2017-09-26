@@ -38,41 +38,98 @@
   &lt;/type&gt;
 &lt;!--   Patient Resource  --&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.subject">subject</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
-               <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Patient/HAI-Patient-Example&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Henry Jones&quot;/&gt;
   &lt;/subject&gt;
 &lt;!--   Encounter Resource  --&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.encounter">encounter</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
-               <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-encounter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Encounter/HAI-Procedure-Denominator-Encounter-Example&quot;/&gt;
   &lt;/encounter&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2017-09-15T09:10:14Z&quot;/&gt;
 &lt;!--   Practitioner Resource Reference --&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.author">author</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Practitioner/practitioner-1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Practitioner/us-core-practitioner-example&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Ronald Bone, MD&quot;/&gt;
   &lt;/author&gt;
 &lt;!--   Device Resource Reference  --&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.author">author</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;https://www.hl7.org/fhir/device-example-ihe-pcd.xml&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Vital Signs Monitor&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Device/endoscope&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Endoscope Device&quot;/&gt;
   &lt;/author&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.title">title</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Denominator for Procedure Report&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.confidentiality">confidentiality</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.attester">attester</a>&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.attester.mode">mode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;legal&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.attester.time">time</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2017-09-15T09:10:14Z&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.attester.party">party</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Practitioner/practitioner-1&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Practitioner/us-core-practitioner-example&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Ronald Bone, MD&quot;/&gt;
     &lt;/party&gt;
   &lt;/attester&gt;
 &lt;!--   Organization Resource  --&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.custodian">custodian</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
-               <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Organization/HAI-Custodian-Example&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Community Health and Hospitals&quot;/&gt;
   &lt;/custodian&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section">section</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Procedure Details Section in a Procedure Report&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;51899-3&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Details Section &quot;/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.mode">mode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;snapshot&quot;/&gt;
+  &lt;!--  Procedure Details Section Resource  --&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.entry">entry</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/procedure-details&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Procedure Details&quot;/&gt;
+    &lt;/entry&gt;
+  &lt;/section&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section">section</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.title">title</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Risk Factors Section&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.code">code</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;51898-5&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Risk Factors Section&quot;/&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.mode">mode</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;snapshot&quot;/&gt;
+  &lt;!--  Risk Factors Section Resources  --&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.entry">entry</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/asa-class&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;ASA Class&quot;/&gt;
+    &lt;/entry&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.entry">entry</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Diabetes Melllitus&quot;/&gt;
+    &lt;/entry&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.entry">entry</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/height-observation&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Height&quot;/&gt;
+    &lt;/entry&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.entry">entry</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/weight-observation&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Weight&quot;/&gt;
+    &lt;/entry&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.entry">entry</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/duration-of-labor&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Duration of Labor&quot;/&gt;
+    &lt;/entry&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/composition.html#Composition.section.entry">entry</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">reference</a>
+                 <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/trauma-observation&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Trauma&quot;/&gt;
+    &lt;/entry&gt;
+  &lt;/section&gt;
 &lt;/Composition&gt;</pre>
 </body>
 </html>

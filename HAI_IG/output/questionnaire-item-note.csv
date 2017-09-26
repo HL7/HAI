@@ -13,5 +13,5 @@ user content","",0,*,"","","","Extension
 "Extension.value[x]","","","",1,1,"","","","base64Binary
 booleancodedatedateTimedecimalidinstantintegermarkdownoidpositiveIntstringtimeunsignedInturiAddressAgeAnnotationAttachmentCodeableConceptCodingContactPointCountDistanceDurationHumanNameIdentifierMoneyPeriodQuantityRangeRatioReferenceSampledDataSignatureTimingMeta","value[x]","SHALL contain exactly one [1..1] value[x], where value[x] is (CONF:3347-220)","","","","","","","","","",,,,,"","value:@type}
 ","",,"open","Extension.value[x]",0,1,"","","N/A"
-"Extension.value[x]","","","",0,1,"","","","base64Binary
+"Extension.value[x]","","","",1,1,"","","","base64Binary
 booleancodedatedateTimedecimalidinstantintegermarkdownoidpositiveIntstringtimeunsignedInturiAddressAgeAnnotationAttachmentCodeableConceptCodingContactPointCountDistanceDurationHumanNameIdentifierMoneyPeriodQuantityRangeRatioReferenceSampledDataSignatureTimingMeta","valueString","valueString (CONF:3347-222)","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","","N/A"

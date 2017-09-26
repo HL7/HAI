@@ -10,17 +10,17 @@
   fhir:Resource.id [ fhir:value "nhsn-spinal-fusion-approach-code"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSNSpinalFusionApproachCode</h2><div><p>Code System: cdcNHSN 2.16.840.1.113883.6.277 or SNOMED CT 2.16.840.1.113883.6.96</p>\n<p>A full listing of codes can be found in the hai_voc.xls file provided with this package.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.96</code><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>255549009</td><td>Anterior</td><td/></tr><tr><td>255551008</td><td>Posterior</td><td/></tr><tr><td>118438002</td><td>Transoral Approach</td><td/></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.277</code><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1205-4</td><td>anterior posterior</td><td/></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSNSpinalFusionApproachCode</h2><div><p>Code System: cdcNHSN 2.16.840.1.113883.6.277 or SNOMED CT 2.16.840.1.113883.6.96</p>\n<p>A full listing of codes can be found in the hai_voc.xls file provided with this package.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255549009\">255549009</a></td><td>Anterior</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=255551008\">255551008</a></td><td>Posterior</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=118438002\">118438002</a></td><td>Transoral Approach</td><td/></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.277</code><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1205-4</td><td>anterior posterior</td><td/></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/hai/ValueSet/nhsn-spinal-fusion-approach-code"];
   fhir:ValueSet.name [ fhir:value "NHSNSpinalFusionApproachCode"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2017-09-25T20:26:03+10:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2017-09-26T23:36:52+10:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "Code System: cdcNHSN 2.16.840.1.113883.6.277 or SNOMED CT 2.16.840.1.113883.6.96\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.6.96" ];
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
        fhir:ValueSet.compose.include.concept [
          fhir:index 0;
          fhir:ValueSet.compose.include.concept.code [ fhir:value "255549009" ];

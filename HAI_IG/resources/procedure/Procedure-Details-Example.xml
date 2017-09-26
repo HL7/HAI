@@ -1,0 +1,53 @@
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="Procedure-Details-Example"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/procedure-details"/>
+    </meta>
+    <partOf>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/anesthesia-delivered"/>
+        <display value="Anesthesia Delivered"/>
+    </partOf>
+    <partOf>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/closure-technique"/>
+        <display value="Closure Technique"/>
+    </partOf>
+    <partOf>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/spinal-fusion-level"/>
+        <display value="Spinal Fusion Level"/>
+    </partOf>
+    <partOf>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/revision-associated-with-prior-infection"/>
+        <display value="Revision Associated with Prior Infection Observation"/>
+    </partOf>
+    <partOf>
+        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/procedure-risk-factors"/>
+        <display value="Procedure Risk Factors"/>
+    </partOf>
+    <status value="completed"/>
+    <category>
+        <coding>
+            <system value="urn:oid:2.16.840.1.113883.6.277"/>
+            <code value="2118-8"/>
+            <display value="Exploratory abdominal surgery"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="74770008"/>
+            <display value="Exploratory laparotomy (procedure)"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="patient/HAI-Patient-Example"/>
+        <display value="Henry Seven"/>
+    </subject>
+    <performedDateTime value="2017-09-15"/>
+    <performer>
+        <actor>
+            <reference value="practitioner/us-core-practitioner-example"/>
+            <display value="Ronald Bone, MD"/>
+        </actor>
+    </performer>
+</Procedure>

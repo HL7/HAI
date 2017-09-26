@@ -27,30 +27,30 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="51897-7"/>
-      <display value="Healthcare Associated Infection Report"/>
+      <display value="Healthcare Associated Infection report"/>
     </coding>
   </type>
 <!--   Patient Resource  -->
   <subject>
-    <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+    <reference value="Patient/HAI-Patient-Example"/>
     <display value="Henry Jones"/>
   </subject>
   <date value="2017-09-15T09:10:14Z"/>
 <!--   Practitioner Resource Reference -->
   <author>
-    <reference value="Practitioner/practitioner-1"/>
+    <reference value="Practitioner/us-core-practitioner-example"/>
     <display value="Ronald Bone, MD"/>
   </author>
 <!--   Device Resource Reference  -->
   <author>
-    <reference value="https://www.hl7.org/fhir/device-example-ihe-pcd.xml"/>
-    <display value="Vital Signs Monitor"/>
+    <reference value="Device/Endoscope-Example"/>
+    <display value="Endoscope Device"/>
   </author>
   <title value="Healthcare Associated Infection Report"/>
   <confidentiality value="N"/>
 <!--   Organization Resource  -->
   <custodian>
-    <reference value="http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian"/>
+    <reference value="Organization/HAI-Custodian-Example"/>
     <display value="Community Health and Hospitals"/>
   </custodian>
 </Composition>

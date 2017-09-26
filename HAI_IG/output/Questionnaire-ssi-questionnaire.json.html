@@ -130,7 +130,7 @@
           <li title="Healthcare Associated Infection Reports FHIR SSI Prototype"><a href="index.html"><b>Healthcare Associated Infection Reports FHIR SSI Prototype</b></a></li>
           
           
-          <li><b>ssi-questionnaire Details</b></li>
+          <li><b>SSI-Questionnaire Details</b></li>
           
         </ul>
       </div>
@@ -142,47 +142,324 @@
           <div class="inner-wrapper">
             <div class="col-12">
               <ul class="nav nav-tabs">
-                <li><a href="Questionnaire-ssi-questionnaire.html">Content</a></li>
-                <li class=""><a href="Questionnaire-ssi-questionnaire.xml.html">XML</a></li>
-                <li class="active"><a href="Questionnaire-ssi-questionnaire.json.html">JSON</a></li>
+                <li><a href="Questionnaire-SSI-Questionnaire.html">Content</a></li>
+                <li class=""><a href="Questionnaire-SSI-Questionnaire.xml.html">XML</a></li>
+                <li class="active"><a href="Questionnaire-SSI-Questionnaire.json.html">JSON</a></li>
               </ul>
               
               <br/>
               <pre class="json">
 {
   "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire">resourceType</a>" : "Questionnaire",
-  "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.id">id</a>" : "ssi-questionnaire",
+  "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.id">id</a>" : "SSI-Questionnaire",
   "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Surgical Site Infection&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: DRAFT&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Surgical Site Infection&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: DRAFT&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Healthcare Associated Infection Report (Details: LOINC code 51897-7 = 'Healthcare Associated Infection report Document', stated as 'Healthcare Associated Infection Report')&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: 6706&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: REFERENCE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Date of Event&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: DATE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: NHSN Procedure Code&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNProcedureCategoryCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+    &lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Surgical Site Infection Questionnaire&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;status&lt;/b&gt;: DRAFT&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Healthcare Associated Infection Report Document (Details: LOINC code 51897-7 = 'Healthcare Associated Infection report Document', stated as 'Healthcare Associated Infection Report Document')&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;subjectType&lt;/b&gt;: Patient&lt;/p&gt;
 
-NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                
-
-The full table is shown in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277
-
-NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                
-
-The full table is shown in the hai_voc.xls file provided with this package.&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: 3&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: ICD-10-PCS or CPT Procedure Code&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;options&lt;/b&gt;: &lt;a href=&quot;http://hl7.org/fhir/sid/icd-10&quot;&gt;ICD-10-PCS&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: 4&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Date of Procedure&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: DATE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: outpatient-procedure&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Outpatient Procedure&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;repeats&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;options&lt;/b&gt;: nhsn-encounter-type-code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4
-
-A full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4
-
-A full listing of codes can be found in the hai_voc.xls file provided with this package.&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: 6&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: MDRO Infection Surveillance&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: 7&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Date Admitted to Facility:&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: DATE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: 8&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Location&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNHealthcareServiceLocationCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.
-
-A full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.
-
-A full listing of codes can be found in the hai_voc.xls file provided with this package.&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: specific-event&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Specific Event&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNInfectionConditionCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code; name: NHSNInfectionConditionCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277
-
-A full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code; name: NHSNInfectionConditionCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277
-
-A full listing of codes can be found in the hai_voc.xls file provided with this package.&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: infection-present&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Infection present at the time of surgery (Details: SNOMED CT code 1237-7 = '1237-7', stated as 'Infection present at the time of surgery')&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Infection Present at Time of Surgery (PATOS)&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: criteria-used&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Specify Criteria Used (check all that apply)&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;repeats&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNCriterionOfDiagnosisCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code; name: NHSNCriterionOfDiagnosisCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277
-
-A full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code; name: NHSNCriterionOfDiagnosisCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277
-
-A full listing of codes can be found in the hai_voc.xls file provided with this package.&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: detected&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Detected&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNOccasionOfDetectionCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection; name: NHSNOccasionOfDetectionCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277
-
-A full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection; name: NHSNOccasionOfDetectionCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277
-
-A full listing of codes can be found in the hai_voc.xls file provided with this package.&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: secondary-bsi&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Secondary bloodstream infection (Details: urn:oid:2.16.840.1.113883.6.277 code 3111-2 = '3111-2', stated as 'Secondary bloodstream infection')&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Secondary Bloodstream Infection&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: died&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Dead (Details: SNOMED CT code 419099009 = 'Dead (finding)', stated as 'Dead')&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Died&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: ssi-contributed-to-death&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: SSI Contributed to Death&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;&lt;h3&gt;EnableWhens&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Question&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;HasAnswer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;died&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: date-admitted-to-facility&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Date Admitted to Facility:&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: DATE&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: pathogens-identified&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Pathogens Identified&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: findings-group&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Findings Group&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: GROUP&lt;/p&gt;&lt;h3&gt;EnableWhens&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Question&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;HasAnswer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;pathogens-identified&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;repeats&lt;/b&gt;: true&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: patient&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Patient&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: REFERENCE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: date-of-event&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Date of Event&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Date of infection event&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: DATE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: nhsn-procedure-code&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: NHSN Procedure Code&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: NHSN code of procedure performed.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNProcedureCategoryCode url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-procedure-category-code; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277
+        &lt;br/&gt;
+  NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                
+        &lt;br/&gt;
+  &lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: icd-procedure-code&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: ICD-10-PCS or CPT Procedure Code&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: ICD-10-PCS or CPT code of procedure performed.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: &lt;a href=&quot;http://hl7.org/fhir/sid/icd-10&quot;&gt;ICD-10-PCS&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: date-of-procedure&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Date of Procedure&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Date of the procedure.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: DATE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: outpatient-procedure&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Outpatient Procedure&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Whether the procedure was outpatient or inpatient.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;repeats&lt;/b&gt;: false&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: nhsn-encounter-type-code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: mdro-infection-surveillance&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: MDRO Infection Surveillance&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Whether the primary infection being reported was caused by a multi-drug-resistant organism (MDRO).&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: date-admitted-to-facility&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Date Admitted to Facility:&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: The date the patient was admitted to the facility.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: DATE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: location-code&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Location Code&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Code for the type of location.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNHealthcareServiceLocationCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: specific-event&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Specific Event&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: The infection condition being reported.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNInfectionConditionCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code; name: NHSNInfectionConditionCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: infection-present-at-time-of-surgery&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Infection present at the time of surgery (Details: SNOMED CT code 1237-7 = '1237-7', stated as 'Infection present at the time of surgery')&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Infection Present at Time of Surgery (PATOS)&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Whether or not an infection was present at the time that a surgical procedure was performed.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: criteria-used&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Specify Criteria Used (check all that apply)&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Criterion used in the diagnosis of the infection type or the identification of an adverse reaction.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;repeats&lt;/b&gt;: true&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNCriterionOfDiagnosisCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code; name: NHSNCriterionOfDiagnosisCode; ACTIVE; description: Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: when-detected&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: When Detected&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: When, in relation to an admission (a surgery stay), an HAI was detected.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNOccasionOfDetectionCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-occasion-of-detection; name: NHSNOccasionOfDetectionCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: secondary-bsi&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Secondary bloodstream infection (Details: urn:oid:2.16.840.1.113883.6.277 code 3111-2 = '3111-2', stated as 'Secondary bloodstream infection')&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Secondary Bloodstream Infection&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Whether a secondary bloodstream infection was present&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: died&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Dead (Details: SNOMED CT code 419099009 = 'Dead (finding)', stated as 'Dead')&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Died&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Whether the patient died.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: ssi-contributed-to-death&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: SSI Contributed to Death&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: If the patient died, whether the infection being recorded contributed to that death.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;
+      &lt;h4&gt;enable item when:&lt;/h4&gt;
+      &lt;table class=&quot;grid&quot;&gt;
+        &lt;tr&gt;
+          &lt;td&gt;-&lt;/td&gt;
+          &lt;td&gt;
+            &lt;b&gt;Question&lt;/b&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;b&gt;HasAnswer&lt;/b&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;*&lt;/td&gt;
+          &lt;td&gt;died&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: date-discharged-from-facility&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Date Discharged From Facility:&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: The date the patient was discharged from the facility.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: DATE&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: pathogens-identified&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Pathogens Identified&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Whether pathogens were identified.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: BOOLEAN&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &lt;h2&gt;item&lt;/h2&gt;
+      &lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: findings-group&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Findings Group&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Group containing items about any pathogen(s) that was/were identified.&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: GROUP&lt;/p&gt;
+      &lt;h3&gt;enable item when:&lt;/h3&gt;
+      &lt;table class=&quot;grid&quot;&gt;
+        &lt;tr&gt;
+          &lt;td&gt;-&lt;/td&gt;
+          &lt;td&gt;
+            &lt;b&gt;Question&lt;/b&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;b&gt;HasAnswer&lt;/b&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;*&lt;/td&gt;
+          &lt;td&gt;pathogens-identified&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+      &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;
+      &lt;p&gt;&lt;b&gt;repeats&lt;/b&gt;: true&lt;/p&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;
+          &lt;h2&gt;item&lt;/h2&gt;
+        &lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: pathogen-identified&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Pathogen Identified&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: A code representing a pathogen that was identified. Eg.: Staphylococcus coagulase-negative&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNPathogenCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-code; name: NHSNPathogenCode; ACTIVE&lt;/p&gt;
+      &lt;/blockquote&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;
+          &lt;h2&gt;item&lt;/h2&gt;
+        &lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: pathogen-ranking&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Pathogen Ranking&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Up to three pathogens can be recorded. This item records the relative importance of a pathogen in that set with respect to its role in the infection.&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNPathogenRanking. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking; name: NHSNPathogenRanking; ACTIVE&lt;/p&gt;
+      &lt;/blockquote&gt;
+      &lt;blockquote&gt;
+        &lt;p&gt;
+          &lt;h2&gt;item&lt;/h2&gt;
+        &lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: drug-susceptibility-test-group&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Drug Susceptibility Test Group&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: This group contains two items and uses two codes: one to identify the drug and the other to record the pathogen’s susceptibility to it. A LOINC code represents a methodless isolate drug-susceptibility test; an HL7 ObservationInterpretation code represents the susceptibility finding.&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: GROUP&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: false&lt;/p&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;
+            &lt;h2&gt;item&lt;/h2&gt;
+          &lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: drug-susceptibility-test&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Drug Susceptibility Test&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: The drug that was used to test the pathogen's susceptibility. A LOINC code represents a methodless isolate drug-susceptibility test Eg.: DAPTO&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNDrugSusceptibilityTestsCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-tests-code; name: NHSNDrugSusceptibilityTestsCode; ACTIVE&lt;/p&gt;
+        &lt;/blockquote&gt;
+        &lt;blockquote&gt;
+          &lt;p&gt;
+            &lt;h2&gt;item&lt;/h2&gt;
+          &lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: drug-susceptibility-finding&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Drug Susceptibility Finding&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;note&lt;/b&gt;: The pathogen’s susceptibility to the drug. An HL7 ObservationInterpretation code represents the susceptibility finding. Eg.: S, NS, or N&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;type&lt;/b&gt;: CHOICE&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;required&lt;/b&gt;: true&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;options&lt;/b&gt;: NHSNDrugSusceptibilityFindingCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-finding-code; name: NHSNDrugSusceptibilityFindingCode; ACTIVE&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire"
+    ]
   },
   "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet">contained</a>" : [
     {
@@ -1720,7 +1997,7 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose">compose</a>" : {
         "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include">include</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:2.16.840.1.113883.6.96",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.system">system</a>" : "http://snomed.info/sct",
             "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
               {
                 "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2707005",
@@ -2305,7 +2582,7 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:oid:2.16.840.1.113883.6.96",
+            "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.system">system</a>" : "http://snomed.info/sct",
             "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
               {
                 "<a href="http://hl7.org/fhir/STU3/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "165517008",
@@ -2577,13 +2854,16 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
     }
   ],
   "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.version">version</a>" : "1",
-  "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.title">title</a>" : "Surgical Site Infection",
+  "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.title">title</a>" : "Surgical Site Infection Questionnaire",
   "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.subjectType">subjectType</a>" : [
+    "Patient"
+  ],
   "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.code">code</a>" : [
     {
       "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
       "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "51897-7",
-      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Healthcare Associated Infection Report"
+      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Healthcare Associated Infection Report Document"
     }
   ],
   "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item">item</a>" : [
@@ -2596,19 +2876,31 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
           }
         }
       ],
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "6706",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "patient",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Patient",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "reference",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "1",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Date of infection event"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "date-of-event",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Date of Event",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "date",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "2",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "NHSN code of procedure performed."
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "nhsn-procedure-code",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "NHSN Procedure Code",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true,
@@ -2618,7 +2910,13 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       }
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "3",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "ICD-10-PCS or CPT code of procedure performed."
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "icd-procedure-code",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "ICD-10-PCS or CPT Procedure Code",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true,
@@ -2628,12 +2926,24 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       }
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "4",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Date of the procedure."
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "date-of-procedure",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Date of Procedure",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "date",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true
     },
     {
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Whether the procedure was outpatient or inpatient."
+        }
+      ],
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "outpatient-procedure",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Outpatient Procedure",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
@@ -2645,20 +2955,38 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       }
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "6",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Whether the primary infection being reported was caused by a multi-drug-resistant organism (MDRO)."
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "mdro-infection-surveillance",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "MDRO Infection Surveillance",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "7",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "The date the patient was admitted to the facility."
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "date-admitted-to-facility",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Date Admitted to Facility:",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "date",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "8",
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Location",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Code for the type of location."
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "location-code",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Location Code",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : false,
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.options">options</a>" : {
@@ -2667,6 +2995,12 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       }
     },
     {
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "The infection condition being reported."
+        }
+      ],
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "specific-event",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Specific Event",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
@@ -2677,7 +3011,13 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       }
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "infection-present",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Whether or not an infection was present at the time that a surgical procedure was performed."
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "infection-present-at-time-of-surgery",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.code">code</a>" : [
         {
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
@@ -2690,6 +3030,12 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true
     },
     {
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Criterion used in the diagnosis of the infection type or the identification of an adverse reaction."
+        }
+      ],
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "criteria-used",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Specify Criteria Used (check all that apply)",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
@@ -2701,8 +3047,14 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       }
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "detected",
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Detected",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "When, in relation to an admission (a surgery stay), an HAI was detected."
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "when-detected",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "When Detected",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true,
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.options">options</a>" : {
@@ -2711,6 +3063,12 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       }
     },
     {
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Whether a secondary bloodstream infection was present"
+        }
+      ],
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "secondary-bsi",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.code">code</a>" : [
         {
@@ -2724,6 +3082,12 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true
     },
     {
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Whether the patient died."
+        }
+      ],
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "died",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.code">code</a>" : [
         {
@@ -2737,6 +3101,12 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true
     },
     {
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "If the patient died, whether the infection being recorded contributed to that death."
+        }
+      ],
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "ssi-contributed-to-death",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "SSI Contributed to Death",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
@@ -2749,18 +3119,36 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : false
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "date-admitted-to-facility",
-      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Date Admitted to Facility:",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "The date the patient was discharged from the facility."
+        }
+      ],
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "date-discharged-from-facility",
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Date Discharged From Facility:",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "date",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : false
     },
     {
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Whether pathogens were identified."
+        }
+      ],
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "pathogens-identified",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Pathogens Identified",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "boolean",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true
     },
     {
+      "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Group containing items about any pathogen(s) that was/were identified."
+        }
+      ],
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "findings-group",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Findings Group",
       "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "group",
@@ -2777,7 +3165,7 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
           "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
             {
               "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Ex: Staphylococcus coagulase-negative"
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "A code representing a pathogen that was identified. Eg.: Staphylococcus coagulase-negative"
             }
           ],
           "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "pathogen-identified",
@@ -2790,6 +3178,12 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
           }
         },
         {
+          "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Up to three pathogens can be recorded. This item records the relative importance of a pathogen in that set with respect to its role in the infection."
+            }
+          ],
           "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "pathogen-ranking",
           "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Pathogen Ranking",
           "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
@@ -2800,8 +3194,14 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
           }
         },
         {
-          "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "drug-susceptibility-test",
-          "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Drug Susceptibility Test",
+          "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
+              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "This group contains two items and uses two codes: one to identify the drug and the other to record the pathogen’s susceptibility to it. A LOINC code represents a methodless isolate drug-susceptibility test; an HL7 ObservationInterpretation code represents the susceptibility finding."
+            }
+          ],
+          "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "drug-susceptibility-test-group",
+          "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Drug Susceptibility Test Group",
           "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "group",
           "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : false,
           "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.repeats">repeats</a>" : true,
@@ -2810,11 +3210,11 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
               "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
                 {
                   "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Ex: DAPTO"
+                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "The drug that was used to test the pathogen's susceptibility. A LOINC code represents a methodless isolate drug-susceptibility test Eg.: DAPTO"
                 }
               ],
-              "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "6192",
-              "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Test",
+              "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "drug-susceptibility-test",
+              "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.text">text</a>" : "Drug Susceptibility Test",
               "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.type">type</a>" : "choice",
               "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.required">required</a>" : true,
               "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.options">options</a>" : {
@@ -2826,7 +3226,7 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
               "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.extension">extension</a>" : [
                 {
                   "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note",
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "Ex: S, NS, or N"
+                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#Extension#Extension.value[x]">valueString</a>" : "The pathogen’s susceptibility to the drug. An HL7 ObservationInterpretation code represents the susceptibility finding. Eg.: S, NS, or N"
                 }
               ],
               "<a href="http://hl7.org/fhir/STU3/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "drug-susceptibility-finding",
@@ -2856,7 +3256,7 @@ A full listing of codes can be found in the hai_voc.xls file provided with this 
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Mon, Sep 25, 2017 20:26+1000. <a href="qa.html">QA Page</a>
+      &copy; HL7.org 2011+. FHIR STU3 Candidate (v3.1.0-12369) generated on Tue, Sep 26, 2017 23:36+1000. <a href="qa.html">QA Page</a>
         <br/>
         <span style="color: #FFFF77">
         Links: <a style="color: #81BEF7" href="http://hl7.org/fhir/search.cfm">Search <img style="text-align: baseline" src="external.png"/></a> |

@@ -151,7 +151,7 @@ Some reporting work flows require that the original narrative of a final documen
 "Composition.type","","","",1,1,"","","Y","CodeableConcept
 ","type","SHALL contain exactly one [1..1] type (CONF:3347-57).","For Composition type, LOINC is ubiquitous and strongly endorsed by HL7. Most implementation guides will require a specific LOINC code, or use LOINC as an extensible binding.","Key metadata element describing the composition, used in searching/filtering.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""urn:oid:2.16.840.1.113883.6.1""/>
+    <system value=""http://loinc.org""/>
     <code value=""51897-7""/>
   </coding>
 </valueCodeableConcept>","","","",,"preferred","Type of a composition.","http://hl7.org/fhir/ValueSet/doc-typecodes","",,,,"Composition.type",1,1,"","","./code",".code","class"

@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hai-procedure-denominator-report" />
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-procedure-denominator-report" />
-  <name value="HAI Procedure Denominator Report" />
+  <name value="HAI Procedure Denominator Report Test" />
   <status value="draft" />
   <publisher value="Lantana Consulting Group" />
   <contact>
@@ -104,7 +104,7 @@
       <path value="Composition.section.code" />
       <short value="code" />
       <definition
-        value="SHALL contain exactly one [1..1] code=&quot;51899-3&quot; Details Section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-214)." />
+        value="SHALL contain exactly one [1..1] code=&quot;51899-3&quot; Details Section (CodeSystem: LOINC http://loinc.org) (CONF:3347-214)." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -112,7 +112,7 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="urn:oid:2.16.840.1.113883.6.1" />
+          <system value="http://loinc.org" />
           <code value="51899-3" />
         </coding>
       </patternCodeableConcept>
@@ -148,7 +148,7 @@
       <path value="Composition.section.code" />
       <short value="code" />
       <definition
-        value="SHALL contain exactly one [1..1] code=&quot;51898-5&quot; Risk Factors Section (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-217)." />
+        value="SHALL contain exactly one [1..1] code=&quot;51898-5&quot; Risk Factors Section (CodeSystem: LOINC http://loinc.org) (CONF:3347-217)." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -156,7 +156,7 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="urn:oid:2.16.840.1.113883.6.1" />
+          <system value="http://loinc.org" />
           <code value="51898-5" />
         </coding>
       </patternCodeableConcept>

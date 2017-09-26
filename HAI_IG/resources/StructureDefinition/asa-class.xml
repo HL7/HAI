@@ -77,7 +77,7 @@
       <short
         value="category" />
       <definition
-        value="SHALL contain exactly one [1..1] category=&quot;55607006&quot; Problem (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-223)." />
+        value="SHALL contain exactly one [1..1] category=&quot;55607006&quot; Problem (CodeSystem: SNOMED CT http://snomed.info/sct) (CONF:3347-223)." />
       <min
         value="1" />
       <max
@@ -89,7 +89,7 @@
       <fixedCodeableConcept>
         <coding>
           <system
-            value="urn:oid:2.16.840.1.113883.6.96" />
+            value="http://snomed.info/sct" />
           <code
             value="55607006" />
         </coding>

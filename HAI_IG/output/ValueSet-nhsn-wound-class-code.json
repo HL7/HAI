@@ -3,17 +3,17 @@
   "id": "nhsn-wound-class-code",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSNWoundClassCode</h2><div><p>Code System: SNOMED CT 2.16.840.1.113883.6.96</p>\n<p>A full listing of codes can be found in the hai_voc.xls file provided with this package.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.6.96</code><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>418780004</td><td>Class I/Clean (Clean)</td><td/></tr><tr><td>418115006</td><td>Class II/Clean Contaminated (Clean-contaminated)</td><td/></tr><tr><td>419877002</td><td>Class III/Contaminated (Contaminated)</td><td/></tr><tr><td>418422005</td><td>Class IV/Dirty Infected (Dirty)</td><td/></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSNWoundClassCode</h2><div><p>Code System: SNOMED CT 2.16.840.1.113883.6.96</p>\n<p>A full listing of codes can be found in the hai_voc.xls file provided with this package.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418780004\">418780004</a></td><td>Class I/Clean (Clean)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418115006\">418115006</a></td><td>Class II/Clean Contaminated (Clean-contaminated)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419877002\">419877002</a></td><td>Class III/Contaminated (Contaminated)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418422005\">418422005</a></td><td>Class IV/Dirty Infected (Dirty)</td><td/></tr></table></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/hai/ValueSet/nhsn-wound-class-code",
   "name": "NHSNWoundClassCode",
   "status": "active",
-  "date": "2017-09-25T20:26:03+10:00",
+  "date": "2017-09-26T23:36:52+10:00",
   "description": "Code System: SNOMED CT 2.16.840.1.113883.6.96\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.",
   "compose": {
     "include": [
       {
-        "system": "urn:oid:2.16.840.1.113883.6.96",
+        "system": "http://snomed.info/sct",
         "concept": [
           {
             "code": "418780004",

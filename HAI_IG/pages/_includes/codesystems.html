@@ -1,5 +1,74 @@
-<p>This guide references the following code systems.</p>
-<table class="codes"><thead><tr><td><b>Name</b></td><td><b>Definition</b></td></tr></thead><tbody><tr><td>cdcNHSN</td><td>urn:oid:2.16.840.1.113883.6.277</td></tr><tr><td>ConditionVerificationStatus</td><td><u>325</u><br/>
-The verification status to support or decline the clinical status of the condition or diagnosis.</td></tr><tr><td>FHIR CompositionAttestationMode</td><td><u>200</u><br/>
-The way in which a person authenticated a composition.</td></tr><tr><td>HL7 HealthcareServiceLocation</td><td>urn:oid:2.16.840.1.113883.6.259</td></tr><tr><td>HL7ActCode</td><td>urn:oid:2.16.840.1.113883.5.4</td></tr><tr><td>HL7ObservationInterpretation</td><td>urn:oid:2.16.840.1.113883.5.83</td></tr><tr><td>LOINC</td><td><u>25</u><br/>
-LOINC (Logical Observation Identifiers Names and Codes) was developed to provide a definitive standard for identifying clinical information in electronic reports. The LOINC database provides a set of universal names and ID codes for identifying laboratory and clinical test results in the context of existing HL7, ASTM E1238, and CEN TC251 observation report messages. One of the main goals of LOINC is to facilitate the exchange and pooling of results for clinical care, outcomes management, and research. LOINC codes are intended to identify the test result or clinical observation. Other fields in the message can transmit the identity of the source laboratory and special details about the sample.</td></tr><tr><td>SNOMED CT</td><td>urn:oid:2.16.840.1.113883.6.96</td></tr></tbody></table>
+<div>
+  <p>This guide references the following code systems.</p>
+  <table class="codes">
+    <thead>
+      <tr>
+        <td>
+          <b>Name</b>
+        </td>
+        <td>
+          <b>Definition</b>
+        </td>
+        <td>
+          <b>ID</b>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>cdcNHSN</td>
+        <td>NHSN local code system</td>
+        <td>urn:oid:2.16.840.1.113883.6.277</td>
+      </tr>
+      <tr>
+        <td>ConditionVerificationStatus</td>
+        <td>The verification status to support or decline the clinical status of the condition or diagnosis.</td>
+        <td>
+          <a href="http://hl7.org/fhir/ValueSet/condition-ver-status" />
+        </td>
+      </tr>
+      <tr>
+        <td>FHIR CompositionAttestationMode</td>
+        <td>The way in which a person authenticated a composition.</td>
+        <td>
+          <a href="http://hl7.org/fhir/ValueSet/composition-attestation-mode" />
+        </td>
+      </tr>
+      <tr>
+        <td>HL7 HealthcareServiceLocation</td>
+        <td>NHSN healthcare service location code system</td>
+        <td>urn:oid:2.16.840.1.113883.6.259</td>
+      </tr>
+      <tr>
+        <td>HL7ActCode</td>
+        <td />
+        <td>
+          <a href="http://hl7.org/fhir/v3/ActCode" />
+        </td>
+      </tr>
+      <tr>
+        <td>HL7ObservationInterpretation</td>
+        <td />
+        <td>
+          <a href="http://hl7.org/fhir/v3/ObservationInterpretation" />
+        </td>
+      </tr>
+      <tr>
+        <td>LOINC</td>
+        <td>LOINC (Logical Observation Identifiers Names and Codes) was developed to provide a definitive standard for identifying clinical information in electronic reports. The LOINC database provides a set of universal names and ID codes for identifying laboratory and clinical test results in the context of existing HL7, ASTM E1238, and CEN TC251 observation report messages. One of the main goals of LOINC is to facilitate the exchange and pooling of results for clinical care, outcomes management, and research. LOINC codes are intended to identify the test result or clinical observation. Other fields in the message can transmit the identity of the source laboratory and special details about the sample.</td>
+        <td>
+          <a href="http://loinc.org" />
+        </td>
+      </tr>
+      <tr>
+        <td>SNOMED CT</td>
+        <td>SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by SNOMED International. 
+          SNOMED CT has been developed collaboratively to ensure it meets the diverse needs and expectations of clinicians worldwide and is now accepted as a common global language for health terms.
+          Patients and healthcare professionals benefit from improved health records, clinical decisions and analysis, leading to higher quality, consistency and safety in healthcare delivery.</td>
+        <td>
+          <a href=" http://snomed.info/sct" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

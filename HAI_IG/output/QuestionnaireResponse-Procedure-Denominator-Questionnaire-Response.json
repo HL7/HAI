@@ -1,0 +1,379 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "Procedure-Denominator-Questionnaire-Response",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire-response"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre> \n              This report responds to the Procedure Denominator Questionnaire.       \n            </pre>\n    </div>"
+  },
+  "questionnaire": {
+    "reference": "http://hl7.org/fhir/us/hai/Questionnaire/Procedure-Denominator-Questionnaire"
+  },
+  "status": "completed",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile",
+          "valueReference": {
+            "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"
+          }
+        }
+      ],
+      "linkId": "hai-patient",
+      "text": "Patient"
+    },
+    {
+      "linkId": "procedure-details",
+      "text": "Procedure Details",
+      "item": [
+        {
+          "linkId": "date-of-procedure",
+          "text": "Date of Procedure",
+          "answer": [
+            {
+              "valueDate": "2017-09-15"
+            }
+          ]
+        },
+        {
+          "linkId": "procedure-location",
+          "text": "Procedure Location",
+          "answer": [
+            {
+              "valueUri": "2.16.840.1.113883.3.117.1.1.5.1.1"
+            }
+          ]
+        },
+        {
+          "linkId": "facility-location",
+          "text": "NHSN Healthcare Service Location Code",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "urn:oid:2.16.840.1.113883.6.259",
+                "code": "1166-8",
+                "display": "Ambulatory Surgery Center"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "event-type",
+          "text": "Event Type",
+          "answer": [
+            {
+              "valueString": "PROC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "NHSN-procedure-code",
+      "text": "NHSN Procedure Code",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.13.17",
+            "code": "2108-9",
+            "display": "Appendix surgery"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "icd-10-or-cpt-code",
+      "text": "ICD-10-PCS or CPT Procedure Code",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://icd.codes",
+            "code": "0BDJ0ZZ",
+            "display": "Excision of Appendix, Open Approach"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "outpatient",
+      "text": "Outpatient",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "HL7 ActCode",
+            "code": "AMB",
+            "display": "Outpatient"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "procedure-duration",
+      "text": "Duration",
+      "answer": [
+        {
+          "valueTime": "01:30:00"
+        }
+      ]
+    },
+    {
+      "linkId": "general-anesthesia",
+      "text": "General Anesthesia Used?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "84451006",
+            "display": "General Anesthesia"
+          }
+        },
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "spinal-fusion",
+      "text": "Spinal Fusion Level Observed",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.13.11",
+            "code": "1102-3",
+            "display": "atlas-axis/cervical (C1-C7: any combination)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "closure-technique",
+      "text": "Surgical Closure Technique",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://www.snomed.info/sct",
+            "code": "112695004",
+            "display": "Surgical Closure"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "2.16.840.1.113883.6.277",
+            "code": "2406-7",
+            "display": "Primary"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "revision-associated-with-prior-infection",
+      "text": "Revision associated with prior infection at index joint",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "code": "1239-3",
+            "display": "Revision associated with prior infection at index joint"
+          }
+        },
+        {
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "linkId": "surgeon-code",
+      "text": "Surgeon",
+      "answer": [
+        {
+          "valueString": "987654"
+        }
+      ]
+    },
+    {
+      "linkId": "infection-risk-factors",
+      "text": "Risk Factors",
+      "item": [
+        {
+          "linkId": "procedure-risk-factors",
+          "text": "Number",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://www.loinc.org",
+                "code": "51898-5",
+                "display": "Risk Factors"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "emergency",
+              "text": "Emergency procedure",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://www.snomed.info/sct",
+                    "code": "373110003",
+                    "display": "Emergency procedure"
+                  }
+                },
+                {
+                  "valueBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "endoscope-used",
+              "text": "Endoscope Used",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://www.snomed.info/sct",
+                    "code": "423827005",
+                    "display": "Endoscope Used"
+                  }
+                },
+                {
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "linkId": "wound-class",
+              "text": "CDC Wound Classification Category",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://www.snomed.info/sct",
+                    "code": "420089007",
+                    "display": "CDC Wound Classification Category"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "418115006",
+                    "display": "CDC Wound Class II/Clean Contaminated"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "trauma",
+          "text": "Trauma?",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "417746004",
+                "display": "Trauma"
+              }
+            },
+            {
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "diabetes",
+          "text": "Diabetes Mellitus",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "73211009",
+                "display": "Diabetes Mellitus"
+              }
+            },
+            {
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org/",
+                "code": "[ft_i]",
+                "display": "Feet"
+              }
+            }
+          ],
+          "linkId": "height",
+          "text": "Height",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "50373000",
+                "display": "Body Height"
+              }
+            },
+            {
+              "valueQuantity": {
+                "value": 180,
+                "unit": "cm",
+                "system": "http://unitsofmeasure.org",
+                "code": "[cm]"
+              }
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org/",
+                "code": "[lb_av]",
+                "display": "Pounds"
+              }
+            }
+          ],
+          "linkId": "weight",
+          "text": "Body Weight",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "27113001",
+                "display": "Body Weight"
+              }
+            },
+            {
+              "valueQuantity": {
+                "value": 65,
+                "unit": "kg",
+                "system": "http://unitsofmeasure.org",
+                "code": "[kg]"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "asa-score",
+          "text": "NHSN ASA Class Code",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "413495001",
+                "display": "Normally healthy patient"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

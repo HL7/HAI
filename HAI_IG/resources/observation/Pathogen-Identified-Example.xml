@@ -1,108 +1,138 @@
-<Observation
-    xmlns="http://hl7.org/fhir">
-    <id value="Pathogen-Identified-Example"/>
-    <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2017-09-15T08:16:14Z"/>
-        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified"/>
-    </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-                <b> id</b>Pathogen-Identified-Example
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Pathogen-Identified-Example" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2017-09-15T08:16:14Z" />
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b> id</b>Pathogen-Identified-Example
+            
+            
+            
+            
             </p>
-            <p>
-                <b> status</b> : final
+      <p>
+        <b> status</b> : final
+            
+            
+            
+            
             </p>
-            <p>
-                <b> code</b> Blood culture 
+      <p>
+        <b> code</b> Blood culture 
+                
+                
+                
+                
                 <span> 
                     (Details :{LOINC code '41852-5' = 'Microorganism or agent identified'})</span>
-            </p>
-            <p>
-                <b> value</b> : Group B streptococcus
+      </p>
+      <p>
+        <b> value</b> : Group B streptococcus
+                
+                
+                
+                
                 
                 <span> (Details : {SNOMED CT code '43492007' = 'Group B streptococcus',})</span>
-            </p>
-            <blockquote>
-                <p>
-                    <b> component</b>
-                </p>
-                <p>
-                    <b> code</b> : Pathogen Ranking 
+      </p>
+      <blockquote>
+        <p>
+          <b> component</b>
+        </p>
+        <p>
+          <b> code</b> : Pathogen Ranking 
+                    
+                    
+                    
+                    
                     
                     <span> (Details : {LOINC code '?????' = 'Pathogen Ranking'})</span>
-                </p>
-                <p>
-                    <b> value</b> : First 
+        </p>
+        <p>
+          <b> value</b> : First 
+                    
+                    
+                    
+                    
                     
                     <span> (Details : {SNOMED CT code '255216001' = 'First'</span>
-                </p>
-            </blockquote>
-            <blockquote>
-                <p>
-                    <b> component</b>
-                </p>
-                <p>
-                    <b> code</b> Streptomycin Susc Islt 
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          <b> component</b>
+        </p>
+        <p>
+          <b> code</b> Streptomycin Susc Islt 
+                    
+                    
+                    
+                    
                     <span> (Details
                         : {LOINC code '18982-9' = 'Streptomycin Susc Islt'})</span>
-                </p>
-                <p>
-                    <b> value</b> : Susceptible 
+        </p>
+        <p>
+          <b> value</b> : Susceptible 
+                    
+                    
+                    
+                    
                     <span> (Details : {code 'S' =
                         'Susceptible'})</span>
-                </p>
-            </blockquote>
-        </div>
-    </text>
-    <status value="final"/>
+        </p>
+      </blockquote>
+    </div>
+  </text>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="41852-5" />
+      <display value="Microorganism or agent identified" />
+    </coding>
+  </code>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="43492007" />
+      <display value="Group B streptococcus" />
+    </coding>
+  </valueCodeableConcept>
+  <component>
     <code>
-        <coding>
-            <system value="http://loinc.org"/>
-            <code value="41852-5"/>
-            <display value="Microorganism or agent identified"/>
-        </coding>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="TEMP_LOINC_PATHOGEN_RANKING" />
+        <display value="Pathogen Ranking" />
+      </coding>
     </code>
     <valueCodeableConcept>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="43492007"/>
-            <display value="Group B streptococcus"/>
-        </coding>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="255216001" />
+        <display value="First" />
+      </coding>
     </valueCodeableConcept>
-    <component>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="TEMP_LOINC_PATHOGEN_RANKING"/>
-                <display value="Pathogen Ranking"/>
-            </coding>
-        </code>
-        <valueCodeableConcept>
-            <coding>
-                <system value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"/>
-                <code value="255216001"/>
-                <display value="First"/>
-            </coding>
-        </valueCodeableConcept>
-    </component>
-    <component>
-        <code>
-            <coding>
-                <system value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-tests-code"/>
-                <code value="18982-9"/>
-                <display value="Streptomycin Susc Islt"/>
-            </coding>
-        </code>
-        <interpretation>
-            <coding>
-                <system value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-drug-susceptibility-finding-code"/>
-                <code value="S"/>
-                <display value="Susceptible"/>
-            </coding>
-        </interpretation>
-    </component>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="18982-9" />
+        <display value="Streptomycin Susc Islt" />
+      </coding>
+    </code>
+    <interpretation>
+      <coding>
+        <system value="urn:oid: 2.16.840.1.113883.5.83" />
+        <code value="S" />
+        <display value="Susceptible" />
+      </coding>
+    </interpretation>
+  </component>
 </Observation>

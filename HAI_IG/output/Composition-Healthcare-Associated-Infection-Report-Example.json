@@ -23,29 +23,29 @@
       {
         "system": "http://loinc.org",
         "code": "51897-7",
-        "display": "Healthcare Associated Infection Report"
+        "display": "Healthcare Associated Infection report"
       }
     ]
   },
   "subject": {
-    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
+    "reference": "Patient/HAI-Patient-Example",
     "display": "Henry Jones"
   },
   "date": "2017-09-15T09:10:14Z",
   "author": [
     {
-      "reference": "Practitioner/practitioner-1",
+      "reference": "Practitioner/us-core-practitioner-example",
       "display": "Ronald Bone, MD"
     },
     {
-      "reference": "https://www.hl7.org/fhir/device-example-ihe-pcd.xml",
-      "display": "Vital Signs Monitor"
+      "reference": "Device/Endoscope-Example",
+      "display": "Endoscope Device"
     }
   ],
   "title": "Healthcare Associated Infection Report",
   "confidentiality": "N",
   "custodian": {
-    "reference": "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian",
+    "reference": "Organization/HAI-Custodian-Example",
     "display": "Community Health and Hospitals"
   }
 }

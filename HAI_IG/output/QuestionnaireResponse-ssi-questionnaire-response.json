@@ -1,12 +1,17 @@
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "ssi-questionnaire-response",
+  "id": "SSI-Questionnaire-Response",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire-response"
+    ]
+  },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre> \n              Response to the Surgical Site Infection Report Questionnaire\n          </pre>\n    </div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre>Response to the Surgical Site Infection Report Questionnaire</pre>\n    </div>"
   },
   "questionnaire": {
-    "reference": "http://hl7.org/fhir/us/hai/questionnaire/ssi-questionnaire"
+    "reference": "http://hl7.org/fhir/us/hai/Questionnaire/SSI-Questionnaire"
   },
   "status": "completed",
   "item": [
@@ -19,11 +24,11 @@
           }
         }
       ],
-      "linkId": "6706",
+      "linkId": "patient",
       "text": "Patient"
     },
     {
-      "linkId": "1",
+      "linkId": "date-of-event",
       "text": "Date of Event",
       "answer": [
         {
@@ -32,7 +37,7 @@
       ]
     },
     {
-      "linkId": "2",
+      "linkId": "nhsn-procedure-code",
       "text": "NHSN Procedure Code",
       "answer": [
         {
@@ -45,7 +50,7 @@
       ]
     },
     {
-      "linkId": "3",
+      "linkId": "icd-procedure-code",
       "text": "ICD-10-PCS or CPT Procedure Code",
       "answer": [
         {
@@ -58,7 +63,7 @@
       ]
     },
     {
-      "linkId": "4",
+      "linkId": "date-of-procedure",
       "text": "Date of Procedure",
       "answer": [
         {
@@ -67,7 +72,7 @@
       ]
     },
     {
-      "linkId": "5",
+      "linkId": "outpatient-procedure",
       "text": "Outpatient Procedure",
       "answer": [
         {
@@ -83,7 +88,7 @@
       ]
     },
     {
-      "linkId": "6",
+      "linkId": "mdro-infection-surveillance",
       "text": "MDRO Infection Surveillance",
       "answer": [
         {
@@ -92,7 +97,7 @@
       ]
     },
     {
-      "linkId": "7",
+      "linkId": "date-admitted-to-facility",
       "text": "Date Admitted to Facility",
       "answer": [
         {
@@ -101,8 +106,8 @@
       ]
     },
     {
-      "linkId": "8",
-      "text": "Location",
+      "linkId": "location-code",
+      "text": "Location Code",
       "answer": [
         {
           "valueCoding": {
@@ -114,60 +119,220 @@
       ]
     },
     {
-      "linkId": "9392",
-      "text": "Pathogen",
+      "linkId": "specific-event",
+      "text": "Specific Event",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "code": "1602-2",
+            "display": "Myocarditis/pericard"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "infection-present-at-time-of-surgery",
+      "text": "Infection Present at Time of Surgery (PATOS)",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "criteria-used",
+      "text": "Specify Criteria Used (check all that apply)",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "128477000",
+            "display": "Abcess"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "criteria-used",
+      "text": "Specify Criteria Used (check all that apply)",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "1023001",
+            "display": "Apnea"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "criteria-used",
+      "text": "Specify Criteria Used (check all that apply)",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "code": "1902-6",
+            "display": "Blood Culture Not Done"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "criteria-used",
+      "text": "Specify Criteria Used (check all that apply)",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "48867003",
+            "display": "Bradycardia"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "criteria-used",
+      "text": "Specify Criteria Used (check all that apply)",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "49727002",
+            "display": "Cough"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "criteria-used",
+      "text": "Specify Criteria Used (check all that apply)",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "49650001",
+            "display": "Dysuria"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "when-detected",
+      "text": "When Detected",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "code": "1510-7",
+            "display": "During Admission (stay)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "secondary-bsi",
+      "text": "Secondary Bloodstream Infection",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "died",
+      "text": "Died",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "ssi-contributed-to-death",
+      "text": "SSI Contributed to Death",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "date-discharged-from-facility",
+      "text": "Date Discharged From Facility:",
+      "answer": [
+        {
+          "valueDate": "2008-09-01"
+        }
+      ]
+    },
+    {
+      "linkId": "pathogens-identified",
+      "text": "Pathogens Identified",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "findings-group",
+      "text": "Findings Group",
       "item": [
         {
-          "linkId": "3745",
-          "text": "Number",
+          "linkId": "pathogen-identified",
+          "text": "Pathogen Identified",
           "answer": [
             {
-              "valueInteger": 1
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "43492007",
+                "display": "Group B streptococcus"
+              }
             }
-          ],
+          ]
+        },
+        {
+          "linkId": "pathogen-ranking",
+          "text": "Pathogen Ranking",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://snomed.info/sct",
+                "code": "255216001",
+                "display": "First"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "drug-susceptibility-test-group",
+          "text": "Drug Susceptibility Test Group",
           "item": [
             {
-              "linkId": "3139",
-              "text": "NHSN Pathogen",
+              "linkId": "drug-susceptibility-test",
+              "text": "Drug Susceptibility Test",
               "answer": [
                 {
                   "valueCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "43492007",
-                    "display": "Group B streptococcus"
+                    "system": "https://loinc.org/",
+                    "code": "18982-9",
+                    "display": "Streptomycin Susc Islt"
                   }
                 }
               ]
             },
             {
-              "linkId": "4656",
-              "text": "Susceptibility Group",
-              "item": [
+              "linkId": "drug-susceptibility-finding",
+              "text": "Drug Susceptibility Finding",
+              "answer": [
                 {
-                  "linkId": "6192",
-                  "text": "NHSN Drug Susceptibility Test",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "https://loinc.org/",
-                        "code": "18982-9",
-                        "display": "Streptomycin Susc Islt"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "linkId": "8204",
-                  "text": "NHSN Drug Susceptibility Finding",
-                  "answer": [
-                    {
-                      "valueCoding": {
-                        "system": "https://www.hl7.org/fhir/valueset-observation-interpretation.html",
-                        "code": "S",
-                        "display": "Susceptible"
-                      }
-                    }
-                  ]
+                  "valueCoding": {
+                    "system": "https://www.hl7.org/fhir/valueset-observation-interpretation.html",
+                    "code": "S",
+                    "display": "Susceptible"
+                  }
                 }
               ]
             }

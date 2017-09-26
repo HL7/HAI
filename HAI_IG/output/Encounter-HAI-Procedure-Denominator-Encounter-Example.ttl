@@ -19,7 +19,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>status</b>: FINISHED</p><p><b>class</b>: Outpatient (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'ambulatory', stated as 'Outpatient')</p><p><b>type</b>: Surgical service <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '310138009' = 'Surgical service', given as 'Surgical service'})</span></p><p><b>period</b>: 15/09/2017 --&gt; 15/09/2017</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility\">http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>status</b>: FINISHED</p><p><b>class</b>: Outpatient (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'ambulatory', stated as 'Outpatient')</p><p><b>type</b>: Surgical service <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '310138009' = 'Surgical service', given as 'Surgical service'})</span></p><p><b>period</b>: 15/09/2017 --&gt; 15/09/2017</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"Location-HAI-Healthcare-Facility-Example.html\">Community Health and Hospitals, South Wing, second\n            floor, Orthopaedic Operation Room 1 \n        Generated Summary: id: HAI-Healthcare-Facility-Example; 1.2; <span title=\"Codes: {urn:oid:2.16.840.1.113883.6.259 1243-5}\">Ambulatory Surgery Center</span></a></td></tr></table></div>"
   ];
   fhir:Encounter.status [ fhir:value "finished"];
   fhir:Encounter.class [
@@ -44,12 +44,12 @@
   fhir:Encounter.location [
      fhir:index 0;
      fhir:Encounter.location.location [
-       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility>;
-       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility" ]
+       fhir:link <http://hl7.org/fhir/us/hai/Location/HAI-Healthcare-Facility-Example>;
+       fhir:Reference.reference [ fhir:value "Location/HAI-Healthcare-Facility-Example" ]
      ]
   ] .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility> a fhir:us .
+<http://hl7.org/fhir/us/hai/Location/HAI-Healthcare-Facility-Example> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

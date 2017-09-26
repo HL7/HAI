@@ -81,11 +81,11 @@
       <short
         value="medicationCodeableConcept" />
       <definition
-        value="medicationCodeableConcept=&quot;84451006&quot; General Anesthesia (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-194)" />
+        value="medicationCodeableConcept=&quot;84451006&quot; General Anesthesia (CodeSystem: SNOMED CT http://snomed.info/sct) (CONF:3347-194)" />
       <patternCodeableConcept>
         <coding>
           <system
-            value="urn:oid:2.16.840.1.113883.6.96" />
+            value="http://snomed.info/sct" />
           <code
             value="84451006" />
         </coding>

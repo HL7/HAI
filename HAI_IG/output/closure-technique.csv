@@ -46,9 +46,9 @@ This element is labeled as a modifier because it indicates that a procedure didn
 ","Reason procedure was not performed","A code indicating why the procedure was not performed.","","","","","","","","","",,"example","A code that identifies the reason a procedure was not performed.","http://hl7.org/fhir/ValueSet/procedure-not-performed-reason","",,,,"Procedure.notDoneReason",0,1,"pro-1
 ","",".reason.Observation.value"
 "Procedure.category","","","",1,1,"","","Y","CodeableConcept
-","category","SHALL contain exactly one [1..1] category=""112695004"" Closure (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-201).","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","category","SHALL contain exactly one [1..1] category=""112695004"" Closure (CodeSystem: SNOMED CT http://snomed.info/sct) (CONF:3347-201).","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""urn:oid:2.16.840.1.113883.6.96""/>
+    <system value=""http://snomed.info/sct""/>
     <code value=""112695004""/>
   </coding>
 </valueCodeableConcept>","","","","",,"example","A code that classifies a procedure for searching, sorting and display purposes.","http://hl7.org/fhir/ValueSet/procedure-category","",,,,"Procedure.category",0,1,"","",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","class"

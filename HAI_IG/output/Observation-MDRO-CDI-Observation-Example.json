@@ -10,7 +10,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n                <b> id</b>MDRO-CDI-Observation-Example\n            \n            </p>\n            <p>\n                <b> status</b> : final\n            \n            </p>\n            <p>\n                <b> code</b> : Blood culture \n                \n                \n                <span> (Details :{cdcNHSN code '2318-4' = 'MDRO Organism or C.difficile Infection'})</span>\n            </p>\n            <p>\n                <b> value</b> : true\n            \n            </p>\n        </div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <p>\n                <b> id</b>MDRO-CDI-Observation-Example\n            \n            \n            </p>\n            <p>\n                <b> status</b> : final\n            \n            \n            </p>\n            <p>\n                <b> code</b> : Blood culture \n                \n                \n                \n                <span> (Details :{cdcNHSN code '2318-4' = 'MDRO Organism or C.difficile Infection'})</span>\n            </p>\n            <p>\n                <b> value</b> : true\n            \n            \n            </p>\n        </div>"
   },
   "status": "final",
   "code": {

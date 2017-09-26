@@ -39,35 +39,28 @@
        a loinc:51897-7;
        <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;51897-7&quot; ];
-       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Healthcare Associated Infection Report&quot; ]     ]
+       <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Healthcare Associated Infection report&quot; ]     ]
   ];
   <a href="http://hl7.org/fhir/STU3/composition.html#Composition.subject">fhir:Composition.subject</a> [
-     <a href="http://hl7.org/fhir/STU3/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient&gt;;
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient&quot; ];
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Patient/HAI-Patient-Example&quot; ];
      <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Henry Jones&quot; ]
   ];
   <a href="http://hl7.org/fhir/STU3/composition.html#Composition.date">fhir:Composition.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2017-09-15T09:10:14Z&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/STU3/composition.html#Composition.author">fhir:Composition.author</a> [
      <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Practitioner/practitioner-1&quot; ];
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Practitioner/us-core-practitioner-example&quot; ];
      <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Ronald Bone, MD&quot; ]
   ], [
      <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
-     <a href="http://hl7.org/fhir/STU3/rdf.html#reference">fhir:link</a> &lt;https://www.hl7.org/fhir/device-example-ihe-pcd.xml&gt;;
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;https://www.hl7.org/fhir/device-example-ihe-pcd.xml&quot; ];
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Vital Signs Monitor&quot; ]
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Device/Endoscope-Example&quot; ];
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Endoscope Device&quot; ]
   ];
   <a href="http://hl7.org/fhir/STU3/composition.html#Composition.title">fhir:Composition.title</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Healthcare Associated Infection Report&quot;];
   <a href="http://hl7.org/fhir/STU3/composition.html#Composition.confidentiality">fhir:Composition.confidentiality</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;N&quot;];
   <a href="http://hl7.org/fhir/STU3/composition.html#Composition.custodian">fhir:Composition.custodian</a> [
-     <a href="http://hl7.org/fhir/STU3/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian&gt;;
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian&quot; ];
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Organization/HAI-Custodian-Example&quot; ];
      <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;Community Health and Hospitals&quot; ]
   ].
-
-&lt;http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient&gt; a fhir:us.
-
-&lt;http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian&gt; a fhir:us.
 
 # - ontology header ------------------------------------------------------------
 

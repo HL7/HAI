@@ -1,0 +1,22 @@
+{
+  "resourceType": "Device",
+  "id": "Endoscope-Example",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/hai/StructureDefinition/endoscope"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>type</b>: Endoscope, Device <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '37270008' = 'Endoscope, device', given as 'Endoscope, Device'})</span></p></div>"
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "37270008",
+        "display": "Endoscope, Device"
+      }
+    ]
+  }
+}

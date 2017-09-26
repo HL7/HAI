@@ -12,7 +12,7 @@
   <compose>
     <include>
       <system
-        value="urn:oid:2.16.840.1.113883.6.96" />
+        value="http://snomed.info/sct" />
       <concept>
         <code
           value="2707005" />

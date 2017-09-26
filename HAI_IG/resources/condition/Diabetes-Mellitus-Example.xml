@@ -34,7 +34,7 @@
         </coding>
     </code>
     <subject>
-        <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+        <reference value="Patient/HAI-Patient-Example"/>
         <display value="Henry Seven"/>
     </subject>
     <onsetDateTime value="2017-09-15"/>

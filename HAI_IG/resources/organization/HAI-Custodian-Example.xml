@@ -1,0 +1,28 @@
+<Organization
+    xmlns="http://hl7.org/fhir">
+    <id value="HAI-Custodian-Example"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="123456"/>
+    </identifier>
+    <active value="true"/>
+    <name value="Community Health and Hospitals"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="(+1) 555-555-1002"/>
+    </telecom>
+    <telecom>
+        <system value="fax"/>
+        <value value="(+1) 555-555-1005"/>
+    </telecom>
+    <address>
+        <line value="1002 Healthcare Drive"/>
+        <city value="Portland"/>
+        <state value="OR"/>
+        <postalCode value="99123"/>
+        <country value="USA"/>
+    </address>
+</Organization>

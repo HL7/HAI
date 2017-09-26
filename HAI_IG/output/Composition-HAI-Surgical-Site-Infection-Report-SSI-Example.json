@@ -28,23 +28,23 @@
     ]
   },
   "subject": {
-    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient",
-    "display": "Henry Jones"
+    "reference": "Patient/HAI-Patient-Example",
+    "display": "Henry Seven"
   },
   "encounter": {
-    "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/hai-ssi-encounter"
+    "reference": "Encounter/HAI-SSI-Encounter-Example"
   },
   "date": "2017-09-15T09:10:14Z",
   "author": [
     {
-      "reference": "Practitioner/practitioner-1",
+      "reference": "Practitioner/us-core-practitioner-example",
       "display": "Ronald Bone, MD"
     }
   ],
   "title": "Healthcare Associated Infection Report - SSI",
   "confidentiality": "N",
   "custodian": {
-    "reference": "http://hl7.org/fhir/us/HAI/StructureDefinition/hai-custodian",
+    "reference": "Organization/HAI-Custodian-Example",
     "display": "Community Health and Hospitals"
   },
   "section": [
@@ -81,10 +81,10 @@
       },
       "entry": [
         {
-          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/pathogen-identified"
+          "reference": "Observation/Pathogen-Identified-Example"
         },
         {
-          "reference": "http://hl7.org/fhir/us/hai/StructureDefinition/mdro-cdi-observation"
+          "reference": "Observation/MDRO-CDI-Observation-Example"
         }
       ]
     }

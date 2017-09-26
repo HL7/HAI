@@ -9,7 +9,8 @@
     <text>
         <status value="generated"/>
         <div
-            xmlns="http://www.w3.org/1999/xhtml">Community Health and Hospitals, South Wing, second floor, Orthopaedic Operation Room 1
+            xmlns="http://www.w3.org/1999/xhtml">Community Health and Hospitals, South Wing, second
+            floor, Orthopaedic Operation Room 1 
         </div>
     </text>
     <identifier>
@@ -18,12 +19,9 @@
     </identifier>
     <type>
         <coding>
-            <system value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code"/>
-            <code value="1166-8"/>
+            <system value="urn:oid:2.16.840.1.113883.6.259"/>
+            <code value="1243-5"/>
             <display value="Ambulatory Surgery Center"/>
         </coding>
     </type>
-    <partOf>
-        <reference value="Location/1"/>
-    </partOf>
-</Location> 
+</Location>

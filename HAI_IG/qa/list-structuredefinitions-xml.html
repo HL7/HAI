@@ -20,7 +20,7 @@ Key encounter data:
 Other dates and locations:
      The date of the infection is recorded as effectiveTime in the Infection-Type Observation.
 Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in an Infection-Type Report. NHSN uses this to establish a link between Procedure and SSI Reports. </li>
- <li><a href="StructureDefinition-hai-procedure-denominator-report.xml.html">HAI Procedure Denominator Report</a> This report records a procedure performed. 
+ <li><a href="StructureDefinition-hai-procedure-denominator-report.xml.html">HAI Procedure Denominator Report Test</a> This report records a procedure performed. 
 
 Preferred document title:  Denominator for Procedure Report
 
@@ -37,7 +37,6 @@ Other dates and locations:
      The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).
 
 Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports</li>
- <li><a href="StructureDefinition-hai-ssi-report-questionnaire-bundle.xml.html">HAI SSI Report Questionnaire Bundle</a> This bundle groups the resources used in the HAI SSI Report Questionnaire.</li>
  <li><a href="StructureDefinition-endoscope.xml.html">Endoscope</a> This profile represents an endoscope device.</li>
  <li><a href="StructureDefinition-endoscope-used-statement.xml.html">Endoscope Used Statement</a> This profile records whether an endoscope was used.</li>
  <li><a href="StructureDefinition-hai-procedure-denominator-encounter.xml.html">HAI Procedure Denominator Encounter</a> Key encounter data:
@@ -55,7 +54,7 @@ Other notes: The procedure id is recorded in the Procedure Details Clinical Stat
  <li><a href="StructureDefinition-procedure-risk-factors.xml.html">Procedure Risk Factors</a> This profile records the detail required in a Procedure Report about the circumstances in which a procedure was performed.</li>
  <li><a href="StructureDefinition-hai-healthcare-facility.xml.html">HAI Healthcare Facility</a> This profile records location information such as the facility id. The facility ID is an NHSN assigned faciltiy OID and if there is an extension it must be a value registered with NHSN. </li>
  <li><a href="StructureDefinition-anesthesia-delivered.xml.html">Anesthesia Delivered</a> This profile reports whether anesthesia was administered.</li>
- <li><a href="StructureDefinition-duration-of-labor.xml.html">Duration of Labor </a> This observation records the duration of labor in value/width. NHSN protocol requires that the duration be expressed as an integer.</li>
+ <li><a href="StructureDefinition-duration-of-labor.xml.html">Duration of Labor</a> This observation records the duration of labor in value/width. NHSN protocol requires that the duration be expressed as an integer.</li>
  <li><a href="StructureDefinition-height-observation.xml.html">Height Observation</a> This observation records a body height.</li>
  <li><a href="StructureDefinition-mdro-cdi-observation.xml.html">MDRO/CDI Observation</a> This observation records whether the primary infection being reported was caused by a multi-drug-resistant organism (MDRO). It is a general or summary observation not associated with any individual pathogen in the Findings Section.
 
@@ -74,8 +73,7 @@ Each Pathogen Identified profile represents a set of information concerning a si
      The patient name is optional; consult the NHSN reporting protocol and requirements. *TODO** - this is required for US Core Patient
      Patient gender and birthdate are required.</li>
  <li><a href="StructureDefinition-asa-class.xml.html">ASA Class</a> This profile records the patients physical status using the American Society of Anesthesiologists (ASA) Class Codes. The SNOMED CT representation of ASA Class Codes includes a sixth value (413500003 ASA physical status class 6 for brain-dead patients taken to the operating room to remove organs for transplant). This sixth value is not part of the value set allowed in a submission to NHSN.</li>
- <li><a href="StructureDefinition-diabetes-melllitus.xml.html">Diabetes Mellitus</a> This profile records whether the person had diabetes mellitus.
-</li>
+ <li><a href="StructureDefinition-diabetes-mellitus.xml.html">Diabetes Mellitus</a> This profile records whether the person had diabetes mellitus.</li>
  <li><a href="StructureDefinition-infection-condition.xml.html">Infection Condition</a> This profile records the infection condition being reported.</li>
  <li><a href="StructureDefinition-trauma-observation.xml.html">Trauma Observation</a> This observation records whether the person had trauma. It is used in reporting the circumstances of a procedure.</li>
  <li><a href="StructureDefinition-wound-class.xml.html">Wound Class</a> NHSN patient safety protocol on this topic is an adaptation of (not a change to) the American College of Surgeons (ACoS) definitions, which are the definitions used by SNOMED. Thus, SNOMED wound-class codes are appropriate for use with this observation.</li>
@@ -83,5 +81,7 @@ Each Pathogen Identified profile represents a set of information concerning a si
  <li><a href="StructureDefinition-procedure-details.xml.html">Procedure Details</a> This profile records the detail required in a Procedure Report about a procedure.
 
 NHSN uses the procedure id, along with other data, to establish a link between a Procedure Report and an SSI Report; the value of the procedure id must be the same in both the report of a procedure and the report of a surgical-site infection resulting from that procedure. In this profile, the priority code represents the main or primary procedure for the patient in the context of this report.</li>
+ <li><a href="StructureDefinition-hai-report-questionnaire.xml.html">Healthcare Associated Infection Report Questionnaire</a> This profile represents the HAI Surgical Site Infection Report (SSI) as a FHIR Questionnaire.</li>
+ <li><a href="StructureDefinition-hai-report-questionnaire-response.xml.html">Healthcare Associated Infection Report QuestionnaireResponse</a> This profile represents the Healthcare Associated Infection Report as a FHIR QuestionnaireResponse.</li>
 </body>
 </html>

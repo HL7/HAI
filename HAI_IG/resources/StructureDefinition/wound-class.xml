@@ -45,7 +45,7 @@
       <path value="Condition.code" />
       <short value="code" />
       <definition
-        value="SHALL contain exactly one [1..1] code=&quot;420089007&quot; CDC Wound Classification Category (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:3347-231)." />
+        value="SHALL contain exactly one [1..1] code=&quot;420089007&quot; CDC Wound Classification Category (CodeSystem: SNOMED CT http://snomed.info/sct) (CONF:3347-231)." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -53,7 +53,7 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="urn:oid:2.16.840.1.113883.6.96" />
+          <system value="http://snomed.info/sct" />
           <code value="420089007" />
         </coding>
       </patternCodeableConcept>

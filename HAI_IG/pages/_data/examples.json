@@ -19,7 +19,7 @@
     "examples": [
       {
         "type": "Patient",
-        "id": "example"
+        "id": "Example"
       }
     ]
   },
@@ -27,7 +27,7 @@
     "examples": [
       {
         "type": "Organization",
-        "id": "hl7"
+        "id": "HL7"
       }
     ]
   },
@@ -108,6 +108,30 @@
       {
         "type": "Condition",
         "id": "Diabetes-Mellitus-Example"
+      }
+    ]
+  },
+  "hai-report-questionnaire": {
+    "examples": [
+      {
+        "type": "Questionnaire",
+        "id": "SSI-Questionnaire"
+      },
+      {
+        "type": "Questionnaire",
+        "id": "Procedure-Denominator-Questionnaire"
+      }
+    ]
+  },
+  "hai-report-questionnaire-response": {
+    "examples": [
+      {
+        "type": "QuestionnaireResponse",
+        "id": "SSI-Questionnaire-Response"
+      },
+      {
+        "type": "QuestionnaireResponse",
+        "id": "Procedure-Denominator-Questionnaire-Response"
       }
     ]
   }

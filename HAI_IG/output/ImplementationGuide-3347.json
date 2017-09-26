@@ -68,19 +68,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-hai-ssi-report-questionnaire-bundle.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "StructureDefinition/hai-ssi-report-questionnaire-bundle",
-            "display": "HAI SSI Report Questionnaire Bundle"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "StructureDefinition-endoscope.html"
             }
           ],
@@ -354,12 +341,12 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-diabetes-melllitus.html"
+              "valueUri": "StructureDefinition-diabetes-mellitus.html"
             }
           ],
           "example": false,
           "sourceReference": {
-            "reference": "StructureDefinition/diabetes-melllitus",
+            "reference": "StructureDefinition/diabetes-mellitus",
             "display": "Diabetes Mellitus"
           }
         },
@@ -426,6 +413,32 @@
           "sourceReference": {
             "reference": "StructureDefinition/procedure-details",
             "display": "Procedure Details"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-report-questionnaire.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-report-questionnaire",
+            "display": "hai-report-questionnaire.xml"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-hai-report-questionnaire-response.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/hai-report-questionnaire-response",
+            "display": "hai-report-questionnaire-response.xml"
           }
         },
         {
@@ -627,32 +640,6 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Questionnaire-ssi-questionnaire.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "Questionnaire/ssi-questionnaire",
-            "display": "ssi-questionnaire.xml"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "QuestionnaireResponse-ssi-questionnaire-response.html"
-            }
-          ],
-          "example": false,
-          "sourceReference": {
-            "reference": "QuestionnaireResponse/ssi-questionnaire-response",
-            "display": "ssi-questionnaire-response.xml"
-          }
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "Composition-HAI-Procedure-Denominator-Report-Example.html"
             }
           ],
@@ -747,7 +734,7 @@
             "display": "Diabetes-Mellitus-Example"
           },
           "exampleFor": {
-            "reference": "StructureDefinition/diabetes-melllitus",
+            "reference": "StructureDefinition/diabetes-mellitus",
             "display": "Diabetes Mellitus"
           }
         },
@@ -811,7 +798,8 @@
           ],
           "example": true,
           "sourceReference": {
-            "reference": "Location/HAI-Healthcare-Facility-Example"
+            "reference": "Location/HAI-Healthcare-Facility-Example",
+            "display": "HAI Healthcare Facility Example"
           },
           "exampleFor": {
             "reference": "StructureDefinition/hai-healthcare-facility",
@@ -856,13 +844,13 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Organization-hl7.html"
+              "valueUri": "Organization-HAI-Custodian-Example.html"
             }
           ],
           "example": true,
           "sourceReference": {
-            "reference": "Organization/hl7",
-            "display": "Community Health and Hospitals"
+            "reference": "Organization/HAI-Custodian-Example",
+            "display": "HAI-Custodian-Example"
           },
           "exampleFor": {
             "reference": "StructureDefinition/hai-custodian",
@@ -873,17 +861,102 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Patient-example.html"
+              "valueUri": "Patient-HAI-Patient-Example.html"
             }
           ],
           "example": true,
           "sourceReference": {
-            "reference": "Patient/example",
-            "display": "U.S._DAF_Patient_Profile_Example"
+            "reference": "Patient/HAI-Patient-Example",
+            "display": "Henry Seven"
           },
           "exampleFor": {
             "reference": "StructureDefinition/hai-patient",
             "display": "HAI Patient"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Device-Endoscope-Example.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Device/Endoscope-Example",
+            "display": "Endoscope"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/endoscope",
+            "display": "Endoscope"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Questionnaire-SSI-Questionnaire.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Questionnaire/SSI-Questionnaire",
+            "display": "Surgical Site Infection Questionnaire"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-report-questionnaire",
+            "display": "Healthcare Associated Infection Report Questionnaire"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Questionnaire-Procedure-Denominator-Questionnaire.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "Questionnaire/Procedure-Denominator-Questionnaire",
+            "display": "Procedure Denominator Questionnaire"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-report-questionnaire",
+            "display": "Healthcare Associated Infection Report Questionnaire"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-SSI-Questionnaire-Response.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/SSI-Questionnaire-Response",
+            "display": "Surgical Site Infection Questionnaire Response"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-report-questionnaire-response",
+            "display": "Healthcare Associated Infection Report Questionnaire Response"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "QuestionnaireResponse-Procedure-Denominator-Questionnaire-Response.html"
+            }
+          ],
+          "example": true,
+          "sourceReference": {
+            "reference": "QuestionnaireResponse/Procedure-Denominator-Questionnaire-Response",
+            "display": "Procedure Denominator Questionnaire Response"
+          },
+          "exampleFor": {
+            "reference": "StructureDefinition/hai-report-questionnaire-response",
+            "display": "Healthcare Associated Infection Report Questionnaire Response"
           }
         }
       ]

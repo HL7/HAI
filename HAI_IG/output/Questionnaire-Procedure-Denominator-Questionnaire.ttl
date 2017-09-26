@@ -1,0 +1,1614 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/Questionnaire/Procedure-Denominator-Questionnaire> a fhir:Questionnaire;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Procedure-Denominator-Questionnaire"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>version</b>: R3D3</p><p><b>title</b>: Denominator-for-Procedure</p><p><b>status</b>: DRAFT</p><p><b>date</b>: 13/09/2017</p><p><b>publisher</b>: NHSN</p><p><b>jurisdiction</b>: United States Minor Outlying Islands (the) <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States Minor Outlying Islands (the))</span></p><p><b>description</b>: This report records a procedure performed.         Preferred document title:  “Denominator for Procedure Report”         Key encounter data:                  •  The encounter type (inpatient or outpatient) is required.         •  If the patient was an inpatient, a value for admission date is required.         •  The facility id is required. Unit identifier and unit type are not reported.                  Other dates and locations:         •  The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).                  Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports.</p><p><b>identifier</b>: FHIR Procedure Denominator - Questionnaire</p><p><b>version</b>: R3D3</p><p><b>title</b>: Denominator-for-Procedure</p><p><b>status</b>: DRAFT</p><p><b>date</b>: 13/09/2017</p><p><b>publisher</b>: NHSN</p><p><b>description</b>: This report records a procedure performed.         Preferred document title:  “Denominator for Procedure Report”         Key encounter data:                  •  The encounter type (inpatient or outpatient) is required.         •  If the patient was an inpatient, a value for admission date is required.         •  The facility id is required. Unit identifier and unit type are not reported.                  Other dates and locations:         •  The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).                  Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports.</p><p><b>jurisdiction</b>: United States Minor Outlying Islands (the) <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States Minor Outlying Islands (the))</span></p><p><b>code</b>: Healthcare Associated Infection Report (Details: http://loinc.org/ code 51897-7 = '51897-7', stated as 'Healthcare Associated Infection Report')</p><p><b>subjectType</b>: Patient</p><blockquote><p><b>item</b></p><p><b>linkId</b>: hai-patient</p><p><b>type</b>: REFERENCE</p><p><b>required</b>: true</p><p><b>repeats</b>: false</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: procedure-details</p><p><b>code</b>: Details (Details: http://www.loing.org code 51899-3 = '51899-3', stated as 'Details')</p><p><b>text</b>: Procedure Details</p><p><b>type</b>: GROUP</p><p><b>required</b>: true</p><p><b>repeats</b>: false</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td><td><b>LinkId</b></td><td><b>Code</b></td><td><b>Text</b></td><td><b>Type</b></td><td><b>Required</b></td><td><b>Repeats</b></td><td><b>Options</b></td><td><b>LinkId</b></td><td><b>Code</b></td><td><b>Text</b></td><td><b>Type</b></td><td><b>Required</b></td><td><b>Repeats</b></td><td><b>Options</b></td><td><b>LinkId</b></td><td><b>Code</b></td><td><b>Text</b></td><td><b>Type</b></td><td><b>Required</b></td><td><b>Repeats</b></td><td><b>Options</b></td></tr><tr><td>*</td><td>date-of-procdure</td><td> </td><td>Date of Procedure</td><td>DATE</td><td>true</td><td>false</td><td> </td><td>date-of-procdure</td><td> </td><td>Date of Procedure</td><td>DATE</td><td>true</td><td>false</td><td> </td><td>date-of-procdure</td><td> </td><td>Date of Procedure</td><td>DATE</td><td>true</td><td>false</td><td> </td></tr><tr><td>*</td><td>procedure-location</td><td> </td><td>Procedure Location</td><td>URL</td><td>true</td><td>false</td><td> </td><td>procedure-location</td><td> </td><td>Procedure Location</td><td>URL</td><td>true</td><td>false</td><td> </td><td>procedure-location</td><td> </td><td>Procedure Location</td><td>URL</td><td>true</td><td>false</td><td> </td></tr><tr><td>*</td><td>facility-location</td><td> </td><td>Facility Location</td><td>CHOICE</td><td>false</td><td>false</td><td>NHSN Healthcare Service Location Code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</td><td>facility-location</td><td> </td><td>Facility Location</td><td>CHOICE</td><td>false</td><td>false</td><td>NHSN Healthcare Service Location Code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</td><td>facility-location</td><td> </td><td>Facility Location</td><td>CHOICE</td><td>false</td><td>false</td><td>NHSN Healthcare Service Location Code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code; name: NHSNHealthcareServiceLocationCode; ACTIVE; description: A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</td></tr><tr><td>*</td><td>event-type</td><td> </td><td>Event Type: PROC</td><td>CHOICE</td><td>false</td><td>false</td><td> </td><td>event-type</td><td> </td><td>Event Type: PROC</td><td>CHOICE</td><td>false</td><td>false</td><td> </td><td>event-type</td><td> </td><td>Event Type: PROC</td><td>CHOICE</td><td>false</td><td>false</td><td> </td></tr><tr><td>*</td><td>NHSN-procdure-code</td><td> </td><td>NHSN Procedure Code</td><td>CHOICE</td><td>true</td><td>false</td><td>NHSN Procedure Category Code. Generated Summary: url: urn:oid:2.16.840.1.113883.13.17; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277 NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.; url: urn:oid:2.16.840.1.113883.13.17; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277 NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.</td><td>NHSN-procdure-code</td><td> </td><td>NHSN Procedure Code</td><td>CHOICE</td><td>true</td><td>false</td><td>NHSN Procedure Category Code. Generated Summary: url: urn:oid:2.16.840.1.113883.13.17; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277 NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.; url: urn:oid:2.16.840.1.113883.13.17; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277 NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.</td><td>NHSN-procdure-code</td><td> </td><td>NHSN Procedure Code</td><td>CHOICE</td><td>true</td><td>false</td><td>NHSN Procedure Category Code. Generated Summary: url: urn:oid:2.16.840.1.113883.13.17; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277 NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.; url: urn:oid:2.16.840.1.113883.13.17; name: NHSNProcedureCategoryCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277 NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package.</td></tr><tr><td>*</td><td>icd-10-or-cpt-code</td><td> </td><td>ICD-10-PCS or CPT Procedure Code</td><td>CHOICE</td><td>false</td><td>false</td><td> </td><td>icd-10-or-cpt-code</td><td> </td><td>ICD-10-PCS or CPT Procedure Code</td><td>CHOICE</td><td>false</td><td>false</td><td> </td><td>icd-10-or-cpt-code</td><td> </td><td>ICD-10-PCS or CPT Procedure Code</td><td>CHOICE</td><td>false</td><td>false</td><td> </td></tr><tr><td>*</td><td>outpatient</td><td> </td><td>Outpatient</td><td>CHOICE</td><td>true</td><td>false</td><td>nhsn-encounter-type-code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</td><td>outpatient</td><td> </td><td>Outpatient</td><td>CHOICE</td><td>true</td><td>false</td><td>nhsn-encounter-type-code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</td><td>outpatient</td><td> </td><td>Outpatient</td><td>CHOICE</td><td>true</td><td>false</td><td>nhsn-encounter-type-code. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code; name: NHSNEncounterTypeCode; ACTIVE; description: Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</td></tr><tr><td>*</td><td>procedure-duration</td><td> </td><td>Duration</td><td>TIME</td><td>true</td><td>false</td><td> </td><td>procedure-duration</td><td> </td><td>Duration</td><td>TIME</td><td>true</td><td>false</td><td> </td><td>procedure-duration</td><td> </td><td>Duration</td><td>TIME</td><td>true</td><td>false</td><td> </td></tr><tr><td>*</td><td>general-anesthesia</td><td>General Anesthesia (Details: SNOMED CT code 84451006 = 'General anesthetic (product)', stated as 'General Anesthesia')</td><td>General Anesthesia used?</td><td>BOOLEAN</td><td>true</td><td>false</td><td> </td><td>general-anesthesia</td><td>General Anesthesia (Details: SNOMED CT code 84451006 = 'General anesthetic (product)', stated as 'General Anesthesia')</td><td>General Anesthesia used?</td><td>BOOLEAN</td><td>true</td><td>false</td><td> </td><td>general-anesthesia</td><td>General Anesthesia (Details: SNOMED CT code 84451006 = 'General anesthetic (product)', stated as 'General Anesthesia')</td><td>General Anesthesia used?</td><td>BOOLEAN</td><td>true</td><td>false</td><td> </td></tr><tr><td>*</td><td>spinal-fusion</td><td> </td><td>Spinal Fusion Level Observed</td><td>CHOICE</td><td>false</td><td>false</td><td>Spinal Fusion Level Code</td><td>spinal-fusion</td><td> </td><td>Spinal Fusion Level Observed</td><td>CHOICE</td><td>false</td><td>false</td><td>Spinal Fusion Level Code</td><td>spinal-fusion</td><td> </td><td>Spinal Fusion Level Observed</td><td>CHOICE</td><td>false</td><td>false</td><td>Spinal Fusion Level Code</td></tr><tr><td>*</td><td>closure-technique</td><td>Surgical Closure (Details: http://www.snomed.info/sct code 112695004 = '112695004', stated as 'Surgical Closure')</td><td>Surgical Closure Technique</td><td>CHOICE</td><td>true</td><td>false</td><td>NHSNClosureTechniqueCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code; name: NHSNClosureTechniqueCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code; name: NHSNClosureTechniqueCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</td><td>closure-technique</td><td>Surgical Closure (Details: http://www.snomed.info/sct code 112695004 = '112695004', stated as 'Surgical Closure')</td><td>Surgical Closure Technique</td><td>CHOICE</td><td>true</td><td>false</td><td>NHSNClosureTechniqueCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code; name: NHSNClosureTechniqueCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code; name: NHSNClosureTechniqueCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</td><td>closure-technique</td><td>Surgical Closure (Details: http://www.snomed.info/sct code 112695004 = '112695004', stated as 'Surgical Closure')</td><td>Surgical Closure Technique</td><td>CHOICE</td><td>true</td><td>false</td><td>NHSNClosureTechniqueCode. Generated Summary: url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code; name: NHSNClosureTechniqueCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.; url: http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code; name: NHSNClosureTechniqueCode; ACTIVE; description: Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package.</td></tr><tr><td>*</td><td>revision-associated-with-prior-infection</td><td>Revision associated with prior infection at index joint (Details: urn:oid:2.16.840.1.113883.6.277 code 1239-3 = '1239-3', stated as 'Revision associated with prior infection at index joint')</td><td>Revision associated with prior infection at index joint?</td><td>BOOLEAN</td><td>false</td><td>false</td><td> </td><td>revision-associated-with-prior-infection</td><td>Revision associated with prior infection at index joint (Details: urn:oid:2.16.840.1.113883.6.277 code 1239-3 = '1239-3', stated as 'Revision associated with prior infection at index joint')</td><td>Revision associated with prior infection at index joint?</td><td>BOOLEAN</td><td>false</td><td>false</td><td> </td><td>revision-associated-with-prior-infection</td><td>Revision associated with prior infection at index joint (Details: urn:oid:2.16.840.1.113883.6.277 code 1239-3 = '1239-3', stated as 'Revision associated with prior infection at index joint')</td><td>Revision associated with prior infection at index joint?</td><td>BOOLEAN</td><td>false</td><td>false</td><td> </td></tr><tr><td>*</td><td>surgeon-code</td><td> </td><td>Surgeon </td><td>STRING</td><td>true</td><td>false</td><td> </td><td>surgeon-code</td><td> </td><td>Surgeon </td><td>STRING</td><td>true</td><td>false</td><td> </td><td>surgeon-code</td><td> </td><td>Surgeon </td><td>STRING</td><td>true</td><td>false</td><td> </td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: infection-risk-factors</p><p><b>code</b>: Risk Factors (Details: http://www.loinc.org code 51898-5 = '51898-5', stated as 'Risk Factors')</p><p><b>text</b>: Risk Factors</p><p><b>type</b>: GROUP</p><p><b>required</b>: true</p><p><b>repeats</b>: false</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:ValueSet;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "nhsn-encounter-type-code" ];
+     fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/hai/ValueSet/nhsn-encounter-type-code" ];
+     fhir:ValueSet.name [ fhir:value "NHSNEncounterTypeCode" ];
+     fhir:ValueSet.status [ fhir:value "active" ];
+     fhir:ValueSet.description [ fhir:value "Code System: HL7 ActCode  2.16.840.1.113883.5.4\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package." ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.5.4" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "AMB" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "IMP" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 1;
+     fhir:Resource.id [ fhir:value "nhsn-healthcare-service-location-code" ];
+     fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/hai/ValueSet/nhsn-healthcare-service-location-code" ];
+     fhir:ValueSet.name [ fhir:value "NHSNHealthcareServiceLocationCode" ];
+     fhir:ValueSet.status [ fhir:value "active" ];
+     fhir:ValueSet.description [ fhir:value "A classification of patient care locations within healthcare facilities for public health surveillance purposes.\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package." ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.6.259" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1250-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "All Inpatient Locations [FACWIDEIN]" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1251-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "All Outpatient Locations [FACWIDEOUT]" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1025-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Trauma Critical Care" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1026-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Burn Critical Care" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1027-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical Critical Care" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1028-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical Cardiac Critical Care" ]
+         ], [
+           fhir:index 6;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1029-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical/Surgical Critical Care" ]
+         ], [
+           fhir:index 7;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1030-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Surgical Critical Care" ]
+         ], [
+           fhir:index 8;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1031-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Neurosurgical Critical Care" ]
+         ], [
+           fhir:index 9;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1032-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Surgical Cardiothoracic Critical Care" ]
+         ], [
+           fhir:index 10;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1033-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Respiratory Critical Care" ]
+         ], [
+           fhir:index 11;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1034-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Prenatal Critical Care" ]
+         ], [
+           fhir:index 12;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1035-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Neurologic Critical Care" ]
+         ], [
+           fhir:index 13;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1038-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Well Baby Nursery (Level I)" ]
+         ], [
+           fhir:index 14;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1039-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Neonatal Critical Care(Level II/III)" ]
+         ], [
+           fhir:index 15;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1040-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Neonatal Critical Care (Level III)" ]
+         ], [
+           fhir:index 16;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1041-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Step down Neonatal ICU (Level II)" ]
+         ], [
+           fhir:index 17;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1042-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Burn Critical Care" ]
+         ], [
+           fhir:index 18;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1043-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Cardiothoracic Critical Care" ]
+         ], [
+           fhir:index 19;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1044-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Medical Critical Care" ]
+         ], [
+           fhir:index 20;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1045-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Medical/Surgical Critical Care" ]
+         ], [
+           fhir:index 21;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1046-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Neurosurgical Critical Care" ]
+         ], [
+           fhir:index 22;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1047-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Respiratory Critical Care" ]
+         ], [
+           fhir:index 23;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1048-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Surgical Critical Care" ]
+         ], [
+           fhir:index 24;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1049-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Trauma Critical Care" ]
+         ], [
+           fhir:index 25;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1022-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Bone Marrow Transplant SCA" ]
+         ], [
+           fhir:index 26;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1023-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Bone Marrow Transplant SCA" ]
+         ], [
+           fhir:index 27;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1088-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematology/Oncology SCA" ]
+         ], [
+           fhir:index 28;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1089-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Hematology/Oncology SCA" ]
+         ], [
+           fhir:index 29;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1091-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Dialysis SCA" ]
+         ], [
+           fhir:index 30;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1092-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Solid Organ Transplant SCA" ]
+         ], [
+           fhir:index 31;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1093-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Solid Organ Transplant SCA" ]
+         ], [
+           fhir:index 32;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1198-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Acute Dialysis SCA" ]
+         ], [
+           fhir:index 33;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1051-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Behavioral Health/Psych Ward" ]
+         ], [
+           fhir:index 34;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1052-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Burn Ward" ]
+         ], [
+           fhir:index 35;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1053-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Ear/Nose/Throat Ward" ]
+         ], [
+           fhir:index 36;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1054-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Gastrointestinal Ward" ]
+         ], [
+           fhir:index 37;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1055-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Genitourinary Ward" ]
+         ], [
+           fhir:index 38;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1056-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Gerontology Ward" ]
+         ], [
+           fhir:index 39;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1057-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Gynecology Ward" ]
+         ], [
+           fhir:index 40;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1058-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Labor and Delivery Ward" ]
+         ], [
+           fhir:index 41;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1059-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Labor, Delivery, Recovery, Postpartum Suite (LDRP)" ]
+         ], [
+           fhir:index 42;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1060-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Medical Ward" ]
+         ], [
+           fhir:index 43;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1061-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Medical/Surgical Ward" ]
+         ], [
+           fhir:index 44;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1062-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Neurology Ward" ]
+         ], [
+           fhir:index 45;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1063-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Neurosurgical Ward" ]
+         ], [
+           fhir:index 46;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1064-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Ophthalmology Ward" ]
+         ], [
+           fhir:index 47;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1065-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Orthopedic Ward" ]
+         ], [
+           fhir:index 48;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1066-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Orthopedic Trauma Ward" ]
+         ], [
+           fhir:index 49;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1067-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Plastic Surgery Ward" ]
+         ], [
+           fhir:index 50;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1068-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Postpartum Ward" ]
+         ], [
+           fhir:index 51;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1069-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pulmonary Ward" ]
+         ], [
+           fhir:index 52;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1070-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Rehabilitation Ward" ]
+         ], [
+           fhir:index 53;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1071-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Acute Stroke Ward" ]
+         ], [
+           fhir:index 54;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1072-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Surgical Ward" ]
+         ], [
+           fhir:index 55;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1073-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Vascular Surgery Ward" ]
+         ], [
+           fhir:index 56;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1171-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Jail Unit" ]
+         ], [
+           fhir:index 57;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1172-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient School Infirmary" ]
+         ], [
+           fhir:index 58;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1205-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Antenatal Ward" ]
+         ], [
+           fhir:index 59;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1075-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Adolescent Behavioral Health Ward" ]
+         ], [
+           fhir:index 60;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1076-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Medical Pediatric Ward" ]
+         ], [
+           fhir:index 61;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1077-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric Behavioral Health Ward" ]
+         ], [
+           fhir:index 62;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1078-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric Burn Ward" ]
+         ], [
+           fhir:index 63;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1079-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric Ear, Nose, Throat Ward" ]
+         ], [
+           fhir:index 64;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1080-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric Genitourinary Ward" ]
+         ], [
+           fhir:index 65;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1081-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric Med/Surg Ward" ]
+         ], [
+           fhir:index 66;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1082-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric Neurology Ward" ]
+         ], [
+           fhir:index 67;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1083-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric Neurosurgical Ward" ]
+         ], [
+           fhir:index 68;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1084-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric Orthopedic Ward" ]
+         ], [
+           fhir:index 69;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1085-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Rehabilitation Ward - Within ACH" ]
+         ], [
+           fhir:index 70;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1086-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric Surgical Ward" ]
+         ], [
+           fhir:index 71;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1099-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Adult Step Down Unit (post-critical care)" ]
+         ], [
+           fhir:index 72;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1100-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Step Down Unit (post-critical care)" ]
+         ], [
+           fhir:index 73;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1005-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac Catheterization Room/Suite" ]
+         ], [
+           fhir:index 74;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1095-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Cesarean Section Room/Suite" ]
+         ], [
+           fhir:index 75;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1096-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Operating Room/Suite" ]
+         ], [
+           fhir:index 76;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1097-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Post-Anesthesia Care Unit/Recovery Room" ]
+         ], [
+           fhir:index 77;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1203-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Interventional Radiology" ]
+         ], [
+           fhir:index 78;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1009-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulmonary Function Testing" ]
+         ], [
+           fhir:index 79;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1020-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Sleep Studies (for in- and outpatients)" ]
+         ], [
+           fhir:index 80;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1178-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Transport Service" ]
+         ], [
+           fhir:index 81;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1190-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Soiled Utility Area" ]
+         ], [
+           fhir:index 82;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1208-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Telemetry Unit" ]
+         ], [
+           fhir:index 83;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1209-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Treatment Room" ]
+         ], [
+           fhir:index 84;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1211-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Mixed Acuity Unit" ]
+         ], [
+           fhir:index 85;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1210-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Adult Mixed Acuity Unit" ]
+         ], [
+           fhir:index 86;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1212-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Any Age Mixed Acuity Unit" ]
+         ], [
+           fhir:index 87;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1102-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Long-Term Care Unit" ]
+         ], [
+           fhir:index 88;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1103-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Long-Term Care Alzheimer's Unit" ]
+         ], [
+           fhir:index 89;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1104-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Long-Term Care Behavioral Health/Psych Unit" ]
+         ], [
+           fhir:index 90;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1105-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Long-Term Care Rehabilitation Unit" ]
+         ], [
+           fhir:index 91;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1164-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventilator Dependent Unit" ]
+         ], [
+           fhir:index 92;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1165-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Hospice" ]
+         ], [
+           fhir:index 93;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1260-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTCF Bariatric Unit" ]
+         ], [
+           fhir:index 94;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1255-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTCF Dementia Unit" ]
+         ], [
+           fhir:index 95;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1258-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTCF General Nursing Unit" ]
+         ], [
+           fhir:index 96;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1254-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTCF Inpatient Hospice Unit" ]
+         ], [
+           fhir:index 97;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1256-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTCF Psychiatric Unit" ]
+         ], [
+           fhir:index 98;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1257-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTCF Skilled Nursing/Short Term Rehabilitation Unit" ]
+         ], [
+           fhir:index 99;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1259-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTCF Ventilator Dependent Unit" ]
+         ], [
+           fhir:index 100;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1220-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTAC ICU" ]
+         ], [
+           fhir:index 101;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1221-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTAC Ward" ]
+         ], [
+           fhir:index 102;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1222-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTAC Pediatric ICU" ]
+         ], [
+           fhir:index 103;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1214-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "LTAC Pediatric Ward" ]
+         ], [
+           fhir:index 104;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1217-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Rehabilitation Ward - Freestanding IRF" ]
+         ], [
+           fhir:index 105;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1218-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Rehabilitation Pediatric Ward - Freestanding IRF" ]
+         ], [
+           fhir:index 106;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1108-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Emergency Department" ]
+         ], [
+           fhir:index 107;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1109-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Emergency Department" ]
+         ], [
+           fhir:index 108;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1160-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Urgent Care Center" ]
+         ], [
+           fhir:index 109;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1162-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "24-Hour Observation Area" ]
+         ], [
+           fhir:index 110;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1169-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Surgery Recovery Room/Post-Anesthesia Care Unit" ]
+         ], [
+           fhir:index 111;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1174-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Mobile Emergency Services/EMS" ]
+         ], [
+           fhir:index 112;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1007-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Endoscopy Suite" ]
+         ], [
+           fhir:index 113;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1008-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Radiology (includes Nuclear Medicine)" ]
+         ], [
+           fhir:index 114;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1017-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Hyperbaric Oxygen Center" ]
+         ], [
+           fhir:index 115;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1018-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Infusion Center" ]
+         ], [
+           fhir:index 116;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1019-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen Collection Area (Healthcare)" ]
+         ], [
+           fhir:index 117;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1110-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Allergy Clinic" ]
+         ], [
+           fhir:index 118;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1112-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac Rehabilitation Center" ]
+         ], [
+           fhir:index 119;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1113-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiology Clinic" ]
+         ], [
+           fhir:index 120;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1115-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Dermatology Clinic" ]
+         ], [
+           fhir:index 121;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1116-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Diabetes/Endocrinology Clinic" ]
+         ], [
+           fhir:index 122;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1117-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Family Medicine Clinic" ]
+         ], [
+           fhir:index 123;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1118-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Gastrointestinal (GI) Clinic" ]
+         ], [
+           fhir:index 124;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1119-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Gastrointestinal Clinic" ]
+         ], [
+           fhir:index 125;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1120-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Medical Clinic" ]
+         ], [
+           fhir:index 126;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1121-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Gynecology Clinic" ]
+         ], [
+           fhir:index 127;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1122-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Genetics Clinic" ]
+         ], [
+           fhir:index 128;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1123-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Neurology Clinic" ]
+         ], [
+           fhir:index 129;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1124-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Ophthalmology Clinic" ]
+         ], [
+           fhir:index 130;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1125-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Orthopedic Clinic" ]
+         ], [
+           fhir:index 131;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1126-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Ear, Nose, Throat Clinic" ]
+         ], [
+           fhir:index 132;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1127-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pain Clinic" ]
+         ], [
+           fhir:index 133;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1128-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Clinic" ]
+         ], [
+           fhir:index 134;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1129-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Cardiology Center" ]
+         ], [
+           fhir:index 135;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1130-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Dental Clinic" ]
+         ], [
+           fhir:index 136;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1131-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Dermatology Clinic" ]
+         ], [
+           fhir:index 137;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1132-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Diabetes/Endocrinology Clinic" ]
+         ], [
+           fhir:index 138;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1133-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Orthopedic Clinic" ]
+         ], [
+           fhir:index 139;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1134-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Scoliosis Clinic" ]
+         ], [
+           fhir:index 140;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1136-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Hematology/Oncology Clinic" ]
+         ], [
+           fhir:index 141;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1137-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Nephrology Clinic" ]
+         ], [
+           fhir:index 142;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1138-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Rheumatology Clinic" ]
+         ], [
+           fhir:index 143;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1139-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Well Baby Clinic" ]
+         ], [
+           fhir:index 144;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1140-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Podiatry Clinic" ]
+         ], [
+           fhir:index 145;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1141-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Physician's Office" ]
+         ], [
+           fhir:index 146;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1142-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Rheumatology Clinic" ]
+         ], [
+           fhir:index 147;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1143-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Surgical Services Clinic" ]
+         ], [
+           fhir:index 148;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1144-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Wound Center" ]
+         ], [
+           fhir:index 149;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1145-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Behavioral Health Clinic" ]
+         ], [
+           fhir:index 150;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1146-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Behavioral Health Clinic" ]
+         ], [
+           fhir:index 151;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1147-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood Collection Center" ]
+         ], [
+           fhir:index 152;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1148-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Continence Clinic" ]
+         ], [
+           fhir:index 153;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1149-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Ostomy Clinic" ]
+         ], [
+           fhir:index 154;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1150-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Dental Clinic" ]
+         ], [
+           fhir:index 155;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1151-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Occupational Health Clinic" ]
+         ], [
+           fhir:index 156;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1152-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Occupational Therapy Clinic" ]
+         ], [
+           fhir:index 157;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1153-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Hemodialysis Clinic" ]
+         ], [
+           fhir:index 158;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1154-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient HIV Clinic" ]
+         ], [
+           fhir:index 159;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1155-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Rehabilitation Clinic" ]
+         ], [
+           fhir:index 160;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1156-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Prenatal Clinic" ]
+         ], [
+           fhir:index 161;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1157-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulmonary Clinic" ]
+         ], [
+           fhir:index 162;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1158-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Speech Therapy Clinic" ]
+         ], [
+           fhir:index 163;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1159-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Wound Ostomy Continence Clinic" ]
+         ], [
+           fhir:index 164;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1161-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Holistic Medicine Center" ]
+         ], [
+           fhir:index 165;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1170-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "School or Prison Infirmary" ]
+         ], [
+           fhir:index 166;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1175-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Mobile MRI/CT" ]
+         ], [
+           fhir:index 167;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1176-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Mobile Blood Collection center" ]
+         ], [
+           fhir:index 168;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1200-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Hematology/Oncology Clinic" ]
+         ], [
+           fhir:index 169;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1202-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Physical Therapy Clinic" ]
+         ], [
+           fhir:index 170;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1207-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Donor Apheresis Center" ]
+         ], [
+           fhir:index 171;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1192-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Home Care" ]
+         ], [
+           fhir:index 172;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1194-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Home-based Hospice" ]
+         ], [
+           fhir:index 173;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1195-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood Collection (Blood Drive Campaign)" ]
+         ], [
+           fhir:index 174;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1196-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen Collection Area (Community)" ]
+         ], [
+           fhir:index 175;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1204-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Location outside facility" ]
+         ], [
+           fhir:index 176;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1262-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Home Care -  Dialysis" ]
+         ], [
+           fhir:index 177;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1010-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "General Laboratory" ]
+         ], [
+           fhir:index 178;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1011-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Clinical Chemistry" ]
+         ], [
+           fhir:index 179;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1012-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Hematology" ]
+         ], [
+           fhir:index 180;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1013-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Histology/Surgical Pathology" ]
+         ], [
+           fhir:index 181;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1014-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Microbiology" ]
+         ], [
+           fhir:index 182;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1015-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Serology Lab" ]
+         ], [
+           fhir:index 183;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1016-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Virology Lab" ]
+         ], [
+           fhir:index 184;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1106-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Assisted Living Area" ]
+         ], [
+           fhir:index 185;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1179-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pharmacy" ]
+         ], [
+           fhir:index 186;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1180-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Public Area in Facility" ]
+         ], [
+           fhir:index 187;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1181-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Physical Plant Operations Center" ]
+         ], [
+           fhir:index 188;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1182-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Housekeeping/Environmental Services" ]
+         ], [
+           fhir:index 189;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1183-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Laundry Room" ]
+         ], [
+           fhir:index 190;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1184-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Administrative Areas" ]
+         ], [
+           fhir:index 191;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1185-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood Bank" ]
+         ], [
+           fhir:index 192;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1186-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Central Sterile Supply" ]
+         ], [
+           fhir:index 193;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1187-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Central Trash Area" ]
+         ], [
+           fhir:index 194;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1188-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Facility Grounds" ]
+         ], [
+           fhir:index 195;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1189-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Morgue/Autopsy Room" ]
+         ], [
+           fhir:index 196;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1261-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Centralized Transfusion Service" ]
+         ], [
+           fhir:index 197;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1223-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "ONC Medical Critical Care" ]
+         ], [
+           fhir:index 198;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1224-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "ONC Surgical Critical Care" ]
+         ], [
+           fhir:index 199;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1225-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "ONC Medical-Surgical Critical Care" ]
+         ], [
+           fhir:index 200;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1226-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "ONC Leukemia Ward" ]
+         ], [
+           fhir:index 201;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1228-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "ONC Lymphoma Ward" ]
+         ], [
+           fhir:index 202;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1229-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "ONC Leukemia/Lymphoma Ward" ]
+         ], [
+           fhir:index 203;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1230-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "ONC Solid Tumor Ward" ]
+         ], [
+           fhir:index 204;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1231-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "ONC Hematopoietic Stem Cell Transplant Ward" ]
+         ], [
+           fhir:index 205;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1232-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "ONC General Hematology/Oncology Ward" ]
+         ], [
+           fhir:index 206;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1233-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Oncology Critical Care" ]
+         ], [
+           fhir:index 207;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1234-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric Hematopoietic Stem Cell Transplant Oncology Ward" ]
+         ], [
+           fhir:index 208;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1235-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Inpatient Pediatric General Hematology/Oncology Ward" ]
+         ], [
+           fhir:index 209;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1227-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Oncology Step Down Unit (post-critical care)" ]
+         ], [
+           fhir:index 210;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1236-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "ONC Mixed Acuity Unit (all ages)" ]
+         ], [
+           fhir:index 211;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1243-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Ambulatory Surgery Center" ]
+         ], [
+           fhir:index 212;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1242-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Operating Room/Suite_Attached" ]
+         ], [
+           fhir:index 213;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1244-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Operating Room/Suite_Detached" ]
+         ], [
+           fhir:index 214;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1248-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Outpatient Operating Room/Suite_Attached" ]
+         ], [
+           fhir:index 215;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1249-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pediatric Outpatient Operating Room/Suite_Detached" ]
+         ], [
+           fhir:index 216;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1246-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Ambulatory Pediatric Surgery Center" ]
+         ], [
+           fhir:index 217;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1245-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Ambulatory Surgery Recovery Room" ]
+         ], [
+           fhir:index 218;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1247-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Outpatient Ambulatory Plastic Surgery Center" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1206-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Float" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 2;
+     fhir:Resource.id [ fhir:value "2.16.840.1.113883.13.17" ];
+     fhir:ValueSet.url [ fhir:value "urn:oid:2.16.840.1.113883.13.17" ];
+     fhir:ValueSet.name [ fhir:value "NHSNProcedureCategoryCode" ];
+     fhir:ValueSet.status [ fhir:value "active" ];
+     fhir:ValueSet.description [ fhir:value "Code System: cdcNHSN 2.16.840.1.113883.6.277 NHSN's value set for the clinical statement recording procedure details in SSI, CLIP, and Procedure Reports.                                                \r\n\r\nThe full table is shown in the hai_voc.xls file provided with this package." ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2105-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Abdominal aortic aneurysm repair" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2107-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Abdominal hysterectomy" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2108-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Appendix surgery" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2102-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "AV shunt for dialysis" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2109-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Bile duct, liver or pancreatic surgery" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2110-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Breast surgery" ]
+         ], [
+           fhir:index 6;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2111-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac Surgery" ]
+         ], [
+           fhir:index 7;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2114-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Carotid endarterectomy" ]
+         ], [
+           fhir:index 8;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2115-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Cesarean section" ]
+         ], [
+           fhir:index 9;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2116-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Colon surgery" ]
+         ], [
+           fhir:index 10;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2112-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Coronary artery bypass graft with both chest and donor site incisions" ]
+         ], [
+           fhir:index 11;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2113-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Coronary artery bypass graft with chest incision only" ]
+         ], [
+           fhir:index 12;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2117-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Craniotomy" ]
+         ], [
+           fhir:index 13;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2118-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Exploratory abdominal surgery" ]
+         ], [
+           fhir:index 14;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2119-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Gallbladder surgery" ]
+         ], [
+           fhir:index 15;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2120-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Gastric surgery" ]
+         ], [
+           fhir:index 16;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2121-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Heart transplant" ]
+         ], [
+           fhir:index 17;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2106-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Herniorrhaphy" ]
+         ], [
+           fhir:index 18;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2101-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Hip Replacement" ]
+         ], [
+           fhir:index 19;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2122-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Kidney surgery" ]
+         ], [
+           fhir:index 20;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2123-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Kidney transplant" ]
+         ], [
+           fhir:index 21;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2124-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Knee prosthesis" ]
+         ], [
+           fhir:index 22;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2125-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Laminectomy" ]
+         ], [
+           fhir:index 23;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2126-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Limb amputation" ]
+         ], [
+           fhir:index 24;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2127-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Liver transplant" ]
+         ], [
+           fhir:index 25;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2128-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Neck surgery" ]
+         ], [
+           fhir:index 26;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2103-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Not an NHSN operation" ]
+         ], [
+           fhir:index 27;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2129-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Open reduction of fracture" ]
+         ], [
+           fhir:index 28;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2104-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Other operations" ]
+         ], [
+           fhir:index 29;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2130-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Ovarian surgery" ]
+         ], [
+           fhir:index 30;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2131-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Pacemaker surgery" ]
+         ], [
+           fhir:index 31;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2132-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Peripheral vascular bypass surgery" ]
+         ], [
+           fhir:index 32;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2133-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Prostate surgery" ]
+         ], [
+           fhir:index 33;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2134-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Rectal surgery" ]
+         ], [
+           fhir:index 34;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2135-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Refusion of spine" ]
+         ], [
+           fhir:index 35;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2136-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Small bowel surgery" ]
+         ], [
+           fhir:index 36;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2137-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Spinal fusion" ]
+         ], [
+           fhir:index 37;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2138-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Spleen surgery" ]
+         ], [
+           fhir:index 38;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2139-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Thoracic surgery" ]
+         ], [
+           fhir:index 39;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2140-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Thyroid and/or parathyroid surgery" ]
+         ], [
+           fhir:index 40;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2141-0" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaginal hysterectomy" ]
+         ], [
+           fhir:index 41;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2142-8" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventricular shunt" ]
+         ], [
+           fhir:index 42;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2102-2" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Shunt for dialysis" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 3;
+     fhir:Resource.id [ fhir:value "2.16.840.1.113883.13.11" ];
+     fhir:ValueSet.url [ fhir:value "urn:oid:2.16.840.1.113883.13.11" ];
+     fhir:ValueSet.name [ fhir:value "NHSNSpinalFusionLevelCode" ];
+     fhir:ValueSet.status [ fhir:value "active" ];
+     fhir:ValueSet.description [ fhir:value "Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package." ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1101-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "atlas-axis (C1-C2 only)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1102-3" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "atlas-axis/cervical (C1-C7: any combination)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1103-1" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "cervical (C3-C7: any combination)" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1104-9" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "cervical/dorsal/dorsolumbar (Extends from any cervical through any lumbar levels )" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1105-6" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "dorsal/dorsolumbar (T1-L5: any combination)" ]
+         ], [
+           fhir:index 5;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "1106-4" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "lumbar/lumbosacral (L1-S5: any combination)" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 4;
+     fhir:Resource.id [ fhir:value "nhsn-closure-technique-code" ];
+     fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/hai/ValueSet/nhsn-closure-technique-code" ];
+     fhir:ValueSet.name [ fhir:value "NHSNClosureTechniqueCode" ];
+     fhir:ValueSet.status [ fhir:value "active" ];
+     fhir:ValueSet.description [ fhir:value "Code System: cdcNHSN 2.16.840.1.113883.6.277\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package." ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2406-7" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Primary" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "2407-5" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Other than Primary" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 5;
+     fhir:Resource.id [ fhir:value "2.16.840.1.113883.13.9" ];
+     fhir:ValueSet.url [ fhir:value "urn:oid:2.16.840.1.113883.13.9" ];
+     fhir:ValueSet.name [ fhir:value "NHSNWoundClassCode" ];
+     fhir:ValueSet.status [ fhir:value "active" ];
+     fhir:ValueSet.description [ fhir:value "Code System: SNOMED CT 2.16.840.1.113883.6.96\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package." ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "418780004" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Class I/Clean (Clean)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "418115006" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Class II/Clean Contaminated (Clean-contaminated)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "419877002" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Class III/Contaminated (Contaminated)" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "418422005" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Class IV/Dirty Infected (Dirty)" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:ValueSet;
+     fhir:index 6;
+     fhir:Resource.id [ fhir:value "2.16.840.1.113883.13.10" ];
+     fhir:ValueSet.url [ fhir:value "urn:oid:2.16.840.1.113883.13.10" ];
+     fhir:ValueSet.name [ fhir:value "NHSNASAClassCode" ];
+     fhir:ValueSet.status [ fhir:value "active" ];
+     fhir:ValueSet.description [ fhir:value "Code System: SNOMED CT 2.16.840.1.113883.6.96\n\nA full listing of codes can be found in the hai_voc.xls file provided with this package." ];
+     fhir:ValueSet.compose [
+       fhir:ValueSet.compose.include [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:ValueSet.compose.include.concept [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "413495001" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Normally healthy patient" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "413496000" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient with mild systemic disease" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "413497009" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient with severe systemic disease, not incapacitating" ]
+         ], [
+           fhir:index 3;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "413498004" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient with incapacitating systemic disease, constant threat to life" ]
+         ], [
+           fhir:index 4;
+           fhir:ValueSet.compose.include.concept.code [ fhir:value "413499007" ];
+           fhir:ValueSet.compose.include.concept.display [ fhir:value "Moribund patient, &lt; 24-hour life expectancy" ]
+         ]
+       ]
+     ]
+  ];
+  fhir:Questionnaire.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "FHIR Procedure Denominator - Questionnaire" ]
+  ];
+  fhir:Questionnaire.version [ fhir:value "R3D3"];
+  fhir:Questionnaire.title [ fhir:value "Denominator-for-Procedure"];
+  fhir:Questionnaire.status [ fhir:value "draft"];
+  fhir:Questionnaire.date [ fhir:value "2017-09-13"^^xsd:date];
+  fhir:Questionnaire.publisher [ fhir:value "NHSN"];
+  fhir:Questionnaire.description [ fhir:value "This report records a procedure performed.         Preferred document title:  “Denominator for Procedure Report”         Key encounter data:                  •  The encounter type (inpatient or outpatient) is required.         •  If the patient was an inpatient, a value for admission date is required.         •  The facility id is required. Unit identifier and unit type are not reported.                  Other dates and locations:         •  The date of the procedure is recorded as effectiveTime in the Procedure Details Clinical Statement in a Procedure Report  (V2).                  Other notes: The procedure id is recorded in the Procedure Details Clinical Statement in a Procedure Report (V2). NHSN uses this to establish a link between Procedure and SSI Reports."];
+  fhir:Questionnaire.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:Questionnaire.code [
+     fhir:index 0;
+     fhir:Coding.system [ fhir:value "http://loinc.org/" ];
+     fhir:Coding.code [ fhir:value "51897-7" ];
+     fhir:Coding.display [ fhir:value "Healthcare Associated Infection Report" ]
+  ];
+  fhir:Questionnaire.subjectType [
+     fhir:value "Patient";
+     fhir:index 0
+  ];
+  fhir:Questionnaire.item [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient>;
+         fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" ]
+       ]
+     ];
+     fhir:Questionnaire.item.linkId [ fhir:value "hai-patient" ];
+     fhir:Questionnaire.item.type [ fhir:value "reference" ];
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 1;
+     fhir:Questionnaire.item.linkId [ fhir:value "procedure-details" ];
+     fhir:Questionnaire.item.code [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.loing.org" ];
+       fhir:Coding.code [ fhir:value "51899-3" ];
+       fhir:Coding.display [ fhir:value "Details" ]
+     ];
+     fhir:Questionnaire.item.text [ fhir:value "Procedure Details" ];
+     fhir:Questionnaire.item.type [ fhir:value "group" ];
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.item [
+       fhir:index 0;
+       fhir:Questionnaire.item.linkId [ fhir:value "date-of-procdure" ];
+       fhir:Questionnaire.item.text [ fhir:value "Date of Procedure" ];
+       fhir:Questionnaire.item.type [ fhir:value "date" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Questionnaire.item.linkId [ fhir:value "procedure-location" ];
+       fhir:Questionnaire.item.text [ fhir:value "Procedure Location" ];
+       fhir:Questionnaire.item.type [ fhir:value "url" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Questionnaire.item.linkId [ fhir:value "facility-location" ];
+       fhir:Questionnaire.item.text [ fhir:value "Facility Location" ];
+       fhir:Questionnaire.item.type [ fhir:value "choice" ];
+       fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.options [
+         fhir:Reference.reference [ fhir:value "#nhsn-healthcare-service-location-code" ];
+         fhir:Reference.display [ fhir:value "NHSN Healthcare Service Location Code" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Questionnaire.item.linkId [ fhir:value "event-type" ];
+       fhir:Questionnaire.item.text [ fhir:value "Event Type: PROC" ];
+       fhir:Questionnaire.item.type [ fhir:value "choice" ];
+       fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Questionnaire.item.linkId [ fhir:value "NHSN-procdure-code" ];
+       fhir:Questionnaire.item.text [ fhir:value "NHSN Procedure Code" ];
+       fhir:Questionnaire.item.type [ fhir:value "choice" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.options [
+         fhir:Reference.reference [ fhir:value "#2.16.840.1.113883.13.17" ];
+         fhir:Reference.display [ fhir:value "NHSN Procedure Category Code" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Questionnaire.item.linkId [ fhir:value "icd-10-or-cpt-code" ];
+       fhir:Questionnaire.item.text [ fhir:value "ICD-10-PCS or CPT Procedure Code" ];
+       fhir:Questionnaire.item.type [ fhir:value "choice" ];
+       fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Questionnaire.item.linkId [ fhir:value "outpatient" ];
+       fhir:Questionnaire.item.text [ fhir:value "Outpatient" ];
+       fhir:Questionnaire.item.type [ fhir:value "choice" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.options [
+         fhir:Reference.reference [ fhir:value "#nhsn-encounter-type-code" ];
+         fhir:Reference.display [ fhir:value "nhsn-encounter-type-code" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Questionnaire.item.linkId [ fhir:value "procedure-duration" ];
+       fhir:Questionnaire.item.text [ fhir:value "Duration" ];
+       fhir:Questionnaire.item.type [ fhir:value "time" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Questionnaire.item.linkId [ fhir:value "general-anesthesia" ];
+       fhir:Questionnaire.item.code [
+         fhir:index 0;
+         a sct:84451006;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "84451006" ];
+         fhir:Coding.display [ fhir:value "General Anesthesia" ]
+       ];
+       fhir:Questionnaire.item.text [ fhir:value "General Anesthesia used?" ];
+       fhir:Questionnaire.item.type [ fhir:value "boolean" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Questionnaire.item.linkId [ fhir:value "spinal-fusion" ];
+       fhir:Questionnaire.item.text [ fhir:value "Spinal Fusion Level Observed" ];
+       fhir:Questionnaire.item.type [ fhir:value "choice" ];
+       fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.options [
+         fhir:Reference.reference [ fhir:value "#urn:oid:2.16.840.1.113883.13.11" ];
+         fhir:Reference.display [ fhir:value "Spinal Fusion Level Code" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Questionnaire.item.linkId [ fhir:value "closure-technique" ];
+       fhir:Questionnaire.item.code [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://www.snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "112695004" ];
+         fhir:Coding.display [ fhir:value "Surgical Closure" ]
+       ];
+       fhir:Questionnaire.item.text [ fhir:value "Surgical Closure Technique" ];
+       fhir:Questionnaire.item.type [ fhir:value "choice" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.options [
+         fhir:Reference.reference [ fhir:value "#nhsn-closure-technique-code" ];
+         fhir:Reference.display [ fhir:value "NHSNClosureTechniqueCode" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Questionnaire.item.linkId [ fhir:value "revision-associated-with-prior-infection" ];
+       fhir:Questionnaire.item.code [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+         fhir:Coding.code [ fhir:value "1239-3" ];
+         fhir:Coding.display [ fhir:value "Revision associated with prior infection at index joint" ]
+       ];
+       fhir:Questionnaire.item.text [ fhir:value "Revision associated with prior infection at index joint?" ];
+       fhir:Questionnaire.item.type [ fhir:value "boolean" ];
+       fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Questionnaire.item.linkId [ fhir:value "surgeon-code" ];
+       fhir:Questionnaire.item.text [ fhir:value "Surgeon " ];
+       fhir:Questionnaire.item.type [ fhir:value "string" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Questionnaire.item.linkId [ fhir:value "infection-risk-factors" ];
+     fhir:Questionnaire.item.code [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.loinc.org" ];
+       fhir:Coding.code [ fhir:value "51898-5" ];
+       fhir:Coding.display [ fhir:value "Risk Factors" ]
+     ];
+     fhir:Questionnaire.item.text [ fhir:value "Risk Factors" ];
+     fhir:Questionnaire.item.type [ fhir:value "group" ];
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+     fhir:Questionnaire.item.item [
+       fhir:index 0;
+       fhir:Questionnaire.item.linkId [ fhir:value "procedure-risk-factors" ];
+       fhir:Questionnaire.item.text [ fhir:value "Procedure Specific Risk Factors" ];
+       fhir:Questionnaire.item.type [ fhir:value "group" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.item [
+         fhir:index 0;
+         fhir:Questionnaire.item.linkId [ fhir:value "emergency" ];
+         fhir:Questionnaire.item.code [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://www.snomed.info/sct" ];
+           fhir:Coding.code [ fhir:value "373110003" ];
+           fhir:Coding.display [ fhir:value "Emergency procedure" ]
+         ];
+         fhir:Questionnaire.item.text [ fhir:value "Emergency Procedure?" ];
+         fhir:Questionnaire.item.type [ fhir:value "boolean" ];
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+         fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+       ], [
+         fhir:index 1;
+         fhir:Questionnaire.item.linkId [ fhir:value "endoscope-used" ];
+         fhir:Questionnaire.item.code [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://www.snomed.info/sct" ];
+           fhir:Coding.code [ fhir:value "423827005" ];
+           fhir:Coding.display [ fhir:value "Endoscope Used" ]
+         ];
+         fhir:Questionnaire.item.text [ fhir:value "Endoscope used?" ];
+         fhir:Questionnaire.item.type [ fhir:value "boolean" ];
+         fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ];
+         fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+       ], [
+         fhir:index 2;
+         fhir:Questionnaire.item.linkId [ fhir:value "wound-class" ];
+         fhir:Questionnaire.item.code [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://www.snomed.info/sct" ];
+           fhir:Coding.code [ fhir:value "420089007" ];
+           fhir:Coding.display [ fhir:value "CDC Wound Classification Category" ]
+         ];
+         fhir:Questionnaire.item.text [ fhir:value "Wound Classification" ];
+         fhir:Questionnaire.item.type [ fhir:value "choice" ];
+         fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+         fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+         fhir:Questionnaire.item.options [
+           fhir:Reference.reference [ fhir:value "#2.16.840.1.113883.13.9" ];
+           fhir:Reference.display [ fhir:value "CDC Wound Classification Category Codes" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Questionnaire.item.linkId [ fhir:value "trauma" ];
+       fhir:Questionnaire.item.code [
+         fhir:index 0;
+         a sct:417746004;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "417746004" ];
+         fhir:Coding.display [ fhir:value "Trauma" ]
+       ];
+       fhir:Questionnaire.item.text [ fhir:value "Trauma?" ];
+       fhir:Questionnaire.item.type [ fhir:value "boolean" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Questionnaire.item.linkId [ fhir:value "diabetes" ];
+       fhir:Questionnaire.item.code [
+         fhir:index 0;
+         a sct:73211009;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "73211009" ];
+         fhir:Coding.display [ fhir:value "Diabetes Mellitus" ]
+       ];
+       fhir:Questionnaire.item.text [ fhir:value "Diabetes?" ];
+       fhir:Questionnaire.item.type [ fhir:value "boolean" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-unit" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://unitsofmeasure.org/" ];
+           fhir:Coding.code [ fhir:value "[ft_i]" ];
+           fhir:Coding.display [ fhir:value "Feet" ]
+         ]
+       ];
+       fhir:Questionnaire.item.linkId [ fhir:value "height" ];
+       fhir:Questionnaire.item.code [
+         fhir:index 0;
+         a sct:50373000;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "50373000" ];
+         fhir:Coding.display [ fhir:value "Body Height" ]
+       ];
+       fhir:Questionnaire.item.text [ fhir:value "Height" ];
+       fhir:Questionnaire.item.type [ fhir:value "quantity" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-unit" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://unitsofmeasure.org/" ];
+           fhir:Coding.code [ fhir:value "[lb_av]" ];
+           fhir:Coding.display [ fhir:value "Pounds" ]
+         ]
+       ];
+       fhir:Questionnaire.item.linkId [ fhir:value "weight" ];
+       fhir:Questionnaire.item.code [
+         fhir:index 0;
+         a sct:27113001;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "27113001" ];
+         fhir:Coding.display [ fhir:value "Body Weight" ]
+       ];
+       fhir:Questionnaire.item.text [ fhir:value "Weight" ];
+       fhir:Questionnaire.item.type [ fhir:value "quantity" ];
+       fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Questionnaire.item.linkId [ fhir:value "asa-score" ];
+       fhir:Questionnaire.item.code [
+         fhir:index 0;
+         a sct:413347006;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "413347006" ];
+         fhir:Coding.display [ fhir:value "Finding of American Society of Anesthesiologists physical status classification" ]
+       ];
+       fhir:Questionnaire.item.text [ fhir:value "ASA Score" ];
+       fhir:Questionnaire.item.type [ fhir:value "choice" ];
+       fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ];
+       fhir:Questionnaire.item.options [
+         fhir:Reference.reference [ fhir:value "#2.16.840.1.113883.13.10" ];
+         fhir:Reference.display [ fhir:value "NHSN ASA Class Code" ]
+       ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/hai/Questionnaire/Procedure-Denominator-Questionnaire.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/hai/Questionnaire/Procedure-Denominator-Questionnaire.ttl> .
+
+# -------------------------------------------------------------------------------------
+

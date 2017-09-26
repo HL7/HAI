@@ -17,29 +17,27 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 44444444</p><p><b>clinicalStatus</b>: ACTIVE</p><p><b>verificationStatus</b>: CONFIRMED</p><p><b>category</b>: Surgical Site Infection <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '433202001' = 'Surgical site infection (disorder)', given as 'Surgical Site Infection'})</span></p><p><b>severity</b>: Severe <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '24484000' = 'Severe (severity modifier)', given as 'Severe'})</span></p><p><b>code</b>: Deep incisional primary SSI <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.6.277 code '1604-8' = '1604-8', given as 'Deep incisional primary SSI'})</span></p><p><b>subject</b>: <a href=\"http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient\">Henry Seven</a></p><p><b>onset</b>: 15/09/2017</p><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Positive culture of pathogen <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.6.277 code '1953-9' = '1953-9', given as 'Positive culture of pathogen'})</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 44444444</p><p><b>clinicalStatus</b>: ACTIVE</p><p><b>verificationStatus</b>: CONFIRMED</p><p><b>category</b>: Surgical Site Infection <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '433202001' = 'Surgical site infection (disorder)', given as 'Surgical Site Infection'})</span></p><p><b>severity</b>: Severe <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '24484000' = 'Severe (severity modifier)', given as 'Severe'})</span></p><p><b>code</b>: Radiographic evidence of infection <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.6.277 code '1924-0' = '1924-0', given as 'Radiographic evidence of infection'})</span></p><p><b>subject</b>: <a href=\"Patient-HAI-Patient-Example.html\">Henry Seven. Generated Summary: id: HAI-Patient-Example; Medical Record Number = 1032702 (USUAL); active; Henry Jones (OFFICIAL); ph: (360) 555 1212(HOME), ph: (360) 444 1212(WORK); gender: male; birthDate: 25/08/1985; <span title=\"Codes: {http://hl7.org/fhir/v3/MaritalStatus M}\">Married</span></a></p><p><b>onset</b>: 15/09/2017</p><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Positive culture of pathogen <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid: 2.16.840.1.113883.6.277 code '1953-9' = '1953-9', given as 'Positive culture of pathogen'})</span></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death" ];
-     fhir:Extension.valueReference [
-       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death>;
-       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death" ]
-     ]
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
   ], [
      fhir:index 1;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection" ];
-     fhir:Extension.valueReference [
-       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection>;
-       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection" ]
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+         fhir:Coding.code [ fhir:value "1510-7" ];
+         fhir:Coding.display [ fhir:value "Admission (during the stay in which the surgery was performed)" ]
+       ]
      ]
   ], [
      fhir:index 2;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery" ];
-     fhir:Extension.valueReference [
-       fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery>;
-       fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery" ]
-     ]
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
   ];
   fhir:Condition.identifier [
      fhir:index 0;
@@ -71,13 +69,13 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
-       fhir:Coding.code [ fhir:value "1604-8" ];
-       fhir:Coding.display [ fhir:value "Deep incisional primary SSI" ]
+       fhir:Coding.code [ fhir:value "1924-0" ];
+       fhir:Coding.display [ fhir:value "Radiographic evidence of infection" ]
      ]
   ];
   fhir:Condition.subject [
-     fhir:link <http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient>;
-     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" ];
+     fhir:link <http://hl7.org/fhir/us/hai/Patient/HAI-Patient-Example>;
+     fhir:Reference.reference [ fhir:value "Patient/HAI-Patient-Example" ];
      fhir:Reference.display [ fhir:value "Henry Seven" ]
   ];
   fhir:Condition.onsetDateTime [ fhir:value "2017-09-15"^^xsd:date];
@@ -87,20 +85,14 @@
        fhir:index 0;
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+         fhir:Coding.system [ fhir:value "urn:oid: 2.16.840.1.113883.6.277" ];
          fhir:Coding.code [ fhir:value "1953-9" ];
          fhir:Coding.display [ fhir:value "Positive culture of pathogen" ]
        ]
      ]
   ] .
 
-<http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death> a fhir:us .
-
-<http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection> a fhir:us .
-
-<http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery> a fhir:us .
-
-<http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient> a fhir:us .
+<http://hl7.org/fhir/us/hai/Patient/HAI-Patient-Example> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

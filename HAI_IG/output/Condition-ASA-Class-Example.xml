@@ -6,7 +6,7 @@
     <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/asa-class"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 55555555</p><p><b>clinicalStatus</b>: ACTIVE</p><p><b>verificationStatus</b>: CONFIRMED</p><p><b>category</b>: Problem <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '55607006' = 'Problem (finding)', given as 'Problem'})</span></p><p><b>code</b>: Normally healthy patient <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '413495001' = 'American Society of Anesthesiologists physical status class 1 (finding)', given as 'Normally healthy patient'})</span></p><p><b>subject</b>: <a href="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient">Henry Seven</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 55555555</p><p><b>clinicalStatus</b>: ACTIVE</p><p><b>verificationStatus</b>: CONFIRMED</p><p><b>category</b>: Problem <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '55607006' = 'Problem (finding)', given as 'Problem'})</span></p><p><b>code</b>: Normally healthy patient <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '413495001' = 'American Society of Anesthesiologists physical status class 1 (finding)', given as 'Normally healthy patient'})</span></p><p><b>subject</b>: <a href="Patient-HAI-Patient-Example.html">Henry Seven. Generated Summary: id: HAI-Patient-Example; Medical Record Number = 1032702 (USUAL); active; Henry Jones (OFFICIAL); ph: (360) 555 1212(HOME), ph: (360) 444 1212(WORK); gender: male; birthDate: 25/08/1985; <span title="Codes: {http://hl7.org/fhir/v3/MaritalStatus M}">Married</span></a></p></div>
   </text>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
@@ -29,7 +29,7 @@
     </coding>
   </code>
   <subject>
-    <reference value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+    <reference value="Patient/HAI-Patient-Example"/>
     <display value="Henry Seven"/>
   </subject>
 </Condition>

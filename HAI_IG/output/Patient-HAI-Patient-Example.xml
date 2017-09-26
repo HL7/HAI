@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="HAI-Patient-Example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: Medical Record Number = 1032702 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Henry Jones (OFFICIAL)</p><p><b>telecom</b>: ph: (360) 555 1212(HOME), ph: (360) 444 1212(WORK)</p><p><b>gender</b>: MALE</p><p><b>birthDate</b>: 25/08/1985</p><p><b>deceased</b>: false</p><p><b>address</b>: 49 Meadow St Mounds OK 74047 US </p><p><b>maritalStatus</b>: Married <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/MaritalStatus code 'M' = 'Married', given as 'Married'})</span></p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td>family <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/patient-contact-relationship code 'family' = 'family)</span></td><td>Francine Seven </td><td>ph: (360) 666-1212</td><td>49 Meadow St Mounds OK 74047 US </td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/v2/0203"/>
+        <code value="MR"/>
+        <display value="Medical Record Number"/>
+      </coding>
+      <text value="Medical Record Number"/>
+    </type>
+    <system value="http://hospital.smarthealthit.org"/>
+    <value value="1032702"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Jones"/>
+    <given value="Henry"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="(360) 555 1212"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="(360) 444 1212"/>
+    <use value="work"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1985-08-25"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <line value="49 Meadow St"/>
+    <city value="Mounds"/>
+    <state value="OK"/>
+    <postalCode value="74047"/>
+    <country value="US"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://hl7.org/fhir/v3/MaritalStatus"/>
+      <code value="M"/>
+      <display value="Married"/>
+    </coding>
+  </maritalStatus>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="http://hl7.org/fhir/patient-contact-relationship"/>
+        <code value="family"/>
+      </coding>
+    </relationship>
+    <name>
+      <family value="Seven"/>
+      <given value="Francine"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="(360) 666-1212"/>
+    </telecom>
+    <address>
+      <line value="49 Meadow St"/>
+      <city value="Mounds"/>
+      <state value="OK"/>
+      <postalCode value="74047"/>
+      <country value="US"/>
+    </address>
+  </contact>
+</Patient>
