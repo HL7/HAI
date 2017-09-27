@@ -3,7 +3,7 @@
     "examples": [
       {
         "type": "Composition",
-        "id": "HAI-Single-Person-Report-Generic-Constraints-Example"
+        "id": "hai-single-person-report-generic-constraints-example"
       }
     ]
   },
@@ -11,7 +11,7 @@
     "examples": [
       {
         "type": "Composition",
-        "id": "Healthcare-Associated-Infection-Report-Example"
+        "id": "healthcare-associated-infection-report-example"
       }
     ]
   },
@@ -35,7 +35,7 @@
     "examples": [
       {
         "type": "Composition",
-        "id": "HAI-Surgical-Site-Infection-Report-SSI-Example"
+        "id": "hai-surgical-site-infection-report-ssi-example"
       }
     ]
   },
@@ -43,7 +43,7 @@
     "examples": [
       {
         "type": "Encounter",
-        "id": "HAI-SSI-Encounter-Example"
+        "id": "hai-ssi-encounter-example"
       }
     ]
   },
@@ -51,7 +51,7 @@
     "examples": [
       {
         "type": "Location",
-        "id": "HAI-Healthcare-Facility-Example"
+        "id": "hai-healthcare-facility-example"
       }
     ]
   },
@@ -59,7 +59,7 @@
     "examples": [
       {
         "type": "Observation",
-        "id": "Pathogen-Identified-Example"
+        "id": "pathogen-identified-example"
       }
     ]
   },
@@ -67,7 +67,7 @@
     "examples": [
       {
         "type": "Observation",
-        "id": "MDRO-CDI-Observation-Example"
+        "id": "mdro-cdi-observation-example"
       }
     ]
   },
@@ -75,7 +75,7 @@
     "examples": [
       {
         "type": "Composition",
-        "id": "HAI-Procedure-Denominator-Report-Example"
+        "id": "hai-procedure-denominator-report-example"
       }
     ]
   },
@@ -83,7 +83,7 @@
     "examples": [
       {
         "type": "Encounter",
-        "id": "HAI-Procedure-Denominator-Encounter-Example"
+        "id": "hai-procedure-denominator-encounter-example"
       }
     ]
   },
@@ -91,7 +91,7 @@
     "examples": [
       {
         "type": "Condition",
-        "id": "Infection-Condition-Example"
+        "id": "infection-condition-example"
       }
     ]
   },
@@ -99,7 +99,7 @@
     "examples": [
       {
         "type": "Condition",
-        "id": "ASA-Class-Example"
+        "id": "asa-class-example"
       }
     ]
   },
@@ -107,7 +107,7 @@
     "examples": [
       {
         "type": "Condition",
-        "id": "Diabetes-Mellitus-Example"
+        "id": "diabetes-mellitus-example"
       }
     ]
   },
@@ -115,11 +115,11 @@
     "examples": [
       {
         "type": "Questionnaire",
-        "id": "SSI-Questionnaire"
+        "id": "ssi-questionnaire"
       },
       {
         "type": "Questionnaire",
-        "id": "Procedure-Denominator-Questionnaire"
+        "id": "procedure-denominator-questionnaire"
       }
     ]
   },
@@ -127,11 +127,11 @@
     "examples": [
       {
         "type": "QuestionnaireResponse",
-        "id": "SSI-Questionnaire-Response"
+        "id": "ssi-questionnaire-response"
       },
       {
         "type": "QuestionnaireResponse",
-        "id": "Procedure-Denominator-Questionnaire-Response"
+        "id": "procedure-denominator-questionnaire-response"
       }
     ]
   }

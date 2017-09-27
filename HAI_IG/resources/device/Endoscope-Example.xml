@@ -1,6 +1,6 @@
 <Device
     xmlns="http://hl7.org/fhir">
-    <id value="Endoscope-Example"/>
+    <id value="endoscope-example"/>
     <meta>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/endoscope"/>
     </meta>

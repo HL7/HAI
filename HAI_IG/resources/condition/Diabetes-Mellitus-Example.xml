@@ -1,6 +1,6 @@
 <Condition
     xmlns="http://hl7.org/fhir">
-    <id value="Diabetes-Mellitus-Example"/>
+    <id value="diabetes-mellitus-example"/>
     <meta>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/diabetes-mellitus"/>
     </meta>
@@ -34,7 +34,7 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/HAI-Patient-Example"/>
+        <reference value="Patient/hai-patient-example"/>
         <display value="Henry Seven"/>
     </subject>
     <onsetDateTime value="2017-09-15"/>

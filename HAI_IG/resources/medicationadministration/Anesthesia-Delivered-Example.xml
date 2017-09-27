@@ -1,6 +1,6 @@
 <MedicationAdministration
     xmlns="http://hl7.org/fhir">
-    <id value="Anesthesia-Delivered-Example"/>
+    <id value="anesthesia-delivered-example"/>
     <meta>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/anesthesia-delivered"/>
     </meta>
@@ -13,7 +13,7 @@
         </coding>
     </medicationCodeableConcept>
     <subject>
-        <reference value="Patient/HAI-Patient-Example"/>
+        <reference value="Patient/hai-patient-example"/>
         <display value="Henry Seven"/>
     </subject>
     <effectivePeriod>

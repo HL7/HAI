@@ -1,6 +1,6 @@
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="Spinal-Fusion-Level-Example"/>
+    <id value="spinal-fusion-level-example"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2017-09-15T08:16:14Z"/>

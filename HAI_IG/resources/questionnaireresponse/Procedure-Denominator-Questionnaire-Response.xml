@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
-  <id value="Procedure-Denominator-Questionnaire-Response" />
+  <id value="procedure-denominator-questionnaire-response" />
   <meta>
     <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire-response" />
   </meta>
@@ -13,7 +13,7 @@
     </div>
   </text>
   <questionnaire>
-    <reference value="http://hl7.org/fhir/us/hai/Questionnaire/Procedure-Denominator-Questionnaire" />
+    <reference value="http://hl7.org/fhir/us/hai/Questionnaire/procedure-denominator-questionnaire" />
   </questionnaire>
   <status value="completed" />
   <!--   Responses to general questions   -->

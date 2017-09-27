@@ -1,304 +1,191 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id
-    value="infection-condition" />
-  <url
-    value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-condition" />
-  <name
-    value="Infection Condition" />
-  <status
-    value="draft" />
-  <publisher
-    value="Lantana Consulting Group" />
+  <id value="infection-condition" />
+  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-condition" />
+  <name value="Infection Condition" />
+  <status value="draft" />
+  <publisher value="Lantana Consulting Group" />
   <contact>
-    <name
-      value="Sarah Gaunt" />
+    <name value="Sarah Gaunt" />
     <telecom>
-      <system
-        value="phone" />
-      <value
-        value="+6 141-029-2506" />
-      <use
-        value="work" />
+      <system value="phone" />
+      <value value="+6 141-029-2506" />
+      <use value="work" />
     </telecom>
     <telecom>
-      <system
-        value="email" />
-      <value
-        value="sarah.gaunt@lantanagroup.com" />
-      <use
-        value="work" />
+      <system value="email" />
+      <value value="sarah.gaunt@lantanagroup.com" />
+      <use value="work" />
     </telecom>
   </contact>
-  <description
-    value="This profile records the infection condition being reported." />
-  <kind
-    value="resource" />
-  <abstract
-    value="false" />
-  <contextType
-    value="resource" />
-  <context
-    value="Condition" />
-  <type
-    value="Condition" />
-  <baseDefinition
-    value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" />
-  <derivation
-    value="constraint" />
+  <description value="This profile records the infection condition being reported." />
+  <kind value="resource" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Condition" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" />
+  <derivation value="constraint" />
   <differential>
-    <element
-      id="Condition">
-      <path
-        value="Condition" />
+    <element id="Condition">
+      <path value="Condition" />
     </element>
     <element id="Condition.extension">
-      <path
-        value="Condition.extension" />
+      <path value="Condition.extension" />
       <slicing>
         <discriminator>
-          <type
-            value="value" />
-          <path
-            value="url" />
+          <type value="value" />
+          <path value="url" />
         </discriminator>
-        <rules
-          value="open" />
+        <rules value="open" />
       </slicing>
       <definition
-        value="SHALL contain exactly one [1..1] infection-present-at-time-of-surgery (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery) (CONF:3347-172)." />
+        value="SHALL contain exactly one [1..1] infection-present-at-time-of-surgery (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery) (CONF:3347-172)."
+       />
     </element>
-    <element
-      id="Condition.extension:extension1">
-      <path
-        value="Condition.extension" />
-      <sliceName
-        value="extension1" />
-      <short
-        value="extension" />
+    <element id="Condition.extension:extension1">
+      <path value="Condition.extension" />
+      <sliceName value="extension1" />
+      <short value="extension" />
       <definition
         value="MAY contain zero or one [0..1] infection-contributed-to-death (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death) (CONF:3347-164)." />
-      <min
-        value="0" />
-      <max
-        value="1" />
+      <min value="0" />
+      <max value="1" />
       <type>
-        <code
-          value="Extension" />
-        <profile
-          value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death" />
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-contributed-to-death" />
       </type>
     </element>
-    <element
-      id="Condition.extension:extension2">
-      <path
-        value="Condition.extension" />
-      <sliceName
-        value="extension2" />
-      <short
-        value="extension" />
+    <element id="Condition.extension:extension2">
+      <path value="Condition.extension" />
+      <sliceName value="extension2" />
+      <short value="extension" />
       <definition
         value="SHALL contain exactly one [1..1] occasion-of-hai-detection (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection) (CONF:3347-168)." />
-      <min
-        value="1" />
-      <max
-        value="1" />
+      <min value="1" />
+      <max value="1" />
       <type>
-        <code
-          value="Extension" />
-        <profile
-          value="http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection" />
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/occasion-of-hai-detection" />
       </type>
     </element>
-    <element
-      id="Condition.extension:extension3">
-      <path
-        value="Condition.extension" />
-      <sliceName
-        value="extension3" />
-      <short
-        value="extension" />
+    <element id="Condition.extension:extension3">
+      <path value="Condition.extension" />
+      <sliceName value="extension3" />
+      <short value="extension" />
       <definition
         value="SHALL contain exactly one [1..1] infection-present-at-time-of-surgery (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery) (CONF:3347-172)." />
-      <min
-        value="1" />
-      <max
-        value="1" />
+      <min value="1" />
+      <max value="1" />
       <type>
-        <code
-          value="Extension" />
-        <profile
-          value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery" />
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/infection-present-at-time-of-surgery" />
       </type>
     </element>
-    <element
-      id="verificationStatus">
-      <path
-        value="Condition.verificationStatus" />
-      <short
-        value="verificationStatus" />
+    <element id="verificationStatus">
+      <path value="Condition.verificationStatus" />
+      <short value="verificationStatus" />
       <definition
         value="SHALL contain exactly one [1..1] verificationStatus=&quot;confirmed&quot; (CodeSystem: ConditionVerificationStatus http://hl7.org/fhir/condition-ver-status) (CONF:3347-175)." />
-      <min
-        value="1" />
-      <max
-        value="1" />
+      <min value="1" />
+      <max value="1" />
       <type>
-        <code
-          value="code" />
+        <code value="code" />
       </type>
-      <patternString
-        value="confirmed" />
+      <patternString value="confirmed" />
     </element>
-    <element
-      id="category">
-      <path
-        value="Condition.category" />
-      <label
-        value="Infection/Event Type" />
-      <short
-        value="Infection/Event Type" />
+    <element id="category">
+      <path value="Condition.category" />
+      <label value="Infection/Event Type" />
+      <short value="Infection/Event Type" />
       <definition
         value="SHALL contain exactly one [1..1] category, which SHALL be selected from ValueSet NHSNInfectionTypeCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-type-code (CONF:3347-143)." />
-      <min
-        value="1" />
-      <max
-        value="1" />
+      <min value="1" />
+      <max value="1" />
       <type>
-        <code
-          value="CodeableConcept" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength
-          value="required" />
+        <strength value="required" />
         <valueSetReference>
-          <reference
-            value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-type-code" />
-          <display
-            value="NHSNInfectionTypeCode" />
+          <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-type-code" />
+          <display value="NHSNInfectionTypeCode" />
         </valueSetReference>
       </binding>
     </element>
-    <element
-      id="code">
-      <path
-        value="Condition.code" />
-      <label
-        value="Infection Condition/Event Details" />
-      <short
-        value="Infection Condition/Event Details" />
+    <element id="code">
+      <path value="Condition.code" />
+      <label value="Infection Condition/Event Details" />
+      <short value="Infection Condition/Event Details" />
       <definition
         value="MAY contain exactly one [1..1] code (ValueSet: NHSNInfectionConditionCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code) (CONF:3347-144)." />
-      <min
-        value="1" />
-      <max
-        value="1" />
+      <min value="1" />
+      <max value="1" />
       <type>
-        <code
-          value="CodeableConcept" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength
-          value="example" />
+        <strength value="example" />
         <valueSetReference>
-          <reference
-            value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code" />
-          <display
-            value="NHSNInfectionConditionCode" />
+          <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-infection-condition-code" />
+          <display value="NHSNInfectionConditionCode" />
         </valueSetReference>
       </binding>
     </element>
-    <element
-      id="subject">
-      <path
-        value="Condition.subject" />
-      <short
-        value="subject" />
+    <element id="subject">
+      <path value="Condition.subject" />
+      <short value="subject" />
       <definition
         value="SHALL contain exactly one [1..1] HAI Patient (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient) (CONF:3347-145)." />
-      <min
-        value="1" />
-      <max
-        value="1" />
+      <min value="1" />
+      <max value="1" />
       <type>
-        <code
-          value="Reference" />
-        <targetProfile
-          value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" />
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient" />
       </type>
     </element>
-    <element
-      id="onset[x]">
-      <path
-        value="Condition.onset[x]" />
+    <element id="onset[x]">
+      <path value="Condition.onset[x]" />
       <slicing>
         <discriminator>
-          <type
-            value="value" />
-          <path
-            value="@type" />
+          <type value="value" />
+          <path value="@type" />
         </discriminator>
-        <rules
-          value="open" />
+        <rules value="open" />
       </slicing>
-      <short
-        value="onset[x]" />
-      <definition
-        value="MAY contain zero or one [0..1] onset[x], where onset[x] is (CONF:3347-159)" />
-      <min
-        value="0" />
-      <max
-        value="1" />
+      <short value="onset[x]" />
+      <definition value="MAY contain zero or one [0..1] onset[x], where onset[x] is (CONF:3347-159)" />
+      <min value="0" />
+      <max value="1" />
     </element>
-    <element
-      id="onset[x].onsetDateTime">
-      <path
-        value="Condition.onsetDateTime" />
-      <short
-        value="onsetDateTime" />
-      <definition
-        value="onsetDateTime (CONF:3347-160)" />
+    <element id="onset[x].onsetDateTime">
+      <path value="Condition.onsetDateTime" />
+      <short value="onsetDateTime" />
+      <definition value="onsetDateTime (CONF:3347-160)" />
     </element>
-    <element
-      id="evidence">
-      <path
-        value="Condition.evidence" />
-      <label
-        value="Criteria of Diagnosis" />
-      <short
-        value="Criteria of Diagnosis" />
-      <definition
-        value="SHALL contain at least one [1..*] evidence (CONF:3347-148)." />
-      <min
-        value="1" />
-      <max
-        value="*" />
+    <element id="evidence">
+      <path value="Condition.evidence" />
+      <label value="Criteria of Diagnosis" />
+      <short value="Criteria of Diagnosis" />
+      <definition value="SHALL contain at least one [1..*] evidence (CONF:3347-148)." />
+      <min value="1" />
+      <max value="*" />
     </element>
-    <element
-      id="evidence.code">
-      <path
-        value="Condition.evidence.code" />
-      <label
-        value="Criterion of Diagnosis" />
-      <short
-        value="Criterion of Diagnosis" />
+    <element id="evidence.code">
+      <path value="Condition.evidence.code" />
+      <label value="Criterion of Diagnosis" />
+      <short value="Criterion of Diagnosis" />
       <definition
         value="Such evidences SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet NHSNCriterionOfDiagnosisCode http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code (CONF:3347-149)." />
-      <min
-        value="1" />
-      <max
-        value="1" />
+      <min value="1" />
+      <max value="1" />
       <type>
-        <code
-          value="CodeableConcept" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength
-          value="required" />
+        <strength value="required" />
         <valueSetReference>
-          <reference
-            value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code" />
-          <display
-            value="NHSNCriterionOfDiagnosisCode" />
+          <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-criterion-of-diagnosis-code" />
+          <display value="NHSNCriterionOfDiagnosisCode" />
         </valueSetReference>
       </binding>
     </element>

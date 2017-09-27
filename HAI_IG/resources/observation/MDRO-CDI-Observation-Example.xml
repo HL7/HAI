@@ -1,6 +1,6 @@
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="MDRO-CDI-Observation-Example"/>
+    <id value="mdro-cdi-observation-example"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2017-09-15T08:16:14Z"/>
@@ -11,7 +11,7 @@
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <p>
-                <b> id</b>MDRO-CDI-Observation-Example
+                <b> id</b>mdro-cdi-observation-example
             
             
             </p>

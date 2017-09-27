@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="Pathogen-Identified-Example" />
+  <id value="pathogen-identified-example" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2017-09-15T08:16:14Z" />
@@ -9,7 +9,7 @@
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
       <p>
-        <b> id</b>Pathogen-Identified-Example
+        <b> id</b>pathogen-identified-example
             
             
             

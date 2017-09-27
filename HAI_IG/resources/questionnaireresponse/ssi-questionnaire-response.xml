@@ -1,5 +1,5 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
-  <id value="SSI-Questionnaire-Response" />
+  <id value="ssi-questionnaire-response" />
   <meta>
     <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire-response" />
   </meta>
@@ -10,7 +10,7 @@
     </div>
   </text>
   <questionnaire>
-    <reference value="http://hl7.org/fhir/us/hai/Questionnaire/SSI-Questionnaire" />
+    <reference value="http://hl7.org/fhir/us/hai/Questionnaire/ssi-questionnaire" />
   </questionnaire>
   <status value="completed" />
   <item>
@@ -100,8 +100,6 @@
   <item>
     <linkId value="specific-event" />
     <text value="Specific Event" />
-    <type value="choice" />
-    <required value="true" />
     <answer>
       <valueCoding>
         <system value="urn:oid:2.16.840.1.113883.6.277" />

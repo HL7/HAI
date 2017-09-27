@@ -1,6 +1,6 @@
 <Encounter
     xmlns="http://hl7.org/fhir">
-    <id value="HAI-SSI-Encounter-Example"/>
+    <id value="hai-ssi-encounter-example"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2017-09-15T08:16:14Z"/>
@@ -26,7 +26,7 @@
     </period>
     <location>
         <location>
-            <reference value="Location/HAI-Healthcare-Facility-Example"/>
+            <reference value="Location/hai-healthcare-facility-example"/>
         </location>
     </location>
 </Encounter>

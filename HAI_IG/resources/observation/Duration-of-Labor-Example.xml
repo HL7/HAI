@@ -1,6 +1,6 @@
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="Duration-of-Labor-Example"/>
+    <id value="duration-of-labor-example"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2017-09-15T08:16:14Z"/>

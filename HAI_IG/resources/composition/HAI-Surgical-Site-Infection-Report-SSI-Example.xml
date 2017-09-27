@@ -1,6 +1,6 @@
 <Composition
     xmlns="http://hl7.org/fhir">
-    <id value="HAI-Surgical-Site-Infection-Report-SSI-Example"/>
+    <id value="hai-surgical-site-infection-report-ssi-example"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2017-09-15T08:16:14Z"/>
@@ -32,12 +32,12 @@
     </type>
     <!--  Patient Resource -->
     <subject>
-        <reference value="Patient/HAI-Patient-Example"/>
+        <reference value="Patient/hai-patient-example"/>
         <display value="Henry Seven"/>
     </subject>
     <!--  Encounter Resource -->
     <encounter>
-        <reference value="Encounter/HAI-SSI-Encounter-Example"/>
+        <reference value="Encounter/hai-ssi-encounter-example"/>
     </encounter>
     <date value="2017-09-15T09:10:14Z"/>
     <!--  Practitioner Resource -->
@@ -49,7 +49,7 @@
     <confidentiality value="N"/>
     <!--  Organization Resource -->
     <custodian>
-        <reference value="Organization/HAI-Custodian-Example"/>
+        <reference value="Organization/hai-custodian-example"/>
         <display value="Community Health and Hospitals"/>
     </custodian>
     <!--  Infection Details Section Narrative -->
@@ -161,11 +161,11 @@
         </text>
         <!--  Pathogen Identified Resource Reference-->
         <entry>
-            <reference value="Observation/Pathogen-Identified-Example"/>
+            <reference value="Observation/pathogen-identified-example"/>
         </entry>
         <!--  MRDO/CDI Observation Resource Reference -->
         <entry>
-            <reference value="Observation/MDRO-CDI-Observation-Example"/>
+            <reference value="Observation/mdro-cdi-observation-example"/>
         </entry>
     </section>
 </Composition>

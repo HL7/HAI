@@ -1,6 +1,6 @@
 <Condition
     xmlns="http://hl7.org/fhir">
-    <id value="Wound-Class-Example"/>
+    <id value="wound-class-example"/>
     <meta>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/wound-class"/>
     </meta>
@@ -29,7 +29,7 @@
         </coding>
     </code>
     <subject>
-        <reference value="patient/HAI-Patient-Example"/>
+        <reference value="patient/hai-patient-example"/>
         <display value="Henry Seven"/>
     </subject>
     <onsetDateTime value="2017-09-15"/>

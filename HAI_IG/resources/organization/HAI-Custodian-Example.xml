@@ -1,6 +1,6 @@
 <Organization
     xmlns="http://hl7.org/fhir">
-    <id value="HAI-Custodian-Example"/>
+    <id value="hai-custodian-example"/>
     <meta>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-custodian"/>
     </meta>

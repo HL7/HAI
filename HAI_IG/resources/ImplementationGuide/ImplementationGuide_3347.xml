@@ -121,7 +121,7 @@
       <example value="false" />
       <sourceReference>
         <reference value="StructureDefinition/duration-of-labor" />
-        <display value="Duration of Labor " />
+        <display value="Duration of Labor" />
       </sourceReference>
     </resource>
     <resource>
@@ -359,8 +359,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Composition/HAI-Procedure-Denominator-Report-Example" />
-        <display value="HAI-Procedure-Denominator-Report-Example" />
+        <reference value="Composition/hai-procedure-denominator-report-example" />
+        <display value="hai-procedure-denominator-report-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/hai-procedure-denominator-report" />
@@ -370,8 +370,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Composition/HAI-Single-Person-Report-Generic-Constraints-Example" />
-        <display value="HAI-Single-Person-Report-Generic-Constraints-Example" />
+        <reference value="Composition/hai-single-person-report-generic-constraints-example" />
+        <display value="hai-single-person-report-generic-constraints-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/hai-single-person-generic-constraints" />
@@ -381,8 +381,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Composition/HAI-Surgical-Site-Infection-Report-SSI-Example" />
-        <display value="HAI-Surgical-Site-Infection-Report-SSI-Example" />
+        <reference value="Composition/hai-surgical-site-infection-report-ssi-example" />
+        <display value="hai-surgical-site-infection-report-ssi-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/hai-surgical-site-infection-report-ssi" />
@@ -392,8 +392,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Composition/Healthcare-Associated-Infection-Report-Example" />
-        <display value="Healthcare-Associated-Infection-Report-Example" />
+        <reference value="Composition/healthcare-associated-infection-report-example" />
+        <display value="healthcare-associated-infection-report-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/healthcare-associated-infection-report" />
@@ -403,8 +403,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Condition/ASA-Class-Example" />
-        <display value="ASA-Class-Example" />
+        <reference value="Condition/asa-class-example" />
+        <display value="asa-class-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/asa-class" />
@@ -414,8 +414,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Condition/Diabetes-Mellitus-Example" />
-        <display value="Diabetes-Mellitus-Example" />
+        <reference value="Condition/diabetes-mellitus-example" />
+        <display value="diabetes-mellitus-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/diabetes-mellitus" />
@@ -425,8 +425,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Condition/Infection-Condition-Example" />
-        <display value="Infection-Condition-Example" />
+        <reference value="Condition/infection-condition-example" />
+        <display value="infection-condition-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/infection-condition" />
@@ -436,8 +436,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Encounter/HAI-Procedure-Denominator-Encounter-Example" />
-        <display value="HAI-Procedure-Denominator-Encounter-Example" />
+        <reference value="Encounter/hai-procedure-denominator-encounter-example" />
+        <display value="hai-procedure-denominator-encounter-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/hai-procedure-denominator-encounter" />
@@ -447,8 +447,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Encounter/HAI-SSI-Encounter-Example" />
-        <display value="HAI-SSI-Encounter-Example" />
+        <reference value="Encounter/hai-ssi-encounter-example" />
+        <display value="hai-ssi-encounter-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/hai-ssi-encounter" />
@@ -458,7 +458,7 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Location/HAI-Healthcare-Facility-Example" />
+        <reference value="Location/hai-healthcare-facility-example" />
         <display value="HAI Healthcare Facility Example" />
       </sourceReference>
       <exampleFor>
@@ -469,8 +469,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Observation/MDRO-CDI-Observation-Example" />
-        <display value="MDRO-CDI-Observation-Example" />
+        <reference value="Observation/mdro-cdi-observation-example" />
+        <display value="mdro-cdi-observation-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/mdro-cdi-observation" />
@@ -480,8 +480,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Observation/Pathogen-Identified-Example" />
-        <display value="Pathogen-Identified-Example" />
+        <reference value="Observation/pathogen-identified-example" />
+        <display value="pathogen-identified-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/pathogen-identified" />
@@ -492,8 +492,8 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Organization/HAI-Custodian-Example" />
-        <display value="HAI-Custodian-Example" />
+        <reference value="Organization/hai-custodian-example" />
+        <display value="hai-custodian-example" />
       </sourceReference>
       <exampleFor>
         <reference value="StructureDefinition/hai-custodian" />
@@ -504,7 +504,7 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Patient/HAI-Patient-Example" />
+        <reference value="Patient/hai-patient-example" />
         <display value="Henry Seven" />
       </sourceReference>
       <exampleFor>
@@ -516,7 +516,7 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Device/Endoscope-Example" />
+        <reference value="Device/endoscope-example" />
         <display value="Endoscope" />
       </sourceReference>
       <exampleFor>
@@ -528,7 +528,7 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Questionnaire/SSI-Questionnaire" />
+        <reference value="Questionnaire/ssi-questionnaire" />
         <display value="Surgical Site Infection Questionnaire" />
       </sourceReference>
       <exampleFor>
@@ -540,7 +540,7 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Questionnaire/Procedure-Denominator-Questionnaire" />
+        <reference value="Questionnaire/procedure-denominator-questionnaire" />
         <display value="Procedure Denominator Questionnaire" />
       </sourceReference>
       <exampleFor>
@@ -552,7 +552,7 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="QuestionnaireResponse/SSI-Questionnaire-Response" />
+        <reference value="QuestionnaireResponse/ssi-questionnaire-response" />
         <display value="Surgical Site Infection Questionnaire Response" />
       </sourceReference>
       <exampleFor>
@@ -564,7 +564,7 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="QuestionnaireResponse/Procedure-Denominator-Questionnaire-Response" />
+        <reference value="QuestionnaireResponse/procedure-denominator-questionnaire-response" />
         <display value="Procedure Denominator Questionnaire Response" />
       </sourceReference>
       <exampleFor>

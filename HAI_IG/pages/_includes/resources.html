@@ -1,11 +1,12 @@
 <div>
-  <p>This guide defines the following alternate sets of profiles (see front page for details).</p>
+  <p>This guide defines the following alternate sets of profiles (see Overview tab for details).</p>
   <table class="codes">
     <caption>Questionnaire-based Option Profiles</caption>
     <tr>
       <td>
         <b>Profile Name</b>
       </td>
+      <td><b>Resource Type</b></td>
       <td>
         <b>Description</b>
       </td>
@@ -14,13 +15,15 @@
       <td>
         <a href="StructureDefinition-hai-report-questionnaire.html">Healthcare Associated Infection Report Questionnaire</a>
       </td>
-      <td>This profile represents a Healthcare Associated Infection Report form as FHIR Questionnaire profile.</td>
+      <td><a href="http://build.fhir.org/questionnaire.html">Questionnaire</a></td>
+      <td>This profile represents a Healthcare Associated Infection Report form as FHIR Questionnaire.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-hai-report-questionnaire-response.html">Healthcare Associated Infection Report Questionnaire Response</a>
       </td>
-      <td>This profile represents a response to the Healthcare Associated Infection Reports Questionnaire as a FHIR QuestionnaireResponse profile.</td>
+      <td><a href="http://build.fhir.org/questionnaireresponse.html">QuestionnaireResponse</a></td>
+      <td>This profile represents a response to the Healthcare Associated Infection Reports Questionnaire as a FHIR QuestionnaireResponse.</td>
     </tr>
   </table>
 
@@ -30,6 +33,8 @@
       <td>
         <b>Profile Name</b>
       </td>
+      <td><b>Resource Type</b></td>
+      
       <td>
         <b>Description</b>
       </td>
@@ -38,12 +43,14 @@
       <td>
         <a href="StructureDefinition-healthcare-associated-infection-report.html">Healthcare Associated Infection Report</a>
       </td>
+      <td><a href="http://build.fhir.org/composition.html">Composition</a></td>
       <td>This profile further constraints the C-CDA on FHIR US Realm Header profile. It specifies the generic constraints for all NHSN Healthcare Associated Infection Reports. Further constraints are found in the specialization profiles for single-patient and population summary reports, and in the profiles for specific report types.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-hai-single-person-generic-constraints.html">HAI Single-Person Report Generic Constraints</a>
       </td>
+      <td><a href="http://build.fhir.org/composition.html">Composition</a></td>
       <td>This profile records the constraints for HAI single-person reports. It is used by all numerator reports covered by this guide. It is also used by the Procedure Denominator Report.
 
 A single-person report must conform to the Healthcare Associated Infection Report profile. In addition, key data about the patient are recorded in the HAI Patient profile referenced in the subject. 
@@ -54,6 +61,7 @@ The report-specific requirements specify the encounter data to record for each s
       <td>
         <a href="StructureDefinition-hai-surgical-site-infection-report-ssi.html">HAI Surgical Site Infection Report (SSI)</a>
       </td>
+      <td><a href="http://build.fhir.org/composition.html">Composition</a></td>
       <td>This report type records a surgical site infection event. 
         Preferred document title:  Surgical Site Infection Report (SSI). 
         Key encounter data:
@@ -69,6 +77,7 @@ The report-specific requirements specify the encounter data to record for each s
       <td>
         <a href="StructureDefinition-hai-procedure-denominator-report.html">HAI Procedure Denominator Report</a>
       </td>
+      <td><a href="http://build.fhir.org/composition.html">Composition</a></td>
       <td>This report records a procedure performed. 
         
         Preferred document title:  Denominator for Procedure Report
@@ -92,6 +101,7 @@ The report-specific requirements specify the encounter data to record for each s
       <td>
         <a href="StructureDefinition-hai-patient.html">HAI Patient</a>
       </td>
+      <td><a href="http://build.fhir.org/patient.html">Patient</a></td>
       <td>This profile is based on the US Core Patient Profile and defines HAI specific patient constraints:
   A patient identifier representing the facility-assigned patient ID is required. Other identifiers for the person can also be present, such as a United States Social Security Number (id/@root = 2.16.840.1.113883.4.1), a Medicare beneficiary identifier (id/@root = 2.16.840.1.113883.4.338), or secondary patient IDs (id/@root = the appropriate facility OID for patient IDs).
      The patient name is optional; consult the NHSN reporting protocol and requirements. *TODO** - this is required for US Core Patient
@@ -101,6 +111,7 @@ The report-specific requirements specify the encounter data to record for each s
       <td>
         <a href="StructureDefinition-hai-custodian.html">HAI Custodian</a>
       </td>
+      <td><a href="http://build.fhir.org/organization.html">Organization</a></td>
       <td>Defines NHSN custodian constraints and extensions on the Organization resource for use in HAI reports. NHSN is the custodain of NHSN HAI Reports.</td>
     </tr>
     
@@ -108,6 +119,7 @@ The report-specific requirements specify the encounter data to record for each s
       <td>
         <a href="StructureDefinition-hai-ssi-encounter.html">HAI SSI Encounter</a>
       </td>
+      <td><a href="http://build.fhir.org/encounter.html">Encounter</a></td>
       <td>Key encounter data:
      The encounter type (inpatient or outpatient) is required.
      A value for admission date is required.
@@ -118,12 +130,14 @@ The report-specific requirements specify the encounter data to record for each s
       <td>
         <a href="StructureDefinition-hai-healthcare-facility.html">HAI Healthcare Facility</a>
       </td>
+      <td><a href="http://build.fhir.org/location.html">Location</a></td>
       <td>This profile records location information such as the facility id. The facility ID is an NHSN assigned faciltiy OID and if there is an extension it must be a value registered with NHSN. </td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-hai-procedure-denominator-encounter.html">HAI Procedure Denominator Encounter</a>
       </td>
+      <td><a href="http://build.fhir.org/encounter.html">Encounter</a></td>
       <td>Key encounter data:
         The encounter type (inpatient or outpatient) is required.
         If the patient was an inpatient, a value for admission date is required.</td>
@@ -133,24 +147,28 @@ The report-specific requirements specify the encounter data to record for each s
       <td>
         <a href="StructureDefinition-asa-class.html">ASA Class</a>
       </td>
+      <td><a href="http://build.fhir.org/condition.html">Condition</a></td>
       <td>This profile records the patients physical status using the American Society of Anesthesiologists (ASA) Class Codes. The SNOMED CT representation of ASA Class Codes includes a sixth value (413500003 ASA physical status class 6 for brain-dead patients taken to the operating room to remove organs for transplant). This sixth value is not part of the value set allowed in a submission to NHSN.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-anesthesia-delivered.html">Anesthesia Delivered</a>
       </td>
+      <td><a href="http://build.fhir.org/medicationadministration.html">MedicationAdministration</a></td>
       <td>This profile reports whether anesthesia was administered.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-closure-technique.html">Closure Technique</a>
       </td>
+      <td><a href="http://build.fhir.org/procedure.html">Procedure</a></td>
       <td>This procedure identifies the closure technique used in surgical procedures.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-diabetes-mellitus.html">Diabetes Mellitus</a>
       </td>
+      <td><a href="http://build.fhir.org/condition.html">Condition</a></td>
       <td>This profile records whether the person had diabetes mellitus.
       </td>
     </tr>
@@ -158,6 +176,7 @@ The report-specific requirements specify the encounter data to record for each s
       <td>
         <a href="StructureDefinition-duration-of-labor.html">Duration of Labor </a>
       </td>
+      <td><a href="http://build.fhir.org/observation.html">Observation</a></td>
       <td>This observation records the duration of labor in value/width. NHSN protocol requires that the duration be expressed as an integer.</td>
     </tr>
     
@@ -165,30 +184,35 @@ The report-specific requirements specify the encounter data to record for each s
       <td>
         <a href="StructureDefinition-endoscope-used-statement.html">Endoscope Used Statement</a>
       </td>
+      <td><a href="http://build.fhir.org/deviceusestatement.html">DeviceUseStatement</a></td>
       <td>This profile records whether an endoscope was used.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-endoscope.html">Endoscope</a>
       </td>
+      <td><a href="http://build.fhir.org/device.html">Device</a></td>
       <td>This profile represents an endoscope device.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-height-observation.html">Height Observation</a>
       </td>
+      <td><a href="http://build.fhir.org/observation.html">Observation</a></td>
       <td>This observation records a body height.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-infection-condition.html">Infection Condition</a>
       </td>
+      <td><a href="http://build.fhir.org/condition.html">Condition</a></td>
       <td>This profile records the infection condition being reported.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-mdro-cdi-observation.html">MDRO/CDI Observation</a>
       </td>
+      <td><a href="http://build.fhir.org/observation.html">Observation</a></td>
       <td>This observation records whether the primary infection being reported was caused by a multi-drug-resistant organism (MDRO). It is a general or summary observation not associated with any individual pathogen in the Findings Section.
         
         If the infection organism was multi-drug resistant, set the value to true. If the infection organism was not multi-drug resistant, set the value to false.</td>
@@ -198,6 +222,7 @@ The report-specific requirements specify the encounter data to record for each s
       <td>
         <a href="StructureDefinition-pathogen-identified.html">Pathogen Identified</a>
       </td>
+      <td><a href="http://build.fhir.org/observation.html">Observation</a></td>
       <td>This profile either represents a pathogen identified or, using a code from the NHSN Pathogens Code value set, records that no pathogens were identified.
 
 The value set table provides codes for several unspecified speciesfor example "Acidaminococcus species" (SNOMED CT 131202007, NHSN ACISP)for use when a more precise code is not available. The code for an unspecified species is preferred to a genus-level code.
@@ -209,6 +234,7 @@ Each Pathogen Identified profile represents a set of information concerning a si
       <td>
         <a href="StructureDefinition-procedure-details.html">Procedure Details</a>
       </td>
+      <td><a href="http://build.fhir.org/procedure.html">Procedure</a></td>
       <td>This profile records the detail required in a Procedure Report about a procedure.
 
 NHSN uses the procedure id, along with other data, to establish a link between a Procedure Report and an SSI Report; the value of the procedure id must be the same in both the report of a procedure and the report of a surgical-site infection resulting from that procedure. In this profile, the priority code represents the main or primary procedure for the patient in the context of this report.</td>
@@ -217,6 +243,7 @@ NHSN uses the procedure id, along with other data, to establish a link between a
       <td>
         <a href="StructureDefinition-procedure-risk-factors.html">Procedure Risk Factors</a>
       </td>
+      <td><a href="http://build.fhir.org/list.html">List</a></td>
       <td>This profile records the detail required in a Procedure Report about the circumstances in which a procedure was performed.</td>
     </tr>
     
@@ -224,30 +251,35 @@ NHSN uses the procedure id, along with other data, to establish a link between a
       <td>
         <a href="StructureDefinition-revision-associated-with-prior-infection.html">Revision Associated with Prior Infection Observation</a>
       </td>
+      <td><a href="http://build.fhir.org/observation.html">Observation</a></td>
       <td>This profile records whether or not a surgical procedure was performed as a result of a previous infection.  In the NHSN context, this observation only applies to arthroplasty procedures.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-spinal-fusion-level.html">Spinal Fusion Level</a>
       </td>
+      <td><a href="http://build.fhir.org/observation.html">Observation</a></td>
       <td>This profile records the spinal level of a spinal fusion procedure.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-trauma-observation.html">Trauma Observation</a>
       </td>
+      <td><a href="http://build.fhir.org/condition.html">Condition</a></td>
       <td>This observation records whether the person had trauma. It is used in reporting the circumstances of a procedure.</td>
     </tr>
     <tr>
       <td>
         <a href="StructureDefinition-weight-observation.html">Weight Observation</a>
       </td>
+      <td><a href="http://build.fhir.org/observation.html">Observation</a></td>
       <td>This observation records a body weight. NHSN protocol requires that the value be an integer.</td>
     </tr>
     
     <tr>
       <td>
         <a href="StructureDefinition-wound-class.html">Wound Class</a>
+        <td><a href="http://hl7.org/fhir/STU3/Condition.html">Condition</a></td>
       </td>
       <td>NHSN patient safety protocol on this topic is an adaptation of (not a change to) the American College of Surgeons (ACoS) definitions, which are the definitions used by SNOMED. Thus, SNOMED wound-class codes are appropriate for use with this observation.</td>
     </tr>

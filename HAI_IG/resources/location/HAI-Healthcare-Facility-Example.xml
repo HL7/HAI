@@ -1,27 +1,25 @@
-<Location
-    xmlns="http://hl7.org/fhir">
-    <id value="HAI-Healthcare-Facility-Example"/>
-    <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2017-09-15T08:16:14Z"/>
-        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility"/>
-    </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">Community Health and Hospitals, South Wing, second
-            floor, Orthopaedic Operation Room 1 
+<Location xmlns="http://hl7.org/fhir">
+  <id value="hai-healthcare-facility-example" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2017-09-15T08:16:14Z" />
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-healthcare-facility" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">Medical/Surgical Critical Care:
+      2.16.840.1.113883.3.117.1.1.5.1.19W
         </div>
-    </text>
-    <identifier>
-        <system value="urn:ietf:rfc:3986"/>
-        <value value="1.2"/>
-    </identifier>
-    <type>
-        <coding>
-            <system value="urn:oid:2.16.840.1.113883.6.259"/>
-            <code value="1243-5"/>
-            <display value="Ambulatory Surgery Center"/>
-        </coding>
-    </type>
+  </text>
+  <identifier>
+    <system value="2.16.840.1.113883.3.117.1.1.5.1.1" />
+    <value value="9W" />
+  </identifier>
+  <type>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.6.259" />
+      <code value="1029-8" />
+      <display value="Medical/Surgical Critical Care" />
+    </coding>
+  </type>
 </Location>

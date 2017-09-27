@@ -1,6 +1,6 @@
 <Composition
     xmlns="http://hl7.org/fhir">
-    <id value="HAI-Single-Person-Report-Generic-Constraints-Example"/>
+    <id value="hai-single-person-report-generic-constraints-example"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2017-09-15T08:16:14Z"/>
@@ -33,12 +33,12 @@
     </type>
     <!--  Patient Resource -->
     <subject>
-        <reference value="Patient/HAI-Patient-Example"/>
+        <reference value="Patient/hai-patient-example"/>
         <display value="Henry Jones"/>
     </subject>
     <!--  Encounter Resource -->
     <encounter>
-        <reference value="Encounter/HAI-SSI-Encounter-Example"/>
+        <reference value="Encounter/hai-ssi-encounter-example"/>
     </encounter>
     <date value="2017-09-15T09:10:14Z"/>
     <!--  Practitioner Resource Reference-->
@@ -48,7 +48,7 @@
     </author>
     <!--  Device Resource Reference -->
     <author>
-        <reference value="Device/Endoscope-Example"/>
+        <reference value="Device/endoscope-example"/>
         <display value="Endoscope Device"/>
     </author>
     <title value="Healthcare Associated Infection Report"/>
@@ -63,7 +63,7 @@
     </attester>
     <!--  Organization Resource -->
     <custodian>
-        <reference value="Organization/HAI-Custodian-Example"/>
+        <reference value="Organization/hai-custodian-example"/>
         <display value="Community Health and Hospitals"/>
     </custodian>
 </Composition>

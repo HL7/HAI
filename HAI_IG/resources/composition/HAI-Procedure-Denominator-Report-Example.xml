@@ -1,6 +1,6 @@
 <Composition
     xmlns="http://hl7.org/fhir">
-    <id value="HAI-Procedure-Denominator-Report-Example"/>
+    <id value="hai-procedure-denominator-report-example"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2017-09-15T08:16:14Z"/>
@@ -31,12 +31,12 @@
     </type>
     <!--  Patient Resource -->
     <subject>
-        <reference value="Patient/HAI-Patient-Example"/>
+        <reference value="Patient/hai-patient-example"/>
         <display value="Henry Jones"/>
     </subject>
     <!--  Encounter Resource -->
     <encounter>
-        <reference value="Encounter/HAI-Procedure-Denominator-Encounter-Example"/>
+        <reference value="Encounter/hai-procedure-denominator-encounter-example"/>
     </encounter>
     <date value="2017-09-15T09:10:14Z"/>
     <!--  Practitioner Resource Reference-->
@@ -61,7 +61,7 @@
     </attester>
     <!--  Organization Resource -->
     <custodian>
-        <reference value="Organization/HAI-Custodian-Example"/>
+        <reference value="Organization/hai-custodian-example"/>
         <display value="Community Health and Hospitals"/>
     </custodian>
     <section>

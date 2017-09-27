@@ -1,6 +1,6 @@
 <Patient
     xmlns="http://hl7.org/fhir">
-    <id value="HAI-Patient-Example"/>
+    <id value="hai-patient-example"/>
     <meta>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-patient"/>
     </meta>

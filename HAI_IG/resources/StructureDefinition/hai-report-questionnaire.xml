@@ -1,5 +1,5 @@
-<StructureDefinition
-  xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://hl7.org/fhir ../../../Validation/questionnaire.xsd" xmlns="http://hl7.org/fhir">
   <id value="hai-report-questionnaire" />
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire" />
   <name value="Healthcare Associated Infection Report Questionnaire" />
@@ -18,7 +18,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="This profile represents the HAI Surgical Site Infection Report (SSI) as a FHIR Questionnaire." />
+  <description value="This profile represents a Healthcare Associated Infection Report form as FHIR Questionnaire." />
   <kind value="resource" />
   <abstract value="false" />
   <contextType value="resource" />
@@ -33,14 +33,14 @@
     <element id="code">
       <path value="Questionnaire.code" />
       <short value="code" />
-      <definition value="SHALL contain exactly one [1..1] code=&quot;51897-7&quot; Healthcare Associated Infection Report Document (CodeSystem: LOINC http://loinc.org) (CONF:3347-270)." />
+      <definition value="SHALL contain exactly one [1..1] code=&quot;51897-7&quot; Healthcare Associated Infection Report Document (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-270)." />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Coding" />
       </type>
       <patternCoding>
-        <system value="http://loinc.org" />
+        <system value="urn:oid:2.16.840.1.113883.6.1" />
         <code value="51897-7" />
       </patternCoding>
     </element>
@@ -49,30 +49,43 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="extension" />
+          <path value="Questionnaire.item.extension" />
+        </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="Questionnaire.item.linkId" />
         </discriminator>
         <rules value="open" />
       </slicing>
-      <definition value="SHALL contain at least one [1..*] item (CONF:3347-272) such that it" />
     </element>
-    <element id="Questionnaire.item:item2">
+    <element id="item">
       <path value="Questionnaire.item" />
-      <sliceName value="item2" />
       <short value="item" />
-      <definition value="SHALL contain exactly one [1..1] item (CONF:3347-269) such that it" />
+      <definition value="SHALL contain exactly one [1..1] item (CONF:3347-269)." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Questionnaire.item:item2.extension">
+    <element id="item.extension">
       <path value="Questionnaire.item.extension" />
       <short value="extension" />
-      <definition value="SHALL contain exactly one [1..1] allowedProfile (identifier: http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile) (CONF:3347-271)." />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" />
       </type>
+    </element>
+    <element id="item.linkId">
+      <path value="Questionnaire.item.linkId" />
+      <short value="linkId" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="item.text">
+      <path value="Questionnaire.item.text" />
+      <short value="text" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Questionnaire.item:item3">
       <path value="Questionnaire.item" />
@@ -92,6 +105,13 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note" />
       </type>
+    </element>
+    <element id="Questionnaire.item:item3.linkId">
+      <path value="Questionnaire.item.linkId" />
+      <short value="linkId" />
+      <definition value="SHALL contain exactly one [1..1] linkId (CONF:3347-281)." />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Questionnaire.item:item3.text">
       <path value="Questionnaire.item.text" />

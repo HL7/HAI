@@ -1,6 +1,6 @@
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="Height-Observation-Example"/>
+    <id value="height-observation-example"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2017-09-15T08:16:14Z"/>
