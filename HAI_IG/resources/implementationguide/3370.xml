@@ -42,7 +42,7 @@
         <display value="NHSNInfectionTypeCode" />
       </sourceReference>
     </resource>
-    <!--<resource>
+    <resource>
       <example value="true" />
       <sourceReference>
         <reference value="Questionnaire/hai-questionnaire-los-event" />
@@ -63,7 +63,7 @@
         <reference value="StructureDefinition/hai-report-questionnaire-response" />
         <display value="Healthcare Associated Infection Report QuestionnaireResponse" />
       </exampleFor>
-    </resource>-->
+    </resource>
   </package>
   <page>
     <source value="http://test.com/IG/View/3370" />
