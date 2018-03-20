@@ -56,28 +56,6 @@
     <resource>
       <example value="true" />
       <sourceReference>
-        <reference value="Questionnaire/hai-questionnaire-los-denominator" />
-        <display value="Late_Onset_Sepsis_Denominator_Questionnaire" />
-      </sourceReference>
-      <exampleFor>
-        <reference value="StructureDefinition/hai-report-questionnaire" />
-        <display value="Healthcare Associated Infection Report Questionnaire" />
-      </exampleFor>
-    </resource>
-    <resource>
-      <example value="true" />
-      <sourceReference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-denominator" />
-        <display value="Late_Onset_Sepsis_Denominator_QuestionnaireResponse" />
-      </sourceReference>
-      <exampleFor>
-        <reference value="StructureDefinition/hai-report-questionnaire-response" />
-        <display value="Healthcare Associated Infection Report QuestionnaireResponse" />
-      </exampleFor>
-    </resource>
-    <resource>
-      <example value="true" />
-      <sourceReference>
         <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-event" />
         <display value="Late_Onset_Sepsis/Meningitis_Event_LOS_Questionnaire" />
       </sourceReference>
