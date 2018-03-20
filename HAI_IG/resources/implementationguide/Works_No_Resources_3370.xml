@@ -1,0 +1,90 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="3370" />
+  <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/3370" />
+  <version value="0" />
+  <name value="Healthcare Associated Infection Reports FHIR Release 1" />
+  <experimental value="false" />
+  <date value="2018-04-01" />
+  <publisher value="HL7" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="3.2.0" />
+  <status value="draft" />
+  <!--  <definition>-->
+  <package>
+    <name value="Profiles in this Implementation Guide" />
+  </package>
+  <!--<resource>
+    <reference>
+      <reference value="StructureDefinition/hai-report-questionnaire" />
+    </reference>
+    <name value="Healthcare Associated Infection Report Questionnaire" />
+    <exampleBoolean value="false" />
+  </resource>-->
+
+
+  <!--<resource>
+      <reference>
+        <reference value="StructureDefinition/hai-report-questionnaire-response" />
+      </reference>
+      <name value="Healthcare Associated Infection Report QuestionnaireResponse" />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/2.16.840.1.113883.13.19" />
+      </reference>
+      <name value="NHSNHealthcareServiceLocationCode" />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/2.16.840.1.113883.13.20" />
+      </reference>
+      <name value="NHSNInfectionTypeCode" />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/NHSN-HAI-questionnaire-los-event" />
+      </reference>
+      <name value="Late_Onset_Sepsis/Meningitis_Event_(LOS)_Questionnaire" />
+      <exampleReference>
+        <reference value="StructureDefinition/hai-report-questionnaire" />
+      </exampleReference>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/los-denominator-questionnaire" />
+      </reference>
+      <name value="Late_Onset_Sepsis_Denominator_Questionnaire" />
+      <exampleReference>
+        <reference value="StructureDefinition/hai-report-questionnaire" />
+      </exampleReference>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/NHSN-HAI-Prototype-Procedure-Denominator" />
+      </reference>
+      <name value="Late_Onset_Sepsis/Meningitis_Event_(LOS)_QuestionnaireResponse" />
+      <exampleReference>
+        <reference value="StructureDefinition/hai-report-questionnaire-response" />
+      </exampleReference>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/LOS-denominator-questionnaireresponse-sample" />
+      </reference>
+      <name value="Late_Onset_Sepsis_Denominator_QuestionnaireResponse" />
+      <exampleReference>
+        <reference value="StructureDefinition/hai-report-questionnaire-response" />
+      </exampleReference>
+    </resource>-->
+
+  <!--<page>      <nameUrl value="http://test.com/IG/View/3370" />      <title value="Healthcare Associated Infection Reports FHIR Release 1" />    </page>-->
+  <!--</definition>-->
+</ImplementationGuide>

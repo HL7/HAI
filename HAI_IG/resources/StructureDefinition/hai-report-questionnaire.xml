@@ -1,5 +1,5 @@
 <StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://hl7.org/fhir ../../../Validation/questionnaire.xsd" xmlns="http://hl7.org/fhir">
+  xsi:schemaLocation="http://hl7.org/fhir ../../../../../Analysts/NHSN-HAI/R3D3/FHIR/Validation/fhir-all-xsd/fhir-all.xsd" xmlns="http://hl7.org/fhir">
   <id value="hai-report-questionnaire" />
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire" />
   <name value="Healthcare Associated Infection Report Questionnaire" />
@@ -21,8 +21,8 @@
   <description value="This profile represents a Healthcare Associated Infection Report form as FHIR Questionnaire." />
   <kind value="resource" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Questionnaire" />
+  <!--<contextType value="resource" />
+  <context value="Questionnaire" />-->
   <type value="Questionnaire" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
   <derivation value="constraint" />
@@ -33,7 +33,8 @@
     <element id="code">
       <path value="Questionnaire.code" />
       <short value="code" />
-      <definition value="SHALL contain exactly one [1..1] code=&quot;51897-7&quot; Healthcare Associated Infection Report Document (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3347-270)." />
+      <definition
+        value="SHALL contain exactly one [1..1] code=&quot;51897-7&quot; Healthcare Associated Infection Report Document (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:3370-10)." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -44,30 +45,30 @@
         <code value="51897-7" />
       </patternCoding>
     </element>
-    <element id="Questionnaire.item">
+    <element>
       <path value="Questionnaire.item" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="Questionnaire.item.extension" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="Questionnaire.item.linkId" />
+          <path value="linkId" />
         </discriminator>
         <rules value="open" />
       </slicing>
+      <definition value="SHALL contain at least one [1..*] item (CONF:3370-6) such that it" />
     </element>
-    <element id="item">
+    <element id="Questionnaire.item:item2">
       <path value="Questionnaire.item" />
+      <sliceName value="item2" />
       <short value="item" />
-      <definition value="SHALL contain exactly one [1..1] item (CONF:3347-269)." />
+      <definition value="SHALL contain exactly one [1..1] item (CONF:3370-4) such that it" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="item.extension">
+    <element id="Questionnaire.item:item2.extension">
       <path value="Questionnaire.item.extension" />
       <short value="extension" />
+      <definition
+        value="SHALL contain exactly one [1..1] allowedProfile (identifier: http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile) (CONF:3370-5)." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -75,15 +76,17 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" />
       </type>
     </element>
-    <element id="item.linkId">
+    <element id="Questionnaire.item:item2.linkId">
       <path value="Questionnaire.item.linkId" />
       <short value="linkId" />
+      <definition value="SHALL contain exactly one [1..1] linkId (CONF:3370-9)." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="item.text">
+    <element id="Questionnaire.item:item2.text">
       <path value="Questionnaire.item.text" />
       <short value="text" />
+      <definition value="SHALL contain exactly one [1..1] text (CONF:3370-8)." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -91,14 +94,15 @@
       <path value="Questionnaire.item" />
       <sliceName value="item3" />
       <short value="item" />
-      <definition value="SHALL contain at least one [1..*] item (CONF:3347-272) such that it" />
+      <definition value="SHALL contain at least one [1..*] item (CONF:3370-6) such that it" />
       <min value="1" />
       <max value="*" />
     </element>
     <element id="Questionnaire.item:item3.extension">
       <path value="Questionnaire.item.extension" />
       <short value="extension" />
-      <definition value="SHALL contain exactly one [1..1] questionnaire-item-note (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note) (CONF:3347-273)." />
+      <definition
+        value="SHALL contain exactly one [1..1] questionnaire-item-note (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note) (CONF:3370-7)." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -109,14 +113,14 @@
     <element id="Questionnaire.item:item3.linkId">
       <path value="Questionnaire.item.linkId" />
       <short value="linkId" />
-      <definition value="SHALL contain exactly one [1..1] linkId (CONF:3347-281)." />
+      <definition value="SHALL contain exactly one [1..1] linkId (CONF:3370-12)." />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Questionnaire.item:item3.text">
       <path value="Questionnaire.item.text" />
       <short value="text" />
-      <definition value="SHALL contain exactly one [1..1] text (CONF:3347-274)." />
+      <definition value="SHALL contain exactly one [1..1] text (CONF:3370-11)." />
       <min value="1" />
       <max value="1" />
     </element>

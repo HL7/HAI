@@ -1,0 +1,133 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="hai-questionnaireResponse-los-denominator" />
+  <questionnaire>
+    <reference value="Questionnaire/hai-questionnaire-los-denominator" />
+  </questionnaire>
+  <status value="completed" />
+  
+  <authored value="2018-03-13" />
+  
+  <!-- Facility ID -->
+  <item>
+    <linkId value="facility" />
+    <text value="Facility ID" />
+    <answer>
+      <valueUri value="urn:oid:2.16.213.321" />
+    </answer>
+  </item>
+  
+  <!-- Date of Denominator -->
+  <item>
+    <linkId value="date-of-denominator" />
+    <text value="Date of denominator" />
+    <answer>
+      <valueDate value="2018-03-01" />
+    </answer>
+  </item>
+  <!-- Location -->
+  <item>
+    <linkId value="facility-location" />
+    <text value="Facility Location" />
+    <answer>
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.259" />
+        <code value="1040-5" />
+        <display value="Neonatal Critical Care (Level III)" />
+      </valueCoding>
+    </answer>
+  </item>
+  
+  
+  <!-- Summary Encounter Answers -->
+  <!-- Required Summary Point 1: Patient Days - Birth Weight: 401 - 750g -->
+  <item>
+    <linkId value="patients-birthweight-401to750" />
+    <text value="Patient Days - Birthweight 401-750g" />
+    <answer>
+      <valueInteger value="23" />
+    </answer>
+  </item>
+  
+  <!-- Required  Summary Point 2: Patient Days - Birth Weight: 751 - 1000g -->
+  <item>
+    <linkId value="patients-birthweight-751to1000" />
+    <text value="Patient Days - Birthweight 751-1000g" />
+    <answer>
+      <valueInteger value="23" />
+    </answer>
+  </item>
+  
+  <!-- Required Summary Point 3: Patient Days - Birth Weight: 1001 - 1500g -->
+  <item>
+    <linkId value="patients-birthweight-1001-1500" />
+    <text value="Patient Days - birthweight 1001-1500g" />
+    <answer>
+      <valueInteger value="23" />
+    </answer>
+  </item>
+  
+  <!-- Required Summary Point 4: Patient Days - Birth Weight: 1501 - 2500g -->
+  <item>
+    <linkId value="patients-birthweight-1501-2500" />
+    <text value="Patient Days - birthweight 1501-2500g" />
+    <answer>
+      <valueInteger value="23" />
+    </answer>
+  </item>
+  
+  
+  <!-- Required Summary Point 5: Patient Days - Birth Weight: Greater than 2500g -->
+  <item>
+    <linkId value="patients-birthweight-gt2500" />
+    <text value="Patient Days - Birthweight >2500g" />
+    <answer>
+      <valueInteger value="23" />
+    </answer>
+  </item>
+  
+  
+  <!-- Optional Summary Point 1: Patients with Central Line, including umbilical catheter days - Birth Weight: 401 - 750 -->
+  <item>
+    <linkId value="patients-catheter-birthweight-401to750" />
+    <text value="Number of Patients with Central line, including umbilical catheter days - Birthweight 401-750g" />
+    <answer>
+      <valueInteger value="5" />
+    </answer>
+  </item>
+  
+  <!-- Optional Summary Point 2: Patients with Central Line, including umbilical catheter days - Birth Weight: 751 - 1000g -->
+  <item>
+    <linkId value="patients-catheter-birthweight-751-1000" />
+    <text value="Number of Patients with Central line, including umbilical catheter days - Birthweight 750-1000g" />
+    <answer>
+      <valueInteger value="5" />
+    </answer>
+  </item>
+  
+  <!-- Optional Summary Point 3: Patients with Central Line, including umbilical catheter days - Birth Weight: 1001 - 1500g -->
+  <item>
+    <linkId value="patients-catheter-birthweight-1001to1500" />
+    <text value="Number of Patients with Central line, including umbilical catheter days - Birthweight 1001-1500g" />
+    <answer>
+      <valueInteger value="5" />
+    </answer>
+  </item>
+  
+  <!-- Optional Summary Point 4: Patients with Central Line, including umbilical catheter days - Birth Weight: 1501 - 2500g -->
+  <item>
+    <linkId value="patients-catheter-birthweight-1501to2500" />
+    <text value="Number of Patients with Central line, including umbilical catheter days - Birthweight 1501-2500g" />
+    <answer>
+      <valueInteger value="5" />
+    </answer>
+  </item>
+  
+  <!-- Optional Summary Point 5: Patients with Central Line, including umbilical catheter days - Birth Weight: >2500g -->
+  <item>
+    <linkId value="patients-catheter-birthweight-gt2500" />
+    <text value="Number of Patients with Central line, including umbilical catheter days - greater than 2500g" />
+    <answer>
+      <valueInteger value="5" />
+    </answer>
+  </item>
+</QuestionnaireResponse>

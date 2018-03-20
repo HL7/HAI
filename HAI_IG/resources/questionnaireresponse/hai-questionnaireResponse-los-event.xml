@@ -1,0 +1,434 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="hai-questionnaireResponse-los-event" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <pre>This QuestionnaireResponse instance is an example of a completed Late Onset Sepsis/Meningitis Event (LOS) report questionnaire.</pre>
+    </div>
+  </text>
+  <!--<questionnaire>
+    <reference value="Questionnaire/hai-questionnaire-los-event" />
+  </questionnaire>-->
+  <status value="completed" />
+
+  <!-- Facility ID -->
+  <item>
+    <linkId value="facility" />
+    <text value="Facility ID" />
+    <answer>
+      <valueUri value="urn:oid:2.16.213.321" />
+    </answer>
+  </item>
+
+  <!-- Date of Denominator -->
+  <item>
+    <linkId value="date-of-denominator" />
+    <text value="Date of denominator" />
+    <answer>
+      <valueDate value="2018-03-01" />
+    </answer>
+  </item>
+  <!-- Location -->
+  <item>
+    <linkId value="facility-location" />
+    <text value="Facility Location" />
+    <answer>
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.259" />
+        <code value="1040-5" />
+        <display value="Neonatal Critical Care (Level III)" />
+      </valueCoding>
+    </answer>
+  </item>
+
+
+  <!-- Summary Encounter Answers -->
+  <!-- Required Summary Point 1: Patient Days - Birth Weight: 401 - 750g -->
+  <item>
+    <linkId value="patients-birthweight-401to750" />
+    <text value="Patient Days - Birthweight 401-750g" />
+    <answer>
+      <valueInteger value="23" />
+    </answer>
+  </item>
+
+  <!-- Required  Summary Point 2: Patient Days - Birth Weight: 751 - 1000g -->
+  <item>
+    <linkId value="patients-birthweight-751to1000" />
+    <text value="Patient Days - Birthweight 751-1000g" />
+    <answer>
+      <valueInteger value="23" />
+    </answer>
+  </item>
+
+  <!-- Required Summary Point 3: Patient Days - Birth Weight: 1001 - 1500g -->
+  <item>
+    <linkId value="patients-birthweight-1001-1500" />
+    <text value="Patient Days - birthweight 1001-1500g" />
+    <answer>
+      <valueInteger value="23" />
+    </answer>
+  </item>
+
+  <!-- Required Summary Point 4: Patient Days - Birth Weight: 1501 - 2500g -->
+  <item>
+    <linkId value="patients-birthweight-1501-2500" />
+    <text value="Patient Days - birthweight 1501-2500g" />
+    <answer>
+      <valueInteger value="23" />
+    </answer>
+  </item>
+
+
+  <!-- Required Summary Point 5: Patient Days - Birth Weight: Greater than 2500g -->
+  <item>
+    <linkId value="patients-birthweight-gt2500" />
+    <text value="Patient Days - Birthweight >2500g" />
+    <answer>
+      <valueInteger value="23" />
+    </answer>
+  </item>
+
+
+  <!-- Optional Summary Point 1: Patients with Central Line, including umbilical catheter days - Birth Weight: 401 - 750 -->
+  <item>
+    <linkId value="patients-catheter-birthweight-401to750" />
+    <text value="Number of Patients with Central line, including umbilical catheter days - Birthweight 401-750g" />
+    <answer>
+      <valueInteger value="5" />
+    </answer>
+  </item>
+
+  <!-- Optional Summary Point 2: Patients with Central Line, including umbilical catheter days - Birth Weight: 751 - 1000g -->
+  <item>
+    <linkId value="patients-catheter-birthweight-751-1000" />
+    <text value="Number of Patients with Central line, including umbilical catheter days - Birthweight 750-1000g" />
+    <answer>
+      <valueInteger value="5" />
+    </answer>
+  </item>
+
+  <!-- Optional Summary Point 3: Patients with Central Line, including umbilical catheter days - Birth Weight: 1001 - 1500g -->
+  <item>
+    <linkId value="patients-catheter-birthweight-1001to1500" />
+    <text value="Number of Patients with Central line, including umbilical catheter days - Birthweight 1001-1500g" />
+    <answer>
+      <valueInteger value="5" />
+    </answer>
+  </item>
+
+  <!-- Optional Summary Point 4: Patients with Central Line, including umbilical catheter days - Birth Weight: 1501 - 2500g -->
+  <item>
+    <linkId value="patients-catheter-birthweight-1501to2500" />
+    <text value="Number of Patients with Central line, including umbilical catheter days - Birthweight 1501-2500g" />
+    <answer>
+      <valueInteger value="5" />
+    </answer>
+  </item>
+
+  <!-- Optional Summary Point 5: Patients with Central Line, including umbilical catheter days - Birth Weight: >2500g -->
+  <item>
+    <linkId value="patients-catheter-birthweight-gt2500" />
+    <text value="Number of Patients with Central line, including umbilical catheter days - greater than 2500g" />
+    <answer>
+      <valueInteger value="5" />
+    </answer>
+  </item>
+
+  <!-- Facility ID -->
+  <item>
+    <linkId value="facility" />
+    <text value="Facility ID" />
+    <answer>
+      <!-- **TODO** Need to figure out how to represent the extension="9W" that is needed here. Might need another item -->
+      <valueUri value="2.16.840.1.113883.3.117.1.1.5.1.1" />
+    </answer>
+  </item>
+
+  <!-- Event # -->
+  <!-- NOTE: Review where the CDA IG specifies this item. Currently maps to the encompassingEncounter/ID -->
+  <item>
+    <linkId value="event-number" />
+    <text value="Event #" />
+    <answer>
+      <!-- **TODO** Need to figure out how to represent the extension="31" that is needed here. Might need another item -->
+      <valueUri value="2.16.840.1.113883.3.117.1.1.5.2.1.1.3" />
+    </answer>
+  </item>
+
+  <!-- Event Type 
+       (CDA Mapping: Infection-Type Observation/value) -->
+  <item>
+    <linkId value="event-type" />
+    <text value="Event Type" />
+    <answer>
+      <valueCoding>
+        <system value="https://loinc.org/" />
+        <code value="TEMP_SNOMED_LATE_ONSET_SEPSIS" />
+        <display value="Late Onset Sepsis (LOS)" />
+      </valueCoding>
+    </answer>
+  </item>
+
+  <!-- Date of Event 
+       (CDA Mapping: Infection-Type Observation/effectiveTime -->
+  <item>
+    <linkId value="date-of-event" />
+    <text value="Date of Event" />
+    <answer>
+      <valueDate value="2018-01-02" />
+    </answer>
+  </item>
+
+  <!-- Event Location 
+       (CDA Mapping: encompassingEncounter/location/healthcareFacility/code)-->
+  <item>
+    <linkId value="facility-location" />
+    <text value="Facility Location" />
+    <answer>
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.259" />
+        <code value="1029-8" />
+        <display value="Medical/Surgical Critical Care" />
+      </valueCoding>
+    </answer>
+  </item>
+
+  <!-- Date Admitted to Facility
+       (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/low) -->
+  <item>
+    <linkId value="date-admitted-to-facility" />
+    <text value="Date Admitted to Facility:" />
+    <answer>
+      <valueDate value="2018-01-01" />
+    </answer>
+  </item>
+
+  <!-- Inborn/Outborn Observation 
+       (CDA Mapping: Inborn/Outborn Observation/value)-->
+  <item>
+    <linkId value="inborn-outborn-observation" />
+    <text value="Select: Inborn or Outborn" />
+    <answer>
+      <valueCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="445087001" />
+        <display value="Born before arrival to hospital (situation)" />
+      </valueCoding>
+    </answer>
+  </item>
+
+  <!--  Patient Information 
+            including:
+            - Patient ID
+            - Social Security #
+            - Secondary ID
+            - Medicaid #
+            - Patient Name
+            - Patient Gender
+            - Patient Date of Birth
+            - Patient Ethnicity
+            - Patient Race
+    -->
+  <!-- **TODO** doesn't this have to point to an instance of a patient? need to add this 
+    Shouldn't this be in subject????-->
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
+      <valueReference>
+        <reference value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+      </valueReference>
+    </extension>
+    <linkId value="questionnaire-patient" />
+    <text value="Patient" />
+  </item>
+
+  <!-- *** Risk Factors Section *** -->
+  <item>
+    <linkId value="risk-factors" />
+    <text value="Risk Factors Section" />
+
+    <!-- Central Line present prior to event, including umbilical catheter
+         (CDA Mapping: Infection Risk Factors Observation/value="1006-6" - if present then true) -->
+    <item>
+      <linkId value="risk-factor-central-line" />
+      <text value="Central line present prior to event, including umbilical catheter" />
+      <answer>
+        <valueBoolean value="true" />
+      </answer>
+    </item>
+
+    <!-- Birth Weight (grams)
+         (CDA Mapping: Infection Risk Factors Measurement Observaiton/value) -->
+    <item>
+      <linkId value="risk-factor-birth-weight" />
+      <text value="Birth Weight (grams)" />
+      <answer>
+        <valueQuantity>
+          <value value="700" />
+          <unit value="g" />
+        </valueQuantity>
+      </answer>
+    </item>
+
+    <!-- Gestational Age
+         (CDA Mapping: Gestational Age Observation/value) -->
+    <item>
+      <linkId value="risk-factor-gestational-age" />
+      <text value="Gestational Age" />
+      <answer>
+        <valueQuantity>
+          <value value="276" />
+          <unit value="d" />
+        </valueQuantity>
+      </answer>
+    </item>
+  </item>
+
+  <!-- *** Event Details Section *** -->
+  <item>
+    <linkId value="event-details" />
+    <text value="Event Details Section" />
+
+    <!-- Infection Condition 
+         (CDA Mapping: Infection Condition Observation/value-->
+    <item>
+      <linkId value="infection-condition" />
+      <text value="Specific Event" />
+      <answer>
+        <valueCoding>
+          <system value="urn:oid:2.16.840.1.113883.6.277" />
+          <code value="3067-6" />
+          <display value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)" />
+        </valueCoding>
+      </answer>
+    </item>
+
+    <!-- Criteria Used (Lab) 
+         (CDA Mapping: Criterion of Diagnosis Observation/value-->
+    <item>
+      <linkId value="criteria-used" />
+      <text value="Laboratory Criteria Used" />
+      <answer>
+        <valueCoding>
+          <system value="urn:oid:2.16.840.1.113883.6.277" />
+          <code value="1951-3" />
+          <display value="Recognized pathogen from one or more blood specimens" />
+        </valueCoding>
+      </answer>
+    </item>
+
+    <!-- Death Observation 
+         (CDA Mapping: Death Observation in an Infection-type Report/value) -->
+    <item>
+      <linkId value="death-observation" />
+      <text value="Died" />
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct" />
+          <code value="419099009" />
+          <display value="Dead" />
+        </valueCoding>
+      </answer>
+    </item>
+
+    <!-- LOS Contributed to death 
+         (CDA Mapping: Infection Contributed to Death Observation) -->
+    <!-- Note: This item is only enabled when the death observation is marked as "true" -->
+    <item>
+      <linkId value="los-contributed-to-death" />
+      <text value="Infection contrubuted to death" />
+      <answer>
+        <valueBoolean value="false" />
+      </answer>
+    </item>
+
+    <!-- Discharge Date 
+         (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high) -->
+    <item>
+      <linkId value="discharge-date" />
+      <text value="Discharge Date:" />
+      <answer>
+        <valueDate value="2018-01-12" />
+      </answer>
+    </item>
+  </item>
+
+  <!-- *** Findings Section -->
+  <item>
+    <linkId value="findings-group" />
+    <text value="Findings Group" />
+
+    <!-- Pathogen Identified
+         (CDA Mapping: Pathogen Identified Observation) -->
+    <item>
+      <!--<extension url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
+                <valueString value="Ex: Staphylococcus coagulase-negative"/>
+            </extension>-->
+      <linkId value="pathogen-identified" />
+      <text value="Pathogen Identified" />
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct" />
+          <code value="48321006" />
+          <display value="Clostridium symbiosum (organism)" />
+        </valueCoding>
+      </answer>
+    </item>
+
+    <!-- Pathogen Ranking
+         (CDA Mapping: Pathogen Ranking Observation) -->
+    <item>
+      <linkId value="pathogen-ranking" />
+      <text value="Pathogen Ranking" />
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct" />
+          <code value="255216001" />
+          <display value="First" />
+        </valueCoding>
+      </answer>
+    </item>
+
+    <!-- Drug Susceptibility Test
+         (CDA Mapping: Drug Susceptibility Test Observation) -->
+    <item>
+      <linkId value="drug-susceptibility-test" />
+      <text value="Drug Susceptibility Test" />
+
+      <!-- Drug Susceptibilty Test Code 
+           CDA: CDA: Drug-Susceptibility Test Observation/code -->
+      <item>
+        <linkId value="drug-susceptibility-test-code" />
+        <text value="Test" />
+        <answer>
+          <valueCoding>
+            <system value="https://loinc.org/" />
+            <code value="18907-6" />
+            <display value="Clarithro Susc Islt" />
+          </valueCoding>
+        </answer>
+      </item>
+      <!-- Drug Susceptibilty Interpretation
+           CDA: Drug-Susceptibility Test Observation/interpretationCode -->
+      <item>
+        <linkId value="drug-susceptibility-interpretation" />
+        <text value="Drug Susceptibility Interpretation" />
+        <answer>
+          <valueCoding>
+            <system value="urn:oid:2.16.840.1.113883.5.83" />
+            <code value="R" />
+            <display value="Resistant" />
+          </valueCoding>
+        </answer>
+      </item>
+    </item>
+  </item>
+  <!-- *** Comment Section *** -->
+  <item>
+    <linkId value="comment-section" />
+    <text value="Comments" />
+    <answer>
+      <valueString value="NHSN text comment that is less than 2000 characters." />
+    </answer>
+  </item>
+</QuestionnaireResponse>

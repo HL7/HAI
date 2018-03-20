@@ -1,0 +1,2651 @@
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="hai-questionnaire-los-event" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <pre>This report type records a late onset sepsis/meningitis infection event.<br />For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.</pre>
+    </div>
+  </text>
+
+  <!-- *****BEGIN VALUE SETS Block*****-->
+  <!-- NHSN Healthcare Service Location Code 
+         - http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19-->
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="2.16.840.1.113883.13.19" />
+<!--      <meta id="41" />-->
+      <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19" />
+      <name value="NHSNHealthcareServiceLocationCode" />
+      <status value="active" />
+      <description
+        value="A classification of patient care locations within healthcare facilities for public health surveillance purposes.&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <compose>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.259" />
+          <concept>
+            <code value="1250-0" />
+            <display value="All Inpatient Locations [FACWIDEIN]" />
+          </concept>
+          <concept>
+            <code value="1251-8" />
+            <display value="All Outpatient Locations [FACWIDEOUT]" />
+          </concept>
+          <concept>
+            <code value="1025-6" />
+            <display value="Trauma Critical Care" />
+          </concept>
+          <concept>
+            <code value="1026-4" />
+            <display value="Burn Critical Care" />
+          </concept>
+          <concept>
+            <code value="1027-2" />
+            <display value="Medical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1028-0" />
+            <display value="Medical Cardiac Critical Care" />
+          </concept>
+          <concept>
+            <code value="1029-8" />
+            <display value="Medical/Surgical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1030-6" />
+            <display value="Surgical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1031-4" />
+            <display value="Neurosurgical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1032-2" />
+            <display value="Surgical Cardiothoracic Critical Care" />
+          </concept>
+          <concept>
+            <code value="1033-0" />
+            <display value="Respiratory Critical Care" />
+          </concept>
+          <concept>
+            <code value="1034-8" />
+            <display value="Prenatal Critical Care" />
+          </concept>
+          <concept>
+            <code value="1035-5" />
+            <display value="Neurologic Critical Care" />
+          </concept>
+          <concept>
+            <code value="1038-9" />
+            <display value="Inpatient Well Baby Nursery (Level I)" />
+          </concept>
+          <concept>
+            <code value="1039-7" />
+            <display value="Neonatal Critical Care(Level II/III)" />
+          </concept>
+          <concept>
+            <code value="1040-5" />
+            <display value="Neonatal Critical Care (Level III)" />
+          </concept>
+          <concept>
+            <code value="1041-3" />
+            <display value="Step down Neonatal ICU (Level II)" />
+          </concept>
+          <concept>
+            <code value="1042-1" />
+            <display value="Pediatric Burn Critical Care" />
+          </concept>
+          <concept>
+            <code value="1043-9" />
+            <display value="Pediatric Cardiothoracic Critical Care" />
+          </concept>
+          <concept>
+            <code value="1044-7" />
+            <display value="Pediatric Medical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1045-4" />
+            <display value="Pediatric Medical/Surgical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1046-2" />
+            <display value="Pediatric Neurosurgical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1047-0" />
+            <display value="Pediatric Respiratory Critical Care" />
+          </concept>
+          <concept>
+            <code value="1048-8" />
+            <display value="Pediatric Surgical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1049-6" />
+            <display value="Pediatric Trauma Critical Care" />
+          </concept>
+          <concept>
+            <code value="1022-3" />
+            <display value="Bone Marrow Transplant SCA" />
+          </concept>
+          <concept>
+            <code value="1023-1" />
+            <display value="Pediatric Bone Marrow Transplant SCA" />
+          </concept>
+          <concept>
+            <code value="1088-4" />
+            <display value="Hematology/Oncology SCA" />
+          </concept>
+          <concept>
+            <code value="1089-2" />
+            <display value="Pediatric Hematology/Oncology SCA" />
+          </concept>
+          <concept>
+            <code value="1091-8" />
+            <display value="Pediatric Dialysis SCA" />
+          </concept>
+          <concept>
+            <code value="1092-6" />
+            <display value="Solid Organ Transplant SCA" />
+          </concept>
+          <concept>
+            <code value="1093-4" />
+            <display value="Pediatric Solid Organ Transplant SCA" />
+          </concept>
+          <concept>
+            <code value="1198-1" />
+            <display value="Inpatient Acute Dialysis SCA" />
+          </concept>
+          <concept>
+            <code value="1051-2" />
+            <display value="Inpatient Behavioral Health/Psych Ward" />
+          </concept>
+          <concept>
+            <code value="1052-0" />
+            <display value="Inpatient Burn Ward" />
+          </concept>
+          <concept>
+            <code value="1053-8" />
+            <display value="Inpatient Ear/Nose/Throat Ward" />
+          </concept>
+          <concept>
+            <code value="1054-6" />
+            <display value="Inpatient Gastrointestinal Ward" />
+          </concept>
+          <concept>
+            <code value="1055-3" />
+            <display value="Inpatient Genitourinary Ward" />
+          </concept>
+          <concept>
+            <code value="1056-1" />
+            <display value="Inpatient Gerontology Ward" />
+          </concept>
+          <concept>
+            <code value="1057-9" />
+            <display value="Inpatient Gynecology Ward" />
+          </concept>
+          <concept>
+            <code value="1058-7" />
+            <display value="Labor and Delivery Ward" />
+          </concept>
+          <concept>
+            <code value="1059-5" />
+            <display value="Labor, Delivery, Recovery, Postpartum Suite (LDRP)" />
+          </concept>
+          <concept>
+            <code value="1060-3" />
+            <display value="Inpatient Medical Ward" />
+          </concept>
+          <concept>
+            <code value="1061-1" />
+            <display value="Inpatient Medical/Surgical Ward" />
+          </concept>
+          <concept>
+            <code value="1062-9" />
+            <display value="Inpatient Neurology Ward" />
+          </concept>
+          <concept>
+            <code value="1063-7" />
+            <display value="Inpatient Neurosurgical Ward" />
+          </concept>
+          <concept>
+            <code value="1064-5" />
+            <display value="Inpatient Ophthalmology Ward" />
+          </concept>
+          <concept>
+            <code value="1065-2" />
+            <display value="Inpatient Orthopedic Ward" />
+          </concept>
+          <concept>
+            <code value="1066-0" />
+            <display value="Inpatient Orthopedic Trauma Ward" />
+          </concept>
+          <concept>
+            <code value="1067-8" />
+            <display value="Inpatient Plastic Surgery Ward" />
+          </concept>
+          <concept>
+            <code value="1068-6" />
+            <display value="Inpatient Postpartum Ward" />
+          </concept>
+          <concept>
+            <code value="1069-4" />
+            <display value="Inpatient Pulmonary Ward" />
+          </concept>
+          <concept>
+            <code value="1070-2" />
+            <display value="Inpatient Rehabilitation Ward" />
+          </concept>
+          <concept>
+            <code value="1071-0" />
+            <display value="Acute Stroke Ward" />
+          </concept>
+          <concept>
+            <code value="1072-8" />
+            <display value="Inpatient Surgical Ward" />
+          </concept>
+          <concept>
+            <code value="1073-6" />
+            <display value="Inpatient Vascular Surgery Ward" />
+          </concept>
+          <concept>
+            <code value="1171-8" />
+            <display value="Inpatient Jail Unit" />
+          </concept>
+          <concept>
+            <code value="1172-6" />
+            <display value="Inpatient School Infirmary" />
+          </concept>
+          <concept>
+            <code value="1205-4" />
+            <display value="Inpatient Antenatal Ward" />
+          </concept>
+          <concept>
+            <code value="1075-1" />
+            <display value="Inpatient Adolescent Behavioral Health Ward" />
+          </concept>
+          <concept>
+            <code value="1076-9" />
+            <display value="Inpatient Medical Pediatric Ward" />
+          </concept>
+          <concept>
+            <code value="1077-7" />
+            <display value="Inpatient Pediatric Behavioral Health Ward" />
+          </concept>
+          <concept>
+            <code value="1078-5" />
+            <display value="Inpatient Pediatric Burn Ward" />
+          </concept>
+          <concept>
+            <code value="1079-3" />
+            <display value="Inpatient Pediatric Ear, Nose, Throat Ward" />
+          </concept>
+          <concept>
+            <code value="1080-1" />
+            <display value="Inpatient Pediatric Genitourinary Ward" />
+          </concept>
+          <concept>
+            <code value="1081-9" />
+            <display value="Inpatient Pediatric Med/Surg Ward" />
+          </concept>
+          <concept>
+            <code value="1082-7" />
+            <display value="Inpatient Pediatric Neurology Ward" />
+          </concept>
+          <concept>
+            <code value="1083-5" />
+            <display value="Inpatient Pediatric Neurosurgical Ward" />
+          </concept>
+          <concept>
+            <code value="1084-3" />
+            <display value="Inpatient Pediatric Orthopedic Ward" />
+          </concept>
+          <concept>
+            <code value="1085-0" />
+            <display value="Pediatric Rehabilitation Ward - Within ACH" />
+          </concept>
+          <concept>
+            <code value="1086-8" />
+            <display value="Inpatient Pediatric Surgical Ward" />
+          </concept>
+          <concept>
+            <code value="1099-1" />
+            <display value="Adult Step Down Unit (post-critical care)" />
+          </concept>
+          <concept>
+            <code value="1100-7" />
+            <display value="Pediatric Step Down Unit (post-critical care)" />
+          </concept>
+          <concept>
+            <code value="1005-8" />
+            <display value="Cardiac Catheterization Room/Suite" />
+          </concept>
+          <concept>
+            <code value="1095-9" />
+            <display value="Cesarean Section Room/Suite" />
+          </concept>
+          <concept>
+            <code value="1096-7" />
+            <display value="Inpatient Operating Room/Suite" />
+          </concept>
+          <concept>
+            <code value="1097-5" />
+            <display value="Post-Anesthesia Care Unit/Recovery Room" />
+          </concept>
+          <concept>
+            <code value="1203-9" />
+            <display value="Interventional Radiology" />
+          </concept>
+          <concept>
+            <code value="1009-0" />
+            <display value="Pulmonary Function Testing" />
+          </concept>
+          <concept>
+            <code value="1020-7" />
+            <display value="Sleep Studies (for in- and outpatients)" />
+          </concept>
+          <concept>
+            <code value="1178-3" />
+            <display value="Transport Service" />
+          </concept>
+          <concept>
+            <code value="1190-8" />
+            <display value="Soiled Utility Area" />
+          </concept>
+          <concept>
+            <code value="1208-8" />
+            <display value="Telemetry Unit" />
+          </concept>
+          <concept>
+            <code value="1209-6" />
+            <display value="Treatment Room" />
+          </concept>
+          <concept>
+            <code value="1211-2" />
+            <display value="Pediatric Mixed Acuity Unit" />
+          </concept>
+          <concept>
+            <code value="1210-4" />
+            <display value="Adult Mixed Acuity Unit" />
+          </concept>
+          <concept>
+            <code value="1212-0" />
+            <display value="Any Age Mixed Acuity Unit" />
+          </concept>
+          <concept>
+            <code value="1102-3" />
+            <display value="Long-Term Care Unit" />
+          </concept>
+          <concept>
+            <code value="1103-1" />
+            <display value="Long-Term Care Alzheimer's Unit" />
+          </concept>
+          <concept>
+            <code value="1104-9" />
+            <display value="Long-Term Care Behavioral Health/Psych Unit" />
+          </concept>
+          <concept>
+            <code value="1105-6" />
+            <display value="Long-Term Care Rehabilitation Unit" />
+          </concept>
+          <concept>
+            <code value="1164-3" />
+            <display value="Ventilator Dependent Unit" />
+          </concept>
+          <concept>
+            <code value="1165-0" />
+            <display value="Inpatient Hospice" />
+          </concept>
+          <concept>
+            <code value="1260-9" />
+            <display value="LTCF Bariatric Unit" />
+          </concept>
+          <concept>
+            <code value="1255-9" />
+            <display value="LTCF Dementia Unit" />
+          </concept>
+          <concept>
+            <code value="1258-3" />
+            <display value="LTCF General Nursing Unit" />
+          </concept>
+          <concept>
+            <code value="1254-2" />
+            <display value="LTCF Inpatient Hospice Unit" />
+          </concept>
+          <concept>
+            <code value="1256-7" />
+            <display value="LTCF Psychiatric Unit" />
+          </concept>
+          <concept>
+            <code value="1257-5" />
+            <display value="LTCF Skilled Nursing/Short Term Rehabilitation Unit" />
+          </concept>
+          <concept>
+            <code value="1259-1" />
+            <display value="LTCF Ventilator Dependent Unit" />
+          </concept>
+          <concept>
+            <code value="1220-3" />
+            <display value="LTAC ICU" />
+          </concept>
+          <concept>
+            <code value="1221-1" />
+            <display value="LTAC Ward" />
+          </concept>
+          <concept>
+            <code value="1222-9" />
+            <display value="LTAC Pediatric ICU" />
+          </concept>
+          <concept>
+            <code value="1214-6" />
+            <display value="LTAC Pediatric Ward" />
+          </concept>
+          <concept>
+            <code value="1217-9" />
+            <display value="Rehabilitation Ward - Freestanding IRF" />
+          </concept>
+          <concept>
+            <code value="1218-7" />
+            <display value="Rehabilitation Pediatric Ward - Freestanding IRF" />
+          </concept>
+          <concept>
+            <code value="1108-0" />
+            <display value="Emergency Department" />
+          </concept>
+          <concept>
+            <code value="1109-8" />
+            <display value="Pediatric Emergency Department" />
+          </concept>
+          <concept>
+            <code value="1160-1" />
+            <display value="Urgent Care Center" />
+          </concept>
+          <concept>
+            <code value="1162-7" />
+            <display value="24-Hour Observation Area" />
+          </concept>
+          <concept>
+            <code value="1169-2" />
+            <display value="Outpatient Surgery Recovery Room/Post-Anesthesia Care Unit" />
+          </concept>
+          <concept>
+            <code value="1174-2" />
+            <display value="Mobile Emergency Services/EMS" />
+          </concept>
+          <concept>
+            <code value="1007-4" />
+            <display value="Endoscopy Suite" />
+          </concept>
+          <concept>
+            <code value="1008-2" />
+            <display value="Radiology (includes Nuclear Medicine)" />
+          </concept>
+          <concept>
+            <code value="1017-3" />
+            <display value="Hyperbaric Oxygen Center" />
+          </concept>
+          <concept>
+            <code value="1018-1" />
+            <display value="Infusion Center" />
+          </concept>
+          <concept>
+            <code value="1019-9" />
+            <display value="Specimen Collection Area (Healthcare)" />
+          </concept>
+          <concept>
+            <code value="1110-6" />
+            <display value="Allergy Clinic" />
+          </concept>
+          <concept>
+            <code value="1112-2" />
+            <display value="Cardiac Rehabilitation Center" />
+          </concept>
+          <concept>
+            <code value="1113-0" />
+            <display value="Cardiology Clinic" />
+          </concept>
+          <concept>
+            <code value="1115-5" />
+            <display value="Dermatology Clinic" />
+          </concept>
+          <concept>
+            <code value="1116-3" />
+            <display value="Diabetes/Endocrinology Clinic" />
+          </concept>
+          <concept>
+            <code value="1117-1" />
+            <display value="Family Medicine Clinic" />
+          </concept>
+          <concept>
+            <code value="1118-9" />
+            <display value="Outpatient Gastrointestinal (GI) Clinic" />
+          </concept>
+          <concept>
+            <code value="1119-7" />
+            <display value="Pediatric Gastrointestinal Clinic" />
+          </concept>
+          <concept>
+            <code value="1120-5" />
+            <display value="Outpatient Medical Clinic" />
+          </concept>
+          <concept>
+            <code value="1121-3" />
+            <display value="Gynecology Clinic" />
+          </concept>
+          <concept>
+            <code value="1122-1" />
+            <display value="Genetics Clinic" />
+          </concept>
+          <concept>
+            <code value="1123-9" />
+            <display value="Neurology Clinic" />
+          </concept>
+          <concept>
+            <code value="1124-7" />
+            <display value="Ophthalmology Clinic" />
+          </concept>
+          <concept>
+            <code value="1125-4" />
+            <display value="Orthopedic Clinic" />
+          </concept>
+          <concept>
+            <code value="1126-2" />
+            <display value="Ear, Nose, Throat Clinic" />
+          </concept>
+          <concept>
+            <code value="1127-0" />
+            <display value="Pain Clinic" />
+          </concept>
+          <concept>
+            <code value="1128-8" />
+            <display value="Pediatric Clinic" />
+          </concept>
+          <concept>
+            <code value="1129-6" />
+            <display value="Pediatric Cardiology Center" />
+          </concept>
+          <concept>
+            <code value="1130-4" />
+            <display value="Pediatric Dental Clinic" />
+          </concept>
+          <concept>
+            <code value="1131-2" />
+            <display value="Pediatric Dermatology Clinic" />
+          </concept>
+          <concept>
+            <code value="1132-0" />
+            <display value="Pediatric Diabetes/Endocrinology Clinic" />
+          </concept>
+          <concept>
+            <code value="1133-8" />
+            <display value="Pediatric Orthopedic Clinic" />
+          </concept>
+          <concept>
+            <code value="1134-6" />
+            <display value="Pediatric Scoliosis Clinic" />
+          </concept>
+          <concept>
+            <code value="1136-1" />
+            <display value="Pediatric Hematology/Oncology Clinic" />
+          </concept>
+          <concept>
+            <code value="1137-9" />
+            <display value="Pediatric Nephrology Clinic" />
+          </concept>
+          <concept>
+            <code value="1138-7" />
+            <display value="Pediatric Rheumatology Clinic" />
+          </concept>
+          <concept>
+            <code value="1139-5" />
+            <display value="Well Baby Clinic" />
+          </concept>
+          <concept>
+            <code value="1140-3" />
+            <display value="Podiatry Clinic" />
+          </concept>
+          <concept>
+            <code value="1141-1" />
+            <display value="Physician's Office" />
+          </concept>
+          <concept>
+            <code value="1142-9" />
+            <display value="Rheumatology Clinic" />
+          </concept>
+          <concept>
+            <code value="1143-7" />
+            <display value="Surgical Services Clinic" />
+          </concept>
+          <concept>
+            <code value="1144-5" />
+            <display value="Wound Center" />
+          </concept>
+          <concept>
+            <code value="1145-2" />
+            <display value="Behavioral Health Clinic" />
+          </concept>
+          <concept>
+            <code value="1146-0" />
+            <display value="Pediatric Behavioral Health Clinic" />
+          </concept>
+          <concept>
+            <code value="1147-8" />
+            <display value="Blood Collection Center" />
+          </concept>
+          <concept>
+            <code value="1148-6" />
+            <display value="Continence Clinic" />
+          </concept>
+          <concept>
+            <code value="1149-4" />
+            <display value="Ostomy Clinic" />
+          </concept>
+          <concept>
+            <code value="1150-2" />
+            <display value="Outpatient Dental Clinic" />
+          </concept>
+          <concept>
+            <code value="1151-0" />
+            <display value="Occupational Health Clinic" />
+          </concept>
+          <concept>
+            <code value="1152-8" />
+            <display value="Occupational Therapy Clinic" />
+          </concept>
+          <concept>
+            <code value="1153-6" />
+            <display value="Outpatient Hemodialysis Clinic" />
+          </concept>
+          <concept>
+            <code value="1154-4" />
+            <display value="Outpatient HIV Clinic" />
+          </concept>
+          <concept>
+            <code value="1155-1" />
+            <display value="Outpatient Rehabilitation Clinic" />
+          </concept>
+          <concept>
+            <code value="1156-9" />
+            <display value="Prenatal Clinic" />
+          </concept>
+          <concept>
+            <code value="1157-7" />
+            <display value="Pulmonary Clinic" />
+          </concept>
+          <concept>
+            <code value="1158-5" />
+            <display value="Speech Therapy Clinic" />
+          </concept>
+          <concept>
+            <code value="1159-3" />
+            <display value="Wound Ostomy Continence Clinic" />
+          </concept>
+          <concept>
+            <code value="1161-9" />
+            <display value="Holistic Medicine Center" />
+          </concept>
+          <concept>
+            <code value="1170-0" />
+            <display value="School or Prison Infirmary" />
+          </concept>
+          <concept>
+            <code value="1175-9" />
+            <display value="Mobile MRI/CT" />
+          </concept>
+          <concept>
+            <code value="1176-7" />
+            <display value="Mobile Blood Collection center" />
+          </concept>
+          <concept>
+            <code value="1200-5" />
+            <display value="Outpatient Hematology/Oncology Clinic" />
+          </concept>
+          <concept>
+            <code value="1202-1" />
+            <display value="Physical Therapy Clinic" />
+          </concept>
+          <concept>
+            <code value="1207-0" />
+            <display value="Donor Apheresis Center" />
+          </concept>
+          <concept>
+            <code value="1192-4" />
+            <display value="Home Care" />
+          </concept>
+          <concept>
+            <code value="1194-0" />
+            <display value="Home-based Hospice" />
+          </concept>
+          <concept>
+            <code value="1195-7" />
+            <display value="Blood Collection (Blood Drive Campaign)" />
+          </concept>
+          <concept>
+            <code value="1196-5" />
+            <display value="Specimen Collection Area (Community)" />
+          </concept>
+          <concept>
+            <code value="1204-7" />
+            <display value="Location outside facility" />
+          </concept>
+          <concept>
+            <code value="1262-1" />
+            <display value="Home Care -  Dialysis" />
+          </concept>
+          <concept>
+            <code value="1010-8" />
+            <display value="General Laboratory" />
+          </concept>
+          <concept>
+            <code value="1011-6" />
+            <display value="Clinical Chemistry" />
+          </concept>
+          <concept>
+            <code value="1012-4" />
+            <display value="Hematology" />
+          </concept>
+          <concept>
+            <code value="1013-2" />
+            <display value="Histology/Surgical Pathology" />
+          </concept>
+          <concept>
+            <code value="1014-0" />
+            <display value="Microbiology" />
+          </concept>
+          <concept>
+            <code value="1015-7" />
+            <display value="Serology Lab" />
+          </concept>
+          <concept>
+            <code value="1016-5" />
+            <display value="Virology Lab" />
+          </concept>
+          <concept>
+            <code value="1106-4" />
+            <display value="Assisted Living Area" />
+          </concept>
+          <concept>
+            <code value="1179-1" />
+            <display value="Pharmacy" />
+          </concept>
+          <concept>
+            <code value="1180-9" />
+            <display value="Public Area in Facility" />
+          </concept>
+          <concept>
+            <code value="1181-7" />
+            <display value="Physical Plant Operations Center" />
+          </concept>
+          <concept>
+            <code value="1182-5" />
+            <display value="Housekeeping/Environmental Services" />
+          </concept>
+          <concept>
+            <code value="1183-3" />
+            <display value="Laundry Room" />
+          </concept>
+          <concept>
+            <code value="1184-1" />
+            <display value="Administrative Areas" />
+          </concept>
+          <concept>
+            <code value="1185-8" />
+            <display value="Blood Bank" />
+          </concept>
+          <concept>
+            <code value="1186-6" />
+            <display value="Central Sterile Supply" />
+          </concept>
+          <concept>
+            <code value="1187-4" />
+            <display value="Central Trash Area" />
+          </concept>
+          <concept>
+            <code value="1188-2" />
+            <display value="Facility Grounds" />
+          </concept>
+          <concept>
+            <code value="1189-0" />
+            <display value="Morgue/Autopsy Room" />
+          </concept>
+          <concept>
+            <code value="1261-7" />
+            <display value="Centralized Transfusion Service" />
+          </concept>
+          <concept>
+            <code value="1223-7" />
+            <display value="ONC Medical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1224-5" />
+            <display value="ONC Surgical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1225-2" />
+            <display value="ONC Medical-Surgical Critical Care" />
+          </concept>
+          <concept>
+            <code value="1226-0" />
+            <display value="ONC Leukemia Ward" />
+          </concept>
+          <concept>
+            <code value="1228-6" />
+            <display value="ONC Lymphoma Ward" />
+          </concept>
+          <concept>
+            <code value="1229-4" />
+            <display value="ONC Leukemia/Lymphoma Ward" />
+          </concept>
+          <concept>
+            <code value="1230-2" />
+            <display value="ONC Solid Tumor Ward" />
+          </concept>
+          <concept>
+            <code value="1231-0" />
+            <display value="ONC Hematopoietic Stem Cell Transplant Ward" />
+          </concept>
+          <concept>
+            <code value="1232-8" />
+            <display value="ONC General Hematology/Oncology Ward" />
+          </concept>
+          <concept>
+            <code value="1233-6" />
+            <display value="Pediatric Oncology Critical Care" />
+          </concept>
+          <concept>
+            <code value="1234-4" />
+            <display value="Inpatient Pediatric Hematopoietic Stem Cell Transplant Oncology Ward" />
+          </concept>
+          <concept>
+            <code value="1235-1" />
+            <display value="Inpatient Pediatric General Hematology/Oncology Ward" />
+          </concept>
+          <concept>
+            <code value="1227-8" />
+            <display value="Oncology Step Down Unit (post-critical care)" />
+          </concept>
+          <concept>
+            <code value="1236-9" />
+            <display value="ONC Mixed Acuity Unit (all ages)" />
+          </concept>
+          <concept>
+            <code value="1243-5" />
+            <display value="Ambulatory Surgery Center" />
+          </concept>
+          <concept>
+            <code value="1242-7" />
+            <display value="Outpatient Operating Room/Suite_Attached" />
+          </concept>
+          <concept>
+            <code value="1244-3" />
+            <display value="Outpatient Operating Room/Suite_Detached" />
+          </concept>
+          <concept>
+            <code value="1248-4" />
+            <display value="Pediatric Outpatient Operating Room/Suite_Attached" />
+          </concept>
+          <concept>
+            <code value="1249-2" />
+            <display value="Pediatric Outpatient Operating Room/Suite_Detached" />
+          </concept>
+          <concept>
+            <code value="1246-8" />
+            <display value="Outpatient Ambulatory Pediatric Surgery Center" />
+          </concept>
+          <concept>
+            <code value="1245-0" />
+            <display value="Ambulatory Surgery Recovery Room" />
+          </concept>
+          <concept>
+            <code value="1247-6" />
+            <display value="Outpatient Ambulatory Plastic Surgery Center" />
+          </concept>
+        </include>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.277" />
+          <concept>
+            <code value="1206-2" />
+            <display value="Float" />
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <!-- NHSN Infection Type Code 
+         - http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20-->
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="2.16.840.1.113883.13.20" />
+<!--      <meta id="42" />-->
+      <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20" />
+      <name value="NHSNInfectionTypeCode" />
+      <status value="active" />
+      <description
+        value="Code System: cdcNHSN 2.16.840.1.113883.6.277 or SNOMED CT 2.16.840.1.113883.6.96&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <compose>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.96" />
+          <concept>
+            <code value="19824006" />
+            <display value="Skin or Soft Tissue Infection" />
+          </concept>
+          <concept>
+            <code value="50417007" />
+            <display value="Lower respiratory Infection" />
+          </concept>
+          <concept>
+            <code value="68566005" />
+            <display value="Urinary Tract Infection" />
+          </concept>
+          <concept>
+            <code value="91302008" />
+            <display value="Systemic Infection" />
+          </concept>
+          <concept>
+            <code value="128116006" />
+            <display value="Infection of the Central Nervous System" />
+          </concept>
+          <concept>
+            <code value="128402005" />
+            <display value="Infection of the cardiovascular system" />
+          </concept>
+          <concept>
+            <code value="312158001" />
+            <display value="Gastrointestinal Infection" />
+          </concept>
+          <concept>
+            <code value="431193003" />
+            <display value="Bloodstream Infection" />
+          </concept>
+          <concept>
+            <code value="433202001" />
+            <display value="Surgical Site Infection" />
+          </concept>
+          <concept>
+            <code value="TEMP_SNOMED_LATE_ONSET_SEPSIS" />
+            <display value="Late Onset Sepsis (LOS)" />
+          </concept>
+          <concept>
+            <code value="276674008" />
+            <display value="Neonatal meningitis" />
+          </concept>
+        </include>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.277" />
+          <concept>
+            <code value="1792-1" />
+            <display value="MDRO Infection" />
+          </concept>
+          <concept>
+            <code value="1795-4" />
+            <display value="CDAD Infection" />
+          </concept>
+          <concept>
+            <code value="1796-2" />
+            <display value="Infection of the Reproduction System" />
+          </concept>
+          <concept>
+            <code value="1797-0" />
+            <display value="Infection of the Ear/Eyes/Nose or Throat" />
+          </concept>
+          <concept>
+            <code value="1798-8" />
+            <display value="Bone or Joint Infection" />
+          </concept>
+          <concept>
+            <code value="2340-3" />
+            <display value="Ventilator Associated Event" />
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <!-- Inborn/Outborn Observation Code 
+         - http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.27 -->
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="2.16.840.1.113883.10.20.5.9.27" />
+<!--      <meta id="4447" />-->
+      <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.27" />
+      <name value="Inborn/Outborn Observation Code" />
+      <status value="draft" />
+      <description value="This valueset represents whether the location of birth is an inborn or outborn location" />
+      <compose>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.96" />
+          <concept>
+            <code value="442311008" />
+            <display value="Liveborn born in hospital (situation)" />
+          </concept>
+          <concept>
+            <code value="445087001" />
+            <display value="Born before arrival to hospital (situation)" />
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <!-- NHSN Infection Condition Code 
+         - http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196 -->
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="2.16.840.1.114222.4.11.3196" />
+<!--      <meta id="69" />-->
+      <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196" />
+      <name value="NHSNInfectionConditionCode" />
+      <status value="active" />
+      <description
+        value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <compose>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.96" />
+          <concept>
+            <code value="2707005" />
+            <display value="Necrotizing enterocolitis" />
+          </concept>
+          <concept>
+            <code value="9826008" />
+            <display value="Conjunctivitis" />
+          </concept>
+          <concept>
+            <code value="12463005" />
+            <display value="Infectious gastroenteritis" />
+          </concept>
+          <concept>
+            <code value="19824006" />
+            <display value="Skin" />
+          </concept>
+          <concept>
+            <code value="25374005" />
+            <display value="Gastroenteritis" />
+          </concept>
+          <concept>
+            <code value="36971009" />
+            <display value="Sinusitis" />
+          </concept>
+          <concept>
+            <code value="47597000" />
+            <display value="Mediastinitis" />
+          </concept>
+          <concept>
+            <code value="56819008" />
+            <display value="Endocarditis" />
+          </concept>
+          <concept>
+            <code value="60168000" />
+            <display value="Osteomyelitis" />
+          </concept>
+          <concept>
+            <code value="78623009" />
+            <display value="Endometritis" />
+          </concept>
+          <concept>
+            <code value="128241005" />
+            <display value="Hepatitis" />
+          </concept>
+          <concept>
+            <code value="239095007" />
+            <display value="Omphalitis" />
+          </concept>
+          <concept>
+            <code value="300927001" />
+            <display value="Episiotomy" />
+          </concept>
+          <concept>
+            <code value="302935008" />
+            <display value="Disc space" />
+          </concept>
+          <concept>
+            <code value="312157006" />
+            <display value="Infectious mediastinitis" />
+          </concept>
+        </include>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.277" />
+          <concept>
+            <code value="1601-4" />
+            <display value="Breast abscess or mastitis" />
+          </concept>
+          <concept>
+            <code value="1602-2" />
+            <display value="Myocarditis or pericarditis" />
+          </concept>
+          <concept>
+            <code value="1603-0" />
+            <display value="Clinical sepsis" />
+          </concept>
+          <concept>
+            <code value="1604-8" />
+            <display value="Deep incisional primary SSI" />
+          </concept>
+          <concept>
+            <code value="1605-5" />
+            <display value="Deep incisional secondary SSI" />
+          </concept>
+          <concept>
+            <code value="1606-3" />
+            <display value="Vertebral disc space infection" />
+          </concept>
+          <concept>
+            <code value="1607-1" />
+            <display value="Ear or mastoid infection (otitis externa, otitis media, otitis interna, mastoiditis)" />
+          </concept>
+          <concept>
+            <code value="1608-9" />
+            <display value="Eye infection, other than conjunctivitis" />
+          </concept>
+          <concept>
+            <code value="1609-7" />
+            <display
+              value="Gastrointestinal tract infection (esophagus, stomach, small and large bowel, and rectum) excluding gastroenteritis and appendicitis"
+             />
+          </concept>
+          <concept>
+            <code value="1610-5" />
+            <display
+              value="Intraabdominal infection, not specified elsewhere including gallbladder, bile ducts, liver (excluding viral hepatitis), spleen, pancreas, peritoneum, subphrenic or subdiaphragmatic space, or other intraabdominal tissue or area not specified elsewhere"
+             />
+          </concept>
+          <concept>
+            <code value="1611-3" />
+            <display value="Intracranial infection (brain abscess, subdural or epidural infection, encephalitis)" />
+          </concept>
+          <concept>
+            <code value="1612-1" />
+            <display value="Joint or bursa infection" />
+          </concept>
+          <concept>
+            <code value="1613-9" />
+            <display value="Laboratory-confirmed bloodstream infection" />
+          </concept>
+          <concept>
+            <code value="1614-7" />
+            <display value="Other infections of the lower respiratory tract, other than pneumonia" />
+          </concept>
+          <concept>
+            <code value="1615-4" />
+            <display value="Meningitis or ventriculitis" />
+          </concept>
+          <concept>
+            <code value="1616-2" />
+            <display value="Oral cavity infection (mouth, tongue, or gums)" />
+          </concept>
+          <concept>
+            <code value="1617-0" />
+            <display
+              value="Other infections of the male or female reproductive tract (epididymis, testes, prostate, vagina, ovaries, uterus, or other deep pelvic tissues, excluding endometritis or vaginal cuff infections)"
+             />
+          </concept>
+          <concept>
+            <code value="1618-8" />
+            <display
+              value="Other infections of the urinary tract (kidney, ureter, bladder, urethra, or tissue surrounding the retroperitoneal or perinephric space)"
+             />
+          </concept>
+          <concept>
+            <code value="1619-6" />
+            <display value="Spinal abscess without meningitis" />
+          </concept>
+          <concept>
+            <code value="1620-4" />
+            <display value="Superficial incisional primary SSI" />
+          </concept>
+          <concept>
+            <code value="1621-2" />
+            <display value="Superficial incisional secondary SSI" />
+          </concept>
+          <concept>
+            <code value="1622-0" />
+            <display value="Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis" />
+          </concept>
+          <concept>
+            <code value="1623-8" />
+            <display value="Arterial or venous infection" />
+          </concept>
+          <concept>
+            <code value="1624-6" />
+            <display value="Vaginal cuff infection" />
+          </concept>
+          <concept>
+            <code value="1625-3" />
+            <display value="Symptomatic UTI (SUTI)" />
+          </concept>
+          <concept>
+            <code value="1626-1" />
+            <display value="PNU1" />
+          </concept>
+          <concept>
+            <code value="1631-1" />
+            <display value="PNU2" />
+          </concept>
+          <concept>
+            <code value="1632-9" />
+            <display value="PNU3" />
+          </concept>
+          <concept>
+            <code value="1671-7" />
+            <display value="Bronchitis, tracheitis" />
+          </concept>
+          <concept>
+            <code value="1672-5" />
+            <display value="Burn" />
+          </concept>
+          <concept>
+            <code value="1673-3" />
+            <display value="Decubitus ulcer" />
+          </concept>
+          <concept>
+            <code value="1674-1" />
+            <display value="Disseminated infection" />
+          </concept>
+          <concept>
+            <code value="1675-8" />
+            <display value="Infant pustulosis" />
+          </concept>
+          <concept>
+            <code value="1676-6" />
+            <display value="Newborn circumcision" />
+          </concept>
+          <concept>
+            <code value="1677-4" />
+            <display value="Soft tissue, muscle, lymph node, or salivary gland" />
+          </concept>
+          <concept>
+            <code value="2402-6" />
+            <display value="Asymptomatic Bacteremic UTI (ABUTI)" />
+          </concept>
+          <concept>
+            <code value="1970-3" />
+            <display value="Periprosthetic Joint Infection" />
+          </concept>
+          <concept>
+            <code value="1640-2" />
+            <display value="Organ/space" />
+          </concept>
+          <concept>
+            <code value="2343-4" />
+            <display value="VAC - Ventilator-Associated Condition" />
+          </concept>
+          <concept>
+            <code value="2344-2" />
+            <display value="IVAC - Infection-related Ventilator-Associated Complication" />
+          </concept>
+          <concept>
+            <code value="2345-0" />
+            <display value="PVAP - Possible Ventilator-Associated Pneumonia" />
+          </concept>
+          <concept>
+            <code value="TEMP_NLCBI1" />
+            <display value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 1)" />
+          </concept>
+          <concept>
+            <code value="TEMP_NLCBI2" />
+            <display value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)" />
+          </concept>
+          <concept>
+            <code value="TEMP_NLCM1" />
+            <display value="Neonatal Laboratory Confirmed Meningitis (NLCM 1)" />
+          </concept>
+          <concept>
+            <code value="TEMP_NLCM2" />
+            <display value="Neonatal Laboratory Confirmed Meningitis (NLCM 2)" />
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <!-- NHSN Criterion of Diagnosis Code 
+         - http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195 -->
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="2.16.840.1.114222.4.11.3195" />
+<!--      <meta id="68" />-->
+      <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195" />
+      <name value="NHSNCriterionOfDiagnosisCode" />
+      <status value="active" />
+      <description
+        value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <compose>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.277" />
+          <concept>
+            <code value="1901-8" />
+            <display value="Not cultured" />
+          </concept>
+          <concept>
+            <code value="1964-6" />
+            <display value="Allo-SCT with Grade &gt; 3 GI GVHD" />
+          </concept>
+          <concept>
+            <code value="1965-3" />
+            <display value="Allo- SCT with diarrhea" />
+          </concept>
+          <concept>
+            <code value="1966-1" />
+            <display value="Positive culture from greater than or equal to two separate tissue or fluid samples from affected joint" />
+          </concept>
+          <concept>
+            <code value="1902-6" />
+            <display value="Blood culture not done or no organisms detected in blood" />
+          </concept>
+          <concept>
+            <code value="1929-9" />
+            <display value="&amp;gt;=2 positive cultures with &amp;gt;=10^2 col/ml of same uropathogen from nonvoided specimen" />
+          </concept>
+          <concept>
+            <code value="1931-5" />
+            <display value="&amp;gt;=2 positive urine cultures with &amp;gt;=10^5 col/cc with no more than 2 organisms" />
+          </concept>
+          <concept>
+            <code value="1923-3" />
+            <display value="&amp;gt;=5% BAL cells w/bacteria" />
+          </concept>
+          <concept>
+            <code value="1942-2" />
+            <display value="&amp;gt;15 colonies cultured from IV cannula tip using semiquantitative culture method" />
+          </concept>
+          <concept>
+            <code value="1927-3" />
+            <display value="1 positive culture with &amp;gt;=10^5 col/cc with no more than 2 organisms" />
+          </concept>
+          <concept>
+            <code value="2403-4" />
+            <display value="1 positive culture with &amp;gt;=103 CFU/ml and &amp;lt;105 CFU/ml with no more than 2 species of microorganisms" />
+          </concept>
+          <concept>
+            <code value="1930-7" />
+            <display
+              value="1 positive culture with &amp;lt;=10^5 col/ml of a single uropathogen in patient being treated with an effective antimicrobial agent for UTI"
+             />
+          </concept>
+          <concept>
+            <code value="1938-0" />
+            <display value="4-fold rise in L. pneumophila antibody titer" />
+          </concept>
+          <concept>
+            <code value="1935-6" />
+            <display value="4-fold rise in paired sera for pathogen" />
+          </concept>
+          <concept>
+            <code value="1944-8" />
+            <display value="Common skin contaminant from &amp;gt;2 blood cultures (see NHSN protocol for definition of skin contaminant)" />
+          </concept>
+          <concept>
+            <code value="1937-2" />
+            <display value="L pneumophila serogroup 1 antigens in urine" />
+          </concept>
+          <concept>
+            <code value="1939-8" />
+            <display value="Matching positive blood and sputum cultures w/ Candida spp" />
+          </concept>
+          <concept>
+            <code value="1941-4" />
+            <display value="Other positive laboratory tests" />
+          </concept>
+          <concept>
+            <code value="1955-4" />
+            <display value="Positive blood culture" />
+          </concept>
+          <concept>
+            <code value="1952-1" />
+            <display value="Positive culture" />
+          </concept>
+          <concept>
+            <code value="1953-9" />
+            <display value="Positive culture of pathogen" />
+          </concept>
+          <concept>
+            <code value="1954-7" />
+            <display value="Positive culture of skin contaminant" />
+          </concept>
+          <concept>
+            <code value="1948-9" />
+            <display value="Positive culture of virus or Chlamydia" />
+          </concept>
+          <concept>
+            <code value="1936-4" />
+            <display value="Positive culture or micro-IF of Legionella spp" />
+          </concept>
+          <concept>
+            <code value="1934-9" />
+            <display value="Positive detection of viral antigen or antibody" />
+          </concept>
+          <concept>
+            <code value="1928-1" />
+            <display value="Positive dipstick for leukocyte esterase or nitrate" />
+          </concept>
+          <concept>
+            <code value="1943-0" />
+            <display value="Positive Gram stain when culture is negative or not done" />
+          </concept>
+          <concept>
+            <code value="1950-5" />
+            <display value="Positive micro-IF test for Chlamydia" />
+          </concept>
+          <concept>
+            <code value="1949-7" />
+            <display value="Positive PCR for Chlamydia or Mycoplasma" />
+          </concept>
+          <concept>
+            <code value="1946-3" />
+            <display value="Positive pleural fluid culture" />
+          </concept>
+          <concept>
+            <code value="1947-1" />
+            <display value="Positive quantitative culture from LRT specimen" />
+          </concept>
+          <concept>
+            <code value="1924-0" />
+            <display value="Radiographic evidence of infection" />
+          </concept>
+          <concept>
+            <code value="1951-3" />
+            <display value="Recognized pathogen from one or more blood cultures" />
+          </concept>
+          <concept>
+            <code value="1957-0" />
+            <display value="Acute onset of diarrhea (liquid stools for &amp;gt; 12 hours)" />
+          </concept>
+          <concept>
+            <code value="1959-6" />
+            <display value="Apnea, tachycardia, nasal flaring with retraction of chest wall or grunting" />
+          </concept>
+          <concept>
+            <code value="2513-0" />
+            <display value="Bilateral infiltrates on chest x-ray" />
+          </concept>
+          <concept>
+            <code value="1908-3" />
+            <display value="Bradycardia or tachycardia" />
+          </concept>
+          <concept>
+            <code value="2516-3" />
+            <display value="Criterion not otherwise specified" />
+          </concept>
+          <concept>
+            <code value="2514-8" />
+            <display value="Diffuse hemorrhage" />
+          </concept>
+          <concept>
+            <code value="1940-6" />
+            <display value="Fungi or Pneumocytis carinii from LRT specimen" />
+          </concept>
+          <concept>
+            <code value="1956-2" />
+            <display
+              value="Histopathologic exam w/ abscess formation, positive quantitative culture of lung parenchyma, or positive quantitative culture of lung parenchyma, or lung parenchyma invasion by fungal hyphae"
+             />
+          </concept>
+          <concept>
+            <code value="1967-9" />
+            <display value="Incision deliberately opened or otherwise drained by physician" />
+          </concept>
+          <concept>
+            <code value="1920-8" />
+            <display value="Localized swelling" />
+          </concept>
+          <concept>
+            <code value="2515-5" />
+            <display value="Nausea/vomiting" />
+          </concept>
+          <concept>
+            <code value="1903-4" />
+            <display value="New onset/change in sputum" />
+          </concept>
+          <concept>
+            <code value="1907-5" />
+            <display value="New onset/change in sputum, increased secretions   or increased suctioning" />
+          </concept>
+          <concept>
+            <code value="1904-2" />
+            <display value="New onset/worsening cough, dyspnea, tachypnea" />
+          </concept>
+          <concept>
+            <code value="1925-7" />
+            <display value="New or progressive and persistent infiltrate" />
+          </concept>
+          <concept>
+            <code value="1905-9" />
+            <display value="Other evidence of infection found on direct exam, during surgery, or by diagnostic tests" />
+          </concept>
+          <concept>
+            <code value="1906-7" />
+            <display value="Other signs and symptoms" />
+          </concept>
+          <concept>
+            <code value="2517-1" />
+            <display value="Pain not otherwise specified" />
+          </concept>
+          <concept>
+            <code value="1960-4" />
+            <display value="Pain or tenderness" />
+          </concept>
+          <concept>
+            <code value="1909-1" />
+            <display value="Persistent microscopic or gross blood in stools" />
+          </concept>
+          <concept>
+            <code value="1963-8" />
+            <display value="Physician diagnosis of this event type" />
+          </concept>
+          <concept>
+            <code value="1962-0" />
+            <display value="Physician institutes appropriate antimicrobial therapy" />
+          </concept>
+          <concept>
+            <code value="1926-5" />
+            <display value="Pneumatoceles (in &amp;lt;=1 y.o.)" />
+          </concept>
+          <concept>
+            <code value="1921-6" />
+            <display value="Rales or bronchial breath sounds" />
+          </concept>
+          <concept>
+            <code value="2518-9" />
+            <display value="Rash not otherwise specified" />
+          </concept>
+          <concept>
+            <code value="1968-7" />
+            <display value="Sinus tract" />
+          </concept>
+          <concept>
+            <code value="1922-4" />
+            <display value="Wheezing, rales or rhonchi" />
+          </concept>
+          <concept>
+            <code value="1958-8" />
+            <display value="Worsening gas exchange" />
+          </concept>
+          <concept>
+            <code value="2320-0" />
+            <display value="Wound (not related to vascular access) with pus or increased redness" />
+          </concept>
+          <concept>
+            <code value="1971-1" />
+            <display value="Acute pain, swelling, or tenderness of testes, epididymis, or prostate" />
+          </concept>
+          <concept>
+            <code value="1972-9" />
+            <display value="Urine not tested for WBC" />
+          </concept>
+          <concept>
+            <code value="2351-1" />
+            <display value="Criterion 1 - Positive culture from Endotracheal aspirate without purulent respiratory secretions" />
+          </concept>
+          <concept>
+            <code value="2352-5" />
+            <display value="Criterion 1 - Positive culture from Bronchoalveolar lavage without purulent respiratory secretions" />
+          </concept>
+          <concept>
+            <code value="2353-3" />
+            <display value="Criterion 1 - Positive culture from Lung tissue without purulent respiratory secretions" />
+          </concept>
+          <concept>
+            <code value="2354-1" />
+            <display value="Criterion 1 - Positive culture from Protected specimen brush without purulent respiratory secretions" />
+          </concept>
+          <concept>
+            <code value="2355-9" />
+            <display value="Criterion 2 - Purulent respiratory secretions plus organism(s)" />
+          </concept>
+          <concept>
+            <code value="2356-4" />
+            <display value="Criterion 2 - Organisms from Sputum cluture with purulent respiratory secretions" />
+          </concept>
+          <concept>
+            <code value="2357-2" />
+            <display value="Criterion 2 - Organisms from Endotracheal aspirate culture with purulent respiratory secretions" />
+          </concept>
+          <concept>
+            <code value="2358-0" />
+            <display value="Criterion 2 - Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions" />
+          </concept>
+          <concept>
+            <code value="2359-8" />
+            <display value="Criterion 2 - Organisms from Lung tissue culture with purulent respiratory secretions" />
+          </concept>
+          <concept>
+            <code value="2360-1" />
+            <display value="Criterion 2 - Organisms from Protected specimen brush culture with purulent respiratory secretions" />
+          </concept>
+          <concept>
+            <code value="2361-0" />
+            <display value="Criterion 3 - Positive test Organism(s) identified from pleural fluid" />
+          </concept>
+          <concept>
+            <code value="2362-4" />
+            <display value="Criterion 3 - Positive test for Lung histopathology" />
+          </concept>
+          <concept>
+            <code value="2363-2" />
+            <display value="Criterion 3 - Positive Diagnostic test for Legionella species" />
+          </concept>
+          <concept>
+            <code value="2364-0" />
+            <display value="Criterion 3 - Positive Diagnostic test for selected viral pathogens" />
+          </concept>
+          <concept>
+            <code value="2346-5" />
+            <display value="Daily min FiO2 increase &amp;gt; 0.20 (20 points) for &amp;gt; 2 days" />
+          </concept>
+          <concept>
+            <code value="2347-3" />
+            <display value="Daily min PEEP increase &amp;gt; 3 cm H2O for &amp;gt; 2 days" />
+          </concept>
+          <concept>
+            <code value="2348-1" />
+            <display value="Temperature &amp;gt; 380 C or &amp;lt; 360 C" />
+          </concept>
+          <concept>
+            <code value="2349-9" />
+            <display value="White blood cell count &amp;gt;= 12,000 or &amp;lt;= 4,000 cells/mm3" />
+          </concept>
+          <concept>
+            <code value="2350-2" />
+            <display value="A new antimicrobial agent(s) is started, and is continued for &amp;gt;= 4 days" />
+          </concept>
+          <concept>
+            <code value="TEMP_CC_BLOOD_AB" />
+            <display value="Common commensal from blood specimen(s) and antibiotics for greater than or equal to 5 days" />
+          </concept>
+          <concept>
+            <code value="TEMP_CC_CEREBROSPINAL_AB" />
+            <display value="&quot;Common commensal from cerebrospinal fluid specimen and antibiotics for greater than or equal to 5 days &quot;" />
+          </concept>
+          <concept>
+            <code value="TEMP_PATH_CEREBROSPINAL" />
+            <display value="Recognized pathogen from cerebrospinal fluid specimen" />
+          </concept>
+        </include>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.96" />
+          <concept>
+            <code value="165517008" />
+            <display value="Neutropenia" />
+          </concept>
+          <concept>
+            <code value="21522001" />
+            <display value="Abdominal pain" />
+          </concept>
+          <concept>
+            <code value="128477000" />
+            <display value="Abscess" />
+          </concept>
+          <concept>
+            <code value="419284004" />
+            <display value="Altered mental status (in &amp;gt;=70 y.o.)" />
+          </concept>
+          <concept>
+            <code value="1023001" />
+            <display value="Apnea" />
+          </concept>
+          <concept>
+            <code value="161891005" />
+            <display value="Back pain" />
+          </concept>
+          <concept>
+            <code value="48867003" />
+            <display value="Bradycardia" />
+          </concept>
+          <concept>
+            <code value="301863008" />
+            <display value="Cavitation" />
+          </concept>
+          <concept>
+            <code value="128045006" />
+            <display value="Cellulitis" />
+          </concept>
+          <concept>
+            <code value="29857009" />
+            <display value="Chest pain" />
+          </concept>
+          <concept>
+            <code value="43724002" />
+            <display value="Chills" />
+          </concept>
+          <concept>
+            <code value="95436008" />
+            <display value="Consolidation" />
+          </concept>
+          <concept>
+            <code value="102830001" />
+            <display value="Costovertebral angle tenderness or pain" />
+          </concept>
+          <concept>
+            <code value="49727002" />
+            <display value="Cough" />
+          </concept>
+          <concept>
+            <code value="49650001" />
+            <display value="Dysuria" />
+          </concept>
+          <concept>
+            <code value="267038008" />
+            <display value="Edema" />
+          </concept>
+          <concept>
+            <code value="386661006" />
+            <display value="Fever" />
+          </concept>
+          <concept>
+            <code value="12763006" />
+            <display value="Blood pressure decrease" />
+          </concept>
+          <concept>
+            <code value="24184005" />
+            <display value="Blood pressure increase" />
+          </concept>
+          <concept>
+            <code value="247355005" />
+            <display value="Flank pain" />
+          </concept>
+          <concept>
+            <code value="248213001" />
+            <display value="Flushing" />
+          </concept>
+          <concept>
+            <code value="162116003" />
+            <display value="Frequency of urination" />
+          </concept>
+          <concept>
+            <code value="25064002" />
+            <display value="Headache" />
+          </concept>
+          <concept>
+            <code value="304214002" />
+            <display value="Heat" />
+          </concept>
+          <concept>
+            <code value="34436003" />
+            <display value="Hematuria" />
+          </concept>
+          <concept>
+            <code value="123767004" />
+            <display value="Hemoglobinemia" />
+          </concept>
+          <concept>
+            <code value="66857006" />
+            <display value="Hemoptysis" />
+          </concept>
+          <concept>
+            <code value="247472004" />
+            <display value="Hives" />
+          </concept>
+          <concept>
+            <code value="45007003" />
+            <display value="Hypotension" />
+          </concept>
+          <concept>
+            <code value="386689009" />
+            <display value="Hypothermia" />
+          </concept>
+          <concept>
+            <code value="389087006" />
+            <display value="hypoxemia" />
+          </concept>
+          <concept>
+            <code value="165775009" />
+            <display value="Positive antibody screen" />
+          </concept>
+          <concept>
+            <code value="95388000" />
+            <display value="Injection site pain" />
+          </concept>
+          <concept>
+            <code value="418290006" />
+            <display value="Itching" />
+          </concept>
+          <concept>
+            <code value="18165001" />
+            <display value="Jaundice" />
+          </concept>
+          <concept>
+            <code value="214264003" />
+            <display value="Lethargy" />
+          </concept>
+          <concept>
+            <code value="422587007" />
+            <display value="Nausea" />
+          </concept>
+          <concept>
+            <code value="83128009" />
+            <display value="oliguria" />
+          </concept>
+          <concept>
+            <code value="2237002" />
+            <display value="Pleuritic chest pain" />
+          </concept>
+          <concept>
+            <code value="255320000" />
+            <display value="Purulent drainage or material" />
+          </concept>
+          <concept>
+            <code value="4800001" />
+            <display value="Pyuria" />
+          </concept>
+          <concept>
+            <code value="386713009" />
+            <display value="Redness" />
+          </concept>
+          <concept>
+            <code value="128601007" />
+            <display value="Respiratory infection (including pneumonia)" />
+          </concept>
+          <concept>
+            <code value="38880002" />
+            <display value="Rigors" />
+          </concept>
+          <concept>
+            <code value="89138009" />
+            <display value="Shock" />
+          </concept>
+          <concept>
+            <code value="267036007" />
+            <display value="SOB - Shortness of breath" />
+          </concept>
+          <concept>
+            <code value="162053006" />
+            <display value="Suprapubic tenderness" />
+          </concept>
+          <concept>
+            <code value="3424008" />
+            <display value="Tachycardia" />
+          </concept>
+          <concept>
+            <code value="85623003" />
+            <display value="Temperature instability" />
+          </concept>
+          <concept>
+            <code value="75088002" />
+            <display value="Urgency" />
+          </concept>
+          <concept>
+            <code value="39575007" />
+            <display value="Dark urine" />
+          </concept>
+          <concept>
+            <code value="126485001" />
+            <display value="Urticaria" />
+          </concept>
+          <concept>
+            <code value="422400008" />
+            <display value="Vomiting" />
+          </concept>
+          <concept>
+            <code value="56018004" />
+            <display value="Wheezing" />
+          </concept>
+          <concept>
+            <code value="225553008" />
+            <display value="Wound spontaneously dehisces" />
+          </concept>
+          <concept>
+            <code value="68566005" />
+            <display value="Urinary tract infection" />
+          </concept>
+          <concept>
+            <code value="414478003" />
+            <display value="Leukocytosis" />
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <!-- NHSN Pathogen Code 
+         - http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16-->
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="2.16.840.1.113883.13.16" />
+<!--      <meta id="4211" />-->
+      <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16" />
+      <name value="NHSNPathogenCode" />
+      <status value="active" />
+      <description
+        value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <compose>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.96" />
+          <concept>
+            <code value="50471002" />
+            <display value="Zika virus (organism)" />
+          </concept>
+          <concept>
+            <code value="2423009" />
+            <display value="Chikungunya virus (organism)" />
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <!-- NHSN Pathogen Ranking 
+         - http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking-->
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="nhsn-pathogen-ranking" />
+<!--      <meta id="4423" />-->
+      <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking" />
+      <name value="NHSNPathogenRanking" />
+      <status value="draft" />
+      <description value="Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection." />
+      <compose>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.96" />
+          <concept>
+            <code value="255216001" />
+            <display value="First" />
+          </concept>
+          <concept>
+            <code value="81170007" />
+            <display value="Second" />
+          </concept>
+          <concept>
+            <code value="70905002" />
+            <display value="Third" />
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <!-- NHSN Drug Susceptibility Tests Code 
+         - http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15 -->
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="2.16.840.1.113883.13.15" />
+<!--      <meta id="38" />-->
+      <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15" />
+      <name value="NHSNDrugSusceptibilityTestsCode" />
+      <status value="active" />
+      <description
+        value="Code System: LOINC 2.16.840.1.113883.6.1 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <compose>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.1" />
+          <concept>
+            <code value="18855-7" />
+            <display value="5-fluorocytosine Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18860-7" />
+            <display value="Amikacin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18862-3" />
+            <display value="Amoxicillin+Clav Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18864-9" />
+            <display value="Ampicillin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18865-6" />
+            <display value="Ampicillin+Sulbac Susc Islt" />
+          </concept>
+          <concept>
+            <code value="57095-2" />
+            <display value="Anidulafungin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18866-4" />
+            <display value="Azithromycin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18868-0" />
+            <display value="Aztreonam Susc Islt" />
+          </concept>
+          <concept>
+            <code value="32378-2" />
+            <display value="Caspofungin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18878-9" />
+            <display value="Cefazolin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18879-7" />
+            <display value="Cefepime Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18886-2" />
+            <display value="Cefotaxime Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18887-0" />
+            <display value="Cefotetan Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18888-8" />
+            <display value="Cefoxitin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18893-8" />
+            <display value="Ceftazidime Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18895-3" />
+            <display value="Ceftriaxone Susc Islt" />
+          </concept>
+          <concept>
+            <code value="35783-0" />
+            <display value="Cefuroxime Oral Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18900-1" />
+            <display value="Cephalothin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18903-5" />
+            <display value="Chloramphen Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18906-8" />
+            <display value="Ciprofloxacin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18907-6" />
+            <display value="Clarithro Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18908-4" />
+            <display value="Clindamycin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18912-6" />
+            <display value="Colistin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="35789-7" />
+            <display value="Daptomycin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="60535-2" />
+            <display value="Doripenem Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18917-5" />
+            <display value="Doxycycline Susc Islt" />
+          </concept>
+          <concept>
+            <code value="35802-8" />
+            <display value="Ertapenem Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18919-1" />
+            <display value="Erythromycin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18924-1" />
+            <display value="Fluconazole Susc Islt" />
+          </concept>
+          <concept>
+            <code value="31038-3" />
+            <display value="Gatifloxacin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18928-2" />
+            <display value="Gentamicin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18929-0" />
+            <display value="Gentamicin Synergy Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18932-4" />
+            <display value="Imipenem Susc Islt" />
+          </concept>
+          <concept>
+            <code value="32603-3" />
+            <display value="Itraconaz Susc Islt" />
+          </concept>
+          <concept>
+            <code value="20629-2" />
+            <display value="L-Floxacin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="29258-1" />
+            <display value="Linezolid Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18943-1" />
+            <display value="Meropenem Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18945-6" />
+            <display value="Methicillin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18946-4" />
+            <display value="Metronidazole Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18948-0" />
+            <display value="Minocycline Susc Islt" />
+          </concept>
+          <concept>
+            <code value="31039-1" />
+            <display value="Moxifloxacin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18959-7" />
+            <display value="Ofloxacin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18961-3" />
+            <display value="Oxacillin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18965-4" />
+            <display value="Penicillin G Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18969-6" />
+            <display value="Piperacillin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18970-4" />
+            <display value="Piperacillin+Tazobac Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18972-0" />
+            <display value="Polymyxin B Susc Islt" />
+          </concept>
+          <concept>
+            <code value="23640-6" />
+            <display value="Quinupristin+Dalfoprist Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18974-6" />
+            <display value="Rifampin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18983-7" />
+            <display value="Streptomycin High Pot Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18993-6" />
+            <display value="Tetracycline Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18994-4" />
+            <display value="Ticarcillin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18995-1" />
+            <display value="Ticarcillin+Clav Susc Islt" />
+          </concept>
+          <concept>
+            <code value="42357-4" />
+            <display value="Tigecycline Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18998-5" />
+            <display value="TMP SMX Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18996-9" />
+            <display value="Tobramycin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="19000-9" />
+            <display value="Vancomycin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="32379-0" />
+            <display value="Voriconazole Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18955-5" />
+            <display value="Nitrofurantoin" />
+          </concept>
+          <concept>
+            <code value="18861-5" />
+            <display value="Amoxicillin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="35816-8" />
+            <display value="Gemifloxacin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18939-9" />
+            <display value="Lomefloxacin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18956-3" />
+            <display value="Norfloxacin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18966-2" />
+            <display value="Penicillin V Susc Islt" />
+          </concept>
+          <concept>
+            <code value="54188-8" />
+            <display value="Posaconazole Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18982-9" />
+            <display value="Streptomycin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18986-0" />
+            <display value="Sulfisoxaz Susc Islt" />
+          </concept>
+          <concept>
+            <code value="35845-7" />
+            <display value="Telithromycin Susc Islt" />
+          </concept>
+          <concept>
+            <code value="18997-7" />
+            <display value="Trimethoprim Susc Islt" />
+          </concept>
+        </include>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.6.277" />
+          <concept>
+            <code value="2526-2" />
+            <display value="Micafungin Susc Islt" />
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <!-- NHSN Drug Susceptibility Finding Code 
+         http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13 -->
+  <contained>
+    <ValueSet xmlns="http://hl7.org/fhir">
+      <id value="2.16.840.1.113883.13.13" />
+<!--      <meta id="36" />-->
+      <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13" />
+      <name value="NHSNDrugSusceptibilityFindingCode" />
+      <status value="active" />
+      <description
+        value="Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <compose>
+        <include>
+          <system value="urn:oid:2.16.840.1.113883.5.83" />
+          <concept>
+            <code value="I" />
+            <display value="Intermediate" />
+          </concept>
+          <concept>
+            <code value="R" />
+            <display value="Resistant" />
+          </concept>
+          <concept>
+            <code value="S" />
+            <display value="Susceptible" />
+          </concept>
+          <concept>
+            <code value="NS" />
+            <display value="Non-Susceptible" />
+          </concept>
+          <concept>
+            <code value="S-DD" />
+            <display value="Susceptible-dose dependant" />
+          </concept>
+        </include>
+      </compose>
+    </ValueSet>
+  </contained>
+  <!--*****END VALUE SETS BLOCK*****-->
+
+  <!-- *****BEGIN Questionnaire Header Information*****-->
+  <url value="http://hl7.org/fhir/HAI/Questionnaire/NHSN-HAI-questionnaire-los-event" />
+  <identifier>
+    <use value="official" />
+    <value value="NHSN-HAI-questionnaire-los-event" />
+  </identifier>
+  <!-- Note: FHIR IG Version: R1
+             HAI CDA IG Version: R3D3 -->
+  <version value="R1" />
+  <title value="Late Onset Sepsis/Meningitis Event (LOS)" />
+  <status value="draft" />
+  <date value="2018-04-01" />
+  <!-- TODO: Review publishing organization -->
+  <publisher value="HL7" />
+  <description
+    value="This report type records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+    </coding>
+  </jurisdiction>
+  
+  <code>
+    <system value="http://loinc.org" />
+    <code value="51897-7" />
+    <display value="Healthcare Associated Infection Report" />
+  </code>
+  <!--*****END Questionnaire Header Information*****-->
+
+  <!-- Facility ID -->
+  <item>
+    <linkId value="facility" />
+    <text value="Facility ID" />
+    <!-- Example on how to report the Facility OID: urn:oid:2.16.213.321 -->
+    <type value="url" />
+    <required value="true" />
+    <repeats value="false" />
+  </item>
+
+  <!-- Event # -->
+  <!-- NOTE: Review where the CDA IG specifies this item. Currently maps to the encompassingEncounter/ID -->
+  <item>
+    <linkId value="event-number" />
+    <text value="Event #" />
+    <type value="string" />
+    <required value="false" />
+    <repeats value="false" />
+  </item>
+
+  <!-- Event Type -->
+  <item>
+    <linkId value="event-type" />
+    <text value="Event Type" />
+    <type value="choice" />
+    <required value="true" />
+    <repeats value="false" />
+    <options value="#2.16.840.1.113883.13.20"/>
+    
+  </item>
+
+  <!-- Date of Event -->
+  <item>
+    <linkId value="date-of-event" />
+    <text value="Date of Event" />
+    <type value="date" />
+    <required value="true" />
+    <repeats value="false" />
+  </item>
+
+  <!-- Event Location -->
+  <item>
+    <linkId value="facility-location" />
+    <text value="Facility Location" />
+    <type value="choice" />
+    <required value="true" />
+    <repeats value="false" />
+    <options value="#2.16.840.1.113883.13.19"/>
+      
+    
+  </item>
+
+  <!-- Date Admitted to Facility
+       CDA: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/low -->
+  <item>
+    <linkId value="date-admitted-to-facility" />
+    <text value="Date Admitted to Facility:" />
+    <type value="date" />
+    <required value="true" />
+    <repeats value="false" />
+  </item>
+
+  <!-- Inborn/Outborn Observation -->
+  <item>
+    <linkId value="inborn-outborn-observation" />
+    <code>
+      <system value="http://loinc.org" />
+      <code value="TEMP_NHSNDeliveryLocation" />
+      <display value="TEMP_NHSNDeliveryLocation" />
+    </code>
+    <text value="Select: Inborn or Outborn" />
+    <type value="choice" />
+    <required value="true" />
+    <repeats value="false" />
+    <options value="#2.16.840.1.113883.10.20.5.9.27"/>
+  </item>
+
+  <!--  Patient Information 
+            including:
+            - Patient ID
+            - Social Security #
+            - Secondary ID
+            - Medicaid #
+            - Patient Name
+            - Patient Gender
+            - Patient Date of Birth
+            - Patient Ethnicity
+            - Patient Race
+    -->
+  <!-- TODO: Mark in additional discriminators 
+               marking which items are needed. -->
+  <item>
+    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
+      <valueReference>
+        <reference value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+      </valueReference>
+    </extension>
+    <linkId value="questionnaire-patient" />
+    <text value="Patient" />
+    <type value="reference" />
+    <required value="true" />
+  </item>
+
+  <!-- *** Risk Factors Section *** -->
+  <item>
+    <linkId value="risk-factors" />
+    <code>
+      <system value="http://loinc.org" />
+      <code value="51898-5" />
+      <display value="Risk Factors Section" />
+    </code>
+    <text value="Risk Factors Section" />
+    <type value="group" />
+    <required value="true" />
+    <repeats value="false" />
+
+    <!-- Central Line present prior to event, including umbilical catheter -->
+    <!-- EP - TODO: Need to review how this is modeled -->
+    <!-- SG: Adding this for now as a boolean. -->
+    <item>
+      <linkId value="risk-factor-central-line" />
+      <code>
+        <system value="urn:oid:2.16.840.1.113883.6.277" />
+        <code value="1006-6" />
+        <display value="central line including umbilical catheter" />
+      </code>
+      <text value="Central line present prior to event, including umbilical catheter" />
+      <type value="boolean" />
+      <required value="false" />
+      <repeats value="false" />
+    </item>
+
+
+    <!-- Birth Weight (grams) -->
+    <!-- EP - TODO: Find out how to fix the unit type - http://hl7.org/fhir/2018Jan/extension-questionnaire-unit.html -->
+    <item>
+      <linkId value="risk-factor-birth-weight" />
+      <code>
+        <system value="http://snomed.info/sct" />
+        <code value="364589006" />
+        <display value="Birth Weight" />
+      </code>
+      <text value="Birth Weight (grams)" />
+      <type value="quantity" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+
+    <!-- Gestational Age -->
+    <!-- EP - TODO: Find out how to fix the unit type - http://hl7.org/fhir/2018Jan/extension-questionnaire-unit.html -->
+    <item>
+      <linkId value="risk-factor-gestational-age" />
+      <code>
+        <system value="http://loinc.org" />
+        <code value="76516-4" />
+        <display value="Gestational Age at Birth" />
+      </code>
+      <text value="Gestational Age" />
+      <type value="quantity" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+  </item>
+
+  <!-- *** Event Details Section *** -->
+  <item>
+    <linkId value="event-details" />
+    <code>
+      <system value="http://loinc.org" />
+      <code value="51899-3" />
+      <display value="Details Section" />
+    </code>
+    <text value="Event Details Section" />
+    <type value="group" />
+    <required value="true" />
+    <repeats value="false" />
+
+    <!-- Infection Condition -->
+    <item>
+      <linkId value="infection-condition" />
+      <text value="Specific Event" />
+      <type value="choice" />
+      <required value="true" />
+      <repeats value="false" />
+      <options value="#2.16.840.1.114222.4.11.3196"/>
+    </item>
+    <!-- Criteria Used (Lab) -->
+    <item>
+      <linkId value="criteria-used" />
+      <text value="Laboratory Criteria Used" />
+      <type value="choice" />
+      <required value="true" />
+      <repeats value="false" />
+      <options value="#2.16.840.1.114222.4.11.3195"/>
+    </item>
+
+    <!-- Death Observation -->
+    <item>
+      <linkId value="death-observation" />
+      <code>
+        <system value="http://snomed.info/sct" />
+        <code value="419099009" />
+        <display value="dead" />
+      </code>
+      <text value="Died" />
+      <type value="boolean" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <!-- LOS Contributed to death -->
+    <!-- EP Note: This item is only enabled when the death observation is marked as "true" -->
+    <item>
+      <linkId value="los-contributed-to-death" />
+      <text value="Infection contrubuted to death" />
+      <type value="boolean" />
+      <enableWhen>
+        <question value="death-observation" />
+        <operator value="="/>
+        <answerBoolean value="true" />
+      </enableWhen>
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+
+    <!-- Discharge Date 
+       CDA: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high -->
+    <item>
+      <linkId value="discharge-date" />
+      <text value="Discharge Date:" />
+      <type value="date" />
+      <required value="false" />
+      <repeats value="false" />
+    </item>
+  </item>
+
+  <!--<!-\- Pathogens Identified: Yes/No -\->
+  <item>
+    <linkId value="pathogens-identified" />
+    <text value="Pathogens Identified" />
+    <type value="boolean" />
+    <required value="true" />
+  </item>-->
+
+  <!-- *** Findings Section -->
+  <item>
+    <linkId value="findings-group" />
+    <code>
+      <system value="http://loinc.org" />
+      <code value="18769-0" />
+      <display value="Findings Section" />
+    </code>
+    <text value="Findings Group" />
+    <type value="group" />
+    <!--<enableWhen>
+      <question value="pathogens-identified" />
+      <operator value="="/>
+      <answerBoolean value="true" />
+    </enableWhen>-->
+    <required value="false" />
+    <repeats value="true" />
+
+    <!-- Pathogen Identified
+         CDA: Pathogen Identified Observation -->
+    <item>
+      <!--<extension url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
+                <valueString value="Ex: Staphylococcus coagulase-negative"/>
+            </extension>-->
+      <linkId value="pathogen-identified" />
+      <text value="Pathogen Identified" />
+      <type value="choice" />
+      <required value="true" />
+      <options value="#2.16.840.1.113883.13.16"/>
+    </item>
+    <!-- Pathogen Ranking
+         CDA: Pathogen Ranking Observation-->
+    <item>
+      <linkId value="pathogen-ranking" />
+      <text value="Pathogen Ranking" />
+      <type value="choice" />
+      <required value="true" />
+      <options value="#nhsn-pathogen-ranking"/>
+    </item>
+    <!-- Drug Susceptibility Test
+         CDA: Drug Susceptibility Test Observation-->
+    <item>
+      <linkId value="drug-susceptibility-test" />
+      <text value="Drug Susceptibility Test" />
+      <type value="group" />
+      <required value="false" />
+      <repeats value="true" />
+      <!-- Drug Susceptibilty Test Code 
+           CDA: CDA: Drug-Susceptibility Test Observation/code -->
+      <item>
+        <!--<extension
+                    url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
+                    <valueString value="Ex: DAPTO"/>
+                </extension>-->
+        <linkId value="drug-susceptibility-test-code" />
+        <text value="Test" />
+        <type value="choice" />
+        <required value="true" />
+        <options value="#2.16.840.1.113883.13.15"/>
+      </item>
+      <!-- Drug Susceptibilty Interpretation
+           CDA: Drug-Susceptibility Test Observation/interpretationCode -->
+      <item>
+        <!--<extension
+                    url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
+                    <valueString value="Ex: S, NS, or N"/>
+                </extension>-->
+        <linkId value="drug-susceptibility-interpretation" />
+        <text value="Drug Susceptibility Interpretation" />
+        <type value="choice" />
+        <required value="false" />
+        <options value="#2.16.840.1.113883.13.13"/>
+      </item>
+    </item>
+  </item>
+
+  <!-- *** Comment Section *** -->
+  <item>
+    <linkId value="comment-section" />
+    <code>
+      <system value="http://www.loinc.org" />
+      <code value="86468-6" />
+      <display value="Report Comment Section" />
+    </code>
+    <text value="Comments" />
+    <type value="text" />
+    <required value="false" />
+    <repeats value="false" />
+    <maxLength value="2000" />
+  </item>
+</Questionnaire>

@@ -1,4 +1,5 @@
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://hl7.org/fhir ../../../../../Analysts/NHSN-HAI/R3D3/FHIR/Validation/fhir-all-xsd/fhir-all.xsd" xmlns="http://hl7.org/fhir">
   <id value="questionnaire-item-note" />
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note" />
   <name value="questionnaire-item-note" />
@@ -20,8 +21,16 @@
   <description value="A note about the questionnaire item." />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Extension" />
+<!--  <contextType value="resource" />-->
+<!--  <context value="Extension" />-->
+  <!--<context>
+    <type value="element"/>
+    <expression value="Questionnaire.item"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Questionnaire.item.item"/>
+  </context>-->
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -33,7 +42,7 @@
       <path value="Extension.url" />
       <short value="@url" />
       <definition
-        value="SHALL contain exactly one [1..1] @url=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note&quot; (CONF:3347-221)." />
+        value="SHALL contain exactly one [1..1] @url=&quot;http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note&quot; (CONF:3370-18)." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -47,16 +56,14 @@
         <rules value="open" />
       </slicing>
       <short value="value[x]" />
-      <definition value="SHALL contain exactly one [1..1] value[x], where value[x] is (CONF:3347-220)" />
-      <min value="1" />
+      <definition value="MAY contain zero or one [0..1] value[x], where value[x] is (CONF:3370-17)" />
+      <min value="0" />
       <max value="1" />
     </element>
     <element id="value[x].valueString">
       <path value="Extension.valueString" />
       <short value="valueString" />
-      <definition value="valueString (CONF:3347-222)" />
-      <min value="1" />
-      <max value="1" />
+      <definition value="valueString (CONF:3370-19)" />
     </element>
   </differential>
 </StructureDefinition>

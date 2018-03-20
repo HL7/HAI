@@ -1,125 +1,13 @@
 {
-  "hai-single-person-generic-constraints": {
-    "examples": [
-      {
-        "type": "Composition",
-        "id": "hai-single-person-report-generic-constraints-example"
-      }
-    ]
-  },
-  "healthcare-associated-infection-report": {
-    "examples": [
-      {
-        "type": "Composition",
-        "id": "healthcare-associated-infection-report-example"
-      }
-    ]
-  },
-  "hai-patient": {
-    "examples": [
-      {
-        "type": "Patient",
-        "id": "Example"
-      }
-    ]
-  },
-  "hai-custodian": {
-    "examples": [
-      {
-        "type": "Organization",
-        "id": "HL7"
-      }
-    ]
-  },
-  "hai-surgical-site-infection-report-ssi": {
-    "examples": [
-      {
-        "type": "Composition",
-        "id": "hai-surgical-site-infection-report-ssi-example"
-      }
-    ]
-  },
-  "hai-ssi-encounter": {
-    "examples": [
-      {
-        "type": "Encounter",
-        "id": "hai-ssi-encounter-example"
-      }
-    ]
-  },
-  "hai-healthcare-facility": {
-    "examples": [
-      {
-        "type": "Location",
-        "id": "hai-healthcare-facility-example"
-      }
-    ]
-  },
-  "pathogen-identified": {
-    "examples": [
-      {
-        "type": "Observation",
-        "id": "pathogen-identified-example"
-      }
-    ]
-  },
-  "mdro-cdi-observation": {
-    "examples": [
-      {
-        "type": "Observation",
-        "id": "mdro-cdi-observation-example"
-      }
-    ]
-  },
-  "hai-procedure-denominator-report": {
-    "examples": [
-      {
-        "type": "Composition",
-        "id": "hai-procedure-denominator-report-example"
-      }
-    ]
-  },
-  "hai-procedure-denominator-encounter": {
-    "examples": [
-      {
-        "type": "Encounter",
-        "id": "hai-procedure-denominator-encounter-example"
-      }
-    ]
-  },
-  "infection-condition": {
-    "examples": [
-      {
-        "type": "Condition",
-        "id": "infection-condition-example"
-      }
-    ]
-  },
-  "asa-class": {
-    "examples": [
-      {
-        "type": "Condition",
-        "id": "asa-class-example"
-      }
-    ]
-  },
-  "diabetes-mellitus": {
-    "examples": [
-      {
-        "type": "Condition",
-        "id": "diabetes-mellitus-example"
-      }
-    ]
-  },
   "hai-report-questionnaire": {
     "examples": [
       {
         "type": "Questionnaire",
-        "id": "ssi-questionnaire"
+        "id": "hai-questionnaire-los-event"
       },
       {
         "type": "Questionnaire",
-        "id": "procedure-denominator-questionnaire"
+        "id": "hai-questionnaire-los-denominator"
       }
     ]
   },
@@ -127,11 +15,11 @@
     "examples": [
       {
         "type": "QuestionnaireResponse",
-        "id": "ssi-questionnaire-response"
+        "id": "hai-questionnaireResponse-los-denominator"
       },
       {
         "type": "QuestionnaireResponse",
-        "id": "procedure-denominator-questionnaire-response"
+        "id": "hai-questionnaireResponse-los-event"
       }
     ]
   }

@@ -1,0 +1,60 @@
+{
+  "tool": "jekyll",
+  "paths": {
+    "resources": [
+      "resources"
+    ],
+    "pages": "pages",
+    "temp": "temp",
+    "output": "output",
+    "qa": "qa",
+    "specification": "http://hl7-fhir.github.io/"
+  },
+  "defaults": {
+    "Any": {
+      "template-format": "instance-template-format.html",
+      "template-base": "instance-template-base.html"
+    },
+    "StructureDefinition": {
+      "template-base": "instance-template-sd.html"
+    }
+  },
+  "canonicalBase": "http://hl7.org/fhir/us/hai",
+  "dependencyList": [{
+    "name": "USCore",
+    "location": "http://hl7.org/fhir/us/core/2017Jan",
+    "source": "dependencies/uscore"
+  }],
+  "source": "implementationguide/3370.xml",
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "special-urls": [],
+  "resources": {
+    "StructureDefinition/hai-report-questionnaire": {
+      "base": "StructureDefinition-hai-report-questionnaire.html"
+    },
+    "StructureDefinition/hai-report-questionnaire-response": {
+      "base": "StructureDefinition-hai-report-questionnaire-response.html"
+    },
+    "StructureDefinition/questionnaire-item-note": {
+      "base": "StructureDefinition-questionnaire-item-note.html"
+    },
+    "ValueSet/2.16.840.1.113883.13.19": {
+      "base": "ValueSet-2.16.840.1.113883.13.19.html"
+    },
+    "ValueSet/2.16.840.1.113883.13.20": {
+      "base": "ValueSet-2.16.840.1.113883.13.20.html"
+    },
+    "Questionnaire/hai-questionnaire-los-event": {
+      "base": "Questionnaire-hai-questionnaire-los-event.html"
+    },
+    "Questionnaire/hai-questionnaire-los-denominator": {
+      "base": "Questionnaire-hai-questionnaire-los-denominator.html"
+    },
+    "QuestionnaireResponse/hai-questionnaireResponse-los-denominator": {
+      "base": "QuestionnaireResponse-hai-questionnaireResponse-los-denominator.html"
+    },
+    "QuestionnaireResponse/hai-questionnaireResponse-los-event": {
+      "base": "QuestionnaireResponse-hai-questionnaireResponse-los-event.html"
+    }
+  }
+}
