@@ -8,6 +8,13 @@
   <date value="2018-03-19" />
   <publisher value="HL7" />
   <definition>
+    <!--<resource>
+      <reference>
+        <reference value="StructureDefinition/questionnaire-item-note" />
+      </reference>
+      <name value="questionnaire-item-note" />
+      <exampleBoolean value="false" />
+    </resource>-->
     <resource>
       <reference>
         <reference value="StructureDefinition/hai-report-questionnaire" />
