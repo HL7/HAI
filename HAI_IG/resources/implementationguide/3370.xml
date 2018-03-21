@@ -1,73 +1,80 @@
-<ImplementationGuide xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://hl7.org/fhir ../../../../../Analysts/NHSN-HAI/R3D3/FHIR/Validation/R3-fhir-all-xsd/fhir-all.xsd"
- xmlns="http://hl7.org/fhir">
+<ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="3370" />
   <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/3370" />
+  <version value="1" />
   <name value="Healthcare Associated Infection Reports FHIR Release 1" />
   <status value="draft" />
-  <package>
-    <name value="Profiles in this Implementation Guide" />
+  <experimental value="false" />
+  <date value="2018-03-19" />
+  <publisher value="HL7" />
+  <definition>
     <resource>
-      <example value="false" />
-      <sourceReference>
-        <reference value="StructureDefinition/questionnaire-item-note" />
-        <display value="questionnaire-item-note" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <sourceReference>
+      <reference>
         <reference value="StructureDefinition/hai-report-questionnaire" />
-        <display value="Healthcare Associated Infection Report Questionnaire" />
-      </sourceReference>
+      </reference>
+      <name value="Healthcare Associated Infection Report Questionnaire" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <sourceReference>
+      <reference>
         <reference value="StructureDefinition/hai-report-questionnaire-response" />
-        <display value="Healthcare Associated Infection Report QuestionnaireResponse" />
-      </sourceReference>
+      </reference>
+      <name value="Healthcare Associated Infection Report QuestionnaireResponse" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.13.19" />
-        <display value="NHSNHealthcareServiceLocationCode" />
-      </sourceReference>
+      </reference>
+      <name value="NHSNHealthcareServiceLocationCode" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.13.20" />
-        <display value="NHSNInfectionTypeCode" />
-      </sourceReference>
+      </reference>
+      <name value="NHSNInfectionTypeCode" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="true" />
-      <sourceReference>
+      <reference>
         <reference value="Questionnaire/hai-questionnaire-los-event" />
-        <display value="Late_Onset_Sepsis/Meningitis_Event_LOS_Questionnaire" />
-      </sourceReference>
-      <exampleFor>
+      </reference>
+      <name value="Late_Onset_Sepsis_Meningitis_Event_LOS_Questionnaire" />
+      <exampleReference>
         <reference value="StructureDefinition/hai-report-questionnaire" />
-        <display value="Healthcare Associated Infection Report Questionnaire" />
-      </exampleFor>
+      </exampleReference>
     </resource>
+    <!--resource>
+      <reference>
+        <reference value="Questionnaire/los-denominator-questionnaire" />
+      </reference>
+      <name value="Late_Onset_Sepsis_Denominator_Questionnaire" />
+      <exampleReference>
+        <reference value="StructureDefinition/hai-report-questionnaire" />
+      </exampleReference>
+    </resource-->
     <resource>
-      <example value="true" />
-      <sourceReference>
+      <reference>
         <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-event" />
-        <display value="Late_Onset_Sepsis/Meningitis_Event_LOS_Questionnaire" />
-      </sourceReference>
-      <exampleFor>
+      </reference>
+      <name value="Late_Onset_Sepsis/Meningitis_Event_(LOS)_QuestionnaireResponse" />
+      <exampleReference>
         <reference value="StructureDefinition/hai-report-questionnaire-response" />
-        <display value="Healthcare Associated Infection Report QuestionnaireResponse" />
-      </exampleFor>
+      </exampleReference>
     </resource>
-  </package>
-  <page>
-    <source value="http://test.com/IG/View/3370" />
-    <title value="Healthcare Associated Infection Reports FHIR Release 1" />
-    <kind value="page" />
-  </page>
+    <!--resource>
+      <reference>
+        <reference value="QuestionnaireResponse/LOS-denominator-questionnaireresponse-sample" />
+      </reference>
+      <name value="Late_Onset_Sepsis_Denominator_QuestionnaireResponse" />
+      <exampleReference>
+        <reference value="StructureDefinition/hai-report-questionnaire-response" />
+      </exampleReference>
+    </resource-->
+	<page>
+	  <nameUrl value="test.html" />
+	  <title value="Test" />
+	</page>
+  </definition>
 </ImplementationGuide>

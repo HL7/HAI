@@ -2286,7 +2286,7 @@
   <!--*****END VALUE SETS BLOCK*****-->
 
   <!-- *****BEGIN Questionnaire Header Information*****-->
-  <url value="http://hl7.org/fhir/HAI/Questionnaire/NHSN-HAI-questionnaire-los-event" />
+  <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event" />
   <identifier>
     <use value="official" />
     <value value="NHSN-HAI-questionnaire-los-event" />
