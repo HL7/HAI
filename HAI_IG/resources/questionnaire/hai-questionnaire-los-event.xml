@@ -2409,7 +2409,7 @@
   <item>
     <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
       <valueReference>
-        <reference value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+        <reference value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </valueReference>
     </extension>
     <linkId value="questionnaire-patient" />

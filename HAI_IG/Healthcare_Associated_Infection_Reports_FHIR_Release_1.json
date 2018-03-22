@@ -8,7 +8,7 @@
     "temp": "temp",
     "output": "output",
     "qa": "qa",
-    "specification": "http://hl7-fhir.github.io/"
+    "specification": "http://build.fhir.org/"
   },
   "defaults": {
     "Any": {
@@ -20,11 +20,6 @@
     }
   },
   "canonicalBase": "http://hl7.org/fhir/us/hai",
-  "dependencyList": [{
-    "name": "USCore",
-    "location": "http://hl7.org/fhir/us/core/2017Jan",
-    "source": "dependencies/uscore"
-  }],
   "source": "implementationguide/3370.xml",
   "sct-edition": "http://snomed.info/sct/731000124108",
   "special-urls": [],
