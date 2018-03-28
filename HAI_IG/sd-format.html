@@ -24,11 +24,9 @@ tcode: {{[type]}}
         <ul class="breadcrumb">
           <li title="{{ site.data.fhir.igName }}"><a href="index.html"><b>{{site.data.fhir.igName}}</b></a></li>
           
-          {% if page.title %}
-          <li><b>{{[type]}} {{page.title}} Details</b></li>
-          {% else %}
-          <li><b>{{[type]}} {{[id]}} Details</b></li>
-          {% endif %}
+          <li>
+            <b>{{[type]}} {{page.title}} Details</b>
+          </li>
         </ul>
       </div>
     </div>
@@ -40,7 +38,7 @@ tcode: {{[type]}}
             <div class="col-12">
               <ul class="nav nav-tabs">
                 <li><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
-                
+                <li><a href="{{[type]}}-{{[id]}}-definitions.html">Detailed Descriptions</a></li>
                 <li class="{% if "{{[fmt]}}" == "xml" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
                 <li class="{% if "{{[fmt]}}" == "json" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
               </ul>

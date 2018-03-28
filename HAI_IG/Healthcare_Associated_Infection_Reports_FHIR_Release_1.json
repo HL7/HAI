@@ -17,7 +17,8 @@
     },
     "StructureDefinition": {
       "template-base": "instance-template-sd.html",
-      "template-defns": "sd-definitions.html"
+      "template-defns": "sd-definitions.html",
+      "template-format": "sd-format.html"
     }
   },
   "canonicalBase": "http://hl7.org/fhir/us/hai",

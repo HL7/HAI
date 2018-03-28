@@ -4,19 +4,11 @@
       {
         "type": "Questionnaire",
         "id": "hai-questionnaire-los-event"
-      },
-      {
-        "type": "Questionnaire",
-        "id": "hai-questionnaire-los-denominator"
       }
     ]
   },
   "hai-report-questionnaire-response": {
     "examples": [
-      {
-        "type": "QuestionnaireResponse",
-        "id": "hai-questionnaireResponse-los-denominator"
-      },
       {
         "type": "QuestionnaireResponse",
         "id": "hai-questionnaireResponse-los-event"

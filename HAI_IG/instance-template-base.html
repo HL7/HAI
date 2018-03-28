@@ -1,5 +1,7 @@
 ---
-# jekyll header
+id: {{[id]}}
+title: {{[title]}}
+tcode: {{[type]}}
 ---
 
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -17,9 +19,9 @@
                 <ul class="breadcrumb">
                     <li title="{{ site.data.fhir.igName }}"><a href="index.html"><b>{{site.data.fhir.igName}}</b></a></li>
                     {% if page.title %}
-                    <li><b>{{page.title}} Details</b></li>
+                  <li><b>{{[type]}} {{page.title}} Details</b></li>
                     {% else %}
-                    <li><b>{{[id]}} Details</b></li>
+                  <li><b>{{[type]}} {{[id]}} Details</b></li>
                     {% endif %}
                 </ul>
             </div>

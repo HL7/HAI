@@ -23,7 +23,7 @@ tcode: {{[type]}}
             </a>
           </li>
           <li>
-            <b>{{page.title}} Details</b>
+            <b>{{[type]}} {{page.title}} Details</b>
           </li>
         </ul>
       </div>
@@ -185,7 +185,7 @@ tcode: {{[type]}}
                     </p>
                     <div id="all-xml-inner"
                       >
-                      {% include StructureDefinition-{{page.id}}-pseudo-xml.xhtml%}
+                      <pre>{% include StructureDefinition-{{page.id}}-pseudo-xml.xhtml%}</pre>
                     </div>
                   </div>
                   <div id="all-json">
@@ -194,10 +194,11 @@ tcode: {{[type]}}
                     </p>
                     <div id="all-json-inner"
                       >
-                      {% include StructureDefinition-{{page.id}}-pseudo-json.xhtml%}
+                      <pre>{% include StructureDefinition-{{page.id}}-pseudo-json.xhtml%}</pre>
                     </div>
                   </div>
-                --></div>
+                -->
+                </div>
               </div>
               <p>&nbsp;</p>
               <a name="tx"> </a>
