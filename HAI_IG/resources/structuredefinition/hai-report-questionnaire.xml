@@ -21,8 +21,6 @@
   <description value="This profile represents a Healthcare Associated Infection Report form as FHIR Questionnaire." />
   <kind value="resource" />
   <abstract value="false" />
-  <!--<contextType value="resource" />
-  <context value="Questionnaire" />-->
   <type value="Questionnaire" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
   <derivation value="constraint" />
@@ -45,7 +43,7 @@
         <code value="51897-7" />
       </patternCoding>
     </element>
-    <element>
+    <element id="Questionnaire.item">
       <path value="Questionnaire.item" />
       <slicing>
         <discriminator>
@@ -97,18 +95,6 @@
       <definition value="SHALL contain at least one [1..*] item (CONF:3370-6) such that it" />
       <min value="1" />
       <max value="*" />
-    </element>
-    <element id="Questionnaire.item:item3.extension">
-      <path value="Questionnaire.item.extension" />
-      <short value="extension" />
-      <definition
-        value="SHALL contain exactly one [1..1] questionnaire-item-note (identifier: http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note) (CONF:3370-7)." />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note" />
-      </type>
     </element>
     <element id="Questionnaire.item:item3.linkId">
       <path value="Questionnaire.item.linkId" />

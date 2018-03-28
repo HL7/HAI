@@ -1,0 +1,41 @@
+---
+# jekyll header
+---
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>{{ site.data.fhir.igName }}</title>
+    
+    {% include header.html %}
+  </head>
+
+  <body>
+    <!-- ============BreadCrumb=============== -->
+
+{% include container-start.html %}
+
+  <!-- ============CONTENT CONTENT=============== -->
+    <ul class="nav nav-tabs">
+      <li><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
+      <li class="active"><a href="#">Detailed Descriptions</a></li>
+<!--      <li><a href="{{[type]}}-{{[id]}}-mappings.html">Mappings</a></li>-->
+      <li><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
+      <li><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
+    </ul>
+    <h4><span class="sectioncount">D.4.1.4<a name="D.4.1.4"> </a></span> StructureDefinition:{{page.type}} - Detailed Descriptions <a
+        title="link to here" class="self-link" href="{{[type]}}-{{[id]}}-definitions.html#D.4.1.4"><img src="target.png" /></a></h4>
+    <p>Definitions for the {{[type]}}-{{[id]}} Profile.</p>
+
+{%include {{[type]}}-{{[id]}}-dict.xhtml%}
+
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+
+{% include footer.html %}
+
+  </body>
+</html>

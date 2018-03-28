@@ -8,13 +8,6 @@
   <date value="2018-03-19" />
   <publisher value="HL7" />
   <definition>
-    <!--<resource>
-      <reference>
-        <reference value="StructureDefinition/questionnaire-item-note" />
-      </reference>
-      <name value="questionnaire-item-note" />
-      <exampleBoolean value="false" />
-    </resource>-->
     <resource>
       <reference>
         <reference value="StructureDefinition/hai-report-questionnaire" />
@@ -52,15 +45,7 @@
         <reference value="StructureDefinition/hai-report-questionnaire" />
       </exampleReference>
     </resource>
-    <!--resource>
-      <reference>
-        <reference value="Questionnaire/los-denominator-questionnaire" />
-      </reference>
-      <name value="Late_Onset_Sepsis_Denominator_Questionnaire" />
-      <exampleReference>
-        <reference value="StructureDefinition/hai-report-questionnaire" />
-      </exampleReference>
-    </resource-->
+    
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-event" />
@@ -70,18 +55,9 @@
         <reference value="StructureDefinition/hai-report-questionnaire-response" />
       </exampleReference>
     </resource>
-    <!--resource>
-      <reference>
-        <reference value="QuestionnaireResponse/LOS-denominator-questionnaireresponse-sample" />
-      </reference>
-      <name value="Late_Onset_Sepsis_Denominator_QuestionnaireResponse" />
-      <exampleReference>
-        <reference value="StructureDefinition/hai-report-questionnaire-response" />
-      </exampleReference>
-    </resource-->
-	<page>
-	  <nameUrl value="test.html" />
-	  <title value="Test" />
-	</page>
+    <page>
+      <nameUrl value="index.html" />
+      <title value="NHSN HAI Homepage" />
+    </page>
   </definition>
 </ImplementationGuide>

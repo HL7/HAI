@@ -13,7 +13,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="2.16.840.1.113883.13.19" />
-<!--      <meta id="41" />-->
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19" />
       <name value="NHSNHealthcareServiceLocationCode" />
       <status value="active" />
@@ -914,7 +913,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="2.16.840.1.113883.13.20" />
-<!--      <meta id="42" />-->
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20" />
       <name value="NHSNInfectionTypeCode" />
       <status value="active" />
@@ -1003,7 +1001,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="2.16.840.1.113883.10.20.5.9.27" />
-<!--      <meta id="4447" />-->
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.27" />
       <name value="Inborn/Outborn Observation Code" />
       <status value="draft" />
@@ -1028,7 +1025,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="2.16.840.1.114222.4.11.3196" />
-<!--      <meta id="69" />-->
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196" />
       <name value="NHSNInfectionConditionCode" />
       <status value="active" />
@@ -1297,7 +1293,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="2.16.840.1.114222.4.11.3195" />
-<!--      <meta id="68" />-->
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195" />
       <name value="NHSNCriterionOfDiagnosisCode" />
       <status value="active" />
@@ -1894,7 +1889,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="2.16.840.1.113883.13.16" />
-<!--      <meta id="4211" />-->
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16" />
       <name value="NHSNPathogenCode" />
       <status value="active" />
@@ -1920,7 +1914,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-pathogen-ranking" />
-<!--      <meta id="4423" />-->
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking" />
       <name value="NHSNPathogenRanking" />
       <status value="draft" />
@@ -1949,7 +1942,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="2.16.840.1.113883.13.15" />
-<!--      <meta id="38" />-->
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15" />
       <name value="NHSNDrugSusceptibilityTestsCode" />
       <status value="active" />
@@ -2250,7 +2242,6 @@
   <contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="2.16.840.1.113883.13.13" />
-<!--      <meta id="36" />-->
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13" />
       <name value="NHSNDrugSusceptibilityFindingCode" />
       <status value="active" />
@@ -2297,7 +2288,6 @@
   <title value="Late Onset Sepsis/Meningitis Event (LOS)" />
   <status value="draft" />
   <date value="2018-04-01" />
-  <!-- TODO: Review publishing organization -->
   <publisher value="HL7" />
   <description
     value="This report type records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present." />
@@ -2326,7 +2316,6 @@
   </item>
 
   <!-- Event # -->
-  <!-- NOTE: Review where the CDA IG specifies this item. Currently maps to the encompassingEncounter/ID -->
   <item>
     <linkId value="event-number" />
     <text value="Event #" />
@@ -2432,8 +2421,6 @@
     <repeats value="false" />
 
     <!-- Central Line present prior to event, including umbilical catheter -->
-    <!-- EP - TODO: Need to review how this is modeled -->
-    <!-- SG: Adding this for now as a boolean. -->
     <item>
       <linkId value="risk-factor-central-line" />
       <code>
@@ -2449,7 +2436,6 @@
 
 
     <!-- Birth Weight (grams) -->
-    <!-- EP - TODO: Find out how to fix the unit type - http://hl7.org/fhir/2018Jan/extension-questionnaire-unit.html -->
     <item>
       <linkId value="risk-factor-birth-weight" />
       <code>
@@ -2464,7 +2450,6 @@
     </item>
 
     <!-- Gestational Age -->
-    <!-- EP - TODO: Find out how to fix the unit type - http://hl7.org/fhir/2018Jan/extension-questionnaire-unit.html -->
     <item>
       <linkId value="risk-factor-gestational-age" />
       <code>
@@ -2525,7 +2510,6 @@
       <repeats value="false" />
     </item>
     <!-- LOS Contributed to death -->
-    <!-- EP Note: This item is only enabled when the death observation is marked as "true" -->
     <item>
       <linkId value="los-contributed-to-death" />
       <text value="Infection contrubuted to death" />
@@ -2550,14 +2534,7 @@
     </item>
   </item>
 
-  <!--<!-\- Pathogens Identified: Yes/No -\->
-  <item>
-    <linkId value="pathogens-identified" />
-    <text value="Pathogens Identified" />
-    <type value="boolean" />
-    <required value="true" />
-  </item>-->
-
+  
   <!-- *** Findings Section -->
   <item>
     <linkId value="findings-group" />
@@ -2568,20 +2545,12 @@
     </code>
     <text value="Findings Group" />
     <type value="group" />
-    <!--<enableWhen>
-      <question value="pathogens-identified" />
-      <operator value="="/>
-      <answerBoolean value="true" />
-    </enableWhen>-->
     <required value="false" />
     <repeats value="true" />
 
     <!-- Pathogen Identified
          CDA: Pathogen Identified Observation -->
     <item>
-      <!--<extension url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
-                <valueString value="Ex: Staphylococcus coagulase-negative"/>
-            </extension>-->
       <linkId value="pathogen-identified" />
       <text value="Pathogen Identified" />
       <type value="choice" />
@@ -2608,10 +2577,6 @@
       <!-- Drug Susceptibilty Test Code 
            CDA: CDA: Drug-Susceptibility Test Observation/code -->
       <item>
-        <!--<extension
-                    url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
-                    <valueString value="Ex: DAPTO"/>
-                </extension>-->
         <linkId value="drug-susceptibility-test-code" />
         <text value="Test" />
         <type value="choice" />
@@ -2621,10 +2586,6 @@
       <!-- Drug Susceptibilty Interpretation
            CDA: Drug-Susceptibility Test Observation/interpretationCode -->
       <item>
-        <!--<extension
-                    url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
-                    <valueString value="Ex: S, NS, or N"/>
-                </extension>-->
         <linkId value="drug-susceptibility-interpretation" />
         <text value="Drug Susceptibility Interpretation" />
         <type value="choice" />
