@@ -20,6 +20,11 @@
       "template-defns": "sd-definitions.html"
     }
   },
+  "canonicalBase": "http://hl7.org/fhir/us/hai",
+  "source": "implementationguide/3370.xml",
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "special-urls": [],
+  "resources": {
   "StructureDefinition/hai-report-questionnaire": {
       "base": "StructureDefinition-hai-report-questionnaire.html",
       "defns": "StructureDefinition-hai-report-questionnaire-definitions.html"
@@ -27,10 +32,6 @@
     "StructureDefinition/hai-report-questionnaire-response": {
       "base": "StructureDefinition-hai-report-questionnaire-response.html",
       "defns": "StructureDefinition-hai-report-questionnaire-response-definitions.html"
-    },
-  "canonicalBase": "http://hl7.org/fhir/us/hai",
-  "source": "implementationguide/3370.xml",
-  "sct-edition": "http://snomed.info/sct/731000124108",
-  "special-urls": [],
-  "resources": { }
+    } 
+  }
 }
