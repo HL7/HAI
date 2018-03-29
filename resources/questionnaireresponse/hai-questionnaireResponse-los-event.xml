@@ -106,7 +106,7 @@
   <item>
     <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
       <valueReference>
-        <reference value="Patient/pat1"/> 
+        <reference value="http://hl7.org/fhir/Patient/pat1"/> 
         <display value="Donald Duck"/> 
       </valueReference>
     </extension>
