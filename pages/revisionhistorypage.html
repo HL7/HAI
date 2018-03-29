@@ -1,6 +1,6 @@
 ---
 # jekyll prompt
-title:  Index page
+title:  Revision History page
 ---
 
 <!DOCTYPE HTML>
@@ -8,16 +8,17 @@ title:  Index page
   <head>
     <meta charset="UTF-8" />
     <title>HAI FHIR R1</title>
-{% include header.html %}
+    {% include header.html %}
   </head>
   <body>
-{% include navbar.html %}
+    {% include navbar.html %}
     <div id="segment-breadcrumb" class="segment">
       <!-- segment-breadcrumb -->
       <div class="container">
         <!-- container -->
         <ul class="breadcrumb">
           <li title="home"><a href="index.html"><b>Home</b></a></li>
+          <li><b>Revision History</b></li>
         </ul>
       </div>
       <!-- /container -->
@@ -32,16 +33,13 @@ title:  Index page
             <div class="col-9">
               <a name="{{ site.data.fhir.igId }}"></a>
               
-                  {% include overview.html %}
-                  
-                  {% include description.html %}
-                  
-                  {% include authors.html %}
-              </div>
+              {% include revisionhistory.html %}
+              
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
     {% include footer.html %}
   </body>

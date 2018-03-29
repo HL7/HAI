@@ -16,14 +16,12 @@ tcode: {{[type]}}
         
         <div id="segment-breadcrumb" class="segmnt">
             <div class="container">
-                <ul class="breadcrumb">
-                    <li title="{{ site.data.fhir.igName }}"><a href="index.html"><b>{{site.data.fhir.igName}}</b></a></li>
-                    {% if page.title %}
-                  <li><b>{{page.title}} Details</b></li>
-                    {% else %}
-                  <li><b>{{[id]}} Details</b></li>
-                    {% endif %}
-                </ul>
+              
+              <ul class="breadcrumb">
+                <li title="home"><a href="index.html"><b>Home</b></a></li>
+                <li title="code systems"><a href="codesystemspage.html"><b>Value Sets</b></a></li>
+                <li><b>{{[title]}}</b></li>
+              </ul>
             </div>
         </div>
         

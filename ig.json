@@ -12,13 +12,31 @@
   },
   "defaults": {
     "Any": {
-      "template-format": "instance-template-format.html",
-      "template-base": "instance-template-base.html"
+      "template-format": "template-format.html",
+      "template-base": "template-base.html"
     },
     "StructureDefinition": {
-      "template-base": "instance-template-sd.html",
-      "template-defns": "sd-definitions.html",
-      "template-format": "sd-format.html"
+      "template-base": "sd-template-base.html",
+      "template-defns": "sd-template-defns.html",
+      "template-format": "sd-template-format.html"
+    },
+    "ValueSet": {
+      "template-base": "vs-template-base.html"
+    },
+    "CodeSystem": {
+      "template-base": "cs-template-base.html"
+    },
+    "Resource": {
+      "template-base": "pf-template-base.html"
+    },
+    "Questionnaire": {
+      "template-base": "in-template-base.html"
+    },
+    "QuestionnaireResponse": {
+      "template-base": "in-template-base.html"
+    },
+    "Extension": {
+      "template-base": "ex-template-base.html"
     }
   },
   "canonicalBase": "http://hl7.org/fhir/us/hai",
