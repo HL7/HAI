@@ -1,1 +1,0 @@
-java -jar org.hl7.fhir.igpublisher.jar -ig %~dp0Healthcare_Associated_Infection_Reports_FHIR_Release_1.json
