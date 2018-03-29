@@ -1,5 +1,6 @@
 {
   "tool": "jekyll",
+  "license" : "cc0-1.0",
   "paths": {
     "resources": [
       "resources"
