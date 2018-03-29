@@ -32,10 +32,16 @@
       "template-base": "pf-template-base.html"
     },
     "Questionnaire": {
-      "template-base": "in-template-base.html"
+      "template-base": "in-template-base.html",
+      "template-format": "in-template-format.html"
     },
     "QuestionnaireResponse": {
-      "template-base": "in-template-base.html"
+      "template-base": "in-template-base.html",
+      "template-format": "in-template-format.html"
+     },
+    "Patient": {
+      "template-base": "in-template-base.html",
+      "template-format": "in-template-format.html"
     },
     "Extension": {
       "template-base": "ex-template-base.html"

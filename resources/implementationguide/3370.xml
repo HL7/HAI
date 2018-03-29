@@ -91,6 +91,15 @@
     <!-- Instances -->
     <resource>
       <reference>
+        <reference value="Patient/hai-patient-1" />
+      </reference>
+      <name value="hai-patient-1" />
+      <!--<exampleReference>
+        <reference value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </exampleReference>-->
+    </resource>
+    <resource>
+      <reference>
         <reference value="Questionnaire/hai-questionnaire-los-event" />
       </reference>
       <name value="Late_Onset_Sepsis_Meningitis_Event_LOS_Questionnaire" />

@@ -1,9 +1,106 @@
-<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+<QuestionnaireResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir ../../../../Analysts/NHSN-HAI/R3D3/FHIR/Validation/fhir-all-xsd/fhir-all.xsd" xmlns="http://hl7.org/fhir">
   <id value="hai-questionnaireResponse-los-event" />
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <pre>This QuestionnaireResponse instance is an example of a completed Late Onset Sepsis/Meningitis Event (LOS) Report and is in response to the Questionnaire instance defining this report.</pre>
+      <p>This QuestionnaireResponse instance is an example of a completed Late Onset Sepsis/Meningitis Event (LOS) Report and is in response to the Questionnaire instance defining this report.</p>
+      <h2>Patient Details</h2>
+      <table border="1"> 
+        <tbody> 
+          <tr> 
+            <td>Name</td> 
+            <td>Ned <b>Nuclear</b>
+            </td> 
+          </tr> 
+          <tr> 
+            <td>Id</td> 
+            <td>MRN: 12345</td> 
+          </tr> 
+          <tr> 
+            <td>Medicaid beneficiary number</td> 
+            <td>959595</td> 
+          </tr>
+        </tbody> 
+      </table> 
+      <h2>Event Details</h2>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>Infection Type</td>
+            <td>Late onset sepsis</td>
+          </tr>
+          <tr>
+            <td>Specific Event</td>
+            <td>NLCBI 2</td>
+          </tr>
+          <tr>
+            <td>Criteria used</td>
+            <td>Recognized pathogen from one or more blood specimens</td>
+          </tr>
+          <tr>
+            <td>Date of Infection</td>
+            <td>January 2, 2018</td>
+          </tr>
+          <tr>
+            <td>Inborn/Outborn</td>
+            <td>Inborn</td>
+          </tr>
+          <tr>
+            <td>Dead</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Infection Contributed to Death</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Risk Factors</h2>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>Central line present prior to event, including umbilical catheter</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Birth Weight</td>
+            <td>700 g</td>
+          </tr>
+          <tr>
+            <td>Gestational Age</td>
+            <td>276 d</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Findings</h2>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>Microorganism
+                identified</td>
+            <td>Clostridium symbiosum (organism)</td>
+          </tr>
+          <tr>
+            <td>Pathogen Ranking</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Clarithro Susc Islt</td>
+            <td> Not Applicable Resistant</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Comment</h2>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>Comment</td>
+            <td>NHSN text comment that is less than 2000 characters.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </text>
   <questionnaire value="Questionnaire/hai-questionnaire-los-event" />
@@ -104,14 +201,20 @@
             - Patient Race
     -->
   <item>
-    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
+    <!--<extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
       <valueReference>
-        <reference value="http://hl7.org/fhir/Patient/pat1"/> 
-        <display value="Donald Duck"/> 
+        <reference value="Patient/hai-los-event-patient"/> 
+        <display value="Ned Nuclear"/> 
       </valueReference>
-    </extension>
+    </extension>-->
     <linkId value="questionnaire-patient" />
     <text value="Patient" />
+    <answer>
+      <valueReference>
+        <reference value="Patient/hai-patient-1" />
+        <type value="Patient" />
+      </valueReference>
+    </answer>
   </item>
 
   <!-- Risk Factors

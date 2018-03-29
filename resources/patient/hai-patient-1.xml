@@ -1,0 +1,58 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="hai-patient-1"/> 
+  <text> 
+    <status value="generated"/> 
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <table> 
+        <tbody> 
+          <tr> 
+            <td>Name</td> 
+            <td>Ned <b>Nuclear</b>
+            </td> 
+          </tr> 
+          <tr> 
+            <td>Id</td> 
+            <td>MRN: 12345</td> 
+          </tr> 
+          <tr> 
+            <td>Medicaid beneficiary number</td> 
+            <td>959595</td> 
+          </tr>
+        </tbody> 
+      </table> 
+    </div> 
+  </text> 
+  <!--    Medicaid beneficiary number    -->
+  <identifier> 
+    <type> 
+      <coding> 
+        <system value="http://hl7.org/fhir/v2/0203"/> 
+        <code value="MA"/> 
+      </coding> 
+    </type> 
+    <value value="959595"/> 
+  </identifier> 
+  
+  <identifier> 
+    <type> 
+      <coding> 
+        <system value="http://hl7.org/fhir/v2/0203"/> 
+        <code value="MR"/> 
+      </coding> 
+    </type> 
+    <value value="12345"/> 
+  </identifier>
+  
+  <name> 
+    <use value="official"/> 
+    <family value="Nuclear"/> 
+    <given value="Ned"/> 
+  </name> 
+  <!--    use FHIR code system for male / female    -->
+  <gender value="male"/> 
+  <birthDate value="1954-11-25"/>
+  
+  <!-- Race and Ethnicity will be added when US Core is published in the current FHIR version -->
+   
+   
+</Patient>
