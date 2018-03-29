@@ -1,9 +1,10 @@
-<Questionnaire xmlns="http://hl7.org/fhir">
+<Questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://hl7.org/fhir ../../../../Analysts/NHSN-HAI/R3D3/FHIR/Validation/fhir-all-xsd/fhir-all.xsd" xmlns="http://hl7.org/fhir">
   <id value="hai-questionnaire-los-event" />
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <pre>This report type records a late onset sepsis/meningitis infection event.<br />For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.</pre>
+      <pre>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event.<br />For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.</pre>
     </div>
   </text>
 
@@ -16,8 +17,7 @@
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19" />
       <name value="NHSNHealthcareServiceLocationCode" />
       <status value="active" />
-      <description
-        value="A classification of patient care locations within healthcare facilities for public health surveillance purposes.&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <description value="A classification of patient care locations within healthcare facilities for public health surveillance purposes." />
       <compose>
         <include>
           <system value="urn:oid:2.16.840.1.113883.6.259" />
@@ -916,8 +916,7 @@
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20" />
       <name value="NHSNInfectionTypeCode" />
       <status value="active" />
-      <description
-        value="Code System: cdcNHSN 2.16.840.1.113883.6.277 or SNOMED CT 2.16.840.1.113883.6.96&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <description value="Code System: cdcNHSN 2.16.840.1.113883.6.277 or SNOMED CT 2.16.840.1.113883.6.96" />
       <compose>
         <include>
           <system value="urn:oid:2.16.840.1.113883.6.96" />
@@ -1028,8 +1027,7 @@
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196" />
       <name value="NHSNInfectionConditionCode" />
       <status value="active" />
-      <description
-        value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <description value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277" />
       <compose>
         <include>
           <system value="urn:oid:2.16.840.1.113883.6.96" />
@@ -1296,8 +1294,7 @@
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195" />
       <name value="NHSNCriterionOfDiagnosisCode" />
       <status value="active" />
-      <description
-        value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <description value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277" />
       <compose>
         <include>
           <system value="urn:oid:2.16.840.1.113883.6.277" />
@@ -1892,8 +1889,7 @@
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16" />
       <name value="NHSNPathogenCode" />
       <status value="active" />
-      <description
-        value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <description value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277" />
       <compose>
         <include>
           <system value="urn:oid:2.16.840.1.113883.6.96" />
@@ -1945,8 +1941,7 @@
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15" />
       <name value="NHSNDrugSusceptibilityTestsCode" />
       <status value="active" />
-      <description
-        value="Code System: LOINC 2.16.840.1.113883.6.1 or cdcNHSN 2.16.840.1.113883.6.277&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <description value="Code System: LOINC 2.16.840.1.113883.6.1 or cdcNHSN 2.16.840.1.113883.6.277" />
       <compose>
         <include>
           <system value="urn:oid:2.16.840.1.113883.6.1" />
@@ -2245,8 +2240,7 @@
       <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13" />
       <name value="NHSNDrugSusceptibilityFindingCode" />
       <status value="active" />
-      <description
-        value="Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+      <description value="Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83" />
       <compose>
         <include>
           <system value="urn:oid:2.16.840.1.113883.5.83" />
@@ -2297,7 +2291,7 @@
       <code value="US" />
     </coding>
   </jurisdiction>
-  
+
   <code>
     <system value="http://loinc.org" />
     <code value="51897-7" />
@@ -2331,8 +2325,7 @@
     <type value="choice" />
     <required value="true" />
     <repeats value="false" />
-    <options value="#2.16.840.1.113883.13.20"/>
-    
+    <options value="#2.16.840.1.113883.13.20" />
   </item>
 
   <!-- Date of Event -->
@@ -2352,8 +2345,6 @@
     <required value="true" />
     <repeats value="false" />
     <options value="#2.16.840.1.113883.13.19"/>
-      
-    
   </item>
 
   <!-- Date Admitted to Facility
@@ -2378,7 +2369,7 @@
     <type value="choice" />
     <required value="true" />
     <repeats value="false" />
-    <options value="#2.16.840.1.113883.10.20.5.9.27"/>
+    <options value="#2.16.840.1.113883.10.20.5.9.27" />
   </item>
 
   <!--  Patient Information 
@@ -2393,8 +2384,6 @@
             - Patient Ethnicity
             - Patient Race
     -->
-  <!-- TODO: Mark in additional discriminators 
-               marking which items are needed. -->
   <item>
     <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
       <valueReference>
@@ -2451,7 +2440,16 @@
 
     <!-- Gestational Age -->
     <item>
-      <linkId value="risk-factor-gestational-age" />
+      <!-- Unit -->
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+        <!-- from Element: extension -->
+        <valueCoding>
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+          <display value="days" />
+        </valueCoding>
+      </extension>
+      <linkId value="gestational-age" />
       <code>
         <system value="http://loinc.org" />
         <code value="76516-4" />
@@ -2462,151 +2460,151 @@
       <required value="true" />
       <repeats value="false" />
     </item>
-  </item>
 
-  <!-- *** Event Details Section *** -->
-  <item>
-    <linkId value="event-details" />
-    <code>
-      <system value="http://loinc.org" />
-      <code value="51899-3" />
-      <display value="Details Section" />
-    </code>
-    <text value="Event Details Section" />
-    <type value="group" />
-    <required value="true" />
-    <repeats value="false" />
-
-    <!-- Infection Condition -->
+    <!-- *** Event Details Section *** -->
     <item>
-      <linkId value="infection-condition" />
-      <text value="Specific Event" />
-      <type value="choice" />
-      <required value="true" />
-      <repeats value="false" />
-      <options value="#2.16.840.1.114222.4.11.3196"/>
-    </item>
-    <!-- Criteria Used (Lab) -->
-    <item>
-      <linkId value="criteria-used" />
-      <text value="Laboratory Criteria Used" />
-      <type value="choice" />
-      <required value="true" />
-      <repeats value="false" />
-      <options value="#2.16.840.1.114222.4.11.3195"/>
-    </item>
-
-    <!-- Death Observation -->
-    <item>
-      <linkId value="death-observation" />
+      <linkId value="event-details" />
       <code>
-        <system value="http://snomed.info/sct" />
-        <code value="419099009" />
-        <display value="dead" />
+        <system value="http://loinc.org" />
+        <code value="51899-3" />
+        <display value="Details Section" />
       </code>
-      <text value="Died" />
-      <type value="boolean" />
+      <text value="Event Details Section" />
+      <type value="group" />
       <required value="true" />
       <repeats value="false" />
-    </item>
-    <!-- LOS Contributed to death -->
-    <item>
-      <linkId value="los-contributed-to-death" />
-      <text value="Infection contrubuted to death" />
-      <type value="boolean" />
-      <enableWhen>
-        <question value="death-observation" />
-        <operator value="="/>
-        <answerBoolean value="true" />
-      </enableWhen>
-      <required value="true" />
-      <repeats value="false" />
-    </item>
 
-    <!-- Discharge Date 
+      <!-- Infection Condition -->
+      <item>
+        <linkId value="infection-condition" />
+        <text value="Specific Event" />
+        <type value="choice" />
+        <required value="true" />
+        <repeats value="false" />
+        <options value="#2.16.840.1.114222.4.11.3196" />
+      </item>
+      <!-- Criteria Used (Lab) -->
+      <item>
+        <linkId value="criteria-used" />
+        <text value="Laboratory Criteria Used" />
+        <type value="choice" />
+        <required value="true" />
+        <repeats value="false" />
+        <options value="#2.16.840.1.114222.4.11.3195" />
+      </item>
+
+      <!-- Death Observation -->
+      <item>
+        <linkId value="death-observation" />
+        <code>
+          <system value="http://snomed.info/sct" />
+          <code value="419099009" />
+          <display value="dead" />
+        </code>
+        <text value="Died" />
+        <type value="boolean" />
+        <required value="true" />
+        <repeats value="false" />
+      </item>
+      <!-- LOS Contributed to death -->
+      <item>
+        <linkId value="los-contributed-to-death" />
+        <text value="Infection contrubuted to death" />
+        <type value="boolean" />
+        <enableWhen>
+          <question value="death-observation" />
+          <operator value="=" />
+          <answerBoolean value="true" />
+        </enableWhen>
+        <required value="true" />
+        <repeats value="false" />
+      </item>
+
+      <!-- Discharge Date 
        CDA: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high -->
-    <item>
-      <linkId value="discharge-date" />
-      <text value="Discharge Date:" />
-      <type value="date" />
-      <required value="false" />
-      <repeats value="false" />
+      <item>
+        <linkId value="discharge-date" />
+        <text value="Discharge Date:" />
+        <type value="date" />
+        <required value="false" />
+        <repeats value="false" />
+      </item>
     </item>
-  </item>
 
-  
-  <!-- *** Findings Section -->
-  <item>
-    <linkId value="findings-group" />
-    <code>
-      <system value="http://loinc.org" />
-      <code value="18769-0" />
-      <display value="Findings Section" />
-    </code>
-    <text value="Findings Group" />
-    <type value="group" />
-    <required value="false" />
-    <repeats value="true" />
 
-    <!-- Pathogen Identified
-         CDA: Pathogen Identified Observation -->
+    <!-- *** Findings Section -->
     <item>
-      <linkId value="pathogen-identified" />
-      <text value="Pathogen Identified" />
-      <type value="choice" />
-      <required value="true" />
-      <options value="#2.16.840.1.113883.13.16"/>
-    </item>
-    <!-- Pathogen Ranking
-         CDA: Pathogen Ranking Observation-->
-    <item>
-      <linkId value="pathogen-ranking" />
-      <text value="Pathogen Ranking" />
-      <type value="choice" />
-      <required value="true" />
-      <options value="#nhsn-pathogen-ranking"/>
-    </item>
-    <!-- Drug Susceptibility Test
-         CDA: Drug Susceptibility Test Observation-->
-    <item>
-      <linkId value="drug-susceptibility-test" />
-      <text value="Drug Susceptibility Test" />
+      <linkId value="findings-group" />
+      <code>
+        <system value="http://loinc.org" />
+        <code value="18769-0" />
+        <display value="Findings Section" />
+      </code>
+      <text value="Findings Group" />
       <type value="group" />
       <required value="false" />
       <repeats value="true" />
-      <!-- Drug Susceptibilty Test Code 
-           CDA: CDA: Drug-Susceptibility Test Observation/code -->
+
+      <!-- Pathogen Identified
+         CDA: Pathogen Identified Observation -->
       <item>
-        <linkId value="drug-susceptibility-test-code" />
-        <text value="Test" />
+        <linkId value="pathogen-identified" />
+        <text value="Pathogen Identified" />
         <type value="choice" />
         <required value="true" />
-        <options value="#2.16.840.1.113883.13.15"/>
+        <options value="#2.16.840.1.113883.13.16" />
       </item>
-      <!-- Drug Susceptibilty Interpretation
-           CDA: Drug-Susceptibility Test Observation/interpretationCode -->
+      <!-- Pathogen Ranking
+         CDA: Pathogen Ranking Observation-->
       <item>
-        <linkId value="drug-susceptibility-interpretation" />
-        <text value="Drug Susceptibility Interpretation" />
+        <linkId value="pathogen-ranking" />
+        <text value="Pathogen Ranking" />
         <type value="choice" />
+        <required value="true" />
+        <options value="#nhsn-pathogen-ranking" />
+      </item>
+      <!-- Drug Susceptibility Test
+         CDA: Drug Susceptibility Test Observation-->
+      <item>
+        <linkId value="drug-susceptibility-test" />
+        <text value="Drug Susceptibility Test" />
+        <type value="group" />
         <required value="false" />
-        <options value="#2.16.840.1.113883.13.13"/>
+        <repeats value="true" />
+        <!-- Drug Susceptibilty Test Code 
+           CDA: CDA: Drug-Susceptibility Test Observation/code -->
+        <item>
+          <linkId value="drug-susceptibility-test-code" />
+          <text value="Test" />
+          <type value="choice" />
+          <required value="true" />
+          <options value="#2.16.840.1.113883.13.15" />
+        </item>
+        <!-- Drug Susceptibilty Interpretation
+           CDA: Drug-Susceptibility Test Observation/interpretationCode -->
+        <item>
+          <linkId value="drug-susceptibility-interpretation" />
+          <text value="Drug Susceptibility Interpretation" />
+          <type value="choice" />
+          <required value="false" />
+          <options value="#2.16.840.1.113883.13.13" />
+        </item>
       </item>
     </item>
-  </item>
 
-  <!-- *** Comment Section *** -->
-  <item>
-    <linkId value="comment-section" />
-    <code>
-      <system value="http://www.loinc.org" />
-      <code value="86468-6" />
-      <display value="Report Comment Section" />
-    </code>
-    <text value="Comments" />
-    <type value="text" />
-    <required value="false" />
-    <repeats value="false" />
-    <maxLength value="2000" />
+    <!-- *** Comment Section *** -->
+    <item>
+      <linkId value="comment-section" />
+      <code>
+        <system value="http://www.loinc.org" />
+        <code value="86468-6" />
+        <display value="Report Comment Section" />
+      </code>
+      <text value="Comments" />
+      <type value="text" />
+      <required value="false" />
+      <repeats value="false" />
+      <maxLength value="2000" />
+    </item>
   </item>
 </Questionnaire>

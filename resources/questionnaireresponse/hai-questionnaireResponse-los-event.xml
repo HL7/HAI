@@ -3,10 +3,10 @@
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <pre>This QuestionnaireResponse instance is an example of a completed Late Onset Sepsis/Meningitis Event (LOS) report questionnaire.</pre>
+      <pre>This QuestionnaireResponse instance is an example of a completed Late Onset Sepsis/Meningitis Event (LOS) Report and is in response to the Questionnaire instance defining this report.</pre>
     </div>
   </text>
-  <questionnaire value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event" />
+  <questionnaire value="Questionnaire/hai-questionnaire-los-event" />
   <status value="completed" />
 
   <!-- Facility ID -->
@@ -103,11 +103,11 @@
             - Patient Ethnicity
             - Patient Race
     -->
-  <!-- **TODO** doesn't this have to point to an instance of a patient? need to add this -->
   <item>
     <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
       <valueReference>
-        <reference value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <reference value="Patient/pat1"/> 
+        <display value="Donald Duck"/> 
       </valueReference>
     </extension>
     <linkId value="questionnaire-patient" />
