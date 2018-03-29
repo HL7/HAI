@@ -27,6 +27,15 @@
     <element id="Questionnaire">
       <path value="Questionnaire" />
     </element>
+    <!--<element id="subjectType">
+      <path value="Questionnaire.subjectType" />
+      <short value="subjectType"/>
+      <min value="0"/>
+      <max value="1"/>
+      <patternCoding>
+        <code value="Patient"/>
+      </patternCoding>
+    </element>-->
     <element id="code">
       <path value="Questionnaire.code" />
       <short value="code" />
