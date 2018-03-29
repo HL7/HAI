@@ -1,125 +1,84 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id
-    value="2.16.840.1.113883.13.20" />
-  <meta
-    id="42" />
-  <url
-    value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20" />
-  <name
-    value="NHSNInfectionTypeCode" />
-  <status
-    value="active" />
+  <id value="2.16.840.1.113883.13.20" />
+  <meta id="42" />
+  <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20" />
+  <name value="NHSNInfectionTypeCode" />
+  <status value="active" />
   <description
-    value="Code System: cdcNHSN 2.16.840.1.113883.6.277 or SNOMED CT 2.16.840.1.113883.6.96&#xA;&#xA;A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+    value="Code System: cdcNHSN 2.16.840.1.113883.6.277 or SNOMED CT 2.16.840.1.113883.6.96" />
   <compose>
     <include>
-      <system
-        value="urn:oid:2.16.840.1.113883.6.96" />
+      <system value="urn:oid:2.16.840.1.113883.6.96" />
       <concept>
-        <code
-          value="19824006" />
-        <display
-          value="Skin or Soft Tissue Infection" />
+        <code value="19824006" />
+        <display value="Skin or Soft Tissue Infection" />
       </concept>
       <concept>
-        <code
-          value="50417007" />
-        <display
-          value="Lower respiratory Infection" />
+        <code value="50417007" />
+        <display value="Lower respiratory Infection" />
       </concept>
       <concept>
-        <code
-          value="68566005" />
-        <display
-          value="Urinary Tract Infection" />
+        <code value="68566005" />
+        <display value="Urinary Tract Infection" />
       </concept>
       <concept>
-        <code
-          value="91302008" />
-        <display
-          value="Systemic Infection" />
+        <code value="91302008" />
+        <display value="Systemic Infection" />
       </concept>
       <concept>
-        <code
-          value="128116006" />
-        <display
-          value="Infection of the Central Nervous System" />
+        <code value="128116006" />
+        <display value="Infection of the Central Nervous System" />
       </concept>
       <concept>
-        <code
-          value="128402005" />
-        <display
-          value="Infection of the cardiovascular system" />
+        <code value="128402005" />
+        <display value="Infection of the cardiovascular system" />
       </concept>
       <concept>
-        <code
-          value="312158001" />
-        <display
-          value="Gastrointestinal Infection" />
+        <code value="312158001" />
+        <display value="Gastrointestinal Infection" />
       </concept>
       <concept>
-        <code
-          value="431193003" />
-        <display
-          value="Bloodstream Infection" />
+        <code value="431193003" />
+        <display value="Bloodstream Infection" />
       </concept>
       <concept>
-        <code
-          value="433202001" />
-        <display
-          value="Surgical Site Infection" />
+        <code value="433202001" />
+        <display value="Surgical Site Infection" />
       </concept>
       <concept>
-        <code
-          value="TEMP_SNOMED_LATE_ONSET_SEPSIS" />
-        <display
-          value="Late Onset Sepsis (LOS)" />
+        <code value="TEMP_SNOMED_LATE_ONSET_SEPSIS" />
+        <display value="Late Onset Sepsis (LOS)" />
       </concept>
       <concept>
-        <code
-          value="276674008" />
-        <display
-          value="Neonatal meningitis" />
+        <code value="276674008" />
+        <display value="Neonatal meningitis" />
       </concept>
     </include>
     <include>
-      <system
-        value="urn:oid:2.16.840.1.113883.6.277" />
+      <system value="urn:oid:2.16.840.1.113883.6.277" />
       <concept>
-        <code
-          value="1792-1" />
-        <display
-          value="MDRO Infection" />
+        <code value="1792-1" />
+        <display value="MDRO Infection" />
       </concept>
       <concept>
-        <code
-          value="1795-4" />
-        <display
-          value="CDAD Infection" />
+        <code value="1795-4" />
+        <display value="CDAD Infection" />
       </concept>
       <concept>
-        <code
-          value="1796-2" />
-        <display
-          value="Infection of the Reproduction System" />
+        <code value="1796-2" />
+        <display value="Infection of the Reproduction System" />
       </concept>
       <concept>
-        <code
-          value="1797-0" />
-        <display
-          value="Infection of the Ear/Eyes/Nose or Throat" />
+        <code value="1797-0" />
+        <display value="Infection of the Ear/Eyes/Nose or Throat" />
       </concept>
       <concept>
-        <code
-          value="1798-8" />
-        <display
-          value="Bone or Joint Infection" />
+        <code value="1798-8" />
+        <display value="Bone or Joint Infection" />
       </concept>
       <concept>
-        <code
-          value="2340-3" />
-        <display
-          value="Ventilator Associated Event" />
+        <code value="2340-3" />
+        <display value="Ventilator Associated Event" />
       </concept>
     </include>
   </compose>

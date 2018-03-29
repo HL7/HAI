@@ -6,7 +6,7 @@
       <pre>This QuestionnaireResponse instance is an example of a completed Late Onset Sepsis/Meningitis Event (LOS) report questionnaire.</pre>
     </div>
   </text>
-  <questionnaire value="hai-report-questionnaire" />
+  <questionnaire value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event" />
   <status value="completed" />
 
   <!-- Facility ID -->

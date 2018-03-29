@@ -25,7 +25,7 @@ tcode: {{[type]}}
           <li title="{{ site.data.fhir.igName }}"><a href="index.html"><b>{{site.data.fhir.igName}}</b></a></li>
           
           <li>
-            <b>{{[type]}} {{page.title}} Details</b>
+            <b>{{page.title}} Details</b>
           </li>
         </ul>
       </div>
@@ -37,10 +37,10 @@ tcode: {{[type]}}
           <div class="inner-wrapper">
             <div class="col-12">
               <ul class="nav nav-tabs">
-                <li><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
-                <li><a href="{{[type]}}-{{[id]}}-definitions.html">Detailed Descriptions</a></li>
-                <li class="{% if "{{[fmt]}}" == "xml" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
-                <li class="{% if "{{[fmt]}}" == "json" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
+                <li><a href="{{[type]}}-{{[id]}}.html">{{[type]}} Content</a></li>
+                <li><a href="{{[type]}}-{{[id]}}-definitions.html">{{[type]}} Detailed Descriptions</a></li>
+                <li class="{% if "{{[fmt]}}" == "xml" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.xml.html">{{[type]}} XML</a></li>
+                  <li class="{% if "{{[fmt]}}" == "json" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.json.html">{{[type]}} JSON</a></li>
               </ul>
               
               <br/>

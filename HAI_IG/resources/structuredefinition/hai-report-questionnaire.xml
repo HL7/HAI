@@ -1,5 +1,4 @@
-<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://hl7.org/fhir ../../../../../Analysts/NHSN-HAI/R3D3/FHIR/Validation/fhir-all-xsd/fhir-all.xsd" xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hai-report-questionnaire" />
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire" />
   <name value="Healthcare Associated Infection Report Questionnaire" />
