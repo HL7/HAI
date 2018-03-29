@@ -9,7 +9,8 @@
   <questionnaire value="Questionnaire/hai-questionnaire-los-event" />
   <status value="completed" />
 
-  <!-- Facility ID -->
+  <!-- Facility ID
+       CDA: ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/id -->
   <item>
     <linkId value="facility" />
     <text value="Facility ID" />
@@ -18,7 +19,8 @@
     </answer>
   </item>
 
-  <!-- Event # -->
+  <!-- Event # 
+       CDA: ClinicalDocument/componentOf/encompassingEncounter/id-->
   <item>
     <linkId value="event-number" />
     <text value="Event #" />
@@ -51,7 +53,7 @@
     </answer>
   </item>
 
-  <!-- Event Location 
+  <!-- Facility Location 
        (CDA Mapping: encompassingEncounter/location/healthcareFacility/code)-->
   <item>
     <linkId value="facility-location" />
@@ -112,10 +114,11 @@
     <text value="Patient" />
   </item>
 
-  <!-- *** Risk Factors Section *** -->
+  <!-- Risk Factors
+       CDA: Risk Factors Section (LOS/Men)-->
   <item>
     <linkId value="risk-factors" />
-    <text value="Risk Factors Section" />
+    <text value="Risk Factors" />
 
     <!-- Central Line present prior to event, including umbilical catheter
          (CDA Mapping: Infection Risk Factors Observation/value="1006-6" - if present then true) -->
@@ -154,10 +157,11 @@
     </item>
   </item>
 
-  <!-- *** Event Details Section *** -->
+  <!-- Event Details 
+         CDA: Infection Details in Late Onset Sepsis Report-->
   <item>
     <linkId value="event-details" />
-    <text value="Event Details Section" />
+    <text value="Event Details" />
 
     <!-- Infection Condition 
          (CDA Mapping: Infection Condition Observation/value-->
@@ -187,10 +191,10 @@
       </answer>
     </item>
 
-    <!-- Death Observation 
+    <!-- Died 
          (CDA Mapping: Death Observation in an Infection-type Report/value) -->
     <item>
-      <linkId value="death-observation" />
+      <linkId value="died" />
       <text value="Died" />
       <answer>
         <valueCoding>
@@ -201,7 +205,7 @@
       </answer>
     </item>
 
-    <!-- LOS Contributed to death 
+    <!-- LOS Contributed to Death 
          (CDA Mapping: Infection Contributed to Death Observation) -->
     <!-- Note: This item is only enabled when the death observation is marked as "true" -->
     <item>
@@ -216,7 +220,7 @@
          (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high) -->
     <item>
       <linkId value="discharge-date" />
-      <text value="Discharge Date:" />
+      <text value="Discharge Date" />
       <answer>
         <valueDate value="2018-01-12" />
       </answer>
@@ -225,7 +229,8 @@
 
 
 
-  <!-- *** Findings Section -->
+  <!-- Findings Group
+       CDA: Findings Section in an Infection-Type Report-->
   <item>
     <linkId value="findings-group" />
     <text value="Findings Group" />
@@ -233,9 +238,6 @@
     <!-- Pathogen Identified
          (CDA Mapping: Pathogen Identified Observation) -->
     <item>
-      <!--<extension url="http://hl7.org/fhir/us/hai/StructureDefinition/questionnaire-item-note">
-                <valueString value="Ex: Staphylococcus coagulase-negative"/>
-            </extension>-->
       <linkId value="pathogen-identified" />
       <text value="Pathogen Identified" />
       <answer>
@@ -261,17 +263,17 @@
       </answer>
     </item>
 
-    <!-- Drug Susceptibility Test
+    <!-- Drug Susceptibility Test Group
          (CDA Mapping: Drug Susceptibility Test Observation) -->
     <item>
-      <linkId value="drug-susceptibility-test" />
-      <text value="Drug Susceptibility Test" />
+      <linkId value="drug-susceptibility-test-group" />
+      <text value="Drug Susceptibility Test Group" />
 
-      <!-- Drug Susceptibilty Test Code 
-           CDA: CDA: Drug-Susceptibility Test Observation/code -->
+      <!-- Drug Susceptibilty Test 
+           CDA: Drug-Susceptibility Test Observation/code -->
       <item>
-        <linkId value="drug-susceptibility-test-code" />
-        <text value="Test" />
+        <linkId value="drug-susceptibility-test" />
+        <text value="Drug Susceptibility Test" />
         <answer>
           <valueCoding>
             <system value="https://loinc.org/" />
@@ -280,11 +282,11 @@
           </valueCoding>
         </answer>
       </item>
-      <!-- Drug Susceptibilty Interpretation
+      <!-- Drug Susceptibilty Test Interpretation
            CDA: Drug-Susceptibility Test Observation/interpretationCode -->
       <item>
-        <linkId value="drug-susceptibility-interpretation" />
-        <text value="Drug Susceptibility Interpretation" />
+        <linkId value="drug-susceptibility-test-interpretation" />
+        <text value="Drug Susceptibility Test Interpretation" />
         <answer>
           <valueCoding>
             <system value="urn:oid:2.16.840.1.113883.5.83" />
@@ -296,10 +298,11 @@
     </item>
   </item>
 
-  <!-- *** Comment Section *** -->
+  <!-- NHSN Comment
+         CDA: NHSN Comment Section/NHSN Comment-->
   <item>
-    <linkId value="comment-section" />
-    <text value="Comments" />
+    <linkId value="nhsn-comment" />
+    <text value="nhsn-comment" />
     <answer>
       <valueString value="NHSN text comment that is less than 2000 characters." />
     </answer>

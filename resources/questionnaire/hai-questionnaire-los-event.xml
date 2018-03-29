@@ -2299,7 +2299,8 @@
   </code>
   <!--*****END Questionnaire Header Information*****-->
 
-  <!-- Facility ID -->
+  <!-- Facility ID
+       CDA: ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/id -->
   <item>
     <linkId value="facility" />
     <text value="Facility ID" />
@@ -2309,7 +2310,8 @@
     <repeats value="false" />
   </item>
 
-  <!-- Event # -->
+  <!-- Event # 
+       CDA: ClinicalDocument/componentOf/encompassingEncounter/id-->
   <item>
     <linkId value="event-number" />
     <text value="Event #" />
@@ -2318,7 +2320,8 @@
     <repeats value="false" />
   </item>
 
-  <!-- Event Type -->
+  <!-- Event Type 
+       (CDA Mapping: Infection-Type Observation/value) -->
   <item>
     <linkId value="event-type" />
     <text value="Event Type" />
@@ -2328,7 +2331,8 @@
     <options value="#2.16.840.1.113883.13.20" />
   </item>
 
-  <!-- Date of Event -->
+  <!-- Date of Event 
+       (CDA Mapping: Infection-Type Observation/effectiveTime -->
   <item>
     <linkId value="date-of-event" />
     <text value="Date of Event" />
@@ -2337,7 +2341,8 @@
     <repeats value="false" />
   </item>
 
-  <!-- Event Location -->
+  <!-- Facility Location 
+       (CDA Mapping: encompassingEncounter/location/healthcareFacility/code)-->
   <item>
     <linkId value="facility-location" />
     <text value="Facility Location" />
@@ -2357,7 +2362,8 @@
     <repeats value="false" />
   </item>
 
-  <!-- Inborn/Outborn Observation -->
+  <!-- Inborn/Outborn Observation
+       CDA: Inborn/Outborn Observation-->
   <item>
     <linkId value="inborn-outborn-observation" />
     <code>
@@ -2396,20 +2402,22 @@
     <required value="true" />
   </item>
 
-  <!-- *** Risk Factors Section *** -->
+  <!-- Risk Factors 
+       CDA: Risk Factors Section (LOS/Men)-->
   <item>
     <linkId value="risk-factors" />
     <code>
       <system value="http://loinc.org" />
       <code value="51898-5" />
-      <display value="Risk Factors Section" />
+      <display value="Risk Factors" />
     </code>
-    <text value="Risk Factors Section" />
+    <text value="Risk Factors" />
     <type value="group" />
     <required value="true" />
     <repeats value="false" />
 
-    <!-- Central Line present prior to event, including umbilical catheter -->
+    <!-- Central Line present prior to event, including umbilical catheter
+         (CDA Mapping: Infection Risk Factors Observation/value="1006-6" - if present then true) -->
     <item>
       <linkId value="risk-factor-central-line" />
       <code>
@@ -2424,7 +2432,8 @@
     </item>
 
 
-    <!-- Birth Weight (grams) -->
+    <!-- Birth Weight (grams)
+         (CDA Mapping: Infection Risk Factors Measurement Observation/value) -->
     <item>
       <linkId value="risk-factor-birth-weight" />
       <code>
@@ -2438,7 +2447,8 @@
       <repeats value="false" />
     </item>
 
-    <!-- Gestational Age -->
+    <!-- Gestational Age
+         (CDA Mapping: Gestational Age Observation/value) -->
     <item>
       <!-- Unit -->
       <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
@@ -2461,7 +2471,8 @@
       <repeats value="false" />
     </item>
 
-    <!-- *** Event Details Section *** -->
+    <!-- Event Details 
+         CDA: Infection Details in Late Onset Sepsis Report-->
     <item>
       <linkId value="event-details" />
       <code>
@@ -2469,12 +2480,13 @@
         <code value="51899-3" />
         <display value="Details Section" />
       </code>
-      <text value="Event Details Section" />
+      <text value="Event Details" />
       <type value="group" />
       <required value="true" />
       <repeats value="false" />
 
-      <!-- Infection Condition -->
+      <!-- Infection Condition 
+         (CDA Mapping: Infection Condition Observation/value-->
       <item>
         <linkId value="infection-condition" />
         <text value="Specific Event" />
@@ -2483,7 +2495,8 @@
         <repeats value="false" />
         <options value="#2.16.840.1.114222.4.11.3196" />
       </item>
-      <!-- Criteria Used (Lab) -->
+      <!-- Criteria Used (Lab) 
+         (CDA Mapping: Criterion of Diagnosis Observation/value-->
       <item>
         <linkId value="criteria-used" />
         <text value="Laboratory Criteria Used" />
@@ -2493,9 +2506,10 @@
         <options value="#2.16.840.1.114222.4.11.3195" />
       </item>
 
-      <!-- Death Observation -->
+      <!-- Died 
+         (CDA Mapping: Death Observation in an Infection-type Report/value) -->
       <item>
-        <linkId value="death-observation" />
+        <linkId value="died" />
         <code>
           <system value="http://snomed.info/sct" />
           <code value="419099009" />
@@ -2506,13 +2520,14 @@
         <required value="true" />
         <repeats value="false" />
       </item>
-      <!-- LOS Contributed to death -->
+      <!-- LOS Contributed to death 
+         (CDA Mapping: Infection Contributed to Death Observation) -->
       <item>
         <linkId value="los-contributed-to-death" />
         <text value="Infection contrubuted to death" />
         <type value="boolean" />
         <enableWhen>
-          <question value="death-observation" />
+          <question value="died" />
           <operator value="=" />
           <answerBoolean value="true" />
         </enableWhen>
@@ -2521,10 +2536,10 @@
       </item>
 
       <!-- Discharge Date 
-       CDA: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high -->
+         (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high) -->
       <item>
         <linkId value="discharge-date" />
-        <text value="Discharge Date:" />
+        <text value="Discharge Date" />
         <type value="date" />
         <required value="false" />
         <repeats value="false" />
@@ -2532,7 +2547,8 @@
     </item>
 
 
-    <!-- *** Findings Section -->
+    <!-- Findings
+       CDA: Findings Section in an Infection-Type Report-->
     <item>
       <linkId value="findings-group" />
       <code>
@@ -2546,7 +2562,7 @@
       <repeats value="true" />
 
       <!-- Pathogen Identified
-         CDA: Pathogen Identified Observation -->
+         (CDA Mapping: Pathogen Identified Observation) -->
       <item>
         <linkId value="pathogen-identified" />
         <text value="Pathogen Identified" />
@@ -2555,7 +2571,7 @@
         <options value="#2.16.840.1.113883.13.16" />
       </item>
       <!-- Pathogen Ranking
-         CDA: Pathogen Ranking Observation-->
+         (CDA Mapping: Pathogen Ranking Observation) -->
       <item>
         <linkId value="pathogen-ranking" />
         <text value="Pathogen Ranking" />
@@ -2563,28 +2579,30 @@
         <required value="true" />
         <options value="#nhsn-pathogen-ranking" />
       </item>
-      <!-- Drug Susceptibility Test
-         CDA: Drug Susceptibility Test Observation-->
+      
+      <!-- Drug Susceptibility Test Group
+         (CDA Mapping: Drug Susceptibility Test Observation) -->
       <item>
-        <linkId value="drug-susceptibility-test" />
-        <text value="Drug Susceptibility Test" />
+        <linkId value="drug-susceptibility-test-group" />
+        <text value="Drug Susceptibility Test Group" />
         <type value="group" />
         <required value="false" />
         <repeats value="true" />
-        <!-- Drug Susceptibilty Test Code 
-           CDA: CDA: Drug-Susceptibility Test Observation/code -->
+        
+        <!-- Drug Susceptibilty Test 
+           CDA: Drug-Susceptibility Test Observation/code -->
         <item>
-          <linkId value="drug-susceptibility-test-code" />
-          <text value="Test" />
+          <linkId value="drug-susceptibility-test" />
+          <text value="Drug Susceptibility Test" />
           <type value="choice" />
           <required value="true" />
           <options value="#2.16.840.1.113883.13.15" />
         </item>
-        <!-- Drug Susceptibilty Interpretation
+        <!-- Drug Susceptibilty Test Interpretation
            CDA: Drug-Susceptibility Test Observation/interpretationCode -->
         <item>
-          <linkId value="drug-susceptibility-interpretation" />
-          <text value="Drug Susceptibility Interpretation" />
+          <linkId value="drug-susceptibility--test-interpretation" />
+          <text value="Drug Susceptibility Test Interpretation" />
           <type value="choice" />
           <required value="false" />
           <options value="#2.16.840.1.113883.13.13" />
@@ -2592,7 +2610,8 @@
       </item>
     </item>
 
-    <!-- *** Comment Section *** -->
+    <!-- Comment
+         CDA: NHSN Comment Section/NHSN Comment-->
     <item>
       <linkId value="comment-section" />
       <code>
