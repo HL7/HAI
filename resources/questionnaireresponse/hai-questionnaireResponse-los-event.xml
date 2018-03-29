@@ -103,7 +103,7 @@
       </table>
     </div>
   </text>
-  <questionnaire value="Questionnaire/hai-questionnaire-los-event" />
+  <questionnaire value="hai-questionnaire-los-event" />
   <status value="completed" />
 
   <!-- Facility ID
