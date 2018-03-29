@@ -1,6 +1,7 @@
 {
   "tool": "jekyll",
-  "license" : "cc0-1.0",
+  "license": "cc0-1.0",
+  "npm-name": "us-hai",
   "paths": {
     "resources": [
       "resources"
