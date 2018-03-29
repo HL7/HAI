@@ -23,10 +23,10 @@
       "template-format": "sd-template-format.html"
     },
     "ValueSet": {
-      "template-base": "vs-template-base.html"
+      "template-base": "tm-template-base.html"
     },
     "CodeSystem": {
-      "template-base": "cs-template-base.html"
+      "template-base": "tm-template-base.html"
     },
     "Resource": {
       "template-base": "pf-template-base.html"
