@@ -1,7 +1,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="3370" />
   <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/3370" />
-  <version value="1" />
+  <version value="0.1.0" />
   <name value="Healthcare Associated Infection Reports, FHIR Release 1 - US Realm" />
   <status value="draft" />
   <experimental value="false" />
@@ -113,6 +113,7 @@
     <page>
       <nameUrl value="index.html" />
       <title value="NHSN HAI Homepage" />
+      <generation value="html"/>
     </page>
   </definition>
 </ImplementationGuide>

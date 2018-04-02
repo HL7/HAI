@@ -2392,9 +2392,7 @@
     -->
   <item>
     <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
-      <valueReference>
-        <reference value="http://hl7.org/fhir/StructureDefinition/Patient" />
-      </valueReference>
+      <valueCanonical value="http://hl7.org/fhir/StructureDefinition/Patient" />
     </extension>
     <linkId value="questionnaire-patient" />
     <text value="Patient" />
