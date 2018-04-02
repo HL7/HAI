@@ -94,27 +94,21 @@
         <reference value="Patient/hai-patient-1" />
       </reference>
       <name value="hai-patient-1" />
-      <!--<exampleReference>
-        <reference value="http://hl7.org/fhir/StructureDefinition/Patient" />
-      </exampleReference>-->
+      <!--<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Patient" /> -->
     </resource>
     <resource>
       <reference>
         <reference value="Questionnaire/hai-questionnaire-los-event" />
       </reference>
       <name value="Late_Onset_Sepsis_Meningitis_Event_LOS_Questionnaire" />
-      <exampleReference>
-        <reference value="StructureDefinition/hai-report-questionnaire" />
-      </exampleReference>
+      <exampleCanonical value="StructureDefinition/hai-report-questionnaire" />
     </resource>
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-event" />
       </reference>
       <name value="Late_Onset_Sepsis/Meningitis_Event_(LOS)_QuestionnaireResponse" />
-      <exampleReference>
-        <reference value="StructureDefinition/hai-report-questionnaire-response" />
-      </exampleReference>
+      <exampleCanonical value="StructureDefinition/hai-report-questionnaire-response" />
     </resource>
     <page>
       <nameUrl value="index.html" />
