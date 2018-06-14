@@ -368,12 +368,12 @@
 
     <!-- Drug Susceptibility Test Group
          (CDA Mapping: Drug Susceptibility Test Observation) -->
-    <item>
+    <!--<item>
       <linkId value="drug-susceptibility-test-group" />
       <text value="Drug Susceptibility Test Group" />
 
-      <!-- Drug Susceptibilty Test 
-           CDA: Drug-Susceptibility Test Observation/code -->
+      <!-\- Drug Susceptibilty Test 
+           CDA: Drug-Susceptibility Test Observation/code -\->
       <item>
         <linkId value="drug-susceptibility-test" />
         <text value="Drug Susceptibility Test" />
@@ -385,8 +385,8 @@
           </valueCoding>
         </answer>
       </item>
-      <!-- Drug Susceptibilty Test Interpretation
-           CDA: Drug-Susceptibility Test Observation/interpretationCode -->
+      <!-\- Drug Susceptibilty Test Interpretation
+           CDA: Drug-Susceptibility Test Observation/interpretationCode -\->
       <item>
         <linkId value="drug-susceptibility-test-interpretation" />
         <text value="Drug Susceptibility Test Interpretation" />
@@ -399,7 +399,7 @@
         </answer>
       </item>
     </item>
-  </item>
+  </item>-->
 
   <!-- NHSN Comment
          CDA: NHSN Comment Section/NHSN Comment-->
