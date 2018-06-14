@@ -18,6 +18,14 @@
             <td>Medicaid beneficiary number</td> 
             <td>959595</td> 
           </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>1954-11-25</td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td>Male</td>
+            </tr>
         </tbody> 
       </table> 
     </div> 
