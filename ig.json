@@ -1,7 +1,7 @@
 {
   "tool": "jekyll",
   "license": "CC0-1.0",
-  "npm-name": "us-hai",
+  "npm-name": "hl7.fhir.us.ecr",
   "paths": {
     "resources": [
       "resources"
