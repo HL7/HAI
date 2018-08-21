@@ -1,9 +1,9 @@
-<Questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://hl7.org/fhir ../../../../Analysts/NHSN-HAI/R3D3/FHIR/Validation/fhir-all-xsd/fhir-all.xsd" xmlns="http://hl7.org/fhir">
+<Questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../validation/fhir-all.xsd"
+  xmlns="http://hl7.org/fhir">
   <id value="hai-questionnaire-los-event" />
   <meta>
-    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire"/>
-  </meta>  
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire" />
+  </meta>
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -2331,7 +2331,9 @@
     <type value="choice" />
     <required value="true" />
     <repeats value="false" />
-    <options value="#2.16.840.1.113883.13.20" />
+    <options>
+      <reference value="#2.16.840.1.113883.13.20" />
+    </options>
   </item>
 
   <!-- Date of Event 
@@ -2352,7 +2354,9 @@
     <type value="choice" />
     <required value="true" />
     <repeats value="false" />
-    <options value="#2.16.840.1.113883.13.19"/>
+    <options>
+      <reference value="#2.16.840.1.113883.13.19" />
+    </options>
   </item>
 
   <!-- Date Admitted to Facility
@@ -2378,7 +2382,9 @@
     <type value="choice" />
     <required value="true" />
     <repeats value="false" />
-    <options value="#2.16.840.1.113883.10.20.5.9.27" />
+    <options>
+      <reference value="#2.16.840.1.113883.10.20.5.9.27" />
+    </options>
   </item>
 
   <!--  Patient Information 
@@ -2395,7 +2401,9 @@
     -->
   <item>
     <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
-      <valueCanonical value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      <valueReference>
+        <reference value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </valueReference>
     </extension>
     <linkId value="questionnaire-patient" />
     <text value="Patient" />
@@ -2494,7 +2502,9 @@
         <type value="choice" />
         <required value="true" />
         <repeats value="false" />
-        <options value="#2.16.840.1.114222.4.11.3196" />
+        <options>
+          <reference value="#2.16.840.1.114222.4.11.3196" />
+        </options>
       </item>
       <!-- Criteria Used (Lab) 
          (CDA Mapping: Criterion of Diagnosis Observation/value-->
@@ -2504,7 +2514,10 @@
         <type value="choice" />
         <required value="true" />
         <repeats value="false" />
-        <options value="#2.16.840.1.114222.4.11.3195" />
+        <options>
+          <reference value="#2.16.840.1.114222.4.11.3195" />
+        </options>
+        
       </item>
 
       <!-- Died 
@@ -2529,7 +2542,6 @@
         <type value="boolean" />
         <enableWhen>
           <question value="died" />
-          <operator value="=" />
           <answerBoolean value="true" />
         </enableWhen>
         <required value="true" />
@@ -2569,7 +2581,10 @@
         <text value="Pathogen Identified" />
         <type value="choice" />
         <required value="true" />
-        <options value="#2.16.840.1.113883.13.16" />
+        <options>
+          <reference value="#2.16.840.1.113883.13.16" />
+        </options>
+        
       </item>
       <!-- Pathogen Ranking
          (CDA Mapping: Pathogen Ranking Observation) -->
@@ -2578,9 +2593,12 @@
         <text value="Pathogen Ranking" />
         <type value="choice" />
         <required value="true" />
-        <options value="nhsn-pathogen-ranking" />
+        <options>
+          <reference value="nhsn-pathogen-ranking" />
+        </options>
+        
       </item>
-      
+
       <!-- Drug Susceptibility Test Group
          (CDA Mapping: Drug Susceptibility Test Observation) -->
       <item>
@@ -2589,7 +2607,7 @@
         <type value="group" />
         <required value="false" />
         <repeats value="true" />
-        
+
         <!-- Drug Susceptibilty Test 
            CDA: Drug-Susceptibility Test Observation/code -->
         <item>
@@ -2597,7 +2615,10 @@
           <text value="Drug Susceptibility Test" />
           <type value="choice" />
           <required value="true" />
-          <options value="#2.16.840.1.113883.13.15" />
+          <options>
+            <reference value="#2.16.840.1.113883.13.15" />
+          </options>
+          
         </item>
         <!-- Drug Susceptibilty Test Interpretation
            CDA: Drug-Susceptibility Test Observation/interpretationCode -->
@@ -2606,7 +2627,9 @@
           <text value="Drug Susceptibility Test Interpretation" />
           <type value="choice" />
           <required value="false" />
-          <options value="#2.16.840.1.113883.13.13" />
+          <options>
+            <reference value="#2.16.840.1.113883.13.13" />
+          </options>
         </item>
       </item>
     </item>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="hai-single-person-report-questionnaire" />
+  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire" />
+  <name value="Healthcare Associated Infection Single-Person Report Questionnaire" />
+  <status value="draft" />
+  <publisher value="Lantana Consulting Group" />
+  <contact>
+    <name value="Sarah Gaunt" />
+    <telecom>
+      <system value="phone" />
+      <value value="+6 141-029-2506" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="sarah.gaunt@lantanagroup.com" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="This profile represents a Healthcare Associated Infection Singe-Person Report form as a FHIR Questionnaire." />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Questionnaire" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Questionnaire">
+      <path value="Questionnaire" />
+      <short value="Healthcare Associated Infection Single-Person Report Questionnaire" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.identifier">
+      <path value="Questionnaire.identifier" />
+      <short value="Globally unique identifier for the instance" />
+      <definition value="Globally unique identifier for the instance." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.title">
+      <path value="Questionnaire.title" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.code">
+      <path value="Questionnaire.code" />
+      <short value="Code for Healthcare Associated Infection Report" />
+      <definition value="LOINC code 51897-7 to indicated that this is a Healthcare Associated Infection Report" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="51897-7" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item">
+      <path value="Questionnaire.item" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="linkId" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="SHALL contain at least one [1..*] item (CONF:3370-6) such that it" />
+    </element>
+    <element id="Questionnaire.item:slicePatient">
+      <path value="Questionnaire.item" />
+      <sliceName value="slicePatient" />
+      <short value="Patient" />
+      <definition value="Contains a reference to the patient who this questionnaire is about." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Questionnaire.item:slicePatient.extension">
+      <path value="Questionnaire.item.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item:slicePatient.extension:extensionQuestionnaireAllowedProfile">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="extensionQuestionnaireAllowedProfile" />
+      <short value="extension" />
+      <definition value="SHALL contain exactly one [1..1] allowedProfile (identifier: http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile) (CONF:3370-5)." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:slicePatient.linkId">
+      <path value="Questionnaire.item.linkId" />
+      <short value="linkId" />
+      <definition value="SHALL contain exactly one [1..1] linkId (CONF:3370-9)." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:slicePatient.text">
+      <path value="Questionnaire.item.text" />
+      <short value="text" />
+      <definition value="SHALL contain exactly one [1..1] text (CONF:3370-8)." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:slicePatient.type">
+      <path value="Questionnaire.item.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:sliceQuestions">
+      <path value="Questionnaire.item" />
+      <sliceName value="sliceQuestions" />
+      <short value="item" />
+      <definition value="SHALL contain at least one [1..*] item (CONF:3370-6) such that it" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:sliceQuestions.linkId">
+      <path value="Questionnaire.item.linkId" />
+      <short value="linkId" />
+      <definition value="SHALL contain exactly one [1..1] linkId (CONF:3370-12)." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:sliceQuestions.text">
+      <path value="Questionnaire.item.text" />
+      <short value="text" />
+      <definition value="SHALL contain exactly one [1..1] text (CONF:3370-11)." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item:sliceQuestions.type">
+      <path value="Questionnaire.item.type" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

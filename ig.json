@@ -2,6 +2,8 @@
   "tool": "jekyll",
   "license": "CC0-1.0",
   "npm-name": "hl7.fhir.us.hai",
+  "version": "3.0.1",
+  "jurisdiction": "US",
   "paths": {
     "resources": [
       "resources"
@@ -10,7 +12,7 @@
     "temp": "temp",
     "output": "output",
     "qa": "qa",
-    "specification": "http://build.fhir.org/"
+    "specification": "http://hl7.org/fhir/STU3"
   },
   "defaults": {
     "Any": {
@@ -52,13 +54,17 @@
   "sct-edition": "http://snomed.info/sct/731000124108",
   "special-urls": [],
   "resources": {
-  "StructureDefinition/hai-report-questionnaire": {
-      "base": "StructureDefinition-hai-report-questionnaire.html",
-      "defns": "StructureDefinition-hai-report-questionnaire-definitions.html"
+  "StructureDefinition/hai-single-person-report-questionnaire": {
+      "base": "StructureDefinition-hai-single-person-report-questionnaire.html",
+      "defns": "StructureDefinition-hai-single-person-report-questionnaire-definitions.html"
     },
-    "StructureDefinition/hai-report-questionnaire-response": {
-      "base": "StructureDefinition-hai-report-questionnaire-response.html",
-      "defns": "StructureDefinition-hai-report-questionnaire-response-definitions.html"
-    } 
+    "StructureDefinition/hai-single-person-report-questionnaire-response": {
+      "base": "StructureDefinition-hai-single-person-report-questionnaire-response.html",
+      "defns": "StructureDefinition-hai-single-person-report-questionnaire-response-definitions.html"
+    }, 
+    "ValueSet/lrtc": {
+      "base": "ValueSet-nhsn-pathogen-ranking.html",
+      "source": "valueset-nhsn-pathogen-ranking.xml"
+    }
   }
 }

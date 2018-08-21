@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hai-report-questionnaire-response" />
-  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire-response" />
-  <name value="Healthcare Associated Infection Report QuestionnaireResponse" />
+  <id value="hai-single-person-report-questionnaire-response" />
+  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response" />
+  <name value="Healthcare Associated Infection Single-Person Report QuestionnaireResponse" />
   <status value="draft" />
   <publisher value="Lantana Consulting Group" />
   <contact>
@@ -18,7 +18,7 @@
     </telecom>
   </contact>
   <description
-    value="This profile represents a response to the Healthcare Associated Infection Reports Questionnaire as a FHIR QuestionnaireResponse profile." />
+    value="This profile represents a response to the Healthcare Associated Infection Single-Person Report Questionnaire as a FHIR QuestionnaireResponse profile." />
   <kind value="resource" />
   <abstract value="false" />
   <!--<contextType value="resource" />
