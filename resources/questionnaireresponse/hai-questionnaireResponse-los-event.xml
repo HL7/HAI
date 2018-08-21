@@ -1,6 +1,9 @@
 <QuestionnaireResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://hl7.org/fhir ../../../../Analysts/NHSN-HAI/R3D3/FHIR/Validation/fhir-all-xsd/fhir-all.xsd" xmlns="http://hl7.org/fhir">
   <id value="hai-questionnaireResponse-los-event" />
+  <meta>
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire-response"/>
+  </meta> 
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -262,13 +265,13 @@
 
   <!-- Event Details 
          CDA: Infection Details in Late Onset Sepsis Report-->
-  <item>
+  <!--<item>
     <linkId value="event-details" />
     <text value="Event Details" />
 
-    <!-- Infection Condition 
-         (CDA Mapping: Infection Condition Observation/value-->
-    <item>
+    <!-\- Infection Condition 
+         (CDA Mapping: Infection Condition Observation/value-\->
+    <!-\-<item>
       <linkId value="infection-condition" />
       <text value="Specific Event" />
       <answer>
@@ -278,11 +281,11 @@
           <display value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)" />
         </valueCoding>
       </answer>
-    </item>
+    </item>-\->
 
-    <!-- Criteria Used (Lab) 
-         (CDA Mapping: Criterion of Diagnosis Observation/value-->
-    <item>
+    <!-\- Criteria Used (Lab) 
+         (CDA Mapping: Criterion of Diagnosis Observation/value-\->
+    <!-\-<item>
       <linkId value="criteria-used" />
       <text value="Laboratory Criteria Used" />
       <answer>
@@ -292,11 +295,11 @@
           <display value="Recognized pathogen from one or more blood specimens" />
         </valueCoding>
       </answer>
-    </item>
+    </item>-\->
 
-    <!-- Died 
-         (CDA Mapping: Death Observation in an Infection-type Report/value) -->
-    <item>
+    <!-\- Died 
+         (CDA Mapping: Death Observation in an Infection-type Report/value) -\->
+    <!-\-<item>
       <linkId value="died" />
       <text value="Died" />
       <answer>
@@ -306,40 +309,41 @@
           <display value="Dead" />
         </valueCoding>
       </answer>
-    </item>
+    </item>-\->
 
-    <!-- LOS Contributed to Death 
-         (CDA Mapping: Infection Contributed to Death Observation) -->
-    <!-- Note: This item is only enabled when the death observation is marked as "true" -->
-    <item>
+    <!-\- LOS Contributed to Death 
+         (CDA Mapping: Infection Contributed to Death Observation) -\->
+    <!-\- Note: This item is only enabled when the death observation is marked as "true" -\->
+    <!-\-<item>
       <linkId value="los-contributed-to-death" />
       <text value="Infection contrubuted to death" />
       <answer>
         <valueBoolean value="false" />
       </answer>
-    </item>
+    </item>-\->
 
-    <!-- Discharge Date 
-         (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high) -->
-    <item>
+    <!-\- Discharge Date 
+         (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high) -\->
+    <!-\-<item>
       <linkId value="discharge-date" />
       <text value="Discharge Date" />
       <answer>
         <valueDate value="2018-01-12" />
       </answer>
-    </item>
-  </item>
+    </item>-\->
+  
+  </item>-->
 
 
 
   <!-- Findings Group
        CDA: Findings Section in an Infection-Type Report-->
-  <item>
+  <!--<item>
     <linkId value="findings-group" />
     <text value="Findings Group" />
 
-    <!-- Pathogen Identified
-         (CDA Mapping: Pathogen Identified Observation) -->
+    <!-\- Pathogen Identified
+         (CDA Mapping: Pathogen Identified Observation) -\->
     <item>
       <linkId value="pathogen-identified" />
       <text value="Pathogen Identified" />
@@ -352,8 +356,8 @@
       </answer>
     </item>
 
-    <!-- Pathogen Ranking
-         (CDA Mapping: Pathogen Ranking Observation) -->
+    <!-\- Pathogen Ranking
+         (CDA Mapping: Pathogen Ranking Observation) -\->
     <item>
       <linkId value="pathogen-ranking" />
       <text value="Pathogen Ranking" />
@@ -366,14 +370,14 @@
       </answer>
     </item>
 
-    <!-- Drug Susceptibility Test Group
-         (CDA Mapping: Drug Susceptibility Test Observation) -->
-    <!--<item>
+    <!-\- Drug Susceptibility Test Group
+         (CDA Mapping: Drug Susceptibility Test Observation) -\->
+    <!-\-<item>
       <linkId value="drug-susceptibility-test-group" />
       <text value="Drug Susceptibility Test Group" />
 
-      <!-\- Drug Susceptibilty Test 
-           CDA: Drug-Susceptibility Test Observation/code -\->
+      <!-\\- Drug Susceptibilty Test 
+           CDA: Drug-Susceptibility Test Observation/code -\\->
       <item>
         <linkId value="drug-susceptibility-test" />
         <text value="Drug Susceptibility Test" />
@@ -385,8 +389,8 @@
           </valueCoding>
         </answer>
       </item>
-      <!-\- Drug Susceptibilty Test Interpretation
-           CDA: Drug-Susceptibility Test Observation/interpretationCode -\->
+      <!-\\- Drug Susceptibilty Test Interpretation
+           CDA: Drug-Susceptibility Test Observation/interpretationCode -\\->
       <item>
         <linkId value="drug-susceptibility-test-interpretation" />
         <text value="Drug Susceptibility Test Interpretation" />
@@ -398,16 +402,17 @@
           </valueCoding>
         </answer>
       </item>
-    </item>-->
+    </item>-\->
   </item>
 
-  <!-- NHSN Comment
-         CDA: NHSN Comment Section/NHSN Comment-->
+  <!-\- NHSN Comment
+         CDA: NHSN Comment Section/NHSN Comment-\->
   <item>
     <linkId value="nhsn-comment" />
     <text value="nhsn-comment" />
     <answer>
       <valueString value="NHSN text comment that is less than 2000 characters." />
     </answer>
-  </item>
+  </item>-->
+
 </QuestionnaireResponse>

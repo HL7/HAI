@@ -1,6 +1,9 @@
 <Questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://hl7.org/fhir ../../../../Analysts/NHSN-HAI/R3D3/FHIR/Validation/fhir-all-xsd/fhir-all.xsd" xmlns="http://hl7.org/fhir">
   <id value="hai-questionnaire-los-event" />
+  <meta>
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-report-questionnaire"/>
+  </meta>  
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1907,7 +1910,7 @@
   </contained>
   <!-- NHSN Pathogen Ranking 
          - http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking-->
-  <contained>
+  <!--<contained>
     <ValueSet xmlns="http://hl7.org/fhir">
       <id value="nhsn-pathogen-ranking" />
       <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking" />
@@ -1932,7 +1935,7 @@
         </include>
       </compose>
     </ValueSet>
-  </contained>
+  </contained>-->
   <!-- NHSN Drug Susceptibility Tests Code 
          - http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15 -->
   <contained>
@@ -2457,7 +2460,7 @@
           <display value="days" />
         </valueCoding>
       </extension>
-      <linkId value="gestational-age" />
+      <linkId value="risk-factor-gestational-age" />
       <code>
         <system value="http://loinc.org" />
         <code value="76516-4" />
@@ -2575,7 +2578,7 @@
         <text value="Pathogen Ranking" />
         <type value="choice" />
         <required value="true" />
-        <options value="#nhsn-pathogen-ranking" />
+        <options value="nhsn-pathogen-ranking" />
       </item>
       
       <!-- Drug Susceptibility Test Group
