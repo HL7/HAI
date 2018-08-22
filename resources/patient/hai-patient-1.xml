@@ -1,5 +1,9 @@
-<Patient xmlns="http://hl7.org/fhir">
+<Patient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://hl7.org/fhir ../../validation/fhir-all.xsd" xmlns="http://hl7.org/fhir">
   <id value="hai-patient-1"/> 
+  <meta>
+    <profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-patient"/>
+  </meta>
   <text> 
     <status value="generated"/> 
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -30,6 +34,35 @@
       </table> 
     </div> 
   </text> 
+ 
+  <!-- Race -->
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2106-3"/>
+        <display value="White"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="White"/>
+    </extension>
+  </extension>
+  
+  <!-- Ethnicity -->
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2186-5"/>
+        <display value="Not Hispanic or Latino"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Not Hispanic or Latino"/>
+    </extension>
+  </extension>
+  
   <!--    Medicaid beneficiary number    -->
   <identifier> 
     <type> 
@@ -56,11 +89,7 @@
     <family value="Nuclear"/> 
     <given value="Ned"/> 
   </name> 
-  <!--    use FHIR code system for male / female    -->
+  <!-- use FHIR code system for male / female    -->
   <gender value="male"/> 
-  <birthDate value="1954-11-25"/>
-  
-  <!-- Race and Ethnicity will be added when US Core is published in the current FHIR version -->
-   
-   
+  <birthDate value="1954-11-25"/>  
 </Patient>

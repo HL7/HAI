@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hai-single-person-report-questionnaire-response" />
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response" />
@@ -17,51 +18,107 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description
-    value="This profile represents a response to the Healthcare Associated Infection Single-Person Report Questionnaire as a FHIR QuestionnaireResponse profile." />
+  <description value="This profile represents a response to the Healthcare Associated Infection Single-Person Report Questionnaire as a FHIR QuestionnaireResponse profile." />
   <kind value="resource" />
   <abstract value="false" />
-  <!--<contextType value="resource" />
-  <context value="QuestionnaireResponse" />-->
   <type value="QuestionnaireResponse" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
   <derivation value="constraint" />
   <differential>
     <element id="QuestionnaireResponse">
       <path value="QuestionnaireResponse" />
+      <mustSupport value="true" />
     </element>
-    <element id="item">
+    <element id="QuestionnaireResponse.id">
+      <path value="QuestionnaireResponse.id" />
+      <min value="1" />
+    </element>
+    <element id="QuestionnaireResponse.meta">
+      <path value="QuestionnaireResponse.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.meta.profile">
+      <path value="QuestionnaireResponse.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.text">
+      <path value="QuestionnaireResponse.text" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.identifier">
+      <path value="QuestionnaireResponse.identifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.questionnaire">
+      <path value="QuestionnaireResponse.questionnaire" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.status">
+      <path value="QuestionnaireResponse.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.subject">
+      <path value="QuestionnaireResponse.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+      </type>
+    </element>
+    <element id="QuestionnaireResponse.author">
+      <path value="QuestionnaireResponse.author" />
+      <short value="Software or infection control professional" />
+      <definition value="In a single-person report, the author may be software (US Core Device) or may be a person in the role of infection control professional (ICP) (US Core Practitioner). " />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-practitioner" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item">
       <path value="QuestionnaireResponse.item" />
       <short value="item" />
       <definition value="SHALL contain exactly one [1..1] item (CONF:3370-13)." />
       <min value="1" />
-      <max value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="item.extension">
-      <path value="QuestionnaireResponse.item.extension" />
-      <short value="extension" />
-      <definition
-        value="This item SHALL contain exactly one [1..1] allowedProfile (identifier: http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile) (CONF:3370-14)." />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" />
-      </type>
+    <element id="QuestionnaireResponse.item.text">
+      <path value="QuestionnaireResponse.item.text" />
+      <mustSupport value="true" />
     </element>
-    <element id="item.item">
+    <element id="QuestionnaireResponse.item.answer">
+      <path value="QuestionnaireResponse.item.answer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item">
       <path value="QuestionnaireResponse.item.item" />
       <short value="item" />
       <definition value="This item SHALL contain at least one [1..*] item (CONF:3370-15)." />
-      <min value="1" />
-      <max value="*" />
     </element>
-    <element id="item.item.text">
+    <element id="QuestionnaireResponse.item.item.text">
       <path value="QuestionnaireResponse.item.item.text" />
       <short value="text" />
       <definition value="Such items SHALL contain exactly one [1..1] text (CONF:3370-16)." />
-      <min value="1" />
-      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item.item.answer">
+      <path value="QuestionnaireResponse.item.item.answer" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

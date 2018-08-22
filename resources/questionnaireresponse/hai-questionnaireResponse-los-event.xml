@@ -106,11 +106,42 @@
       </table>
     </div>
   </text>
+  
+  <identifier>
+    <!-- (CDA Mapping: ClinicalDocument/id/root) -->
+    <system value="2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
+    <!-- (CDA Mapping: ClinicalDocument/id/extension) -->
+    <value value="20202201"/>
+  </identifier>
+  
   <questionnaire>
     <reference value="hai-questionnaire-los-event" />
   </questionnaire>
   <status value="completed" />
-
+  
+  <!--  
+    Patient Information 
+        including:
+        - Patient ID
+        - Social Security #
+        - Secondary ID
+        - Medicaid #
+        - Patient Name
+        - Patient Gender
+        - Patient Date of Birth
+        - Patient Ethnicity
+        - Patient Race
+  -->
+  <subject>
+    <reference value="Patient/hai-patient-1" />
+    <display value="hai-patient-1"/>
+  </subject>
+  
+  <author>
+    <reference value="Defice/hai-authoring-device" />
+    <display value="hai-authoring-device"/>
+  </author>
+  
   <!-- Facility ID
        CDA: ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/id -->
   <item>
@@ -193,34 +224,7 @@
     </answer>
   </item>
 
-  <!--  Patient Information 
-            including:
-            - Patient ID
-            - Social Security #
-            - Secondary ID
-            - Medicaid #
-            - Patient Name
-            - Patient Gender
-            - Patient Date of Birth
-            - Patient Ethnicity
-            - Patient Race
-    -->
-  <item>
-    <!--<extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile">
-      <valueReference>
-        <reference value="Patient/hai-los-event-patient"/> 
-        <display value="Ned Nuclear"/> 
-      </valueReference>
-    </extension>-->
-    <linkId value="questionnaire-patient" />
-    <text value="Patient" />
-    <answer>
-      <valueReference>
-        <reference value="Patient/hai-patient-1" />
-        <display value="hai-patient-1"/>
-      </valueReference>
-    </answer>
-  </item>
+  
 
   <!-- Risk Factors
        CDA: Risk Factors Section (LOS/Men)-->

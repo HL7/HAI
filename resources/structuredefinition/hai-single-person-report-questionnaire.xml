@@ -30,6 +30,16 @@
       <short value="Healthcare Associated Infection Single-Person Report Questionnaire" />
       <mustSupport value="true" />
     </element>
+    <element id="Questionnaire.language">
+      <path value="Questionnaire.language" />
+      <min value="1" />
+      <patternCode value="en-US" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.text">
+      <path value="Questionnaire.text" />
+      <mustSupport value="true" />
+    </element>
     <element id="Questionnaire.identifier">
       <path value="Questionnaire.identifier" />
       <short value="Globally unique identifier for the instance" />
@@ -41,6 +51,34 @@
     <element id="Questionnaire.title">
       <path value="Questionnaire.title" />
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.date">
+      <path value="Questionnaire.date" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.publisher">
+      <path value="Questionnaire.publisher" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.description">
+      <path value="Questionnaire.description" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.jurisdiction">
+      <path value="Questionnaire.jurisdiction" />
+      <min value="1" />
+      <max value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:iso:std:iso:3166" />
+          <code value="US" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
     </element>
     <element id="Questionnaire.code">
       <path value="Questionnaire.code" />
@@ -54,26 +92,21 @@
       </patternCoding>
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item">
-      <path value="Questionnaire.item" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="linkId" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <definition value="SHALL contain at least one [1..*] item (CONF:3370-6) such that it" />
-    </element>
-    <element id="Questionnaire.item:slicePatient">
-      <path value="Questionnaire.item" />
-      <sliceName value="slicePatient" />
-      <short value="Patient" />
-      <definition value="Contains a reference to the patient who this questionnaire is about." />
+    <element id="Questionnaire.subjectType">
+      <path value="Questionnaire.subjectType" />
+      <short value="Patient Resource (US Core Patient) is the subject of the related QuestionnaireResponse" />
+      <definition value="Patient Resource (US Core Patient) is the subject of the related QuestionnaireResponse" />
       <min value="1" />
       <max value="1" />
+      <fixedCode value="Patient" />
+      <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item:slicePatient.extension">
+    <element id="Questionnaire.item">
+      <path value="Questionnaire.item" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.extension">
       <path value="Questionnaire.item.extension" />
       <slicing>
         <discriminator>
@@ -83,12 +116,10 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Questionnaire.item:slicePatient.extension:extensionQuestionnaireAllowedProfile">
+    <element id="Questionnaire.item.extension:extensionQuestionnaireAllowedProfile">
       <path value="Questionnaire.item.extension" />
       <sliceName value="extensionQuestionnaireAllowedProfile" />
-      <short value="extension" />
-      <definition value="SHALL contain exactly one [1..1] allowedProfile (identifier: http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile) (CONF:3370-5)." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -96,47 +127,70 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item:slicePatient.linkId">
+    <element id="Questionnaire.item.linkId">
       <path value="Questionnaire.item.linkId" />
-      <short value="linkId" />
-      <definition value="SHALL contain exactly one [1..1] linkId (CONF:3370-9)." />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item:slicePatient.text">
-      <path value="Questionnaire.item.text" />
-      <short value="text" />
-      <definition value="SHALL contain exactly one [1..1] text (CONF:3370-8)." />
-      <min value="1" />
+    <element id="Questionnaire.item.code">
+      <path value="Questionnaire.item.code" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item:slicePatient.type">
+    <element id="Questionnaire.item.type">
       <path value="Questionnaire.item.type" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item:sliceQuestions">
-      <path value="Questionnaire.item" />
-      <sliceName value="sliceQuestions" />
-      <short value="item" />
-      <definition value="SHALL contain at least one [1..*] item (CONF:3370-6) such that it" />
-      <min value="1" />
+    <element id="Questionnaire.item.enableWhen">
+      <path value="Questionnaire.item.enableWhen" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item:sliceQuestions.linkId">
-      <path value="Questionnaire.item.linkId" />
-      <short value="linkId" />
-      <definition value="SHALL contain exactly one [1..1] linkId (CONF:3370-12)." />
+    <element id="Questionnaire.item.required">
+      <path value="Questionnaire.item.required" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item:sliceQuestions.text">
-      <path value="Questionnaire.item.text" />
-      <short value="text" />
-      <definition value="SHALL contain exactly one [1..1] text (CONF:3370-11)." />
-      <min value="1" />
+    <element id="Questionnaire.item.repeats">
+      <path value="Questionnaire.item.repeats" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item:sliceQuestions.type">
-      <path value="Questionnaire.item.type" />
+    <element id="Questionnaire.item.options">
+      <path value="Questionnaire.item.options" />
       <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item">
+      <path value="Questionnaire.item.item" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item.extension">
+      <path value="Questionnaire.item.item.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.item.extension:sliceQuestionnaireAllowedProfile">
+      <path value="Questionnaire.item.item.extension" />
+      <sliceName value="sliceQuestionnaireAllowedProfile" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item.type">
+      <path value="Questionnaire.item.item.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item.enableWhen">
+      <path value="Questionnaire.item.item.enableWhen" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item.item">
+      <path value="Questionnaire.item.item.item" />
+      <mustSupport value="false" />
     </element>
   </differential>
 </StructureDefinition>
