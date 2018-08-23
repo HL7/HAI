@@ -1,6 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="2.16.840.1.113883.13.13" />
-  <meta id="36" />
   <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13" />
   <name value="NHSNDrugSusceptibilityFindingCode" />
   <status value="active" />
@@ -8,7 +7,7 @@
     value="Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83" />
   <compose>
     <include>
-      <system value="urn:oid:2.16.840.1.113883.5.83" />
+      <system value="http://hl7.org/fhir/v3/ObservationInterpretation" />
       <concept>
         <code value="I" />
         <display value="Intermediate" />

@@ -1,6 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="2.16.840.1.113883.13.20" />
-  <meta id="42" />
   <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20" />
   <name value="NHSNInfectionTypeCode" />
   <status value="active" />
@@ -8,7 +7,7 @@
     value="Code System: cdcNHSN 2.16.840.1.113883.6.277 or SNOMED CT 2.16.840.1.113883.6.96" />
   <compose>
     <include>
-      <system value="urn:oid:2.16.840.1.113883.6.96" />
+      <system value="http://snomed.info/sct" />
       <concept>
         <code value="19824006" />
         <display value="Skin or Soft Tissue Infection" />

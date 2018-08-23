@@ -109,13 +109,13 @@
   
   <identifier>
     <!-- (CDA Mapping: ClinicalDocument/id/root) -->
-    <system value="2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
+    <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
     <!-- (CDA Mapping: ClinicalDocument/id/extension) -->
     <value value="20202201"/>
   </identifier>
   
   <questionnaire>
-    <reference value="hai-questionnaire-los-event" />
+    <reference value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event" />
   </questionnaire>
   <status value="completed" />
   
@@ -138,7 +138,7 @@
   </subject>
   
   <author>
-    <reference value="Defice/hai-authoring-device" />
+    <reference value="Device/hai-authoring-device" />
     <display value="hai-authoring-device"/>
   </author>
   
@@ -148,7 +148,7 @@
     <linkId value="facility" />
     <text value="Facility ID" />
     <answer>
-      <valueUri value="2.16.840.1.113883.3.117.1.1.5.1.1" />
+      <valueUri value="urn:oid:2.16.840.1.113883.3.117.1.1.5.1.1:9W" />
     </answer>
   </item>
 
@@ -158,7 +158,7 @@
     <linkId value="event-number" />
     <text value="Event #" />
     <answer>
-      <valueUri value="2.16.840.1.113883.3.117.1.1.5.2.1.1.3" />
+      <valueUri value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31" />
     </answer>
   </item>
 
@@ -169,7 +169,7 @@
     <text value="Event Type" />
     <answer>
       <valueCoding>
-        <system value="https://loinc.org/" />
+        <system value="http://snomed.info/sct" />
         <code value="TEMP_SNOMED_LATE_ONSET_SEPSIS" />
         <display value="Late Onset Sepsis (LOS)" />
       </valueCoding>
@@ -322,7 +322,7 @@
     <!-\- Note: This item is only enabled when the death observation is marked as "true" -\->
     <!-\-<item>
       <linkId value="los-contributed-to-death" />
-      <text value="Infection contrubuted to death" />
+      <text value="Infection contributed to death" />
       <answer>
         <valueBoolean value="false" />
       </answer>

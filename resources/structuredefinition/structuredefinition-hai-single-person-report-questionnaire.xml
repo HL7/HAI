@@ -28,6 +28,21 @@
     <element id="Questionnaire">
       <path value="Questionnaire" />
       <short value="Healthcare Associated Infection Single-Person Report Questionnaire" />
+      <definition value="This profile represents a Healthcare Associated Infection Singe-Person Report form as a FHIR Questionnaire." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.meta">
+      <path value="Questionnaire.meta" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.meta.profile">
+      <path value="Questionnaire.meta.profile" />
+      <short value="A reference to this profile (to which the instance claims to conform)." />
+      <definition value="A reference to this profile (to which the instance claims to conform)." />
+      <min value="1" />
+      <max value="1" />
+      <patternUri value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.language">
@@ -83,7 +98,7 @@
     <element id="Questionnaire.code">
       <path value="Questionnaire.code" />
       <short value="Code for Healthcare Associated Infection Report" />
-      <definition value="LOINC code 51897-7 to indicated that this is a Healthcare Associated Infection Report" />
+      <definition value="LOINC code 51897-7 to indicate that this is a Healthcare Associated Infection Report" />
       <min value="1" />
       <max value="1" />
       <patternCoding>
@@ -119,7 +134,6 @@
     <element id="Questionnaire.item.extension:extensionQuestionnaireAllowedProfile">
       <path value="Questionnaire.item.extension" />
       <sliceName value="extensionQuestionnaireAllowedProfile" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -169,15 +183,22 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Questionnaire.item.item.extension:sliceQuestionnaireAllowedProfile">
+    <element id="Questionnaire.item.item.extension:extensionQuestionnaireAllowedProfile">
       <path value="Questionnaire.item.item.extension" />
-      <sliceName value="sliceQuestionnaireAllowedProfile" />
-      <min value="0" />
+      <sliceName value="extensionQuestionnaireAllowedProfile" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item.linkId">
+      <path value="Questionnaire.item.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item.code">
+      <path value="Questionnaire.item.item.code" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item.item.type">
@@ -186,6 +207,18 @@
     </element>
     <element id="Questionnaire.item.item.enableWhen">
       <path value="Questionnaire.item.item.enableWhen" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item.required">
+      <path value="Questionnaire.item.item.required" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item.repeats">
+      <path value="Questionnaire.item.item.repeats" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item.options">
+      <path value="Questionnaire.item.item.options" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item.item.item">

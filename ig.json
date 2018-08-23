@@ -6,14 +6,24 @@
   "jurisdiction": "US",
   "paths": {
     "resources": [
-      "resources"
+      "resources",
+      "resources/valueset",
+      "resources/structuredefinition",
+      "resources/examples",
+      "resources/implementationguide"
     ],
     "pages": "pages",
     "temp": "temp",
     "output": "output",
     "qa": "qa",
+    "txCache": "txCache",
     "specification": "http://hl7.org/fhir/STU3"
   },
+  "dependencyList": [{
+    "name": "uscore",
+    "location": "http://hl7.org/fhir/us/core",
+    "version": "1.0.1"
+  }],
   "defaults": {
     "Any": {
       "template-format": "template-format.html",
@@ -61,10 +71,6 @@
     "StructureDefinition/hai-single-person-report-questionnaire-response": {
       "base": "StructureDefinition-hai-single-person-report-questionnaire-response.html",
       "defns": "StructureDefinition-hai-single-person-report-questionnaire-response-definitions.html"
-    }, 
-    "ValueSet/lrtc": {
-      "base": "ValueSet-nhsn-pathogen-ranking.html",
-      "source": "valueset-nhsn-pathogen-ranking.xml"
     }
   }
 }

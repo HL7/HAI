@@ -1,0 +1,90 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://loinc.org/",
+  "code" : "TEMP_SNOMED_LATE_ONSET_SEPSIS",
+  "display" : "Late Onset Sepsis (LOS)"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "19824006",
+        "display" : "Skin or Soft Tissue Infection"
+      },
+      {
+        "code" : "50417007",
+        "display" : "Lower respiratory Infection"
+      },
+      {
+        "code" : "68566005",
+        "display" : "Urinary Tract Infection"
+      },
+      {
+        "code" : "91302008",
+        "display" : "Systemic Infection"
+      },
+      {
+        "code" : "128116006",
+        "display" : "Infection of the Central Nervous System"
+      },
+      {
+        "code" : "128402005",
+        "display" : "Infection of the cardiovascular system"
+      },
+      {
+        "code" : "312158001",
+        "display" : "Gastrointestinal Infection"
+      },
+      {
+        "code" : "431193003",
+        "display" : "Bloodstream Infection"
+      },
+      {
+        "code" : "433202001",
+        "display" : "Surgical Site Infection"
+      },
+      {
+        "code" : "TEMP_SNOMED_LATE_ONSET_SEPSIS",
+        "display" : "Late Onset Sepsis (LOS)"
+      },
+      {
+        "code" : "276674008",
+        "display" : "Neonatal meningitis"
+      }]
+    },
+    {
+      "system" : "urn:oid:2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "1792-1",
+        "display" : "MDRO Infection"
+      },
+      {
+        "code" : "1795-4",
+        "display" : "CDAD Infection"
+      },
+      {
+        "code" : "1796-2",
+        "display" : "Infection of the Reproduction System"
+      },
+      {
+        "code" : "1797-0",
+        "display" : "Infection of the Ear/Eyes/Nose or Throat"
+      },
+      {
+        "code" : "1798-8",
+        "display" : "Bone or Joint Infection"
+      },
+      {
+        "code" : "2340-3",
+        "display" : "Ventilator Associated Event"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------

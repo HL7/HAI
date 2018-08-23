@@ -1,5 +1,5 @@
-<ImplementationGuide xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://hl7.org/fhir ../../validation/fhir-all.xsd" xmlns="http://hl7.org/fhir">
+<ImplementationGuide xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../validation/fhir-all.xsd"
+  xmlns="http://hl7.org/fhir">
   <id value="3370" />
   <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/3370" />
   <version value="0.1.0" />
@@ -9,8 +9,8 @@
   <date value="2018-03-19" />
   <publisher value="HL7" />
   <package>
-    <name value="base"></name>
-    <!-- Profiles  -->
+    <name value="base" />
+    <!-- Profiles -->
     <resource>
       <example value="false" />
       <sourceReference>
@@ -22,8 +22,6 @@
       <sourceReference>
         <reference value="StructureDefinition/hai-single-person-report-questionnaire-response" />
       </sourceReference>
-      
-      
     </resource>
     <!-- Value Sets -->
     <resource>
@@ -31,104 +29,78 @@
       <sourceReference>
         <reference value="ValueSet/2.16.840.1.113883.13.19" />
       </sourceReference>
-      
-      
     </resource>
     <resource>
       <example value="false" />
       <sourceReference>
         <reference value="ValueSet/2.16.840.1.113883.13.20" />
       </sourceReference>
-      
-      
     </resource>
     <resource>
       <example value="false" />
       <sourceReference>
         <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.27" />
       </sourceReference>
-      
-      
     </resource>
     <resource>
       <example value="false" />
       <sourceReference>
         <reference value="ValueSet/2.16.840.1.113883.13.13" />
       </sourceReference>
-      
-      
     </resource>
     <resource>
       <example value="false" />
       <sourceReference>
         <reference value="ValueSet/2.16.840.1.113883.13.15" />
       </sourceReference>
-      
-      
     </resource>
     <resource>
       <example value="false" />
       <sourceReference>
         <reference value="ValueSet/nhsn-pathogen-ranking" />
       </sourceReference>
-      
-      
     </resource>
     <resource>
       <example value="false" />
       <sourceReference>
         <reference value="ValueSet/2.16.840.1.113883.13.16" />
       </sourceReference>
-      
-      
     </resource>
     <resource>
       <example value="false" />
       <sourceReference>
         <reference value="ValueSet/2.16.840.1.114222.4.11.3195" />
       </sourceReference>
-      
-      
     </resource>
     <resource>
       <example value="false" />
       <sourceReference>
         <reference value="ValueSet/2.16.840.1.114222.4.11.3196" />
       </sourceReference>
-      
-      
     </resource>
-    
     <!-- Instances -->
     <resource>
       <example value="true" />
       <sourceReference>
         <reference value="Patient/hai-patient-1" />
       </sourceReference>
-      
-      
     </resource>
     <resource>
       <example value="true" />
       <sourceReference>
         <reference value="Questionnaire/hai-questionnaire-los-event" />
       </sourceReference>
-      
-      
     </resource>
     <resource>
       <example value="true" />
       <sourceReference>
         <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-event" />
       </sourceReference>
-      
-      
     </resource>
   </package>
-    <page>
-      <source value="index.html" />
-      <title value="NHSN HAI Homepage" />
-      <kind value="page"/>      
-    </page>
-  
+  <page>
+    <source value="index.html" />
+    <title value="NHSN HAI Homepage" />
+    <kind value="page" />
+  </page>
 </ImplementationGuide>

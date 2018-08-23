@@ -1,13 +1,12 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="2.16.840.1.113883.10.20.5.9.27" />
-  <meta id="4447" />
   <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.27" />
   <name value="Inborn/Outborn Observation Code" />
   <status value="draft" />
   <description value="This valueset represents whether the location of birth is an inborn or outborn location" />
   <compose>
     <include>
-      <system value="urn:oid:2.16.840.1.113883.6.96" />
+      <system value="http://snomed.info/sct" />
       <concept>
         <code value="442311008" />
         <display value="Liveborn born in hospital (situation)" />

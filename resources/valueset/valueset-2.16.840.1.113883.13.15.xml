@@ -1,6 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="2.16.840.1.113883.13.15" />
-  <meta id="38" />
   <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15" />
   <name value="NHSNDrugSusceptibilityTestsCode" />
   <status value="active" />
@@ -8,7 +7,7 @@
     value="Code System: LOINC 2.16.840.1.113883.6.1 or cdcNHSN 2.16.840.1.113883.6.277" />
   <compose>
     <include>
-      <system value="urn:oid:2.16.840.1.113883.6.1" />
+      <system value="http://loinc.org" />
       <concept>
         <code value="18855-7" />
         <display value="5-fluorocytosine Susc Islt" />

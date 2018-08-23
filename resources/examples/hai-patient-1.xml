@@ -2,7 +2,7 @@
  xsi:schemaLocation="http://hl7.org/fhir ../../validation/fhir-all.xsd" xmlns="http://hl7.org/fhir">
   <id value="hai-patient-1"/> 
   <meta>
-    <profile value="http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-patient"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
   </meta>
   <text> 
     <status value="generated"/> 
@@ -63,7 +63,7 @@
     </extension>
   </extension>
   
-  <!--    Medicaid beneficiary number    -->
+  
   <identifier> 
     <type> 
       <coding> 
@@ -71,9 +71,23 @@
         <code value="MA"/> 
       </coding> 
     </type> 
+    <system value="urn:oid:2.16.840.1.113883.19.5"/>
     <value value="959595"/> 
   </identifier> 
   
+  <!--    Social Security    -->
+  <identifier> 
+    <type> 
+      <coding> 
+        <system value="http://hl7.org/fhir/v2/0203"/> 
+        <code value="SS"/> 
+      </coding> 
+    </type> 
+    <system value="urn:oid:2.16.840.1.113883.4.1"/>
+    <value value="12345"/> 
+  </identifier>
+  
+  <!--    Medicaid beneficiary number    -->
   <identifier> 
     <type> 
       <coding> 
@@ -81,6 +95,7 @@
         <code value="MR"/> 
       </coding> 
     </type> 
+    <system value="urn:oid:2.16.840.1.113883.4.338"/>
     <value value="12345"/> 
   </identifier>
   

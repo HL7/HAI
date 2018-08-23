@@ -1,6 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="2.16.840.1.113883.13.19" />
-  <meta id="41" />
   <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19" />
   <name value="NHSNHealthcareServiceLocationCode" />
   <status value="active" />
