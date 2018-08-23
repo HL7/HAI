@@ -61,7 +61,7 @@
   },
   "canonicalBase": "http://hl7.org/fhir/us/hai",
   "source": "implementationguide/3370.xml",
-  "sct-edition": "http://snomed.info/sct/731000124108",
+  "sct-edition": "http://snomed.info/sct/900000000000207008",
   "special-urls": [],
   "resources": {
   "StructureDefinition/hai-single-person-report-questionnaire": {
