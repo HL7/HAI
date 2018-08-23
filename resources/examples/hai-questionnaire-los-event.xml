@@ -15,7 +15,7 @@
 
   <!-- *****BEGIN Questionnaire Header Information*****-->
   <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event" />
-  
+
   <!-- This identifier represents this version of the questionnaire (form) -->
   <identifier>
     <value value="hai-questionnaire-los-event-v1" />
@@ -24,15 +24,15 @@
   <!-- Note: FHIR IG Version: R1
              HAI CDA IG Version: R3D3 -->
   <version value="R1" />
-  
+
   <title value="Late Onset Sepsis/Meningitis Event (LOS)" />
   <status value="draft" />
-  
+
   <!-- Date on which the questionnaire/form was published -->
   <date value="2018-04-01" />
-  
+
   <publisher value="HL7" />
-  
+
   <!-- TODO: Update description -->
   <description
     value="This report type records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present." />
@@ -140,8 +140,7 @@
     </options>
   </item>
 
-
-
+  <!-- Sections -->
   <!-- Risk Factors 
        CDA: Risk Factors Section (LOS/Men)-->
   <item>
@@ -155,7 +154,7 @@
     <type value="group" />
     <required value="true" />
     <repeats value="false" />
-
+    
     <!-- Central Line present prior to event, including umbilical catheter
          (CDA Mapping: Infection Risk Factors Observation/value="1006-6" - if present then true) -->
     <item>
@@ -170,8 +169,8 @@
       <required value="false" />
       <repeats value="false" />
     </item>
-
-
+    
+    
     <!-- Birth Weight (grams)
          (CDA Mapping: Infection Risk Factors Measurement Observation/value) -->
     <item>
@@ -186,7 +185,7 @@
       <required value="true" />
       <repeats value="false" />
     </item>
-
+    
     <!-- Gestational Age
          (CDA Mapping: Gestational Age Observation/value) -->
     <item>
@@ -210,175 +209,178 @@
       <required value="true" />
       <repeats value="false" />
     </item>
-
-    <!-- Event Details 
+    
+    
+  </item>
+  
+  <!-- Event Details 
          CDA: Infection Details in Late Onset Sepsis Report-->
+  <item>
+    <linkId value="event-details" />
+    <code>
+      <system value="http://loinc.org" />
+      <code value="51899-3" />
+      <display value="Details Section" />
+    </code>
+    <text value="Event Details" />
+    <type value="group" />
+    <required value="true" />
+    <repeats value="false" />
+    
+    <!-- Infection Condition 
+         (CDA Mapping: Infection Condition Observation/value-->
     <item>
-      <linkId value="event-details" />
-      <code>
-        <system value="http://loinc.org" />
-        <code value="51899-3" />
-        <display value="Details Section" />
-      </code>
-      <text value="Event Details" />
-      <type value="group" />
+      <linkId value="infection-condition" />
+      <text value="Specific Event" />
+      <type value="choice" />
       <required value="true" />
       <repeats value="false" />
-
-      <!-- Infection Condition 
-         (CDA Mapping: Infection Condition Observation/value-->
-      <item>
-        <linkId value="infection-condition" />
-        <text value="Specific Event" />
-        <type value="choice" />
-        <required value="true" />
-        <repeats value="false" />
-        <options>
-          <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196" />
-        </options>
-      </item>
-      <!-- Criteria Used (Lab) 
-         (CDA Mapping: Criterion of Diagnosis Observation/value-->
-      <item>
-        <linkId value="criteria-used" />
-        <text value="Laboratory Criteria Used" />
-        <type value="choice" />
-        <required value="true" />
-        <repeats value="false" />
-        <options>
-          <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195" />
-        </options>
-
-      </item>
-
-      <!-- Died 
-         (CDA Mapping: Death Observation in an Infection-type Report/value) -->
-      <item>
-        <linkId value="died" />
-        <code>
-          <system value="http://snomed.info/sct" />
-          <code value="419099009" />
-          <display value="dead" />
-        </code>
-        <text value="Died" />
-        <type value="boolean" />
-        <required value="true" />
-        <repeats value="false" />
-      </item>
-      <!-- LOS Contributed to death 
-         (CDA Mapping: Infection Contributed to Death Observation) -->
-      <item>
-        <linkId value="los-contributed-to-death" />
-        <text value="Infection contributed to death" />
-        <type value="boolean" />
-        <enableWhen>
-          <question value="died" />
-          <answerBoolean value="true" />
-        </enableWhen>
-        <required value="true" />
-        <repeats value="false" />
-      </item>
-
-      <!-- Discharge Date 
-         (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high) -->
-      <item>
-        <linkId value="discharge-date" />
-        <text value="Discharge Date" />
-        <type value="date" />
-        <required value="false" />
-        <repeats value="false" />
-      </item>
+      <options>
+        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196" />
+      </options>
     </item>
-
-
-    <!-- Findings
-       CDA: Findings Section in an Infection-Type Report-->
+    
+    <!-- Criteria Used (Lab) 
+         (CDA Mapping: Criterion of Diagnosis Observation/value-->
     <item>
-      <linkId value="findings-group" />
+      <linkId value="criteria-used" />
+      <text value="Laboratory Criteria Used" />
+      <type value="choice" />
+      <required value="true" />
+      <repeats value="false" />
+      <options>
+        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195" />
+      </options>
+      
+    </item>
+    
+    <!-- Died 
+         (CDA Mapping: Death Observation in an Infection-type Report/value) -->
+    <item>
+      <linkId value="died" />
       <code>
-        <system value="http://loinc.org" />
-        <code value="18769-0" />
-        <display value="Findings Section" />
+        <system value="http://snomed.info/sct" />
+        <code value="419099009" />
+        <display value="dead" />
       </code>
-      <text value="Findings Group" />
+      <text value="Died" />
+      <type value="boolean" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    
+    <!-- LOS Contributed to death 
+         (CDA Mapping: Infection Contributed to Death Observation) -->
+    <item>
+      <linkId value="los-contributed-to-death" />
+      <text value="Infection contributed to death" />
+      <type value="boolean" />
+      <enableWhen>
+        <question value="died" />
+        <answerBoolean value="true" />
+      </enableWhen>
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    
+    <!-- Discharge Date 
+         (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high) -->
+    <item>
+      <linkId value="discharge-date" />
+      <text value="Discharge Date" />
+      <type value="date" />
+      <required value="false" />
+      <repeats value="false" />
+    </item>
+  </item>
+  
+  <!-- Findings
+       CDA: Findings Section in an Infection-Type Report-->
+  <item>
+    <linkId value="findings-group" />
+    <code>
+      <system value="http://loinc.org" />
+      <code value="18769-0" />
+      <display value="Findings Section" />
+    </code>
+    <text value="Findings Group" />
+    <type value="group" />
+    <required value="false" />
+    <repeats value="true" />
+    
+    <!-- Pathogen Identified
+         (CDA Mapping: Pathogen Identified Observation) -->
+    <item>
+      <linkId value="pathogen-identified" />
+      <text value="Pathogen Identified" />
+      <type value="choice" />
+      <required value="true" />
+      <options>
+        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16" />
+      </options>
+      
+    </item>
+    <!-- Pathogen Ranking
+         (CDA Mapping: Pathogen Ranking Observation) -->
+    <item>
+      <linkId value="pathogen-ranking" />
+      <text value="Pathogen Ranking" />
+      <type value="choice" />
+      <required value="true" />
+      <options>
+        <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking" />
+      </options>
+      
+    </item>
+    
+    <!-- Drug Susceptibility Test Group
+         (CDA Mapping: Drug Susceptibility Test Observation) -->
+    <item>
+      <linkId value="drug-susceptibility-test-group" />
+      <text value="Drug Susceptibility Test Group" />
       <type value="group" />
       <required value="false" />
       <repeats value="true" />
-
-      <!-- Pathogen Identified
-         (CDA Mapping: Pathogen Identified Observation) -->
-      <item>
-        <linkId value="pathogen-identified" />
-        <text value="Pathogen Identified" />
-        <type value="choice" />
-        <required value="true" />
-        <options>
-          <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16" />
-        </options>
-
-      </item>
-      <!-- Pathogen Ranking
-         (CDA Mapping: Pathogen Ranking Observation) -->
-      <item>
-        <linkId value="pathogen-ranking" />
-        <text value="Pathogen Ranking" />
-        <type value="choice" />
-        <required value="true" />
-        <options>
-          <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking" />
-        </options>
-
-      </item>
-
-      <!-- Drug Susceptibility Test Group
-         (CDA Mapping: Drug Susceptibility Test Observation) -->
-      <item>
-        <linkId value="drug-susceptibility-test-group" />
-        <text value="Drug Susceptibility Test Group" />
-        <type value="group" />
-        <required value="false" />
-        <repeats value="true" />
-
-        <!-- Drug Susceptibilty Test 
+      
+      <!-- Drug Susceptibilty Test 
            CDA: Drug-Susceptibility Test Observation/code -->
-        <item>
-          <linkId value="drug-susceptibility-test" />
-          <text value="Drug Susceptibility Test" />
-          <type value="choice" />
-          <required value="true" />
-          <options>
-            <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15" />
-          </options>
-
-        </item>
-        <!-- Drug Susceptibilty Test Interpretation
+      <item>
+        <linkId value="drug-susceptibility-test" />
+        <text value="Drug Susceptibility Test" />
+        <type value="choice" />
+        <required value="true" />
+        <options>
+          <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15" />
+        </options>
+        
+      </item>
+      <!-- Drug Susceptibilty Test Interpretation
            CDA: Drug-Susceptibility Test Observation/interpretationCode -->
-        <item>
-          <linkId value="drug-susceptibility--test-interpretation" />
-          <text value="Drug Susceptibility Test Interpretation" />
-          <type value="choice" />
-          <required value="false" />
-          <options>
-            <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13" />
-          </options>
-        </item>
+      <item>
+        <linkId value="drug-susceptibility-test-interpretation" />
+        <text value="Drug Susceptibility Test Interpretation" />
+        <type value="choice" />
+        <required value="false" />
+        <options>
+          <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13" />
+        </options>
       </item>
     </item>
-
-    <!-- Comment
+  </item>
+    
+  <!-- Comment
          CDA: NHSN Comment Section/NHSN Comment-->
-    <item>
-      <linkId value="comment-section" />
-      <code>
-        <system value="http://www.loinc.org" />
-        <code value="86468-6" />
-        <display value="Report Comment Section" />
-      </code>
-      <text value="Comments" />
-      <type value="text" />
-      <required value="false" />
-      <repeats value="false" />
-      <maxLength value="2000" />
-    </item>
+  <item>
+    <linkId value="nhsn-comment" />
+    <code>
+      <system value="http://www.loinc.org" />
+      <code value="86468-6" />
+      <display value="Report Comment Section" />
+    </code>
+    <text value="Comments" />
+    <type value="text" />
+    <required value="false" />
+    <repeats value="false" />
+    <maxLength value="2000" />
   </item>
 </Questionnaire>

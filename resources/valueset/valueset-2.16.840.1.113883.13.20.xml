@@ -45,8 +45,8 @@
         <display value="Surgical Site Infection" />
       </concept>
       <concept>
-        <code value="TEMP_SNOMED_LATE_ONSET_SEPSIS" />
-        <display value="Late Onset Sepsis (LOS)" />
+        <code value="765107002" />
+        <display value="Late-onset neonatal sepsis (disorder)" />
       </concept>
       <concept>
         <code value="276674008" />
