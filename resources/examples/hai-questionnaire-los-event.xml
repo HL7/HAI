@@ -131,7 +131,7 @@
       <code value="TEMP_NHSNDeliveryLocation" />
       <display value="TEMP_NHSNDeliveryLocation" />
     </code>
-    <text value="Select: Inborn or Outborn" />
+    <text value="Select: Inborn or Outborn: Whether an infant was born at the reporting hospital or some other location." />
     <type value="choice" />
     <required value="true" />
     <repeats value="false" />
@@ -150,7 +150,7 @@
       <code value="51898-5" />
       <display value="Risk Factors" />
     </code>
-    <text value="Risk Factors" />
+    <text value="Risk Factors: Contains central line present, birth weight, gestational age" />
     <type value="group" />
     <required value="true" />
     <repeats value="false" />
@@ -164,7 +164,7 @@
         <code value="1006-6" />
         <display value="central line including umbilical catheter" />
       </code>
-      <text value="Central line present prior to event, including umbilical catheter" />
+      <text value="Risk Factor: Central line present prior to event, including umbilical catheter" />
       <type value="boolean" />
       <required value="false" />
       <repeats value="false" />
@@ -180,7 +180,7 @@
         <code value="364589006" />
         <display value="Birth Weight" />
       </code>
-      <text value="Birth Weight (grams)" />
+      <text value="Risk Factor: Birth weight (grams)" />
       <type value="quantity" />
       <required value="true" />
       <repeats value="false" />
@@ -204,7 +204,7 @@
         <code value="76516-4" />
         <display value="Gestational Age at Birth" />
       </code>
-      <text value="Gestational Age" />
+      <text value="Risk Factor: Gestational age (days)" />
       <type value="quantity" />
       <required value="true" />
       <repeats value="false" />
@@ -303,7 +303,7 @@
       <code value="18769-0" />
       <display value="Findings Section" />
     </code>
-    <text value="Findings Group" />
+    <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them." />
     <type value="group" />
     <required value="false" />
     <repeats value="true" />

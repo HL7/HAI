@@ -9,286 +9,286 @@
     <include>
       <system value="http://loinc.org" />
       <concept>
-        <code value="18855-7" />
-        <display value="5-fluorocytosine Susc Islt" />
+        <code value="18855&#8209;7" />
+        <display value="5&#8209;fluorocytosine Susc Islt" />
       </concept>
       <concept>
-        <code value="18860-7" />
+        <code value="18860&#8209;7" />
         <display value="Amikacin Susc Islt" />
       </concept>
       <concept>
-        <code value="18862-3" />
+        <code value="18862&#8209;3" />
         <display value="Amoxicillin+Clav Susc Islt" />
       </concept>
       <concept>
-        <code value="18864-9" />
+        <code value="18864&#8209;9" />
         <display value="Ampicillin Susc Islt" />
       </concept>
       <concept>
-        <code value="18865-6" />
+        <code value="18865&#8209;6" />
         <display value="Ampicillin+Sulbac Susc Islt" />
       </concept>
       <concept>
-        <code value="57095-2" />
+        <code value="57095&#8209;2" />
         <display value="Anidulafungin Susc Islt" />
       </concept>
       <concept>
-        <code value="18866-4" />
+        <code value="18866&#8209;4" />
         <display value="Azithromycin Susc Islt" />
       </concept>
       <concept>
-        <code value="18868-0" />
+        <code value="18868&#8209;0" />
         <display value="Aztreonam Susc Islt" />
       </concept>
       <concept>
-        <code value="32378-2" />
+        <code value="32378&#8209;2" />
         <display value="Caspofungin Susc Islt" />
       </concept>
       <concept>
-        <code value="18878-9" />
+        <code value="18878&#8209;9" />
         <display value="Cefazolin Susc Islt" />
       </concept>
       <concept>
-        <code value="18879-7" />
+        <code value="18879&#8209;7" />
         <display value="Cefepime Susc Islt" />
       </concept>
       <concept>
-        <code value="18886-2" />
+        <code value="18886&#8209;2" />
         <display value="Cefotaxime Susc Islt" />
       </concept>
       <concept>
-        <code value="18887-0" />
+        <code value="18887&#8209;0" />
         <display value="Cefotetan Susc Islt" />
       </concept>
       <concept>
-        <code value="18888-8" />
+        <code value="18888&#8209;8" />
         <display value="Cefoxitin Susc Islt" />
       </concept>
       <concept>
-        <code value="18893-8" />
+        <code value="18893&#8209;8" />
         <display value="Ceftazidime Susc Islt" />
       </concept>
       <concept>
-        <code value="18895-3" />
+        <code value="18895&#8209;3" />
         <display value="Ceftriaxone Susc Islt" />
       </concept>
       <concept>
-        <code value="35783-0" />
+        <code value="35783&#8209;0" />
         <display value="Cefuroxime Oral Susc Islt" />
       </concept>
       <concept>
-        <code value="18900-1" />
+        <code value="18900&#8209;1" />
         <display value="Cephalothin Susc Islt" />
       </concept>
       <concept>
-        <code value="18903-5" />
+        <code value="18903&#8209;5" />
         <display value="Chloramphen Susc Islt" />
       </concept>
       <concept>
-        <code value="18906-8" />
+        <code value="18906&#8209;8" />
         <display value="Ciprofloxacin Susc Islt" />
       </concept>
       <concept>
-        <code value="18907-6" />
+        <code value="18907&#8209;6" />
         <display value="Clarithro Susc Islt" />
       </concept>
       <concept>
-        <code value="18908-4" />
+        <code value="18908&#8209;4" />
         <display value="Clindamycin Susc Islt" />
       </concept>
       <concept>
-        <code value="18912-6" />
+        <code value="18912&#8209;6" />
         <display value="Colistin Susc Islt" />
       </concept>
       <concept>
-        <code value="35789-7" />
+        <code value="35789&#8209;7" />
         <display value="Daptomycin Susc Islt" />
       </concept>
       <concept>
-        <code value="60535-2" />
+        <code value="60535&#8209;2" />
         <display value="Doripenem Susc Islt" />
       </concept>
       <concept>
-        <code value="18917-5" />
+        <code value="18917&#8209;5" />
         <display value="Doxycycline Susc Islt" />
       </concept>
       <concept>
-        <code value="35802-8" />
+        <code value="35802&#8209;8" />
         <display value="Ertapenem Susc Islt" />
       </concept>
       <concept>
-        <code value="18919-1" />
+        <code value="18919&#8209;1" />
         <display value="Erythromycin Susc Islt" />
       </concept>
       <concept>
-        <code value="18924-1" />
+        <code value="18924&#8209;1" />
         <display value="Fluconazole Susc Islt" />
       </concept>
       <concept>
-        <code value="31038-3" />
+        <code value="31038&#8209;3" />
         <display value="Gatifloxacin Susc Islt" />
       </concept>
       <concept>
-        <code value="18928-2" />
+        <code value="18928&#8209;2" />
         <display value="Gentamicin Susc Islt" />
       </concept>
       <concept>
-        <code value="18929-0" />
+        <code value="18929&#8209;0" />
         <display value="Gentamicin Synergy Susc Islt" />
       </concept>
       <concept>
-        <code value="18932-4" />
+        <code value="18932&#8209;4" />
         <display value="Imipenem Susc Islt" />
       </concept>
       <concept>
-        <code value="32603-3" />
+        <code value="32603&#8209;3" />
         <display value="Itraconaz Susc Islt" />
       </concept>
       <concept>
-        <code value="20629-2" />
-        <display value="L-Floxacin Susc Islt" />
+        <code value="20629&#8209;2" />
+        <display value="L&#8209;Floxacin Susc Islt" />
       </concept>
       <concept>
-        <code value="29258-1" />
+        <code value="29258&#8209;1" />
         <display value="Linezolid Susc Islt" />
       </concept>
       <concept>
-        <code value="18943-1" />
+        <code value="18943&#8209;1" />
         <display value="Meropenem Susc Islt" />
       </concept>
       <concept>
-        <code value="18945-6" />
+        <code value="18945&#8209;6" />
         <display value="Methicillin Susc Islt" />
       </concept>
       <concept>
-        <code value="18946-4" />
+        <code value="18946&#8209;4" />
         <display value="Metronidazole Susc Islt" />
       </concept>
       <concept>
-        <code value="18948-0" />
+        <code value="18948&#8209;0" />
         <display value="Minocycline Susc Islt" />
       </concept>
       <concept>
-        <code value="31039-1" />
+        <code value="31039&#8209;1" />
         <display value="Moxifloxacin Susc Islt" />
       </concept>
       <concept>
-        <code value="18959-7" />
+        <code value="18959&#8209;7" />
         <display value="Ofloxacin Susc Islt" />
       </concept>
       <concept>
-        <code value="18961-3" />
+        <code value="18961&#8209;3" />
         <display value="Oxacillin Susc Islt" />
       </concept>
       <concept>
-        <code value="18965-4" />
+        <code value="18965&#8209;4" />
         <display value="Penicillin G Susc Islt" />
       </concept>
       <concept>
-        <code value="18969-6" />
+        <code value="18969&#8209;6" />
         <display value="Piperacillin Susc Islt" />
       </concept>
       <concept>
-        <code value="18970-4" />
+        <code value="18970&#8209;4" />
         <display value="Piperacillin+Tazobac Susc Islt" />
       </concept>
       <concept>
-        <code value="18972-0" />
+        <code value="18972&#8209;0" />
         <display value="Polymyxin B Susc Islt" />
       </concept>
       <concept>
-        <code value="23640-6" />
+        <code value="23640&#8209;6" />
         <display value="Quinupristin+Dalfoprist Susc Islt" />
       </concept>
       <concept>
-        <code value="18974-6" />
+        <code value="18974&#8209;6" />
         <display value="Rifampin Susc Islt" />
       </concept>
       <concept>
-        <code value="18983-7" />
+        <code value="18983&#8209;7" />
         <display value="Streptomycin High Pot Susc Islt" />
       </concept>
       <concept>
-        <code value="18993-6" />
+        <code value="18993&#8209;6" />
         <display value="Tetracycline Susc Islt" />
       </concept>
       <concept>
-        <code value="18994-4" />
+        <code value="18994&#8209;4" />
         <display value="Ticarcillin Susc Islt" />
       </concept>
       <concept>
-        <code value="18995-1" />
+        <code value="18995&#8209;1" />
         <display value="Ticarcillin+Clav Susc Islt" />
       </concept>
       <concept>
-        <code value="42357-4" />
+        <code value="42357&#8209;4" />
         <display value="Tigecycline Susc Islt" />
       </concept>
       <concept>
-        <code value="18998-5" />
+        <code value="18998&#8209;5" />
         <display value="TMP SMX Susc Islt" />
       </concept>
       <concept>
-        <code value="18996-9" />
+        <code value="18996&#8209;9" />
         <display value="Tobramycin Susc Islt" />
       </concept>
       <concept>
-        <code value="19000-9" />
+        <code value="19000&#8209;9" />
         <display value="Vancomycin Susc Islt" />
       </concept>
       <concept>
-        <code value="32379-0" />
+        <code value="32379&#8209;0" />
         <display value="Voriconazole Susc Islt" />
       </concept>
       <concept>
-        <code value="18955-5" />
+        <code value="18955&#8209;5" />
         <display value="Nitrofurantoin" />
       </concept>
       <concept>
-        <code value="18861-5" />
+        <code value="18861&#8209;5" />
         <display value="Amoxicillin Susc Islt" />
       </concept>
       <concept>
-        <code value="35816-8" />
+        <code value="35816&#8209;8" />
         <display value="Gemifloxacin Susc Islt" />
       </concept>
       <concept>
-        <code value="18939-9" />
+        <code value="18939&#8209;9" />
         <display value="Lomefloxacin Susc Islt" />
       </concept>
       <concept>
-        <code value="18956-3" />
+        <code value="18956&#8209;3" />
         <display value="Norfloxacin Susc Islt" />
       </concept>
       <concept>
-        <code value="18966-2" />
+        <code value="18966&#8209;2" />
         <display value="Penicillin V Susc Islt" />
       </concept>
       <concept>
-        <code value="54188-8�" />
+        <code value="54188&#8209;8�" />
         <display value="Posaconazole Susc Islt" />
       </concept>
       <concept>
-        <code value="18982-9" />
+        <code value="18982&#8209;9" />
         <display value="Streptomycin Susc Islt" />
       </concept>
       <concept>
-        <code value="18986-0" />
+        <code value="18986&#8209;0" />
         <display value="Sulfisoxaz Susc Islt" />
       </concept>
       <concept>
-        <code value="35845-7�" />
+        <code value="35845&#8209;7�" />
         <display value="Telithromycin Susc Islt" />
       </concept>
       <concept>
-        <code value="18997-7" />
+        <code value="18997&#8209;7" />
         <display value="Trimethoprim Susc Islt" />
       </concept>
     </include>
     <include>
       <system value="urn:oid:2.16.840.1.113883.6.277" />
       <concept>
-        <code value="2526-2" />
+        <code value="2526&#8209;2" />
         <display value="Micafungin Susc Islt" />
       </concept>
     </include>

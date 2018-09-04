@@ -46,7 +46,7 @@
       </concept>
       <concept>
         <code value="765107002" />
-        <display value="Late-onset neonatal sepsis (disorder)" />
+        <display value="Late&#8209;onset neonatal sepsis (disorder)" />
       </concept>
       <concept>
         <code value="276674008" />
@@ -56,27 +56,27 @@
     <include>
       <system value="urn:oid:2.16.840.1.113883.6.277" />
       <concept>
-        <code value="1792-1" />
+        <code value="1792&#8209;1" />
         <display value="MDRO Infection" />
       </concept>
       <concept>
-        <code value="1795-4" />
+        <code value="1795&#8209;4" />
         <display value="CDAD Infection" />
       </concept>
       <concept>
-        <code value="1796-2" />
+        <code value="1796&#8209;2" />
         <display value="Infection of the Reproduction System" />
       </concept>
       <concept>
-        <code value="1797-0" />
+        <code value="1797&#8209;0" />
         <display value="Infection of the Ear/Eyes/Nose or Throat" />
       </concept>
       <concept>
-        <code value="1798-8" />
+        <code value="1798&#8209;8" />
         <display value="Bone or Joint Infection" />
       </concept>
       <concept>
-        <code value="2340-3" />
+        <code value="2340&#8209;3" />
         <display value="Ventilator Associated Event" />
       </concept>
     </include>

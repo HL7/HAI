@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------------
 
 
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -18,6 +19,7 @@ e: {
   "error" : "Error unmarshalling resource: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
 }
 -------------------------------------------------------------------------------------
+
 
 
 {"hierarchical" : false, "valueSet" :{
@@ -59,6 +61,7 @@ e: {
 -------------------------------------------------------------------------------------
 
 
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -76,6 +79,7 @@ e: {
   "error" : "Error unmarshalling resource: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
 }
 -------------------------------------------------------------------------------------
+
 
 
 {"hierarchical" : false, "valueSet" :{
@@ -437,6 +441,7 @@ e: {
 -------------------------------------------------------------------------------------
 
 
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -630,6 +635,7 @@ e: {
   "error" : "Error unmarshalling resource: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
 }
 -------------------------------------------------------------------------------------
+
 
 
 {"hierarchical" : true, "valueSet" :{
@@ -990,6 +996,7 @@ e: {
 }
 -------------------------------------------------------------------------------------
 
+
 {"code" : {
   "system" : "urn:oid:2.16.840.1.113883.6.277",
   "code" : "3067-6",
@@ -1251,6 +1258,7 @@ v: {
   "error" : "Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
 }
 -------------------------------------------------------------------------------------
+
 {"code" : {
   "system" : "urn:oid:2.16.840.1.113883.6.277",
   "code" : "1951-3",
@@ -1842,5 +1850,1837 @@ v: {
   "display" : "",
   "severity" : "error",
   "error" : "Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "1206‑2",
+        "display" : "Float"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "1792‑1",
+        "display" : "MDRO Infection"
+      },
+      {
+        "code" : "1795‑4",
+        "display" : "CDAD Infection"
+      },
+      {
+        "code" : "1796‑2",
+        "display" : "Infection of the Reproduction System"
+      },
+      {
+        "code" : "1797‑0",
+        "display" : "Infection of the Ear/Eyes/Nose or Throat"
+      },
+      {
+        "code" : "1798‑8",
+        "display" : "Bone or Joint Infection"
+      },
+      {
+        "code" : "2340‑3",
+        "display" : "Ventilator Associated Event"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "2526‑2",
+        "display" : "Micafungin Susc Islt"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "1901‑8",
+        "display" : "Not cultured"
+      },
+      {
+        "code" : "1964‑6",
+        "display" : "Allo‑SCT with Grade > 3 GI GVHD"
+      },
+      {
+        "code" : "1965‑3",
+        "display" : "Allo‑ SCT with diarrhea"
+      },
+      {
+        "code" : "1966‑1",
+        "display" : "Positive culture from greater than or equal to two separate tissue or fluid samples from affected joint"
+      },
+      {
+        "code" : "1902‑6",
+        "display" : "Blood culture not done or no organisms detected in blood"
+      },
+      {
+        "code" : "1929‑9",
+        "display" : "&gt;=2 positive cultures with &gt;=10^2 col/ml of same uropathogen from nonvoided specimen"
+      },
+      {
+        "code" : "1931‑5",
+        "display" : "&gt;=2 positive urine cultures with &gt;=10^5 col/cc with no more than 2 organisms"
+      },
+      {
+        "code" : "1923‑3",
+        "display" : "&gt;=5% BAL cells w/bacteria"
+      },
+      {
+        "code" : "1942‑2",
+        "display" : "&gt;15 colonies cultured from IV cannula tip using semiquantitative culture method"
+      },
+      {
+        "code" : "1927‑3",
+        "display" : "1 positive culture with &gt;=10^5 col/cc with no more than 2 organisms"
+      },
+      {
+        "code" : "2403‑4",
+        "display" : "1 positive culture with &gt;=103 CFU/ml and &lt;105 CFU/ml with no more than 2 species of microorganisms"
+      },
+      {
+        "code" : "1930‑7",
+        "display" : "1 positive culture with &lt;=10^5 col/ml of a single uropathogen in patient being treated with an effective antimicrobial agent for UTI"
+      },
+      {
+        "code" : "1938‑0",
+        "display" : "4‑fold rise in L. pneumophila antibody titer"
+      },
+      {
+        "code" : "1935‑6",
+        "display" : "4‑fold rise in paired sera for pathogen"
+      },
+      {
+        "code" : "1944‑8",
+        "display" : "Common skin contaminant from &gt;2 blood cultures (see NHSN protocol for definition of skin contaminant)"
+      },
+      {
+        "code" : "1937‑2",
+        "display" : "L pneumophila serogroup 1 antigens in urine"
+      },
+      {
+        "code" : "1939‑8",
+        "display" : "Matching positive blood and sputum cultures w/ Candida spp"
+      },
+      {
+        "code" : "1941‑4",
+        "display" : "Other positive laboratory tests"
+      },
+      {
+        "code" : "1955‑4",
+        "display" : "Positive blood culture"
+      },
+      {
+        "code" : "1952‑1",
+        "display" : "Positive culture"
+      },
+      {
+        "code" : "1953‑9",
+        "display" : "Positive culture of pathogen"
+      },
+      {
+        "code" : "1954‑7",
+        "display" : "Positive culture of skin contaminant"
+      },
+      {
+        "code" : "1948‑9",
+        "display" : "Positive culture of virus or Chlamydia"
+      },
+      {
+        "code" : "1936‑4",
+        "display" : "Positive culture or micro‑IF of Legionella spp"
+      },
+      {
+        "code" : "1934‑9",
+        "display" : "Positive detection of viral antigen or antibody"
+      },
+      {
+        "code" : "1928‑1",
+        "display" : "Positive dipstick for leukocyte esterase or nitrate"
+      },
+      {
+        "code" : "1943‑0",
+        "display" : "Positive Gram stain when culture is negative or not done"
+      },
+      {
+        "code" : "1950‑5",
+        "display" : "Positive micro‑IF test for Chlamydia"
+      },
+      {
+        "code" : "1949‑7",
+        "display" : "Positive PCR for Chlamydia or Mycoplasma"
+      },
+      {
+        "code" : "1946‑3",
+        "display" : "Positive pleural fluid culture"
+      },
+      {
+        "code" : "1947‑1",
+        "display" : "Positive quantitative culture from LRT specimen"
+      },
+      {
+        "code" : "1924‑0",
+        "display" : "Radiographic evidence of infection"
+      },
+      {
+        "code" : "1951‑3",
+        "display" : "Recognized pathogen from one or more blood cultures"
+      },
+      {
+        "code" : "1957‑0",
+        "display" : "Acute onset of diarrhea (liquid stools for &gt; 12 hours)"
+      },
+      {
+        "code" : "1959‑6",
+        "display" : "Apnea, tachycardia, nasal flaring with retraction of chest wall or grunting"
+      },
+      {
+        "code" : "2513‑0",
+        "display" : "Bilateral infiltrates on chest x‑ray"
+      },
+      {
+        "code" : "1908‑3",
+        "display" : "Bradycardia or tachycardia"
+      },
+      {
+        "code" : "2516‑3",
+        "display" : "Criterion not otherwise specified"
+      },
+      {
+        "code" : "2514‑8",
+        "display" : "Diffuse hemorrhage"
+      },
+      {
+        "code" : "1940‑6",
+        "display" : "Fungi or Pneumocytis carinii from LRT specimen"
+      },
+      {
+        "code" : "1956‑2",
+        "display" : "Histopathologic exam w/ abscess formation, positive quantitative culture of lung parenchyma, or positive quantitative culture of lung parenchyma, or lung parenchyma invasion by fungal hyphae"
+      },
+      {
+        "code" : "1967‑9",
+        "display" : "Incision deliberately opened or otherwise drained by physician"
+      },
+      {
+        "code" : "1920‑8",
+        "display" : "Localized swelling"
+      },
+      {
+        "code" : "2515‑5",
+        "display" : "Nausea/vomiting"
+      },
+      {
+        "code" : "1903‑4",
+        "display" : "New onset/change in sputum"
+      },
+      {
+        "code" : "1907‑5",
+        "display" : "New onset/change in sputum, increased secretions   or increased suctioning"
+      },
+      {
+        "code" : "1904‑2",
+        "display" : "New onset/worsening cough, dyspnea, tachypnea"
+      },
+      {
+        "code" : "1925‑7",
+        "display" : "New or progressive and persistent infiltrate"
+      },
+      {
+        "code" : "1905‑9",
+        "display" : "Other evidence of infection found on direct exam, during surgery, or by diagnostic tests"
+      },
+      {
+        "code" : "1906‑7",
+        "display" : "Other signs and symptoms"
+      },
+      {
+        "code" : "2517‑1",
+        "display" : "Pain not otherwise specified"
+      },
+      {
+        "code" : "1960‑4",
+        "display" : "Pain or tenderness"
+      },
+      {
+        "code" : "1909‑1",
+        "display" : "Persistent microscopic or gross blood in stools"
+      },
+      {
+        "code" : "1963‑8",
+        "display" : "Physician diagnosis of this event type"
+      },
+      {
+        "code" : "1962‑0",
+        "display" : "Physician institutes appropriate antimicrobial therapy"
+      },
+      {
+        "code" : "1926‑5",
+        "display" : "Pneumatoceles (in &lt;=1 y.o.)"
+      },
+      {
+        "code" : "1921‑6",
+        "display" : "Rales or bronchial breath sounds"
+      },
+      {
+        "code" : "2518‑9",
+        "display" : "Rash not otherwise specified"
+      },
+      {
+        "code" : "1968‑7",
+        "display" : "Sinus tract"
+      },
+      {
+        "code" : "1922‑4",
+        "display" : "Wheezing, rales or rhonchi"
+      },
+      {
+        "code" : "1958‑8",
+        "display" : "Worsening gas exchange"
+      },
+      {
+        "code" : "2320‑0",
+        "display" : "Wound (not related to vascular access) with pus or increased redness"
+      },
+      {
+        "code" : "1971‑1",
+        "display" : "Acute pain, swelling, or tenderness of testes, epididymis, or prostate"
+      },
+      {
+        "code" : "1972‑9",
+        "display" : "Urine not tested for WBC"
+      },
+      {
+        "code" : "2351‑1",
+        "display" : "Criterion 1 ‑ Positive culture from Endotracheal aspirate without purulent respiratory secretions"
+      },
+      {
+        "code" : "2352‑5",
+        "display" : "Criterion 1 ‑ Positive culture from Bronchoalveolar lavage without purulent respiratory secretions"
+      },
+      {
+        "code" : "2353‑3",
+        "display" : "Criterion 1 ‑ Positive culture from Lung tissue without purulent respiratory secretions"
+      },
+      {
+        "code" : "2354‑1",
+        "display" : "Criterion 1 ‑ Positive culture from Protected specimen brush without purulent respiratory secretions"
+      },
+      {
+        "code" : "2355‑9",
+        "display" : "Criterion 2 ‑ Purulent respiratory secretions plus organism(s)"
+      },
+      {
+        "code" : "2356‑4",
+        "display" : "Criterion 2 ‑ Organisms from Sputum cluture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2357‑2",
+        "display" : "Criterion 2 ‑ Organisms from Endotracheal aspirate culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2358‑0",
+        "display" : "Criterion 2 ‑ Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2359‑8",
+        "display" : "Criterion 2 ‑ Organisms from Lung tissue culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2360‑1",
+        "display" : "Criterion 2 ‑ Organisms from Protected specimen brush culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2361‑0",
+        "display" : "Criterion 3 ‑ Positive test Organism(s) identified from pleural fluid"
+      },
+      {
+        "code" : "2362‑4",
+        "display" : "Criterion 3 ‑ Positive test for Lung histopathology"
+      },
+      {
+        "code" : "2363‑2",
+        "display" : "Criterion 3 ‑ Positive Diagnostic test for Legionella species"
+      },
+      {
+        "code" : "2364‑0",
+        "display" : "Criterion 3 ‑ Positive Diagnostic test for selected viral pathogens"
+      },
+      {
+        "code" : "2346‑5",
+        "display" : "Daily min FiO2 increase &gt; 0.20 (20 points) for &gt; 2 days"
+      },
+      {
+        "code" : "2347‑3",
+        "display" : "Daily min PEEP increase &gt; 3 cm H2O for &gt; 2 days"
+      },
+      {
+        "code" : "2348‑1",
+        "display" : "Temperature &gt; 380 C or &lt; 360 C"
+      },
+      {
+        "code" : "2349‑9",
+        "display" : "White blood cell count &gt;= 12,000 or &lt;= 4,000 cells/mm3"
+      },
+      {
+        "code" : "2350‑2",
+        "display" : "A new antimicrobial agent(s) is started, and is continued for &gt;= 4 days"
+      },
+      {
+        "code" : "3070‑0",
+        "display" : "Common commensal from blood specimen(s) and antibiotics for greater than or equal to 5 days"
+      },
+      {
+        "code" : "3072‑6",
+        "display" : "Common commensal from cerebrospinal fluid specimen and antibiotics for greater than or equal to 5 days"
+      },
+      {
+        "code" : "3071‑8",
+        "display" : "Recognized pathogen from cerebrospinal fluid specimen"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "1601‑4",
+        "display" : "Breast abscess or mastitis"
+      },
+      {
+        "code" : "1602‑2",
+        "display" : "Myocarditis or pericarditis"
+      },
+      {
+        "code" : "1603‑0",
+        "display" : "Clinical sepsis"
+      },
+      {
+        "code" : "1604‑8",
+        "display" : "Deep incisional primary SSI"
+      },
+      {
+        "code" : "1605‑5",
+        "display" : "Deep incisional secondary SSI"
+      },
+      {
+        "code" : "1606‑3",
+        "display" : "Vertebral disc space infection"
+      },
+      {
+        "code" : "1607‑1",
+        "display" : "Ear or mastoid infection (otitis externa, otitis media, otitis interna, mastoiditis)"
+      },
+      {
+        "code" : "1608‑9",
+        "display" : "Eye infection, other than conjunctivitis"
+      },
+      {
+        "code" : "1609‑7",
+        "display" : "Gastrointestinal tract infection (esophagus, stomach, small and large bowel, and rectum) excluding gastroenteritis and appendicitis"
+      },
+      {
+        "code" : "1610‑5",
+        "display" : "Intraabdominal infection, not specified elsewhere including gallbladder, bile ducts, liver (excluding viral hepatitis), spleen, pancreas, peritoneum, subphrenic or subdiaphragmatic space, or other intraabdominal tissue or area not specified elsewhere"
+      },
+      {
+        "code" : "1611‑3",
+        "display" : "Intracranial infection (brain abscess, subdural or epidural infection, encephalitis)"
+      },
+      {
+        "code" : "1612‑1",
+        "display" : "Joint or bursa infection"
+      },
+      {
+        "code" : "1613‑9",
+        "display" : "Laboratory‑confirmed bloodstream infection"
+      },
+      {
+        "code" : "1614‑7",
+        "display" : "Other infections of the lower respiratory tract, other than pneumonia"
+      },
+      {
+        "code" : "1615‑4",
+        "display" : "Meningitis or ventriculitis"
+      },
+      {
+        "code" : "1616‑2",
+        "display" : "Oral cavity infection (mouth, tongue, or gums)"
+      },
+      {
+        "code" : "1617‑0",
+        "display" : "Other infections of the male or female reproductive tract (epididymis, testes, prostate, vagina, ovaries, uterus, or other deep pelvic tissues, excluding endometritis or vaginal cuff infections)"
+      },
+      {
+        "code" : "1618‑8",
+        "display" : "Other infections of the urinary tract (kidney, ureter, bladder, urethra, or tissue surrounding the retroperitoneal or perinephric space)"
+      },
+      {
+        "code" : "1619‑6",
+        "display" : "Spinal abscess without meningitis"
+      },
+      {
+        "code" : "1620‑4",
+        "display" : "Superficial incisional primary SSI"
+      },
+      {
+        "code" : "1621‑2",
+        "display" : "Superficial incisional secondary SSI"
+      },
+      {
+        "code" : "1622‑0",
+        "display" : "Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis"
+      },
+      {
+        "code" : "1623‑8",
+        "display" : "Arterial or venous infection"
+      },
+      {
+        "code" : "1624‑6",
+        "display" : "Vaginal cuff infection"
+      },
+      {
+        "code" : "1625‑3",
+        "display" : "Symptomatic UTI (SUTI)"
+      },
+      {
+        "code" : "1626‑1",
+        "display" : "PNU1"
+      },
+      {
+        "code" : "1631‑1",
+        "display" : "PNU2"
+      },
+      {
+        "code" : "1632‑9",
+        "display" : "PNU3"
+      },
+      {
+        "code" : "1671‑7",
+        "display" : "Bronchitis, tracheitis"
+      },
+      {
+        "code" : "1672‑5",
+        "display" : "Burn"
+      },
+      {
+        "code" : "1673‑3",
+        "display" : "Decubitus ulcer"
+      },
+      {
+        "code" : "1674‑1",
+        "display" : "Disseminated infection"
+      },
+      {
+        "code" : "1675‑8",
+        "display" : "Infant pustulosis"
+      },
+      {
+        "code" : "1676‑6",
+        "display" : "Newborn circumcision"
+      },
+      {
+        "code" : "1677‑4",
+        "display" : "Soft tissue, muscle, lymph node, or salivary gland"
+      },
+      {
+        "code" : "2402‑6",
+        "display" : "Asymptomatic Bacteremic UTI (ABUTI)"
+      },
+      {
+        "code" : "1970‑3",
+        "display" : "Periprosthetic Joint Infection"
+      },
+      {
+        "code" : "1640‑2",
+        "display" : "Organ/space"
+      },
+      {
+        "code" : "2343‑4",
+        "display" : "VAC ‑ Ventilator‑Associated Condition"
+      },
+      {
+        "code" : "2344‑2",
+        "display" : "IVAC ‑ Infection‑related Ventilator‑Associated Complication"
+      },
+      {
+        "code" : "2345‑0",
+        "display" : "PVAP ‑ Possible Ventilator‑Associated Pneumonia"
+      },
+      {
+        "code" : "3066‑8",
+        "display" : "Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 1)"
+      },
+      {
+        "code" : "3067‑6",
+        "display" : "Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)"
+      },
+      {
+        "code" : "3068‑4",
+        "display" : "Neonatal Laboratory Confirmed Meningitis (NLCM 1)"
+      },
+      {
+        "code" : "3069‑2",
+        "display" : "Neonatal Laboratory Confirmed Meningitis (NLCM 2)"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:2.16.840.1.113883.6.277",
+  "code" : "3067-6",
+  "display" : "Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "2707005",
+        "display" : "Necrotizing enterocolitis"
+      },
+      {
+        "code" : "9826008",
+        "display" : "Conjunctivitis"
+      },
+      {
+        "code" : "12463005",
+        "display" : "Infectious gastroenteritis"
+      },
+      {
+        "code" : "19824006",
+        "display" : "Skin"
+      },
+      {
+        "code" : "25374005",
+        "display" : "Gastroenteritis"
+      },
+      {
+        "code" : "36971009",
+        "display" : "Sinusitis"
+      },
+      {
+        "code" : "47597000",
+        "display" : "Mediastinitis"
+      },
+      {
+        "code" : "56819008",
+        "display" : "Endocarditis"
+      },
+      {
+        "code" : "60168000",
+        "display" : "Osteomyelitis"
+      },
+      {
+        "code" : "78623009",
+        "display" : "Endometritis"
+      },
+      {
+        "code" : "128241005",
+        "display" : "Hepatitis"
+      },
+      {
+        "code" : "239095007",
+        "display" : "Omphalitis"
+      },
+      {
+        "code" : "300927001",
+        "display" : "Episiotomy"
+      },
+      {
+        "code" : "302935008",
+        "display" : "Disc space"
+      },
+      {
+        "code" : "312157006",
+        "display" : "Infectious mediastinitis"
+      }]
+    },
+    {
+      "system" : "urn:oid:2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "1601‑4",
+        "display" : "Breast abscess or mastitis"
+      },
+      {
+        "code" : "1602‑2",
+        "display" : "Myocarditis or pericarditis"
+      },
+      {
+        "code" : "1603‑0",
+        "display" : "Clinical sepsis"
+      },
+      {
+        "code" : "1604‑8",
+        "display" : "Deep incisional primary SSI"
+      },
+      {
+        "code" : "1605‑5",
+        "display" : "Deep incisional secondary SSI"
+      },
+      {
+        "code" : "1606‑3",
+        "display" : "Vertebral disc space infection"
+      },
+      {
+        "code" : "1607‑1",
+        "display" : "Ear or mastoid infection (otitis externa, otitis media, otitis interna, mastoiditis)"
+      },
+      {
+        "code" : "1608‑9",
+        "display" : "Eye infection, other than conjunctivitis"
+      },
+      {
+        "code" : "1609‑7",
+        "display" : "Gastrointestinal tract infection (esophagus, stomach, small and large bowel, and rectum) excluding gastroenteritis and appendicitis"
+      },
+      {
+        "code" : "1610‑5",
+        "display" : "Intraabdominal infection, not specified elsewhere including gallbladder, bile ducts, liver (excluding viral hepatitis), spleen, pancreas, peritoneum, subphrenic or subdiaphragmatic space, or other intraabdominal tissue or area not specified elsewhere"
+      },
+      {
+        "code" : "1611‑3",
+        "display" : "Intracranial infection (brain abscess, subdural or epidural infection, encephalitis)"
+      },
+      {
+        "code" : "1612‑1",
+        "display" : "Joint or bursa infection"
+      },
+      {
+        "code" : "1613‑9",
+        "display" : "Laboratory‑confirmed bloodstream infection"
+      },
+      {
+        "code" : "1614‑7",
+        "display" : "Other infections of the lower respiratory tract, other than pneumonia"
+      },
+      {
+        "code" : "1615‑4",
+        "display" : "Meningitis or ventriculitis"
+      },
+      {
+        "code" : "1616‑2",
+        "display" : "Oral cavity infection (mouth, tongue, or gums)"
+      },
+      {
+        "code" : "1617‑0",
+        "display" : "Other infections of the male or female reproductive tract (epididymis, testes, prostate, vagina, ovaries, uterus, or other deep pelvic tissues, excluding endometritis or vaginal cuff infections)"
+      },
+      {
+        "code" : "1618‑8",
+        "display" : "Other infections of the urinary tract (kidney, ureter, bladder, urethra, or tissue surrounding the retroperitoneal or perinephric space)"
+      },
+      {
+        "code" : "1619‑6",
+        "display" : "Spinal abscess without meningitis"
+      },
+      {
+        "code" : "1620‑4",
+        "display" : "Superficial incisional primary SSI"
+      },
+      {
+        "code" : "1621‑2",
+        "display" : "Superficial incisional secondary SSI"
+      },
+      {
+        "code" : "1622‑0",
+        "display" : "Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis"
+      },
+      {
+        "code" : "1623‑8",
+        "display" : "Arterial or venous infection"
+      },
+      {
+        "code" : "1624‑6",
+        "display" : "Vaginal cuff infection"
+      },
+      {
+        "code" : "1625‑3",
+        "display" : "Symptomatic UTI (SUTI)"
+      },
+      {
+        "code" : "1626‑1",
+        "display" : "PNU1"
+      },
+      {
+        "code" : "1631‑1",
+        "display" : "PNU2"
+      },
+      {
+        "code" : "1632‑9",
+        "display" : "PNU3"
+      },
+      {
+        "code" : "1671‑7",
+        "display" : "Bronchitis, tracheitis"
+      },
+      {
+        "code" : "1672‑5",
+        "display" : "Burn"
+      },
+      {
+        "code" : "1673‑3",
+        "display" : "Decubitus ulcer"
+      },
+      {
+        "code" : "1674‑1",
+        "display" : "Disseminated infection"
+      },
+      {
+        "code" : "1675‑8",
+        "display" : "Infant pustulosis"
+      },
+      {
+        "code" : "1676‑6",
+        "display" : "Newborn circumcision"
+      },
+      {
+        "code" : "1677‑4",
+        "display" : "Soft tissue, muscle, lymph node, or salivary gland"
+      },
+      {
+        "code" : "2402‑6",
+        "display" : "Asymptomatic Bacteremic UTI (ABUTI)"
+      },
+      {
+        "code" : "1970‑3",
+        "display" : "Periprosthetic Joint Infection"
+      },
+      {
+        "code" : "1640‑2",
+        "display" : "Organ/space"
+      },
+      {
+        "code" : "2343‑4",
+        "display" : "VAC ‑ Ventilator‑Associated Condition"
+      },
+      {
+        "code" : "2344‑2",
+        "display" : "IVAC ‑ Infection‑related Ventilator‑Associated Complication"
+      },
+      {
+        "code" : "2345‑0",
+        "display" : "PVAP ‑ Possible Ventilator‑Associated Pneumonia"
+      },
+      {
+        "code" : "3066‑8",
+        "display" : "Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 1)"
+      },
+      {
+        "code" : "3067‑6",
+        "display" : "Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)"
+      },
+      {
+        "code" : "3068‑4",
+        "display" : "Neonatal Laboratory Confirmed Meningitis (NLCM 1)"
+      },
+      {
+        "code" : "3069‑2",
+        "display" : "Neonatal Laboratory Confirmed Meningitis (NLCM 2)"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:2.16.840.1.113883.6.277",
+  "code" : "1951-3",
+  "display" : "Recognized pathogen from one or more blood specimens"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "1901‑8",
+        "display" : "Not cultured"
+      },
+      {
+        "code" : "1964‑6",
+        "display" : "Allo‑SCT with Grade > 3 GI GVHD"
+      },
+      {
+        "code" : "1965‑3",
+        "display" : "Allo‑ SCT with diarrhea"
+      },
+      {
+        "code" : "1966‑1",
+        "display" : "Positive culture from greater than or equal to two separate tissue or fluid samples from affected joint"
+      },
+      {
+        "code" : "1902‑6",
+        "display" : "Blood culture not done or no organisms detected in blood"
+      },
+      {
+        "code" : "1929‑9",
+        "display" : "&gt;=2 positive cultures with &gt;=10^2 col/ml of same uropathogen from nonvoided specimen"
+      },
+      {
+        "code" : "1931‑5",
+        "display" : "&gt;=2 positive urine cultures with &gt;=10^5 col/cc with no more than 2 organisms"
+      },
+      {
+        "code" : "1923‑3",
+        "display" : "&gt;=5% BAL cells w/bacteria"
+      },
+      {
+        "code" : "1942‑2",
+        "display" : "&gt;15 colonies cultured from IV cannula tip using semiquantitative culture method"
+      },
+      {
+        "code" : "1927‑3",
+        "display" : "1 positive culture with &gt;=10^5 col/cc with no more than 2 organisms"
+      },
+      {
+        "code" : "2403‑4",
+        "display" : "1 positive culture with &gt;=103 CFU/ml and &lt;105 CFU/ml with no more than 2 species of microorganisms"
+      },
+      {
+        "code" : "1930‑7",
+        "display" : "1 positive culture with &lt;=10^5 col/ml of a single uropathogen in patient being treated with an effective antimicrobial agent for UTI"
+      },
+      {
+        "code" : "1938‑0",
+        "display" : "4‑fold rise in L. pneumophila antibody titer"
+      },
+      {
+        "code" : "1935‑6",
+        "display" : "4‑fold rise in paired sera for pathogen"
+      },
+      {
+        "code" : "1944‑8",
+        "display" : "Common skin contaminant from &gt;2 blood cultures (see NHSN protocol for definition of skin contaminant)"
+      },
+      {
+        "code" : "1937‑2",
+        "display" : "L pneumophila serogroup 1 antigens in urine"
+      },
+      {
+        "code" : "1939‑8",
+        "display" : "Matching positive blood and sputum cultures w/ Candida spp"
+      },
+      {
+        "code" : "1941‑4",
+        "display" : "Other positive laboratory tests"
+      },
+      {
+        "code" : "1955‑4",
+        "display" : "Positive blood culture"
+      },
+      {
+        "code" : "1952‑1",
+        "display" : "Positive culture"
+      },
+      {
+        "code" : "1953‑9",
+        "display" : "Positive culture of pathogen"
+      },
+      {
+        "code" : "1954‑7",
+        "display" : "Positive culture of skin contaminant"
+      },
+      {
+        "code" : "1948‑9",
+        "display" : "Positive culture of virus or Chlamydia"
+      },
+      {
+        "code" : "1936‑4",
+        "display" : "Positive culture or micro‑IF of Legionella spp"
+      },
+      {
+        "code" : "1934‑9",
+        "display" : "Positive detection of viral antigen or antibody"
+      },
+      {
+        "code" : "1928‑1",
+        "display" : "Positive dipstick for leukocyte esterase or nitrate"
+      },
+      {
+        "code" : "1943‑0",
+        "display" : "Positive Gram stain when culture is negative or not done"
+      },
+      {
+        "code" : "1950‑5",
+        "display" : "Positive micro‑IF test for Chlamydia"
+      },
+      {
+        "code" : "1949‑7",
+        "display" : "Positive PCR for Chlamydia or Mycoplasma"
+      },
+      {
+        "code" : "1946‑3",
+        "display" : "Positive pleural fluid culture"
+      },
+      {
+        "code" : "1947‑1",
+        "display" : "Positive quantitative culture from LRT specimen"
+      },
+      {
+        "code" : "1924‑0",
+        "display" : "Radiographic evidence of infection"
+      },
+      {
+        "code" : "1951‑3",
+        "display" : "Recognized pathogen from one or more blood cultures"
+      },
+      {
+        "code" : "1957‑0",
+        "display" : "Acute onset of diarrhea (liquid stools for &gt; 12 hours)"
+      },
+      {
+        "code" : "1959‑6",
+        "display" : "Apnea, tachycardia, nasal flaring with retraction of chest wall or grunting"
+      },
+      {
+        "code" : "2513‑0",
+        "display" : "Bilateral infiltrates on chest x‑ray"
+      },
+      {
+        "code" : "1908‑3",
+        "display" : "Bradycardia or tachycardia"
+      },
+      {
+        "code" : "2516‑3",
+        "display" : "Criterion not otherwise specified"
+      },
+      {
+        "code" : "2514‑8",
+        "display" : "Diffuse hemorrhage"
+      },
+      {
+        "code" : "1940‑6",
+        "display" : "Fungi or Pneumocytis carinii from LRT specimen"
+      },
+      {
+        "code" : "1956‑2",
+        "display" : "Histopathologic exam w/ abscess formation, positive quantitative culture of lung parenchyma, or positive quantitative culture of lung parenchyma, or lung parenchyma invasion by fungal hyphae"
+      },
+      {
+        "code" : "1967‑9",
+        "display" : "Incision deliberately opened or otherwise drained by physician"
+      },
+      {
+        "code" : "1920‑8",
+        "display" : "Localized swelling"
+      },
+      {
+        "code" : "2515‑5",
+        "display" : "Nausea/vomiting"
+      },
+      {
+        "code" : "1903‑4",
+        "display" : "New onset/change in sputum"
+      },
+      {
+        "code" : "1907‑5",
+        "display" : "New onset/change in sputum, increased secretions   or increased suctioning"
+      },
+      {
+        "code" : "1904‑2",
+        "display" : "New onset/worsening cough, dyspnea, tachypnea"
+      },
+      {
+        "code" : "1925‑7",
+        "display" : "New or progressive and persistent infiltrate"
+      },
+      {
+        "code" : "1905‑9",
+        "display" : "Other evidence of infection found on direct exam, during surgery, or by diagnostic tests"
+      },
+      {
+        "code" : "1906‑7",
+        "display" : "Other signs and symptoms"
+      },
+      {
+        "code" : "2517‑1",
+        "display" : "Pain not otherwise specified"
+      },
+      {
+        "code" : "1960‑4",
+        "display" : "Pain or tenderness"
+      },
+      {
+        "code" : "1909‑1",
+        "display" : "Persistent microscopic or gross blood in stools"
+      },
+      {
+        "code" : "1963‑8",
+        "display" : "Physician diagnosis of this event type"
+      },
+      {
+        "code" : "1962‑0",
+        "display" : "Physician institutes appropriate antimicrobial therapy"
+      },
+      {
+        "code" : "1926‑5",
+        "display" : "Pneumatoceles (in &lt;=1 y.o.)"
+      },
+      {
+        "code" : "1921‑6",
+        "display" : "Rales or bronchial breath sounds"
+      },
+      {
+        "code" : "2518‑9",
+        "display" : "Rash not otherwise specified"
+      },
+      {
+        "code" : "1968‑7",
+        "display" : "Sinus tract"
+      },
+      {
+        "code" : "1922‑4",
+        "display" : "Wheezing, rales or rhonchi"
+      },
+      {
+        "code" : "1958‑8",
+        "display" : "Worsening gas exchange"
+      },
+      {
+        "code" : "2320‑0",
+        "display" : "Wound (not related to vascular access) with pus or increased redness"
+      },
+      {
+        "code" : "1971‑1",
+        "display" : "Acute pain, swelling, or tenderness of testes, epididymis, or prostate"
+      },
+      {
+        "code" : "1972‑9",
+        "display" : "Urine not tested for WBC"
+      },
+      {
+        "code" : "2351‑1",
+        "display" : "Criterion 1 ‑ Positive culture from Endotracheal aspirate without purulent respiratory secretions"
+      },
+      {
+        "code" : "2352‑5",
+        "display" : "Criterion 1 ‑ Positive culture from Bronchoalveolar lavage without purulent respiratory secretions"
+      },
+      {
+        "code" : "2353‑3",
+        "display" : "Criterion 1 ‑ Positive culture from Lung tissue without purulent respiratory secretions"
+      },
+      {
+        "code" : "2354‑1",
+        "display" : "Criterion 1 ‑ Positive culture from Protected specimen brush without purulent respiratory secretions"
+      },
+      {
+        "code" : "2355‑9",
+        "display" : "Criterion 2 ‑ Purulent respiratory secretions plus organism(s)"
+      },
+      {
+        "code" : "2356‑4",
+        "display" : "Criterion 2 ‑ Organisms from Sputum cluture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2357‑2",
+        "display" : "Criterion 2 ‑ Organisms from Endotracheal aspirate culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2358‑0",
+        "display" : "Criterion 2 ‑ Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2359‑8",
+        "display" : "Criterion 2 ‑ Organisms from Lung tissue culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2360‑1",
+        "display" : "Criterion 2 ‑ Organisms from Protected specimen brush culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2361‑0",
+        "display" : "Criterion 3 ‑ Positive test Organism(s) identified from pleural fluid"
+      },
+      {
+        "code" : "2362‑4",
+        "display" : "Criterion 3 ‑ Positive test for Lung histopathology"
+      },
+      {
+        "code" : "2363‑2",
+        "display" : "Criterion 3 ‑ Positive Diagnostic test for Legionella species"
+      },
+      {
+        "code" : "2364‑0",
+        "display" : "Criterion 3 ‑ Positive Diagnostic test for selected viral pathogens"
+      },
+      {
+        "code" : "2346‑5",
+        "display" : "Daily min FiO2 increase &gt; 0.20 (20 points) for &gt; 2 days"
+      },
+      {
+        "code" : "2347‑3",
+        "display" : "Daily min PEEP increase &gt; 3 cm H2O for &gt; 2 days"
+      },
+      {
+        "code" : "2348‑1",
+        "display" : "Temperature &gt; 380 C or &lt; 360 C"
+      },
+      {
+        "code" : "2349‑9",
+        "display" : "White blood cell count &gt;= 12,000 or &lt;= 4,000 cells/mm3"
+      },
+      {
+        "code" : "2350‑2",
+        "display" : "A new antimicrobial agent(s) is started, and is continued for &gt;= 4 days"
+      },
+      {
+        "code" : "3070‑0",
+        "display" : "Common commensal from blood specimen(s) and antibiotics for greater than or equal to 5 days"
+      },
+      {
+        "code" : "3072‑6",
+        "display" : "Common commensal from cerebrospinal fluid specimen and antibiotics for greater than or equal to 5 days"
+      },
+      {
+        "code" : "3071‑8",
+        "display" : "Recognized pathogen from cerebrospinal fluid specimen"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "165517008",
+        "display" : "Neutropenia"
+      },
+      {
+        "code" : "21522001",
+        "display" : "Abdominal pain"
+      },
+      {
+        "code" : "128477000",
+        "display" : "Abscess"
+      },
+      {
+        "code" : "419284004",
+        "display" : "Altered mental status (in &gt;=70 y.o.)"
+      },
+      {
+        "code" : "1023001",
+        "display" : "Apnea"
+      },
+      {
+        "code" : "161891005",
+        "display" : "Back pain"
+      },
+      {
+        "code" : "48867003",
+        "display" : "Bradycardia"
+      },
+      {
+        "code" : "301863008",
+        "display" : "Cavitation"
+      },
+      {
+        "code" : "128045006",
+        "display" : "Cellulitis"
+      },
+      {
+        "code" : "29857009",
+        "display" : "Chest pain"
+      },
+      {
+        "code" : "43724002",
+        "display" : "Chills"
+      },
+      {
+        "code" : "95436008",
+        "display" : "Consolidation"
+      },
+      {
+        "code" : "102830001",
+        "display" : "Costovertebral angle tenderness or pain"
+      },
+      {
+        "code" : "49727002",
+        "display" : "Cough"
+      },
+      {
+        "code" : "49650001",
+        "display" : "Dysuria"
+      },
+      {
+        "code" : "267038008",
+        "display" : "Edema"
+      },
+      {
+        "code" : "386661006",
+        "display" : "Fever"
+      },
+      {
+        "code" : "12763006",
+        "display" : "Blood pressure decrease"
+      },
+      {
+        "code" : "24184005",
+        "display" : "Blood pressure increase"
+      },
+      {
+        "code" : "247355005",
+        "display" : "Flank pain"
+      },
+      {
+        "code" : "248213001",
+        "display" : "Flushing"
+      },
+      {
+        "code" : "162116003",
+        "display" : "Frequency of urination"
+      },
+      {
+        "code" : "25064002",
+        "display" : "Headache"
+      },
+      {
+        "code" : "304214002",
+        "display" : "Heat"
+      },
+      {
+        "code" : "34436003",
+        "display" : "Hematuria"
+      },
+      {
+        "code" : "123767004",
+        "display" : "Hemoglobinemia"
+      },
+      {
+        "code" : "66857006",
+        "display" : "Hemoptysis"
+      },
+      {
+        "code" : "247472004",
+        "display" : "Hives"
+      },
+      {
+        "code" : "45007003",
+        "display" : "Hypotension"
+      },
+      {
+        "code" : "386689009",
+        "display" : "Hypothermia"
+      },
+      {
+        "code" : "389087006",
+        "display" : "hypoxemia"
+      },
+      {
+        "code" : "165775009",
+        "display" : "Positive antibody screen"
+      },
+      {
+        "code" : "95388000",
+        "display" : "Injection site pain"
+      },
+      {
+        "code" : "418290006",
+        "display" : "Itching"
+      },
+      {
+        "code" : "18165001",
+        "display" : "Jaundice"
+      },
+      {
+        "code" : "214264003",
+        "display" : "Lethargy"
+      },
+      {
+        "code" : "422587007",
+        "display" : "Nausea"
+      },
+      {
+        "code" : "83128009",
+        "display" : "oliguria"
+      },
+      {
+        "code" : "2237002",
+        "display" : "Pleuritic chest pain"
+      },
+      {
+        "code" : "255320000",
+        "display" : "Purulent drainage or material"
+      },
+      {
+        "code" : "4800001",
+        "display" : "Pyuria"
+      },
+      {
+        "code" : "386713009",
+        "display" : "Redness"
+      },
+      {
+        "code" : "128601007",
+        "display" : "Respiratory infection (including pneumonia)"
+      },
+      {
+        "code" : "38880002",
+        "display" : "Rigors"
+      },
+      {
+        "code" : "89138009",
+        "display" : "Shock"
+      },
+      {
+        "code" : "267036007",
+        "display" : "SOB ‑ Shortness of breath"
+      },
+      {
+        "code" : "162053006",
+        "display" : "Suprapubic tenderness"
+      },
+      {
+        "code" : "3424008",
+        "display" : "Tachycardia"
+      },
+      {
+        "code" : "85623003",
+        "display" : "Temperature instability"
+      },
+      {
+        "code" : "75088002",
+        "display" : "Urgency"
+      },
+      {
+        "code" : "39575007",
+        "display" : "Dark urine"
+      },
+      {
+        "code" : "126485001",
+        "display" : "Urticaria"
+      },
+      {
+        "code" : "422400008",
+        "display" : "Vomiting"
+      },
+      {
+        "code" : "56018004",
+        "display" : "Wheezing"
+      },
+      {
+        "code" : "225553008",
+        "display" : "Wound spontaneously dehisces"
+      },
+      {
+        "code" : "68566005",
+        "display" : "Urinary tract infection"
+      },
+      {
+        "code" : "414478003",
+        "display" : "Leukocytosis"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "1901‑8",
+        "display" : "Not cultured"
+      },
+      {
+        "code" : "1964‑6",
+        "display" : "Allo‑SCT with Grade > 3 GI GVHD"
+      },
+      {
+        "code" : "1965‑3",
+        "display" : "Allo‑ SCT with diarrhea"
+      },
+      {
+        "code" : "1966‑1",
+        "display" : "Positive culture from greater than or equal to two separate tissue or fluid samples from affected joint"
+      },
+      {
+        "code" : "1902‑6",
+        "display" : "Blood culture not done or no organisms detected in blood"
+      },
+      {
+        "code" : "1929‑9",
+        "display" : "&gt;=2 positive cultures with &gt;=10^2 col/ml of same uropathogen from nonvoided specimen"
+      },
+      {
+        "code" : "1931‑5",
+        "display" : "&gt;=2 positive urine cultures with &gt;=10^5 col/cc with no more than 2 organisms"
+      },
+      {
+        "code" : "1923‑3",
+        "display" : "&gt;=5% BAL cells w/bacteria"
+      },
+      {
+        "code" : "1942‑2",
+        "display" : "&gt;15 colonies cultured from IV cannula tip using semiquantitative culture method"
+      },
+      {
+        "code" : "1927‑3",
+        "display" : "1 positive culture with &gt;=10^5 col/cc with no more than 2 organisms"
+      },
+      {
+        "code" : "2403‑4",
+        "display" : "1 positive culture with &gt;=103 CFU/ml and &lt;105 CFU/ml with no more than 2 species of microorganisms"
+      },
+      {
+        "code" : "1930‑7",
+        "display" : "1 positive culture with &lt;=10^5 col/ml of a single uropathogen in patient being treated with an effective antimicrobial agent for UTI"
+      },
+      {
+        "code" : "1938‑0",
+        "display" : "4‑fold rise in L. pneumophila antibody titer"
+      },
+      {
+        "code" : "1935‑6",
+        "display" : "4‑fold rise in paired sera for pathogen"
+      },
+      {
+        "code" : "1944‑8",
+        "display" : "Common skin contaminant from &gt;2 blood cultures (see NHSN protocol for definition of skin contaminant)"
+      },
+      {
+        "code" : "1937‑2",
+        "display" : "L pneumophila serogroup 1 antigens in urine"
+      },
+      {
+        "code" : "1939‑8",
+        "display" : "Matching positive blood and sputum cultures w/ Candida spp"
+      },
+      {
+        "code" : "1941‑4",
+        "display" : "Other positive laboratory tests"
+      },
+      {
+        "code" : "1955‑4",
+        "display" : "Positive blood culture"
+      },
+      {
+        "code" : "1952‑1",
+        "display" : "Positive culture"
+      },
+      {
+        "code" : "1953‑9",
+        "display" : "Positive culture of pathogen"
+      },
+      {
+        "code" : "1954‑7",
+        "display" : "Positive culture of skin contaminant"
+      },
+      {
+        "code" : "1948‑9",
+        "display" : "Positive culture of virus or Chlamydia"
+      },
+      {
+        "code" : "1936‑4",
+        "display" : "Positive culture or micro‑IF of Legionella spp"
+      },
+      {
+        "code" : "1934‑9",
+        "display" : "Positive detection of viral antigen or antibody"
+      },
+      {
+        "code" : "1928‑1",
+        "display" : "Positive dipstick for leukocyte esterase or nitrate"
+      },
+      {
+        "code" : "1943‑0",
+        "display" : "Positive Gram stain when culture is negative or not done"
+      },
+      {
+        "code" : "1950‑5",
+        "display" : "Positive micro‑IF test for Chlamydia"
+      },
+      {
+        "code" : "1949‑7",
+        "display" : "Positive PCR for Chlamydia or Mycoplasma"
+      },
+      {
+        "code" : "1946‑3",
+        "display" : "Positive pleural fluid culture"
+      },
+      {
+        "code" : "1947‑1",
+        "display" : "Positive quantitative culture from LRT specimen"
+      },
+      {
+        "code" : "1924‑0",
+        "display" : "Radiographic evidence of infection"
+      },
+      {
+        "code" : "1951‑3",
+        "display" : "Recognized pathogen from one or more blood cultures"
+      },
+      {
+        "code" : "1957‑0",
+        "display" : "Acute onset of diarrhea (liquid stools for &gt; 12 hours)"
+      },
+      {
+        "code" : "1959‑6",
+        "display" : "Apnea, tachycardia, nasal flaring with retraction of chest wall or grunting"
+      },
+      {
+        "code" : "2513‑0",
+        "display" : "Bilateral infiltrates on chest x‑ray"
+      },
+      {
+        "code" : "1908‑3",
+        "display" : "Bradycardia or tachycardia"
+      },
+      {
+        "code" : "2516‑3",
+        "display" : "Criterion not otherwise specified"
+      },
+      {
+        "code" : "2514‑8",
+        "display" : "Diffuse hemorrhage"
+      },
+      {
+        "code" : "1940‑6",
+        "display" : "Fungi or Pneumocytis carinii from LRT specimen"
+      },
+      {
+        "code" : "1956‑2",
+        "display" : "Histopathologic exam w/ abscess formation, positive quantitative culture of lung parenchyma, or positive quantitative culture of lung parenchyma, or lung parenchyma invasion by fungal hyphae"
+      },
+      {
+        "code" : "1967‑9",
+        "display" : "Incision deliberately opened or otherwise drained by physician"
+      },
+      {
+        "code" : "1920‑8",
+        "display" : "Localized swelling"
+      },
+      {
+        "code" : "2515‑5",
+        "display" : "Nausea/vomiting"
+      },
+      {
+        "code" : "1903‑4",
+        "display" : "New onset/change in sputum"
+      },
+      {
+        "code" : "1907‑5",
+        "display" : "New onset/change in sputum, increased secretions   or increased suctioning"
+      },
+      {
+        "code" : "1904‑2",
+        "display" : "New onset/worsening cough, dyspnea, tachypnea"
+      },
+      {
+        "code" : "1925‑7",
+        "display" : "New or progressive and persistent infiltrate"
+      },
+      {
+        "code" : "1905‑9",
+        "display" : "Other evidence of infection found on direct exam, during surgery, or by diagnostic tests"
+      },
+      {
+        "code" : "1906‑7",
+        "display" : "Other signs and symptoms"
+      },
+      {
+        "code" : "2517‑1",
+        "display" : "Pain not otherwise specified"
+      },
+      {
+        "code" : "1960‑4",
+        "display" : "Pain or tenderness"
+      },
+      {
+        "code" : "1909‑1",
+        "display" : "Persistent microscopic or gross blood in stools"
+      },
+      {
+        "code" : "1963‑8",
+        "display" : "Physician diagnosis of this event type"
+      },
+      {
+        "code" : "1962‑0",
+        "display" : "Physician institutes appropriate antimicrobial therapy"
+      },
+      {
+        "code" : "1926‑5",
+        "display" : "Pneumatoceles (in &lt;=1 y.o.)"
+      },
+      {
+        "code" : "1921‑6",
+        "display" : "Rales or bronchial breath sounds"
+      },
+      {
+        "code" : "2518‑9",
+        "display" : "Rash not otherwise specified"
+      },
+      {
+        "code" : "1968‑7",
+        "display" : "Sinus tract"
+      },
+      {
+        "code" : "1922‑4",
+        "display" : "Wheezing, rales or rhonchi"
+      },
+      {
+        "code" : "1958‑8",
+        "display" : "Worsening gas exchange"
+      },
+      {
+        "code" : "2320‑0",
+        "display" : "Wound (not related to vascular access) with pus or increased redness"
+      },
+      {
+        "code" : "1971‑1",
+        "display" : "Acute pain, swelling, or tenderness of testes, epididymis, or prostate"
+      },
+      {
+        "code" : "1972‑9",
+        "display" : "Urine not tested for WBC"
+      },
+      {
+        "code" : "2351‑1",
+        "display" : "Criterion 1 ‑ Positive culture from Endotracheal aspirate without purulent respiratory secretions"
+      },
+      {
+        "code" : "2352‑5",
+        "display" : "Criterion 1 ‑ Positive culture from Bronchoalveolar lavage without purulent respiratory secretions"
+      },
+      {
+        "code" : "2353‑3",
+        "display" : "Criterion 1 ‑ Positive culture from Lung tissue without purulent respiratory secretions"
+      },
+      {
+        "code" : "2354‑1",
+        "display" : "Criterion 1 ‑ Positive culture from Protected specimen brush without purulent respiratory secretions"
+      },
+      {
+        "code" : "2355‑9",
+        "display" : "Criterion 2 ‑ Purulent respiratory secretions plus organism(s)"
+      },
+      {
+        "code" : "2356‑4",
+        "display" : "Criterion 2 ‑ Organisms from Sputum cluture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2357‑2",
+        "display" : "Criterion 2 ‑ Organisms from Endotracheal aspirate culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2358‑0",
+        "display" : "Criterion 2 ‑ Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2359‑8",
+        "display" : "Criterion 2 ‑ Organisms from Lung tissue culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2360‑1",
+        "display" : "Criterion 2 ‑ Organisms from Protected specimen brush culture with purulent respiratory secretions"
+      },
+      {
+        "code" : "2361‑0",
+        "display" : "Criterion 3 ‑ Positive test Organism(s) identified from pleural fluid"
+      },
+      {
+        "code" : "2362‑4",
+        "display" : "Criterion 3 ‑ Positive test for Lung histopathology"
+      },
+      {
+        "code" : "2363‑2",
+        "display" : "Criterion 3 ‑ Positive Diagnostic test for Legionella species"
+      },
+      {
+        "code" : "2364‑0",
+        "display" : "Criterion 3 ‑ Positive Diagnostic test for selected viral pathogens"
+      },
+      {
+        "code" : "2346‑5",
+        "display" : "Daily min FiO2 increase &gt; 0.20 (20 points) for &gt; 2 days"
+      },
+      {
+        "code" : "2347‑3",
+        "display" : "Daily min PEEP increase &gt; 3 cm H2O for &gt; 2 days"
+      },
+      {
+        "code" : "2348‑1",
+        "display" : "Temperature &gt; 380 C or &lt; 360 C"
+      },
+      {
+        "code" : "2349‑9",
+        "display" : "White blood cell count &gt;= 12,000 or &lt;= 4,000 cells/mm3"
+      },
+      {
+        "code" : "2350‑2",
+        "display" : "A new antimicrobial agent(s) is started, and is continued for &gt;= 4 days"
+      },
+      {
+        "code" : "3070‑0",
+        "display" : "Common commensal from blood specimen(s) and antibiotics for greater than or equal to 5 days"
+      },
+      {
+        "code" : "3072‑6",
+        "display" : "Common commensal from cerebrospinal fluid specimen and antibiotics for greater than or equal to 5 days"
+      },
+      {
+        "code" : "3071‑8",
+        "display" : "Recognized pathogen from cerebrospinal fluid specimen"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.277"
 }
 -------------------------------------------------------------------------------------

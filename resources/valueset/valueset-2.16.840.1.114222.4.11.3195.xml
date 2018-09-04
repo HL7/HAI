@@ -9,351 +9,351 @@
     <include>
       <system value="urn:oid:2.16.840.1.113883.6.277" />
       <concept>
-        <code value="1901-8" />
+        <code value="1901&#8209;8" />
         <display value="Not cultured" />
       </concept>
       <concept>
-        <code value="1964-6" />
-        <display value="Allo-SCT with Grade &gt; 3 GI GVHD" />
+        <code value="1964&#8209;6" />
+        <display value="Allo&#8209;SCT with Grade &gt; 3 GI GVHD" />
       </concept>
       <concept>
-        <code value="1965-3" />
-        <display value="Allo- SCT with diarrhea" />
+        <code value="1965&#8209;3" />
+        <display value="Allo&#8209; SCT with diarrhea" />
       </concept>
       <concept>
-        <code value="1966-1" />
+        <code value="1966&#8209;1" />
         <display value="Positive culture from greater than or equal to two separate tissue or fluid samples from affected joint" />
       </concept>
       <concept>
-        <code value="1902-6" />
+        <code value="1902&#8209;6" />
         <display value="Blood culture not done or no organisms detected in blood" />
       </concept>
       <concept>
-        <code value="1929-9" />
+        <code value="1929&#8209;9" />
         <display value="&amp;gt;=2 positive cultures with &amp;gt;=10^2 col/ml of same uropathogen from nonvoided specimen" />
       </concept>
       <concept>
-        <code value="1931-5" />
+        <code value="1931&#8209;5" />
         <display value="&amp;gt;=2 positive urine cultures with &amp;gt;=10^5 col/cc with no more than 2 organisms" />
       </concept>
       <concept>
-        <code value="1923-3" />
+        <code value="1923&#8209;3" />
         <display value="&amp;gt;=5% BAL cells w/bacteria" />
       </concept>
       <concept>
-        <code value="1942-2" />
+        <code value="1942&#8209;2" />
         <display value="&amp;gt;15 colonies cultured from IV cannula tip using semiquantitative culture method" />
       </concept>
       <concept>
-        <code value="1927-3" />
+        <code value="1927&#8209;3" />
         <display value="1 positive culture with &amp;gt;=10^5 col/cc with no more than 2 organisms" />
       </concept>
       <concept>
-        <code value="2403-4" />
+        <code value="2403&#8209;4" />
         <display value="1 positive culture with &amp;gt;=103 CFU/ml and &amp;lt;105 CFU/ml with no more than 2 species of microorganisms" />
       </concept>
       <concept>
-        <code value="1930-7" />
+        <code value="1930&#8209;7" />
         <display
           value="1 positive culture with &amp;lt;=10^5 col/ml of a single uropathogen in patient being treated with an effective antimicrobial agent for UTI"
          />
       </concept>
       <concept>
-        <code value="1938-0" />
-        <display value="4-fold rise in L. pneumophila antibody titer" />
+        <code value="1938&#8209;0" />
+        <display value="4&#8209;fold rise in L. pneumophila antibody titer" />
       </concept>
       <concept>
-        <code value="1935-6" />
-        <display value="4-fold rise in paired sera for pathogen" />
+        <code value="1935&#8209;6" />
+        <display value="4&#8209;fold rise in paired sera for pathogen" />
       </concept>
       <concept>
-        <code value="1944-8" />
+        <code value="1944&#8209;8" />
         <display value="Common skin contaminant from &amp;gt;2 blood cultures (see NHSN protocol for definition of skin contaminant)" />
       </concept>
       <concept>
-        <code value="1937-2" />
+        <code value="1937&#8209;2" />
         <display value="L pneumophila serogroup 1 antigens in urine" />
       </concept>
       <concept>
-        <code value="1939-8" />
+        <code value="1939&#8209;8" />
         <display value="Matching positive blood and sputum cultures w/ Candida spp" />
       </concept>
       <concept>
-        <code value="1941-4" />
+        <code value="1941&#8209;4" />
         <display value="Other positive laboratory tests" />
       </concept>
       <concept>
-        <code value="1955-4" />
+        <code value="1955&#8209;4" />
         <display value="Positive blood culture" />
       </concept>
       <concept>
-        <code value="1952-1" />
+        <code value="1952&#8209;1" />
         <display value="Positive culture" />
       </concept>
       <concept>
-        <code value="1953-9" />
+        <code value="1953&#8209;9" />
         <display value="Positive culture of pathogen" />
       </concept>
       <concept>
-        <code value="1954-7" />
+        <code value="1954&#8209;7" />
         <display value="Positive culture of skin contaminant" />
       </concept>
       <concept>
-        <code value="1948-9" />
+        <code value="1948&#8209;9" />
         <display value="Positive culture of virus or Chlamydia" />
       </concept>
       <concept>
-        <code value="1936-4" />
-        <display value="Positive culture or micro-IF of Legionella spp" />
+        <code value="1936&#8209;4" />
+        <display value="Positive culture or micro&#8209;IF of Legionella spp" />
       </concept>
       <concept>
-        <code value="1934-9" />
+        <code value="1934&#8209;9" />
         <display value="Positive detection of viral antigen or antibody" />
       </concept>
       <concept>
-        <code value="1928-1" />
+        <code value="1928&#8209;1" />
         <display value="Positive dipstick for leukocyte esterase or nitrate" />
       </concept>
       <concept>
-        <code value="1943-0" />
+        <code value="1943&#8209;0" />
         <display value="Positive Gram stain when culture is negative or not done" />
       </concept>
       <concept>
-        <code value="1950-5" />
-        <display value="Positive micro-IF test for Chlamydia" />
+        <code value="1950&#8209;5" />
+        <display value="Positive micro&#8209;IF test for Chlamydia" />
       </concept>
       <concept>
-        <code value="1949-7" />
+        <code value="1949&#8209;7" />
         <display value="Positive PCR for Chlamydia or Mycoplasma" />
       </concept>
       <concept>
-        <code value="1946-3" />
+        <code value="1946&#8209;3" />
         <display value="Positive pleural fluid culture" />
       </concept>
       <concept>
-        <code value="1947-1" />
+        <code value="1947&#8209;1" />
         <display value="Positive quantitative culture from LRT specimen" />
       </concept>
       <concept>
-        <code value="1924-0" />
+        <code value="1924&#8209;0" />
         <display value="Radiographic evidence of infection" />
       </concept>
       <concept>
-        <code value="1951-3" />
+        <code value="1951&#8209;3" />
         <display value="Recognized pathogen from one or more blood cultures" />
       </concept>
       <concept>
-        <code value="1957-0" />
+        <code value="1957&#8209;0" />
         <display value="Acute onset of diarrhea (liquid stools for &amp;gt; 12 hours)" />
       </concept>
       <concept>
-        <code value="1959-6" />
+        <code value="1959&#8209;6" />
         <display value="Apnea, tachycardia, nasal flaring with retraction of chest wall or grunting" />
       </concept>
       <concept>
-        <code value="2513-0" />
-        <display value="Bilateral infiltrates on chest x-ray" />
+        <code value="2513&#8209;0" />
+        <display value="Bilateral infiltrates on chest x&#8209;ray" />
       </concept>
       <concept>
-        <code value="1908-3" />
+        <code value="1908&#8209;3" />
         <display value="Bradycardia or tachycardia" />
       </concept>
       <concept>
-        <code value="2516-3" />
+        <code value="2516&#8209;3" />
         <display value="Criterion not otherwise specified" />
       </concept>
       <concept>
-        <code value="2514-8" />
+        <code value="2514&#8209;8" />
         <display value="Diffuse hemorrhage" />
       </concept>
       <concept>
-        <code value="1940-6" />
+        <code value="1940&#8209;6" />
         <display value="Fungi or Pneumocytis carinii from LRT specimen" />
       </concept>
       <concept>
-        <code value="1956-2" />
+        <code value="1956&#8209;2" />
         <display
           value="Histopathologic exam w/ abscess formation, positive quantitative culture of lung parenchyma, or positive quantitative culture of lung parenchyma, or lung parenchyma invasion by fungal hyphae"
          />
       </concept>
       <concept>
-        <code value="1967-9" />
+        <code value="1967&#8209;9" />
         <display value="Incision deliberately opened or otherwise drained by physician" />
       </concept>
       <concept>
-        <code value="1920-8" />
+        <code value="1920&#8209;8" />
         <display value="Localized swelling" />
       </concept>
       <concept>
-        <code value="2515-5" />
+        <code value="2515&#8209;5" />
         <display value="Nausea/vomiting" />
       </concept>
       <concept>
-        <code value="1903-4" />
+        <code value="1903&#8209;4" />
         <display value="New onset/change in sputum" />
       </concept>
       <concept>
-        <code value="1907-5" />
+        <code value="1907&#8209;5" />
         <display value="New onset/change in sputum, increased secretions   or increased suctioning" />
       </concept>
       <concept>
-        <code value="1904-2" />
+        <code value="1904&#8209;2" />
         <display value="New onset/worsening cough, dyspnea, tachypnea" />
       </concept>
       <concept>
-        <code value="1925-7" />
+        <code value="1925&#8209;7" />
         <display value="New or progressive and persistent infiltrate" />
       </concept>
       <concept>
-        <code value="1905-9" />
+        <code value="1905&#8209;9" />
         <display value="Other evidence of infection found on direct exam, during surgery, or by diagnostic tests" />
       </concept>
       <concept>
-        <code value="1906-7" />
+        <code value="1906&#8209;7" />
         <display value="Other signs and symptoms" />
       </concept>
       <concept>
-        <code value="2517-1" />
+        <code value="2517&#8209;1" />
         <display value="Pain not otherwise specified" />
       </concept>
       <concept>
-        <code value="1960-4" />
+        <code value="1960&#8209;4" />
         <display value="Pain or tenderness" />
       </concept>
       <concept>
-        <code value="1909-1" />
+        <code value="1909&#8209;1" />
         <display value="Persistent microscopic or gross blood in stools" />
       </concept>
       <concept>
-        <code value="1963-8" />
+        <code value="1963&#8209;8" />
         <display value="Physician diagnosis of this event type" />
       </concept>
       <concept>
-        <code value="1962-0" />
+        <code value="1962&#8209;0" />
         <display value="Physician institutes appropriate antimicrobial therapy" />
       </concept>
       <concept>
-        <code value="1926-5" />
+        <code value="1926&#8209;5" />
         <display value="Pneumatoceles (in &amp;lt;=1 y.o.)" />
       </concept>
       <concept>
-        <code value="1921-6" />
+        <code value="1921&#8209;6" />
         <display value="Rales or bronchial breath sounds" />
       </concept>
       <concept>
-        <code value="2518-9" />
+        <code value="2518&#8209;9" />
         <display value="Rash not otherwise specified" />
       </concept>
       <concept>
-        <code value="1968-7" />
+        <code value="1968&#8209;7" />
         <display value="Sinus tract" />
       </concept>
       <concept>
-        <code value="1922-4" />
+        <code value="1922&#8209;4" />
         <display value="Wheezing, rales or rhonchi" />
       </concept>
       <concept>
-        <code value="1958-8" />
+        <code value="1958&#8209;8" />
         <display value="Worsening gas exchange" />
       </concept>
       <concept>
-        <code value="2320-0" />
+        <code value="2320&#8209;0" />
         <display value="Wound (not related to vascular access) with pus or increased redness" />
       </concept>
       <concept>
-        <code value="1971-1" />
+        <code value="1971&#8209;1" />
         <display value="Acute pain, swelling, or tenderness of testes, epididymis, or prostate" />
       </concept>
       <concept>
-        <code value="1972-9" />
+        <code value="1972&#8209;9" />
         <display value="Urine not tested for WBC" />
       </concept>
       <concept>
-        <code value="2351-1" />
-        <display value="Criterion 1 - Positive culture from Endotracheal aspirate without purulent respiratory secretions" />
+        <code value="2351&#8209;1" />
+        <display value="Criterion 1 &#8209; Positive culture from Endotracheal aspirate without purulent respiratory secretions" />
       </concept>
       <concept>
-        <code value="2352-5" />
-        <display value="Criterion 1 - Positive culture from Bronchoalveolar lavage without purulent respiratory secretions" />
+        <code value="2352&#8209;5" />
+        <display value="Criterion 1 &#8209; Positive culture from Bronchoalveolar lavage without purulent respiratory secretions" />
       </concept>
       <concept>
-        <code value="2353-3" />
-        <display value="Criterion 1 - Positive culture from Lung tissue without purulent respiratory secretions" />
+        <code value="2353&#8209;3" />
+        <display value="Criterion 1 &#8209; Positive culture from Lung tissue without purulent respiratory secretions" />
       </concept>
       <concept>
-        <code value="2354-1" />
-        <display value="Criterion 1 - Positive culture from Protected specimen brush without purulent respiratory secretions" />
+        <code value="2354&#8209;1" />
+        <display value="Criterion 1 &#8209; Positive culture from Protected specimen brush without purulent respiratory secretions" />
       </concept>
       <concept>
-        <code value="2355-9" />
-        <display value="Criterion 2 - Purulent respiratory secretions plus organism(s)" />
+        <code value="2355&#8209;9" />
+        <display value="Criterion 2 &#8209; Purulent respiratory secretions plus organism(s)" />
       </concept>
       <concept>
-        <code value="2356-4" />
-        <display value="Criterion 2 - Organisms from Sputum cluture with purulent respiratory secretions" />
+        <code value="2356&#8209;4" />
+        <display value="Criterion 2 &#8209; Organisms from Sputum cluture with purulent respiratory secretions" />
       </concept>
       <concept>
-        <code value="2357-2" />
-        <display value="Criterion 2 - Organisms from Endotracheal aspirate culture with purulent respiratory secretions" />
+        <code value="2357&#8209;2" />
+        <display value="Criterion 2 &#8209; Organisms from Endotracheal aspirate culture with purulent respiratory secretions" />
       </concept>
       <concept>
-        <code value="2358-0" />
-        <display value="Criterion 2 - Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions" />
+        <code value="2358&#8209;0" />
+        <display value="Criterion 2 &#8209; Organisms from Bronchoalveolar lavage culture with purulent respiratory secretions" />
       </concept>
       <concept>
-        <code value="2359-8" />
-        <display value="Criterion 2 - Organisms from Lung tissue culture with purulent respiratory secretions" />
+        <code value="2359&#8209;8" />
+        <display value="Criterion 2 &#8209; Organisms from Lung tissue culture with purulent respiratory secretions" />
       </concept>
       <concept>
-        <code value="2360-1" />
-        <display value="Criterion 2 - Organisms from Protected specimen brush culture with purulent respiratory secretions" />
+        <code value="2360&#8209;1" />
+        <display value="Criterion 2 &#8209; Organisms from Protected specimen brush culture with purulent respiratory secretions" />
       </concept>
       <concept>
-        <code value="2361-0" />
-        <display value="Criterion 3 - Positive test Organism(s) identified from pleural fluid" />
+        <code value="2361&#8209;0" />
+        <display value="Criterion 3 &#8209; Positive test Organism(s) identified from pleural fluid" />
       </concept>
       <concept>
-        <code value="2362-4" />
-        <display value="Criterion 3 - Positive test for Lung histopathology" />
+        <code value="2362&#8209;4" />
+        <display value="Criterion 3 &#8209; Positive test for Lung histopathology" />
       </concept>
       <concept>
-        <code value="2363-2" />
-        <display value="Criterion 3 - Positive Diagnostic test for Legionella species" />
+        <code value="2363&#8209;2" />
+        <display value="Criterion 3 &#8209; Positive Diagnostic test for Legionella species" />
       </concept>
       <concept>
-        <code value="2364-0" />
-        <display value="Criterion 3 - Positive Diagnostic test for selected viral pathogens" />
+        <code value="2364&#8209;0" />
+        <display value="Criterion 3 &#8209; Positive Diagnostic test for selected viral pathogens" />
       </concept>
       <concept>
-        <code value="2346-5" />
+        <code value="2346&#8209;5" />
         <display value="Daily min FiO2 increase &amp;gt; 0.20 (20 points) for &amp;gt; 2 days" />
       </concept>
       <concept>
-        <code value="2347-3" />
+        <code value="2347&#8209;3" />
         <display value="Daily min PEEP increase &amp;gt; 3 cm H2O for &amp;gt; 2 days" />
       </concept>
       <concept>
-        <code value="2348-1" />
+        <code value="2348&#8209;1" />
         <display value="Temperature &amp;gt; 380 C or &amp;lt; 360 C" />
       </concept>
       <concept>
-        <code value="2349-9" />
+        <code value="2349&#8209;9" />
         <display value="White blood cell count &amp;gt;= 12,000 or &amp;lt;= 4,000 cells/mm3" />
       </concept>
       <concept>
-        <code value="2350-2" />
+        <code value="2350&#8209;2" />
         <display value="A new antimicrobial agent(s) is started, and is continued for &amp;gt;= 4 days" />
       </concept>
       <concept>
-        <code value="3070-0" />
+        <code value="3070&#8209;0" />
         <display value="Common commensal from blood specimen(s) and antibiotics for greater than or equal to 5 days" />
       </concept>
       <concept>
-        <code value="3072-6" />
+        <code value="3072&#8209;6" />
         <display value="Common commensal from cerebrospinal fluid specimen and antibiotics for greater than or equal to 5 days" />
       </concept>
       <concept>
-        <code value="3071-8" />
+        <code value="3071&#8209;8" />
         <display value="Recognized pathogen from cerebrospinal fluid specimen" />
       </concept>
     </include>
@@ -541,7 +541,7 @@
       </concept>
       <concept>
         <code value="267036007" />
-        <display value="SOB - Shortness of breath" />
+        <display value="SOB &#8209; Shortness of breath" />
       </concept>
       <concept>
         <code value="162053006" />

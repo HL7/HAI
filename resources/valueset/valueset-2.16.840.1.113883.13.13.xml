@@ -25,8 +25,8 @@
         <display value="Non-Susceptible" />
       </concept>
       <concept>
-        <code value="S-DD" />
-        <display value="Susceptible-dose dependant" />
+        <code value="S&#8209;DD" />
+        <display value="Susceptible&#8209;dose dependant" />
       </concept>
     </include>
   </compose>
