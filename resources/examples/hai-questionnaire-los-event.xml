@@ -8,7 +8,234 @@
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <pre>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event.<br />For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.</pre>
+      <p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event.<br />For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.</p>
+
+      <h2>Late Onset Sepsis/Meningitis Event (LOS) Instance Deatails</h2>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>url</td>
+            <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event</td>
+          </tr>
+
+
+          <tr>
+            <td>Version</td>
+            <td>R1</td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>Late Onset Sepsis/Meningitis Event (LOS)</td>
+          </tr>
+          <tr>
+            <td>Publish date</td>
+            <td>2018-09-30</td>
+          </tr>
+          <tr>
+            <td>Realm</td>
+            <td>US</td>
+          </tr>
+          <tr>
+            <td>Code</td>
+            <td>LOINC 51897-7: Healthcare Associated Infection Report</td>
+          </tr>
+          <tr>
+            <td>Subject type</td>
+            <td>Patient</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Questionnaire Items</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <td>Group</td>
+          </tr>
+          <tr>
+            <td>Item</td>
+          </tr>
+          <tr>
+            <td>Type</td>
+          </tr>
+          <tr>
+            <td>Required</td>
+          </tr>
+          <tr>
+            <td>Repeats</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td />
+            <td>Facility ID</td>
+            <td>url</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Event #</td>
+            <td>url</td>
+            <td>false</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Event Type</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Date of Event</td>
+            <td>date</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Facility Location</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Date Admitted to Facility</td>
+            <td>date</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Inborn/Outborn</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Risk Factors</td>
+            <td>group</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Risk Factors</td>
+            <td>Central line present prior to event, including umbilical catheter</td>
+            <td>boolean</td>
+            <td>false</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Risk Factors</td>
+            <td>Birth weight (grams)</td>
+            <td>quantity</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Risk Factors</td>
+            <td>Gestational Age at Birth</td>
+            <td>quantity</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Event Details</td>
+            <td>group</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Event Details</td>
+            <td>Specific Event</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Event Details</td>
+            <td>Laboratory Criteria Used</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Event Deatils</td>
+            <td>Died</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Event Details</td>
+            <td>Infection contributed to death</td>
+            <td>boolean</td>
+            <td>true if died='true'</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Event Details</td>
+            <td>Discharge date</td>
+            <td>date</td>
+            <td>false</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Findings Group</td>
+            <td>group</td>
+            <td>false</td>
+            <td>true</td>
+          </tr>
+          <tr>
+            <td>Findings Group</td>
+            <td>Pathogen Identified</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Findings Group</td>
+            <td>Pathogen Ranking</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Findings Group</td>
+            <td>Drug Susceptibility Test Group</td>
+            <td>group</td>
+            <td>false</td>
+            <td>true</td>
+          </tr>
+          <tr>
+            <td>Drug Susceptibility Test Group</td>
+            <td>Drug Susceptibility Test</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Drug Susceptibility Test Group</td>
+            <td>Drug Susceptibility Test Interpretation</td> 
+            <td>choice</td>
+            <td>false</td>
+            <td>false</td>
+          </tr>
+          
+          <tr>
+            <td />
+            <td>Comments</td>
+            <td>text</td>
+            <td>false</td>
+            <td>false</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </text>
 
@@ -29,13 +256,12 @@
   <status value="draft" />
 
   <!-- Date on which the questionnaire/form was published -->
-  <date value="2018-04-01" />
+  <date value="2018-09-30" />
 
   <publisher value="HL7" />
 
-  <!-- TODO: Update description -->
   <description
-    value="This report type records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present." />
+    value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present." />
 
   <jurisdiction>
     <coding>
@@ -121,8 +347,7 @@
     <repeats value="false" />
   </item>
 
-  <!-- TODO: Remodel after CDA comment is fixed -->
-  <!-- Inborn/Outborn Observation
+  <!-- Inborn/Outborn
        CDA: Inborn/Outborn Observation-->
   <item>
     <linkId value="inborn-outborn-observation" />
@@ -131,13 +356,11 @@
       <code value="445087001" />
       <display value="Born before arrival to hospital (situation)" />
     </code>
-    <text value="Outborn or inborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false." />
-    <type value="choice" />
+    <text
+      value="Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false." />
+    <type value="boolean" />
     <required value="true" />
     <repeats value="false" />
-    <options>
-      <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.27" />
-    </options>
   </item>
 
   <!-- Sections -->
@@ -154,7 +377,7 @@
     <type value="group" />
     <required value="true" />
     <repeats value="false" />
-    
+
     <!-- Central Line present prior to event, including umbilical catheter
          (CDA Mapping: Infection Risk Factors Observation/value="1006-6" - if present then true) -->
     <item>
@@ -169,8 +392,8 @@
       <required value="false" />
       <repeats value="false" />
     </item>
-    
-    
+
+
     <!-- Birth Weight (grams)
          (CDA Mapping: Infection Risk Factors Measurement Observation/value) -->
     <item>
@@ -185,7 +408,7 @@
       <required value="true" />
       <repeats value="false" />
     </item>
-    
+
     <!-- Gestational Age
          (CDA Mapping: Gestational Age Observation/value) -->
     <item>
@@ -209,10 +432,10 @@
       <required value="true" />
       <repeats value="false" />
     </item>
-    
-    
+
+
   </item>
-  
+
   <!-- Event Details 
          CDA: Infection Details in Late Onset Sepsis Report-->
   <item>
@@ -226,7 +449,7 @@
     <type value="group" />
     <required value="true" />
     <repeats value="false" />
-    
+
     <!-- Infection Condition 
          (CDA Mapping: Infection Condition Observation/value-->
     <item>
@@ -239,7 +462,7 @@
         <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196" />
       </options>
     </item>
-    
+
     <!-- Criteria Used (Lab) 
          (CDA Mapping: Criterion of Diagnosis Observation/value-->
     <item>
@@ -251,9 +474,9 @@
       <options>
         <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195" />
       </options>
-      
+
     </item>
-    
+
     <!-- Died 
          (CDA Mapping: Death Observation in an Infection-type Report/value) -->
     <item>
@@ -268,7 +491,7 @@
       <required value="true" />
       <repeats value="false" />
     </item>
-    
+
     <!-- LOS Contributed to death 
          (CDA Mapping: Infection Contributed to Death Observation) -->
     <item>
@@ -282,7 +505,7 @@
       <required value="true" />
       <repeats value="false" />
     </item>
-    
+
     <!-- Discharge Date 
          (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high) -->
     <item>
@@ -293,7 +516,7 @@
       <repeats value="false" />
     </item>
   </item>
-  
+
   <!-- Findings
        CDA: Findings Section in an Infection-Type Report-->
   <item>
@@ -307,7 +530,7 @@
     <type value="group" />
     <required value="false" />
     <repeats value="true" />
-    
+
     <!-- Pathogen Identified
          (CDA Mapping: Pathogen Identified Observation) -->
     <item>
@@ -315,10 +538,11 @@
       <text value="Pathogen Identified" />
       <type value="choice" />
       <required value="true" />
+      <repeats value="false" />
       <options>
         <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16" />
       </options>
-      
+
     </item>
     <!-- Pathogen Ranking
          (CDA Mapping: Pathogen Ranking Observation) -->
@@ -327,12 +551,13 @@
       <text value="Pathogen Ranking" />
       <type value="choice" />
       <required value="true" />
+      <repeats value="false" />
       <options>
         <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking" />
       </options>
-      
+
     </item>
-    
+
     <!-- Drug Susceptibility Test Group
          (CDA Mapping: Drug Susceptibility Test Observation) -->
     <item>
@@ -341,7 +566,7 @@
       <type value="group" />
       <required value="false" />
       <repeats value="true" />
-      
+
       <!-- Drug Susceptibilty Test 
            CDA: Drug-Susceptibility Test Observation/code -->
       <item>
@@ -349,10 +574,11 @@
         <text value="Drug Susceptibility Test" />
         <type value="choice" />
         <required value="true" />
+        <repeats value="false" />
         <options>
           <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15" />
         </options>
-        
+
       </item>
       <!-- Drug Susceptibilty Test Interpretation
            CDA: Drug-Susceptibility Test Observation/interpretationCode -->
@@ -361,13 +587,14 @@
         <text value="Drug Susceptibility Test Interpretation" />
         <type value="choice" />
         <required value="false" />
+        <repeats value="false" />
         <options>
           <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13" />
         </options>
       </item>
     </item>
   </item>
-    
+
   <!-- Comment
          CDA: NHSN Comment Section/NHSN Comment-->
   <item>
