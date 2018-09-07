@@ -128,10 +128,10 @@
     <linkId value="inborn-outborn-observation" />
     <code>
       <system value="http://loinc.org" />
-      <code value="TEMP_NHSNDeliveryLocation" />
-      <display value="TEMP_NHSNDeliveryLocation" />
+      <code value="445087001" />
+      <display value="Born before arrival to hospital (situation)" />
     </code>
-    <text value="Select: Inborn or Outborn: Whether an infant was born at the reporting hospital or some other location." />
+    <text value="Outborn or inborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false." />
     <type value="choice" />
     <required value="true" />
     <repeats value="false" />

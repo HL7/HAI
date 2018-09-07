@@ -9,27 +9,42 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       <table> 
         <tbody> 
-          <tr> 
-            <td>Name</td> 
-            <td>Ned <b>Nuclear</b>
-            </td> 
-          </tr> 
-          <tr> 
-            <td>Id</td> 
-            <td>MRN: 12345</td> 
-          </tr> 
-          <tr> 
-            <td>Medicaid beneficiary number</td> 
-            <td>959595</td> 
+          <tr>
+            <td>Patient ID</td>
+            <td>Medical Record Number: 12345</td>
           </tr>
-            <tr>
-                <td>Date of Birth</td>
-                <td>1954-11-25</td>
-            </tr>
-            <tr>
-                <td>Sex</td>
-                <td>Male</td>
-            </tr>
+          <tr>
+            <td>Social Security #</td>
+            <td>12345</td>
+          </tr>
+          <tr>
+            <td>Medicaid #</td>
+            <td>959595</td>
+          </tr>
+          <tr>
+            <td>Patient Last Name</td>
+            <td>Nuclear</td>
+          </tr>
+          <tr>
+            <td>Patient First Name</td>
+            <td>Ned</td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <td>Date of Birth</td>
+            <td>1954-11-25</td>
+          </tr>
+          <tr>
+            <td>Ethnicity</td>
+            <td>Not Hispanic or Latino</td>
+          </tr>
+          <tr>
+            <td>Race</td>
+            <td>White</td>
+          </tr>
         </tbody> 
       </table> 
     </div> 
@@ -63,7 +78,7 @@
     </extension>
   </extension>
   
-  
+  <!--    Medicaid beneficiary number    -->
   <identifier> 
     <type> 
       <coding> 
@@ -87,7 +102,7 @@
     <value value="12345"/> 
   </identifier>
   
-  <!--    Medicaid beneficiary number    -->
+  <!-- Medical Record Number -->
   <identifier> 
     <type> 
       <coding> 
