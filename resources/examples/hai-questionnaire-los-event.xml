@@ -10,14 +10,13 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       <p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event.<br />For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.</p>
 
-      <h2>Late Onset Sepsis/Meningitis Event (LOS) Instance Deatails</h2>
+      <h2>Late Onset Sepsis/Meningitis Event (LOS) Instance Details</h2>
       <table border="1">
         <tbody>
           <tr>
             <td>url</td>
             <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event</td>
           </tr>
-
 
           <tr>
             <td>Version</td>
@@ -49,19 +48,11 @@
       <table border="1">
         <thead>
           <tr>
-            <td>Group</td>
-          </tr>
-          <tr>
-            <td>Item</td>
-          </tr>
-          <tr>
-            <td>Type</td>
-          </tr>
-          <tr>
-            <td>Required</td>
-          </tr>
-          <tr>
-            <td>Repeats</td>
+            <th>Group</th>
+            <th>Item</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Repeats</th>
           </tr>
         </thead>
         <tbody>
@@ -164,7 +155,7 @@
             <td>false</td>
           </tr>
           <tr>
-            <td>Event Deatils</td>
+            <td>Event Details</td>
             <td>Died</td>
             <td>boolean</td>
             <td>true</td>
