@@ -2,7 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hai-single-person-report-questionnaire-response" />
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response" />
-  <name value="Healthcare Associated Infection Single-Person Report QuestionnaireResponse" />
+  <name value="hai-single-person-report-questionnaire-response" />  
+  <title value="Healthcare Associated Infection Single-Person Report QuestionnaireResponse" />
   <status value="draft" />
   <publisher value="Lantana Consulting Group" />
   <contact>
@@ -106,31 +107,34 @@
     <element id="QuestionnaireResponse.item">
       <path value="QuestionnaireResponse.item" />
       <short value="item" />
-      <definition value="SHALL contain exactly one [1..1] item (CONF:3370-13)." />
+      <definition value="A questionnaire item" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.item.text">
       <path value="QuestionnaireResponse.item.text" />
+      <definition value="Text description of the questionnaire item" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.item.answer">
       <path value="QuestionnaireResponse.item.answer" />
+      <definition value="The answer to the questionnaire question (item)" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.item.item">
       <path value="QuestionnaireResponse.item.item" />
       <short value="item" />
-      <definition value="This item SHALL contain at least one [1..*] item (CONF:3370-15)." />
+      <definition value="A nested questionnaire item (contained in a group)" />
     </element>
     <element id="QuestionnaireResponse.item.item.text">
       <path value="QuestionnaireResponse.item.item.text" />
       <short value="text" />
-      <definition value="Such items SHALL contain exactly one [1..1] text (CONF:3370-16)." />
+      <definition value="Text description of the questionnaire item" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.item.item.answer">
       <path value="QuestionnaireResponse.item.item.answer" />
+      <definition value="The answer to the questionnaire question (item)" />
       <mustSupport value="true" />
     </element>
   </differential>

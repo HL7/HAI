@@ -2,7 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hai-single-person-report-questionnaire" />
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire" />
-  <name value="Healthcare Associated Infection Single-Person Report Questionnaire" />
+  <name value="hai-single-person-report-questionnaire" />
+  <title value="Healthcare Associated Infection Single-Person Report Questionnaire" />
   <status value="draft" />
   <publisher value="Lantana Consulting Group" />
   <contact>
