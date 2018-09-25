@@ -9,7 +9,7 @@
   </text>
   <identifier>
     <!-- (CDA Mapping: author/assignedAuthor/id/root) -->
-    <system value="2.16.840.1.113883.3.117.1.1.5.1.1.2"/>
+    <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.1.1.2"/>
     <!-- (CDA Mapping: author/assignedAuthor/id/extension) -->
     <value value="anAuthorId"/>
   </identifier>
