@@ -13,7 +13,7 @@
         <tbody>
           <tr>
             <td>Facility ID</td>
-            <td>urn:oid:2.16.840.1.113883.3.117.1.1.5.1.1:9W</td>
+            <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W</td>
           </tr>
           <tr>
             <td>Event #</td>
@@ -191,7 +191,7 @@
     <linkId value="facility" />
     <text value="Facility ID" />
     <answer>
-      <valueUri value="urn:oid:2.16.840.1.113883.3.117.1.1.5.1.1:9W" />
+      <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W" />
     </answer>
   </item>
 
