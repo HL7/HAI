@@ -19,10 +19,6 @@
   </text>
   <url value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259" />
   <version value="0.0.0" />
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.6.259"/>
-  </identifier>
   <name value="hsloc"/>
   <title value="NHSN Healthcare Facility Patient Care Location" />
   <status value="active" />
