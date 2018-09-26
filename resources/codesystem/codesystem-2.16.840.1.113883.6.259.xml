@@ -25,7 +25,7 @@
   </identifier>
   <name value="hsloc"/>
   <title value="NHSN Healthcare Facility Patient Care Location" />
-  <status value="published" />
+  <status value="active" />
   <experimental value="false" />
   <publisher value="Public Health Information Network Vocabulary Access and Distribution System (PHIN VADS)" />
   <description value="A classification of patient care locations within healthcare facilities for public health purposes." />
