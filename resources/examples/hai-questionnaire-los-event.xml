@@ -366,7 +366,6 @@
     </code>
     <text value="Risk Factors: Contains central line present, birth weight, gestational age" />
     <type value="group" />
-    <required value="true" />
     <repeats value="false" />
 
     <!-- Central Line present prior to event, including umbilical catheter
@@ -438,7 +437,6 @@
     </code>
     <text value="Event Details" />
     <type value="group" />
-    <required value="true" />
     <repeats value="false" />
 
     <!-- Infection Condition 
@@ -518,8 +516,7 @@
       <display value="Microbial susceptibility tests Set" />
     </code>
     <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them." />
-    <type value="group" />
-    <required value="false" />
+    <type value="group" />    
     <repeats value="true" />
 
     <!-- Pathogen Identified
@@ -555,7 +552,6 @@
       <linkId value="drug-susceptibility-test-group" />
       <text value="Drug Susceptibility Test Group" />
       <type value="group" />
-      <required value="false" />
       <repeats value="true" />
 
       <!-- Drug Susceptibilty Test 

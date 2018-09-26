@@ -4,7 +4,7 @@
   <name value="NHSNDrugSusceptibilityFindingCode" />
   <status value="active" />
   <description
-    value="Code System: HL7ObservationInterpretation 2.16.840.1.113883.5.83" />
+    value="Codes representing a drug susceptibility finding" />
   <compose>
     <include>
       <system value="http://hl7.org/fhir/v3/ObservationInterpretation" />
