@@ -1,14 +1,236 @@
-<ValueSet xmlns="http://hl7.org/fhir">
-  <id value="2.16.840.1.114222.4.11.3195" />
-  <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195" />
-  <name value="NHSNCriterionOfDiagnosisCode" />
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
+  <id value="2.16.840.1.113883.6.277" />
+  <url value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+  <version value="0.0.1" />
+  <name value="cdcNHSN" />
+  <title value="CDC - National Healthcare Safety Network (NHSN) code system" />
   <status value="active" />
-  <description
-    value="Codes for criterion of diagnosis" />
-  <compose>
-    <include>
-      <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
-      <concept>
+  <publisher value="CDC National Healthcare Safety Network" />
+  <description value="CDC - National Healthcare Safety Network (NHSN) code system - A set of patient safety and healthcare personnel safety vocabulary concepts and associated identifiers maintained as a code system by the CDC's National Healthcare Safety Network." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="1601-4" />
+    <display value="Breast abscess or mastitis" />
+  </concept>
+  <concept>
+    <code value="1602-2" />
+    <display value="Myocarditis or pericarditis" />
+  </concept>
+  <concept>
+    <code value="1603-0" />
+    <display value="Clinical sepsis" />
+  </concept>
+  <concept>
+    <code value="1604-8" />
+    <display value="Deep incisional primary SSI" />
+  </concept>
+  <concept>
+    <code value="1605-5" />
+    <display value="Deep incisional secondary SSI" />
+  </concept>
+  <concept>
+    <code value="1606-3" />
+    <display value="Vertebral disc space infection" />
+  </concept>
+  <concept>
+    <code value="1607-1" />
+    <display value="Ear or mastoid infection (otitis externa, otitis media, otitis interna, mastoiditis)" />
+  </concept>
+  <concept>
+    <code value="1608-9" />
+    <display value="Eye infection, other than conjunctivitis" />
+  </concept>
+  <concept>
+    <code value="1609-7" />
+    <display
+      value="Gastrointestinal tract infection (esophagus, stomach, small and large bowel, and rectum) excluding gastroenteritis and appendicitis"
+    />
+  </concept>
+  <concept>
+    <code value="1610-5" />
+    <display
+      value="Intraabdominal infection, not specified elsewhere including gallbladder, bile ducts, liver (excluding viral hepatitis), spleen, pancreas, peritoneum, subphrenic or subdiaphragmatic space, or other intraabdominal tissue or area not specified elsewhere"
+    />
+  </concept>
+  <concept>
+    <code value="1611-3" />
+    <display value="Intracranial infection (brain abscess, subdural or epidural infection, encephalitis)" />
+  </concept>
+  <concept>
+    <code value="1612-1" />
+    <display value="Joint or bursa infection" />
+  </concept>
+  <concept>
+    <code value="1613-9" />
+    <display value="Laboratory-confirmed bloodstream infection" />
+  </concept>
+  <concept>
+    <code value="1614-7" />
+    <display value="Other infections of the lower respiratory tract, other than pneumonia" />
+  </concept>
+  <concept>
+    <code value="1615-4" />
+    <display value="Meningitis or ventriculitis" />
+  </concept>
+  <concept>
+    <code value="1616-2" />
+    <display value="Oral cavity infection (mouth, tongue, or gums)" />
+  </concept>
+  <concept>
+    <code value="1617-0" />
+    <display
+      value="Other infections of the male or female reproductive tract (epididymis, testes, prostate, vagina, ovaries, uterus, or other deep pelvic tissues, excluding endometritis or vaginal cuff infections)"
+    />
+  </concept>
+  <concept>
+    <code value="1618-8" />
+    <display
+      value="Other infections of the urinary tract (kidney, ureter, bladder, urethra, or tissue surrounding the retroperitoneal or perinephric space)"
+    />
+  </concept>
+  <concept>
+    <code value="1619-6" />
+    <display value="Spinal abscess without meningitis" />
+  </concept>
+  <concept>
+    <code value="1620-4" />
+    <display value="Superficial incisional primary SSI" />
+  </concept>
+  <concept>
+    <code value="1621-2" />
+    <display value="Superficial incisional secondary SSI" />
+  </concept>
+  <concept>
+    <code value="1622-0" />
+    <display value="Upper respiratory tract infection, pharyngitis, laryngitis, epiglottitis" />
+  </concept>
+  <concept>
+    <code value="1623-8" />
+    <display value="Arterial or venous infection" />
+  </concept>
+  <concept>
+    <code value="1624-6" />
+    <display value="Vaginal cuff infection" />
+  </concept>
+  <concept>
+    <code value="1625-3" />
+    <display value="Symptomatic UTI (SUTI)" />
+  </concept>
+  <concept>
+    <code value="1626-1" />
+    <display value="PNU1" />
+  </concept>
+  <concept>
+    <code value="1631-1" />
+    <display value="PNU2" />
+  </concept>
+  <concept>
+    <code value="1632-9" />
+    <display value="PNU3" />
+  </concept>
+  <concept>
+    <code value="1671-7" />
+    <display value="Bronchitis, tracheitis" />
+  </concept>
+  <concept>
+    <code value="1672-5" />
+    <display value="Burn" />
+  </concept>
+  <concept>
+    <code value="1673-3" />
+    <display value="Decubitus ulcer" />
+  </concept>
+  <concept>
+    <code value="1674-1" />
+    <display value="Disseminated infection" />
+  </concept>
+  <concept>
+    <code value="1675-8" />
+    <display value="Infant pustulosis" />
+  </concept>
+  <concept>
+    <code value="1676-6" />
+    <display value="Newborn circumcision" />
+  </concept>
+  <concept>
+    <code value="1677-4" />
+    <display value="Soft tissue, muscle, lymph node, or salivary gland" />
+  </concept>
+  <concept>
+    <code value="2402-6" />
+    <display value="Asymptomatic Bacteremic UTI (ABUTI)" />
+  </concept>
+  <concept>
+    <code value="1970-3" />
+    <display value="Periprosthetic Joint Infection" />
+  </concept>
+  <concept>
+    <code value="1640-2" />
+    <display value="Organ/space" />
+  </concept>
+  <concept>
+    <code value="2343-4" />
+    <display value="VAC - Ventilator-Associated Condition" />
+  </concept>
+  <concept>
+    <code value="2344-2" />
+    <display value="IVAC - Infection-related Ventilator-Associated Complication" />
+  </concept>
+  <concept>
+    <code value="2345-0" />
+    <display value="PVAP - Possible Ventilator-Associated Pneumonia" />
+  </concept>
+  <concept>
+    <code value="3066-8" />
+    <display value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 1)" />
+  </concept>
+  <concept>
+    <code value="3067-6" />
+    <display value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)" />
+  </concept>
+  <concept>
+    <code value="3068-4" />
+    <display value="Neonatal Laboratory Confirmed Meningitis (NLCM 1)" />
+  </concept>
+  <concept>
+    <code value="3069-2" />
+    <display value="Neonatal Laboratory Confirmed Meningitis (NLCM 2)" />
+  </concept>
+  <concept>
+    <code value="2526-2" />
+    <display value="Micafungin Susc Islt" />
+  </concept>  
+  <concept>
+    <code value="1206-2" />
+    <display value="Float" />
+  </concept>
+  <concept>
+    <code value="1792-1" />
+    <display value="MDRO Infection" />
+  </concept>
+  <concept>
+    <code value="1795-4" />
+    <display value="CDAD Infection" />
+  </concept>
+  <concept>
+    <code value="1796-2" />
+    <display value="Infection of the Reproduction System" />
+  </concept>
+  <concept>
+    <code value="1797-0" />
+    <display value="Infection of the Ear/Eyes/Nose or Throat" />
+  </concept>
+  <concept>
+    <code value="1798-8" />
+    <display value="Bone or Joint Infection" />
+  </concept>
+  <concept>
+    <code value="2340-3" />
+    <display value="Ventilator Associated Event" />
+  </concept>
+  <concept>
         <code value="1901-8" />
         <display value="Not cultured" />
       </concept>
@@ -356,237 +578,4 @@
         <code value="3071-8" />
         <display value="Recognized pathogen from cerebrospinal fluid specimen" />
       </concept>
-    </include>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <concept>
-        <code value="165517008" />
-        <display value="Neutropenia" />
-      </concept>
-      <concept>
-        <code value="21522001" />
-        <display value="Abdominal pain" />
-      </concept>
-      <concept>
-        <code value="128477000" />
-        <display value="Abscess" />
-      </concept>
-      <concept>
-        <code value="419284004" />
-        <display value="Altered mental status (in >=70 y.o.)" />
-      </concept>
-      <concept>
-        <code value="1023001" />
-        <display value="Apnea" />
-      </concept>
-      <concept>
-        <code value="161891005" />
-        <display value="Back pain" />
-      </concept>
-      <concept>
-        <code value="48867003" />
-        <display value="Bradycardia" />
-      </concept>
-      <concept>
-        <code value="301863008" />
-        <display value="Cavitation" />
-      </concept>
-      <concept>
-        <code value="128045006" />
-        <display value="Cellulitis" />
-      </concept>
-      <concept>
-        <code value="29857009" />
-        <display value="Chest pain" />
-      </concept>
-      <concept>
-        <code value="43724002" />
-        <display value="Chills" />
-      </concept>
-      <concept>
-        <code value="95436008" />
-        <display value="Consolidation" />
-      </concept>
-      <concept>
-        <code value="102830001" />
-        <display value="Costovertebral angle tenderness or pain" />
-      </concept>
-      <concept>
-        <code value="49727002" />
-        <display value="Cough" />
-      </concept>
-      <concept>
-        <code value="49650001" />
-        <display value="Dysuria" />
-      </concept>
-      <concept>
-        <code value="267038008" />
-        <display value="Edema" />
-      </concept>
-      <concept>
-        <code value="386661006" />
-        <display value="Fever" />
-      </concept>
-      <concept>
-        <code value="12763006" />
-        <display value="Blood pressure decrease" />
-      </concept>
-      <concept>
-        <code value="24184005" />
-        <display value="Blood pressure increase" />
-      </concept>
-      <concept>
-        <code value="247355005" />
-        <display value="Flank pain" />
-      </concept>
-      <concept>
-        <code value="248213001" />
-        <display value="Flushing" />
-      </concept>
-      <concept>
-        <code value="162116003" />
-        <display value="Frequency of urination" />
-      </concept>
-      <concept>
-        <code value="25064002" />
-        <display value="Headache" />
-      </concept>
-      <concept>
-        <code value="304214002" />
-        <display value="Heat" />
-      </concept>
-      <concept>
-        <code value="34436003" />
-        <display value="Hematuria" />
-      </concept>
-      <concept>
-        <code value="123767004" />
-        <display value="Hemoglobinemia" />
-      </concept>
-      <concept>
-        <code value="66857006" />
-        <display value="Hemoptysis" />
-      </concept>
-      <concept>
-        <code value="247472004" />
-        <display value="Hives" />
-      </concept>
-      <concept>
-        <code value="45007003" />
-        <display value="Hypotension" />
-      </concept>
-      <concept>
-        <code value="386689009" />
-        <display value="Hypothermia" />
-      </concept>
-      <concept>
-        <code value="389087006" />
-        <display value="hypoxemia" />
-      </concept>
-      <concept>
-        <code value="165775009" />
-        <display value="Positive antibody screen" />
-      </concept>
-      <concept>
-        <code value="95388000" />
-        <display value="Injection site pain" />
-      </concept>
-      <concept>
-        <code value="418290006" />
-        <display value="Itching" />
-      </concept>
-      <concept>
-        <code value="18165001" />
-        <display value="Jaundice" />
-      </concept>
-      <concept>
-        <code value="214264003" />
-        <display value="Lethargy" />
-      </concept>
-      <concept>
-        <code value="422587007" />
-        <display value="Nausea" />
-      </concept>
-      <concept>
-        <code value="83128009" />
-        <display value="oliguria" />
-      </concept>
-      <concept>
-        <code value="2237002" />
-        <display value="Pleuritic chest pain" />
-      </concept>
-      <concept>
-        <code value="255320000" />
-        <display value="Purulent drainage or material" />
-      </concept>
-      <concept>
-        <code value="4800001" />
-        <display value="Pyuria" />
-      </concept>
-      <concept>
-        <code value="386713009" />
-        <display value="Redness" />
-      </concept>
-      <concept>
-        <code value="128601007" />
-        <display value="Respiratory infection (including pneumonia)" />
-      </concept>
-      <concept>
-        <code value="38880002" />
-        <display value="Rigors" />
-      </concept>
-      <concept>
-        <code value="89138009" />
-        <display value="Shock" />
-      </concept>
-      <concept>
-        <code value="267036007" />
-        <display value="SOB - Shortness of breath" />
-      </concept>
-      <concept>
-        <code value="162053006" />
-        <display value="Suprapubic tenderness" />
-      </concept>
-      <concept>
-        <code value="3424008" />
-        <display value="Tachycardia" />
-      </concept>
-      <concept>
-        <code value="85623003" />
-        <display value="Temperature instability" />
-      </concept>
-      <concept>
-        <code value="75088002" />
-        <display value="Urgency" />
-      </concept>
-      <concept>
-        <code value="39575007" />
-        <display value="Dark urine" />
-      </concept>
-      <concept>
-        <code value="126485001" />
-        <display value="Urticaria" />
-      </concept>
-      <concept>
-        <code value="422400008" />
-        <display value="Vomiting" />
-      </concept>
-      <concept>
-        <code value="56018004" />
-        <display value="Wheezing" />
-      </concept>
-      <concept>
-        <code value="225553008" />
-        <display value="Wound spontaneously dehisces" />
-      </concept>
-      <concept>
-        <code value="68566005" />
-        <display value="Urinary tract infection" />
-      </concept>
-      <concept>
-        <code value="414478003" />
-        <display value="Leukocytosis" />
-      </concept>
-    </include>
-  </compose>
-</ValueSet>
+  </CodeSystem>

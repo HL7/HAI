@@ -72,6 +72,12 @@
     "StructureDefinition/hai-single-person-report-questionnaire-response": {
       "base": "StructureDefinition-hai-single-person-report-questionnaire-response.html",
       "defns": "StructureDefinition-hai-single-person-report-questionnaire-response-definitions.html"
+    },
+    "CodeSystem/2.16.840.1.113883.6.259": {
+      "base": "CodeSystem-2.16.840.1.113883.6.259.html"
+    },
+    "CodeSystem/2.16.840.1.113883.6.277": {
+      "base": "CodeSystem-2.16.840.1.113883.6.277.html"
     }
   }
 }

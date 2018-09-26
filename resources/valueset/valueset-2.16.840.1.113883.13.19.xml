@@ -886,7 +886,7 @@
       </concept>
     </include>
     <include>
-      <system value="urn:oid:2.16.840.1.113883.6.277" />
+      <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
       <concept>
         <code value="1206-2" />
         <display value="Float" />

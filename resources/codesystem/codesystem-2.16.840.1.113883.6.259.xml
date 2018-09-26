@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
   <id value="2.16.840.1.113883.6.259" />
-  <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <h2>HSLOC: 2.16.840.1.113883.6.259</h2>
-      <div>
-        <p>A classification of patient care locations within healthcare facilities for public health purposes.</p>
-        <p>
-          <a href="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.259"
-            >NHSN Healthcare Facility Patient Care Location (urn:oid:2.16.840.1.113883.6.259) PHIN VADS link</a>
-        </p>
-      </div>
-    </div>
-  </text>
   <url value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259" />
   <version value="0.0.1" />
   <name value="hsloc" />

@@ -194,6 +194,16 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Questionnaire.item.item.extension:extensionQuestionnaire-unit">
+      <path value="Questionnaire.item.item.extension" />
+      <sliceName value="extensionQuestionnaire-unit" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-unit" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Questionnaire.item.item.linkId">
       <path value="Questionnaire.item.item.linkId" />
       <mustSupport value="true" />

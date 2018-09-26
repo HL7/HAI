@@ -11,6 +11,7 @@
 
 
 
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -676,6 +677,7 @@ e: {
 
 
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1325,6 +1327,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 
 
 
@@ -2000,6 +2003,7 @@ e: {
 
 
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -2649,6 +2653,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 
 
 
@@ -3322,6 +3327,7 @@ e: {
 
 
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3971,6 +3977,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 
 
 
@@ -4642,6 +4649,7 @@ e: {
 
 
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -5291,6 +5299,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 
 
 
@@ -5959,6 +5968,7 @@ e: {
 
 
 
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -6619,6 +6629,7 @@ e: {
 
 
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -7268,6 +7279,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 
 
 
@@ -7933,6 +7945,7 @@ e: {
 
 
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -8582,6 +8595,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 
 
 
@@ -9245,6 +9259,7 @@ e: {
 
 
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -9894,6 +9909,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 
 
 
@@ -10555,6 +10571,7 @@ e: {
 
 
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -11204,6 +11221,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 
 
 
@@ -11863,6 +11881,7 @@ e: {
 
 
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -12512,6 +12531,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 
 
 {"hierarchical" : false, "valueSet" :{
@@ -13169,6 +13189,7 @@ e: {
 -------------------------------------------------------------------------------------
 
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -13818,6 +13839,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -14473,6 +14495,7 @@ e: {
 }
 -------------------------------------------------------------------------------------
 
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -15122,285 +15145,286 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
-        "code" : "18855‑7",
-        "display" : "5‑fluorocytosine Susc Islt"
+        "code" : "18855?7",
+        "display" : "5?fluorocytosine Susc Islt"
       },
       {
-        "code" : "18860‑7",
+        "code" : "18860?7",
         "display" : "Amikacin Susc Islt"
       },
       {
-        "code" : "18862‑3",
+        "code" : "18862?3",
         "display" : "Amoxicillin+Clav Susc Islt"
       },
       {
-        "code" : "18864‑9",
+        "code" : "18864?9",
         "display" : "Ampicillin Susc Islt"
       },
       {
-        "code" : "18865‑6",
+        "code" : "18865?6",
         "display" : "Ampicillin+Sulbac Susc Islt"
       },
       {
-        "code" : "57095‑2",
+        "code" : "57095?2",
         "display" : "Anidulafungin Susc Islt"
       },
       {
-        "code" : "18866‑4",
+        "code" : "18866?4",
         "display" : "Azithromycin Susc Islt"
       },
       {
-        "code" : "18868‑0",
+        "code" : "18868?0",
         "display" : "Aztreonam Susc Islt"
       },
       {
-        "code" : "32378‑2",
+        "code" : "32378?2",
         "display" : "Caspofungin Susc Islt"
       },
       {
-        "code" : "18878‑9",
+        "code" : "18878?9",
         "display" : "Cefazolin Susc Islt"
       },
       {
-        "code" : "18879‑7",
+        "code" : "18879?7",
         "display" : "Cefepime Susc Islt"
       },
       {
-        "code" : "18886‑2",
+        "code" : "18886?2",
         "display" : "Cefotaxime Susc Islt"
       },
       {
-        "code" : "18887‑0",
+        "code" : "18887?0",
         "display" : "Cefotetan Susc Islt"
       },
       {
-        "code" : "18888‑8",
+        "code" : "18888?8",
         "display" : "Cefoxitin Susc Islt"
       },
       {
-        "code" : "18893‑8",
+        "code" : "18893?8",
         "display" : "Ceftazidime Susc Islt"
       },
       {
-        "code" : "18895‑3",
+        "code" : "18895?3",
         "display" : "Ceftriaxone Susc Islt"
       },
       {
-        "code" : "35783‑0",
+        "code" : "35783?0",
         "display" : "Cefuroxime Oral Susc Islt"
       },
       {
-        "code" : "18900‑1",
+        "code" : "18900?1",
         "display" : "Cephalothin Susc Islt"
       },
       {
-        "code" : "18903‑5",
+        "code" : "18903?5",
         "display" : "Chloramphen Susc Islt"
       },
       {
-        "code" : "18906‑8",
+        "code" : "18906?8",
         "display" : "Ciprofloxacin Susc Islt"
       },
       {
-        "code" : "18907‑6",
+        "code" : "18907?6",
         "display" : "Clarithro Susc Islt"
       },
       {
-        "code" : "18908‑4",
+        "code" : "18908?4",
         "display" : "Clindamycin Susc Islt"
       },
       {
-        "code" : "18912‑6",
+        "code" : "18912?6",
         "display" : "Colistin Susc Islt"
       },
       {
-        "code" : "35789‑7",
+        "code" : "35789?7",
         "display" : "Daptomycin Susc Islt"
       },
       {
-        "code" : "60535‑2",
+        "code" : "60535?2",
         "display" : "Doripenem Susc Islt"
       },
       {
-        "code" : "18917‑5",
+        "code" : "18917?5",
         "display" : "Doxycycline Susc Islt"
       },
       {
-        "code" : "35802‑8",
+        "code" : "35802?8",
         "display" : "Ertapenem Susc Islt"
       },
       {
-        "code" : "18919‑1",
+        "code" : "18919?1",
         "display" : "Erythromycin Susc Islt"
       },
       {
-        "code" : "18924‑1",
+        "code" : "18924?1",
         "display" : "Fluconazole Susc Islt"
       },
       {
-        "code" : "31038‑3",
+        "code" : "31038?3",
         "display" : "Gatifloxacin Susc Islt"
       },
       {
-        "code" : "18928‑2",
+        "code" : "18928?2",
         "display" : "Gentamicin Susc Islt"
       },
       {
-        "code" : "18929‑0",
+        "code" : "18929?0",
         "display" : "Gentamicin Synergy Susc Islt"
       },
       {
-        "code" : "18932‑4",
+        "code" : "18932?4",
         "display" : "Imipenem Susc Islt"
       },
       {
-        "code" : "32603‑3",
+        "code" : "32603?3",
         "display" : "Itraconaz Susc Islt"
       },
       {
-        "code" : "20629‑2",
-        "display" : "L‑Floxacin Susc Islt"
+        "code" : "20629?2",
+        "display" : "L?Floxacin Susc Islt"
       },
       {
-        "code" : "29258‑1",
+        "code" : "29258?1",
         "display" : "Linezolid Susc Islt"
       },
       {
-        "code" : "18943‑1",
+        "code" : "18943?1",
         "display" : "Meropenem Susc Islt"
       },
       {
-        "code" : "18945‑6",
+        "code" : "18945?6",
         "display" : "Methicillin Susc Islt"
       },
       {
-        "code" : "18946‑4",
+        "code" : "18946?4",
         "display" : "Metronidazole Susc Islt"
       },
       {
-        "code" : "18948‑0",
+        "code" : "18948?0",
         "display" : "Minocycline Susc Islt"
       },
       {
-        "code" : "31039‑1",
+        "code" : "31039?1",
         "display" : "Moxifloxacin Susc Islt"
       },
       {
-        "code" : "18959‑7",
+        "code" : "18959?7",
         "display" : "Ofloxacin Susc Islt"
       },
       {
-        "code" : "18961‑3",
+        "code" : "18961?3",
         "display" : "Oxacillin Susc Islt"
       },
       {
-        "code" : "18965‑4",
+        "code" : "18965?4",
         "display" : "Penicillin G Susc Islt"
       },
       {
-        "code" : "18969‑6",
+        "code" : "18969?6",
         "display" : "Piperacillin Susc Islt"
       },
       {
-        "code" : "18970‑4",
+        "code" : "18970?4",
         "display" : "Piperacillin+Tazobac Susc Islt"
       },
       {
-        "code" : "18972‑0",
+        "code" : "18972?0",
         "display" : "Polymyxin B Susc Islt"
       },
       {
-        "code" : "23640‑6",
+        "code" : "23640?6",
         "display" : "Quinupristin+Dalfoprist Susc Islt"
       },
       {
-        "code" : "18974‑6",
+        "code" : "18974?6",
         "display" : "Rifampin Susc Islt"
       },
       {
-        "code" : "18983‑7",
+        "code" : "18983?7",
         "display" : "Streptomycin High Pot Susc Islt"
       },
       {
-        "code" : "18993‑6",
+        "code" : "18993?6",
         "display" : "Tetracycline Susc Islt"
       },
       {
-        "code" : "18994‑4",
+        "code" : "18994?4",
         "display" : "Ticarcillin Susc Islt"
       },
       {
-        "code" : "18995‑1",
+        "code" : "18995?1",
         "display" : "Ticarcillin+Clav Susc Islt"
       },
       {
-        "code" : "42357‑4",
+        "code" : "42357?4",
         "display" : "Tigecycline Susc Islt"
       },
       {
-        "code" : "18998‑5",
+        "code" : "18998?5",
         "display" : "TMP SMX Susc Islt"
       },
       {
-        "code" : "18996‑9",
+        "code" : "18996?9",
         "display" : "Tobramycin Susc Islt"
       },
       {
-        "code" : "19000‑9",
+        "code" : "19000?9",
         "display" : "Vancomycin Susc Islt"
       },
       {
-        "code" : "32379‑0",
+        "code" : "32379?0",
         "display" : "Voriconazole Susc Islt"
       },
       {
-        "code" : "18955‑5",
+        "code" : "18955?5",
         "display" : "Nitrofurantoin"
       },
       {
-        "code" : "18861‑5",
+        "code" : "18861?5",
         "display" : "Amoxicillin Susc Islt"
       },
       {
-        "code" : "35816‑8",
+        "code" : "35816?8",
         "display" : "Gemifloxacin Susc Islt"
       },
       {
-        "code" : "18939‑9",
+        "code" : "18939?9",
         "display" : "Lomefloxacin Susc Islt"
       },
       {
-        "code" : "18956‑3",
+        "code" : "18956?3",
         "display" : "Norfloxacin Susc Islt"
       },
       {
-        "code" : "18966‑2",
+        "code" : "18966?2",
         "display" : "Penicillin V Susc Islt"
       },
       {
-        "code" : "54188‑8�",
+        "code" : "54188?8?",
         "display" : "Posaconazole Susc Islt"
       },
       {
-        "code" : "18982‑9",
+        "code" : "18982?9",
         "display" : "Streptomycin Susc Islt"
       },
       {
-        "code" : "18986‑0",
+        "code" : "18986?0",
         "display" : "Sulfisoxaz Susc Islt"
       },
       {
-        "code" : "35845‑7�",
+        "code" : "35845?7?",
         "display" : "Telithromycin Susc Islt"
       },
       {
-        "code" : "18997‑7",
+        "code" : "18997?7",
         "display" : "Trimethoprim Susc Islt"
       }]
     }]
@@ -15775,285 +15799,286 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
-        "code" : "18855‑7",
-        "display" : "5‑fluorocytosine Susc Islt"
+        "code" : "18855?7",
+        "display" : "5?fluorocytosine Susc Islt"
       },
       {
-        "code" : "18860‑7",
+        "code" : "18860?7",
         "display" : "Amikacin Susc Islt"
       },
       {
-        "code" : "18862‑3",
+        "code" : "18862?3",
         "display" : "Amoxicillin+Clav Susc Islt"
       },
       {
-        "code" : "18864‑9",
+        "code" : "18864?9",
         "display" : "Ampicillin Susc Islt"
       },
       {
-        "code" : "18865‑6",
+        "code" : "18865?6",
         "display" : "Ampicillin+Sulbac Susc Islt"
       },
       {
-        "code" : "57095‑2",
+        "code" : "57095?2",
         "display" : "Anidulafungin Susc Islt"
       },
       {
-        "code" : "18866‑4",
+        "code" : "18866?4",
         "display" : "Azithromycin Susc Islt"
       },
       {
-        "code" : "18868‑0",
+        "code" : "18868?0",
         "display" : "Aztreonam Susc Islt"
       },
       {
-        "code" : "32378‑2",
+        "code" : "32378?2",
         "display" : "Caspofungin Susc Islt"
       },
       {
-        "code" : "18878‑9",
+        "code" : "18878?9",
         "display" : "Cefazolin Susc Islt"
       },
       {
-        "code" : "18879‑7",
+        "code" : "18879?7",
         "display" : "Cefepime Susc Islt"
       },
       {
-        "code" : "18886‑2",
+        "code" : "18886?2",
         "display" : "Cefotaxime Susc Islt"
       },
       {
-        "code" : "18887‑0",
+        "code" : "18887?0",
         "display" : "Cefotetan Susc Islt"
       },
       {
-        "code" : "18888‑8",
+        "code" : "18888?8",
         "display" : "Cefoxitin Susc Islt"
       },
       {
-        "code" : "18893‑8",
+        "code" : "18893?8",
         "display" : "Ceftazidime Susc Islt"
       },
       {
-        "code" : "18895‑3",
+        "code" : "18895?3",
         "display" : "Ceftriaxone Susc Islt"
       },
       {
-        "code" : "35783‑0",
+        "code" : "35783?0",
         "display" : "Cefuroxime Oral Susc Islt"
       },
       {
-        "code" : "18900‑1",
+        "code" : "18900?1",
         "display" : "Cephalothin Susc Islt"
       },
       {
-        "code" : "18903‑5",
+        "code" : "18903?5",
         "display" : "Chloramphen Susc Islt"
       },
       {
-        "code" : "18906‑8",
+        "code" : "18906?8",
         "display" : "Ciprofloxacin Susc Islt"
       },
       {
-        "code" : "18907‑6",
+        "code" : "18907?6",
         "display" : "Clarithro Susc Islt"
       },
       {
-        "code" : "18908‑4",
+        "code" : "18908?4",
         "display" : "Clindamycin Susc Islt"
       },
       {
-        "code" : "18912‑6",
+        "code" : "18912?6",
         "display" : "Colistin Susc Islt"
       },
       {
-        "code" : "35789‑7",
+        "code" : "35789?7",
         "display" : "Daptomycin Susc Islt"
       },
       {
-        "code" : "60535‑2",
+        "code" : "60535?2",
         "display" : "Doripenem Susc Islt"
       },
       {
-        "code" : "18917‑5",
+        "code" : "18917?5",
         "display" : "Doxycycline Susc Islt"
       },
       {
-        "code" : "35802‑8",
+        "code" : "35802?8",
         "display" : "Ertapenem Susc Islt"
       },
       {
-        "code" : "18919‑1",
+        "code" : "18919?1",
         "display" : "Erythromycin Susc Islt"
       },
       {
-        "code" : "18924‑1",
+        "code" : "18924?1",
         "display" : "Fluconazole Susc Islt"
       },
       {
-        "code" : "31038‑3",
+        "code" : "31038?3",
         "display" : "Gatifloxacin Susc Islt"
       },
       {
-        "code" : "18928‑2",
+        "code" : "18928?2",
         "display" : "Gentamicin Susc Islt"
       },
       {
-        "code" : "18929‑0",
+        "code" : "18929?0",
         "display" : "Gentamicin Synergy Susc Islt"
       },
       {
-        "code" : "18932‑4",
+        "code" : "18932?4",
         "display" : "Imipenem Susc Islt"
       },
       {
-        "code" : "32603‑3",
+        "code" : "32603?3",
         "display" : "Itraconaz Susc Islt"
       },
       {
-        "code" : "20629‑2",
-        "display" : "L‑Floxacin Susc Islt"
+        "code" : "20629?2",
+        "display" : "L?Floxacin Susc Islt"
       },
       {
-        "code" : "29258‑1",
+        "code" : "29258?1",
         "display" : "Linezolid Susc Islt"
       },
       {
-        "code" : "18943‑1",
+        "code" : "18943?1",
         "display" : "Meropenem Susc Islt"
       },
       {
-        "code" : "18945‑6",
+        "code" : "18945?6",
         "display" : "Methicillin Susc Islt"
       },
       {
-        "code" : "18946‑4",
+        "code" : "18946?4",
         "display" : "Metronidazole Susc Islt"
       },
       {
-        "code" : "18948‑0",
+        "code" : "18948?0",
         "display" : "Minocycline Susc Islt"
       },
       {
-        "code" : "31039‑1",
+        "code" : "31039?1",
         "display" : "Moxifloxacin Susc Islt"
       },
       {
-        "code" : "18959‑7",
+        "code" : "18959?7",
         "display" : "Ofloxacin Susc Islt"
       },
       {
-        "code" : "18961‑3",
+        "code" : "18961?3",
         "display" : "Oxacillin Susc Islt"
       },
       {
-        "code" : "18965‑4",
+        "code" : "18965?4",
         "display" : "Penicillin G Susc Islt"
       },
       {
-        "code" : "18969‑6",
+        "code" : "18969?6",
         "display" : "Piperacillin Susc Islt"
       },
       {
-        "code" : "18970‑4",
+        "code" : "18970?4",
         "display" : "Piperacillin+Tazobac Susc Islt"
       },
       {
-        "code" : "18972‑0",
+        "code" : "18972?0",
         "display" : "Polymyxin B Susc Islt"
       },
       {
-        "code" : "23640‑6",
+        "code" : "23640?6",
         "display" : "Quinupristin+Dalfoprist Susc Islt"
       },
       {
-        "code" : "18974‑6",
+        "code" : "18974?6",
         "display" : "Rifampin Susc Islt"
       },
       {
-        "code" : "18983‑7",
+        "code" : "18983?7",
         "display" : "Streptomycin High Pot Susc Islt"
       },
       {
-        "code" : "18993‑6",
+        "code" : "18993?6",
         "display" : "Tetracycline Susc Islt"
       },
       {
-        "code" : "18994‑4",
+        "code" : "18994?4",
         "display" : "Ticarcillin Susc Islt"
       },
       {
-        "code" : "18995‑1",
+        "code" : "18995?1",
         "display" : "Ticarcillin+Clav Susc Islt"
       },
       {
-        "code" : "42357‑4",
+        "code" : "42357?4",
         "display" : "Tigecycline Susc Islt"
       },
       {
-        "code" : "18998‑5",
+        "code" : "18998?5",
         "display" : "TMP SMX Susc Islt"
       },
       {
-        "code" : "18996‑9",
+        "code" : "18996?9",
         "display" : "Tobramycin Susc Islt"
       },
       {
-        "code" : "19000‑9",
+        "code" : "19000?9",
         "display" : "Vancomycin Susc Islt"
       },
       {
-        "code" : "32379‑0",
+        "code" : "32379?0",
         "display" : "Voriconazole Susc Islt"
       },
       {
-        "code" : "18955‑5",
+        "code" : "18955?5",
         "display" : "Nitrofurantoin"
       },
       {
-        "code" : "18861‑5",
+        "code" : "18861?5",
         "display" : "Amoxicillin Susc Islt"
       },
       {
-        "code" : "35816‑8",
+        "code" : "35816?8",
         "display" : "Gemifloxacin Susc Islt"
       },
       {
-        "code" : "18939‑9",
+        "code" : "18939?9",
         "display" : "Lomefloxacin Susc Islt"
       },
       {
-        "code" : "18956‑3",
+        "code" : "18956?3",
         "display" : "Norfloxacin Susc Islt"
       },
       {
-        "code" : "18966‑2",
+        "code" : "18966?2",
         "display" : "Penicillin V Susc Islt"
       },
       {
-        "code" : "54188‑8�",
+        "code" : "54188?8?",
         "display" : "Posaconazole Susc Islt"
       },
       {
-        "code" : "18982‑9",
+        "code" : "18982?9",
         "display" : "Streptomycin Susc Islt"
       },
       {
-        "code" : "18986‑0",
+        "code" : "18986?0",
         "display" : "Sulfisoxaz Susc Islt"
       },
       {
-        "code" : "35845‑7�",
+        "code" : "35845?7?",
         "display" : "Telithromycin Susc Islt"
       },
       {
-        "code" : "18997‑7",
+        "code" : "18997?7",
         "display" : "Trimethoprim Susc Islt"
       }]
     }]
@@ -16417,6 +16442,1373 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "18997‑7",
+      "display" : "Trimethoprim Susc Islt"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "51897-7"
+}, "valueSet" :null}####
+v: {
+  "display" : "Healthcare Associated Infection report Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "51897-7",
+  "display" : "Healthcare Associated Infection report Document"
+}, "valueSet" :null}####
+v: {
+  "display" : "Healthcare Associated Infection report Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "51898-5",
+  "display" : "Risk factors Document"
+}, "valueSet" :null}####
+v: {
+  "display" : "Risk factors Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "76516-4",
+  "display" : "Gestational age--at birth"
+}, "valueSet" :null}####
+v: {
+  "display" : "Gestational age--at birth",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "51899-3",
+  "display" : "Details Document"
+}, "valueSet" :null}####
+v: {
+  "display" : "Details Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "18769-0",
+  "display" : "Microbial susceptibility tests Set"
+}, "valueSet" :null}####
+v: {
+  "display" : "Microbial susceptibility tests Set",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "18855-7",
+        "display" : "5-fluorocytosine Susc Islt"
+      },
+      {
+        "code" : "18860-7",
+        "display" : "Amikacin Susc Islt"
+      },
+      {
+        "code" : "18862-3",
+        "display" : "Amoxicillin+Clav Susc Islt"
+      },
+      {
+        "code" : "18864-9",
+        "display" : "Ampicillin Susc Islt"
+      },
+      {
+        "code" : "18865-6",
+        "display" : "Ampicillin+Sulbac Susc Islt"
+      },
+      {
+        "code" : "57095-2",
+        "display" : "Anidulafungin Susc Islt"
+      },
+      {
+        "code" : "18866-4",
+        "display" : "Azithromycin Susc Islt"
+      },
+      {
+        "code" : "18868-0",
+        "display" : "Aztreonam Susc Islt"
+      },
+      {
+        "code" : "32378-2",
+        "display" : "Caspofungin Susc Islt"
+      },
+      {
+        "code" : "18878-9",
+        "display" : "Cefazolin Susc Islt"
+      },
+      {
+        "code" : "18879-7",
+        "display" : "Cefepime Susc Islt"
+      },
+      {
+        "code" : "18886-2",
+        "display" : "Cefotaxime Susc Islt"
+      },
+      {
+        "code" : "18887-0",
+        "display" : "Cefotetan Susc Islt"
+      },
+      {
+        "code" : "18888-8",
+        "display" : "Cefoxitin Susc Islt"
+      },
+      {
+        "code" : "18893-8",
+        "display" : "Ceftazidime Susc Islt"
+      },
+      {
+        "code" : "18895-3",
+        "display" : "Ceftriaxone Susc Islt"
+      },
+      {
+        "code" : "35783-0",
+        "display" : "Cefuroxime Oral Susc Islt"
+      },
+      {
+        "code" : "18900-1",
+        "display" : "Cephalothin Susc Islt"
+      },
+      {
+        "code" : "18903-5",
+        "display" : "Chloramphen Susc Islt"
+      },
+      {
+        "code" : "18906-8",
+        "display" : "Ciprofloxacin Susc Islt"
+      },
+      {
+        "code" : "18907-6",
+        "display" : "Clarithro Susc Islt"
+      },
+      {
+        "code" : "18908-4",
+        "display" : "Clindamycin Susc Islt"
+      },
+      {
+        "code" : "18912-6",
+        "display" : "Colistin Susc Islt"
+      },
+      {
+        "code" : "35789-7",
+        "display" : "Daptomycin Susc Islt"
+      },
+      {
+        "code" : "60535-2",
+        "display" : "Doripenem Susc Islt"
+      },
+      {
+        "code" : "18917-5",
+        "display" : "Doxycycline Susc Islt"
+      },
+      {
+        "code" : "35802-8",
+        "display" : "Ertapenem Susc Islt"
+      },
+      {
+        "code" : "18919-1",
+        "display" : "Erythromycin Susc Islt"
+      },
+      {
+        "code" : "18924-1",
+        "display" : "Fluconazole Susc Islt"
+      },
+      {
+        "code" : "31038-3",
+        "display" : "Gatifloxacin Susc Islt"
+      },
+      {
+        "code" : "18928-2",
+        "display" : "Gentamicin Susc Islt"
+      },
+      {
+        "code" : "18929-0",
+        "display" : "Gentamicin Synergy Susc Islt"
+      },
+      {
+        "code" : "18932-4",
+        "display" : "Imipenem Susc Islt"
+      },
+      {
+        "code" : "32603-3",
+        "display" : "Itraconaz Susc Islt"
+      },
+      {
+        "code" : "20629-2",
+        "display" : "L-Floxacin Susc Islt"
+      },
+      {
+        "code" : "29258-1",
+        "display" : "Linezolid Susc Islt"
+      },
+      {
+        "code" : "18943-1",
+        "display" : "Meropenem Susc Islt"
+      },
+      {
+        "code" : "18945-6",
+        "display" : "Methicillin Susc Islt"
+      },
+      {
+        "code" : "18946-4",
+        "display" : "Metronidazole Susc Islt"
+      },
+      {
+        "code" : "18948-0",
+        "display" : "Minocycline Susc Islt"
+      },
+      {
+        "code" : "31039-1",
+        "display" : "Moxifloxacin Susc Islt"
+      },
+      {
+        "code" : "18959-7",
+        "display" : "Ofloxacin Susc Islt"
+      },
+      {
+        "code" : "18961-3",
+        "display" : "Oxacillin Susc Islt"
+      },
+      {
+        "code" : "18965-4",
+        "display" : "Penicillin G Susc Islt"
+      },
+      {
+        "code" : "18969-6",
+        "display" : "Piperacillin Susc Islt"
+      },
+      {
+        "code" : "18970-4",
+        "display" : "Piperacillin+Tazobac Susc Islt"
+      },
+      {
+        "code" : "18972-0",
+        "display" : "Polymyxin B Susc Islt"
+      },
+      {
+        "code" : "23640-6",
+        "display" : "Quinupristin+Dalfoprist Susc Islt"
+      },
+      {
+        "code" : "18974-6",
+        "display" : "Rifampin Susc Islt"
+      },
+      {
+        "code" : "18983-7",
+        "display" : "Streptomycin High Pot Susc Islt"
+      },
+      {
+        "code" : "18993-6",
+        "display" : "Tetracycline Susc Islt"
+      },
+      {
+        "code" : "18994-4",
+        "display" : "Ticarcillin Susc Islt"
+      },
+      {
+        "code" : "18995-1",
+        "display" : "Ticarcillin+Clav Susc Islt"
+      },
+      {
+        "code" : "42357-4",
+        "display" : "Tigecycline Susc Islt"
+      },
+      {
+        "code" : "18998-5",
+        "display" : "TMP SMX Susc Islt"
+      },
+      {
+        "code" : "18996-9",
+        "display" : "Tobramycin Susc Islt"
+      },
+      {
+        "code" : "19000-9",
+        "display" : "Vancomycin Susc Islt"
+      },
+      {
+        "code" : "32379-0",
+        "display" : "Voriconazole Susc Islt"
+      },
+      {
+        "code" : "18955-5",
+        "display" : "Nitrofurantoin"
+      },
+      {
+        "code" : "18861-5",
+        "display" : "Amoxicillin Susc Islt"
+      },
+      {
+        "code" : "35816-8",
+        "display" : "Gemifloxacin Susc Islt"
+      },
+      {
+        "code" : "18939-9",
+        "display" : "Lomefloxacin Susc Islt"
+      },
+      {
+        "code" : "18956-3",
+        "display" : "Norfloxacin Susc Islt"
+      },
+      {
+        "code" : "18966-2",
+        "display" : "Penicillin V Susc Islt"
+      },
+      {
+        "code" : "54188-8",
+        "display" : "Posaconazole Susc Islt"
+      },
+      {
+        "code" : "18982-9",
+        "display" : "Streptomycin Susc Islt"
+      },
+      {
+        "code" : "18986-0",
+        "display" : "Sulfisoxaz Susc Islt"
+      },
+      {
+        "code" : "35845-7",
+        "display" : "Telithromycin Susc Islt"
+      },
+      {
+        "code" : "18997-7",
+        "display" : "Trimethoprim Susc Islt"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:1fd8207e-bd89-4d29-8810-25b5cc9bc81e",
+    "timestamp" : "2018-09-26T04:17:27.889Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.64"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "18855-7",
+      "display" : "5-fluorocytosine Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18860-7",
+      "display" : "Amikacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18862-3",
+      "display" : "Amoxicillin+Clav Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18864-9",
+      "display" : "Ampicillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18865-6",
+      "display" : "Ampicillin+Sulbac Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "57095-2",
+      "display" : "Anidulafungin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18866-4",
+      "display" : "Azithromycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18868-0",
+      "display" : "Aztreonam Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32378-2",
+      "display" : "Caspofungin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18878-9",
+      "display" : "Cefazolin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18879-7",
+      "display" : "Cefepime Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18886-2",
+      "display" : "Cefotaxime Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18887-0",
+      "display" : "Cefotetan Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18888-8",
+      "display" : "Cefoxitin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18893-8",
+      "display" : "Ceftazidime Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18895-3",
+      "display" : "Ceftriaxone Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35783-0",
+      "display" : "Cefuroxime Oral Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18900-1",
+      "display" : "Cephalothin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18903-5",
+      "display" : "Chloramphen Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18906-8",
+      "display" : "Ciprofloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18907-6",
+      "display" : "Clarithro Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18908-4",
+      "display" : "Clindamycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18912-6",
+      "display" : "Colistin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35789-7",
+      "display" : "Daptomycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "60535-2",
+      "display" : "Doripenem Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18917-5",
+      "display" : "Doxycycline Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35802-8",
+      "display" : "Ertapenem Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18919-1",
+      "display" : "Erythromycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18924-1",
+      "display" : "Fluconazole Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "31038-3",
+      "display" : "Gatifloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18928-2",
+      "display" : "Gentamicin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18929-0",
+      "display" : "Gentamicin Synergy Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18932-4",
+      "display" : "Imipenem Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32603-3",
+      "display" : "Itraconaz Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "20629-2",
+      "display" : "L-Floxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "29258-1",
+      "display" : "Linezolid Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18943-1",
+      "display" : "Meropenem Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18945-6",
+      "display" : "Methicillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18946-4",
+      "display" : "Metronidazole Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18948-0",
+      "display" : "Minocycline Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "31039-1",
+      "display" : "Moxifloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18959-7",
+      "display" : "Ofloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18961-3",
+      "display" : "Oxacillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18965-4",
+      "display" : "Penicillin G Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18969-6",
+      "display" : "Piperacillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18970-4",
+      "display" : "Piperacillin+Tazobac Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18972-0",
+      "display" : "Polymyxin B Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "23640-6",
+      "display" : "Quinupristin+Dalfoprist Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18974-6",
+      "display" : "Rifampin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18983-7",
+      "display" : "Streptomycin High Pot Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18993-6",
+      "display" : "Tetracycline Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18994-4",
+      "display" : "Ticarcillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18995-1",
+      "display" : "Ticarcillin+Clav Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "42357-4",
+      "display" : "Tigecycline Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18998-5",
+      "display" : "TMP SMX Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18996-9",
+      "display" : "Tobramycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "19000-9",
+      "display" : "Vancomycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32379-0",
+      "display" : "Voriconazole Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18955-5",
+      "display" : "Nitrofurantoin"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18861-5",
+      "display" : "Amoxicillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35816-8",
+      "display" : "Gemifloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18939-9",
+      "display" : "Lomefloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18956-3",
+      "display" : "Norfloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18966-2",
+      "display" : "Penicillin V Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "54188-8",
+      "display" : "Posaconazole Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18982-9",
+      "display" : "Streptomycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18986-0",
+      "display" : "Sulfisoxaz Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35845-7",
+      "display" : "Telithromycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18997-7",
+      "display" : "Trimethoprim Susc Islt"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "18855-7",
+        "display" : "5-fluorocytosine Susc Islt"
+      },
+      {
+        "code" : "18860-7",
+        "display" : "Amikacin Susc Islt"
+      },
+      {
+        "code" : "18862-3",
+        "display" : "Amoxicillin+Clav Susc Islt"
+      },
+      {
+        "code" : "18864-9",
+        "display" : "Ampicillin Susc Islt"
+      },
+      {
+        "code" : "18865-6",
+        "display" : "Ampicillin+Sulbac Susc Islt"
+      },
+      {
+        "code" : "57095-2",
+        "display" : "Anidulafungin Susc Islt"
+      },
+      {
+        "code" : "18866-4",
+        "display" : "Azithromycin Susc Islt"
+      },
+      {
+        "code" : "18868-0",
+        "display" : "Aztreonam Susc Islt"
+      },
+      {
+        "code" : "32378-2",
+        "display" : "Caspofungin Susc Islt"
+      },
+      {
+        "code" : "18878-9",
+        "display" : "Cefazolin Susc Islt"
+      },
+      {
+        "code" : "18879-7",
+        "display" : "Cefepime Susc Islt"
+      },
+      {
+        "code" : "18886-2",
+        "display" : "Cefotaxime Susc Islt"
+      },
+      {
+        "code" : "18887-0",
+        "display" : "Cefotetan Susc Islt"
+      },
+      {
+        "code" : "18888-8",
+        "display" : "Cefoxitin Susc Islt"
+      },
+      {
+        "code" : "18893-8",
+        "display" : "Ceftazidime Susc Islt"
+      },
+      {
+        "code" : "18895-3",
+        "display" : "Ceftriaxone Susc Islt"
+      },
+      {
+        "code" : "35783-0",
+        "display" : "Cefuroxime Oral Susc Islt"
+      },
+      {
+        "code" : "18900-1",
+        "display" : "Cephalothin Susc Islt"
+      },
+      {
+        "code" : "18903-5",
+        "display" : "Chloramphen Susc Islt"
+      },
+      {
+        "code" : "18906-8",
+        "display" : "Ciprofloxacin Susc Islt"
+      },
+      {
+        "code" : "18907-6",
+        "display" : "Clarithro Susc Islt"
+      },
+      {
+        "code" : "18908-4",
+        "display" : "Clindamycin Susc Islt"
+      },
+      {
+        "code" : "18912-6",
+        "display" : "Colistin Susc Islt"
+      },
+      {
+        "code" : "35789-7",
+        "display" : "Daptomycin Susc Islt"
+      },
+      {
+        "code" : "60535-2",
+        "display" : "Doripenem Susc Islt"
+      },
+      {
+        "code" : "18917-5",
+        "display" : "Doxycycline Susc Islt"
+      },
+      {
+        "code" : "35802-8",
+        "display" : "Ertapenem Susc Islt"
+      },
+      {
+        "code" : "18919-1",
+        "display" : "Erythromycin Susc Islt"
+      },
+      {
+        "code" : "18924-1",
+        "display" : "Fluconazole Susc Islt"
+      },
+      {
+        "code" : "31038-3",
+        "display" : "Gatifloxacin Susc Islt"
+      },
+      {
+        "code" : "18928-2",
+        "display" : "Gentamicin Susc Islt"
+      },
+      {
+        "code" : "18929-0",
+        "display" : "Gentamicin Synergy Susc Islt"
+      },
+      {
+        "code" : "18932-4",
+        "display" : "Imipenem Susc Islt"
+      },
+      {
+        "code" : "32603-3",
+        "display" : "Itraconaz Susc Islt"
+      },
+      {
+        "code" : "20629-2",
+        "display" : "L-Floxacin Susc Islt"
+      },
+      {
+        "code" : "29258-1",
+        "display" : "Linezolid Susc Islt"
+      },
+      {
+        "code" : "18943-1",
+        "display" : "Meropenem Susc Islt"
+      },
+      {
+        "code" : "18945-6",
+        "display" : "Methicillin Susc Islt"
+      },
+      {
+        "code" : "18946-4",
+        "display" : "Metronidazole Susc Islt"
+      },
+      {
+        "code" : "18948-0",
+        "display" : "Minocycline Susc Islt"
+      },
+      {
+        "code" : "31039-1",
+        "display" : "Moxifloxacin Susc Islt"
+      },
+      {
+        "code" : "18959-7",
+        "display" : "Ofloxacin Susc Islt"
+      },
+      {
+        "code" : "18961-3",
+        "display" : "Oxacillin Susc Islt"
+      },
+      {
+        "code" : "18965-4",
+        "display" : "Penicillin G Susc Islt"
+      },
+      {
+        "code" : "18969-6",
+        "display" : "Piperacillin Susc Islt"
+      },
+      {
+        "code" : "18970-4",
+        "display" : "Piperacillin+Tazobac Susc Islt"
+      },
+      {
+        "code" : "18972-0",
+        "display" : "Polymyxin B Susc Islt"
+      },
+      {
+        "code" : "23640-6",
+        "display" : "Quinupristin+Dalfoprist Susc Islt"
+      },
+      {
+        "code" : "18974-6",
+        "display" : "Rifampin Susc Islt"
+      },
+      {
+        "code" : "18983-7",
+        "display" : "Streptomycin High Pot Susc Islt"
+      },
+      {
+        "code" : "18993-6",
+        "display" : "Tetracycline Susc Islt"
+      },
+      {
+        "code" : "18994-4",
+        "display" : "Ticarcillin Susc Islt"
+      },
+      {
+        "code" : "18995-1",
+        "display" : "Ticarcillin+Clav Susc Islt"
+      },
+      {
+        "code" : "42357-4",
+        "display" : "Tigecycline Susc Islt"
+      },
+      {
+        "code" : "18998-5",
+        "display" : "TMP SMX Susc Islt"
+      },
+      {
+        "code" : "18996-9",
+        "display" : "Tobramycin Susc Islt"
+      },
+      {
+        "code" : "19000-9",
+        "display" : "Vancomycin Susc Islt"
+      },
+      {
+        "code" : "32379-0",
+        "display" : "Voriconazole Susc Islt"
+      },
+      {
+        "code" : "18955-5",
+        "display" : "Nitrofurantoin"
+      },
+      {
+        "code" : "18861-5",
+        "display" : "Amoxicillin Susc Islt"
+      },
+      {
+        "code" : "35816-8",
+        "display" : "Gemifloxacin Susc Islt"
+      },
+      {
+        "code" : "18939-9",
+        "display" : "Lomefloxacin Susc Islt"
+      },
+      {
+        "code" : "18956-3",
+        "display" : "Norfloxacin Susc Islt"
+      },
+      {
+        "code" : "18966-2",
+        "display" : "Penicillin V Susc Islt"
+      },
+      {
+        "code" : "54188-8",
+        "display" : "Posaconazole Susc Islt"
+      },
+      {
+        "code" : "18982-9",
+        "display" : "Streptomycin Susc Islt"
+      },
+      {
+        "code" : "18986-0",
+        "display" : "Sulfisoxaz Susc Islt"
+      },
+      {
+        "code" : "35845-7",
+        "display" : "Telithromycin Susc Islt"
+      },
+      {
+        "code" : "18997-7",
+        "display" : "Trimethoprim Susc Islt"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:cebbf21c-90a2-48f0-bc6c-021821b3cb11",
+    "timestamp" : "2018-09-26T04:18:33.498Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.64"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "18855-7",
+      "display" : "5-fluorocytosine Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18860-7",
+      "display" : "Amikacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18862-3",
+      "display" : "Amoxicillin+Clav Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18864-9",
+      "display" : "Ampicillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18865-6",
+      "display" : "Ampicillin+Sulbac Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "57095-2",
+      "display" : "Anidulafungin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18866-4",
+      "display" : "Azithromycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18868-0",
+      "display" : "Aztreonam Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32378-2",
+      "display" : "Caspofungin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18878-9",
+      "display" : "Cefazolin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18879-7",
+      "display" : "Cefepime Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18886-2",
+      "display" : "Cefotaxime Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18887-0",
+      "display" : "Cefotetan Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18888-8",
+      "display" : "Cefoxitin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18893-8",
+      "display" : "Ceftazidime Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18895-3",
+      "display" : "Ceftriaxone Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35783-0",
+      "display" : "Cefuroxime Oral Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18900-1",
+      "display" : "Cephalothin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18903-5",
+      "display" : "Chloramphen Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18906-8",
+      "display" : "Ciprofloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18907-6",
+      "display" : "Clarithro Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18908-4",
+      "display" : "Clindamycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18912-6",
+      "display" : "Colistin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35789-7",
+      "display" : "Daptomycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "60535-2",
+      "display" : "Doripenem Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18917-5",
+      "display" : "Doxycycline Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35802-8",
+      "display" : "Ertapenem Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18919-1",
+      "display" : "Erythromycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18924-1",
+      "display" : "Fluconazole Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "31038-3",
+      "display" : "Gatifloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18928-2",
+      "display" : "Gentamicin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18929-0",
+      "display" : "Gentamicin Synergy Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18932-4",
+      "display" : "Imipenem Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32603-3",
+      "display" : "Itraconaz Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "20629-2",
+      "display" : "L-Floxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "29258-1",
+      "display" : "Linezolid Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18943-1",
+      "display" : "Meropenem Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18945-6",
+      "display" : "Methicillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18946-4",
+      "display" : "Metronidazole Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18948-0",
+      "display" : "Minocycline Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "31039-1",
+      "display" : "Moxifloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18959-7",
+      "display" : "Ofloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18961-3",
+      "display" : "Oxacillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18965-4",
+      "display" : "Penicillin G Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18969-6",
+      "display" : "Piperacillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18970-4",
+      "display" : "Piperacillin+Tazobac Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18972-0",
+      "display" : "Polymyxin B Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "23640-6",
+      "display" : "Quinupristin+Dalfoprist Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18974-6",
+      "display" : "Rifampin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18983-7",
+      "display" : "Streptomycin High Pot Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18993-6",
+      "display" : "Tetracycline Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18994-4",
+      "display" : "Ticarcillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18995-1",
+      "display" : "Ticarcillin+Clav Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "42357-4",
+      "display" : "Tigecycline Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18998-5",
+      "display" : "TMP SMX Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18996-9",
+      "display" : "Tobramycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "19000-9",
+      "display" : "Vancomycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "32379-0",
+      "display" : "Voriconazole Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18955-5",
+      "display" : "Nitrofurantoin"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18861-5",
+      "display" : "Amoxicillin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35816-8",
+      "display" : "Gemifloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18939-9",
+      "display" : "Lomefloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18956-3",
+      "display" : "Norfloxacin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18966-2",
+      "display" : "Penicillin V Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "54188-8",
+      "display" : "Posaconazole Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18982-9",
+      "display" : "Streptomycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18986-0",
+      "display" : "Sulfisoxaz Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "35845-7",
+      "display" : "Telithromycin Susc Islt"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "18997-7",
       "display" : "Trimethoprim Susc Islt"
     }]
   }

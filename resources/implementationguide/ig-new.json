@@ -1,0 +1,193 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "hl7-fhir-us-hai",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\FHIR\\HAI\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\FHIR\\HAI\\resources\\valueset"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\FHIR\\HAI\\resources\\codesystem"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\FHIR\\HAI\\resources\\structuredefinition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\FHIR\\HAI\\resources\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\FHIR\\HAI\\resources\\implementationguide"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\FHIR\\HAI\\pages"
+  }],
+  "url" : "http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai",
+  "version" : "0.1.0",
+  "name" : "Healthcare Associated Infection Reports, FHIR Release 1 - US Realm",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2018-03-19T00:00:00+10:00",
+  "publisher" : "HL7",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "packageId" : "hl7.fhir.us.hai",
+  "license" : "CC0-1.0",
+  "fhirVersion" : "3.0.1",
+  "dependsOn" : [{
+    "id" : "uscore",
+    "uri" : "http://hl7.org/fhir/us/core",
+    "packageId" : "hl7.fhir.us.core",
+    "version" : "1.0.1"
+  }],
+  "definition" : {
+    "package" : [{
+      "id" : "p1",
+      "name" : "base"
+    }],
+    "resource" : [{
+      "reference" : {
+        "reference" : "StructureDefinition/hai-single-person-report-questionnaire"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/hai-single-person-report-questionnaire-response"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/2.16.840.1.113883.6.259"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/2.16.840.1.113883.6.277"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/2.16.840.1.113883.13.19"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/2.16.840.1.113883.13.20"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/2.16.840.1.113883.13.13"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/2.16.840.1.113883.13.15"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/nhsn-pathogen-ranking"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/2.16.840.1.113883.13.16"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/2.16.840.1.114222.4.11.3195"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/2.16.840.1.114222.4.11.3196"
+      },
+      "exampleBoolean" : false,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "Patient/hai-patient-1"
+      },
+      "exampleBoolean" : true,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "Device/hai-authoring-device"
+      },
+      "exampleBoolean" : true,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "Questionnaire/hai-questionnaire-los-event"
+      },
+      "exampleBoolean" : true,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "QuestionnaireResponse/hai-questionnaireResponse-los-event"
+      },
+      "exampleBoolean" : true,
+      "package" : "p1"
+    }],
+    "page" : {
+      "nameUrl" : "index.html",
+      "title" : "NHSN HAI Homepage",
+      "generation" : "html"
+    },
+    "parameter" : [{
+      "code" : "apply-jurisdiction",
+      "value" : "true"
+    },
+    {
+      "code" : "generate-json",
+      "value" : "true"
+    },
+    {
+      "code" : "generate-xml",
+      "value" : "true"
+    },
+    {
+      "code" : "generate-turtle",
+      "value" : "true"
+    }]
+  }
+}
