@@ -8,6 +8,7 @@
     "resources": [
       "resources",
       "resources/valueset",
+      "resources/codesystem",
       "resources/structuredefinition",
       "resources/examples",
       "resources/implementationguide"
