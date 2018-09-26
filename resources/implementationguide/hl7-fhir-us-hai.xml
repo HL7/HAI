@@ -27,7 +27,7 @@
     <resource>
       <example value="false" />
       <sourceReference>
-        <reference value="CodeSystem/hsloc" />
+        <reference value="CodeSystem/2.16.840.1.113883.6.259" />
       </sourceReference>
     </resource>
     <!-- Value Sets -->

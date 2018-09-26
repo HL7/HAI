@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
-  <id value="hsloc" />
+  <id value="2.16.840.1.113883.6.259" />
   <!--<meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
   </meta>-->
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <h2>HSLOC</h2>
+      <h2>HSLOC: 2.16.840.1.113883.6.259</h2>
       <div>
         <p>A classification of patient care locations within healthcare facilities for public health purposes.</p>
         <p>
@@ -17,7 +17,7 @@
       </div>
     </div>
   </text>
-  <url value="http://hl7.org/fhir/us/hai/CodeSystem/hsloc" />
+  <url value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259" />
   <version value="0.0.0" />
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
