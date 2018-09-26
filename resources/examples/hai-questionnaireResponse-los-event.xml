@@ -419,7 +419,7 @@
         <text value="Drug Susceptibility Test" />
         <answer>
           <valueCoding>
-            <system value="https://loinc.org/" />
+            <system value="https://loinc.org" />
             <code value="18907-6" />
             <display value="Clarithro Susc Islt" />
           </valueCoding>
