@@ -269,42 +269,43 @@
   <item>
     <linkId value="risk-factors" />
     <text value="Risk Factors: Contains central line present, birth weight, gestational age" />
-
-    <!-- Central Line present prior to event, including umbilical catheter
+    <answer>
+      <!-- Central Line present prior to event, including umbilical catheter
          (CDA Mapping: Infection Risk Factors Observation/value="1006-6" - if present then true) -->
-    <item>
-      <linkId value="risk-factor-central-line" />
-      <text value="Risk Factor: Central line present prior to event, including umbilical catheter" />
-      <answer>
-        <valueBoolean value="true" />
-      </answer>
-    </item>
+      <item>
+        <linkId value="risk-factor-central-line" />
+        <text value="Risk Factor: Central line present prior to event, including umbilical catheter" />
+        <answer>
+          <valueBoolean value="true" />
+        </answer>
+      </item>
 
-    <!-- Birth Weight (grams)
+      <!-- Birth Weight (grams)
          (CDA Mapping: Infection Risk Factors Measurement Observaiton/value) -->
-    <item>
-      <linkId value="risk-factor-birth-weight" />
-      <text value="Risk Factor: Birth weight (grams)" />
-      <answer>
-        <valueQuantity>
-          <value value="700" />
-          <unit value="g" />
-        </valueQuantity>
-      </answer>
-    </item>
+      <item>
+        <linkId value="risk-factor-birth-weight" />
+        <text value="Risk Factor: Birth weight (grams)" />
+        <answer>
+          <valueQuantity>
+            <value value="700" />
+            <unit value="g" />
+          </valueQuantity>
+        </answer>
+      </item>
 
-    <!-- Gestational Age
+      <!-- Gestational Age
          (CDA Mapping: Gestational Age Observation/value) -->
-    <item>
-      <linkId value="risk-factor-gestational-age" />
-      <text value="Risk Factor: Gestational age (days)" />
-      <answer>
-        <valueQuantity>
-          <value value="276" />
-          <unit value="d" />
-        </valueQuantity>
-      </answer>
-    </item>
+      <item>
+        <linkId value="risk-factor-gestational-age" />
+        <text value="Risk Factor: Gestational age (days)" />
+        <answer>
+          <valueQuantity>
+            <value value="276" />
+            <unit value="d" />
+          </valueQuantity>
+        </answer>
+      </item>
+    </answer>
   </item>
 
   <!-- Event Details 
