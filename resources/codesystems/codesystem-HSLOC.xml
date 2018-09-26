@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
+  <id value="hsloc" />
+  <!--<meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>-->
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>HSLOC</h2>
+      <div>
+        <p>A classification of patient care locations within healthcare facilities for public health purposes.</p>
+        <p>
+          <a href="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.259"
+            >NHSN Healthcare Facility Patient Care Location (urn:oid:2.16.840.1.113883.6.259) PHIN VADS link</a>
+        </p>
+      </div>
+    </div>
+  </text>
+  <url value="http://hl7.org/fhir/us/hai/CodeSystem/hsloc" />
+  <version value="0.0.0" />
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.6.259"/>
+  </identifier>
+  <name value="hsloc"/>
+  <title value="NHSN Healthcare Facility Patient Care Location" />
+  <status value="published" />
+  <experimental value="false" />
+  <publisher value="Public Health Information Network Vocabulary Access and Distribution System (PHIN VADS)" />
+  <description value="A classification of patient care locations within healthcare facilities for public health purposes." />
+  <caseSensitive value="true" />
+  <content value="not-present" />
+</CodeSystem>
