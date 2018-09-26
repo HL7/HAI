@@ -23,6 +23,13 @@
         <reference value="StructureDefinition/hai-single-person-report-questionnaire-response" />
       </sourceReference>
     </resource>
+    <!-- Code Systems -->
+    <resource>
+      <example value="false" />
+      <sourceReference>
+        <reference value="CodeSystem/hsloc" />
+      </sourceReference>
+    </resource>
     <!-- Value Sets -->
     <resource>
       <example value="false" />
