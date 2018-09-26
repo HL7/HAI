@@ -4,7 +4,7 @@
   <name value="NHSNCriterionOfDiagnosisCode" />
   <status value="active" />
   <description
-    value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277" />
+    value="Codes for criterion of diagnosis" />
   <compose>
     <include>
       <system value="urn:oid:2.16.840.1.113883.6.277" />
@@ -14,7 +14,7 @@
       </concept>
       <concept>
         <code value="1964-6" />
-        <display value="Allo-SCT with Grade &gt; 3 GI GVHD" />
+        <display value="Allo-SCT with Grade > 3 GI GVHD" />
       </concept>
       <concept>
         <code value="1965-3" />
@@ -30,32 +30,32 @@
       </concept>
       <concept>
         <code value="1929-9" />
-        <display value="&amp;gt;=2 positive cultures with &amp;gt;=10^2 col/ml of same uropathogen from nonvoided specimen" />
+        <display value=">=2 positive cultures with >=10^2 col/ml of same uropathogen from nonvoided specimen" />
       </concept>
       <concept>
         <code value="1931-5" />
-        <display value="&amp;gt;=2 positive urine cultures with &amp;gt;=10^5 col/cc with no more than 2 organisms" />
+        <display value=">=2 positive urine cultures with >=10^5 col/cc with no more than 2 organisms" />
       </concept>
       <concept>
         <code value="1923-3" />
-        <display value="&amp;gt;=5% BAL cells w/bacteria" />
+        <display value=">=5% BAL cells w/bacteria" />
       </concept>
       <concept>
         <code value="1942-2" />
-        <display value="&amp;gt;15 colonies cultured from IV cannula tip using semiquantitative culture method" />
+        <display value=">15 colonies cultured from IV cannula tip using semiquantitative culture method" />
       </concept>
       <concept>
         <code value="1927-3" />
-        <display value="1 positive culture with &amp;gt;=10^5 col/cc with no more than 2 organisms" />
+        <display value="1 positive culture with >=10^5 col/cc with no more than 2 organisms" />
       </concept>
       <concept>
         <code value="2403-4" />
-        <display value="1 positive culture with &amp;gt;=103 CFU/ml and &amp;lt;105 CFU/ml with no more than 2 species of microorganisms" />
+        <display value="1 positive culture with >=103 CFU/ml and &lt;105 CFU/ml with no more than 2 species of microorganisms" />
       </concept>
       <concept>
         <code value="1930-7" />
         <display
-          value="1 positive culture with &amp;lt;=10^5 col/ml of a single uropathogen in patient being treated with an effective antimicrobial agent for UTI"
+          value="1 positive culture with &lt;=10^5 col/ml of a single uropathogen in patient being treated with an effective antimicrobial agent for UTI"
          />
       </concept>
       <concept>
@@ -68,7 +68,7 @@
       </concept>
       <concept>
         <code value="1944-8" />
-        <display value="Common skin contaminant from &amp;gt;2 blood cultures (see NHSN protocol for definition of skin contaminant)" />
+        <display value="Common skin contaminant from >2 blood cultures (see NHSN protocol for definition of skin contaminant)" />
       </concept>
       <concept>
         <code value="1937-2" />
@@ -144,7 +144,7 @@
       </concept>
       <concept>
         <code value="1957-0" />
-        <display value="Acute onset of diarrhea (liquid stools for &amp;gt; 12 hours)" />
+        <display value="Acute onset of diarrhea (liquid stools for > 12 hours)" />
       </concept>
       <concept>
         <code value="1959-6" />
@@ -234,7 +234,7 @@
       </concept>
       <concept>
         <code value="1926-5" />
-        <display value="Pneumatoceles (in &amp;lt;=1 y.o.)" />
+        <display value="Pneumatoceles (in &lt;=1 y.o.)" />
       </concept>
       <concept>
         <code value="1921-6" />
@@ -326,23 +326,23 @@
       </concept>
       <concept>
         <code value="2346-5" />
-        <display value="Daily min FiO2 increase &amp;gt; 0.20 (20 points) for &amp;gt; 2 days" />
+        <display value="Daily min FiO2 increase > 0.20 (20 points) for > 2 days" />
       </concept>
       <concept>
         <code value="2347-3" />
-        <display value="Daily min PEEP increase &amp;gt; 3 cm H2O for &amp;gt; 2 days" />
+        <display value="Daily min PEEP increase > 3 cm H2O for > 2 days" />
       </concept>
       <concept>
         <code value="2348-1" />
-        <display value="Temperature &amp;gt; 380 C or &amp;lt; 360 C" />
+        <display value="Temperature > 380 C or &lt; 360 C" />
       </concept>
       <concept>
         <code value="2349-9" />
-        <display value="White blood cell count &amp;gt;= 12,000 or &amp;lt;= 4,000 cells/mm3" />
+        <display value="White blood cell count >= 12,000 or &lt;= 4,000 cells/mm3" />
       </concept>
       <concept>
         <code value="2350-2" />
-        <display value="A new antimicrobial agent(s) is started, and is continued for &amp;gt;= 4 days" />
+        <display value="A new antimicrobial agent(s) is started, and is continued for >= 4 days" />
       </concept>
       <concept>
         <code value="3070-0" />
@@ -373,7 +373,7 @@
       </concept>
       <concept>
         <code value="419284004" />
-        <display value="Altered mental status (in &amp;gt;=70 y.o.)" />
+        <display value="Altered mental status (in >=70 y.o.)" />
       </concept>
       <concept>
         <code value="1023001" />

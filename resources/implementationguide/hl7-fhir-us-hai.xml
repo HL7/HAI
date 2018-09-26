@@ -46,12 +46,6 @@
     <resource>
       <example value="false" />
       <sourceReference>
-        <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.27" />
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false" />
-      <sourceReference>
         <reference value="ValueSet/2.16.840.1.113883.13.13" />
       </sourceReference>
     </resource>

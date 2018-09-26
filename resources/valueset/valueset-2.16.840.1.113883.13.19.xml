@@ -7,7 +7,7 @@
     value="A classification of patient care locations within healthcare facilities for public health surveillance purposes." />
   <compose>
     <include>
-      <system value="urn:oid:2.16.840.1.113883.6.259" />
+      <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259" />
       <concept>
         <code value="1250-0" />
         <display value="All Inpatient Locations [FACWIDEIN]" />
