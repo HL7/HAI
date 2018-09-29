@@ -1,182 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://hl7.org/fhir ../../../schemas/FHIR/STU3/bundle.xsd"
-   xmlns="http://hl7.org/fhir">
-   <identifier>
-      <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:uuid:876e4d4a-e6b6-4898-91ee-811809c3e623"/>
-   </identifier>
-   <type value="collection"/>
-   <entry>
-      <fullUrl value="urn:uuid:3ed9a2c6-02a9-41e1-9f43-52ca33ba8618"/>
-      <resource>
-         <QuestionnaireResponse>
-            <meta>
-               <profile
-                  value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response"
-               />
-            </meta>
-            <text>
-               <status value="generated"/>
-               <div xmlns="http://www.w3.org/1999/xhtml">
-                  <p>This QuestionnaireResponse instance is an example of a completed Late Onset
-                     Sepsis/Meningitis Event (LOS) Report and is in response to the Questionnaire
-                     instance defining this report.</p>
-                  <h2>Late Onset Sepsis/Meningitis Event (LOS)</h2>
-                  <table border="1">
-                     <tbody>
-                        <tr>
-                           <td>Facility ID</td>
-                           <td>urn:oid:2.16.840.1.113883.3.117.1.1.5.1.1:9W</td>
-                        </tr>
-                        <tr>
-                           <td>Event #</td>
-                           <td>urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31</td>
-                        </tr>
-                        <tr>
-                           <td>Patient ID</td>
-                           <td>Medical Record Number: 12345</td>
-                        </tr>
-                        <tr>
-                           <td>Social Security #</td>
-                           <td>12345</td>
-                        </tr>
-                        <tr>
-                           <td>Medicaid #</td>
-                           <td>959595</td>
-                        </tr>
-                        <tr>
-                           <td>Patient Last Name</td>
-                           <td>Nuclear</td>
-                        </tr>
-                        <tr>
-                           <td>Patient First Name</td>
-                           <td>Ned</td>
-                        </tr>
-                        <tr>
-                           <td>Gender</td>
-                           <td>Male</td>
-                        </tr>
-                        <tr>
-                           <td>Date of Birth</td>
-                           <td>1954-11-25</td>
-                        </tr>
-                        <tr>
-                           <td>Ethnicity</td>
-                           <td>Not Hispanic or Latino</td>
-                        </tr>
-                        <tr>
-                           <td>Race</td>
-                           <td>White</td>
-                        </tr>
-                        <tr>
-                           <td>Event Type</td>
-                           <td>Late onset sepsis (LOS)</td>
-                        </tr>
-                        <tr>
-                           <td>Date of Event</td>
-                           <td>2018-01-02</td>
-                        </tr>
-                        <tr>
-                           <td>Date Admitted to Facility</td>
-                           <td>2018-01-01</td>
-                        </tr>
-                        <tr>
-                           <td>Inborn/Outborn</td>
-                           <td>Inborn</td>
-                        </tr>
-                        <tr>
-                           <td>Location</td>
-                           <td>Medical/Surgical Critical Care</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <h2>Risk Factors</h2>
-                  <table border="1">
-                     <tbody>
-                        <tr>
-                           <td>Central line present prior to event, including umbilical
-                              catheter</td>
-                           <td>Yes</td>
-                        </tr>
-                        <tr>
-                           <td>Birth Weight</td>
-                           <td>700 g</td>
-                        </tr>
-                        <tr>
-                           <td>Gestational Age</td>
-                           <td>276 d</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <h2>Event Details</h2>
-                  <table border="1">
-                     <tbody>
-                        <tr>
-                           <td>Specific Event</td>
-                           <td>Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)</td>
-                        </tr>
-                        <tr>
-                           <td>Criteria used</td>
-                           <td>Recognized pathogen from one or more blood specimens</td>
-                        </tr>
-                        <tr>
-                           <td>Died</td>
-                           <td>Yes</td>
-                        </tr>
-                        <tr>
-                           <td>LOS Contributed to Death</td>
-                           <td>No</td>
-                        </tr>
-                        <tr>
-                           <td>Discharge date</td>
-                           <td>2018-01-12</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <h2>Findings</h2>
-                  <table border="1">
-                     <tbody>
-                        <tr>
-                           <td>Microorganism identified</td>
-                           <td>Clostridium symbiosum (organism)</td>
-                        </tr>
-                        <tr>
-                           <td>Pathogen Ranking</td>
-                           <td>First</td>
-                        </tr>
-                        <tr>
-                           <td>Clarithro Susc Islt</td>
-                           <td>Resistant</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <h2>Comment</h2>
-                  <table border="1">
-                     <tbody>
-                        <tr>
-                           <td>Comment</td>
-                           <td>NHSN text comment that is less than 2000 characters.</td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-            </text>
+<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../schemas/FHIR/STU3/bundle.xsd"
+  xmlns="http://hl7.org/fhir">
+  <id value="hai-bundle-los-event" />
+  <identifier>
+    <system value="urn:ietf:rfc:3986" />
+    <value value="urn:uuid:876e4d4a-e6b6-4898-91ee-811809c3e623" />
+  </identifier>
+  <type value="collection" />
+  <entry>
+    <fullUrl value="urn:uuid:3ed9a2c6-02a9-41e1-9f43-52ca33ba8618" />
+    <resource>
+      <QuestionnaireResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <id value="hai-questionnaireResponse-los-event" />
+        <meta>
+          <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response" />
+        </meta>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This QuestionnaireResponse instance is an example of a completed Late Onset Sepsis/Meningitis Event (LOS) Report and is in response to the Questionnaire instance defining this report.</p>
+            <h2>Late Onset Sepsis/Meningitis Event (LOS)</h2>
+            <table border="1">
+              <tbody>
+                <tr>
+                  <td>Facility ID</td>
+                  <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W</td>
+                </tr>
+                <tr>
+                  <td>Event #</td>
+                  <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31</td>
+                </tr>
+                <tr>
+                  <td>Patient ID</td>
+                  <td>Medical Record Number: 12345</td>
+                </tr>
+                <tr>
+                  <td>Social Security #</td>
+                  <td>12345</td>
+                </tr>
+                <tr>
+                  <td>Medicaid #</td>
+                  <td>959595</td>
+                </tr>
+                <tr>
+                  <td>Patient Last Name</td>
+                  <td>Nuclear</td>
+                </tr>
+                <tr>
+                  <td>Patient First Name</td>
+                  <td>Ned</td>
+                </tr>
+                <tr>
+                  <td>Gender</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <td>Date of Birth</td>
+                  <td>1954-11-25</td>
+                </tr>
+                <tr>
+                  <td>Ethnicity</td>
+                  <td>Not Hispanic or Latino</td>
+                </tr>
+                <tr>
+                  <td>Race</td>
+                  <td>White</td>
+                </tr>
+                <tr>
+                  <td>Event Type</td>
+                  <td>Late onset sepsis (LOS)</td>
+                </tr>
+                <tr>
+                  <td>Date of Event</td>
+                  <td>2018-01-02</td>
+                </tr>
+                <tr>
+                  <td>Date Admitted to Facility</td>
+                  <td>2018-01-01</td>
+                </tr>
+                <tr>
+                  <td>Inborn/Outborn</td>
+                  <td>Inborn</td>
+                </tr>
+                <tr>
+                  <td>Location</td>
+                  <td>Medical/Surgical Critical Care</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2>Risk Factors</h2>
+            <table border="1">
+              <tbody>
+                <tr>
+                  <td>Central line present prior to event, including umbilical catheter</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Birth Weight</td>
+                  <td>700 g</td>
+                </tr>
+                <tr>
+                  <td>Gestational Age</td>
+                  <td>276 d</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2>Event Details</h2>
+            <table border="1">
+              <tbody>
+                <tr>
+                  <td>Specific Event</td>
+                  <td>Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)</td>
+                </tr>
+                <tr>
+                  <td>Criteria used</td>
+                  <td>Recognized pathogen from one or more blood specimens</td>
+                </tr>
+                <tr>
+                  <td>Died</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>LOS Contributed to Death</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Discharge date</td>
+                  <td>2018-01-12</td>
+                </tr>
+              </tbody>
+            </table>
 
-            <identifier>
-               <!-- (CDA Mapping: ClinicalDocument/id/root) -->
-               <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
-               <!-- (CDA Mapping: ClinicalDocument/id/extension) -->
-               <value value="20202201"/>
-            </identifier>
 
-            <questionnaire>
-               <reference
-                  value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event"/>
-            </questionnaire>
-            <status value="completed"/>
+            <h2>Findings</h2>
+            <table border="1">
+              <tbody>
+                <tr>
+                  <td>Microorganism identified</td>
+                  <td>Clostridium symbiosum (organism)</td>
+                </tr>
+                <tr>
+                  <td>Pathogen Ranking</td>
+                  <td>First</td>
+                </tr>
+                <tr>
+                  <td>Clarithro Susc Islt</td>
+                  <td>Resistant</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2>Comment</h2>
+            <table border="1">
+              <tbody>
+                <tr>
+                  <td>Comment</td>
+                  <td>NHSN text comment that is less than 2000 characters.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </text>
 
-            <!--  
+        <identifier>
+          <!-- (CDA Mapping: ClinicalDocument/id/root) -->
+          <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2" />
+          <!-- (CDA Mapping: ClinicalDocument/id/extension) -->
+          <value value="20202201" />
+        </identifier>
+
+        <questionnaire>
+          <reference value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event" />
+        </questionnaire>
+        <status value="completed" />
+
+        <!--  
     Patient Information 
         including:
         - Patient ID
@@ -189,447 +186,434 @@
         - Patient Ethnicity
         - Patient Race
   -->
-            <subject>
-               <reference value="urn:uuid:e8f49540-d231-452c-abd5-16e9c6d6375b"/>
-               <display value="hai-patient-1"/>
-            </subject>
-            <!-- RG: added authored -->
-            <authored value="2018-01-30"/>
-            <author>
-               <reference value="urn:uuid:65a95666-9ba7-4107-a37b-07957c094b88"/>
-               <display value="hai-authoring-device"/>
-            </author>
+        <subject>
+          <reference value="Patient/hai-patient-1" />
+          <display value="hai-patient-1" />
+        </subject>
 
-            <!-- Facility ID
+        <author>
+          <reference value="Device/hai-authoring-device" />
+          <display value="hai-authoring-device" />
+        </author>
+
+        <!-- Facility ID
        CDA: ClinicalDocument/componentOf/encompassingEncounter/location/healthCareFacility/id -->
-            <item>
-               <linkId value="facility"/>
-               <text value="Facility ID"/>
-               <answer>
-                  <!-- RG: changed to hl7ii URI -->
-                  <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W"/>
-                  <!--
-                  <valueUri value="urn:oid:2.16.840.1.113883.3.117.1.1.5.1.1:9W"/>
-                  -->
-               </answer>
-            </item>
+        <item>
+          <linkId value="facility" />
+          <text value="Facility ID" />
+          <answer>
+            <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W" />
+          </answer>
+        </item>
 
-            <!-- Event # 
+        <!-- Event # 
        CDA: ClinicalDocument/componentOf/encompassingEncounter/id-->
-            <item>
-               <linkId value="event-number"/>
-               <text value="Event #"/>
-               <answer>
-                  <!-- RG: changed to hl7ii URI -->
-                  <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31"/>
-                  <!--
-                  <valueUri value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31"/>
-                  -->
-               </answer>
-            </item>
+        <item>
+          <linkId value="event-number" />
+          <text value="Event #" />
+          <answer>
+            <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31" />
+          </answer>
+        </item>
 
-            <!-- Event Type 
+        <!-- Event Type 
        (CDA Mapping: Infection-Type Observation/value) -->
-            <item>
-               <linkId value="event-type"/>
-               <text value="Event Type"/>
-               <answer>
-                  <valueCoding>
-                     <system value="http://snomed.info/sct"/>
-                     <code value="765107002"/>
-                     <display value="Late-onset neonatal sepsis (disorder)"/>
-                  </valueCoding>
-               </answer>
-            </item>
+        <item>
+          <linkId value="event-type" />
+          <text value="Event Type" />
+          <answer>
+            <valueCoding>
+              <system value="http://snomed.info/sct" />
+              <code value="765107002" />
+              <display value="Late-onset neonatal sepsis (disorder)" />
+            </valueCoding>
+          </answer>
+        </item>
 
-            <!-- Date of Event 
+        <!-- Date of Event 
        (CDA Mapping: Infection-Type Observation/effectiveTime -->
-            <item>
-               <linkId value="date-of-event"/>
-               <text value="Date of Event"/>
-               <answer>
-                  <valueDate value="2018-01-02"/>
-               </answer>
-            </item>
+        <item>
+          <linkId value="date-of-event" />
+          <text value="Date of Event" />
+          <answer>
+            <valueDate value="2018-01-02" />
+          </answer>
+        </item>
 
-            <!-- Facility Location 
+        <!-- Facility Location 
        (CDA Mapping: encompassingEncounter/location/healthcareFacility/code)-->
-            <item>
-               <linkId value="facility-location"/>
-               <text value="Facility Location"/>
-               <answer>
-                  <valueCoding>
-                     <system value="urn:oid:2.16.840.1.113883.6.259"/>
-                     <code value="1029-8"/>
-                     <display value="Medical/Surgical Critical Care"/>
-                  </valueCoding>
-               </answer>
-            </item>
+        <item>
+          <linkId value="facility-location" />
+          <text value="Facility Location" />
+          <answer>
+            <valueCoding>
+              <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259" />
+              <code value="1029-8" />
+              <display value="Medical/Surgical Critical Care" />
+            </valueCoding>
+          </answer>
+        </item>
 
-            <!-- Date Admitted to Facility
+        <!-- Date Admitted to Facility
        (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/low) -->
-            <item>
-               <linkId value="date-admitted-to-facility"/>
-               <text value="Date Admitted to Facility:"/>
-               <answer>
-                  <valueDate value="2018-01-01"/>
-               </answer>
-            </item>
+        <item>
+          <linkId value="date-admitted-to-facility" />
+          <text value="Date Admitted to Facility:" />
+          <answer>
+            <valueDate value="2018-01-01" />
+          </answer>
+        </item>
 
-            <!-- Inborn/Outborn Observation 
+        <!-- Inborn/Outborn Observation 
        (CDA Mapping: Inborn/Outborn Observation/value)-->
-            <item>
-               <linkId value="inborn-outborn-observation"/>
-               <text value="Select: Inborn or Outborn"/>
-               <answer>
-                  <valueCoding>
-                     <system value="http://snomed.info/sct"/>
-                     <code value="445087001"/>
-                     <display value="Born before arrival to hospital (situation)"/>
-                  </valueCoding>
-               </answer>
-            </item>
+        <item>
+          <linkId value="inborn-outborn-observation" />
+          <text
+            value="Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false." />
+          <answer>
+            <valueBoolean value="false" />
+          </answer>
+        </item>
 
-            <!-- Risk Factors
+        <!-- Risk Factors
        CDA: Risk Factors Section (LOS/Men)-->
-            <item>
-               <linkId value="risk-factors"/>
-               <text value="Risk Factors"/>
-
-               <!-- Central Line present prior to event, including umbilical catheter
+        <item>
+          <linkId value="risk-factors" />
+          <text value="Risk Factors: Contains central line present, birth weight, gestational age" />
+          <!-- Central Line present prior to event, including umbilical catheter
          (CDA Mapping: Infection Risk Factors Observation/value="1006-6" - if present then true) -->
-               <item>
-                  <linkId value="risk-factor-central-line"/>
-                  <text value="Central line present prior to event, including umbilical catheter"/>
-                  <answer>
-                     <valueBoolean value="true"/>
-                  </answer>
-               </item>
+          <item>
+            <linkId value="risk-factor-central-line" />
+            <text value="Risk Factor: Central line present prior to event, including umbilical catheter" />
+            <answer>
+              <valueBoolean value="true" />
+            </answer>
+          </item>
 
-               <!-- Birth Weight (grams)
+          <!-- Birth Weight (grams)
          (CDA Mapping: Infection Risk Factors Measurement Observaiton/value) -->
-               <item>
-                  <linkId value="risk-factor-birth-weight"/>
-                  <text value="Birth Weight (grams)"/>
-                  <answer>
-                     <valueQuantity>
-                        <value value="700"/>
-                        <unit value="g"/>
-                     </valueQuantity>
-                  </answer>
-               </item>
+          <item>
+            <linkId value="risk-factor-birth-weight" />
+            <text value="Risk Factor: Birth weight (grams)" />
+            <answer>
+              <valueQuantity>
+                <value value="700" />
+                <unit value="g" />
+              </valueQuantity>
+            </answer>
+          </item>
 
-               <!-- Gestational Age
+          <!-- Gestational Age
          (CDA Mapping: Gestational Age Observation/value) -->
-               <item>
-                  <linkId value="risk-factor-gestational-age"/>
-                  <text value="Gestational Age"/>
-                  <answer>
-                     <valueQuantity>
-                        <value value="276"/>
-                        <unit value="d"/>
-                     </valueQuantity>
-                  </answer>
-               </item>
-            </item>
+          <item>
+            <linkId value="risk-factor-gestational-age" />
+            <text value="Risk Factor: Gestational age (days)" />
+            <answer>
+              <valueQuantity>
+                <value value="276" />
+                <unit value="d" />
+              </valueQuantity>
+            </answer>
+          </item>
+        </item>
 
-            <!-- Event Details 
+        <!-- Event Details 
          CDA: Infection Details in Late Onset Sepsis Report-->
-            <item>
-               <linkId value="event-details"/>
-               <text value="Event Details"/>
+        <item>
+          <linkId value="event-details" />
+          <text value="Event Details" />
 
-               <!-- Infection Condition 
+          <!-- Infection Condition 
          (CDA Mapping: Infection Condition Observation/value-->
-               <item>
-                  <linkId value="infection-condition"/>
-                  <text value="Specific Event"/>
-                  <answer>
-                     <valueCoding>
-                        <system value="urn:oid:2.16.840.1.113883.6.277"/>
-                        <code value="3067-6"/>
-                        <display
-                           value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)"/>
-                     </valueCoding>
-                  </answer>
-               </item>
+          <item>
+            <linkId value="infection-condition" />
+            <text value="Specific Event" />
+            <answer>
+              <valueCoding>
+                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+                <code value="3067-6" />
+                <display value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)" />
+              </valueCoding>
+            </answer>
+          </item>
 
-               <!-- Criteria Used (Lab) 
+          <!-- Criteria Used (Lab) 
          (CDA Mapping: Criterion of Diagnosis Observation/value-->
-               <item>
-                  <linkId value="criteria-used"/>
-                  <text value="Laboratory Criteria Used"/>
-                  <answer>
-                     <valueCoding>
-                        <system value="urn:oid:2.16.840.1.113883.6.277"/>
-                        <code value="1951-3"/>
-                        <display value="Recognized pathogen from one or more blood specimens"/>
-                     </valueCoding>
-                  </answer>
-               </item>
+          <item>
+            <linkId value="criteria-used" />
+            <text value="Laboratory Criteria Used" />
+            <answer>
+              <valueCoding>
+                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+                <code value="1951-3" />
+                <display value="Recognized pathogen from one or more blood cultures" />
+              </valueCoding>
+            </answer>
+          </item>
 
-               <!-- Died 
+          <!-- Died 
          (CDA Mapping: Death Observation in an Infection-type Report/value) -->
-               <item>
-                  <linkId value="died"/>
-                  <text value="Died"/>
-                  <answer>
-                     <valueBoolean value="true"/>
-                  </answer>
-               </item>
+          <item>
+            <linkId value="died" />
+            <text value="Died" />
+            <answer>
+              <valueBoolean value="true" />
+            </answer>
+          </item>
 
-               <!-- LOS Contributed to Death 
+          <!-- LOS Contributed to Death 
          (CDA Mapping: Infection Contributed to Death Observation) -->
-               <!-- Note: This item is only enabled when the death observation is marked as "true" -->
-               <item>
-                  <linkId value="los-contributed-to-death"/>
-                  <text value="Infection contributed to death"/>
-                  <answer>
-                     <valueBoolean value="false"/>
-                  </answer>
-               </item>
+          <!-- Note: This item is only enabled when the death observation is marked as "true" -->
+          <item>
+            <linkId value="los-contributed-to-death" />
+            <text value="Infection contributed to death" />
+            <answer>
+              <valueBoolean value="false" />
+            </answer>
+          </item>
 
-               <!-- Discharge Date 
+          <!-- Discharge Date 
          (CDA Mapping: ClinicalDocument/componentOf/encompassingEncounter/effectiveTime/high) -->
-               <item>
-                  <linkId value="discharge-date"/>
-                  <text value="Discharge Date"/>
-                  <answer>
-                     <valueDate value="2018-01-12"/>
-                  </answer>
-               </item>
-            </item>
+          <item>
+            <linkId value="discharge-date" />
+            <text value="Discharge Date" />
+            <answer>
+              <valueDate value="2018-01-12" />
+            </answer>
+          </item>
+        </item>
 
-            <!-- Findings Group
+        <!-- Findings Group
        CDA: Findings Section in an Infection-Type Report-->
-            <item>
-               <linkId value="findings-group"/>
-               <text value="Findings Group"/>
+        <item>
+          <linkId value="findings-group" />
+          <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them." />
 
-               <!-- Pathogen Identified
+          <!-- Pathogen Identified
          (CDA Mapping: Pathogen Identified Observation) -->
-               <item>
-                  <linkId value="pathogen-identified"/>
-                  <text value="Pathogen Identified"/>
-                  <answer>
-                     <valueCoding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="48321006"/>
-                        <display value="Clostridium symbiosum (organism)"/>
-                     </valueCoding>
-                  </answer>
-               </item>
+          <item>
+            <linkId value="pathogen-identified" />
+            <text value="Pathogen Identified" />
+            <answer>
+              <valueCoding>
+                <system value="http://snomed.info/sct" />
+                <code value="48321006" />
+                <display value="Clostridium symbiosum (organism)" />
+              </valueCoding>
+            </answer>
+          </item>
 
-               <!-- Pathogen Ranking
+          <!-- Pathogen Ranking
          (CDA Mapping: Pathogen Ranking Observation) -->
-               <item>
-                  <linkId value="pathogen-ranking"/>
-                  <text value="Pathogen Ranking"/>
-                  <answer>
-                     <valueCoding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="255216001"/>
-                        <display value="First"/>
-                     </valueCoding>
-                  </answer>
-               </item>
+          <item>
+            <linkId value="pathogen-ranking" />
+            <text value="Pathogen Ranking" />
+            <answer>
+              <valueCoding>
+                <system value="http://snomed.info/sct" />
+                <code value="255216001" />
+                <display value="First" />
+              </valueCoding>
+            </answer>
+          </item>
 
-               <!-- Drug Susceptibility Test Group
+          <!-- Drug Susceptibility Test Group
          (CDA Mapping: Drug Susceptibility Test Observation) -->
-               <item>
-                  <linkId value="drug-susceptibility-test-group"/>
-                  <text value="Drug Susceptibility Test Group"/>
+          <item>
+            <linkId value="drug-susceptibility-test-group" />
+            <text value="Drug Susceptibility Test Group" />
 
-                  <!-- Drug Susceptibilty Test 
+            <!-- Drug Susceptibilty Test 
            CDA: Drug-Susceptibility Test Observation/code -->
-                  <item>
-                     <linkId value="drug-susceptibility-test"/>
-                     <text value="Drug Susceptibility Test"/>
-                     <answer>
-                        <valueCoding>
-                           <system value="https://loinc.org/"/>
-                           <code value="18907-6"/>
-                           <display value="Clarithro Susc Islt"/>
-                        </valueCoding>
-                     </answer>
-                  </item>
-                  <!-- Drug Susceptibilty Test Interpretation
-           CDA: Drug-Susceptibility Test Observation/interpretationCode -->
-                  <item>
-                     <linkId value="drug-susceptibility-test-interpretation"/>
-                     <text value="Drug Susceptibility Test Interpretation"/>
-                     <answer>
-                        <valueCoding>
-                           <system value="urn:oid:2.16.840.1.113883.5.83"/>
-                           <code value="R"/>
-                           <display value="Resistant"/>
-                        </valueCoding>
-                     </answer>
-                  </item>
-               </item>
-            </item>
-
-            <!-- NHSN Comment
-         CDA: NHSN Comment Section/NHSN Comment-->
             <item>
-               <linkId value="nhsn-comment"/>
-               <text value="nhsn-comment"/>
-               <answer>
-                  <valueString value="NHSN text comment that is less than 2000 characters."/>
-               </answer>
+              <linkId value="drug-susceptibility-test" />
+              <text value="Drug Susceptibility Test" />
+              <answer>
+                <valueCoding>
+                  <system value="http://loinc.org" />
+                  <code value="18907-6" />
+                  <display value="Clarithro Susc Islt" />
+                </valueCoding>
+              </answer>
             </item>
+            <!-- Drug Susceptibilty Test Interpretation
+           CDA: Drug-Susceptibility Test Observation/interpretationCode -->
+            <item>
+              <linkId value="drug-susceptibility-test-interpretation" />
+              <text value="Drug Susceptibility Test Interpretation" />
+              <answer>
+                <valueCoding>
+                  <system value="http://hl7.org/fhir/v3/ObservationInterpretation" />
+                  <code value="R" />
+                  <display value="Resistant" />
+                </valueCoding>
+              </answer>
+            </item>
+          </item>
+        </item>
 
-         </QuestionnaireResponse>
-      </resource>
-   </entry>
-   <entry>
-      <fullUrl value="urn:uuid:e8f49540-d231-452c-abd5-16e9c6d6375b"/>
-      <resource>
-         <Patient>
-            <meta>
-               <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-            </meta>
-            <text>
-               <status value="generated"/>
-               <div xmlns="http://www.w3.org/1999/xhtml">
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td>Patient ID</td>
-                           <td>Medical Record Number: 12345</td>
-                        </tr>
-                        <tr>
-                           <td>Social Security #</td>
-                           <td>12345</td>
-                        </tr>
-                        <tr>
-                           <td>Medicaid #</td>
-                           <td>959595</td>
-                        </tr>
-                        <tr>
-                           <td>Patient Last Name</td>
-                           <td>Nuclear</td>
-                        </tr>
-                        <tr>
-                           <td>Patient First Name</td>
-                           <td>Ned</td>
-                        </tr>
-                        <tr>
-                           <td>Gender</td>
-                           <td>Male</td>
-                        </tr>
-                        <tr>
-                           <td>Date of Birth</td>
-                           <td>1954-11-25</td>
-                        </tr>
-                        <tr>
-                           <td>Ethnicity</td>
-                           <td>Not Hispanic or Latino</td>
-                        </tr>
-                        <tr>
-                           <td>Race</td>
-                           <td>White</td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-            </text>
+        <!-- NHSN Comment
+         CDA: NHSN Comment Section/NHSN Comment-->
+        <item>
+          <linkId value="nhsn-comment" />
+          <text value="Comments" />
+          <answer>
+            <valueString value="NHSN text comment that is less than 2000 characters." />
+          </answer>
+        </item>
 
-            <!-- Race -->
-            <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-               <extension url="ombCategory">
-                  <valueCoding>
-                     <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                     <code value="2106-3"/>
-                     <display value="White"/>
-                  </valueCoding>
-               </extension>
-               <extension url="text">
-                  <valueString value="White"/>
-               </extension>
-            </extension>
+      </QuestionnaireResponse>
 
-            <!-- Ethnicity -->
-            <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
-               <extension url="ombCategory">
-                  <valueCoding>
-                     <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                     <code value="2186-5"/>
-                     <display value="Not Hispanic or Latino"/>
-                  </valueCoding>
-               </extension>
-               <extension url="text">
-                  <valueString value="Not Hispanic or Latino"/>
-               </extension>
-            </extension>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e8f49540-d231-452c-abd5-16e9c6d6375b" />
+    <resource>
+      <Patient>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
+        </meta>
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Patient ID</td>
+                  <td>Medical Record Number: 12345</td>
+                </tr>
+                <tr>
+                  <td>Social Security #</td>
+                  <td>12345</td>
+                </tr>
+                <tr>
+                  <td>Medicaid #</td>
+                  <td>959595</td>
+                </tr>
+                <tr>
+                  <td>Patient Last Name</td>
+                  <td>Nuclear</td>
+                </tr>
+                <tr>
+                  <td>Patient First Name</td>
+                  <td>Ned</td>
+                </tr>
+                <tr>
+                  <td>Gender</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <td>Date of Birth</td>
+                  <td>1954-11-25</td>
+                </tr>
+                <tr>
+                  <td>Ethnicity</td>
+                  <td>Not Hispanic or Latino</td>
+                </tr>
+                <tr>
+                  <td>Race</td>
+                  <td>White</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </text>
 
-            <!--    Medicaid beneficiary number    -->
-            <identifier>
-               <type>
-                  <coding>
-                     <system value="http://hl7.org/fhir/v2/0203"/>
-                     <code value="MA"/>
-                  </coding>
-               </type>
-               <system value="urn:oid:2.16.840.1.113883.19.5"/>
-               <value value="959595"/>
-            </identifier>
+        <!-- Race -->
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238" />
+              <code value="2106-3" />
+              <display value="White" />
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="White" />
+          </extension>
+        </extension>
 
-            <!--    Social Security    -->
-            <identifier>
-               <type>
-                  <coding>
-                     <system value="http://hl7.org/fhir/v2/0203"/>
-                     <code value="SS"/>
-                  </coding>
-               </type>
-               <system value="urn:oid:2.16.840.1.113883.4.1"/>
-               <value value="12345"/>
-            </identifier>
+        <!-- Ethnicity -->
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238" />
+              <code value="2186-5" />
+              <display value="Not Hispanic or Latino" />
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Not Hispanic or Latino" />
+          </extension>
+        </extension>
 
-            <!-- Medical Record Number -->
-            <identifier>
-               <type>
-                  <coding>
-                     <system value="http://hl7.org/fhir/v2/0203"/>
-                     <code value="MR"/>
-                  </coding>
-               </type>
-               <system value="urn:oid:2.16.840.1.113883.4.338"/>
-               <value value="12345"/>
-            </identifier>
+        <!--    Medicaid beneficiary number    -->
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/v2/0203" />
+              <code value="MA" />
+            </coding>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.19.5" />
+          <value value="959595" />
+        </identifier>
 
-            <name>
-               <use value="official"/>
-               <family value="Nuclear"/>
-               <given value="Ned"/>
-            </name>
-            <!-- use FHIR code system for male / female    -->
-            <gender value="male"/>
-            <birthDate value="1954-11-25"/>
-         </Patient>
+        <!--    Social Security    -->
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/v2/0203" />
+              <code value="SS" />
+            </coding>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.4.1" />
+          <value value="12345" />
+        </identifier>
 
-      </resource>
-   </entry>
-   <entry>
-      <fullUrl value="urn:uuid:65a95666-9ba7-4107-a37b-07957c094b88"/>
-      <resource>
-         <Device xmlns="http://hl7.org/fhir">
-            <text>
-               <status value="generated"/>
-               <div xmlns="http://www.w3.org/1999/xhtml">
-                  <p><b>id</b>: hai-authoring-device</p>
-                  <p><b>Id</b>: 2.16.840.1.113883.3.117.1.1.5.1.1.2:anAuthorID</p>
-               </div>
-            </text>
-            <identifier>
-               <!-- (CDA Mapping: author/assignedAuthor/id/root) -->
-               <system value="2.16.840.1.113883.3.117.1.1.5.1.1.2"/>
-               <!-- (CDA Mapping: author/assignedAuthor/id/extension) -->
-               <value value="anAuthorId"/>
-            </identifier>
-         </Device>
+        <!-- Medical Record Number -->
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/v2/0203" />
+              <code value="MR" />
+            </coding>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.4.338" />
+          <value value="12345" />
+        </identifier>
 
-      </resource>
-   </entry>
+        <name>
+          <use value="official" />
+          <family value="Nuclear" />
+          <given value="Ned" />
+        </name>
+        <!-- use FHIR code system for male / female    -->
+        <gender value="male" />
+        <birthDate value="1954-11-25" />
+      </Patient>
+
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:65a95666-9ba7-4107-a37b-07957c094b88" />
+    <resource>
+      <Device xmlns="http://hl7.org/fhir">
+        <text>
+          <status value="generated" />
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p><b>id</b>: hai-authoring-device</p>
+            <p><b>Id</b>: 2.16.840.1.113883.3.117.1.1.5.1.1.2:anAuthorID</p>
+          </div>
+        </text>
+        <identifier>
+          <!-- (CDA Mapping: author/assignedAuthor/id/root) -->
+          <system value="2.16.840.1.113883.3.117.1.1.5.1.1.2" />
+          <!-- (CDA Mapping: author/assignedAuthor/id/extension) -->
+          <value value="anAuthorId" />
+        </identifier>
+      </Device>
+
+    </resource>
+  </entry>
 </Bundle>
