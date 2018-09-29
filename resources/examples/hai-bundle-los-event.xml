@@ -192,7 +192,7 @@
         </subject>
 
         <author>
-          <reference value="Device/hai-authoring-device" />
+          <reference value="urn:uuid:65a95666-9ba7-4107-a37b-07957c094b88" />
           <display value="hai-authoring-device" />
         </author>
 
