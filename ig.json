@@ -58,6 +58,9 @@
     },
     "Extension": {
       "template-base": "ex-template-base.html"
+    },
+    "Bundle": {
+      "template-base": "in-template-base.html"
     }
   },
   "canonicalBase": "http://hl7.org/fhir/us/hai",

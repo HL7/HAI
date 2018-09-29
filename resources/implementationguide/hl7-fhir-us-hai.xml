@@ -110,6 +110,12 @@
         <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-event" />
       </sourceReference>
     </resource>
+    <resource>
+      <example value="true" />
+      <sourceReference>
+        <reference value="Bundle/hai-bundle-los-event" />
+      </sourceReference>
+    </resource>
   </package>
   <page>
     <source value="index.html" />

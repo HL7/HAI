@@ -34,7 +34,7 @@
   "name" : "Healthcare Associated Infection Reports, FHIR Release 1 - US Realm",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2018-03-19T00:00:00+10:00",
+  "date" : "2018-03-19T00:00:00-04:00",
   "publisher" : "HL7",
   "jurisdiction" : [{
     "coding" : [{
@@ -164,6 +164,13 @@
     {
       "reference" : {
         "reference" : "QuestionnaireResponse/hai-questionnaireResponse-los-event"
+      },
+      "exampleBoolean" : true,
+      "package" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "Bundle/hai-bundle-los-event"
       },
       "exampleBoolean" : true,
       "package" : "p1"

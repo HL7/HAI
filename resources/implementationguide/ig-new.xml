@@ -28,7 +28,7 @@
   <name value="Healthcare Associated Infection Reports, FHIR Release 1 - US Realm"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2018-03-19T00:00:00+10:00"/>
+  <date value="2018-03-19T00:00:00-04:00"/>
   <publisher value="HL7"/>
   <jurisdiction>
     <coding>
@@ -156,6 +156,13 @@
     <resource>
       <reference>
         <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-event"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <package value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/hai-bundle-los-event"/>
       </reference>
       <exampleBoolean value="true"/>
       <package value="p1"/>
