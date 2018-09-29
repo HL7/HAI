@@ -187,7 +187,7 @@
         - Patient Race
   -->
         <subject>
-          <reference value="Patient/hai-patient-1" />
+          <reference value="urn:uuid:e8f49540-d231-452c-abd5-16e9c6d6375b" />
           <display value="hai-patient-1" />
         </subject>
 
