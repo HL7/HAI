@@ -3,10 +3,10 @@
   <id value="hl7-fhir-us-hai" />
   <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai" />
   <version value="0.1.0" />
-  <name value="Healthcare Associated Infection Reports, FHIR Release 1 - US Realm" />
+  <name value="Healthcare Associated Infection Reports, FHIR STU Release 1 - US Realm" />
   <status value="draft" />
   <experimental value="false" />
-  <date value="2018-03-19" />
+  <date value="2019-02-04" />
   <publisher value="HL7" />
   <package>
     <name value="base" />

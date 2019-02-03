@@ -3,6 +3,7 @@
   "license": "CC0-1.0",
   "npm-name": "hl7.fhir.us.hai",
   "version": "3.0.1",
+  "fixed-business-version": "1.1.0",
   "jurisdiction": "US",
   "paths": {
     "resources": [
