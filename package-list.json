@@ -1,17 +1,29 @@
- {
-   "package-id" : "hl7.fhir.us.hai",
-   "title" : "Healthcare Associated Infection Reports, FHIR Release 1 - US Realm",
-   "canonical" : "http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai",
-   
-   "list" :  
-   {
-     "version" : "1.1.0",
-     "date" : "2019-02-04",
-     "desc" : "STU Release 1",
-     "path" : "http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai/1.1.0",
-     "changes" : "currentreleasepage.html",
-     "status" : "trial-use",
-     "sequence" : "STU 1",
-     "current" : true
-  }
- }
+{
+ "package-id" : "hl7.fhir.us.hai",
+ "title" : "Healthcare Associated Infection Implementation Guide", 
+ "canonical" : "http://www.hl7.org/fhir/us/hai", 
+ "introduction" : "The Healthcare Associated Infection Implementation Implementation Guide is a US Realm Implementation Guide of the FHIR Specification that specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.",
+ "list" : [{
+  "version" : "current",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "http://build.fhir.org/ig/HL7/HAI",
+  "status" : "ci-build",
+  "current" : true
+ },{
+  "version" : "1.0.0",  
+  "date" : "2018-09-30", 
+  "desc" : "STU Release 1 (FHIR STU 3)",   
+  "path" : "http://www.hl7.org/fhir/us/hai/",   
+  "status" : "trial-use",   
+  "sequence" : "STU 1 (FHIR R3)",
+  "current" : true
+ },{
+  "version" : "0.1.0",  
+  "date" : "2018-04-04", 
+  "desc" : "Draft for Comment",   
+  "path" : "http://www.hl7.org/fhir/us/hai/2018May",   
+  "status" : "draft",   
+  "sequence" : "STU 1",
+  "current" : false
+ }]
+}
