@@ -1,7 +1,7 @@
 {
 	"tool": "jekyll",
 	"source": "implementationguide/hl7-fhir-us-hai.xml",
-	"npm-name": "hl7-fhir-us-hai-npm",
+	"npm-name": "hl7-fhir-us-hai",
 	"license": "CC0-1.0",
 	"paths": {
 		"qa": "generated_output/qa",
