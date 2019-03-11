@@ -1,87 +1,202 @@
 {
-  "tool": "jekyll",
-  "license": "CC0-1.0",
-  "npm-name": "hl7.fhir.us.hai",
-  "version": "3.0.1",
-  "fixed-business-version": "1.1.0",
-  "jurisdiction": "US",
-  "paths": {
-    "resources": [
-      "resources",
-      "resources/valueset",
-      "resources/codesystem",
-      "resources/structuredefinition",
-      "resources/examples",
-      "resources/implementationguide"
-    ],
-    "pages": "pages",
-    "temp": "temp",
-    "output": "output",
-    "qa": "qa",
-    "txCache": "txCache",
-    "specification": "http://hl7.org/fhir/STU3"
-  },
-  "dependencyList": [{
-    "name": "uscore",
-    "location": "http://hl7.org/fhir/us/core",
-    "version": "1.0.1"
-  }],
-  "defaults": {
-    "Any": {
-      "template-format": "template-format.html",
-      "template-base": "template-base.html"
-    },
-    "StructureDefinition": {
-      "template-base": "sd-template-base.html",
-      "template-defns": "sd-template-defns.html",
-      "template-format": "sd-template-format.html"
-    },
-    "ValueSet": {
-      "template-base": "tm-template-base.html"
-    },
-    "CodeSystem": {
-      "template-base": "tm-template-base.html"
-    },
-    "Resource": {
-      "template-base": "pf-template-base.html"
-    },
-    "Questionnaire": {
-      "template-base": "in-template-base.html",
-      "template-format": "in-template-format.html"
-    },
-    "QuestionnaireResponse": {
-      "template-base": "in-template-base.html",
-      "template-format": "in-template-format.html"
-     },
-    "Patient": {
-      "template-base": "in-template-base.html",
-      "template-format": "in-template-format.html"
-    },
-    "Extension": {
-      "template-base": "ex-template-base.html"
-    },
-    "Bundle": {
-      "template-base": "in-template-base.html"
-    }
-  },
-  "canonicalBase": "http://hl7.org/fhir/us/hai",
-  "source": "implementationguide/hl7-fhir-us-hai.xml",
-  "sct-edition": "http://snomed.info/sct/900000000000207008",
-  "special-urls": [],
-  "resources": {
-  "StructureDefinition/hai-single-person-report-questionnaire": {
-      "base": "StructureDefinition-hai-single-person-report-questionnaire.html",
-      "defns": "StructureDefinition-hai-single-person-report-questionnaire-definitions.html"
-    },
-    "StructureDefinition/hai-single-person-report-questionnaire-response": {
-      "base": "StructureDefinition-hai-single-person-report-questionnaire-response.html",
-      "defns": "StructureDefinition-hai-single-person-report-questionnaire-response-definitions.html"
-    },
-    "CodeSystem/2.16.840.1.113883.6.259": {
-      "base": "CodeSystem-2.16.840.1.113883.6.259.html"
-    },
-    "CodeSystem/2.16.840.1.113883.6.277": {
-      "base": "CodeSystem-2.16.840.1.113883.6.277.html"
-    }
-  }
+	"tool": "jekyll",
+	"source": "implementationguide/hl7-fhir-us-hai.xml",
+	"npm-name": "hl7-fhir-us-hai-npm",
+	"license": "CC0-1.0",
+	"paths": {
+		"qa": "generated_output/qa",
+		"temp": "generated_output/temp",
+		"output": "output",
+		"txCache": "generated_output/txCache",
+		"specification": "http://hl7.org/fhir/STU3",
+		"pages": [
+			"framework",
+			"source/pages"
+		],
+		"resources": [
+			"source/resources"
+		]
+	},
+	"pages": [
+		"pages"
+	],
+	"extension-domains": [
+		"https://trifolia-on-fhir.lantanagroup.com"
+	],
+	"allowed-domains": [
+		"https://trifolia-on-fhir.lantanagroup.com"
+	],
+	"sct-edition": "http://snomed.info/sct/731000124108",
+	"canonicalBase": "http://hl7.org/fhir/us/hai",
+	"defaults": {
+		"Location": {
+			"template-base": "ex.html"
+		},
+		"ProcedureRequest": {
+			"template-base": "ex.html"
+		},
+		"Organization": {
+			"template-base": "ex.html"
+		},
+		"MedicationStatement": {
+			"template-base": "ex.html"
+		},
+		"SearchParameter": {
+			"template-base": "base.html"
+		},
+		"StructureDefinition": {
+			"template-mappings": "sd-mappings.html",
+			"template-base": "sd.html",
+			"template-defns": "sd-definitions.html"
+		},
+		"Immunization": {
+			"template-base": "ex.html"
+		},
+		"Patient": {
+			"template-base": "ex.html"
+		},
+		"StructureMap": {
+			"content": false,
+			"script": false,
+			"template-base": "ex.html",
+			"profiles": false
+		},
+		"ConceptMap": {
+			"template-base": "base.html"
+		},
+		"Practitioner": {
+			"template-base": "ex.html"
+		},
+		"OperationDefinition": {
+			"template-base": "base.html"
+		},
+		"CodeSystem": {
+			"template-base": "base.html"
+		},
+		"Communication": {
+			"template-base": "ex.html"
+		},
+		"Any": {
+			"template-format": "format.html",
+			"template-base": "base.html"
+		},
+		"PractitionerRole": {
+			"template-base": "ex.html"
+		},
+		"ValueSet": {
+			"template-base": "base.html"
+		},
+		"CapabilityStatement": {
+			"template-base": "base.html"
+		},
+		"Observation": {
+			"template-base": "ex.html"
+		}
+	},
+	"resources": {
+		"StructureDefinition/hai-single-person-report-questionnaire": {
+			"base": "StructureDefinition-hai-single-person-report-questionnaire.html",
+			"defns": "StructureDefinition-hai-single-person-report-questionnaire-definitions.html"
+		},
+		"StructureDefinition/hai-single-person-report-questionnaire-response": {
+			"base": "StructureDefinition-hai-single-person-report-questionnaire-response.html",
+			"defns": "StructureDefinition-hai-single-person-report-questionnaire-response-definitions.html"
+		},
+		"CodeSystem/2.16.840.1.113883.6.259": {
+			"base": "CodeSystem-2.16.840.1.113883.6.259.html",
+			"defns": "CodeSystem-2.16.840.1.113883.6.259-definitions.html"
+		},
+		"CodeSystem/2.16.840.1.113883.6.277": {
+			"base": "CodeSystem-2.16.840.1.113883.6.277.html",
+			"defns": "CodeSystem-2.16.840.1.113883.6.277-definitions.html"
+		},
+		"ValueSet/2.16.840.1.113883.13.19": {
+			"base": "ValueSet-2.16.840.1.113883.13.19.html",
+			"defns": "ValueSet-2.16.840.1.113883.13.19-definitions.html"
+		},
+		"ValueSet/2.16.840.1.113883.13.20": {
+			"base": "ValueSet-2.16.840.1.113883.13.20.html",
+			"defns": "ValueSet-2.16.840.1.113883.13.20-definitions.html"
+		},
+		"ValueSet/2.16.840.1.113883.13.13": {
+			"base": "ValueSet-2.16.840.1.113883.13.13.html",
+			"defns": "ValueSet-2.16.840.1.113883.13.13-definitions.html"
+		},
+		"ValueSet/2.16.840.1.113883.13.15": {
+			"base": "ValueSet-2.16.840.1.113883.13.15.html",
+			"defns": "ValueSet-2.16.840.1.113883.13.15-definitions.html"
+		},
+		"ValueSet/nhsn-pathogen-ranking": {
+			"base": "ValueSet-nhsn-pathogen-ranking.html",
+			"defns": "ValueSet-nhsn-pathogen-ranking-definitions.html"
+		},
+		"ValueSet/2.16.840.1.113883.13.16": {
+			"base": "ValueSet-2.16.840.1.113883.13.16.html",
+			"defns": "ValueSet-2.16.840.1.113883.13.16-definitions.html"
+		},
+		"ValueSet/2.16.840.1.114222.4.11.3195": {
+			"base": "ValueSet-2.16.840.1.114222.4.11.3195.html",
+			"defns": "ValueSet-2.16.840.1.114222.4.11.3195-definitions.html"
+		},
+		"ValueSet/2.16.840.1.114222.4.11.3196": {
+			"base": "ValueSet-2.16.840.1.114222.4.11.3196.html",
+			"defns": "ValueSet-2.16.840.1.114222.4.11.3196-definitions.html"
+		},
+		"Patient/hai-patient-1": {
+			"base": "Patient-hai-patient-1.html",
+			"defns": "Patient-hai-patient-1-definitions.html"
+		},
+		"Device/hai-authoring-device": {
+			"base": "Device-hai-authoring-device.html",
+			"defns": "Device-hai-authoring-device-definitions.html"
+		},
+		"Questionnaire/hai-questionnaire-los-event": {
+			"base": "Questionnaire-hai-questionnaire-los-event.html",
+			"defns": "Questionnaire-hai-questionnaire-los-event-definitions.html"
+		},
+		"QuestionnaireResponse/hai-questionnaireResponse-los-event": {
+			"base": "QuestionnaireResponse-hai-questionnaireResponse-los-event.html",
+			"defns": "QuestionnaireResponse-hai-questionnaireResponse-los-event-definitions.html"
+		},
+		"Bundle/hai-bundle-los-event": {
+			"base": "Bundle-hai-bundle-los-event.html",
+			"defns": "Bundle-hai-bundle-los-event-definitions.html"
+		},
+		"StructureDefinition/hai-population-summary-questionnaire": {
+			"base": "StructureDefinition-hai-population-summary-questionnaire.html",
+			"defns": "StructureDefinition-hai-population-summary-questionnaire-definitions.html"
+		},
+		"StructureDefinition/hai-population-summary-questionnaire-response": {
+			"base": "StructureDefinition-hai-population-summary-questionnaire-response.html",
+			"defns": "StructureDefinition-hai-population-summary-questionnaire-response-definitions.html"
+		},
+		"Questionnaire/hai-questionnaire-opc-sdom-denom": {
+			"base": "Questionnaire-hai-questionnaire-opc-sdom-denom.html",
+			"defns": "Questionnaire-hai-questionnaire-opc-sdom-denom-definitions.html"
+		},
+		"QuestionnaireResponse/hai-questionnaireResponse-opc-sdom-denom": {
+			"base": "QuestionnaireResponse-hai-questionnaireResponse-opc-sdom-denom.html",
+			"defns": "QuestionnaireResponse-hai-questionnaireResponse-opc-sdom-denom-definitions.html"
+		},
+		"Questionnaire/hai-questionnaire-los-denom": {
+			"base": "Questionnaire-hai-questionnaire-los-denom.html",
+			"defns": "Questionnaire-hai-questionnaire-los-denom-definitions.html"
+		},
+		"Questionnaire/hai-questionnaire-opc-sdom-event": {
+			"base": "Questionnaire-hai-questionnaire-opc-sdom-event.html",
+			"defns": "Questionnaire-hai-questionnaire-opc-sdom-event-definitions.html"
+		},
+		"ValueSet/2.16.840.1.113883.10.20.5.9.30": {
+			"base": "ValueSet-2.16.840.1.113883.10.20.5.9.30.html",
+			"defns": "ValueSet-2.16.840.1.113883.10.20.5.9.30-definitions.html"
+		}
+	},
+	"version": "3.0.1",
+	"dependencyList": [
+		{
+			"location": "http://hl7.org/fhir/us/core",
+			"name": "uscore",
+			"version": "1.0.1"
+		}
+	]
 }
