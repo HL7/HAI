@@ -33,7 +33,7 @@ active: other
 </tr>
 <tr>
 <td>ImplementationGuide</td>
-<td><a href="CapabilityStatement-hl7-fhir-us-hai.html">Healthcare Associated Infection Reports, FHIR STU Release 1 - US Realm</a></td>
+<td><a href="CapabilityStatement-hl7-fhir-us-hai.html">Healthcare Associated Infection Reports, FHIR STU Release 2 - US Realm</a></td>
 </tr>
 <tr>
 <td>Patient</td>
