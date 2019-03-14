@@ -1,56 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<QuestionnaireResponse
-    xmlns="http://hl7.org/fhir">
-    <id value="hai-questionnaireResponse-opc-ssi-event"/>
-    <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2019-03-14T00:03:04.000-04:00"/>
-        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response"/>
-    </meta>
-    <language value="en-US"/>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <p>This QuestionnaireResponse instance is an example of a O.</p>
-            <h2>Example Late Onset Sepsis/Meningitis Denominator</h2>
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <td>TODO</td>
-                        <td></td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-            
-            <h2>Comment</h2>
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <td>Comment</td>
-                        <td>NHSN text comment that is less than 2000 characters.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
-    <identifier>
-        <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
-        <value value="20202210"/>
-    </identifier>
-    <questionnaire>
-        <reference value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-ssi-event"/>
-    </questionnaire>
-    <status value="completed"/>
-    <subject>
-        <reference value="Patient/hai-patient-1"/>
-        <display value="hai-patient-1"/>
-    </subject>
-    <author>
-        <reference value="Device/hai-authoring-device"/>
-        <display value="hai-authoring-device"/>
-    </author>
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="hai-questionnaireResponse-opc-ssi-event" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2019-03-14T00:03:04.000-04:00" />
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response" />
+  </meta>
+  <language value="en-US" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This QuestionnaireResponse instance is an example of a O.</p>
+      <h2>Example Late Onset Sepsis/Meningitis Denominator</h2>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>TODO</td>
+            <td />
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h2>Comment</h2>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>Comment</td>
+            <td>NHSN text comment that is less than 2000 characters.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2" />
+    <value value="20202210" />
+  </identifier>
+  <questionnaire>
+    <reference value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-ssi-event" />
+  </questionnaire>
+  <status value="completed" />
+  <subject>
+    <reference value="Patient/hai-patient-1" />
+    <display value="hai-patient-1" />
+  </subject>
+  <author>
+    <reference value="Device/hai-authoring-device" />
+    <display value="hai-authoring-device" />
+  </author>
   <item>
     <linkId value="facility-id" />
     <text value="Facility ID" />
@@ -80,28 +78,14 @@
     <linkId value="encounter-date" />
     <text value="Date of encounter" />
     <answer>
-      <valueDate value="2019-01-01"/>
+      <valueDate value="2019-01-01" />
     </answer>
   </item>
-  
   <item>
     <linkId value="nhsn-comment" />
-    <code>
-      <system value="http://www.loinc.org" />
-      <code value="86468-6" />
-      <display value="Report Comment Section" />
-    </code>
     <text value="Comments" />
-    <type value="text" />
-    <required value="false" />
-    <repeats value="false" />
-    <maxLength value="2000" />
+    <answer>
+      <valueString value="NHSN text comment that is less than 2000 characters." />
+    </answer>
   </item>
-    <item>
-        <linkId value="nhsn-comment"/>
-        <text value="Comments"/>
-        <answer>
-            <valueString value="NHSN text comment that is less than 2000 characters."/>
-        </answer>
-    </item>
 </QuestionnaireResponse>

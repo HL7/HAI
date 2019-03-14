@@ -357,9 +357,9 @@
       <type value="choice" />
       <required value="true" />
       <repeats value="false" />
-      <options>
+      <!--<options>
         <reference value="http://hl7.org/fhir/ValueSet/cpt-all" />
-      </options>
+      </options>-->
     </item>
     <item>
       <linkId value="procedure-duration" />
