@@ -125,7 +125,7 @@
     <code>
       <system value="http://loinc.org" />
       <code value="51899-3" />
-      <display value="Event details" />
+      <display value="Details Document" />
     </code>
     <text value="Infection Details" />
     <type value="group" />
@@ -222,9 +222,9 @@
     <item>
       <linkId value="nhsn-procedure-code-category" />
       <code>
-        <system value="http://snomed.info/sct" />
+        <system value="http://loinc.org" />
         <code value="29300-1" />
-        <display value="Procedure" />
+        <display value="Procedure type" />
       </code>
       <text value="NHSN Procedure Code Category" />
       <type value="choice" />
