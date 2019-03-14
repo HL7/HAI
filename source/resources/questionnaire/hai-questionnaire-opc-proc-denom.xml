@@ -336,7 +336,7 @@
       <code>
         <system value="http://loinc.org" />
         <code value="29300-1" />
-        <display value="Procedure type" />
+        <display value="Procedure" />
       </code>
       <text value="NHSN Procedure Code Category" />
       <type value="choice" />
