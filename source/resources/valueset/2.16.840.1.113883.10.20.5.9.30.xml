@@ -29,7 +29,7 @@
             </concept>
         </include>
         <include>
-          <system value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.6.277"/>
+          <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
             <concept>
                 <code value="1311-0"/>
                 <display value="No location change"/>

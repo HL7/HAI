@@ -193,15 +193,6 @@
     },
     {
       "reference" : {
-        "reference" : "Bundle/hai-bundle-los-event",
-        "display" : "Example Bundle: HAI LOS Event"
-      },
-      "name" : "Instance QuestionnaireResponse: hai-questionnaireResponse-los-event.xml",
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
-    },
-    {
-      "reference" : {
         "reference" : "StructureDefinition/hai-population-summary-questionnaire",
         "display" : "Profile Questionnaire: HAI Population Summary"
       },

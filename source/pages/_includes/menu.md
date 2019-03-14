@@ -21,10 +21,10 @@
 
 -->
 - [Home](index.html){: .active}
-- [Table of Contents](toc.html)
+- [Guidance](guidance.html)
 - [Profiles, Extensions & Transactions](profiles.html)
+- [Questionnaire Instances & Examples](questionnaireInstancesExamples.html)
 - [Terminology](terminology.html)
-- [Capability Statements](capstatements.html)
 - [Other](other.html)
 - [Downloads](downloads.html)
 

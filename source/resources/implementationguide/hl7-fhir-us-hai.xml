@@ -194,14 +194,14 @@
                 <display value="Example QuestionnaireResponse: hai-questionnaireResponse-los-event.xml"/>
             </sourceReference>
         </resource>
-        <resource>
+        <!--<resource>
             <example value="true"/>
             <name value="Instance QuestionnaireResponse: hai-questionnaireResponse-los-event.xml"/>
             <sourceReference>
                 <reference value="Bundle/hai-bundle-los-event"/>
                 <display value="Example Bundle: HAI LOS Event"/>
             </sourceReference>
-        </resource>
+        </resource>-->
         <resource>
             <example value="false"/>
             <name value="Profile Questionnaire: HAI Population Summary"/>

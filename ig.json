@@ -158,10 +158,6 @@
 			"base": "QuestionnaireResponse-hai-questionnaireResponse-los-event.html",
 			"defns": "QuestionnaireResponse-hai-questionnaireResponse-los-event-definitions.html"
 		},
-		"Bundle/hai-bundle-los-event": {
-			"base": "Bundle-hai-bundle-los-event.html",
-			"defns": "Bundle-hai-bundle-los-event-definitions.html"
-		},
 		"StructureDefinition/hai-population-summary-questionnaire": {
 			"base": "StructureDefinition-hai-population-summary-questionnaire.html",
 			"defns": "StructureDefinition-hai-population-summary-questionnaire-definitions.html"

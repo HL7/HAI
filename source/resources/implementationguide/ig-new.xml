@@ -189,15 +189,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/hai-bundle-los-event"/>
-        <display value="Example Bundle: HAI LOS Event"/>
-      </reference>
-      <name value="Instance QuestionnaireResponse: hai-questionnaireResponse-los-event.xml"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/hai-population-summary-questionnaire"/>
         <display value="Profile Questionnaire: HAI Population Summary"/>
       </reference>

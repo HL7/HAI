@@ -1782,3 +1782,14 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "51899-3",
+  "display" : "Event details"
+}, "valueSet" :null}####
+v: {
+  "display" : "Details Document",
+  "severity" : "warning",
+  "error" : "The display \"Event details\" is not a valid display for the code {http://loinc.org}51899-3 - should be one of [\"Details Document\",\"Details Doc\"]"
+}
+-------------------------------------------------------------------------------------
