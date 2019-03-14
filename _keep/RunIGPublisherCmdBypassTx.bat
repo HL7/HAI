@@ -1,0 +1,1 @@
+java -jar org.hl7.fhir.igpublisher.jar -tx N/A -ig %~dp0ig.json

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionnaireResponse
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaireResponse-los-denom"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-03-13T22:23:28.000-04:00"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p>This Questionnaire instance is an example of a completed Late Onset Sepsis/Meningitis Denominator.</p>
+            <h2>Example Late Onset Sepsis/Meningitis Denominator</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Year and month data collected for this location</td>
+                        <td>date</td>
+                    </tr>
+                    <tr>
+                        <td>Facility ID</td>
+                        <td>url</td>
+                    </tr>
+                    <tr>
+                        <td>Date Admitted to Facility</td>
+                        <td>date</td>
+                    </tr>
+                    <tr>
+                        <td>Facility Location Type</td>
+                        <td>choice</td>
+                    </tr>
+                    <tr>
+                        <td>Facility Location</td>
+                        <td>url</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Location Within Facility Encounter</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Date admitted or transferred to location</td>
+                        <td>date</td>
+                    </tr>
+                    <tr>
+                        <td>Disposition of infant</td>
+                        <td>choice</td>
+                    </tr>
+                    <tr>
+                        <td>Disposition date if discharged, transferred, or expired</td>
+                        <td>date</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Risk Factors</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Birth weight (grams)</td>
+                    </tr>
+                    <tr>
+                        <td>Gestational age (days)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Comment</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Comment</td>
+                        <td>NHSN text comment that is less than 2000 characters.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <identifier>
+        <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
+        <value value="20202206"/>
+    </identifier>
+    <questionnaire>
+        <reference value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-denom"/>
+    </questionnaire>
+    <status value="completed"/>
+    <subject>
+        <reference value="Patient/hai-patient-1"/>
+        <display value="hai-patient-1"/>
+    </subject>
+    <author>
+        <reference value="Device/hai-authoring-device"/>
+        <display value="hai-authoring-device"/>
+    </author>
+    <item>
+        <linkId value="date-collected"/>
+        <text value="Year and month data collected for this location"/>
+        <answer>
+            <valueDate value="2019-01"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="facility"/>
+        <text value="Facility ID"/>
+        <answer>
+            <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="date-admitted-to-facility"/>
+        <text value="Date Admitted to Facility"/>
+        <answer>
+            <valueDate value="2019-01-01"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="location-within-facility-encounter-group"/>
+        <text value="Location Within Facility Encounter"/>
+        <item>
+            <linkId value="facility-location-type"/>
+            <text value="Facility Location Type"/>
+            <answer>
+                <valueCoding>
+                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259"/>
+                    <code value="1039-7"/>
+                  <display value="Neonatal Critical Care(Level II/III)"/>
+                </valueCoding>
+            </answer>
+        </item>
+        <item>
+            <linkId value="facility-location"/>
+            <text value="Facility Location"/>
+            <answer>
+                <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:NICU"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="location-admit-transfer-date"/>
+            <text value="Date admitted or transferred to location"/>
+            <answer>
+                <valueDate value="2019-01-01"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="infant-disposition"/>
+            <text value="Disposition of infant"/>
+            <answer>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="266751003"/>
+                    <display value="Transferred from department (finding)"/>
+                </valueCoding>
+            </answer>
+        </item>
+        <item>
+            <linkId value="disposition-date"/>
+            <text value="Disposition date if discharged, transferred, or expired"/>
+            <answer>
+                <valueDate value="2019-01-02"/>
+            </answer>
+        </item>
+    </item>
+    <item>
+        <linkId value="risk-factors"/>
+        <text value="Risk Factors: Contains birth weight and gestational age"/>
+        <item>
+            <linkId value="risk-factor-birth-weight"/>
+            <text value="Risk Factor: Birth weight (grams)"/>
+            <answer>
+                <valueQuantity>
+                    <value value="700"/>
+                </valueQuantity>
+            </answer>
+        </item>
+        <item>
+            <linkId value="risk-factor-gestational-age"/>
+            <text value="Risk Factor: Gestational age (days)"/>
+            <answer>
+                <valueQuantity>
+                    <value value="276"/>
+                </valueQuantity>
+            </answer>
+        </item>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <text value="Comments"/>
+        <answer>
+            <valueString value="NHSN text comment that is less than 2000 characters."/>
+        </answer>
+    </item>
+</QuestionnaireResponse>

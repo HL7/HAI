@@ -1,1 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir"><id value="2.16.840.1.113883.10.20.5.9.30"/><meta><versionId value="3"/><lastUpdated value="2019-03-11T01:02:07.000-04:00"/></meta><url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30"/><name value="2.16.840.1.113883.10.20.5.9.30"/><title value="NHSNLOS/MENDischargeDisposition"/><status value="draft"/><description value="Disposition of infant"/><compose><inactive value="false"/><include><system value="http://snomed.info/sct"/><concept><code value="183665006"/><display value="Discharged from hospital (finding)"/></concept><concept><code value="266751003"/><display value="Transferred from department (finding)"/></concept><concept><code value="371828006"/><display value="Patient deceased during stay (discharge status = dead) (finding)"/></concept></include><include><system value="urn:oid:2.16.840.1.113883.6.277"/><concept><code value="1311-0"/><display value="No location change"/></concept></include></compose></ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.10.20.5.9.30"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2019-03-11T01:02:07.000-04:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30"/>
+    <name value="2.16.840.1.113883.10.20.5.9.30"/>
+    <title value="NHSNLOS/MENDischargeDisposition"/>
+    <status value="draft"/>
+    <description value="Disposition of infant"/>
+    <compose>
+        <inactive value="false"/>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="183665006"/>
+                <display value="Discharged from hospital (finding)"/>
+            </concept>
+            <concept>
+                <code value="266751003"/>
+                <display value="Transferred from department (finding)"/>
+            </concept>
+            <concept>
+                <code value="371828006"/>
+                <display value="Patient deceased during stay (discharge status = dead) (finding)"/>
+            </concept>
+        </include>
+        <include>
+          <system value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.6.277"/>
+            <concept>
+                <code value="1311-0"/>
+                <display value="No location change"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,1 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?><StructureDefinition xmlns="http://hl7.org/fhir"><id value="hai-population-summary-questionnaire-response"/><meta><versionId value="1"/><lastUpdated value="2019-03-07T15:40:56.000-05:00"/></meta><url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire-response"/><name value="hai-population-summary-questionnaire-response"/><title value="Healthcare Associated Infection Population Summary QuestionnaireResponse"/><status value="draft"/><publisher value="Lantana Consulting Group"/><contact><name value="Sarah Gaunt"/><telecom><system value="phone"/><value value="+61 4 1029 2506"/><use value="work"/></telecom><telecom><system value="email"/><value value="sarah.gaunt@lantanagroup.com"/><use value="work"/></telecom></contact><description value="This profile represents a response to the Healthcare Associated Infection Population Summary Questionnaire as a FHIR QuestionnaireResponse profile."/><kind value="resource"/><abstract value="false"/><type value="QuestionnaireResponse"/><baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/><derivation value="constraint"/><differential><element id="QuestionnaireResponse"><path value="QuestionnaireResponse"/><short value="Healthcare Associated Infection Population Summary QuestionnaireResponse"/><definition value="This profile represents a response to the Healthcare Associated Infection Population Summary Questionnaire as a FHIR QuestionnaireResponse profile."/><mustSupport value="true"/></element><element id="QuestionnaireResponse.id"><path value="QuestionnaireResponse.id"/><min value="1"/></element><element id="QuestionnaireResponse.meta"><path value="QuestionnaireResponse.meta"/><min value="1"/><mustSupport value="true"/></element><element id="QuestionnaireResponse.meta.profile"><path value="QuestionnaireResponse.meta.profile"/><short value="A reference to this profile (to which the instance claims to conform)."/><definition value="A reference to this profile (to which the instance claims to conform)."/><min value="1"/><max value="1"/><patternUri value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire-response"/><mustSupport value="true"/></element><element id="QuestionnaireResponse.text"><path value="QuestionnaireResponse.text"/><min value="1"/><mustSupport value="true"/></element><element id="QuestionnaireResponse.identifier"><path value="QuestionnaireResponse.identifier"/><min value="1"/><mustSupport value="true"/></element><element id="QuestionnaireResponse.questionnaire"><path value="QuestionnaireResponse.questionnaire"/><short value="Points to the form being answered."/><min value="1"/><type><code value="Reference"/><targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/></type><mustSupport value="true"/></element><element id="QuestionnaireResponse.status"><path value="QuestionnaireResponse.status"/><patternCode value="completed"/><mustSupport value="true"/></element><element id="QuestionnaireResponse.authored"><path value="QuestionnaireResponse.authored"/><mustSupport value="true"/></element><element id="QuestionnaireResponse.author"><path value="QuestionnaireResponse.author"/><short value="Software or infection control professional"/><definition value="In a single-person report, the author may be software (US Core Device) or may be a person in the role of infection control professional (ICP) (US Core Practitioner). "/><min value="1"/><type><code value="Reference"/><targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/></type><type><code value="Reference"/><targetProfile value="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-practitioner"/></type><mustSupport value="true"/></element><element id="QuestionnaireResponse.item"><path value="QuestionnaireResponse.item"/><short value="item"/><definition value="A questionnaire item"/><min value="1"/><mustSupport value="true"/></element><element id="QuestionnaireResponse.item.text"><path value="QuestionnaireResponse.item.text"/><definition value="Text description of the questionnaire item"/><mustSupport value="true"/></element><element id="QuestionnaireResponse.item.answer"><path value="QuestionnaireResponse.item.answer"/><definition value="The answer to the questionnaire question (item)"/><mustSupport value="true"/></element><element id="QuestionnaireResponse.item.item"><path value="QuestionnaireResponse.item.item"/><short value="item"/><definition value="A nested questionnaire item (contained in a group)"/></element><element id="QuestionnaireResponse.item.item.text"><path value="QuestionnaireResponse.item.item.text"/><short value="text"/><definition value="Text description of the questionnaire item"/><mustSupport value="true"/></element><element id="QuestionnaireResponse.item.item.answer"><path value="QuestionnaireResponse.item.item.answer"/><definition value="The answer to the questionnaire question (item)"/><mustSupport value="true"/></element></differential></StructureDefinition>
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-population-summary-questionnaire-response"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-03-07T15:40:56.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire-response"/>
+    <name value="hai-population-summary-questionnaire-response"/>
+    <title value="Healthcare Associated Infection Population Summary QuestionnaireResponse"/>
+    <status value="draft"/>
+    <publisher value="Lantana Consulting Group"/>
+    <contact>
+        <name value="Sarah Gaunt"/>
+        <telecom>
+            <system value="phone"/>
+            <value value="+61 4 1029 2506"/>
+            <use value="work"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="sarah.gaunt@lantanagroup.com"/>
+            <use value="work"/>
+        </telecom>
+    </contact>
+    <description value="This profile represents a response to the Healthcare Associated Infection Population Summary Questionnaire as a FHIR QuestionnaireResponse profile."/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="QuestionnaireResponse"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="QuestionnaireResponse">
+            <path value="QuestionnaireResponse"/>
+            <short value="Healthcare Associated Infection Population Summary QuestionnaireResponse"/>
+            <definition value="This profile represents a response to the Healthcare Associated Infection Population Summary Questionnaire as a FHIR QuestionnaireResponse profile."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.id">
+            <path value="QuestionnaireResponse.id"/>
+            <min value="1"/>
+        </element>
+        <element id="QuestionnaireResponse.meta">
+            <path value="QuestionnaireResponse.meta"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.meta.profile">
+            <path value="QuestionnaireResponse.meta.profile"/>
+            <short value="A reference to this profile (to which the instance claims to conform)."/>
+            <definition value="A reference to this profile (to which the instance claims to conform)."/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternUri value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire-response"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.text">
+            <path value="QuestionnaireResponse.text"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.identifier">
+            <path value="QuestionnaireResponse.identifier"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.questionnaire">
+            <path value="QuestionnaireResponse.questionnaire"/>
+            <short value="Points to the form being answered."/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.status">
+            <path value="QuestionnaireResponse.status"/>
+            <patternCode value="completed"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.authored">
+            <path value="QuestionnaireResponse.authored"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.author">
+            <path value="QuestionnaireResponse.author"/>
+            <short value="Software or infection control professional"/>
+            <definition value="In a single-person report, the author may be software (US Core Device) or may be a person in the role of infection control professional (ICP) (US Core Practitioner). "/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+            </type>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-practitioner"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.item">
+            <path value="QuestionnaireResponse.item"/>
+            <short value="item"/>
+            <definition value="A questionnaire item"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.item.text">
+            <path value="QuestionnaireResponse.item.text"/>
+            <definition value="Text description of the questionnaire item"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.item.answer">
+            <path value="QuestionnaireResponse.item.answer"/>
+            <definition value="The answer to the questionnaire question (item)"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.item.item">
+            <path value="QuestionnaireResponse.item.item"/>
+            <short value="item"/>
+            <definition value="A nested questionnaire item (contained in a group)"/>
+        </element>
+        <element id="QuestionnaireResponse.item.item.text">
+            <path value="QuestionnaireResponse.item.item.text"/>
+            <short value="text"/>
+            <definition value="Text description of the questionnaire item"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.item.item.answer">
+            <path value="QuestionnaireResponse.item.item.answer"/>
+            <definition value="The answer to the questionnaire question (item)"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

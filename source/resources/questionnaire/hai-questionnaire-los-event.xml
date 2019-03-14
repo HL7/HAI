@@ -1,1 +1,502 @@
-<?xml version="1.0" encoding="UTF-8"?><Questionnaire xmlns="http://hl7.org/fhir"><id value="hai-questionnaire-los-event"/><meta><versionId value="1"/><lastUpdated value="2019-03-05T16:59:54.000-05:00"/><profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/></meta><language value="en-US"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event.<br/>For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.</p><h2>Late Onset Sepsis/Meningitis Event (LOS) Instance Details</h2><table border="1"><tbody><tr><td>url</td><td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event</td></tr><tr><td>Version</td><td>R1</td></tr><tr><td>title</td><td>Late Onset Sepsis/Meningitis Event (LOS)</td></tr><tr><td>Publish date</td><td>2018-09-30</td></tr><tr><td>Realm</td><td>US</td></tr><tr><td>Code</td><td>LOINC 51897-7: Healthcare Associated Infection report Document</td></tr><tr><td>Subject type</td><td>Patient</td></tr></tbody></table><h2>Questionnaire Items</h2><table border="1"><thead><tr><th>Group</th><th>Item</th><th>Type</th><th>Required</th><th>Repeats</th></tr></thead><tbody><tr><td/><td>Facility ID</td><td>url</td><td>true</td><td>false</td></tr><tr><td/><td>Event #</td><td>url</td><td>false</td><td>false</td></tr><tr><td/><td>Event Type</td><td>choice</td><td>true</td><td>false</td></tr><tr><td/><td>Date of Event</td><td>date</td><td>true</td><td>false</td></tr><tr><td/><td>Facility Location</td><td>choice</td><td>true</td><td>false</td></tr><tr><td/><td>Date Admitted to Facility</td><td>date</td><td>true</td><td>false</td></tr><tr><td/><td>Inborn/Outborn</td><td>boolean</td><td>true</td><td>false</td></tr><tr><td/><td>Risk Factors</td><td>group</td><td>true</td><td>false</td></tr><tr><td>Risk Factors</td><td>Central line present prior to event, including umbilical catheter</td><td>boolean</td><td>false</td><td>false</td></tr><tr><td>Risk Factors</td><td>Birth weight (grams)</td><td>quantity</td><td>true</td><td>false</td></tr><tr><td>Risk Factors</td><td>Gestational Age at Birth</td><td>quantity</td><td>true</td><td>false</td></tr><tr><td/><td>Event Details</td><td>group</td><td>true</td><td>false</td></tr><tr><td>Event Details</td><td>Specific Event</td><td>choice</td><td>true</td><td>false</td></tr><tr><td>Event Details</td><td>Laboratory Criteria Used</td><td>choice</td><td>true</td><td>false</td></tr><tr><td>Event Details</td><td>Died</td><td>boolean</td><td>true</td><td>false</td></tr><tr><td>Event Details</td><td>Infection contributed to death</td><td>boolean</td><td>true if died='true'</td><td>false</td></tr><tr><td>Event Details</td><td>Discharge date</td><td>date</td><td>false</td><td>false</td></tr><tr><td/><td>Findings Group</td><td>group</td><td>false</td><td>true</td></tr><tr><td>Findings Group</td><td>Pathogen Identified</td><td>choice</td><td>true</td><td>false</td></tr><tr><td>Findings Group</td><td>Pathogen Ranking</td><td>choice</td><td>true</td><td>false</td></tr><tr><td>Findings Group</td><td>Drug Susceptibility Test Group</td><td>group</td><td>false</td><td>true</td></tr><tr><td>Drug Susceptibility Test Group</td><td>Drug Susceptibility Test</td><td>choice</td><td>true</td><td>false</td></tr><tr><td>Drug Susceptibility Test Group</td><td>Drug Susceptibility Test Interpretation</td><td>choice</td><td>false</td><td>false</td></tr><tr><td/><td>Comments</td><td>text</td><td>false</td><td>false</td></tr></tbody></table></div></text><url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event"/><identifier><value value="hai-questionnaire-los-event-v1"/></identifier><version value="R1"/><title value="Late Onset Sepsis/Meningitis Event (LOS)"/><status value="draft"/><date value="2018-09-30"/><publisher value="HL7"/><description value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present."/><jurisdiction><coding><system value="urn:iso:std:iso:3166"/><code value="US"/></coding></jurisdiction><code><system value="http://loinc.org"/><code value="51897-7"/><display value="Healthcare Associated Infection report Document"/></code><subjectType value="Patient"/><item><linkId value="facility"/><text value="Facility ID"/><type value="url"/><required value="true"/><repeats value="false"/></item><item><linkId value="event-number"/><text value="Event #"/><type value="url"/><required value="false"/><repeats value="false"/></item><item><linkId value="event-type"/><text value="Event Type"/><type value="choice"/><required value="true"/><repeats value="false"/><options><reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20"/></options></item><item><linkId value="date-of-event"/><text value="Date of Event"/><type value="date"/><required value="true"/><repeats value="false"/></item><item><linkId value="facility-location"/><text value="Facility Location"/><type value="choice"/><required value="true"/><repeats value="false"/><options><reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/></options></item><item><linkId value="date-admitted-to-facility"/><text value="Date Admitted to Facility:"/><type value="date"/><required value="true"/><repeats value="false"/></item><item><linkId value="inborn-outborn-observation"/><code><system value="http://snomed.info/sct"/><code value="445087001"/><display value="Born before arrival to hospital (situation)"/></code><text value="Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false."/><type value="boolean"/><required value="true"/><repeats value="false"/></item><item><linkId value="risk-factors"/><code><system value="http://loinc.org"/><code value="51898-5"/><display value="Risk factors Document"/></code><text value="Risk Factors: Contains central line present, birth weight, gestational age"/><type value="group"/><repeats value="false"/><item><linkId value="risk-factor-central-line"/><code><system value="urn:oid:2.16.840.1.113883.6.277"/><code value="1006-6"/><display value="central line including umbilical catheter"/></code><text value="Risk Factor: Central line present prior to event, including umbilical catheter"/><type value="boolean"/><required value="false"/><repeats value="false"/></item><item><linkId value="risk-factor-birth-weight"/><code><system value="http://snomed.info/sct"/><code value="364589006"/><display value="Birth Weight"/></code><text value="Risk Factor: Birth weight (grams)"/><type value="quantity"/><required value="true"/><repeats value="false"/></item><item><extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit"><valueCoding><system value="http://unitsofmeasure.org"/><code value="d"/><display value="d"/></valueCoding></extension><linkId value="risk-factor-gestational-age"/><code><system value="http://loinc.org"/><code value="76516-4"/><display value="Gestational age--at birth"/></code><text value="Risk Factor: Gestational age (days)"/><type value="quantity"/><required value="true"/><repeats value="false"/></item></item><item><linkId value="event-details"/><code><system value="http://loinc.org"/><code value="51899-3"/><display value="Details Document"/></code><text value="Event Details"/><type value="group"/><repeats value="false"/><item><linkId value="infection-condition"/><text value="Specific Event"/><type value="choice"/><required value="true"/><repeats value="false"/><options><reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196"/></options></item><item><linkId value="criteria-used"/><text value="Laboratory Criteria Used"/><type value="choice"/><required value="true"/><repeats value="false"/><options><reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195"/></options></item><item><linkId value="died"/><code><system value="http://snomed.info/sct"/><code value="419099009"/><display value="dead"/></code><text value="Died"/><type value="boolean"/><required value="true"/><repeats value="false"/></item><item><linkId value="los-contributed-to-death"/><text value="Infection contributed to death"/><type value="boolean"/><enableWhen><question value="died"/><answerBoolean value="true"/></enableWhen><required value="true"/><repeats value="false"/></item><item><linkId value="discharge-date"/><text value="Discharge Date"/><type value="date"/><required value="false"/><repeats value="false"/></item></item><item><linkId value="findings-group"/><code><system value="http://loinc.org"/><code value="18769-0"/><display value="Microbial susceptibility tests Set"/></code><text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/><type value="group"/><repeats value="true"/><item><linkId value="pathogen-identified"/><text value="Pathogen Identified"/><type value="choice"/><required value="true"/><repeats value="false"/><options><reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16"/></options></item><item><linkId value="pathogen-ranking"/><text value="Pathogen Ranking"/><type value="choice"/><required value="true"/><repeats value="false"/><options><reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"/></options></item><item><linkId value="drug-susceptibility-test-group"/><text value="Drug Susceptibility Test Group"/><type value="group"/><repeats value="true"/><item><linkId value="drug-susceptibility-test"/><text value="Drug Susceptibility Test"/><type value="choice"/><required value="true"/><repeats value="false"/><options><reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15"/></options></item><item><linkId value="drug-susceptibility-test-interpretation"/><text value="Drug Susceptibility Test Interpretation"/><type value="choice"/><required value="false"/><repeats value="false"/><options><reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13"/></options></item></item></item><item><linkId value="nhsn-comment"/><code><system value="http://www.loinc.org"/><code value="86468-6"/><display value="Report Comment Section"/></code><text value="Comments"/><type value="text"/><required value="false"/><repeats value="false"/><maxLength value="2000"/></item></Questionnaire>
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaire-los-event"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2019-03-13T19:43:37.000-04:00"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event.
+                <br/>For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.
+            </p>
+            <h2>Late Onset Sepsis/Meningitis Event (LOS) Instance Details</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>url</td>
+                        <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event</td>
+                    </tr>
+                    <tr>
+                        <td>Version</td>
+                        <td>R1</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Late Onset Sepsis/Meningitis Event (LOS)</td>
+                    </tr>
+                    <tr>
+                        <td>Publish date</td>
+                        <td>2018-09-30</td>
+                    </tr>
+                    <tr>
+                        <td>Realm</td>
+                        <td>US</td>
+                    </tr>
+                    <tr>
+                        <td>Code</td>
+                        <td>LOINC 51897-7: Healthcare Associated Infection report Document</td>
+                    </tr>
+                    <tr>
+                        <td>Subject type</td>
+                        <td>Patient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Questionnaire Items</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Group</th>
+                        <th>Item</th>
+                        <th>Type</th>
+                        <th>Required</th>
+                        <th>Repeats</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td/>
+                        <td>Facility ID</td>
+                        <td>url</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Event #</td>
+                        <td>url</td>
+                        <td>false</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Event Type</td>
+                        <td>choice</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Date of Event</td>
+                        <td>date</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Facility Location</td>
+                        <td>choice</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Date Admitted to Facility</td>
+                        <td>date</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Inborn/Outborn</td>
+                        <td>boolean</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Risk Factors</td>
+                        <td>group</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Risk Factors</td>
+                        <td>Central line present prior to event, including umbilical catheter</td>
+                        <td>boolean</td>
+                        <td>false</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Risk Factors</td>
+                        <td>Birth weight (grams)</td>
+                        <td>quantity</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Risk Factors</td>
+                        <td>Gestational Age at Birth</td>
+                        <td>quantity</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Event Details</td>
+                        <td>group</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Event Details</td>
+                        <td>Specific Event</td>
+                        <td>choice</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Event Details</td>
+                        <td>Laboratory Criteria Used</td>
+                        <td>choice</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Event Details</td>
+                        <td>Died</td>
+                        <td>boolean</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Event Details</td>
+                        <td>Infection contributed to death</td>
+                        <td>boolean</td>
+                        <td>true if died='true'</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Event Details</td>
+                        <td>Discharge date</td>
+                        <td>date</td>
+                        <td>false</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Findings Group</td>
+                        <td>group</td>
+                        <td>false</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>Findings Group</td>
+                        <td>Pathogen Identified</td>
+                        <td>choice</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Findings Group</td>
+                        <td>Pathogen Ranking</td>
+                        <td>choice</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Findings Group</td>
+                        <td>Drug Susceptibility Test Group</td>
+                        <td>group</td>
+                        <td>false</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>Drug Susceptibility Test Group</td>
+                        <td>Drug Susceptibility Test</td>
+                        <td>choice</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>Drug Susceptibility Test Group</td>
+                        <td>Drug Susceptibility Test Interpretation</td>
+                        <td>choice</td>
+                        <td>false</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Comments</td>
+                        <td>text</td>
+                        <td>false</td>
+                        <td>false</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event"/>
+    <identifier>
+        <value value="hai-questionnaire-los-event-v1"/>
+    </identifier>
+    <version value="R1"/>
+    <title value="Late Onset Sepsis/Meningitis Event (LOS)"/>
+    <status value="draft"/>
+    <date value="2018-09-30"/>
+    <publisher value="HL7"/>
+    <description value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <code>
+        <system value="http://loinc.org"/>
+        <code value="51897-7"/>
+        <display value="Healthcare Associated Infection report Document"/>
+    </code>
+    <subjectType value="Patient"/>
+    <item>
+        <linkId value="facility"/>
+        <text value="Facility ID"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="event-number"/>
+        <text value="Event #"/>
+        <type value="url"/>
+        <required value="false"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="event-type"/>
+        <text value="Event Type"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <options>
+            <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20"/>
+        </options>
+    </item>
+    <item>
+        <linkId value="date-of-event"/>
+        <text value="Date of Event"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="facility-location"/>
+        <text value="Facility Location"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <options>
+            <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/>
+        </options>
+    </item>
+    <item>
+        <linkId value="date-admitted-to-facility"/>
+        <text value="Date Admitted to Facility:"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="inborn-outborn-observation"/>
+        <code>
+            <system value="http://snomed.info/sct"/>
+            <code value="445087001"/>
+            <display value="Born before arrival to hospital (situation)"/>
+        </code>
+        <text value="Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false."/>
+        <type value="boolean"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="risk-factors"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="51898-5"/>
+            <display value="Risk factors Document"/>
+        </code>
+        <text value="Risk Factors: Contains central line present, birth weight, gestational age"/>
+        <type value="group"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="risk-factor-central-line"/>
+            <code>
+              <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                <code value="1006-6"/>
+                <display value="central line including umbilical catheter"/>
+            </code>
+            <text value="Risk Factor: Central line present prior to event, including umbilical catheter"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-birth-weight"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="364589006"/>
+                <display value="Birth Weight"/>
+            </code>
+            <text value="Risk Factor: Birth weight (grams)"/>
+            <type value="quantity"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+                <valueCoding>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="d"/>
+                    <display value="d"/>
+                </valueCoding>
+            </extension>
+            <linkId value="risk-factor-gestational-age"/>
+            <code>
+                <system value="http://loinc.org"/>
+                <code value="76516-4"/>
+                <display value="Gestational age--at birth"/>
+            </code>
+            <text value="Risk Factor: Gestational age (days)"/>
+            <type value="quantity"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="event-details"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="51899-3"/>
+            <display value="Details Document"/>
+        </code>
+        <text value="Event Details"/>
+        <type value="group"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="infection-condition"/>
+            <text value="Specific Event"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <options>
+                <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196"/>
+            </options>
+        </item>
+        <item>
+            <linkId value="criteria-used"/>
+            <text value="Laboratory Criteria Used"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <options>
+                <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195"/>
+            </options>
+        </item>
+        <item>
+            <linkId value="died"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="419099009"/>
+                <display value="dead"/>
+            </code>
+            <text value="Died"/>
+            <type value="boolean"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="los-contributed-to-death"/>
+            <text value="Infection contributed to death"/>
+            <type value="boolean"/>
+            <enableWhen>
+                <question value="died"/>
+                <answerBoolean value="true"/>
+            </enableWhen>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="discharge-date"/>
+            <text value="Discharge Date"/>
+            <type value="date"/>
+            <required value="false"/>
+            <repeats value="false"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="findings-group"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="18769-0"/>
+            <display value="Microbial susceptibility tests Set"/>
+        </code>
+        <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/>
+        <type value="group"/>
+        <repeats value="true"/>
+        <item>
+            <linkId value="pathogen-identified"/>
+            <text value="Pathogen Identified"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <options>
+                <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16"/>
+            </options>
+        </item>
+        <item>
+            <linkId value="pathogen-ranking"/>
+            <text value="Pathogen Ranking"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <options>
+                <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"/>
+            </options>
+        </item>
+        <item>
+            <linkId value="drug-susceptibility-test-group"/>
+            <text value="Drug Susceptibility Test Group"/>
+            <type value="group"/>
+            <repeats value="true"/>
+            <item>
+                <linkId value="drug-susceptibility-test"/>
+                <text value="Drug Susceptibility Test"/>
+                <type value="choice"/>
+                <required value="true"/>
+                <repeats value="false"/>
+                <options>
+                    <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15"/>
+                </options>
+            </item>
+            <item>
+                <linkId value="drug-susceptibility-test-interpretation"/>
+                <text value="Drug Susceptibility Test Interpretation"/>
+                <type value="choice"/>
+                <required value="false"/>
+                <repeats value="false"/>
+                <options>
+                    <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13"/>
+                </options>
+            </item>
+        </item>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <code>
+            <system value="http://www.loinc.org"/>
+            <code value="86468-6"/>
+            <display value="Report Comment Section"/>
+        </code>
+        <text value="Comments"/>
+        <type value="text"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <maxLength value="2000"/>
+    </item>
+</Questionnaire>

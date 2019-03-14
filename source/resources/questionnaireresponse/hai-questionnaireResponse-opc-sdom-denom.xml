@@ -1,1 +1,144 @@
-<?xml version="1.0" encoding="UTF-8"?><QuestionnaireResponse xmlns="http://hl7.org/fhir"><id value="hai-questionnaireResponse-opc-sdom-denom"/><meta><versionId value="3"/><lastUpdated value="2019-03-11T03:39:16.000-04:00"/><profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire-response"/></meta><language value="en-US"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This QuestionnaireResponse instance is an example of a completed Outpatient Procedure Component Denominator for Same Day Outcome Measures Report and is in response to the Questionnaire instance defining this report.</p><h2>Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</h2><table border="1"><tbody><tr><td>Facility ID</td><td>urn:hl7ii:2.111.111.111.10709</td></tr><tr><td>First day of period reported</td><td>2018-06-01</td></tr><tr><td>Last day of period reported</td><td>2018-06-30</td></tr><tr><td>Facility Location Id</td><td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W</td></tr><tr><td>Facility Location Type</td><td>Medical/Surgical Critical Care</td></tr><tr><td>Number of Total Facility Encounters (for outpatient location)</td><td>100</td></tr><tr><td>No Same Day Outcome Measures (events) reported this month</td><td>false</td></tr></tbody></table><h2>Comment</h2><table border="1"><tbody><tr><td>Comment</td><td>NHSN text comment that is less than 2000 characters.</td></tr></tbody></table></div></text><identifier><system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/><value value="20202201"/></identifier><questionnaire><reference value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-denom"/></questionnaire><status value="completed"/><subject><reference value="Group/hai-group-1"/><display value="hai-group-1"/></subject><author><reference value="Device/hai-authoring-device"/><display value="hai-authoring-device"/></author><item><linkId value="facility-id"/><text value="Facility ID"/><answer><valueUri value="urn:hl7ii:2.111.111.111.10709"/></answer></item><item><linkId value="report-period-start"/><text value="First day of period reported"/><answer><valueDate value="2018-06-01"/></answer></item><item><linkId value="report-period-end"/><text value="Last day of period reported"/><answer><valueDate value="2018-06-30"/></answer></item><item><linkId value="facility-location-id"/><text value="Facility Location Id"/><answer><valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W"/></answer></item><item><linkId value="facility-location-type"/><text value="Facility Location Type"/><answer><valueCoding><system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259"/><code value="1029-8"/><display value="Medical/Surgical Critical Care"/></valueCoding></answer></item><item><linkId value="summary-data-group"/><text value="Summary Data"/><item><linkId value="total-facility-encounters-outpatient"/><text value="Number of Total Facility Encounters (for outpatient location)"/><answer><valueInteger value="100"/></answer></item></item><item><linkId value="report-no-events-group"/><text value="Report no events"/><item><linkId value="no-same-day-outcome-measures"/><text value="No Same Day Outcome Measures (events) reported this month"/><answer><valueBoolean value="false"/></answer></item></item><item><linkId value="nhsn-comment"/><text value="Comments"/><answer><valueString value="NHSN text comment that is less than 2000 characters."/></answer></item></QuestionnaireResponse>
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionnaireResponse
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaireResponse-opc-sdom-denom"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2019-03-11T03:39:16.000-04:00"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire-response"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p>This QuestionnaireResponse instance is an example of a completed Outpatient Procedure Component Denominator for Same Day Outcome Measures Report and is in response to the Questionnaire instance defining this report.</p>
+            <h2>Example Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Facility ID</td>
+                        <td>urn:hl7ii:2.111.111.111.10709</td>
+                    </tr>
+                    <tr>
+                        <td>First day of period reported</td>
+                        <td>2018-06-01</td>
+                    </tr>
+                    <tr>
+                        <td>Last day of period reported</td>
+                        <td>2018-06-30</td>
+                    </tr>
+                    <tr>
+                        <td>Facility Location Id</td>
+                        <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W</td>
+                    </tr>
+                    <tr>
+                        <td>Facility Location Type</td>
+                        <td>Medical/Surgical Critical Care</td>
+                    </tr>
+                    <tr>
+                        <td>Number of Total Facility Encounters (for outpatient location)</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>No Same Day Outcome Measures (events) reported this month</td>
+                        <td>false</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Comment</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Comment</td>
+                        <td>NHSN text comment that is less than 2000 characters.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <identifier>
+        <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
+        <value value="20202201"/>
+    </identifier>
+    <questionnaire>
+        <reference value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-denom"/>
+    </questionnaire>
+    <status value="completed"/>
+    <subject>
+        <reference value="Group/hai-group-1"/>
+        <display value="hai-group-1"/>
+    </subject>
+    <author>
+        <reference value="Device/hai-authoring-device"/>
+        <display value="hai-authoring-device"/>
+    </author>
+    <item>
+        <linkId value="facility-id"/>
+        <text value="Facility ID"/>
+        <answer>
+            <valueUri value="urn:hl7ii:2.111.111.111.10709"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="report-period-start"/>
+        <text value="First day of period reported"/>
+        <answer>
+            <valueDate value="2018-06-01"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="report-period-end"/>
+        <text value="Last day of period reported"/>
+        <answer>
+            <valueDate value="2018-06-30"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="facility-location-id"/>
+        <text value="Facility Location Id"/>
+        <answer>
+            <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="facility-location-type"/>
+        <text value="Facility Location Type"/>
+        <answer>
+            <valueCoding>
+                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259"/>
+                <code value="1029-8"/>
+                <display value="Medical/Surgical Critical Care"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="summary-data-group"/>
+        <text value="Summary Data"/>
+        <item>
+            <linkId value="total-facility-encounters-outpatient"/>
+            <text value="Number of Total Facility Encounters (for outpatient location)"/>
+            <answer>
+                <valueInteger value="100"/>
+            </answer>
+        </item>
+    </item>
+    <item>
+        <linkId value="report-no-events-group"/>
+        <text value="Report no events"/>
+        <item>
+            <linkId value="no-same-day-outcome-measures"/>
+            <text value="No Same Day Outcome Measures (events) reported this month"/>
+            <answer>
+                <valueBoolean value="false"/>
+            </answer>
+        </item>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <text value="Comments"/>
+        <answer>
+            <valueString value="NHSN text comment that is less than 2000 characters."/>
+        </answer>
+    </item>
+</QuestionnaireResponse>

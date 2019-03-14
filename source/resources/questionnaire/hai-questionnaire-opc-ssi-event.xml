@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaire-opc-ssi-event"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-03-14T00:00:46.000-04:00"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p>This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Surgical Site Infection Event. This report is for reporting data on each patient having a SSI event related to one of the NHSN operative procedures selected for monitoring.</p>
+            <h2>Outpatient Procedure Component Surgical Site Infection (SSI) Event</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>url</td>
+                        <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-ssi-event</td>
+                    </tr>
+                    <tr>
+                        <td>Version</td>
+                        <td>R1</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Outpatient Procedure Component Surgical Site Infection (SSI) Event</td>
+                    </tr>
+                    <tr>
+                        <td>Publish date</td>
+                        <td>2019-04-01</td>
+                    </tr>
+                    <tr>
+                        <td>Realm</td>
+                        <td>US</td>
+                    </tr>
+                    <tr>
+                        <td>Code</td>
+                        <td>LOINC 51897-7: Healthcare Associated Infection report Document</td>
+                    </tr>
+                    <tr>
+                        <td>Subject type</td>
+                        <td>Patient</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Questionnaire Items</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Group</th>
+                        <th>Item</th>
+                        <th>Type</th>
+                        <th>Required</th>
+                        <th>Repeats</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td/>
+                        <td>TODO</td>
+                        <td/>
+                        <td/>
+                        <td/>
+                    </tr>
+                    <tr>
+                        <td/>
+                        <td>Event #</td>
+                        <td>url</td>
+                        <td>false</td>
+                        <td>false</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-ssi-event"/>
+    <identifier>
+        <value value="hai-questionnaire-opc-ssi-event-v1"/>
+    </identifier>
+    <version value="R1"/>
+    <name value="hai-questionnaire-opc-ssi-event"/>
+    <title value="Outpatient Procedure Component Surgical Site Infection (SSI) Event"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2019-04-01"/>
+    <publisher value="HL7"/>
+    <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Surgical Site Infection Event. This report is for reporting data on each patient having a SSI event related to one of the NHSN operative procedures selected for monitoring."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <code>
+        <system value="http://loinc.org"/>
+        <code value="51897-7"/>
+        <display value="Healthcare Associated Infection report Document"/>
+    </code>
+    <subjectType value="Patient"/>
+    <item>
+        <linkId value="facility-id"/>
+        <text value="Facility ID"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="event-number"/>
+        <text value="Event Number"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="event-type"/>
+        <text value="Event Type"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="encounter-date"/>
+        <text value="Date of encounter"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="risk-factors"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="51898-5"/>
+            <display value="Risk factors Document"/>
+        </code>
+        <text value="Risk Factors"/>
+        <type value="group"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="risk-factor-wound-class"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="420089007"/>
+              <display value="CDC wound classification category"/>
+            </code>
+            <text value="Risk Factor: Wound class"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+            <options>
+                <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9"/>
+            </options>
+        </item>
+        <item>
+            <linkId value="risk-factor-endoscopy"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="423827005"/>
+                <display value="Endoscopy"/>
+            </code>
+            <text value="Risk Factor: Endoscopy used"/>
+            <type value="boolean"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-diabetes-mellitus"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="73211009"/>
+                <display value="Diabetes mellitus"/>
+            </code>
+            <text value="Risk Factor: Diabetes mellitus"/>
+            <type value="boolean"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-height"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="50373000"/>
+                <display value="Body Height"/>
+            </code>
+            <text value="Risk Factor: height"/>
+            <type value="quantity"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-weight"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="27113001"/>
+                <display value="Body Weight"/>
+            </code>
+            <text value="Risk Factor: height"/>
+            <type value="quantity"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-asa-class"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="273270000"/>
+                <display value="American Society of Anesthesiologists physical status classification (assessment scale)"/>
+            </code>
+            <text value="Risk Factor: ASA Class"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <options>
+                <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9"/>
+            </options>
+        </item>
+    </item>
+    <item>
+        <linkId value="procedure-details"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="51899-3"/>
+            <display value="Details Document"/>
+        </code>
+        <text value="Procedure Details"/>
+        <type value="group"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="nhsn-procedure-code-category"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="29300-1"/>
+                <display value="Procedure"/>
+            </code>
+            <text value="NHSN Procedure Code Category"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <options>
+                <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9"/>
+            </options>
+        </item>
+        <item>
+            <linkId value="cpt-procedure-code"/>
+            <code>
+                <system value="http://loinc.org"/>
+                <code value="76448-0"/>
+                <display value="CPT billing code"/>
+            </code>
+            <text value="CPT Procedure Code"/>
+            <type value="string"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <options>
+                <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9"/>
+            </options>
+        </item>
+        <item>
+            <linkId value="procedure-duration"/>
+            <code>
+                <system value="http://loinc.org"/>
+                <code value="89875-9"/>
+                <display value="Procedure duration"/>
+            </code>
+            <text value="Procedure duration"/>
+            <type value="time"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="general-anesthesia"/>
+        <text value="General anesthesia"/>
+        <type value="boolean"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="surgeon-code"/>
+        <text value="Surgeon code"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <code>
+            <system value="http://www.loinc.org"/>
+            <code value="86468-6"/>
+            <display value="Report Comment Section"/>
+        </code>
+        <text value="Comments"/>
+        <type value="text"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <maxLength value="2000"/>
+    </item>
+</Questionnaire>

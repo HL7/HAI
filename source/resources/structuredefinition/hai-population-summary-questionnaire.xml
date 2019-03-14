@@ -1,1 +1,264 @@
-<?xml version="1.0" encoding="UTF-8"?><StructureDefinition xmlns="http://hl7.org/fhir"><id value="hai-population-summary-questionnaire"/><meta><versionId value="8"/><lastUpdated value="2019-03-07T18:06:01.000-05:00"/></meta><url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/><name value="hai-population-summary-questionnaire"/><title value="Healthcare Associated Infection Population Summary Questionnaire"/><status value="draft"/><publisher value="Lantana Consulting Group"/><contact><name value="Sarah Gaunt"/><telecom><system value="phone"/><value value="+61 4 1029 2506"/><use value="work"/></telecom><telecom><system value="email"/><value value="sarah.gaunt@lantanagroup.com"/><use value="work"/></telecom></contact><description value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire. A Population Summary Report records summary data for a group, such as the patients in a particular ward, during a specified period."/><kind value="resource"/><abstract value="false"/><type value="Questionnaire"/><baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/><derivation value="constraint"/><differential><element id="Questionnaire"><path value="Questionnaire"/><short value="Healthcare Associated Infection Population Summary Questionnaire"/><definition value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire."/><mustSupport value="true"/></element><element id="Questionnaire.meta"><path value="Questionnaire.meta"/><min value="1"/><mustSupport value="true"/></element><element id="Questionnaire.meta.profile"><path value="Questionnaire.meta.profile"/><short value="A reference to this profile (to which the instance claims to conform)."/><definition value="A reference to this profile (to which the instance claims to conform)."/><min value="1"/><max value="1"/><patternUri value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/><mustSupport value="true"/></element><element id="Questionnaire.language"><path value="Questionnaire.language"/><min value="1"/><patternCode value="en-US"/><mustSupport value="true"/></element><element id="Questionnaire.text"><path value="Questionnaire.text"/><mustSupport value="true"/></element><element id="Questionnaire.identifier"><path value="Questionnaire.identifier"/><short value="Globally unique identifier for the instance"/><definition value="Globally unique identifier for the instance."/><min value="1"/><max value="1"/><mustSupport value="true"/></element><element id="Questionnaire.title"><path value="Questionnaire.title"/><min value="1"/><mustSupport value="true"/></element><element id="Questionnaire.date"><path value="Questionnaire.date"/><min value="1"/><mustSupport value="true"/></element><element id="Questionnaire.publisher"><path value="Questionnaire.publisher"/><min value="1"/><mustSupport value="true"/></element><element id="Questionnaire.description"><path value="Questionnaire.description"/><min value="1"/><mustSupport value="true"/></element><element id="Questionnaire.jurisdiction"><path value="Questionnaire.jurisdiction"/><min value="1"/><max value="1"/><patternCodeableConcept><coding><system value="urn:iso:std:iso:3166"/><code value="US"/></coding></patternCodeableConcept><mustSupport value="true"/></element><element id="Questionnaire.code"><path value="Questionnaire.code"/><slicing><discriminator><type value="value"/><path value="code"/></discriminator><rules value="open"/></slicing></element><element id="Questionnaire.code:codeHAIReport"><path value="Questionnaire.code"/><sliceName value="codeHAIReport"/><short value="Code for Healthcare Associated Infection Report"/><definition value="LOINC code 51897-7 to indicate that this is a Healthcare Associated Infection Report"/><min value="1"/><max value="1"/><patternCoding><system value="http://loinc.org"/><code value="51897-7"/></patternCoding><mustSupport value="true"/></element><element id="Questionnaire.code:codePopulationSummaryType"><path value="Questionnaire.code"/><sliceName value="codePopulationSummaryType"/><short value="Code for Healthcare Associated Infection Population Summary Report Type"/><definition value="LOINC code for the Population Summary Report Type"/><min value="1"/><max value="1"/><mustSupport value="true"/></element><element id="Questionnaire.item"><path value="Questionnaire.item"/><min value="1"/><mustSupport value="true"/></element><element id="Questionnaire.item.extension"><path value="Questionnaire.item.extension"/><slicing><discriminator><type value="value"/><path value="url"/></discriminator><rules value="open"/></slicing></element><element id="Questionnaire.item.extension:extensionQuestionnaireAllowedProfile"><path value="Questionnaire.item.extension"/><sliceName value="extensionQuestionnaireAllowedProfile"/><max value="1"/><type><code value="Extension"/><profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile"/></type><mustSupport value="true"/></element><element id="Questionnaire.item.linkId"><path value="Questionnaire.item.linkId"/><mustSupport value="true"/></element><element id="Questionnaire.item.code"><path value="Questionnaire.item.code"/><mustSupport value="true"/></element><element id="Questionnaire.item.type"><path value="Questionnaire.item.type"/><mustSupport value="true"/></element><element id="Questionnaire.item.enableWhen"><path value="Questionnaire.item.enableWhen"/><mustSupport value="true"/></element><element id="Questionnaire.item.required"><path value="Questionnaire.item.required"/><mustSupport value="true"/></element><element id="Questionnaire.item.repeats"><path value="Questionnaire.item.repeats"/><mustSupport value="true"/></element><element id="Questionnaire.item.options"><path value="Questionnaire.item.options"/><mustSupport value="true"/></element><element id="Questionnaire.item.item"><path value="Questionnaire.item.item"/><mustSupport value="true"/></element><element id="Questionnaire.item.item.extension"><path value="Questionnaire.item.item.extension"/><slicing><discriminator><type value="value"/><path value="url"/></discriminator><rules value="open"/></slicing></element><element id="Questionnaire.item.item.extension:extensionQuestionnaireAllowedProfile"><path value="Questionnaire.item.item.extension"/><sliceName value="extensionQuestionnaireAllowedProfile"/><max value="1"/><type><code value="Extension"/><profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile"/></type><mustSupport value="true"/></element><element id="Questionnaire.item.item.extension:extensionQuestionnaire-unit"><path value="Questionnaire.item.item.extension"/><sliceName value="extensionQuestionnaire-unit"/><max value="1"/><type><code value="Extension"/><profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-unit"/></type><mustSupport value="true"/></element><element id="Questionnaire.item.item.linkId"><path value="Questionnaire.item.item.linkId"/><mustSupport value="true"/></element><element id="Questionnaire.item.item.code"><path value="Questionnaire.item.item.code"/><mustSupport value="true"/></element><element id="Questionnaire.item.item.type"><path value="Questionnaire.item.item.type"/><mustSupport value="true"/></element><element id="Questionnaire.item.item.enableWhen"><path value="Questionnaire.item.item.enableWhen"/><mustSupport value="true"/></element><element id="Questionnaire.item.item.required"><path value="Questionnaire.item.item.required"/><mustSupport value="true"/></element><element id="Questionnaire.item.item.repeats"><path value="Questionnaire.item.item.repeats"/><mustSupport value="true"/></element><element id="Questionnaire.item.item.options"><path value="Questionnaire.item.item.options"/><mustSupport value="true"/></element><element id="Questionnaire.item.item.item"><path value="Questionnaire.item.item.item"/><mustSupport value="false"/></element><element id="Questionnaire.subjectType"><path value="Questionnaire.subjectType"/><short value="A Group resource is the subject of the related QuestionnaireResponse"/><definition value="A Group resource is the subject of the related QuestionnaireResponse"/><min value="1"/><max value="1"/><fixedCode value="Group"/></element></differential></StructureDefinition>
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-population-summary-questionnaire"/>
+    <meta>
+        <versionId value="8"/>
+        <lastUpdated value="2019-03-07T18:06:01.000-05:00"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/>
+    <name value="hai-population-summary-questionnaire"/>
+    <title value="Healthcare Associated Infection Population Summary Questionnaire"/>
+    <status value="draft"/>
+    <publisher value="Lantana Consulting Group"/>
+    <contact>
+        <name value="Sarah Gaunt"/>
+        <telecom>
+            <system value="phone"/>
+            <value value="+61 4 1029 2506"/>
+            <use value="work"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="sarah.gaunt@lantanagroup.com"/>
+            <use value="work"/>
+        </telecom>
+    </contact>
+    <description value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire. A Population Summary Report records summary data for a group, such as the patients in a particular ward, during a specified period."/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Questionnaire"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Questionnaire">
+            <path value="Questionnaire"/>
+            <short value="Healthcare Associated Infection Population Summary Questionnaire"/>
+            <definition value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.meta">
+            <path value="Questionnaire.meta"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.meta.profile">
+            <path value="Questionnaire.meta.profile"/>
+            <short value="A reference to this profile (to which the instance claims to conform)."/>
+            <definition value="A reference to this profile (to which the instance claims to conform)."/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternUri value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.language">
+            <path value="Questionnaire.language"/>
+            <min value="1"/>
+            <patternCode value="en-US"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.text">
+            <path value="Questionnaire.text"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.identifier">
+            <path value="Questionnaire.identifier"/>
+            <short value="Globally unique identifier for the instance"/>
+            <definition value="Globally unique identifier for the instance."/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.title">
+            <path value="Questionnaire.title"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.date">
+            <path value="Questionnaire.date"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.publisher">
+            <path value="Questionnaire.publisher"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.description">
+            <path value="Questionnaire.description"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.jurisdiction">
+            <path value="Questionnaire.jurisdiction"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="urn:iso:std:iso:3166"/>
+                    <code value="US"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.code">
+            <path value="Questionnaire.code"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Questionnaire.code:codeHAIReport">
+            <path value="Questionnaire.code"/>
+            <sliceName value="codeHAIReport"/>
+            <short value="Code for Healthcare Associated Infection Report"/>
+            <definition value="LOINC code 51897-7 to indicate that this is a Healthcare Associated Infection Report"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCoding>
+                <system value="http://loinc.org"/>
+                <code value="51897-7"/>
+            </patternCoding>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.code:codePopulationSummaryType">
+            <path value="Questionnaire.code"/>
+            <sliceName value="codePopulationSummaryType"/>
+            <short value="Code for Healthcare Associated Infection Population Summary Report Type"/>
+            <definition value="LOINC code for the Population Summary Report Type"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item">
+            <path value="Questionnaire.item"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.extension">
+            <path value="Questionnaire.item.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Questionnaire.item.extension:extensionQuestionnaireAllowedProfile">
+            <path value="Questionnaire.item.extension"/>
+            <sliceName value="extensionQuestionnaireAllowedProfile"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.linkId">
+            <path value="Questionnaire.item.linkId"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.code">
+            <path value="Questionnaire.item.code"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.type">
+            <path value="Questionnaire.item.type"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.enableWhen">
+            <path value="Questionnaire.item.enableWhen"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.required">
+            <path value="Questionnaire.item.required"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.repeats">
+            <path value="Questionnaire.item.repeats"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.options">
+            <path value="Questionnaire.item.options"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item">
+            <path value="Questionnaire.item.item"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item.extension">
+            <path value="Questionnaire.item.item.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Questionnaire.item.item.extension:extensionQuestionnaireAllowedProfile">
+            <path value="Questionnaire.item.item.extension"/>
+            <sliceName value="extensionQuestionnaireAllowedProfile"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item.extension:extensionQuestionnaire-unit">
+            <path value="Questionnaire.item.item.extension"/>
+            <sliceName value="extensionQuestionnaire-unit"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-unit"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item.linkId">
+            <path value="Questionnaire.item.item.linkId"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item.code">
+            <path value="Questionnaire.item.item.code"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item.type">
+            <path value="Questionnaire.item.item.type"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item.enableWhen">
+            <path value="Questionnaire.item.item.enableWhen"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item.required">
+            <path value="Questionnaire.item.item.required"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item.repeats">
+            <path value="Questionnaire.item.item.repeats"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item.options">
+            <path value="Questionnaire.item.item.options"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Questionnaire.item.item.item">
+            <path value="Questionnaire.item.item.item"/>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Questionnaire.subjectType">
+            <path value="Questionnaire.subjectType"/>
+            <short value="A Group resource is the subject of the related QuestionnaireResponse"/>
+            <definition value="A Group resource is the subject of the related QuestionnaireResponse"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="Group"/>
+        </element>
+    </differential>
+</StructureDefinition>

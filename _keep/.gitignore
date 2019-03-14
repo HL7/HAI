@@ -1,0 +1,15 @@
+HAI_IG/temp/
+HAI_IG/Archive/
+HAI_IG/qa/
+HAI_IG/temp/
+HAI_IG/output/
+Archive/
+HAI_IG/org.hl7.fhir.igpublisher.jar
+HAI_IG/Orig_Healthcare_Associated_Infection_Reports_FHIR_Release_1.json
+HAI_IG/Vocab/
+output/
+qa/
+temp/
+org.hl7.fhir.igpublisher.jar
+validation/
+*.zip

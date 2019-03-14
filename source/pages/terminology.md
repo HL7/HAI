@@ -13,6 +13,7 @@ active: terminology
 
 ### Value Sets
 
+- [NHSNASAClassCode](ValueSet-2.16.840.1.113883.13.10.html)
 - [NHSNCriterionOfDiagnosisCode](ValueSet-2.16.840.1.114222.4.11.3195.html)
 - [NHSNDrugSusceptibilityFindingCode](ValueSet-2.16.840.1.113883.13.13.html)
 - [NHSNDrugSusceptibilityTestsCode](ValueSet-2.16.840.1.113883.13.15.html)
@@ -22,11 +23,12 @@ active: terminology
 - [NHSNLOS/MENDischargeDisposition](ValueSet-2.16.840.1.113883.10.20.5.9.30.html)
 - [NHSNPathogenCode](ValueSet-2.16.840.1.113883.13.16.html)
 - [NHSNPathogenRanking](ValueSet-nhsn-pathogen-ranking.html)
+- [NHSNWoundClassCode](ValueSet-2.16.840.1.113883.13.9.html)
 
 
 ### Code Systems
 
-- [CDC - National Healthcare Safety Network (NHSN) code system](ValueSet-2.16.840.1.113883.6.277.html)
-- [NHSN Healthcare Facility Patient Care Location](ValueSet-2.16.840.1.113883.6.259.html)
+- [CDC - National Healthcare Safety Network (NHSN) code system](CodeSystem-2.16.840.1.113883.6.277.html)
+- [NHSN Healthcare Facility Patient Care Location](CodeSystem-2.16.840.1.113883.6.259.html)
 
 

@@ -1,1 +1,335 @@
-<?xml version="1.0" encoding="UTF-8"?><Questionnaire xmlns="http://hl7.org/fhir"><id value="hai-questionnaire-los-denom"/><meta><versionId value="4"/><lastUpdated value="2019-03-11T03:24:24.000-04:00"/><profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/></meta><language value="en-US"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men).</p><h2>Late Onset Sepsis/Meningitis Denominator</h2><table border="1"><tbody><tr><td>url</td><td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-denom</td></tr><tr><td>Version</td><td>R1</td></tr><tr><td>title</td><td>Late Onset Sepsis/Meningitis Denominator</td></tr><tr><td>Publish date</td><td>2019-04-01</td></tr><tr><td>Realm</td><td>US</td></tr><tr><td>Code</td><td>LOINC 51897-7: Healthcare Associated Infection report Document</td></tr><tr><td>Subject type</td><td>Patient</td></tr></tbody></table><h2>Questionnaire Items</h2><table border="1"><thead><tr><th>Group</th><th>Item</th><th>Type</th><th>Required</th><th>Repeats</th></tr></thead><tbody><tr><td/><td>Facility ID</td><td>url</td><td>true</td><td>false</td></tr><tr><td/><td>Event #</td><td>url</td><td>false</td><td>false</td></tr><tr><td/><td>Event Type</td><td>choice</td><td>true</td><td>false</td></tr><tr><td/><td>Date of Event</td><td>date</td><td>true</td><td>false</td></tr><tr><td/><td>Facility Location</td><td>choice</td><td>true</td><td>false</td></tr><tr><td/><td>Date Admitted to Facility</td><td>date</td><td>true</td><td>false</td></tr><tr><td/><td>Inborn/Outborn</td><td>boolean</td><td>true</td><td>false</td></tr><tr><td/><td>Risk Factors</td><td>group</td><td>true</td><td>false</td></tr><tr><td>Risk Factors</td><td>Central line present prior to event, including umbilical catheter</td><td>boolean</td><td>false</td><td>false</td></tr><tr><td>Risk Factors</td><td>Birth weight (grams)</td><td>quantity</td><td>true</td><td>false</td></tr><tr><td>Risk Factors</td><td>Gestational Age at Birth</td><td>quantity</td><td>true</td><td>false</td></tr><tr><td/><td>Event Details</td><td>group</td><td>true</td><td>false</td></tr><tr><td>Event Details</td><td>Specific Event</td><td>choice</td><td>true</td><td>false</td></tr><tr><td>Event Details</td><td>Laboratory Criteria Used</td><td>choice</td><td>true</td><td>false</td></tr><tr><td>Event Details</td><td>Died</td><td>boolean</td><td>true</td><td>false</td></tr><tr><td>Event Details</td><td>Infection contributed to death</td><td>boolean</td><td>true if died='true'</td><td>false</td></tr><tr><td>Event Details</td><td>Discharge date</td><td>date</td><td>false</td><td>false</td></tr><tr><td/><td>Findings Group</td><td>group</td><td>false</td><td>true</td></tr><tr><td>Findings Group</td><td>Pathogen Identified</td><td>choice</td><td>true</td><td>false</td></tr><tr><td>Findings Group</td><td>Pathogen Ranking</td><td>choice</td><td>true</td><td>false</td></tr><tr><td>Findings Group</td><td>Drug Susceptibility Test Group</td><td>group</td><td>false</td><td>true</td></tr><tr><td>Drug Susceptibility Test Group</td><td>Drug Susceptibility Test</td><td>choice</td><td>true</td><td>false</td></tr><tr><td>Drug Susceptibility Test Group</td><td>Drug Susceptibility Test Interpretation</td><td>choice</td><td>false</td><td>false</td></tr><tr><td/><td>Comments</td><td>text</td><td>false</td><td>false</td></tr></tbody></table></div></text><url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-denom"/><identifier><value value="hai-questionnaire-los-denom-v1"/></identifier><version value="R1"/><name value="hai-questionnaire-los-denom"/><title value="Late Onset Sepsis/Meningitis Denominator"/><status value="draft"/><experimental value="false"/><date value="2019-04-01"/><publisher value="HL7"/><description value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men)."/><jurisdiction><coding><system value="urn:iso:std:iso:3166"/><code value="US"/></coding></jurisdiction><code><system value="http://loinc.org"/><code value="51897-7"/><display value="Healthcare Associated Infection report Document"/></code><subjectType value="Patient"/><item><linkId value="date-collected"/><text value="Year and month data collected for this location"/><type value="date"/><required value="true"/><repeats value="false"/></item><item><linkId value="facility"/><text value="Facility ID"/><type value="url"/><required value="true"/><repeats value="false"/></item><item><linkId value="date-admitted-to-facility"/><text value="Date Admitted to Facility"/><type value="date"/><required value="true"/><repeats value="false"/></item><item><linkId value="facility-location"/><text value="Facility Location"/><type value="choice"/><required value="true"/><repeats value="false"/><options><reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/></options></item><item><linkId value="location-within-facility-encounter-group"/><code><system value="http://loinc.org"/><code value="46240-8"/><display value="History of Encounters"/></code><text value="Location Within Facility Encounter"/><type value="group"/><repeats value="false"/><item><linkId value="location-admit-transfer-date"/><text value="Date admitted or transferred to location"/><type value="date"/><required value="true"/><repeats value="false"/></item><item><linkId value="infant-disposition"/><text value="Disposition of infant"/><type value="date"/><required value="true"/><repeats value="false"/><options><reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30"/></options></item><item><linkId value="disposition-date"/><text value="Disposition date if discharged, transferred, or expired"/><type value="date"/><enableWhen><question value="infant-disposition"/><answerCoding><system value="http://snomed.info/sct"/><code value="183665006"/></answerCoding></enableWhen><enableWhen><question value="infant-disposition"/><answerCoding><system value="http://snomed.info/sct"/><code value="266751003"/></answerCoding></enableWhen><enableWhen><question value="infant-disposition"/><answerCoding><system value="http://snomed.info/sct"/><code value="371828006"/></answerCoding></enableWhen><required value="false"/><repeats value="false"/></item></item><item><linkId value="risk-factors"/><code><system value="http://loinc.org"/><code value="51898-5"/><display value="Risk factors Document"/></code><text value="Risk Factors: Contains birth weight and gestational age"/><type value="group"/><repeats value="false"/><item><linkId value="risk-factor-birth-weight"/><code><system value="http://snomed.info/sct"/><code value="364589006"/><display value="Birth Weight"/></code><text value="Risk Factor: Birth weight (grams)"/><type value="quantity"/><required value="true"/><repeats value="false"/></item><item><extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit"><valueCoding><system value="http://unitsofmeasure.org"/><code value="d"/><display value="d"/></valueCoding></extension><linkId value="risk-factor-gestational-age"/><code><system value="http://loinc.org"/><code value="76516-4"/><display value="Gestational age--at birth"/></code><text value="Risk Factor: Gestational age (days)"/><type value="quantity"/><required value="true"/><repeats value="false"/></item></item><item><linkId value="nhsn-comment"/><code><system value="http://www.loinc.org"/><code value="86468-6"/><display value="Report Comment Section"/></code><text value="Comments"/><type value="text"/><required value="false"/><repeats value="false"/><maxLength value="2000"/></item></Questionnaire>
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="hai-questionnaire-los-denom" />
+  <meta>
+    <versionId value="5" />
+    <lastUpdated value="2019-03-13T21:32:00.000-04:00" />
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire" />
+  </meta>
+  <language value="en-US" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men).</p>
+      <h2>Late Onset Sepsis/Meningitis Denominator</h2>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>url</td>
+            <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-denom</td>
+          </tr>
+          <tr>
+            <td>Version</td>
+            <td>R1</td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>Late Onset Sepsis/Meningitis Denominator</td>
+          </tr>
+          <tr>
+            <td>Publish date</td>
+            <td>2019-04-01</td>
+          </tr>
+          <tr>
+            <td>Realm</td>
+            <td>US</td>
+          </tr>
+          <tr>
+            <td>Code</td>
+            <td>LOINC 51897-7: Healthcare Associated Infection report Document</td>
+          </tr>
+          <tr>
+            <td>Subject type</td>
+            <td>Patient</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Questionnaire Items</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Group</th>
+            <th>Item</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Repeats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td />
+            <td>Year and month data collected for this location</td>
+            <td>date</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Facility ID</td>
+            <td>url</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Date Admitted to Facility</td>
+            <td>date</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Location Within Facility Encounter</td>
+            <td>group</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Location Within Facility Encounter</td>
+            <td>Facility Location Type</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Location Within Facility Encounter</td>
+            <td>Facility Location</td>
+            <td>url</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Location Within Facility Encounter</td>
+            <td>Date admitted or transferred to location</td>
+            <td>date</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Location Within Facility Encounter</td>
+            <td>Disposition of infant</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Location Within Facility Encounter</td>
+            <td>Disposition date if discharged, transferred, or expired</td>
+            <td>date</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Risk Factors</td>
+            <td>group</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Risk Factors</td>
+            <td>Birth weight (grams)</td>
+            <td>quantity</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Risk Factors</td>
+            <td>Gestational age (days)</td>
+            <td>quantity</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td />
+            <td>Comments</td>
+            <td>text</td>
+            <td>false</td>
+            <td>false</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </text>
+  <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-denom" />
+  <identifier>
+    <value value="hai-questionnaire-los-denom-v1" />
+  </identifier>
+  <version value="R1" />
+  <name value="hai-questionnaire-los-denom" />
+  <title value="Late Onset Sepsis/Meningitis Denominator" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-04-01" />
+  <publisher value="HL7" />
+  <description
+    value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men)." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+    </coding>
+  </jurisdiction>
+  <code>
+    <system value="http://loinc.org" />
+    <code value="51897-7" />
+    <display value="Healthcare Associated Infection report Document" />
+  </code>
+  <subjectType value="Patient" />
+  <item>
+    <linkId value="date-collected" />
+    <text value="Year and month data collected for this location" />
+    <type value="date" />
+    <required value="true" />
+    <repeats value="false" />
+  </item>
+  <item>
+    <linkId value="facility" />
+    <text value="Facility ID" />
+    <type value="url" />
+    <required value="true" />
+    <repeats value="false" />
+  </item>
+  <item>
+    <linkId value="date-admitted-to-facility" />
+    <text value="Date Admitted to Facility" />
+    <type value="date" />
+    <required value="true" />
+    <repeats value="false" />
+  </item>
+  <item>
+    <linkId value="location-within-facility-encounter-group" />
+    <code>
+      <system value="http://loinc.org" />
+      <code value="46240-8" />
+      <display value="History of Hospitalizations+Outpatient visits Narrative" />
+    </code>
+    <text value="Location Within Facility Encounter" />
+    <type value="group" />
+    <repeats value="false" />
+    <item>
+      <linkId value="facility-location-type" />
+      <text value="Facility Location Type" />
+      <type value="choice" />
+      <required value="true" />
+      <repeats value="false" />
+      <options>
+        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19" />
+      </options>
+    </item>
+    <item>
+      <linkId value="facility-location" />
+      <text value="Facility Location" />
+      <type value="url" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <linkId value="location-admit-transfer-date" />
+      <text value="Date admitted or transferred to location" />
+      <type value="date" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <linkId value="infant-disposition" />
+      <text value="Disposition of infant" />
+      <type value="choice" />
+      <required value="true" />
+      <repeats value="false" />
+      <options>
+        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30" />
+      </options>
+    </item>
+    <item>
+      <linkId value="disposition-date" />
+      <text value="Disposition date if discharged, transferred, or expired" />
+      <type value="date" />
+      <enableWhen>
+        <question value="infant-disposition" />
+        <answerCoding>
+          <system value="http://snomed.info/sct" />
+          <code value="183665006" />
+        </answerCoding>
+      </enableWhen>
+      <enableWhen>
+        <question value="infant-disposition" />
+        <answerCoding>
+          <system value="http://snomed.info/sct" />
+          <code value="266751003" />
+        </answerCoding>
+      </enableWhen>
+      <enableWhen>
+        <question value="infant-disposition" />
+        <answerCoding>
+          <system value="http://snomed.info/sct" />
+          <code value="371828006" />
+        </answerCoding>
+      </enableWhen>
+      <required value="false" />
+      <repeats value="false" />
+    </item>
+  </item>
+  <item>
+    <linkId value="risk-factors" />
+    <code>
+      <system value="http://loinc.org" />
+      <code value="51898-5" />
+      <display value="Risk factors Document" />
+    </code>
+    <text value="Risk Factors: Contains birth weight and gestational age" />
+    <type value="group" />
+    <repeats value="false" />
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+        <valueCoding>
+          <system value="http://unitsofmeasure.org" />
+          <code value="g" />
+          <display value="g" />
+        </valueCoding>
+      </extension>
+      <linkId value="risk-factor-birth-weight" />
+      <code>
+        <system value="http://snomed.info/sct" />
+        <code value="364589006" />
+        <display value="Birth Weight" />
+      </code>
+      <text value="Risk Factor: Birth weight (grams)" />
+      <type value="quantity" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+        <valueCoding>
+          <system value="http://unitsofmeasure.org" />
+          <code value="d" />
+          <display value="d" />
+        </valueCoding>
+      </extension>
+      <linkId value="risk-factor-gestational-age" />
+      <code>
+        <system value="http://loinc.org" />
+        <code value="76516-4" />
+        <display value="Gestational age--at birth" />
+      </code>
+      <text value="Risk Factor: Gestational age (days)" />
+      <type value="quantity" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+  </item>
+  <item>
+    <linkId value="nhsn-comment" />
+    <code>
+      <system value="http://www.loinc.org" />
+      <code value="86468-6" />
+      <display value="Report Comment Section" />
+    </code>
+    <text value="Comments" />
+    <type value="text" />
+    <required value="false" />
+    <repeats value="false" />
+    <maxLength value="2000" />
+  </item>
+</Questionnaire>

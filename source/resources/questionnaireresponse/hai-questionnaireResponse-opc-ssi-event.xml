@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionnaireResponse
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaireResponse-opc-ssi-event"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-03-14T00:03:04.000-04:00"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response"/>
+    </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p>This Questionnaire instance is an example of a completed Late Onset Sepsis/Meningitis Denominator.</p>
+            <h2>Example Late Onset Sepsis/Meningitis Denominator</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Year and month data collected for this location</td>
+                        <td>date</td>
+                    </tr>
+                    <tr>
+                        <td>Facility ID</td>
+                        <td>url</td>
+                    </tr>
+                    <tr>
+                        <td>Date Admitted to Facility</td>
+                        <td>date</td>
+                    </tr>
+                    <tr>
+                        <td>Facility Location Type</td>
+                        <td>choice</td>
+                    </tr>
+                    <tr>
+                        <td>Facility Location</td>
+                        <td>url</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Location Within Facility Encounter</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Date admitted or transferred to location</td>
+                        <td>date</td>
+                    </tr>
+                    <tr>
+                        <td>Disposition of infant</td>
+                        <td>choice</td>
+                    </tr>
+                    <tr>
+                        <td>Disposition date if discharged, transferred, or expired</td>
+                        <td>date</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Risk Factors</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Birth weight (grams)</td>
+                    </tr>
+                    <tr>
+                        <td>Gestational age (days)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Comment</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Comment</td>
+                        <td>NHSN text comment that is less than 2000 characters.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <identifier>
+        <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
+        <value value="20202207"/>
+    </identifier>
+    <questionnaire>
+        <reference value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-ssi-event"/>
+    </questionnaire>
+    <status value="completed"/>
+    <subject>
+        <reference value="Patient/hai-patient-1"/>
+        <display value="hai-patient-1"/>
+    </subject>
+    <author>
+        <reference value="Device/hai-authoring-device"/>
+        <display value="hai-authoring-device"/>
+    </author>
+    <item>
+        <linkId value="date-collected"/>
+        <text value="Year and month data collected for this location"/>
+        <answer>
+            <valueDate value="2019-01"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="facility"/>
+        <text value="Facility ID"/>
+        <answer>
+            <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="date-admitted-to-facility"/>
+        <text value="Date Admitted to Facility"/>
+        <answer>
+            <valueDate value="2019-01-01"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <text value="Comments"/>
+        <answer>
+            <valueString value="NHSN text comment that is less than 2000 characters."/>
+        </answer>
+    </item>
+</QuestionnaireResponse>
