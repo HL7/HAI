@@ -710,4 +710,40 @@
     <code value="1311-0" />
     <display value="No location change" />
   </concept>
+  <concept>
+    <code value="1645-1" />
+    <display value="Hospital transer/admission" />
+  </concept>
+  <concept>
+    <code value="1646-9" />
+    <display value="Wrong site" />
+  </concept>
+  <concept>
+    <code value="1647-7" />
+    <display value="Wrong side" />
+  </concept>
+  <concept>
+    <code value="1648-5" />
+    <display value="Wrong patient" />
+  </concept>
+  <concept>
+    <code value="1649-3" />
+    <display value="Wrong implant" />
+  </concept>
+  <concept>
+    <code value="1657-6" />
+    <display value="Summary data reporting outpatient procedure component evetns at a facility" />
+  </concept>
+  <concept>
+    <code value="1890-3" />
+    <display value="Number of Total Facility Encounters (for outpatient location)" />
+  </concept>
+  <concept>
+    <code value="1340-9" />
+    <display value="No Same Day Outcome Measures (events) reported this month" />
+  </concept>
+  <concept>
+    <code value="1006-6"/>
+    <display value="central line including umbilical catheter"/>
+  </concept>
 </CodeSystem>
