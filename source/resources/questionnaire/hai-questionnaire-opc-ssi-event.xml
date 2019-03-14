@@ -112,6 +112,9 @@
     <type value="choice" />
     <required value="true" />
     <repeats value="false" />
+    <options>
+      <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20"/>
+    </options>
   </item>
   <item>
     <linkId value="encounter-date" />
