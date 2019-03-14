@@ -343,7 +343,7 @@
       <required value="true" />
       <repeats value="false" />
       <options>
-        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9" />
+        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34" />
       </options>
     </item>
     <item>

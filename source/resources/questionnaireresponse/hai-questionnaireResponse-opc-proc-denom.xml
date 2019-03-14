@@ -142,7 +142,7 @@
         <valueCoding>
           <system value="http://snomed.info/sct" />
           <code value="413495001" />
-          <display value="Normally healthy patient" />
+          <display value="ASA physical status class 1" />
         </valueCoding>
       </answer>
     </item>

@@ -21,6 +21,7 @@ active: terminology
 - [NHSNInfectionConditionCode](ValueSet-2.16.840.1.114222.4.11.3196.html)
 - [NHSNInfectionTypeCode](ValueSet-2.16.840.1.113883.13.20.html)
 - [NHSNLOS/MENDischargeDisposition](ValueSet-2.16.840.1.113883.10.20.5.9.30.html)
+- [NHSNOPCProcedureCategoryCode](ValueSet-2.16.840.1.113883.10.20.5.9.34.html)
 - [NHSNPathogenCode](ValueSet-2.16.840.1.113883.13.16.html)
 - [NHSNPathogenRanking](ValueSet-nhsn-pathogen-ranking.html)
 - [NHSNWoundClassCode](ValueSet-2.16.840.1.113883.13.9.html)
