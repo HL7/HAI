@@ -162,6 +162,15 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Group/hai-group-1"/>
+        <display value="Example Group: HAI Group 1"/>
+      </reference>
+      <name value="Example Group: HAI Group 1"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Device/hai-authoring-device"/>
         <display value="Example Device: HAI Authoring Device"/>
       </reference>
@@ -286,6 +295,30 @@
       <reference>
         <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
         <display value="Value Set: NHSNOPCProcedureCategoryCode"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.31"/>
+        <display value="Value Set: NHSNSSIDetectionMethodType"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.29"/>
+        <display value="Value Set: NHSNSSIDetectionMethod"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/2.16.840.1.114222.4.11.3595"/>
+        <display value="Value Set: NHSNPopulationSummaryReportTypeCode"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>

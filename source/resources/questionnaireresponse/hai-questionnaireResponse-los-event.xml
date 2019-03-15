@@ -10,7 +10,7 @@
     <text>
         <status value="generated"/>
         <div
-            xmlns="http://www.w3.org/1999/xhtml">
+            xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
             <p>This QuestionnaireResponse instance is an example of a completed Late Onset Sepsis/Meningitis Event (LOS) Report and is in response to the Questionnaire instance defining this report.</p>
             <h2>Example Late Onset Sepsis/Meningitis Event (LOS)</h2>
             <table border="1">

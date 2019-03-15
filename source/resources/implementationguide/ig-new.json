@@ -166,6 +166,15 @@
     },
     {
       "reference" : {
+        "reference" : "Group/hai-group-1",
+        "display" : "Example Group: HAI Group 1"
+      },
+      "name" : "Example Group: HAI Group 1",
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "Device/hai-authoring-device",
         "display" : "Example Device: HAI Authoring Device"
       },
@@ -290,6 +299,30 @@
       "reference" : {
         "reference" : "ValueSet/2.16.840.1.113883.10.20.5.9.34",
         "display" : "Value Set: NHSNOPCProcedureCategoryCode"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/2.16.840.1.113883.10.20.5.9.31",
+        "display" : "Value Set: NHSNSSIDetectionMethodType"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/2.16.840.1.113883.10.20.5.9.29",
+        "display" : "Value Set: NHSNSSIDetectionMethod"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/2.16.840.1.114222.4.11.3595",
+        "display" : "Value Set: NHSNPopulationSummaryReportTypeCode"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"

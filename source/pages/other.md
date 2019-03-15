@@ -24,12 +24,17 @@ active: other
 </thead>
 <tbody>
 <tr>
-<td>Device</td>
-<td><a href="Device-hai-authoring-device.html">hai-authoring-device</a></td>
-</tr>
-<tr>
 <td>Patient</td>
 <td><a href="Patient-hai-patient-1.html">hai-patient-1</a></td>
 </tr>
+<tr>
+<td>Group</td>
+<td><a href="Group-hai-group-1.html">hai-group-1</a></td>
+</tr>
+<tr>
+<td>Device</td>
+<td><a href="Device-hai-authoring-device.html">hai-authoring-device</a></td>
+</tr>
+
 </tbody>
 </table>

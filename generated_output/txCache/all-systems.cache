@@ -1563,3 +1563,113 @@ e: {
   "error" : "Error from server: Unable to provide support for code system http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.6.277"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/us/hai/CodeSystem/urn:oid:2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "1879-6",
+        "display" : "Summary data reporting catheter and ventilator use in a ICU/Other"
+      },
+      {
+        "code" : "1880-4",
+        "display" : "Summary data reporting catheter and ventilator use in a SCA"
+      },
+      {
+        "code" : "1881-2",
+        "display" : "Summary data reporting catheter and ventilator use in a NICU"
+      },
+      {
+        "code" : "1884-6",
+        "display" : "Summary data reporting Active Surveillance Testing"
+      },
+      {
+        "code" : "2316-8",
+        "display" : "Summary data reporting vascular access types for chronic hemodialysis patients"
+      },
+      {
+        "code" : "1887-9",
+        "display" : "Summary data reporting Antimicrobial Usage"
+      },
+      {
+        "code" : "2410-9",
+        "display" : "Summary data reporting antimicrobial resistance patterns at a facility"
+      },
+      {
+        "code" : "1657-6",
+        "display" : "Summary data reporting Outpatient procedure component events at a facility"
+      },
+      {
+        "code" : "2543-7",
+        "display" : "Hemovigilance Module -  Monthly Reporting Denominator"
+      }]
+    },
+    {
+      "system" : "urn:oid:2.16.840.1.113883.6.1",
+      "concept" : [{
+        "code" : "86558-4",
+        "display" : "Summary data reporting healthcare personnel influenza vaccinations"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://hl7.org/fhir/us/hai/CodeSystem/urn:oid:2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277",
+      "concept" : [{
+        "code" : "1879-6",
+        "display" : "Summary data reporting catheter and ventilator use in a ICU/Other"
+      },
+      {
+        "code" : "1880-4",
+        "display" : "Summary data reporting catheter and ventilator use in a SCA"
+      },
+      {
+        "code" : "1881-2",
+        "display" : "Summary data reporting catheter and ventilator use in a NICU"
+      },
+      {
+        "code" : "1884-6",
+        "display" : "Summary data reporting Active Surveillance Testing"
+      },
+      {
+        "code" : "2316-8",
+        "display" : "Summary data reporting vascular access types for chronic hemodialysis patients"
+      },
+      {
+        "code" : "1887-9",
+        "display" : "Summary data reporting Antimicrobial Usage"
+      },
+      {
+        "code" : "2410-9",
+        "display" : "Summary data reporting antimicrobial resistance patterns at a facility"
+      },
+      {
+        "code" : "1657-6",
+        "display" : "Summary data reporting Outpatient procedure component events at a facility"
+      },
+      {
+        "code" : "2543-7",
+        "display" : "Hemovigilance Module -  Monthly Reporting Denominator"
+      }]
+    },
+    {
+      "system" : "urn:oid:2.16.840.1.113883.6.1",
+      "concept" : [{
+        "code" : "86558-4",
+        "display" : "Summary data reporting healthcare personnel influenza vaccinations"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"
+}
+-------------------------------------------------------------------------------------

@@ -55,6 +55,9 @@
 		"Patient": {
 			"template-base": "ex.html"
 		},
+		"Group": {
+			"template-base": "ex.html"
+		},
 		"StructureMap": {
 			"content": false,
 			"script": false,
@@ -146,6 +149,10 @@
 			"base": "Patient-hai-patient-1.html",
 			"defns": "Patient-hai-patient-1-definitions.html"
 		},
+		"Group/hai-group-1": {
+			"base": "Group-hai-group-1.html",
+			"defns": "Group-hai-group-1-definitions.html"
+		},
 		"Device/hai-authoring-device": {
 			"base": "Device-hai-authoring-device.html",
 			"defns": "Device-hai-authoring-device-definitions.html"
@@ -205,6 +212,18 @@
 		"ValueSet/2.16.840.1.113883.10.20.5.9.34": {
 			"base": "ValueSet-2.16.840.1.113883.10.20.5.9.34.html",
 			"defns": "ValueSet-2.16.840.1.113883.10.20.5.9.34-definitions.html"
+		},
+		"ValueSet/2.16.840.1.113883.10.20.5.9.31": {
+			"base": "ValueSet-2.16.840.1.113883.10.20.5.9.31.html",
+			"defns": "ValueSet-2.16.840.1.113883.10.20.5.9.31-definitions.html"
+		},
+		"ValueSet/2.16.840.1.113883.10.20.5.9.29": {
+			"base": "ValueSet-2.16.840.1.113883.10.20.5.9.29.html",
+			"defns": "ValueSet-2.16.840.1.113883.10.20.5.9.29-definitions.html"
+		},
+		"ValueSet/2.16.840.1.114222.4.11.3595": {
+			"base": "ValueSet-2.16.840.1.114222.4.11.3595.html",
+			"defns": "ValueSet-2.16.840.1.114222.4.11.3595-definitions.html"
 		},
 		"Questionnaire/hai-questionnaire-opc-proc-denom": {
 			"base": "Questionnaire-hai-questionnaire-opc-proc-denom.html",

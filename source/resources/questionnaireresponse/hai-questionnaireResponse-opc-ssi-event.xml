@@ -9,7 +9,7 @@
   <language value="en-US" />
   <text>
     <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
       <p>This QuestionnaireResponse instance is an example of a O.</p>
       <h2>Example Late Onset Sepsis/Meningitis Denominator</h2>
       <table border="1">
@@ -53,34 +53,290 @@
     <linkId value="facility-id" />
     <text value="Facility ID" />
     <answer>
-      <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1" />
+      <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W" />
     </answer>
   </item>
-  <item>
-    <linkId value="event-number" />
-    <text value="Event Number" />
-    <answer>
-      <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31" />
-    </answer>
-  </item>
-  <item>
-    <linkId value="event-type" />
-    <text value="Event Type" />
-    <answer>
-      <valueCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="433202001" />
-        <display value="Surgical Site Infection" />
-      </valueCoding>
-    </answer>
-  </item>
+ 
+ 
   <item>
     <linkId value="encounter-date" />
     <text value="Date of encounter" />
     <answer>
-      <valueDate value="2019-01-01" />
+      <valueDate value="2018-08-05" />
     </answer>
   </item>
+  
+  <item>
+    <linkId value="infection-details" />
+    <text value="Infection details" />
+    <item>
+      <linkId value="event-type" />
+      <text value="Event Type" />
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct" />
+          <code value="433202001" />
+          <display value="Surgical Site Infection" />
+        </valueCoding>
+      </answer>
+    </item>
+    <item>
+      <linkId value="event-date" />
+      <text value="Date of event" />
+      <answer>
+        <valueDate value="2018-08-06" />
+      </answer>
+    </item>
+    <item>
+      <linkId value="nhsn-procedure-code-category" />
+      <text value="NHSN Procedure Code Category" />
+      <answer>
+        <valueCoding>
+          <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+          <code value="2108-9" />
+          <display value="Appendix surgery" />
+        </valueCoding>
+      </answer>
+    </item>
+    <item>
+      <linkId value="cpt-procedure-code" />
+      <text value="CPT Procedure Code" />
+      <answer>
+        <valueCoding>
+          <system value="http://www.ama-assn.org/go/cpt" />
+          <code value="44970" />
+          <display value="Laparoscopic Procedures on the Appendix" />
+        </valueCoding>
+      </answer>
+    </item>
+    <item>
+      <linkId value="procedure-id" />
+      <text value="Procedure Id" />
+      <answer>
+        <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.5:21987654321" />
+      </answer>
+    </item>
+    <item>
+      <linkId value="ssi-level" />
+      <text value="Surgical Site Infection (SSI) Level" />
+      <answer>
+        <valueCoding>
+          <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+          <code value="1620-4" />
+          <display value="Superficial incisional primary SSI" />
+        </valueCoding>
+      </answer>
+    </item>
+    
+    <item>
+      <linkId value="criteria-of-diagnosis" />
+      <text value="Criteria of Diagnosis" />
+      <item>
+        <linkId value="criteria-of-diagnosis-abscess" />
+        <text value="Criteria of Diagnosis: Abscess" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-redness" />
+        <text value="Criteria of Diagnosis: Redness" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-fever" />
+        <text value="Criteria of Diagnosis: Fever" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-heat" />
+        <text value="Criteria of Diagnosis: Heat" />
+        <answer>
+          <valueBoolean value="true"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-incision-purulent-drainage" />
+        <text value="Criteria of Diagnosis: Purulent drainage" />
+        <answer>
+          <valueBoolean value="true"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-wound-dehisced" />
+        <text value="Criteria of Diagnosis: Wound spontaneously dehisced" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-incision-opened" />
+        <text value="Criteria of Diagnosis: Incision deliberately opened" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-evidence-found" />
+        <text value="Criteria of Diagnosis: Other evidence of infection found on invasive procedure, gross anatomic exam, or histopathologic exam" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-localized-swelling" />
+        <text value="Criteria of Diagnosis: Localized swelling" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-pain-tenderness" />
+        <text value="Criteria of Diagnosis: Pain or tenderness" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+      
+      <item>
+        <linkId value="criteria-of-diagnosis-organism-identified" />
+        <text value="Criteria of Diagnosis: Organism Identified" />
+        <answer>
+          <valueBoolean value="true"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-testing-not-performed" />
+        <text value="Criteria of Diagnosis: Culture or non-culture based testing not performed" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-imaging-test" />
+        <text value="Criteria of Diagnosis: Imaging test evidence of infection" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="criteria-of-diagnosis-physician-diagnosis" />
+        <text value="Criteria of Diagnosis: Diagnosis of superficial SSI by surgeon or attending physician" />
+        <answer>
+          <valueBoolean value="false"/>
+        </answer>
+      </item>
+    </item>
+    
+    <item>
+      <linkId value="ssi-detection-method-type" />
+      <text value="Surveillence method type (active/passive) through which the SSI was detected" />
+      <answer>
+        <valueCoding>
+          <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+          <code value="1309-4" />
+          <display value="Active SSI Detection Method" />
+        </valueCoding>
+      </answer>
+    </item>
+    <item>
+      <linkId value="ssi-detection-method" />
+      <text value="Surveillence method through which the SSI was detected" />
+      <answer>
+        <valueCoding>
+          <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+          <code value="1321-9" />
+          <display value="Review of patient's medical record" />
+        </valueCoding>
+      </answer>
+    </item>
+  </item>
+  
+  <item>
+    <linkId value="findings-group"/>
+    <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/>
+    <item>
+      <linkId value="pathogen-identified"/>
+      <text value="Pathogen Identified"/>
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="116197008"/>
+          <display value="Staphylococcus, coagulase negative (organism)"/>
+        </valueCoding>
+      </answer>
+    </item>
+    <item>
+      <linkId value="pathogen-ranking"/>
+      <text value="Pathogen Ranking"/>
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="255216001"/>
+          <display value="First"/>
+        </valueCoding>
+      </answer>
+    </item>
+  </item>
+  
+  <item>
+    <linkId value="findings-group"/>
+    <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/>
+    <item>
+      <linkId value="pathogen-identified"/>
+      <text value="Pathogen Identified"/>
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="103535006"/>
+          <display value="Life form of parasite (organism)"/>
+        </valueCoding>
+      </answer>
+    </item>
+    <item>
+      <linkId value="pathogen-ranking"/>
+      <text value="Pathogen Ranking"/>
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="81170007"/>
+          <display value="Second"/>
+        </valueCoding>
+      </answer>
+    </item>
+  </item>
+  
+  <item>
+    <linkId value="findings-group"/>
+    <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/>
+    <item>
+      <linkId value="pathogen-identified"/>
+      <text value="Pathogen Identified"/>
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="243365003"/>
+          <display value="Acid-fast bacillus"/>
+        </valueCoding>
+      </answer>
+    </item>
+    <item>
+      <linkId value="pathogen-ranking"/>
+      <text value="Pathogen Ranking"/>
+      <answer>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="70905002"/>
+          <display value="Third"/>
+        </valueCoding>
+      </answer>
+    </item>
+  </item>
+  
   <item>
     <linkId value="nhsn-comment" />
     <text value="Comments" />

@@ -24,8 +24,10 @@ active: terminology
 - [NHSNOPCProcedureCategoryCode](ValueSet-2.16.840.1.113883.10.20.5.9.34.html)
 - [NHSNPathogenCode](ValueSet-2.16.840.1.113883.13.16.html)
 - [NHSNPathogenRanking](ValueSet-nhsn-pathogen-ranking.html)
+- [NHSNPopulationSummaryReportTypeCode](ValueSet-2.16.840.1.114222.4.11.3595.html)
+- [NHSNSSIDetectionMethod](ValueSet-2.16.840.1.113883.10.20.5.9.29.html)
+- [NHSNSSIDetectionMethodType](ValueSet-2.16.840.1.113883.10.20.5.9.31.html)
 - [NHSNWoundClassCode](ValueSet-2.16.840.1.113883.13.9.html)
-
 
 ### Code Systems
 

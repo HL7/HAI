@@ -170,6 +170,14 @@
                 <display value="Example Patient: HAI Patient 1"/>
             </sourceReference>
         </resource>
+      <resource>
+        <example value="true"/>
+        <name value="Example Group: HAI Group 1"/>
+        <sourceReference>
+          <reference value="Group/hai-group-1"/>
+          <display value="Example Group: HAI Group 1"/>
+        </sourceReference>
+      </resource>
         <resource>
             <example value="true"/>
             <name value="Example Device: HAI Authoring Device"/>
@@ -291,6 +299,27 @@
         <sourceReference>
           <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
           <display value="Value Set: NHSNOPCProcedureCategoryCode"/>
+        </sourceReference>
+      </resource>
+      <resource>
+        <example value="false"/>
+        <sourceReference>
+          <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.31"/>
+          <display value="Value Set: NHSNSSIDetectionMethodType"/>
+        </sourceReference>
+      </resource>
+      <resource>
+        <example value="false"/>
+        <sourceReference>
+          <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.29"/>
+          <display value="Value Set: NHSNSSIDetectionMethod"/>
+        </sourceReference>
+      </resource>
+      <resource>
+        <example value="false"/>
+        <sourceReference>
+          <reference value="ValueSet/2.16.840.1.114222.4.11.3595"/>
+          <display value="Value Set: NHSNPopulationSummaryReportTypeCode"/>
         </sourceReference>
       </resource>
         <resource>

@@ -9,7 +9,7 @@
   <language value="en-US" />
   <text>
     <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
       <p>This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures.</p>
       <h2>Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</h2>
       <table border="1">
@@ -153,11 +153,11 @@
       <code value="US" />
     </coding>
   </jurisdiction>
-  <code>
+  <!--<code>
     <system value="http://loinc.org" />
     <code value="51897-7" />
     <display value="Healthcare Associated Infection report Document" />
-  </code>
+  </code>-->
   <code>
     <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
     <code value="1657-6" />

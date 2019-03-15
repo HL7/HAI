@@ -9,7 +9,7 @@
   <language value="en-US" />
   <text>
     <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
       <p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men).</p>
       <h2>Late Onset Sepsis/Meningitis Denominator</h2>
       <table border="1">

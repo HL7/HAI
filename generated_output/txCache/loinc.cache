@@ -1804,3 +1804,39 @@ v: {
   "error" : "The display \"Procedure type\" is not a valid display for the code {http://loinc.org}29300-1 - should be one of [Procedure,Procedure]"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "86558-4",
+        "display" : "Summary data reporting healthcare personnel influenza vaccinations"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:dc4cc494-978c-4dec-a3f3-089eb074cf21",
+    "timestamp" : "2019-03-15T13:33:39+10:00",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.64"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "86558-4",
+      "display" : "Summary data reporting healthcare personnel influenza vaccinations"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
