@@ -153,13 +153,13 @@
                 </valueCoding>
             </answer>
         </item>
-        <item>
+        <!--<item>
             <linkId value="disposition-date"/>
             <text value="Disposition date if discharged, transferred, or expired"/>
             <answer>
                 <valueDate value="2019-01-02"/>
             </answer>
-        </item>
+        </item>-->
     </item>
     <item>
         <linkId value="risk-factors"/>

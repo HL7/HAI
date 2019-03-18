@@ -287,13 +287,13 @@
                 <valueBoolean value="true"/>
             </answer>
         </item>
-        <item>
+        <!--<item>
             <linkId value="los-contributed-to-death"/>
             <text value="Infection contributed to death"/>
             <answer>
                 <valueBoolean value="false"/>
             </answer>
-        </item>
+        </item>-->
         <item>
             <linkId value="discharge-date"/>
             <text value="Discharge Date"/>
