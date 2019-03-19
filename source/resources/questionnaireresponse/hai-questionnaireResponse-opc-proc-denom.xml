@@ -10,7 +10,7 @@
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-      <p>This Questionnaire instance is an example of a completed Outpatient Procedure Component Denominator for Procedure.</p>
+      <p>This QuestionnaireResponse instance is an example of a completed Outpatient Procedure Component Denominator for Procedure and is in response to the Questionnaire instance defining this report.</p>
       <h2>Example Outpatient Procedure Component Denominator for Procedure</h2>
       <table border="1">
         <tbody>
