@@ -57,11 +57,206 @@
         </thead>
         <tbody>
           <tr>
+            <td></td>
+            <td>Facility ID</td>
+            <td>url</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Date of encounter</td>
+            <td>date</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Infection Details</td>
+            <td>group</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Infection Details</td>
+            <td>Event Type</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr><tr>
+            <td>Infection Details</td>
+            <td>Date of event</td>
+            <td>date</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Infection Details</td>
+            <td>NHSN Procedure Code Category</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Infection Details</td>
+            <td>CPT Procedure Code</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Infection Details</td>
+            <td>Procedure Id</td>
+            <td>url</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Infection Details</td>
+            <td>Surgical Site Infection (SSI) Level</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Infection Details</td>
+            <td>Criteria of Diagnosis</td>
+            <td>group</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Abscess</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Redness</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Fever</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Purulent drainage</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Wound spontaneously dehisced</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Incision deliberately opened</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Other evidence of infection found on invasive procedure, gross anatomic exam, or histopathologic exam</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Localized swelling</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Pain or tenderness</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Organism Identified</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Culture or non-culture based testing not performed</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Imaging test evidence of infection</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Criteria of Diagnosis</td>
+            <td>Diagnosis of superficial SSI by surgeon or attending physician</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Infection Details</td>
+            <td>Surveillence method type (active/passive) through which the SSI was detected</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Infection Deatils</td>
+            <td>Surveillence method through which the SSI was detected</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Findings Group</td>
+            <td>group</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Findings Group</td>
+            <td>Pathogen Identified</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Findings Group</td>
+            <td>Pathogen Ranking</td>
+            <td>choice</td>
+            <td>true</td>
+            <td>false</td>
+          </tr>
+          <tr>
             <td />
-            <td>TODO</td>
-            <td />
-            <td />
-            <td />
+            <td>Comments</td>
+            <td>text</td>
+            <td>false</td>
+            <td>false</td>
           </tr>
         </tbody>
       </table>
@@ -373,6 +568,7 @@
     </code>
     <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them." />
     <type value="group" />
+    <required value="true"/>
     <repeats value="true" />
     <item>
       <linkId value="pathogen-identified" />
