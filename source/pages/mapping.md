@@ -13,10 +13,8 @@ active: other
 
 <!-- end TOC -->
 
-### Release 2 (this release)
-
+### Mapping to CDA
   
-  <h2>Mapping to CDA</h2>
   <p>NOTE to commenters: BEFORE PUBLICATION this mapping will be updated for all 5 new HAI forms - it is incomplete now due to the fact that the mappings will likely change during ballot.</p>
   <p>This implementation guide is the second FHIR release of the HAI reporting profiles and is being balloted in the same cycle as the HL7 CDA® R2 Implementation Guide: NHSN Healthcare Associated Infection (HAI) Reports, Release 3, STU 4—US Realm.</p>
   <p>The following table shows the mapping between FHIR Questionnaire items and the corresponding CDA templates</p>
