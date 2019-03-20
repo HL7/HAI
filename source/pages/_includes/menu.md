@@ -21,8 +21,9 @@
 
 -->
 - [Home](index.html){: .active}
+- [Table of Contents](toc.html)
 - [Guidance](guidance.html)
-- [Profiles, Extensions & Transactions](profiles.html)
+- [Profiles, Extensions, & Transactions](profiles.html)
 - [Questionnaire Instances & Examples](questionnaireInstancesExamples.html)
 - [Mapping](mapping.html)
 - [Terminology](terminology.html)
