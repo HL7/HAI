@@ -15,18 +15,80 @@
       <table border="1">
         <tbody>
           <tr>
-            <td>TODO Narrative Text</td>
-            <td />
+            <td>Authoring Device</td>
+            <td>Id: 2.16.840.1.113883.3.117.1.1.5.1.1.2:anAuthorID</td>
           </tr>
-
-        </tbody>
-      </table>
-      <h2>Infection Risk Factors</h2>
-      <table border="1">
-        <tbody>
           <tr>
-            <td>TODO Narrative Text</td>
-            <td />
+            <td>Facility ID</td>
+            <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1</td>
+          </tr>
+          <tr>
+            <td>Event Number</td>
+            <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31</td>
+          </tr>
+          <tr>
+            <td>Patient ID</td>
+            <td>Medical Record Number: 12345</td>
+          </tr>
+          <tr>
+            <td>Social Security #</td>
+            <td>12345</td>
+          </tr>
+          <tr>
+            <td>Medicaid #</td>
+            <td>959595</td>
+          </tr>
+          <tr>
+            <td>Patient Last Name</td>
+            <td>Nuclear</td>
+          </tr>
+          <tr>
+            <td>Patient First Name</td>
+            <td>Ned</td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <td>Date of Birth</td>
+            <td>1954-11-25</td>
+          </tr>
+          <tr>
+            <td>Ethnicity</td>
+            <td>Not Hispanic or Latino</td>
+          </tr>
+          <tr>
+            <td>Race</td>
+            <td>White</td>
+          </tr>
+          <tr>
+            <td>Date of encounter</td>
+            <td>2018-12-23</td>
+          </tr>
+          <tr>
+            <td>Risk Factor: Wound class</td>
+            <td>CDC Class II/Clean-contaminated</td>
+          </tr>
+          <tr>
+            <td>Risk Factor: Endoscopy used</td>
+            <td>true</td>
+          </tr>
+          <tr>
+            <td>Risk Factor: Diabetes mellitus</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Risk Factor: height</td>
+            <td>168 cm</td>
+          </tr>
+          <tr>
+            <td>Risk Factor: height</td>
+            <td>68 kg</td>
+          </tr>
+          <tr>
+            <td>Risk Factor: ASA Class</td>
+            <td>ASA physical status class 1</td>
           </tr>
         </tbody>
       </table>
@@ -34,7 +96,24 @@
       <table border="1">
         <tbody>
           <tr>
-            <td>TODO Narratvie Text</td>
+            <td>NHSN Procedure Code Category</td>
+            <td>2108-9: Appendix surgery</td>
+          </tr>
+          <tr>
+            <td>CPT Procedure Code</td>
+            <td>44970: Laparoscopic Procedures on the Appendix</td>
+          </tr>
+          <tr>
+            <td>Procedure duration</td>
+            <td>90 min</td>
+          </tr>
+          <tr>
+            <td>General anesthesia</td>
+            <td>true</td>
+          </tr>
+          <tr>
+            <td>Surgeon code</td>
+            <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1.1:987654</td>
           </tr>
         </tbody>
       </table>

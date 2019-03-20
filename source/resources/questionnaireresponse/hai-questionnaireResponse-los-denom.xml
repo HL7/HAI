@@ -15,6 +15,10 @@
       <table border="1">
         <tbody>
           <tr>
+            <td>Authoring Device</td>
+            <td>Id: 2.16.840.1.113883.3.117.1.1.5.1.1.2:anAuthorID</td>
+          </tr>
+          <tr>
             <td>Year and month data collected for this location</td>
             <td>2019-01</td>
           </tr>
@@ -26,7 +30,26 @@
             <td>Date Admitted to Facility</td>
             <td>2019-01-01</td>
           </tr>
-
+          <tr>
+            <td>Patient ID</td>
+            <td>Medical Record Number: 12345</td>
+          </tr>
+          <tr>
+            <td>Patient Last Name</td>
+            <td>Nuclear</td>
+          </tr>
+          <tr>
+            <td>Patient First Name</td>
+            <td>Ned</td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>Male</td>
+          </tr>
+          <tr>
+            <td>Date of Birth</td>
+            <td>2019-01-01</td>
+          </tr>
         </tbody>
       </table>
       <h2>Location Within Facility Encounter</h2>
