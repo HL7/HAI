@@ -12,6 +12,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
       <p>This QuestionnaireResponse instance is an example of a completed Outpatient Procedure Component Surgical Site Infection (SSI) Event and is in response to the Questionnaire instance defining this report.</p>
       <h2>Example Outpatient Procedure Component Surgical Site Infection (SSI) Event</h2>
+      <h3>Authoring and Facility Information</h3>
       <table border="1">
         <tbody>
           <tr>
@@ -26,6 +27,11 @@
             <td>Date of encounter</td>
             <td>2018-08-05</td>
           </tr>
+        </tbody>
+      </table>
+      <h3>Patient</h3>
+      <table border="1">
+        <tbody>
           <tr>
             <td>Patient ID</td>
             <td>Medical Record Number: 12345</td>
@@ -64,7 +70,7 @@
           </tr>
         </tbody>
       </table>
-      <h2>Infection Details</h2>
+      <h3>Infection Details</h3>
       <table border="1">
         <tbody>
           <tr>
@@ -159,7 +165,7 @@
         </tbody>
       </table>
 
-      <h2>Findings</h2>
+      <h3>Findings</h3>
       <table border="1">
         <tbody>
           <tr>
@@ -189,7 +195,7 @@
         </tbody>
       </table>
 
-      <h2>Comment</h2>
+      <h3>Comment</h3>
       <table border="1">
         <tbody>
           <tr>

@@ -12,6 +12,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
       <p>This QuestionnaireResponse instance is an example of a completed Late Onset Sepsis/Meningitis Denominator and is in response to the Questionnaire instance defining this report.</p>
       <h2>Example Late Onset Sepsis/Meningitis Denominator</h2>
+      <h3>Authoring and Facility Information</h3>
       <table border="1">
         <tbody>
           <tr>
@@ -30,6 +31,11 @@
             <td>Date Admitted to Facility</td>
             <td>2019-01-01</td>
           </tr>
+        </tbody>
+      </table>
+      <h3>Patient</h3>
+      <table border="1">
+        <tbody>
           <tr>
             <td>Patient ID</td>
             <td>Medical Record Number: 12345</td>
@@ -52,7 +58,7 @@
           </tr>
         </tbody>
       </table>
-      <h2>Location Within Facility Encounter</h2>
+      <h3>Location Within Facility Encounter</h3>
       <table border="1">
         <tbody>
           <tr>
@@ -77,7 +83,7 @@
           </tr>
         </tbody>
       </table>
-      <h2>Risk Factors</h2>
+      <h3>Risk Factors</h3>
       <table border="1">
         <tbody>
           <tr>
@@ -90,7 +96,7 @@
           </tr>
         </tbody>
       </table>
-      <h2>Comment</h2>
+      <h3>Comment</h3>
       <table border="1">
         <tbody>
           <tr>
