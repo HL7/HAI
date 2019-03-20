@@ -20,7 +20,7 @@
             <td>Id: 2.16.840.1.113883.3.117.1.1.5.1.1.2:anAuthorID</td>
           </tr>
           <tr>
-            <td>Facility ID"</td>
+            <td>Facility ID</td>
             <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W</td>
           </tr>
           <tr>
@@ -98,63 +98,6 @@
             <td>Superficial incisional primary SSI</td>
           </tr>
           <tr>
-            <td>Criteria of Diagnosis: Abscess</td>
-            <td>false"</td>
-            <tr>
-              <td>Criteria of Diagnosis: Redness</td>
-              <td>false</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Fever</td>
-              <td>false</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Heat</td>
-              <td>true</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Purulent drainage</td>
-              <td>true</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Wound spontaneously dehisced</td>
-              <td>false</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Incision deliberately opened</td>
-              <td>false</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Other evidence of infection found on invasive procedure, gross anatomic exam, or histopathologic exam</td>
-              <td>false</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Localized swelling</td>
-              <td>false</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Pain or tenderness</td>
-              <td>false</td>
-            </tr>
-
-            <tr>
-              <td>Criteria of Diagnosis: Organism Identified</td>
-              <td>true</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Culture or non-culture based testing not performed</td>
-              <td>false</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Imaging test evidence of infection</td>
-              <td>false</td>
-            </tr>
-            <tr>
-              <td>Criteria of Diagnosis: Diagnosis of superficial SSI by surgeon or attending physician</td>
-              <td>false</td>
-            </tr>
-          </tr>
-          <tr>
             <td>Surveillence method type (active/passive) through which the SSI was detected</td>
             <td>Active SSI Detection Method</td>
           </tr>
@@ -164,7 +107,67 @@
           </tr>
         </tbody>
       </table>
-
+      <h3>Criteria of Diagnosis</h3>
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>Abscess</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Redness</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Fever</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Heat</td>
+            <td>true</td>
+          </tr>
+          <tr>
+            <td>Purulent drainage</td>
+            <td>true</td>
+          </tr>
+          <tr>
+            <td>Wound spontaneously dehisced</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Incision deliberately opened</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Other evidence of infection found on invasive procedure, gross anatomic exam, or histopathologic exam</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Localized swelling</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Pain or tenderness</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Organism Identified</td>
+            <td>true</td>
+          </tr>
+          <tr>
+            <td>Culture or non-culture based testing not performed</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Imaging test evidence of infection</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>Diagnosis of superficial SSI by surgeon or attending physician</td>
+            <td>false</td>
+          </tr>
+        </tbody>
+      </table>
       <h3>Findings</h3>
       <table border="1">
         <tbody>
@@ -194,7 +197,6 @@
           </tr>
         </tbody>
       </table>
-
       <h3>Comment</h3>
       <table border="1">
         <tbody>
