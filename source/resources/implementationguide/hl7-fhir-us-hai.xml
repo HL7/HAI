@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7-fhir-us-hai-3.0.1" />
+  <id value="hl7-fhir-us-hai-1.1.0" />
   <meta>
     <versionId value="49" />
     <lastUpdated value="2019-03-14T00:03:37.000-04:00" />
