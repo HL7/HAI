@@ -12,7 +12,7 @@ active: toc
       <ul>
         <li><a href="index.html">Home Page</a></li>
         <li><a href="guidance.html">Guidance</a></li>
-        <li><a href="profiles.html">Profiles, Extensions, & Transactions</a></li>
+        <li><a href="profiles.html">Profiles</a></li>
         <li><a href="questionnaireInstancesExamples.html">Questionnaire Instances & Examples</a></li>
         <li><a href="mapping.html">Mapping</a></li>
         <li><a href="terminology.html">Terminology</a></li>

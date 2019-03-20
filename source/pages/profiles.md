@@ -14,8 +14,6 @@ active: profiles
 <!-- end TOC -->
 
 ---
-<br />
-
 ### Profiles
 
 <table>
