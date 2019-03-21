@@ -15,6 +15,8 @@ This implementation guide was produced and developed by Lantana Consulting Group
 	<br />Past contributors: The vendors who participated in the 2007-2008 pilot activities of Bloodstream Infection Reports and Surgical Site Infection deserve special thanks and acknowledgment: MedMined™ services from Cardinal Health, EpiQuest, ICPA, Premier, TheraDoc, and Vecna Technologies. Throughout the development of this guide, Marla Albitz provided essential translation of NHSN business and technical requirements so that Kate Hamilton, Bob Dolin, Rick Geimer, and Susan Hardy could turn those requirements into a CDA-compliant specification. Liora Alschuler provided oversight and review. Additional contributors to the DSTU releases have been Jonathan Edwards, Maggie Dudeck, Dawn Sievert, Teresa Horan, Mary Andrus, Melinda Neuhauser, Ruby Phelps, Mindy Durrance, Alicia Shugart, Tygh Walker, Chris Cole, Cindy Gross, and Scott Fridkin (data specifications); Wenkai Li, Pavla Frazier, Gaye Dolin, Margaret Marshburn, Rob Hausam, Sundak Ganesan, and Denny Cordy (vocabulary); Kelly Peterson (database administration); Venu Sarraff (data importation); and Brett Marquard and Lauren Wood (project management and technical editing). We also thank Ted Klein, Cecil Lynch, and Daniel Vreeman for timely issuance of identifiers and codes.  
 </div>
 
+
+
 |Primary Editor:|Sarah Gaunt|Lantana Consulting Group|sarah.gaunt@lantanagroup.com|
 |Co-Editor:|Mindy Durrance|Leidos Consultant to CDC/NHSN|mdq1@cdc.gov|
 |Co-Editor:|Daniel Pollock, M.D.|CDC|DPollock@cdc.gov|

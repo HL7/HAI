@@ -10,6 +10,14 @@
   "status" : "ci-build",
   "current" : true
  },{
+  "version" : "1.1.0",  
+  "date" : "2019-04-01", 
+  "desc" : "Ballot Release 1.1.0 (FHIR STU 3)",   
+  "path" : "http://www.hl7.org/fhir/us/hai/",   
+  "status" : "trial-use",   
+  "sequence" : "STU 2 (FHIR R3)",
+  "current" : true
+ },{
   "version" : "1.0.0",  
   "date" : "2018-09-30", 
   "desc" : "STU Release 1 (FHIR STU 3)",   
