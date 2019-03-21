@@ -14,21 +14,23 @@
   "date" : "2019-04-01", 
   "desc" : "Ballot for FHIR STU Release 2",   
   "path" : "http://www.hl7.org/fhir/us/hai/2019May",   
+  "changes" : "releaseHistory.html",
   "status" : "ballot",   
   "sequence" : "STU 2"
  },{
   "version" : "1.0.0",  
   "date" : "2018-09-30", 
   "desc" : "STU Release 1",   
-  "path" : "http://www.hl7.org/fhir/us/hai/STU1/",   
+  "path" : "http://www.hl7.org/fhir/us/hai/STU1/",
+  "changes" : "currentreleasepage.html",
   "status" : "trial-use",   
   "sequence" : "STU 1"
  },{
   "version" : "0.1.0",  
   "date" : "2018-04-04", 
-  "desc" : "Draft for Comment",   
+  "desc" : "Ballot for FHIR STU Release 1",   
   "path" : "http://www.hl7.org/fhir/us/hai/2018May",   
-  "status" : "draft",   
+  "status" : "ballot",   
   "sequence" : "STU 1"
  }]
 }
