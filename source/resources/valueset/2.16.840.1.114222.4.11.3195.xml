@@ -9,7 +9,7 @@
     <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195"/>
     <name value="NHSNCriterionOfDiagnosisCode"/>
     <status value="active"/>
-    <description value="Codes for criterion of diagnosis"/>
+    <description value="Codes for criterion of diagnosis."/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>

@@ -4,7 +4,7 @@
   <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3595" />
   <name value="NHSNPopulationSummaryReportTypeCode" />
   <status value="active" />
-  <description value="A full listing of codes can be found in the hai_voc.xls file provided with this package." />
+  <description value="The population summary data set being reported." />
   <compose>
     <include>
       <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />

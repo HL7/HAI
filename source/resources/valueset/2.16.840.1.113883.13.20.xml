@@ -9,7 +9,7 @@
     <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20"/>
     <name value="NHSNInfectionTypeCode"/>
     <status value="active"/>
-    <description value="Codes representing a type of infection"/>
+    <description value="Codes representing a type of infection."/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>

@@ -10,7 +10,7 @@
     <name value="2.16.840.1.113883.10.20.5.9.30"/>
     <title value="NHSNLOS/MENDischargeDisposition"/>
     <status value="draft"/>
-    <description value="Disposition of infant"/>
+    <description value="Disposition of infant."/>
     <compose>
         <inactive value="false"/>
         <include>

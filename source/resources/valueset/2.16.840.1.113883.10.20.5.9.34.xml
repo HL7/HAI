@@ -4,7 +4,7 @@
   <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34" />
   <name value="NHSNOPCProcedureCategoryCode" />
   <status value="draft" />
-  <description value="OPC Procedure Category Codes" />
+  <description value="OPC Procedure Category Codes." />
   <compose>
     <include>
       <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />

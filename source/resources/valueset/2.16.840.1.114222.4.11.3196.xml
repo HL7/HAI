@@ -9,7 +9,7 @@
     <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196"/>
     <name value="NHSNInfectionConditionCode"/>
     <status value="active"/>
-    <description value="Code System: SNOMED CT 2.16.840.1.113883.6.96 or cdcNHSN 2.16.840.1.113883.6.277"/>
+    <description value="Codes to describe the infection condition."/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>
