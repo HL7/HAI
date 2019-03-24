@@ -1,7 +1,7 @@
 {
  "package-id" : "hl7.fhir.us.hai",
  "title" : "Healthcare Associated Infection Implementation Guide", 
- "canonical" : "http://www.hl7.org/fhir/us/hai", 
+ "canonical" : "http://hl7.org/fhir/us/hai", 
  "introduction" : "The Healthcare Associated Infection Implementation Implementation Guide is a US Realm Implementation Guide of the FHIR Specification that specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.",
  "list" : [{
   "version" : "current",
@@ -13,7 +13,7 @@
   "version" : "1.1.0",  
   "date" : "2019-04-01", 
   "desc" : "Ballot for FHIR STU Release 2",   
-  "path" : "http://www.hl7.org/fhir/us/hai/2019May",   
+  "path" : "http://hl7.org/fhir/us/hai/2019May",    
   "changes" : "releaseHistory.html",
   "status" : "ballot",   
   "sequence" : "STU 2"
@@ -21,7 +21,7 @@
   "version" : "1.0.0",  
   "date" : "2018-09-30", 
   "desc" : "STU Release 1",   
-  "path" : "http://www.hl7.org/fhir/us/hai/STU1/",
+  "path" : "http://hl7.org/fhir/us/hai/STU1/",
   "changes" : "currentreleasepage.html",
   "status" : "trial-use",   
   "sequence" : "STU 1"
@@ -29,7 +29,7 @@
   "version" : "0.1.0",  
   "date" : "2018-04-04", 
   "desc" : "Ballot for FHIR STU Release 1",   
-  "path" : "http://www.hl7.org/fhir/us/hai/2018May",   
+  "path" : "http://hl7.org/fhir/us/hai/2018May",   
   "status" : "ballot",   
   "sequence" : "STU 1"
  }]
