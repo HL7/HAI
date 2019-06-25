@@ -7,7 +7,7 @@
         <lastUpdated value="2019-03-05T16:59:54.000-05:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259"/>
-    <version value="0.0.1"/>
+    <version value="1.1.0"/>
     <name value="hsloc"/>
     <title value="NHSN Healthcare Facility Patient Care Location"/>
     <status value="active"/>

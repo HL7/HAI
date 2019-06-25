@@ -17,6 +17,9 @@ This implementation guide was produced and developed by Lantana Consulting Group
 
 
 <br />
+
+| | | | |
+|-----|-----|-----|-----|
 |Primary Editor:|Sarah Gaunt|Lantana Consulting Group|sarah.gaunt@lantanagroup.com|
 |Co-Editor:|Mindy Durrance|Leidos Consultant to CDC/NHSN|mdq1@cdc.gov|
 |Co-Editor:|Daniel Pollock, M.D.|CDC|DPollock@cdc.gov|

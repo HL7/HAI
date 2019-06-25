@@ -1,48 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7-fhir-us-hai"/>
-  <meta>
-    <versionId value="49"/>
-    <lastUpdated value="2019-03-14T14:03:37.000+10:00"/>
-  </meta>
+  <id value="hl7-fhir-us-hai-1.1.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\Users\minigrrl\Documents\Work\SourceControl\GitHub\FHIR\HAI\source\resources"/>
+    <valueString value="C:\Users\minigrrl\Documents\Work\SourceControl\GitHub\HL7\FHIR\HAI\source\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\minigrrl\Documents\Work\SourceControl\GitHub\FHIR\HAI\framework"/>
+    <valueString value="C:\Users\minigrrl\Documents\Work\SourceControl\GitHub\HL7\FHIR\HAI\framework"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\Users\minigrrl\Documents\Work\SourceControl\GitHub\FHIR\HAI\source\pages"/>
+    <valueString value="C:\Users\minigrrl\Documents\Work\SourceControl\GitHub\HL7\FHIR\HAI\source\pages"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai"/>
-  <version value="2.0.0"/>
-  <name value="Healthcare Associated Infection Reports, FHIR STU Release 2 - US Realm"/>
+  <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai-1.1.0"/>
+  <version value="1.1.0"/>
+  <name value="HealtcareAssociatedInfectionReports"/>
+  <title value="Healthcare Associated Infection Reports, FHIR STU 2 Ballot - US Realm"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-02-04T00:00:00+10:00"/>
-  <publisher value="HL7"/>
-  <contact>
-    <name value="Sarah Gaunt"/>
-    <telecom>
-      <system value="email"/>
-      <value value="sarah.gaunt@lantanagroup.com"/>
-    </telecom>
-  </contact>
   <description value="This implementation guide (IG) is to specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.&#xA;&#xA;As reports are modified and new report types are defined, CDC and Health Level Seven (HL7) will develop and publish additional constraints.&#xA;&#xA;Throughout this process, CDC remains the authority on NHSN data collection protocols. When healthcare enterprises choose to participate in NHSN, they must report to CDC occurrences such as specific reportable procedures, even those without complications, and events such as a bloodstream infection, either confirmed by a positive blood culture or supported by a patients clinical symptoms. This specification opens the channel for data submission by all applications compliant with the data coding requirements defined here.&#xA;&#xA;Note that participation in the NHSN requires enrollment and filing of reporting plans, which are not defined by this specification. For an overview of NHSN and full information on NHSN participation requirements, see: [http://www.cdc.gov/nhsn](http://www.cdc.gov/nhsn). Provisions of the Public Health Service Act protect all data reported to NHSN from discovery through the Freedom of Information Act (FOIA)."/>
-  <packageId value="hl7-fhir-us-hai"/>
+  <packageId value="hl7.fhir.us.hai"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="3.0.1"/>
-  <fhirVersion value="3.0.1"/>
-  <dependsOn id="uscore">
+  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.0"/>
+  <dependsOn id="USCoreR4">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="1.0.1"/>
+    <version value="3.0.0"/>
   </dependsOn>
   <definition>
-    <grouping id="p1">
-      <name value="base"/>
-    </grouping>
     <resource>
       <reference>
         <reference value="StructureDefinition/hai-single-person-report-questionnaire"/>
@@ -50,16 +35,14 @@
       </reference>
       <name value="HAI Single Person Report Questionnaire"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/hai-single-person-report-questionnaire-response"/>
+        <reference value="StructureDefinition/hai-single-person-report-questionnaireresponse"/>
         <display value="Profile QuestionnaireResponse: HAI Single Person Report"/>
       </reference>
       <name value="HAI Single Person Report QuestionnaireResponse"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -68,7 +51,6 @@
       </reference>
       <name value="HSLOC Code System"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -77,7 +59,6 @@
       </reference>
       <name value="cdcNHSN Code System"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -86,7 +67,6 @@
       </reference>
       <name value="NHSN Healthcare Service Location Code Value Set"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -95,7 +75,6 @@
       </reference>
       <name value="NHSN Infection Type Code Value Set"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -104,7 +83,6 @@
       </reference>
       <name value="NHSN Drug Susceptibility Finding Code Value Set"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -113,7 +91,6 @@
       </reference>
       <name value="NHSN Drug Susceptibility Tests Code Value Set"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -122,7 +99,6 @@
       </reference>
       <name value="NHSN Pathogen Ranking Value Set"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -131,7 +107,6 @@
       </reference>
       <name value="NHSN Pathogen Code Value Set"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -140,7 +115,6 @@
       </reference>
       <name value="NHSN Criterion Of Diagnosis Code Value Set"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -149,7 +123,6 @@
       </reference>
       <name value="NHSN Infection Condition Code Value Set"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -158,7 +131,6 @@
       </reference>
       <name value="Example Patient: HAI Patient 1"/>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -167,7 +139,6 @@
       </reference>
       <name value="Example Group: HAI Group 1"/>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -176,7 +147,6 @@
       </reference>
       <name value="Example Device: HAI Authoring Device"/>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -185,16 +155,14 @@
       </reference>
       <name value="Instance Questionnaire: Late Onset Sepsis/Meningitis Event (LOS)"/>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-event"/>
-        <display value="Example QuestionnaireResponse: hai-questionnaireResponse-los-event.xml"/>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-los-event"/>
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-los-event.xml"/>
       </reference>
-      <name value="Instance QuestionnaireResponse: hai-questionnaireResponse-los-event.xml"/>
+      <name value="Instance QuestionnaireResponse: hai-questionnaireresponse-los-event.xml"/>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -203,16 +171,14 @@
       </reference>
       <name value="Profile Questionnaire: HAI Population Summary"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/hai-population-summary-questionnaire-response"/>
-        <display value="Profile Questionnaire Response: HAI Population Summary"/>
+        <reference value="StructureDefinition/hai-population-summary-questionnaireresponse"/>
+        <display value="Profile QuestionnaireResponse: HAI Population Summary"/>
       </reference>
-      <name value="Profile Questionnaire Response: HAI Population Summary"/>
+      <name value="Profile QuestionnaireResponse: HAI Population Summary"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -221,16 +187,14 @@
       </reference>
       <name value="Instance Questionnaire: Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"/>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-opc-sdom-denom"/>
-        <display value="Example QuestionnaireResponse: hai-questionnaireResponse-opc-sdom-denom"/>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-denom"/>
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-sdom-denom"/>
       </reference>
-      <name value="Instance QuestionnaireResponse:hai-questionnaireResponse-opc-sdom-denom"/>
+      <name value="Instance QuestionnaireResponse:hai-questionnaireresponse-opc-sdom-denom"/>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -239,7 +203,6 @@
       </reference>
       <name value="Instance Questionnaire: Late Onset Sepsis/Meningitis Denominator"/>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -248,7 +211,6 @@
       </reference>
       <name value="Instance Questionnaire: Outpatient Procedure Component Same Day Outcome Measures Event"/>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -257,23 +219,19 @@
       </reference>
       <name value="NHSN LOS/MEN Discharge Disposition Value Set"/>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-opc-sdom-event"/>
-        <display value="Example  QuestionnaireResponse: hai-questionnaireResponse-opc-sdom-event"/>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-event"/>
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-sdom-event"/>
       </reference>
-      <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-denom"/>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-los-denom"/>
         <display value="Example QuestionnaireResponse: Late Onset Sepsis/Meningitis Denominator"/>
       </reference>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -281,7 +239,6 @@
         <display value="Value Set: NHSNWoundClassCode"/>
       </reference>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -289,7 +246,6 @@
         <display value="Value Set: NHSNASAClassCode"/>
       </reference>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -297,7 +253,6 @@
         <display value="Value Set: NHSNOPCProcedureCategoryCode"/>
       </reference>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -305,7 +260,6 @@
         <display value="Value Set: NHSNSSIDetectionMethodType"/>
       </reference>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -313,7 +267,6 @@
         <display value="Value Set: NHSNSSIDetectionMethod"/>
       </reference>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -321,7 +274,6 @@
         <display value="Value Set: NHSNPopulationSummaryReportTypeCode"/>
       </reference>
       <exampleBoolean value="false"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -329,15 +281,13 @@
         <display value="Instance Questionnaire: hai-questionnaire-opc-proc-denom"/>
       </reference>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-opc-proc-denom"/>
-        <display value="Example QuestionnaireResponse: hai-questionnaireResponse-opc-proc-denom"/>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-proc-denom"/>
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-proc-denom"/>
       </reference>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
@@ -345,57 +295,55 @@
         <display value="Instance Questionnaire: hai-questionnaire-opc-ssi-event"/>
       </reference>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-opc-ssi-event"/>
-        <display value="Example  QuestionnaireResponse: hai-questionnaireResponse-opc-ssi-event"/>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-ssi-event"/>
+        <display value="Example  QuestionnaireResponse: hai-questionnaireresponse-opc-ssi-event"/>
       </reference>
       <exampleBoolean value="true"/>
-      <groupingId value="p1"/>
     </resource>
     <page>
       <nameUrl value="home.md"/>
       <title value="Healthcare Associated Infection Reports (FHIR)"/>
-      <generation value="generated"/>
+      <generation value="markdown"/>
       <page>
         <nameUrl value="relationshipToAnotherStandard.md"/>
         <title value="Relationship to Another Standard"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="audience.md"/>
         <title value="Audience"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="designConsiderations.md"/>
         <title value="Design Considerations"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="references.md"/>
         <title value="References"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="acknowledgements.md"/>
         <title value="Acknowledgements"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
     </page>
     <parameter>
-      <code value="generate-json"/>
-      <value value="true"/>
+      <code value="apply"/>
+      <value value="version"/>
     </parameter>
     <parameter>
-      <code value="generate-xml"/>
-      <value value="true"/>
+      <code value="generate"/>
+      <value value="xml"/>
     </parameter>
     <parameter>
-      <code value="generate-turtle"/>
-      <value value="true"/>
+      <code value="generate"/>
+      <value value="JSON"/>
     </parameter>
   </definition>
 </ImplementationGuide>

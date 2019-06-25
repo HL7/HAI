@@ -80,7 +80,7 @@
     <identifier>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                 <code value="MA"/>
             </coding>
         </type>
@@ -90,7 +90,7 @@
     <identifier>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                 <code value="SS"/>
             </coding>
         </type>
@@ -100,7 +100,7 @@
     <identifier>
         <type>
             <coding>
-                <system value="http://hl7.org/fhir/v2/0203"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
                 <code value="MR"/>
             </coding>
         </type>

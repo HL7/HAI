@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hai-single-person-report-questionnaire-response" />
+  <id value="hai-population-summary-questionnaireresponse" />
   <meta>
     <versionId value="1" />
-    <lastUpdated value="2019-03-05T16:59:54.000-05:00" />
+    <lastUpdated value="2019-03-07T15:40:56.000-05:00" />
   </meta>
-  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response" />
+  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaireresponse" />
   <version value="R1" />
-  <name value="hai-single-person-report-questionnaire-response" />
-  <title value="Healthcare Associated Infection Single-Person Report QuestionnaireResponse" />
+  <name value="HAI_population_summary_questionnaireresponse" />
+  <title value="Healthcare Associated Infection Population Summary QuestionnaireResponse" />
   <status value="draft" />
   <publisher value="Lantana Consulting Group" />
   <contact>
     <name value="Sarah Gaunt" />
     <telecom>
       <system value="phone" />
-      <value value="+6 141-029-2506" />
+      <value value="+61 4 1029 2506" />
       <use value="work" />
     </telecom>
     <telecom>
@@ -25,7 +25,7 @@
     </telecom>
   </contact>
   <description
-    value="This profile represents a response to the Healthcare Associated Infection Single-Person Report Questionnaire as a FHIR QuestionnaireResponse profile." />
+    value="This profile represents a response to the Healthcare Associated Infection Population Summary Questionnaire as a FHIR QuestionnaireResponse profile." />
   <kind value="resource" />
   <abstract value="false" />
   <type value="QuestionnaireResponse" />
@@ -34,9 +34,9 @@
   <differential>
     <element id="QuestionnaireResponse">
       <path value="QuestionnaireResponse" />
-      <short value="Healthcare Associated Infection Single-Person Report QuestionnaireResponse" />
+      <short value="Healthcare Associated Infection Population Summary QuestionnaireResponse" />
       <definition
-        value="This profile represents a response to the Healthcare Associated Infection Single-Person Report Questionnaire as a FHIR QuestionnaireResponse profile." />
+        value="This profile represents a response to the Healthcare Associated Infection Population Summary Questionnaire as a FHIR QuestionnaireResponse profile." />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.id">
@@ -54,7 +54,7 @@
       <definition value="A reference to this profile (to which the instance claims to conform)." />
       <min value="1" />
       <max value="1" />
-      <patternUri value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response" />
+      <patternUri value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaireresponse" />
       <mustSupport value="true" />
     </element>
     <element id="QuestionnaireResponse.text">
@@ -72,8 +72,8 @@
       <short value="Points to the form being answered." />
       <min value="1" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire" />
+        <code value="canonical" />
+        <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -81,16 +81,6 @@
       <path value="QuestionnaireResponse.status" />
       <patternCode value="completed" />
       <mustSupport value="true" />
-    </element>
-    <element id="QuestionnaireResponse.subject">
-      <path value="QuestionnaireResponse.subject" />
-      <short value="Patient is the subject of the questionnaire response." />
-      <definition value="In a single-person report the patient is the subject of the questionnaire response." />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
-      </type>
     </element>
     <element id="QuestionnaireResponse.authored">
       <path value="QuestionnaireResponse.authored" />

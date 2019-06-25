@@ -191,7 +191,7 @@
     <value value="hai-questionnaire-opc-proc-denom-v1" />
   </identifier>
   <version value="R1" />
-  <name value="hai-questionnaire-opc-proc-denom" />
+  <name value="HAI_questionnaire_opc_proc_denom" />
   <title value="Outpatient Procedure Component Denominator for Procedure" />
   <status value="draft" />
   <experimental value="false" />
@@ -253,9 +253,7 @@
       <type value="choice" />
       <required value="false" />
       <repeats value="false" />
-      <options>
-        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9" />
-      </options>
+      <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9" />
     </item>
     <item>
       <linkId value="risk-factor-endoscopy" />
@@ -316,9 +314,7 @@
       <type value="choice" />
       <required value="true" />
       <repeats value="false" />
-      <options>
-        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.10" />
-      </options>
+      <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.10" />
     </item>
   </item>
   <item>
@@ -342,9 +338,7 @@
       <type value="choice" />
       <required value="true" />
       <repeats value="false" />
-      <options>
-        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34" />
-      </options>
+      <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34" />
     </item>
     <item>
       <linkId value="cpt-procedure-code" />
@@ -357,9 +351,7 @@
       <type value="choice" />
       <required value="true" />
       <repeats value="false" />
-      <!--<options>
-        <reference value="http://hl7.org/fhir/ValueSet/cpt-all" />
-      </options>-->
+      <!--<answerValueSet value="http://hl7.org/fhir/ValueSet/cpt-all" />-->
     </item>
     <item>
       <linkId value="procedure-duration" />

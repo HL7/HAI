@@ -151,7 +151,7 @@
     <value value="hai-questionnaire-opc-sdom-event-v1" />
   </identifier>
   <version value="R1" />
-  <name value="hai-questionnaire-opc-sdom-event" />
+  <name value="HAI_questionnaire_opc_sdom_event" />
   <title value="Outpatient Procedure Component Same Day Outcome Measures Event Report" />
   <status value="draft" />
   <experimental value="false" />

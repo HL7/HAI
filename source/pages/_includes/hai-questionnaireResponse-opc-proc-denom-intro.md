@@ -1,6 +1,6 @@
 ---
-title: QuestionnaireResponse-hai-questionnaireResponse-opc-proc-denom-intro
+title: QuestionnaireResponse-hai-questionnaireresponse-opc-proc-denom-intro
 layout: default
-active: QuestionnaireResponse-hai-questionnaireResponse-opc-proc-denom-intro
+active: QuestionnaireResponse-hai-questionnaireresponse-opc-proc-denom-intro
 ---
 

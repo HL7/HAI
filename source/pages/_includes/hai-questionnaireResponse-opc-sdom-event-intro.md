@@ -1,6 +1,6 @@
 ---
-title: QuestionnaireResponse-hai-questionnaireResponse-opc-sdom-event-intro
+title: QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-event-intro
 layout: default
-active: QuestionnaireResponse-hai-questionnaireResponse-opc-sdom-event-intro
+active: QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-event-intro
 ---
 

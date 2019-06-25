@@ -7,7 +7,7 @@
   </meta>
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire" />
   <version value="R1" />
-  <name value="hai-single-person-report-questionnaire" />
+  <name value="HAI_single_person_report_questionnaire" />
   <title value="Healthcare Associated Infection Single-Person Report Questionnaire" />
   <status value="draft" />
   <publisher value="Lantana Consulting Group" />
@@ -137,7 +137,7 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Questionnaire.item.extension:extensionQuestionnaireAllowedProfile">
+    <!--<element id="Questionnaire.item.extension:extensionQuestionnaireAllowedProfile">
       <path value="Questionnaire.item.extension" />
       <sliceName value="extensionQuestionnaireAllowedProfile" />
       <max value="1" />
@@ -146,7 +146,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" />
       </type>
       <mustSupport value="true" />
-    </element>
+    </element>-->
     <element id="Questionnaire.item.linkId">
       <path value="Questionnaire.item.linkId" />
       <mustSupport value="true" />
@@ -189,7 +189,7 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Questionnaire.item.item.extension:extensionQuestionnaireAllowedProfile">
+    <!--<element id="Questionnaire.item.item.extension:extensionQuestionnaireAllowedProfile">
       <path value="Questionnaire.item.item.extension" />
       <sliceName value="extensionQuestionnaireAllowedProfile" />
       <max value="1" />
@@ -198,7 +198,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" />
       </type>
       <mustSupport value="true" />
-    </element>
+    </element>-->
     <element id="Questionnaire.item.item.extension:extensionQuestionnaire-unit">
       <path value="Questionnaire.item.item.extension" />
       <sliceName value="extensionQuestionnaire-unit" />

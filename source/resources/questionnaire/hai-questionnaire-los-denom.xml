@@ -156,7 +156,7 @@
     <value value="hai-questionnaire-los-denom-v1" />
   </identifier>
   <version value="R1" />
-  <name value="hai-questionnaire-los-denom" />
+  <name value="HAI_questionnaire_los_denom" />
   <title value="Late Onset Sepsis/Meningitis Denominator" />
   <status value="draft" />
   <experimental value="false" />
@@ -213,9 +213,7 @@
       <type value="choice" />
       <required value="true" />
       <repeats value="false" />
-      <options>
-        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19" />
-      </options>
+      <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19" />
     </item>
     <item>
       <linkId value="facility-location" />
@@ -237,9 +235,7 @@
       <type value="choice" />
       <required value="true" />
       <repeats value="false" />
-      <options>
-        <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30" />
-      </options>
+      <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30" />
     </item>
     <item>
       <linkId value="disposition-date" />

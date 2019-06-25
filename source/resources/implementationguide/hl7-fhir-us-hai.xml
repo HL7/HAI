@@ -1,390 +1,338 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7-fhir-us-hai-1.1.0" />
-  <meta>
-    <versionId value="49" />
-    <lastUpdated value="2019-03-14T00:03:37.000-04:00" />
-  </meta>
-  <!--<contained>
-        <Binary>
-            <id value="7701"/>
-            <contentType value="text/html"/>
-            <content value="VGhpcyBpcyBhICoqdGVzdCoqIQ=="/>
-        </Binary>
-    </contained>
-    <contained>
-        <Binary>
-            <id value="8135"/>
-            <contentType value="text/markdown"/>
-            <content value="U3RhcnRpbmcgaW4gdGhlIE1heSAyMDE4IGJhbGxvdCBjeWNsZSwgSEw3IGhhcyBkZXZlbG9wZWQgdGhpcyBGSElSIEltcGxlbWVudGF0aW9uIEd1aWRlIGluIHBhcmFsbGVsIHdpdGggdGhlIGV4aXN0aW5nIENEQSBJbXBsZW1lbnRhdGlvbiBHdWlkZS4gVGhpcyBuZXcgc3RhbmRhcmQgaW5jbHVkZXMgYWxsIG5ldyBmb3JtcyBhcyB0aGV5IGFyZSBhZGRlZCB0byB0aGUgSEFJIHdvcmsuIFdlIGFudGljaXBhdGUgc2V2ZXJhbCBTVFUgcmVsZWFzZXMgb24gdGhlIHBhdGggdG8gYSBOb3JtYXRpdmUgUmVsZWFzZSAxIG9mIHRoZSBITDcgSW1wbG1lbnRhdGlvbiBHdWlkZSBmb3IgRkhJUjogSGVhbHRoY2FyZSBBc3NvY2lhdGVkIEluZmVjdGlvbiBSZXBvcnRzLiBUaGUgRkhJUiBhbmQgQ0RBIGltcGxlbWVudGF0aW9uIGd1aWRlcyB3aWxsIGFsaWduLiBBIGNoYW5nZSB0byBvbmUgc3RhbmRhcmQgd2lsbCByZXF1aXJlIHRoZSBzYW1lIGNoYW5nZSBpbiB0aGUgb3RoZXIgc3RhbmRhcmQuIEluIHRoaXMgcmVsZWFzZSwgdGhlIG5ldyBmb3JtcyBpbmNsdWRlZCBpbiBib3RoIHRoZSBDREEgYW5kIEZISVIgc3RhbmRhcmRzIGFyZToKKiBPdXRwYXRpZW50IFByb2NlZHVyZSBDb21wb25lbnQgRGVub21pbmF0b3IgZm9yIFNhbWUgRGF5IE91dGNvbWUgTWVhc3VyZXMgUmVwb3J0CiogT3V0cGF0aWVudCBQcm9jZWR1cmUgQ29tcG9uZW50IERlbm9taW5hdG9yIGZvciBQcm9jZWR1cmUgUmVwb3J0CiogTGF0ZSBPbnNldCBTZXBzaXMvTWVuaW5naXRpcyBEZW5vbWluYXRvciAoTE9TL01lbiBEZW5vbSkgUmVwb3J0CiogT3V0cGF0aWVudCBQcm9jZWR1cmUgQ29tcG9uZW50IFNhbWUgRGF5IE91dGNvbWUgTWVhc3VyZXMgRXZlbnQgUmVwb3J0CiogT3V0cGF0aWVudCBQcm9jZWR1cmUgU3VyZ2ljYWwgU2l0ZSBJbmZlY3Rpb24gKFNTSSkgRXZlbnQgUmVwb3J0"/>
-        </Binary>
-    </contained>
-    <contained>
-        <Binary>
-            <id value="5145"/>
-            <contentType value="text/markdown"/>
-            <content value="VGhlIGF1ZGllbmNlIGZvciB0aGlzIHdvcmsgaXMgYWxsIGRldmVsb3BlcnMgb2Ygc29mdHdhcmUgc3lzdGVtcyB3aG8gd2FudCB0byBlbmFibGUgdGhlaXIgc3lzdGVtcyBmb3IgcmVwb3J0aW5nIEhBSSBkYXRhIHRvIHRoZSBOSFNOLg=="/>
-        </Binary>
-    </contained>
-    <contained>
-        <Binary>
-            <id value="7519"/>
-            <contentType value="text/markdown"/>
-            <content value="VGhpcyBJRyBzcGVjaWZpZXMgYSBGSElSIFF1ZXN0aW9ubmFpcmUtYmFzZWQgYXBwcm9hY2guIFRoaXMgYXBwcm9hY2ggdGFrZXMgYWR2YW50YWdlIG9mIHRoZSBGSElSIFF1ZXN0aW9ubmFpcmUgcmVzb3VyY2UgdGhhdCBoYXMgYmVlbiBkZXNpZ25lZCBhcyBhbiBvcmdhbml6ZWQgY29sbGVjdGlvbiBvZiBxdWVzdGlvbnMgaW50ZW5kZWQgdG8gc29saWNpdCBpbmZvcm1hdGlvbiBmcm9tIGluZGl2aWR1YWxzIGludm9sdmVkIGluIHRoZSBoZWFsdGhjYXJlIGRvbWFpbi4gVGhpcyBjbG9zZWx5IG1pcnJvcnMgdGhlIGFjdHVhbCBOSFNOIGZvcm1zLgoKKiBUaGUgUXVlc3Rpb25uYWlyZSBwcm9maWxlIFtIZWFsdGhjYXJlIEFzc29jaWF0ZWQgSW5mZWN0aW9uIFJlcG9ydCBRdWVzdGlvbm5haXJlXShTdHJ1Y3R1cmVEZWZpbml0aW9uLWhhaS1zaW5nbGUtcGVyc29uLXJlcG9ydC1xdWVzdGlvbm5haXJlLmh0bWwpIGRlZmluZXMgY29uc3RyYWludHMgdGhhdCBhbGwgSEFJIE5IU04gc2luZ2xlLXBlcnNvbiByZXBvcnQgZm9ybXMgKFF1ZXN0aW9ubmFpcmUgaW5zdGFuY2VzKSBtdXN0IGNvbmZvcm0gdG8uCgoqIFRoZSBRdWVzdGlvbm5haXJlUmVzcG9uc2UgcHJvZmlsZSBbSGVhbHRoY2FyZSBBc3NvY2lhdGVkIEluZmVjdGlvbiBSZXBvcnQgUXVlc3Rpb25uYWlyZVJlc3BvbnNlXShTdHJ1Y3R1cmVEZWZpbml0aW9uLWhhaS1zaW5nbGUtcGVyc29uLXJlcG9ydC1xdWVzdGlvbm5haXJlLXJlc3BvbnNlLmh0bWwpIGRlZmluZXMgY29uc3RyYWludHMgdGhhdCBhbGwgaG9zcGl0YWwtY29tcGxldGVkIHJlc3BvbnNlcyB0byBIQUkgTkhTTiBzaW5nbGUtcGVyc29uIHJlcG9ydCBmb3JtcyAoUXVlc3Rpb25uYWlyZVJlc3BvbnNlIGluc3RhbmNlcykgbXVzdCBjb25mb3JtIHRvLgoKKiBUaGUgUXVlc3Rpb25uYWlyZSBpbnN0YW5jZSBbUXVlc3Rpb25uYWlyZS9oYWktcXVlc3Rpb25uYWlyZS1sb3MtZXZlbnRdKFF1ZXN0aW9ubmFpcmUtaGFpLXF1ZXN0aW9ubmFpcmUtbG9zLWV2ZW50Lmh0bWwpIGRlZmluZXMgdGhlIHF1ZXN0aW9ucyBhbmQgcG9zc2libGUgYW5zd2VycyBpbiB0aGUgTGF0ZSBPbnNldCBTZXBzaXMvTWVuaW5naXRpcyBFdmVudCAoTE9TKSBSZXBvcnQuCgoqIFRoZSBRdWVzdGlvbm5haXJlUmVzcG9uc2UgaW5zdGFuY2UgW1F1ZXN0aW9ubmFpcmUvaGFpLXF1ZXN0aW9ubmFpcmVSZXNwb25zZS1sb3MtZXZlbnRdKFF1ZXN0aW9ubmFpcmVSZXNwb25zZS1oYWktcXVlc3Rpb25uYWlyZVJlc3BvbnNlLWxvcy1ldmVudC5odG1sKSBpcyBhbiBleGFtcGxlIG9mIGEgY29tcGxldGVkIExhdGUgT25zZXQgU2Vwc2lzL01lbmluZ2l0aXMgRXZlbnQgKExPUykgUmVwb3J0Lg=="/>
-        </Binary>
-    </contained>
-    <contained>
-        <Binary>
-            <id value="7347"/>
-            <contentType value="text/markdown"/>
-            <content value="Kk5vdGUqOiBXaGVyZSBwb3NzaWJsZSwgdGhlIHByb2ZpbGVzIGNvbnRhaW5lZCBpbiB0aGlzIHByb3RvdHlwZSBpbXBsZW1lbnRhdGlvbiBndWlkZSBhcmUgYmFzZWQgb24gdGhlIFVTIENvcmUgcHJvZmlsZXMuCgp8IE5hbWUgfCBEZXNjcmlwdGlvbiB8CnwtLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBbSEw3IENEQSBSMiBJbXBsZW1lbnRhdGlvbiBHdWlkZTogTkhTTiBIZWFsdGhjYXJlIEFzc29jaWF0ZWQgSW5mZWN0aW9uIFJlcG9ydHMsIFJlbGVhc2UgMyAtIFVTIFJlYWxtXShodHRwczovL3d3dy5obDcub3JnL2ltcGxlbWVudC9zdGFuZGFyZHMvcHJvZHVjdF9icmllZi5jZm0/cHJvZHVjdF9pZD00MjYpICAgIHwgVGhpcyBwcm9qZWN0IGRldmVsb3BlZCBhbiBpbXBsZW1lbnRhdGlvbiBndWlkZSBjb25zdHJhaW5pbmcgQ0RBIFJlbGVhc2UgMi4gVGhlIGltcGxlbWVudGF0aW9uIGd1aWRlIHN1cHBvcnRzIGVsZWN0cm9uaWMgc3VibWlzc2lvbiBvZiBIQUkgZGF0YSB0byB0aGUgTmF0aW9uYWwgSGVhbHRoY2FyZSBTYWZldHkgTmV0d29yay4gQ0RDIHByb3ZpZGVkIE5IU04gZGV2ZWxvcGVycywgdm9jYWJ1bGFyeSBleHBlcnRzIGFuZCBDREEgZXhwZXJ0cyB0byBzdXBwb3J0IHRoaXMgcHJvamVjdC4gU0RXRyByZXZpZXdlZCB0aGUgZGVzaWduIGFuZCBkcmFmdCBzcGVjaWZpY2F0aW9uIGJlZm9yZSBiYWxsb3QuICAgICAgICAgIHwKfCBbVVMgQ29yZSBJbXBsZW1lbnRhdGlvbiBHdWlkZSAoUmVsZWFzZSAxKV0oaHR0cDovL2hsNy5vcmcvZmhpci91cy9jb3JlL2luZGV4Lmh0bWwpICAgIHwgVGhlIFVTIENvcmUgSW1wbGVtZW50YXRpb24gR3VpZGUgaXMgYmFzZWQgb24gW0ZISVIgVmVyc2lvbiAzLjAuMF0oaHR0cDovL2hsNy5vcmcvZmhpci9TVFUzKSBhbmQgZGVmaW5lcyB0aGUgbWluaW11bSBjb25mb3JtYW5jZSByZXF1aXJlbWVudHMgZm9yIGFjY2Vzc2luZyBwYXRpZW50IGRhdGEgYXMgZGVmaW5lZCBieSB0aGUgQXJnb25hdXQgcGlsb3QgaW1wbGVtZW50YXRpb25zIGFuZCB0aGUgW09OQyAyMDE1IEVkaXRpb24gQ29tbW9uIENsaW5pY2FsIERhdGEgU2V0IChDQ0RTKV0oaHR0cHM6Ly93d3cuaGVhbHRoaXQuZ292L3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAxNUVkX0NDR19DQ0RTLnBkZikuIFRoZXNlIHByb2ZpbGVzIGFyZSBpbnRlbmRlZCB0byBiZSB0aGUgZm91bmRhdGlvbiBmb3IgZnV0dXJlIFVTIFJlYWxtIEZISVIgaW1wbGVtZW50YXRpb24gZ3VpZGVzLiBJbiBhZGRpdGlvbiB0byBBcmdvbmF1dCwgdGhleSBhcmUgdXNlZCBieSBbREFGLVJlc2VhcmNoXShodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2RhZi1yZXNlYXJjaC9pbmRleC5odG1sKSwgW1FJLUNvcmVdKGh0dHBzOi8vb25jcHJvamVjdHJhY2tpbmcuaGVhbHRoaXQuZ292L3dpa2kvZGlzcGxheS9UZWNoTGFiU0MvQ1FGK0hvbWUpLCBhbmQgW0NJTUldKGh0dHA6Ly93d3cub3BlbmNpbWkub3JnLykuIFVuZGVyIHRoZSBndWlkYW5jZSBvZiBITDcgYW5kIHRoZSBITDcgVVMgUmVhbG0gU3RlZXJpbmcgQ29tbWl0dGVlLCB0aGUgY29udGVudCB3aWxsIGV4cGFuZCBpbiBmdXR1cmUgdmVyc2lvbnMgdG8gbWVldCB0aGUgbmVlZHMgc3BlY2lmaWMgdG8gdGhlIFVTIFJlYWxtLiAgICAgICAgICAgfAoK"/>
-        </Binary>
-    </contained>
-    <contained>
-        <Binary>
-            <id value="6112"/>
-            <contentType value="text/markdown"/>
-            <content value="fENvLUNoYWlyOnxDYWx2aW4gQmVlYmV8TWF5byBDbGluaWN8Y2JlZWJlQG1heW8uZWR1fAp8Q28tQ2hhaXI6fEF1c3RpbiBLcmVpc2xlcnxMZWlkb3MgQ29uc3VsdGFudCB0byBDREMvTkhTTnxkdXoxQGNkYy5nb3Z8CnxDby1DaGFpcjp8QnJldHQgTWFycXVhcmR8Uml2ZXIgUm9jayBBc3NvY2lhdGVzfGJyZXR0QHJpdmVycm9ja2Fzc29jaWF0ZXMuY29tfAp8Q28tQ2hhaXI6fEdheWUgRG9saW4gTS5TLk4uLCBSLk4uIHxJbnRlbGxpZ2VudCBNZWRpY2FsIE9iamVjdHMgfGdkb2xpbkBpbW8tb25saW5lLmNvbXwKfENvLUNoYWlyOnxSaWNrIEdlaW1lcnwgTGFudGFuYSBDb25zdWx0aW5nIEdyb3VwfHJpY2suZ2VpbWVyQGxhbnRhbmFncm91cC5jb218CnxDby1DaGFpcjp8Sm9obiBSb2JlcnRzfFRlbm5lc3NlZSBEZXBhcnRtZW50IG9mIEhlYWx0aHxqb2huLmEucm9iZXJ0c0B0bi5nb3Z8CnxDby1DaGFpcjp8Um9iIFNhdmFnZSBNU3xSb2IgU2F2YWdlIENvbnN1bHRpbmd8cm9iLnNhdmFnZTUwQGdtYWlsLmNvbXwKfENvLUNoYWlyOnxKb2dpbmRlciBNYWRyYXxNYWRyYSBDb25zdWx0aW5nIEluYy58aGw3QG1hZHJhY29uc3VsdGluZy5jb218CnxDby1DaGFpcjp8RXJpbiBIb2x0IE1QSHxUZW5uZXNzZWUgRGVwYXJ0bWVudCBvZiBIZWFsdGh8ZXJpbi5ob2x0QHRuLmdvdnwKfENvLUNoYWlyOnxCZW4gRmxlc3NuZXJSZWRveGJlbmphbWluQHJlZG94ZW5naW5lLmNvbXwKfFByaW1hcnkgRWRpdG9yOnxTYXJhaCBHYXVudHxMYW50YW5hIENvbnN1bHRpbmcgR3JvdXB8c2FyYWguZ2F1bnRAbGFudGFuYWdyb3VwLmNvbXwKfENvLUVkaXRvcjp8TWluZHkgRHVycmFuY2V8TGVpZG9zIENvbnN1bHRhbnQgdG8gQ0RDL05IU058bWRxMUBjZGMuZ292fAp8Q28tRWRpdG9yOnxEYW5pZWwgUG9sbG9jaywgTS5ELnxDREN8RFBvbGxvY2tAY2RjLmdvdnwKfENvLUVkaXRvcjp8QWhtZWQgVGFoaXJ8TGVpZG9zIENvbnN1bHRhbnQgdG8gQ0RDL05IU058bm1uOEBjZGMuZ292fAp8Q28tRWRpdG9yOnxCYXJyeSBSaG9kZXN8Q0RDfG1icjFAY2RjLmdvdnwKfENvLUVkaXRvcjp8U2hlaWxhIEFibmVyfENEQ3xzaGE4QGNkYy5nb3Z8CnxDby1FZGl0b3I6fEFteSBXZWJifExhbnRhbmEgQ29uc3VsdGluZyBHcm91cHxhbXkud2ViYkBsYW50YW5hZ3JvdXAuY29tfAp8Q28tRWRpdG9yOnxKYW1lcyBEYXZpc3xMZWlkb3MgQ29uc3VsdGFudCB0byBDREMvTkhTTnxteW5jMEBjZGMuZ292fAp8Q28tRWRpdG9yOnxHZW9yZ2UgS29yb21pYXxMYW50YW5hIENvbnN1bHRpbmcgR3JvdXB8Z2VvcmdlLmtvcm9taWFAbGFudGFuYWdyb3VwLmNvbXwKfENvLUVkaXRvcjp8QmVhdSBCYW5uZXJtYW58TGFudGFuYSBDb25zdWx0aW5nIEdyb3VwfGJlYXUuYmFubmVybWFuQGxhbnRhbmFncm91cC5jb218CnxDby1FZGl0b3I6fExhdXJlbiBXb29kfExhbnRhbmEgQ29uc3VsdGluZyBHcm91cHxsYXVyZW4ud29vZEBsYW50YW5hZ3JvdXAuY29tfAp8Q28tRWRpdG9yOnxFcmljIFBhcmFwaW5pfExhbnRhbmEgQ29uc3VsdGluZyBHcm91cHxlcmljLnBhcmFwaW5pQGxhbnRhbmFncm91cC5jb218CnxDby1FZGl0b3I6fFphYnJpbmEgR29uemFnYXxMYW50YW5hIENvbnN1bHRpbmcgR3JvdXB8emFicmluYS5nb256YWdhQGxhbnRhbmFncm91cC5jb218CnxUZWNobmljYWwgRWRpdG9yOnxEaWFuYSBXcmlnaHR8TGFudGFuYSBDb25zdWx0aW5nIEdyb3VwfGRpYW5hLndyaWdodEBsYW50YW5hZ3JvdXAuY29tfAp8VGVjaG5pY2FsIEVkaXRvcjp8Q2hyaXMgSGFubmlnYW58TGFudGFuYSBDb25zdWx0aW5nIEdyb3VwfGNocmlzLmhhbm5pZ2FuQGxhbnRhbmFncm91cC5jb218"/>
-        </Binary>
-    </contained>-->
   <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai-1.1.0" />
   <version value="2.0.0" />
-  <name value="Healthcare Associated Infection Reports, FHIR STU 2 Ballot - US Realm" />
+  <name value="HealtcareAssociatedInfectionReports" />
+  <title value="Healthcare Associated Infection Reports, FHIR STU 2 Ballot - US Realm" />
   <status value="draft" />
   <experimental value="false" />
-  <date value="2019-02-04" />
-  <publisher value="HL7" />
-  <contact>
-    <name value="Sarah Gaunt" />
-    <telecom>
-      <system value="email" />
-      <value value="sarah.gaunt@lantanagroup.com" />
-    </telecom>
-  </contact>
   <description
     value="This implementation guide (IG) is to specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.&#xA;&#xA;As reports are modified and new report types are defined, CDC and Health Level Seven (HL7) will develop and publish additional constraints.&#xA;&#xA;Throughout this process, CDC remains the authority on NHSN data collection protocols. When healthcare enterprises choose to participate in NHSN, they must report to CDC occurrences such as specific reportable procedures, even those without complications, and events such as a bloodstream infection, either confirmed by a positive blood culture or supported by a patients clinical symptoms. This specification opens the channel for data submission by all applications compliant with the data coding requirements defined here.&#xA;&#xA;Note that participation in the NHSN requires enrollment and filing of reporting plans, which are not defined by this specification. For an overview of NHSN and full information on NHSN participation requirements, see: [http://www.cdc.gov/nhsn](http://www.cdc.gov/nhsn). Provisions of the Public Health Service Act protect all data reported to NHSN from discovery through the Freedom of Information Act (FOIA)." />
-  <fhirVersion value="3.0.1" />
-  <package>
-    <name value="base" />
+  <packageId value="hl7.fhir.us.hai" />
+  <fhirVersion value="4.0.0" />
+  <dependsOn>
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core-3.0.0" />
+    <packageId value="hl7.fhir.us.core" />
+    <version value="3.0.0" />
+  </dependsOn>
+  <definition>
     <resource>
-      <example value="false" />
-      <name value="HAI Single Person Report Questionnaire" />
-      <sourceReference>
+      <reference>
         <reference value="StructureDefinition/hai-single-person-report-questionnaire" />
         <display value="Profile Questionnaire: HAI Single Person Report" />
-      </sourceReference>
+      </reference>
+      <name value="HAI Single Person Report Questionnaire" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="HAI Single Person Report QuestionnaireResponse" />
-      <sourceReference>
-        <reference value="StructureDefinition/hai-single-person-report-questionnaire-response" />
+      <reference>
+        <reference value="StructureDefinition/hai-single-person-report-questionnaireresponse" />
         <display value="Profile QuestionnaireResponse: HAI Single Person Report" />
-      </sourceReference>
+      </reference>
+      <name value="HAI Single Person Report QuestionnaireResponse" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="HSLOC Code System" />
-      <sourceReference>
+      <reference>
         <reference value="CodeSystem/2.16.840.1.113883.6.259" />
         <display value="Code System: HSLOC" />
-      </sourceReference>
+      </reference>
+      <name value="HSLOC Code System" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="cdcNHSN Code System" />
-      <sourceReference>
+      <reference>
         <reference value="CodeSystem/2.16.840.1.113883.6.277" />
         <display value="Code System: cdcNHSN" />
-      </sourceReference>
+      </reference>
+      <name value="cdcNHSN Code System" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="NHSN Healthcare Service Location Code Value Set" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.13.19" />
         <display value="Value Set: NHSNHealthcareServiceLocationCode" />
-      </sourceReference>
+      </reference>
+      <name value="NHSN Healthcare Service Location Code Value Set" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="NHSN Infection Type Code Value Set" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.13.20" />
         <display value="Value Set: NHSNInfectionTypeCode" />
-      </sourceReference>
+      </reference>
+      <name value="NHSN Infection Type Code Value Set" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="NHSN Drug Susceptibility Finding Code Value Set" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.13.13" />
         <display value="Value Set: NHSNDrugSusceptibilityFindingCode" />
-      </sourceReference>
+      </reference>
+      <name value="NHSN Drug Susceptibility Finding Code Value Set" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="NHSN Drug Susceptibility Tests Code Value Set" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.13.15" />
         <display value="Value Set: NHSNDrugSusceptibilityTestsCode" />
-      </sourceReference>
+      </reference>
+      <name value="NHSN Drug Susceptibility Tests Code Value Set" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="NHSN Pathogen Ranking Value Set" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/nhsn-pathogen-ranking" />
         <display value="Value Set: nhsn-pathogen-ranking" />
-      </sourceReference>
+      </reference>
+      <name value="NHSN Pathogen Ranking Value Set" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="NHSN Pathogen Code Value Set" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.13.16" />
         <display value="Value Set: NHSNPathogenCode" />
-      </sourceReference>
+      </reference>
+      <name value="NHSN Pathogen Code Value Set" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="NHSN Criterion Of Diagnosis Code Value Set" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.114222.4.11.3195" />
         <display value="Value Set: NHSNCriterionOfDiagnosisCode" />
-      </sourceReference>
+      </reference>
+      <name value="NHSN Criterion Of Diagnosis Code Value Set" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="NHSN Infection Condition Code Value Set" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.114222.4.11.3196" />
         <display value="Value Set: NHSNInfectionConditionCode" />
-      </sourceReference>
+      </reference>
+      <name value="NHSN Infection Condition Code Value Set" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="true" />
-      <name value="Example Patient: HAI Patient 1" />
-      <sourceReference>
+      <reference>
         <reference value="Patient/hai-patient-1" />
         <display value="Example Patient: HAI Patient 1" />
-      </sourceReference>
+      </reference>
+      <name value="Example Patient: HAI Patient 1" />
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="true" />
-      <name value="Example Group: HAI Group 1" />
-      <sourceReference>
+      <reference>
         <reference value="Group/hai-group-1" />
         <display value="Example Group: HAI Group 1" />
-      </sourceReference>
+      </reference>
+      <name value="Example Group: HAI Group 1" />
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="true" />
-      <name value="Example Device: HAI Authoring Device" />
-      <sourceReference>
+      <reference>
         <reference value="Device/hai-authoring-device" />
         <display value="Example Device: HAI Authoring Device" />
-      </sourceReference>
+      </reference>
+      <name value="Example Device: HAI Authoring Device" />
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="true" />
-      <name value="Instance Questionnaire: Late Onset Sepsis/Meningitis Event (LOS)" />
-      <sourceReference>
+      <reference>
         <reference value="Questionnaire/hai-questionnaire-los-event" />
         <display value="Instance Questionnaire: Late Onset Sepsis/Meningitis Event (LOS)" />
-      </sourceReference>
+      </reference>
+      <name value="Instance Questionnaire: Late Onset Sepsis/Meningitis Event (LOS)" />
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="true" />
-      <name value="Instance QuestionnaireResponse: hai-questionnaireResponse-los-event.xml" />
-      <sourceReference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-event" />
-        <display value="Example QuestionnaireResponse: hai-questionnaireResponse-los-event.xml" />
-      </sourceReference>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-los-event" />
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-los-event.xml" />
+      </reference>
+      <name value="Instance QuestionnaireResponse: hai-questionnaireresponse-los-event.xml" />
+      <exampleBoolean value="true" />
     </resource>
     <!--<resource>
-            <example value="true"/>
-            <name value="Instance QuestionnaireResponse: hai-questionnaireResponse-los-event.xml"/>
-            <sourceReference>
+            <reference>
                 <reference value="Bundle/hai-bundle-los-event"/>
                 <display value="Example Bundle: HAI LOS Event"/>
-            </sourceReference>
+            </reference>
+            <name value="Instance QuestionnaireResponse: hai-questionnaireresponse-los-event.xml"/>
+            <exampleBoolean value="true" />
         </resource>-->
     <resource>
-      <example value="false" />
-      <name value="Profile Questionnaire: HAI Population Summary" />
-      <sourceReference>
+      <reference>
         <reference value="StructureDefinition/hai-population-summary-questionnaire" />
         <display value="Profile Questionnaire: HAI Population Summary" />
-      </sourceReference>
+      </reference>
+      <name value="Profile Questionnaire: HAI Population Summary" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="Profile Questionnaire Response: HAI Population Summary" />
-      <sourceReference>
-        <reference value="StructureDefinition/hai-population-summary-questionnaire-response" />
-        <display value="Profile Questionnaire Response: HAI Population Summary" />
-      </sourceReference>
+      <reference>
+        <reference value="StructureDefinition/hai-population-summary-questionnaireresponse" />
+        <display value="Profile QuestionnaireResponse: HAI Population Summary" />
+      </reference>
+      <name value="Profile QuestionnaireResponse: HAI Population Summary" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="true" />
-      <name value="Instance Questionnaire: Outpatient Procedure Component Denominator for Same Day Outcome Measures Report" />
-      <sourceReference>
+      <reference>
         <reference value="Questionnaire/hai-questionnaire-opc-sdom-denom" />
         <display value="Instance Questionnaire: Outpatient Procedure Component Denominator for Same Day Outcome Measures Report" />
-      </sourceReference>
+      </reference>
+      <name value="Instance Questionnaire: Outpatient Procedure Component Denominator for Same Day Outcome Measures Report" />
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="true" />
-      <name value="Instance QuestionnaireResponse:hai-questionnaireResponse-opc-sdom-denom" />
-      <sourceReference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-opc-sdom-denom" />
-        <display value="Example QuestionnaireResponse: hai-questionnaireResponse-opc-sdom-denom" />
-      </sourceReference>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-denom" />
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-sdom-denom" />
+      </reference>
+      <name value="Instance QuestionnaireResponse:hai-questionnaireresponse-opc-sdom-denom" />
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="true" />
-      <name value="Instance Questionnaire: Late Onset Sepsis/Meningitis Denominator" />
-      <sourceReference>
+      <reference>
         <reference value="Questionnaire/hai-questionnaire-los-denom" />
         <display value="Instance Questionnaire: Late Onset Sepsis/Meningitis Denominator" />
-      </sourceReference>
+      </reference>
+      <name value="Instance Questionnaire: Late Onset Sepsis/Meningitis Denominator" />
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="true" />
-      <name value="Instance Questionnaire: Outpatient Procedure Component Same Day Outcome Measures Event" />
-      <sourceReference>
+      <reference>
         <reference value="Questionnaire/hai-questionnaire-opc-sdom-event" />
         <display value="Instance Questionnaire: Outpatient Procedure Component Same Day Outcome Measures Event" />
-      </sourceReference>
+      </reference>
+      <name value="Instance Questionnaire: Outpatient Procedure Component Same Day Outcome Measures Event" />
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="false" />
-      <name value="NHSN LOS/MEN Discharge Disposition Value Set" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.30" />
         <display value="Value Set: NHSNLOS/MENDischargeDisposition" />
-      </sourceReference>
+      </reference>
+      <name value="NHSN LOS/MEN Discharge Disposition Value Set" />
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="true" />
-      <sourceReference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-opc-sdom-event" />
-        <display value="Example  QuestionnaireResponse: hai-questionnaireResponse-opc-sdom-event" />
-      </sourceReference>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-event" />
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-sdom-event" />
+      </reference>
     </resource>
     <resource>
-      <example value="true" />
-      <sourceReference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-los-denom" />
+      <exampleBoolean value="true" />
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-los-denom" />
         <display value="Example QuestionnaireResponse: Late Onset Sepsis/Meningitis Denominator" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="false" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.13.9" />
         <display value="Value Set: NHSNWoundClassCode" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.13.10" />
         <display value="Value Set: NHSNASAClassCode" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.34" />
         <display value="Value Set: NHSNOPCProcedureCategoryCode" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.31" />
         <display value="Value Set: NHSNSSIDetectionMethodType" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <sourceReference>
+      <reference>
         <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.29" />
         <display value="Value Set: NHSNSSIDetectionMethod" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="false" />
-      <sourceReference>
+      <exampleBoolean value="false" />
+      <reference>
         <reference value="ValueSet/2.16.840.1.114222.4.11.3595" />
         <display value="Value Set: NHSNPopulationSummaryReportTypeCode" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="false" />
     </resource>
     <resource>
-      <example value="true" />
-      <sourceReference>
+      <reference>
         <reference value="Questionnaire/hai-questionnaire-opc-proc-denom" />
         <display value="Instance Questionnaire: hai-questionnaire-opc-proc-denom" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="true" />
-      <sourceReference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-opc-proc-denom" />
-        <display value="Example QuestionnaireResponse: hai-questionnaireResponse-opc-proc-denom" />
-      </sourceReference>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-proc-denom" />
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-proc-denom" />
+      </reference>
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="true" />
-      <sourceReference>
+      <reference>
         <reference value="Questionnaire/hai-questionnaire-opc-ssi-event" />
         <display value="Instance Questionnaire: hai-questionnaire-opc-ssi-event" />
-      </sourceReference>
+      </reference>
+      <exampleBoolean value="true" />
     </resource>
     <resource>
-      <example value="true" />
-      <sourceReference>
-        <reference value="QuestionnaireResponse/hai-questionnaireResponse-opc-ssi-event" />
-        <display value="Example  QuestionnaireResponse: hai-questionnaireResponse-opc-ssi-event" />
-      </sourceReference>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-ssi-event" />
+        <display value="Example  QuestionnaireResponse: hai-questionnaireresponse-opc-ssi-event" />
+      </reference>
+      <exampleBoolean value="true" />
     </resource>
-  </package>
-  <page>
-    <source value="home.md" />
-    <title value="Healthcare Associated Infection Reports (FHIR)" />
-    <kind value="toc" />
-    <format value="markdown" />
+
     <page>
-      <source value="relationshipToAnotherStandard.md" />
-      <title value="Relationship to Another Standard" />
-      <kind value="page" />
-      <format value="markdown" />
+      <nameUrl value="home.md" />
+      <title value="Healthcare Associated Infection Reports (FHIR)" />
+      <generation value="markdown" />
+      <page>
+        <nameUrl value="relationshipToAnotherStandard.md" />
+        <title value="Relationship to Another Standard" />
+        <generation value="markdown" />
+      </page>
+      <page>
+          <nameUrl value="audience.md" />
+        <title value="Audience" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="designConsiderations.md" />
+        <title value="Design Considerations" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="references.md" />
+        <title value="References" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="acknowledgements.md" />
+        <title value="Acknowledgements" />
+        <generation value="markdown" />
+      </page>
     </page>
-    <page>
-      <source value="audience.md" />
-      <title value="Audience" />
-      <kind value="page" />
-      <format value="markdown" />
-    </page>
-    <page>
-      <source value="designConsiderations.md" />
-      <title value="Design Considerations" />
-      <kind value="page" />
-      <format value="markdown" />
-    </page>
-    <page>
-      <source value="references.md" />
-      <title value="References" />
-      <kind value="page" />
-      <format value="markdown" />
-    </page>
-    <page>
-      <source value="acknowledgements.md" />
-      <title value="Acknowledgements" />
-      <kind value="page" />
-      <format value="markdown" />
-    </page>
-  </page>
+  </definition>
+
 </ImplementationGuide>

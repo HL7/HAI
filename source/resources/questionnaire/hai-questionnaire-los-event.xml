@@ -237,6 +237,7 @@
         <value value="hai-questionnaire-los-event-v1"/>
     </identifier>
     <version value="R1"/>
+    <name value="HAI_questionnaire_los_event"/>
     <title value="Late Onset Sepsis/Meningitis Event (LOS)"/>
     <status value="draft"/>
     <date value="2018-09-30"/>
@@ -274,9 +275,7 @@
         <type value="choice"/>
         <required value="true"/>
         <repeats value="false"/>
-        <options>
-            <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20"/>
-        </options>
+        <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20"/>
     </item>
     <item>
         <linkId value="date-of-event"/>
@@ -291,9 +290,7 @@
         <type value="choice"/>
         <required value="true"/>
         <repeats value="false"/>
-        <options>
-            <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/>
-        </options>
+        <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/>
     </item>
     <item>
         <linkId value="date-admitted-to-facility"/>
@@ -384,9 +381,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <options>
-                <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196"/>
-            </options>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196"/>
         </item>
         <item>
             <linkId value="criteria-used"/>
@@ -394,9 +389,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <options>
-                <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195"/>
-            </options>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195"/>
         </item>
         <item>
             <linkId value="died"/>
@@ -445,9 +438,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <options>
-                <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16"/>
-            </options>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16"/>
         </item>
         <item>
             <linkId value="pathogen-ranking"/>
@@ -455,9 +446,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <options>
-                <reference value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"/>
-            </options>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"/>
         </item>
         <item>
             <linkId value="drug-susceptibility-test-group"/>
@@ -470,9 +459,7 @@
                 <type value="choice"/>
                 <required value="true"/>
                 <repeats value="false"/>
-                <options>
-                    <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15"/>
-                </options>
+                <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15"/>
             </item>
             <item>
                 <linkId value="drug-susceptibility-test-interpretation"/>
@@ -480,9 +467,7 @@
                 <type value="choice"/>
                 <required value="false"/>
                 <repeats value="false"/>
-                <options>
-                    <reference value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13"/>
-                </options>
+                <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13"/>
             </item>
         </item>
     </item>

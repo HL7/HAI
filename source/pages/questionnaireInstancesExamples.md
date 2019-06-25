@@ -23,27 +23,27 @@ active: other
     <tbody>
       <tr>
         <td><a href="Questionnaire-hai-questionnaire-los-event.html">Questionnaire Instance for Late Onset Sepsis/Meningitis Event (LOS)</a></td>
-        <td><a href="QuestionnaireResponse-hai-questionnaireResponse-los-event.html">Example QuestionnaireResponse for Late Onset Sepsis/Meningitis Event (LOS)</a></td>
+        <td><a href="QuestionnaireResponse-hai-questionnaireresponse-los-event.html">Example QuestionnaireResponse for Late Onset Sepsis/Meningitis Event (LOS)</a></td>
       </tr>
       <tr>
         <td><a href="Questionnaire-hai-questionnaire-los-denom.html">Questionnaire Instance for Late Onset Sepsis/Meningitis Denominator</a></td>
-        <td><a href="QuestionnaireResponse-hai-questionnaireResponse-los-denom.html">Example QuestionnaireResponse for Example Late Onset Sepsis/Meningitis Denominator QuestionnaireResponse</a></td>
+        <td><a href="QuestionnaireResponse-hai-questionnaireresponse-los-denom.html">Example QuestionnaireResponse for Example Late Onset Sepsis/Meningitis Denominator QuestionnaireResponse</a></td>
       </tr>      
       <tr>
         <td><a href="Questionnaire-hai-questionnaire-opc-proc-denom.html">Questionnaire Instance for Outpatient Procedure Component Denominator for Procedure</a></td>
-        <td><a href="QuestionnaireResponse-hai-questionnaireResponse-opc-proc-denom.html">Example QuestionnaireResponse for Outpatient Procedure Component Denominator for Procedure</a></td>
+        <td><a href="QuestionnaireResponse-hai-questionnaireresponse-opc-proc-denom.html">Example QuestionnaireResponse for Outpatient Procedure Component Denominator for Procedure</a></td>
       </tr>
       <tr>
         <td><a href="Questionnaire-hai-questionnaire-opc-sdom-denom.html">Questionnaire Instance for Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</a></td>
-        <td><a href="QuestionnaireResponse-hai-questionnaireResponse-opc-sdom-denom.html">Example QuestionnaireResponse for Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</a></td>
+        <td><a href="QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-denom.html">Example QuestionnaireResponse for Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</a></td>
       </tr>
       <tr>
         <td><a href="Questionnaire-hai-questionnaire-opc-sdom-event.html">Questionnaire Instance for Outpatient Procedure Component Same Day Outcome Measures Event Report</a></td>
-        <td><a href="QuestionnaireResponse-hai-questionnaireResponse-opc-sdom-event.html">Example QuestionnaireResponse for Outpatient Procedure Component Same Day Outcome Measures Event Report</a></td>
+        <td><a href="QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-event.html">Example QuestionnaireResponse for Outpatient Procedure Component Same Day Outcome Measures Event Report</a></td>
       </tr>
       <tr>
         <td><a href="Questionnaire-hai-questionnaire-opc-ssi-event.html">Questionnaire Instance for Outpatient Procedure Component Surgical Site Infection (SSI) Event</a></td>
-        <td><a href="QuestionnaireResponse-hai-questionnaireResponse-opc-ssi-event.html">Example QuestionnaireResponse for Outpatient Procedure Component Surgical Site Infection (SSI) Event</a></td>
+        <td><a href="QuestionnaireResponse-hai-questionnaireresponse-opc-ssi-event.html">Example QuestionnaireResponse for Outpatient Procedure Component Surgical Site Infection (SSI) Event</a></td>
       </tr>
     </tbody>
   </table>

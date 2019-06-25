@@ -7,7 +7,7 @@
         <lastUpdated value="2019-03-11T01:02:07.000-04:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30"/>
-    <name value="2.16.840.1.113883.10.20.5.9.30"/>
+    <name value="NHSNLOSMENDischargeDisposition"/>
     <title value="NHSNLOS/MENDischargeDisposition"/>
     <status value="draft"/>
     <description value="Disposition of infant."/>

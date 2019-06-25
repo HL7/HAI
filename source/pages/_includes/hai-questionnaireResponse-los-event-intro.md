@@ -1,6 +1,6 @@
 ---
-title: QuestionnaireResponse-hai-questionnaireResponse-los-event-intro
+title: QuestionnaireResponse-hai-questionnaireresponse-los-event-intro
 layout: default
-active: QuestionnaireResponse-hai-questionnaireResponse-los-event-intro
+active: QuestionnaireResponse-hai-questionnaireresponse-los-event-intro
 ---
 

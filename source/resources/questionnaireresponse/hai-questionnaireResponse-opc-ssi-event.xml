@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
-  <id value="hai-questionnaireResponse-opc-ssi-event" />
+  <id value="hai-questionnaireresponse-opc-ssi-event" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2019-03-14T00:03:04.000-04:00" />
-    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire-response" />
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse" />
   </meta>
   <language value="en-US" />
   <text>

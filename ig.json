@@ -1,7 +1,7 @@
 {
 	"tool": "jekyll",
 	"source": "implementationguide/hl7-fhir-us-hai.xml",
-	"version": "3.0.1",
+	"version": "4.0.0",
 	"fixed-business-version": "1.1.0",
 	"npm-name": "hl7.fhir.us.hai",
 	"license": "CC0-1.0",
@@ -104,9 +104,9 @@
 			"base": "StructureDefinition-hai-single-person-report-questionnaire.html",
 			"defns": "StructureDefinition-hai-single-person-report-questionnaire-definitions.html"
 		},
-		"StructureDefinition/hai-single-person-report-questionnaire-response": {
-			"base": "StructureDefinition-hai-single-person-report-questionnaire-response.html",
-			"defns": "StructureDefinition-hai-single-person-report-questionnaire-response-definitions.html"
+		"StructureDefinition/hai-single-person-report-questionnaireresponse": {
+			"base": "StructureDefinition-hai-single-person-report-questionnaireresponse.html",
+			"defns": "StructureDefinition-hai-single-person-report-questionnaireresponse-definitions.html"
 		},
 		"CodeSystem/2.16.840.1.113883.6.259": {
 			"base": "CodeSystem-2.16.840.1.113883.6.259.html",
@@ -164,25 +164,25 @@
 			"base": "Questionnaire-hai-questionnaire-los-event.html",
 			"defns": "Questionnaire-hai-questionnaire-los-event-definitions.html"
 		},
-		"QuestionnaireResponse/hai-questionnaireResponse-los-event": {
-			"base": "QuestionnaireResponse-hai-questionnaireResponse-los-event.html",
-			"defns": "QuestionnaireResponse-hai-questionnaireResponse-los-event-definitions.html"
+		"QuestionnaireResponse/hai-questionnaireresponse-los-event": {
+			"base": "QuestionnaireResponse-hai-questionnaireresponse-los-event.html",
+			"defns": "QuestionnaireResponse-hai-questionnaireresponse-los-event-definitions.html"
 		},
 		"StructureDefinition/hai-population-summary-questionnaire": {
 			"base": "StructureDefinition-hai-population-summary-questionnaire.html",
 			"defns": "StructureDefinition-hai-population-summary-questionnaire-definitions.html"
 		},
-		"StructureDefinition/hai-population-summary-questionnaire-response": {
-			"base": "StructureDefinition-hai-population-summary-questionnaire-response.html",
-			"defns": "StructureDefinition-hai-population-summary-questionnaire-response-definitions.html"
+		"StructureDefinition/hai-population-summary-questionnaireresponse": {
+			"base": "StructureDefinition-hai-population-summary-questionnaireresponse.html",
+			"defns": "StructureDefinition-hai-population-summary-questionnaireresponse-definitions.html"
 		},
 		"Questionnaire/hai-questionnaire-opc-sdom-denom": {
 			"base": "Questionnaire-hai-questionnaire-opc-sdom-denom.html",
 			"defns": "Questionnaire-hai-questionnaire-opc-sdom-denom-definitions.html"
 		},
-		"QuestionnaireResponse/hai-questionnaireResponse-opc-sdom-denom": {
-			"base": "QuestionnaireResponse-hai-questionnaireResponse-opc-sdom-denom.html",
-			"defns": "QuestionnaireResponse-hai-questionnaireResponse-opc-sdom-denom-definitions.html"
+		"QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-denom": {
+			"base": "QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-denom.html",
+			"defns": "QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-denom-definitions.html"
 		},
 		"Questionnaire/hai-questionnaire-los-denom": {
 			"base": "Questionnaire-hai-questionnaire-los-denom.html",
@@ -196,13 +196,13 @@
 			"base": "ValueSet-2.16.840.1.113883.10.20.5.9.30.html",
 			"defns": "ValueSet-2.16.840.1.113883.10.20.5.9.30-definitions.html"
 		},
-		"QuestionnaireResponse/hai-questionnaireResponse-opc-sdom-event": {
-			"base": "QuestionnaireResponse-hai-questionnaireResponse-opc-sdom-event.html",
-			"defns": "QuestionnaireResponse-hai-questionnaireResponse-opc-sdom-event-definitions.html"
+		"QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-event": {
+			"base": "QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-event.html",
+			"defns": "QuestionnaireResponse-hai-questionnaireresponse-opc-sdom-event-definitions.html"
 		},
-		"QuestionnaireResponse/hai-questionnaireResponse-los-denom": {
-			"base": "QuestionnaireResponse-hai-questionnaireResponse-los-denom.html",
-			"defns": "QuestionnaireResponse-hai-questionnaireResponse-los-denom-definitions.html"
+		"QuestionnaireResponse/hai-questionnaireresponse-los-denom": {
+			"base": "QuestionnaireResponse-hai-questionnaireresponse-los-denom.html",
+			"defns": "QuestionnaireResponse-hai-questionnaireresponse-los-denom-definitions.html"
 		},
 		"ValueSet/2.16.840.1.113883.13.9": {
 			"base": "ValueSet-2.16.840.1.113883.13.9.html",
@@ -232,25 +232,25 @@
 			"base": "Questionnaire-hai-questionnaire-opc-proc-denom.html",
 			"defns": "Questionnaire-hai-questionnaire-opc-proc-denom-definitions.html"
 		},
-		"QuestionnaireResponse/hai-questionnaireResponse-opc-proc-denom": {
-			"base": "QuestionnaireResponse-hai-questionnaireResponse-opc-proc-denom.html",
-			"defns": "QuestionnaireResponse-hai-questionnaireResponse-opc-proc-denom-definitions.html"
+		"QuestionnaireResponse/hai-questionnaireresponse-opc-proc-denom": {
+			"base": "QuestionnaireResponse-hai-questionnaireresponse-opc-proc-denom.html",
+			"defns": "QuestionnaireResponse-hai-questionnaireresponse-opc-proc-denom-definitions.html"
 		},
 		"Questionnaire/hai-questionnaire-opc-ssi-event": {
 			"base": "Questionnaire-hai-questionnaire-opc-ssi-event.html",
 			"defns": "Questionnaire-hai-questionnaire-opc-ssi-event-definitions.html"
 		},
-		"QuestionnaireResponse/hai-questionnaireResponse-opc-ssi-event": {
-			"base": "QuestionnaireResponse-hai-questionnaireResponse-opc-ssi-event.html",
-			"defns": "QuestionnaireResponse-hai-questionnaireResponse-opc-ssi-event-definitions.html"
+		"QuestionnaireResponse/hai-questionnaireresponse-opc-ssi-event": {
+			"base": "QuestionnaireResponse-hai-questionnaireresponse-opc-ssi-event.html",
+			"defns": "QuestionnaireResponse-hai-questionnaireresponse-opc-ssi-event-definitions.html"
 		}
 	},
-	"version": "3.0.1",
 	"dependencyList": [
 		{
 			"location": "http://hl7.org/fhir/us/core",
-			"name": "uscore",
-			"version": "1.0.1"
+			"name": "USCoreR4",
+			"version": "3.0.0",
+			"package": "hl7.fhir.us.core"
 		}
 	]
 }

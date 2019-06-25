@@ -12,4 +12,4 @@ This IG specifies a FHIR Questionnaire-based approach. This approach takes advan
 
 * The Questionnaire instance [Questionnaire/hai-questionnaire-los-event](Questionnaire-hai-questionnaire-los-event.html) defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report.
 
-* The QuestionnaireResponse instance [Questionnaire/hai-questionnaireResponse-los-event](QuestionnaireResponse-hai-questionnaireResponse-los-event.html) is an example of a completed Late Onset Sepsis/Meningitis Event (LOS) Report.
+* The QuestionnaireResponse instance [QuestionnaireResponse/hai-questionnaireresponse-los-event](QuestionnaireResponse-hai-questionnaireresponse-los-event.html) is an example of a completed Late Onset Sepsis/Meningitis Event (LOS) Report.

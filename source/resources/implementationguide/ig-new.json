@@ -1,69 +1,51 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7-fhir-us-hai",
-  "meta" : {
-    "versionId" : "49",
-    "lastUpdated" : "2019-03-14T14:03:37.000+10:00"
-  },
+  "id" : "hl7-fhir-us-hai-1.1.0",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\FHIR\\HAI\\source\\resources"
+    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\HL7\\FHIR\\HAI\\source\\resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\FHIR\\HAI\\framework"
+    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\HL7\\FHIR\\HAI\\framework"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\FHIR\\HAI\\source\\pages"
+    "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\HL7\\FHIR\\HAI\\source\\pages"
   }],
-  "url" : "http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai",
-  "version" : "2.0.0",
-  "name" : "Healthcare Associated Infection Reports, FHIR STU Release 2 - US Realm",
+  "url" : "http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai-1.1.0",
+  "version" : "1.1.0",
+  "name" : "HealtcareAssociatedInfectionReports",
+  "title" : "Healthcare Associated Infection Reports, FHIR STU 2 Ballot - US Realm",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2019-02-04T00:00:00+10:00",
-  "publisher" : "HL7",
-  "contact" : [{
-    "name" : "Sarah Gaunt",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "sarah.gaunt@lantanagroup.com"
-    }]
-  }],
   "description" : "This implementation guide (IG) is to specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.\n\nAs reports are modified and new report types are defined, CDC and Health Level Seven (HL7) will develop and publish additional constraints.\n\nThroughout this process, CDC remains the authority on NHSN data collection protocols. When healthcare enterprises choose to participate in NHSN, they must report to CDC occurrences such as specific reportable procedures, even those without complications, and events such as a bloodstream infection, either confirmed by a positive blood culture or supported by a patients clinical symptoms. This specification opens the channel for data submission by all applications compliant with the data coding requirements defined here.\n\nNote that participation in the NHSN requires enrollment and filing of reporting plans, which are not defined by this specification. For an overview of NHSN and full information on NHSN participation requirements, see: [http://www.cdc.gov/nhsn](http://www.cdc.gov/nhsn). Provisions of the Public Health Service Act protect all data reported to NHSN from discovery through the Freedom of Information Act (FOIA).",
-  "packageId" : "hl7-fhir-us-hai",
+  "packageId" : "hl7.fhir.us.hai",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["3.0.1",
-  "3.0.1"],
+  "fhirVersion" : ["4.0.0",
+  "4.0.0"],
   "dependsOn" : [{
-    "id" : "uscore",
+    "id" : "USCoreR4",
     "uri" : "http://hl7.org/fhir/us/core",
     "packageId" : "hl7.fhir.us.core",
-    "version" : "1.0.1"
+    "version" : "3.0.0"
   }],
   "definition" : {
-    "grouping" : [{
-      "id" : "p1",
-      "name" : "base"
-    }],
     "resource" : [{
       "reference" : {
         "reference" : "StructureDefinition/hai-single-person-report-questionnaire",
         "display" : "Profile Questionnaire: HAI Single Person Report"
       },
       "name" : "HAI Single Person Report Questionnaire",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/hai-single-person-report-questionnaire-response",
+        "reference" : "StructureDefinition/hai-single-person-report-questionnaireresponse",
         "display" : "Profile QuestionnaireResponse: HAI Single Person Report"
       },
       "name" : "HAI Single Person Report QuestionnaireResponse",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -71,8 +53,7 @@
         "display" : "Code System: HSLOC"
       },
       "name" : "HSLOC Code System",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -80,8 +61,7 @@
         "display" : "Code System: cdcNHSN"
       },
       "name" : "cdcNHSN Code System",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -89,8 +69,7 @@
         "display" : "Value Set: NHSNHealthcareServiceLocationCode"
       },
       "name" : "NHSN Healthcare Service Location Code Value Set",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -98,8 +77,7 @@
         "display" : "Value Set: NHSNInfectionTypeCode"
       },
       "name" : "NHSN Infection Type Code Value Set",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -107,8 +85,7 @@
         "display" : "Value Set: NHSNDrugSusceptibilityFindingCode"
       },
       "name" : "NHSN Drug Susceptibility Finding Code Value Set",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -116,8 +93,7 @@
         "display" : "Value Set: NHSNDrugSusceptibilityTestsCode"
       },
       "name" : "NHSN Drug Susceptibility Tests Code Value Set",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -125,8 +101,7 @@
         "display" : "Value Set: nhsn-pathogen-ranking"
       },
       "name" : "NHSN Pathogen Ranking Value Set",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -134,8 +109,7 @@
         "display" : "Value Set: NHSNPathogenCode"
       },
       "name" : "NHSN Pathogen Code Value Set",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -143,8 +117,7 @@
         "display" : "Value Set: NHSNCriterionOfDiagnosisCode"
       },
       "name" : "NHSN Criterion Of Diagnosis Code Value Set",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -152,8 +125,7 @@
         "display" : "Value Set: NHSNInfectionConditionCode"
       },
       "name" : "NHSN Infection Condition Code Value Set",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -161,8 +133,7 @@
         "display" : "Example Patient: HAI Patient 1"
       },
       "name" : "Example Patient: HAI Patient 1",
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
@@ -170,8 +141,7 @@
         "display" : "Example Group: HAI Group 1"
       },
       "name" : "Example Group: HAI Group 1",
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
@@ -179,8 +149,7 @@
         "display" : "Example Device: HAI Authoring Device"
       },
       "name" : "Example Device: HAI Authoring Device",
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
@@ -188,17 +157,15 @@
         "display" : "Instance Questionnaire: Late Onset Sepsis/Meningitis Event (LOS)"
       },
       "name" : "Instance Questionnaire: Late Onset Sepsis/Meningitis Event (LOS)",
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
-        "reference" : "QuestionnaireResponse/hai-questionnaireResponse-los-event",
-        "display" : "Example QuestionnaireResponse: hai-questionnaireResponse-los-event.xml"
+        "reference" : "QuestionnaireResponse/hai-questionnaireresponse-los-event",
+        "display" : "Example QuestionnaireResponse: hai-questionnaireresponse-los-event.xml"
       },
-      "name" : "Instance QuestionnaireResponse: hai-questionnaireResponse-los-event.xml",
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "name" : "Instance QuestionnaireResponse: hai-questionnaireresponse-los-event.xml",
+      "exampleBoolean" : true
     },
     {
       "reference" : {
@@ -206,17 +173,15 @@
         "display" : "Profile Questionnaire: HAI Population Summary"
       },
       "name" : "Profile Questionnaire: HAI Population Summary",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/hai-population-summary-questionnaire-response",
-        "display" : "Profile Questionnaire Response: HAI Population Summary"
+        "reference" : "StructureDefinition/hai-population-summary-questionnaireresponse",
+        "display" : "Profile QuestionnaireResponse: HAI Population Summary"
       },
-      "name" : "Profile Questionnaire Response: HAI Population Summary",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "name" : "Profile QuestionnaireResponse: HAI Population Summary",
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -224,17 +189,15 @@
         "display" : "Instance Questionnaire: Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"
       },
       "name" : "Instance Questionnaire: Outpatient Procedure Component Denominator for Same Day Outcome Measures Report",
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
-        "reference" : "QuestionnaireResponse/hai-questionnaireResponse-opc-sdom-denom",
-        "display" : "Example QuestionnaireResponse: hai-questionnaireResponse-opc-sdom-denom"
+        "reference" : "QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-denom",
+        "display" : "Example QuestionnaireResponse: hai-questionnaireresponse-opc-sdom-denom"
       },
-      "name" : "Instance QuestionnaireResponse:hai-questionnaireResponse-opc-sdom-denom",
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "name" : "Instance QuestionnaireResponse:hai-questionnaireresponse-opc-sdom-denom",
+      "exampleBoolean" : true
     },
     {
       "reference" : {
@@ -242,8 +205,7 @@
         "display" : "Instance Questionnaire: Late Onset Sepsis/Meningitis Denominator"
       },
       "name" : "Instance Questionnaire: Late Onset Sepsis/Meningitis Denominator",
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
@@ -251,8 +213,7 @@
         "display" : "Instance Questionnaire: Outpatient Procedure Component Same Day Outcome Measures Event"
       },
       "name" : "Instance Questionnaire: Outpatient Procedure Component Same Day Outcome Measures Event",
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
@@ -260,146 +221,132 @@
         "display" : "Value Set: NHSNLOS/MENDischargeDisposition"
       },
       "name" : "NHSN LOS/MEN Discharge Disposition Value Set",
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
-        "reference" : "QuestionnaireResponse/hai-questionnaireResponse-opc-sdom-event",
-        "display" : "Example  QuestionnaireResponse: hai-questionnaireResponse-opc-sdom-event"
-      },
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+        "reference" : "QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-event",
+        "display" : "Example QuestionnaireResponse: hai-questionnaireresponse-opc-sdom-event"
+      }
     },
     {
       "reference" : {
-        "reference" : "QuestionnaireResponse/hai-questionnaireResponse-los-denom",
+        "reference" : "QuestionnaireResponse/hai-questionnaireresponse-los-denom",
         "display" : "Example QuestionnaireResponse: Late Onset Sepsis/Meningitis Denominator"
       },
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "ValueSet/2.16.840.1.113883.13.9",
         "display" : "Value Set: NHSNWoundClassCode"
       },
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
         "reference" : "ValueSet/2.16.840.1.113883.13.10",
         "display" : "Value Set: NHSNASAClassCode"
       },
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
         "reference" : "ValueSet/2.16.840.1.113883.10.20.5.9.34",
         "display" : "Value Set: NHSNOPCProcedureCategoryCode"
       },
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
         "reference" : "ValueSet/2.16.840.1.113883.10.20.5.9.31",
         "display" : "Value Set: NHSNSSIDetectionMethodType"
       },
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
         "reference" : "ValueSet/2.16.840.1.113883.10.20.5.9.29",
         "display" : "Value Set: NHSNSSIDetectionMethod"
       },
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
         "reference" : "ValueSet/2.16.840.1.114222.4.11.3595",
         "display" : "Value Set: NHSNPopulationSummaryReportTypeCode"
       },
-      "exampleBoolean" : false,
-      "groupingId" : "p1"
+      "exampleBoolean" : false
     },
     {
       "reference" : {
         "reference" : "Questionnaire/hai-questionnaire-opc-proc-denom",
         "display" : "Instance Questionnaire: hai-questionnaire-opc-proc-denom"
       },
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
-        "reference" : "QuestionnaireResponse/hai-questionnaireResponse-opc-proc-denom",
-        "display" : "Example QuestionnaireResponse: hai-questionnaireResponse-opc-proc-denom"
+        "reference" : "QuestionnaireResponse/hai-questionnaireresponse-opc-proc-denom",
+        "display" : "Example QuestionnaireResponse: hai-questionnaireresponse-opc-proc-denom"
       },
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
         "reference" : "Questionnaire/hai-questionnaire-opc-ssi-event",
         "display" : "Instance Questionnaire: hai-questionnaire-opc-ssi-event"
       },
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     },
     {
       "reference" : {
-        "reference" : "QuestionnaireResponse/hai-questionnaireResponse-opc-ssi-event",
-        "display" : "Example  QuestionnaireResponse: hai-questionnaireResponse-opc-ssi-event"
+        "reference" : "QuestionnaireResponse/hai-questionnaireresponse-opc-ssi-event",
+        "display" : "Example  QuestionnaireResponse: hai-questionnaireresponse-opc-ssi-event"
       },
-      "exampleBoolean" : true,
-      "groupingId" : "p1"
+      "exampleBoolean" : true
     }],
     "page" : {
       "nameUrl" : "home.md",
       "title" : "Healthcare Associated Infection Reports (FHIR)",
-      "generation" : "generated",
+      "generation" : "markdown",
       "page" : [{
         "nameUrl" : "relationshipToAnotherStandard.md",
         "title" : "Relationship to Another Standard",
-        "generation" : "html"
+        "generation" : "markdown"
       },
       {
         "nameUrl" : "audience.md",
         "title" : "Audience",
-        "generation" : "html"
+        "generation" : "markdown"
       },
       {
         "nameUrl" : "designConsiderations.md",
         "title" : "Design Considerations",
-        "generation" : "html"
+        "generation" : "markdown"
       },
       {
         "nameUrl" : "references.md",
         "title" : "References",
-        "generation" : "html"
+        "generation" : "markdown"
       },
       {
         "nameUrl" : "acknowledgements.md",
         "title" : "Acknowledgements",
-        "generation" : "html"
+        "generation" : "markdown"
       }]
     },
     "parameter" : [{
-      "code" : "generate-json",
-      "value" : "true"
+      "code" : "apply",
+      "value" : "version"
     },
     {
-      "code" : "generate-xml",
-      "value" : "true"
+      "code" : "generate",
+      "value" : "xml"
     },
     {
-      "code" : "generate-turtle",
-      "value" : "true"
+      "code" : "generate",
+      "value" : "JSON"
     }]
   }
 }

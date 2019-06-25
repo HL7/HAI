@@ -1,6 +1,6 @@
 ---
-title: QuestionnaireResponse-hai-questionnaireResponse-opc-ssi-event-intro
+title: QuestionnaireResponse-hai-questionnaireresponse-opc-ssi-event-intro
 layout: default
-active: QuestionnaireResponse-hai-questionnaireResponse-opc-ssi-event-intro
+active: QuestionnaireResponse-hai-questionnaireresponse-opc-ssi-event-intro
 ---
 

@@ -12,7 +12,7 @@
     <description value="Codes representing a drug susceptibility finding."/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/v3/ObservationInterpretation"/>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
             <concept>
                 <code value="I"/>
                 <display value="Intermediate"/>
