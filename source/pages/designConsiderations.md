@@ -8,7 +8,7 @@ active: Design Considerations
 
 * The Questionnaire profile [Healthcare Associated Infection Report Questionnaire](StructureDefinition-hai-single-person-report-questionnaire.html) defines constraints that all HAI NHSN single-person report forms (Questionnaire instances) must conform to.
 
-* The QuestionnaireResponse profile [Healthcare Associated Infection Report QuestionnaireResponse](StructureDefinition-hai-single-person-report-questionnaire-response.html) defines constraints that all responses to HAI NHSN single-person report forms (QuestionnaireResponse instances) must conform to.
+* The QuestionnaireResponse profile [Healthcare Associated Infection Report QuestionnaireResponse](StructureDefinition-hai-single-person-report-questionnaireresponse.html) defines constraints that all responses to HAI NHSN single-person report forms (QuestionnaireResponse instances) must conform to.
 
 * The Questionnaire instance [Questionnaire/hai-questionnaire-los-event](Questionnaire-hai-questionnaire-los-event.html) defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report.
 

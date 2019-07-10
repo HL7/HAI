@@ -7,7 +7,7 @@
   </meta>
   <url value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
   <version value="1.1.0" />
-  <name value="cdcNHSN" />
+  <name value="CDCNHSN" />
   <title value="CDC - National Healthcare Safety Network (NHSN) code system" />
   <status value="active" />
   <publisher value="CDC National Healthcare Safety Network" />

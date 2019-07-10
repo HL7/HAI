@@ -8,7 +8,7 @@
     </meta>
     <url value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259"/>
     <version value="1.1.0"/>
-    <name value="hsloc"/>
+    <name value="HSLOC"/>
     <title value="NHSN Healthcare Facility Patient Care Location"/>
     <status value="active"/>
     <publisher value="Public Health Information Network Vocabulary Access and Distribution System (PHIN VADS)"/>

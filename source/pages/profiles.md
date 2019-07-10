@@ -29,7 +29,7 @@ active: profiles
       <td>This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire. A Population Summary Report records summary data for a group, such as the patients in a particular ward, during a specified period.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-hai-population-summary-questionnaire-response.html">hai-population-summary-questionnaire-response</a></td>
+      <td><a href="StructureDefinition-hai-population-summary-questionnaireresponse.html">hai-population-summary-questionnaireresponse</a></td>
       <td>This profile represents a response to the Healthcare Associated Infection Population Summary Questionnaire as a FHIR QuestionnaireResponse profile.</td>
     </tr>
     <tr>
@@ -37,7 +37,7 @@ active: profiles
       <td>This profile represents a Healthcare Associated Infection Singe-Person Report form as a FHIR Questionnaire.</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-hai-single-person-report-questionnaire-response.html">hai-single-person-report-questionnaire-response</a></td>
+      <td><a href="StructureDefinition-hai-single-person-report-questionnaireresponse.html">hai-single-person-report-questionnaireresponse</a></td>
       <td>This profile represents a response to the Healthcare Associated Infection Single-Person Report Questionnaire as a FHIR QuestionnaireResponse profile.</td>
     </tr>
   </tbody>

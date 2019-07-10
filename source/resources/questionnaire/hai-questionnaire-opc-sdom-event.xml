@@ -1,419 +1,421 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Questionnaire xmlns="http://hl7.org/fhir">
-   <id value="hai-questionnaire-opc-sdom-event"/>
-   <meta>
-      <versionId value="2"/>
-      <lastUpdated value="2019-03-11T00:49:08.000-04:00"/>
-      <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
-   </meta>
-   <language value="en-US"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml">
-         <h1 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Outpatient Procedure Component Same Day Outcome Measures Event Report</h1>
-         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-            <p>This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Same Day Outcome Measures Event Report. It records data on each patient who experienced one or more of the same day outcome measures events.</p>
-         </p>
-         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Details</h2>
-         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-            <tr>
-               <td>
-                  <b>Id:</b>
-               </td>
-               <td>hai-questionnaire-opc-sdom-event</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Meta:</b>
-               </td>
-               <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                     <li>2</li>
-                     <li>2019-03-11T00:49:08.000-04:00</li>
-                     <li>http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire</li>
-                  </ul>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Language:</b>
-               </td>
-               <td>en-US</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Url:</b>
-               </td>
-               <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-event</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Identifier:</b>
-               </td>
-               <td>
-                  <span>hai-questionnaire-opc-sdom-event-v1</span>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Version:</b>
-               </td>
-               <td>Version: R1</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Name:</b>
-               </td>
-               <td>HAI_questionnaire_opc_sdom_event</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Status:</b>
-               </td>
-               <td>draft</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Experimental:</b>
-               </td>
-               <td>false</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Subject Type:</b>
-               </td>
-               <td>Patient</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Date:</b>
-               </td>
-               <td>2019-04-01</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Publisher:</b>
-               </td>
-               <td>HL7</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Jurisdiction:</b>
-               </td>
-               <td>
-                  <span title="Code system: urn:iso:std:iso:3166">Code: US</span>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Code:</b>
-               </td>
-               <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
-                     <li>Healthcare Associated Infection report Document</li>
-                     <li>Code system: <a href="http://loinc.org">http://loinc.org</a>
-                     </li>
-                     <li>Code: 51897-7</li>
-                  </ul>
-               </td>
-            </tr>
-         </table>
-         <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
-         <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
-         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Items</h2>
-         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform" border="1">
-            <tr>
-               <th align="left">Group</th>
-               <th align="left">text</th>
-               <th align="left">linkId</th>
-               <th align="left">type</th>
-               <th align="left">required</th>
-               <th align="left">repeats</th>
-               <th align="left">enableWhen</th>
-               <th align="left">answerValueSet</th>
-            </tr>
-            <tr>
-               <td/>
-               <td>Facility ID</td>
-               <td>facility-id</td>
-               <td>url</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td/>
-               <td>Date of Encounter (Admission)</td>
-               <td>date-of-encounter</td>
-               <td>date</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td colspan="8">Group</td>
-            </tr>
-            <tr>
-               <td/>
-               <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-               <td>same-day-outcome-measures-event-details</td>
-               <td>group</td>
-               <td/>
-               <td>false</td>
-               <td/>
-               <td/>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Patient Burn</td>
-                  <td>same-day-outcome-measure-patient-burn</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Patient fall</td>
-                  <td>same-day-outcome-measure-patient-fall</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Hospital transfer/admission</td>
-                  <td>same-day-outcome-transfer-admission</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Wrong site</td>
-                  <td>same-day-outcome-measure-wrong-site</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Wrong side</td>
-                  <td>same-day-outcome-measure-wrong-side</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Wrong patient</td>
-                  <td>same-day-outcome-measure-wrong-patient</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Wrong procedure</td>
-                  <td>same-day-outcome-measure-wrong-procedure</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Wrong implant</td>
-                  <td>same-day-outcome-measure-wrong-implant</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-            </tr>
-            <tr>
-               <td/>
-               <td>Comments</td>
-               <td>nhsn-comment</td>
-               <td>text</td>
-               <td>false</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-         </table>
-      </div>
-   </text>
-   <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-event"/>
-   <identifier>
-      <value value="hai-questionnaire-opc-sdom-event-v1"/>
-   </identifier>
-   <version value="R1"/>
-   <name value="HAI_questionnaire_opc_sdom_event"/>
-   <title value="Outpatient Procedure Component Same Day Outcome Measures Event Report"/>
-   <status value="draft"/>
-   <experimental value="false"/>
-   <date value="2019-04-01"/>
-   <publisher value="HL7"/>
-   <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Same Day Outcome Measures Event Report. It records data on each patient who experienced one or more of the same day outcome measures events."/>
-   <jurisdiction>
-      <coding>
-         <system value="urn:iso:std:iso:3166"/>
-         <code value="US"/>
-      </coding>
-   </jurisdiction>
-   <code>
-      <system value="http://loinc.org"/>
-      <code value="51897-7"/>
-      <display value="Healthcare Associated Infection report Document"/>
-   </code>
-   <subjectType value="Patient"/>
-   <item>
-      <linkId value="facility-id"/>
-      <text value="Facility ID"/>
-      <type value="url"/>
-      <required value="true"/>
-      <repeats value="false"/>
-   </item>
-   <item>
-      <linkId value="date-of-encounter"/>
-      <text value="Date of Encounter (Admission)"/>
-      <type value="date"/>
-      <required value="true"/>
-      <repeats value="false"/>
-   </item>
-   <item>
-      <linkId value="same-day-outcome-measures-event-details"/>
+  <id value="hai-questionnaire-opc-sdom-event" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2019-03-11T00:49:08.000-04:00" />
+    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire" />
+  </meta>
+  <language value="en-US" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+      <h1 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Outpatient Procedure Component Same Day Outcome Measures Event Report</h1>
+      <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <p>This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Same Day Outcome Measures Event Report. It records data on each patient who experienced one or more of the same day outcome measures events.</p>
+      </p>
+      <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Details</h2>
+      <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <tr>
+          <td>
+            <b>Id:</b>
+          </td>
+          <td>hai-questionnaire-opc-sdom-event</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Meta:</b>
+          </td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>2</li>
+              <li>2019-03-11T00:49:08.000-04:00</li>
+              <li>http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Language:</b>
+          </td>
+          <td>en-US</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Url:</b>
+          </td>
+          <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-event</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Identifier:</b>
+          </td>
+          <td>
+            <span>hai-questionnaire-opc-sdom-event-v1</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Version:</b>
+          </td>
+          <td>Version: R1</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Name:</b>
+          </td>
+          <td>HAI_questionnaire_opc_sdom_event</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Status:</b>
+          </td>
+          <td>draft</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Experimental:</b>
+          </td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Subject Type:</b>
+          </td>
+          <td>Patient</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Date:</b>
+          </td>
+          <td>2019-04-01</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Publisher:</b>
+          </td>
+          <td>HL7</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Jurisdiction:</b>
+          </td>
+          <td>
+            <span title="Code system: urn:iso:std:iso:3166">Code: US</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Code:</b>
+          </td>
+          <td>
+            <ul style="list-style:none; padding-left:0; margin:0 0;">
+              <li>Healthcare Associated Infection report Document</li>
+              <li>Code system: <a href="http://loinc.org">http://loinc.org</a>
+              </li>
+              <li>Code: 51897-7</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />
+      <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />
+      <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Items</h2>
+      <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform" border="1">
+        <tr>
+          <th align="left">Group</th>
+          <th align="left">text</th>
+          <th align="left">linkId</th>
+          <th align="left">type</th>
+          <th align="left">required</th>
+          <th align="left">repeats</th>
+          <th align="left">enableWhen</th>
+          <th align="left">answerValueSet</th>
+        </tr>
+        <tr>
+          <td />
+          <td>Facility ID</td>
+          <td>facility-id</td>
+          <td>url</td>
+          <td>true</td>
+          <td>false</td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td />
+          <td>Date of Encounter (Admission)</td>
+          <td>date-of-encounter</td>
+          <td>date</td>
+          <td>true</td>
+          <td>false</td>
+          <td />
+          <td />
+        </tr>
+        <tr>
+          <td colspan="8">Group</td>
+        </tr>
+        <tr>
+          <td />
+          <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
+          <td>same-day-outcome-measures-event-details</td>
+          <td>group</td>
+          <td />
+          <td>false</td>
+          <td />
+          <td />
+          <tr>
+            <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
+            <td>Same Day Outcome Measure: Patient Burn</td>
+            <td>same-day-outcome-measure-patient-burn</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+            <td />
+            <td />
+          </tr>
+          <tr>
+            <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
+            <td>Same Day Outcome Measure: Patient fall</td>
+            <td>same-day-outcome-measure-patient-fall</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+            <td />
+            <td />
+          </tr>
+          <tr>
+            <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
+            <td>Same Day Outcome Measure: Hospital transfer/admission</td>
+            <td>same-day-outcome-transfer-admission</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+            <td />
+            <td />
+          </tr>
+          <tr>
+            <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
+            <td>Same Day Outcome Measure: Wrong site</td>
+            <td>same-day-outcome-measure-wrong-site</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+            <td />
+            <td />
+          </tr>
+          <tr>
+            <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
+            <td>Same Day Outcome Measure: Wrong side</td>
+            <td>same-day-outcome-measure-wrong-side</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+            <td />
+            <td />
+          </tr>
+          <tr>
+            <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
+            <td>Same Day Outcome Measure: Wrong patient</td>
+            <td>same-day-outcome-measure-wrong-patient</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+            <td />
+            <td />
+          </tr>
+          <tr>
+            <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
+            <td>Same Day Outcome Measure: Wrong procedure</td>
+            <td>same-day-outcome-measure-wrong-procedure</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+            <td />
+            <td />
+          </tr>
+          <tr>
+            <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
+            <td>Same Day Outcome Measure: Wrong implant</td>
+            <td>same-day-outcome-measure-wrong-implant</td>
+            <td>boolean</td>
+            <td>true</td>
+            <td>false</td>
+            <td />
+            <td />
+          </tr>
+        </tr>
+        <tr>
+          <td />
+          <td>Comments</td>
+          <td>nhsn-comment</td>
+          <td>text</td>
+          <td>false</td>
+          <td>false</td>
+          <td />
+          <td />
+        </tr>
+      </table>
+    </div>
+  </text>
+  <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-event" />
+  <identifier>
+    <value value="hai-questionnaire-opc-sdom-event-v1" />
+  </identifier>
+  <version value="R1" />
+  <name value="HAI_questionnaire_opc_sdom_event" />
+  <title value="Outpatient Procedure Component Same Day Outcome Measures Event Report" />
+  <status value="draft" />
+  <experimental value="false" />
+  <subjectType value="Patient" />
+  <date value="2019-04-01" />
+  <publisher value="HL7" />
+  <description
+    value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Same Day Outcome Measures Event Report. It records data on each patient who experienced one or more of the same day outcome measures events." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+    </coding>
+  </jurisdiction>
+  <code>
+    <system value="http://loinc.org" />
+    <code value="51897-7" />
+    <display value="Healthcare Associated Infection report Document" />
+  </code>
+
+  <item>
+    <linkId value="facility-id" />
+    <text value="Facility ID" />
+    <type value="url" />
+    <required value="true" />
+    <repeats value="false" />
+  </item>
+  <item>
+    <linkId value="date-of-encounter" />
+    <text value="Date of Encounter (Admission)" />
+    <type value="date" />
+    <required value="true" />
+    <repeats value="false" />
+  </item>
+  <item>
+    <linkId value="same-day-outcome-measures-event-details" />
+    <code>
+      <system value="http://loinc.org" />
+      <code value="51899-3" />
+      <display value="Details Document" />
+    </code>
+    <text value="Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events" />
+    <type value="group" />
+    <repeats value="false" />
+    <item>
+      <linkId value="same-day-outcome-measure-patient-burn" />
       <code>
-         <system value="http://loinc.org"/>
-         <code value="51899-3"/>
-         <display value="Details Document"/>
+        <system value="http://snomed.info/sct" />
+        <code value="125666000" />
+        <display value="Burn" />
       </code>
-      <text value="Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events"/>
-      <type value="group"/>
-      <repeats value="false"/>
-      <item>
-         <linkId value="same-day-outcome-measure-patient-burn"/>
-         <code>
-            <system value="http://snomed.info/sct"/>
-            <code value="125666000"/>
-            <display value="Burn"/>
-         </code>
-         <text value="Same Day Outcome Measure: Patient Burn"/>
-         <type value="boolean"/>
-         <required value="true"/>
-         <repeats value="false"/>
-      </item>
-      <item>
-         <linkId value="same-day-outcome-measure-patient-fall"/>
-         <code>
-            <system value="http://snomed.info/sct"/>
-            <code value="217082002"/>
-            <display value="Accidental fall"/>
-         </code>
-         <text value="Same Day Outcome Measure: Patient fall"/>
-         <type value="boolean"/>
-         <required value="true"/>
-         <repeats value="false"/>
-      </item>
-      <item>
-         <linkId value="same-day-outcome-transfer-admission"/>
-         <code>
-            <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
-            <code value="1645-1"/>
-            <display value="Hospital transer/admission"/>
-         </code>
-         <text value="Same Day Outcome Measure: Hospital transfer/admission"/>
-         <type value="boolean"/>
-         <required value="true"/>
-         <repeats value="false"/>
-      </item>
-      <item>
-         <linkId value="same-day-outcome-measure-wrong-site"/>
-         <code>
-            <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
-            <code value="1646-9"/>
-            <display value="Wrong site"/>
-         </code>
-         <text value="Same Day Outcome Measure: Wrong site"/>
-         <type value="boolean"/>
-         <required value="true"/>
-         <repeats value="false"/>
-      </item>
-      <item>
-         <linkId value="same-day-outcome-measure-wrong-side"/>
-         <code>
-            <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
-            <code value="1647-7"/>
-            <display value="Wrong side"/>
-         </code>
-         <text value="Same Day Outcome Measure: Wrong side"/>
-         <type value="boolean"/>
-         <required value="true"/>
-         <repeats value="false"/>
-      </item>
-      <item>
-         <linkId value="same-day-outcome-measure-wrong-patient"/>
-         <code>
-            <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
-            <code value="1648-5"/>
-            <display value="Wrong patient"/>
-         </code>
-         <text value="Same Day Outcome Measure: Wrong patient"/>
-         <type value="boolean"/>
-         <required value="true"/>
-         <repeats value="false"/>
-      </item>
-      <item>
-         <linkId value="same-day-outcome-measure-wrong-procedure"/>
-         <code>
-            <system value="http://snomed.info/sct"/>
-            <code value="370898007"/>
-            <display value="Wrong surgical procedure performed on a patient"/>
-         </code>
-         <text value="Same Day Outcome Measure: Wrong procedure"/>
-         <type value="boolean"/>
-         <required value="true"/>
-         <repeats value="false"/>
-      </item>
-      <item>
-         <linkId value="same-day-outcome-measure-wrong-implant"/>
-         <code>
-            <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
-            <code value="1649-3"/>
-            <display value="Wrong implant"/>
-         </code>
-         <text value="Same Day Outcome Measure: Wrong implant"/>
-         <type value="boolean"/>
-         <required value="true"/>
-         <repeats value="false"/>
-      </item>
-   </item>
-   <item>
-      <linkId value="nhsn-comment"/>
+      <text value="Same Day Outcome Measure: Patient Burn" />
+      <type value="boolean" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <linkId value="same-day-outcome-measure-patient-fall" />
       <code>
-         <system value="http://www.loinc.org"/>
-         <code value="86468-6"/>
-         <display value="Report Comment Section"/>
+        <system value="http://snomed.info/sct" />
+        <code value="217082002" />
+        <display value="Accidental fall" />
       </code>
-      <text value="Comments"/>
-      <type value="text"/>
-      <required value="false"/>
-      <repeats value="false"/>
-      <maxLength value="2000"/>
-   </item>
+      <text value="Same Day Outcome Measure: Patient fall" />
+      <type value="boolean" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <linkId value="same-day-outcome-transfer-admission" />
+      <code>
+        <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+        <code value="1645-1" />
+        <display value="Hospital transer/admission" />
+      </code>
+      <text value="Same Day Outcome Measure: Hospital transfer/admission" />
+      <type value="boolean" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <linkId value="same-day-outcome-measure-wrong-site" />
+      <code>
+        <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+        <code value="1646-9" />
+        <display value="Wrong site" />
+      </code>
+      <text value="Same Day Outcome Measure: Wrong site" />
+      <type value="boolean" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <linkId value="same-day-outcome-measure-wrong-side" />
+      <code>
+        <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+        <code value="1647-7" />
+        <display value="Wrong side" />
+      </code>
+      <text value="Same Day Outcome Measure: Wrong side" />
+      <type value="boolean" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <linkId value="same-day-outcome-measure-wrong-patient" />
+      <code>
+        <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+        <code value="1648-5" />
+        <display value="Wrong patient" />
+      </code>
+      <text value="Same Day Outcome Measure: Wrong patient" />
+      <type value="boolean" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <linkId value="same-day-outcome-measure-wrong-procedure" />
+      <code>
+        <system value="http://snomed.info/sct" />
+        <code value="370898007" />
+        <display value="Wrong surgical procedure performed on a patient" />
+      </code>
+      <text value="Same Day Outcome Measure: Wrong procedure" />
+      <type value="boolean" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+    <item>
+      <linkId value="same-day-outcome-measure-wrong-implant" />
+      <code>
+        <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
+        <code value="1649-3" />
+        <display value="Wrong implant" />
+      </code>
+      <text value="Same Day Outcome Measure: Wrong implant" />
+      <type value="boolean" />
+      <required value="true" />
+      <repeats value="false" />
+    </item>
+  </item>
+  <item>
+    <linkId value="nhsn-comment" />
+    <code>
+      <system value="http://www.loinc.org" />
+      <code value="86468-6" />
+      <display value="Report Comment Section" />
+    </code>
+    <text value="Comments" />
+    <type value="text" />
+    <required value="false" />
+    <repeats value="false" />
+    <maxLength value="2000" />
+  </item>
 </Questionnaire>

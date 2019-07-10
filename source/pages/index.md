@@ -32,11 +32,11 @@ This IG specifies a FHIR Questionnaire-based approach. This approach takes advan
 
 * The Questionnaire profile [Healthcare Associated Infection Single-Person Report Questionnaire](StructureDefinition-hai-single-person-report-questionnaire.html) defines constraints that all HAI NHSN single-person report forms (Questionnaire instances) must conform to.
 
-* The QuestionnaireResponse profile [Healthcare Associated Infection Single-Person Report QuestionnaireResponse](StructureDefinition-hai-single-person-report-questionnaire-response.html) defines constraints that all hospital-completed responses to HAI NHSN single-person report forms (QuestionnaireResponse instances) must conform to.
+* The QuestionnaireResponse profile [Healthcare Associated Infection Single-Person Report QuestionnaireResponse](StructureDefinition-hai-single-person-report-questionnaireresponse.html) defines constraints that all hospital-completed responses to HAI NHSN single-person report forms (QuestionnaireResponse instances) must conform to.
 
 * The Questionnaire profile [Healthcare Associated Infection Population Summary Report Questionnaire](StructureDefinition-hai-population-summary-questionnaire.html) defines constraints that all HAI NHSN population summary report forms (Questionnaire instances) must conform to.
 
-* The QuestionnaireResponse profile [Healthcare Associated Infection Population Summary Report QuestionnaireResponse](StructureDefinition-hai-population-summary-questionnaire-response.html) defines constraints that all hospital-completed responses to HAI NHSN population summary report forms (QuestionnaireResponse instances) must conform to.
+* The QuestionnaireResponse profile [Healthcare Associated Infection Population Summary Report QuestionnaireResponse](StructureDefinition-hai-population-summary-questionnaireresponse.html) defines constraints that all hospital-completed responses to HAI NHSN population summary report forms (QuestionnaireResponse instances) must conform to.
 
 * The Questionnaire instances on the [Questionnaire Instances & Examples page](questionnaireInstancesExamples.html) define the questions and possible answers for all the reports in this guide.
 

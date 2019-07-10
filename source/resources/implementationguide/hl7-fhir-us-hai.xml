@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7-fhir-us-hai-1.1.0" />
+  <id value="hl7-fhir-us-hai" />
   <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai" />
   <version value="2.0.0" />
   <name value="HealthcareAssociatedInfectionReports" />

@@ -12,7 +12,7 @@ active: Current Release
   <h3>Profiles</h3>
   <ul>
       <li><a href="StructureDefinition-hai-population-summary-questionnaire.html">hai-population-summary-questionnaire</a></li>
-      <li><a href="StructureDefinition-hai-population-summary-questionnaire-response.html">hai-population-summary-questionnaire-response</a></li>
+      <li><a href="StructureDefinition-hai-population-summary-questionnaireresponse.html">hai-population-summary-questionnaireresponse</a></li>
   </ul>
   
   <h3>HAI Single-Person Reports (Questionnaire)</h3>
