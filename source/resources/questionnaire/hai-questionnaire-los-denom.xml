@@ -225,7 +225,7 @@
                   <td>date</td>
                   <td>false</td>
                   <td>false</td>
-                  <td>infant-disposition"Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>Code: 183665006"infant-disposition"Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>Code: 266751003"infant-disposition"Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>Code: 371828006"</td>
+                  <td>infant-disposition="Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>Code: 183665006"infant-disposition="Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>Code: 266751003"infant-disposition="Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>Code: 371828006"</td>
                   <td/>
                </tr>
             </tr>
@@ -366,6 +366,7 @@
          <type value="date"/>
          <enableWhen>
             <question value="infant-disposition"/>
+            <operator value="="/>
             <answerCoding>
                <system value="http://snomed.info/sct"/>
                <code value="183665006"/>
@@ -373,6 +374,7 @@
          </enableWhen>
          <enableWhen>
             <question value="infant-disposition"/>
+            <operator value="="/>
             <answerCoding>
                <system value="http://snomed.info/sct"/>
                <code value="266751003"/>
@@ -380,6 +382,7 @@
          </enableWhen>
          <enableWhen>
             <question value="infant-disposition"/>
+            <operator value="="/>
             <answerCoding>
                <system value="http://snomed.info/sct"/>
                <code value="371828006"/>
