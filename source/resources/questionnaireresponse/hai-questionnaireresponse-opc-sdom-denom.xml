@@ -69,9 +69,7 @@
     <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2" />
     <value value="20202201" />
   </identifier>
-  <questionnaire>
-    <reference value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-denom" />
-  </questionnaire>
+  <questionnaire value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-denom" />
   <status value="completed" />
   <subject>
     <reference value="Group/hai-group-1" />
