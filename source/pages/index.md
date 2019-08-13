@@ -17,7 +17,7 @@ active: home
 
 ### Description
 
-This implementation guide (IG) is to specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.
+This implementation guide (IG) specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.
 
 As reports are modified and new report types are defined, CDC and Health Level Seven (HL7) will develop and publish additional constraints.
 
