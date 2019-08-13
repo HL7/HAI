@@ -9,7 +9,7 @@
   <version value="R1" />
   <name value="HAI_population_summary_questionnaire" />
   <title value="Healthcare Associated Infection Population Summary Questionnaire" />
-  <status value="draft" />
+  <status value="active" />
   <description
     value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire. A Population Summary Report records summary data for a group, such as the patients in a particular ward, during a specified period." />
   <kind value="resource" />

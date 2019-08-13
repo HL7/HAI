@@ -9,7 +9,7 @@
   <version value="R1" />
   <name value="HAI_population_summary_questionnaireresponse" />
   <title value="Healthcare Associated Infection Population Summary QuestionnaireResponse" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Lantana Consulting Group" />
   <contact>
     <name value="Sarah Gaunt" />
