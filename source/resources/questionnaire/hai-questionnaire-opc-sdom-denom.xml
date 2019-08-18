@@ -1,375 +1,366 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Questionnaire xmlns="http://hl7.org/fhir">
-  <id value="hai-questionnaire-opc-sdom-denom" />
-  <meta>
-    <versionId value="7" />
-    <lastUpdated value="2019-03-11T03:27:25.000-04:00" />
-    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire" />
-  </meta>
-  <language value="en-US" />
-  <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-      <h1 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</h1>
-      <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-        <p>This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures.</p>
-      </p>
-      <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Details</h2>
-      <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-        <tr>
-          <td>
-            <b>Id:</b>
-          </td>
-          <td>hai-questionnaire-opc-sdom-denom</td>
-        </tr>
-        <tr>
-          <td>
-            <b>Meta:</b>
-          </td>
-          <td>
-            <ul style="list-style:none; padding-left:0; margin:0 0;">
-              <li>7</li>
-              <li>2019-03-11T03:27:25.000-04:00</li>
-              <li>http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <b>Language:</b>
-          </td>
-          <td>en-US</td>
-        </tr>
-        <tr>
-          <td>
-            <b>Url:</b>
-          </td>
-          <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-denom</td>
-        </tr>
-        <tr>
-          <td>
-            <b>Identifier:</b>
-          </td>
-          <td>
-            <span>hai-questionnaire-opc-sdom-denom-v1</span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <b>Version:</b>
-          </td>
-          <td>Version: 2.0.0</td>
-        </tr>
-        <tr>
-          <td>
-            <b>Name:</b>
-          </td>
-          <td>HAI_questionnaire_opc_sdom_denom</td>
-        </tr>
-        <tr>
-          <td>
-            <b>Status:</b>
-          </td>
-          <td>draft</td>
-        </tr>
-        <tr>
-          <td>
-            <b>Experimental:</b>
-          </td>
-          <td>false</td>
-        </tr>
-        <tr>
-          <td>
-            <b>Subject Type:</b>
-          </td>
-          <td>Group</td>
-        </tr>
-        <tr>
-          <td>
-            <b>Date:</b>
-          </td>
-          <td>2018-04-01</td>
-        </tr>
-        <tr>
-          <td>
-            <b>Publisher:</b>
-          </td>
-          <td>HL7</td>
-        </tr>
-        <tr>
-          <td>
-            <b>Jurisdiction:</b>
-          </td>
-          <td>
-            <span title="Code system: urn:iso:std:iso:3166">Code: US</span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <b>Code:</b>
-          </td>
-          <td>
-            <ul style="list-style:none; padding-left:0; margin:0 0;">
-              <li>Summary data reporting outpatient procedure component evetns at a facility</li>
-              <li>Code system: <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"
-                  >http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277</a>
-              </li>
-              <li>Code: 1657-6</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-      <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />
-      <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />
-      <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Items</h2>
-      <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform" border="1">
-        <tr>
-          <th align="left">Group</th>
-          <th align="left">text</th>
-          <th align="left">linkId</th>
-          <th align="left">type</th>
-          <th align="left">required</th>
-          <th align="left">repeats</th>
-          <th align="left">enableWhen</th>
-          <th align="left">answerValueSet</th>
-        </tr>
-        <tr>
-          <td />
-          <td>Facility ID</td>
-          <td>facility-id</td>
-          <td>url</td>
-          <td>true</td>
-          <td>false</td>
-          <td />
-          <td />
-        </tr>
-        <tr>
-          <td />
-          <td>First day of period reported</td>
-          <td>report-period-start</td>
-          <td>date</td>
-          <td>true</td>
-          <td>false</td>
-          <td />
-          <td />
-        </tr>
-        <tr>
-          <td />
-          <td>Last day of period reported</td>
-          <td>report-period-end</td>
-          <td>date</td>
-          <td>true</td>
-          <td>false</td>
-          <td />
-          <td />
-        </tr>
-        <tr>
-          <td />
-          <td>Facility Location Id</td>
-          <td>facility-location-id</td>
-          <td>url</td>
-          <td>true</td>
-          <td>false</td>
-          <td />
-          <td />
-        </tr>
-        <tr>
-          <td />
-          <td>Facility Location Type</td>
-          <td>facility-location-type</td>
-          <td>choice</td>
-          <td>true</td>
-          <td>false</td>
-          <td />
-          <td>
-            <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19</a>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="8">Group</td>
-        </tr>
-        <tr>
-          <td />
-          <td>Summary Data</td>
-          <td>summary-data-group</td>
-          <td>group</td>
-          <td>true</td>
-          <td>false</td>
-          <td />
-          <td />
-          <tr>
-            <td>Summary Data</td>
-            <td>Number of Total Facility Encounters (for outpatient location)</td>
-            <td>total-facility-encounters-outpatient</td>
-            <td>integer</td>
-            <td>true</td>
-            <td>false</td>
-            <td />
-            <td />
-          </tr>
-        </tr>
-        <tr>
-          <td colspan="8">Group</td>
-        </tr>
-        <tr>
-          <td />
-          <td>Report no events</td>
-          <td>report-no-events-group</td>
-          <td>group</td>
-          <td>false</td>
-          <td>false</td>
-          <td />
-          <td />
-          <tr>
-            <td>Report no events</td>
-            <td>No Same Day Outcome Measures (events) reported this month</td>
-            <td>no-same-day-outcome-measures</td>
-            <td>boolean</td>
-            <td>false</td>
-            <td>false</td>
-            <td />
-            <td />
-          </tr>
-        </tr>
-        <tr>
-          <td />
-          <td>Comments</td>
-          <td>nhsn-comment</td>
-          <td>text</td>
-          <td>false</td>
-          <td>false</td>
-          <td />
-          <td />
-        </tr>
-      </table>
-    </div>
-  </text>
-  <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-denom" />
-  <identifier>
-    <value value="hai-questionnaire-opc-sdom-denom-v1" />
-  </identifier>
-  <version value="2.0.0" />
-  <name value="HAI_questionnaire_opc_sdom_denom" />
-  <title value="Outpatient Procedure Component Denominator for Same Day Outcome Measures Report" />
-  <status value="draft" />
-  <experimental value="false" />
-  <subjectType value="Group" />
-  <date value="2018-04-01" />
-  <publisher value="HL7" />
-  <description
-    value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures." />
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="US" />
-    </coding>
-  </jurisdiction>
-  <!--<code>
+   <id value="hai-questionnaire-opc-sdom-denom"/>
+   <meta>
+      <versionId value="7"/>
+      <lastUpdated value="2019-03-11T03:27:25.000-04:00"/>
+      <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/>
+   </meta>
+   <language value="en-US"/>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+         <h1 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</h1>
+         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <p>This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures.</p>
+         </p>
+         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Details</h2>
+         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+            <tr>
+               <td>
+                  <b>Id:</b>
+               </td>
+               <td>hai-questionnaire-opc-sdom-denom</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Profile:</b>
+               </td>
+               <td>http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Language:</b>
+               </td>
+               <td>en-US</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Url:</b>
+               </td>
+               <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-denom</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Identifier:</b>
+               </td>
+               <td>
+                  <span>hai-questionnaire-opc-sdom-denom-v1</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Version:</b>
+               </td>
+               <td>Version: 2.0.0</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Name:</b>
+               </td>
+               <td>HAI_questionnaire_opc_sdom_denom</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Status:</b>
+               </td>
+               <td>draft</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Experimental:</b>
+               </td>
+               <td>false</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Subject Type:</b>
+               </td>
+               <td>Group</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Date:</b>
+               </td>
+               <td>2018-04-01</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Publisher:</b>
+               </td>
+               <td>HL7</td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Jurisdiction:</b>
+               </td>
+               <td>
+                  <span title="Code system: urn:iso:std:iso:3166">Code: US</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <b>Code:</b>
+               </td>
+               <td>
+                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                     <li>Summary data reporting outpatient procedure component evetns at a facility</li>
+                     <li>Code system: <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277">http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277</a>
+                     </li>
+                     <li>Code: 1657-6</li>
+                  </ul>
+               </td>
+            </tr>
+         </table>
+         <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
+         <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
+         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Items</h2>
+         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform" border="1">
+            <tr>
+               <th align="left">Group</th>
+               <th align="left">text</th>
+               <th align="left">linkId</th>
+               <th align="left">type</th>
+               <th align="left">required</th>
+               <th align="left">repeats</th>
+               <th align="left">enableWhen</th>
+               <th align="left">answerValueSet</th>
+            </tr>
+            <tr>
+               <td/>
+               <td>Facility ID</td>
+               <td>facility-id</td>
+               <td>url</td>
+               <td>true</td>
+               <td>false</td>
+               <td/>
+               <td/>
+            </tr>
+            <tr>
+               <td/>
+               <td>First day of period reported</td>
+               <td>report-period-start</td>
+               <td>date</td>
+               <td>true</td>
+               <td>false</td>
+               <td/>
+               <td/>
+            </tr>
+            <tr>
+               <td/>
+               <td>Last day of period reported</td>
+               <td>report-period-end</td>
+               <td>date</td>
+               <td>true</td>
+               <td>false</td>
+               <td/>
+               <td/>
+            </tr>
+            <tr>
+               <td/>
+               <td>Facility Location Id</td>
+               <td>facility-location-id</td>
+               <td>url</td>
+               <td>true</td>
+               <td>false</td>
+               <td/>
+               <td/>
+            </tr>
+            <tr>
+               <td/>
+               <td>Facility Location Type</td>
+               <td>facility-location-type</td>
+               <td>choice</td>
+               <td>true</td>
+               <td>false</td>
+               <td/>
+               <td>
+                  <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19</a>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="8">Group</td>
+            </tr>
+            <tr>
+               <td/>
+               <td>Summary Data</td>
+               <td>summary-data-group</td>
+               <td>group</td>
+               <td>true</td>
+               <td>false</td>
+               <td/>
+               <td/>
+               <tr>
+                  <td>Summary Data</td>
+                  <td>Number of Total Facility Encounters (for outpatient location)</td>
+                  <td>total-facility-encounters-outpatient</td>
+                  <td>integer</td>
+                  <td>true</td>
+                  <td>false</td>
+                  <td/>
+                  <td/>
+               </tr>
+            </tr>
+            <tr>
+               <td colspan="8">Group</td>
+            </tr>
+            <tr>
+               <td/>
+               <td>Report no events</td>
+               <td>report-no-events-group</td>
+               <td>group</td>
+               <td>false</td>
+               <td>false</td>
+               <td/>
+               <td/>
+               <tr>
+                  <td>Report no events</td>
+                  <td>No Same Day Outcome Measures (events) reported this month</td>
+                  <td>no-same-day-outcome-measures</td>
+                  <td>boolean</td>
+                  <td>false</td>
+                  <td>false</td>
+                  <td/>
+                  <td/>
+               </tr>
+            </tr>
+            <tr>
+               <td/>
+               <td>Comments</td>
+               <td>nhsn-comment</td>
+               <td>text</td>
+               <td>false</td>
+               <td>false</td>
+               <td/>
+               <td/>
+            </tr>
+         </table>
+      </div>
+   </text>
+   <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-denom"/>
+   <identifier>
+      <value value="hai-questionnaire-opc-sdom-denom-v1"/>
+   </identifier>
+   <version value="2.0.0"/>
+   <name value="HAI_questionnaire_opc_sdom_denom"/>
+   <title value="Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"/>
+   <status value="draft"/>
+   <experimental value="false"/>
+   <subjectType value="Group"/>
+   <date value="2018-04-01"/>
+   <publisher value="HL7"/>
+   <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures."/>
+   <jurisdiction>
+      <coding>
+         <system value="urn:iso:std:iso:3166"/>
+         <code value="US"/>
+      </coding>
+   </jurisdiction>
+   <!--<code>
     <system value="http://loinc.org" />
     <code value="51897-7" />
     <display value="Healthcare Associated Infection report Document" />
   </code>-->
-  <code>
-    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
-    <code value="1657-6" />
-    <display value="Summary data reporting outpatient procedure component evetns at a facility" />
-  </code>
-  <subjectType value="Group" />
-  <item>
-    <linkId value="facility-id" />
-    <text value="Facility ID" />
-    <type value="url" />
-    <required value="true" />
-    <repeats value="false" />
-  </item>
-  <item>
-    <linkId value="report-period-start" />
-    <text value="First day of period reported" />
-    <type value="date" />
-    <required value="true" />
-    <repeats value="false" />
-  </item>
-  <item>
-    <linkId value="report-period-end" />
-    <text value="Last day of period reported" />
-    <type value="date" />
-    <required value="true" />
-    <repeats value="false" />
-  </item>
-  <item>
-    <linkId value="facility-location-id" />
-    <text value="Facility Location Id" />
-    <type value="url" />
-    <required value="true" />
-    <repeats value="false" />
-  </item>
-  <item>
-    <linkId value="facility-location-type" />
-    <text value="Facility Location Type" />
-    <type value="choice" />
-    <required value="true" />
-    <repeats value="false" />
-    <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19" />
-  </item>
-  <item>
-    <linkId value="summary-data-group" />
-    <code>
-      <system value="http://loinc.org" />
-      <code value="51900-9" />
-      <display value="Population Summary note" />
-    </code>
-    <text value="Summary Data" />
-    <type value="group" />
-    <required value="true" />
-    <repeats value="false" />
-    <item>
-      <linkId value="total-facility-encounters-outpatient" />
+   <code>
+      <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+      <code value="1657-6"/>
+      <display value="Summary data reporting outpatient procedure component evetns at a facility"/>
+   </code>
+   <item>
+      <linkId value="facility-id"/>
+      <text value="Facility ID"/>
+      <type value="url"/>
+      <required value="true"/>
+      <repeats value="false"/>
+   </item>
+   <item>
+      <linkId value="report-period-start"/>
+      <text value="First day of period reported"/>
+      <type value="date"/>
+      <required value="true"/>
+      <repeats value="false"/>
+   </item>
+   <item>
+      <linkId value="report-period-end"/>
+      <text value="Last day of period reported"/>
+      <type value="date"/>
+      <required value="true"/>
+      <repeats value="false"/>
+   </item>
+   <item>
+      <linkId value="facility-location-id"/>
+      <text value="Facility Location Id"/>
+      <type value="url"/>
+      <required value="true"/>
+      <repeats value="false"/>
+   </item>
+   <item>
+      <linkId value="facility-location-type"/>
+      <text value="Facility Location Type"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/>
+   </item>
+   <item>
+      <linkId value="summary-data-group"/>
       <code>
-        <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
-        <code value="1890-3" />
-        <display value="Number of Total Facility Encounters (for outpatient location)" />
+         <system value="http://loinc.org"/>
+         <code value="51900-9"/>
+         <display value="Population Summary note"/>
       </code>
-      <text value="Number of Total Facility Encounters (for outpatient location)" />
-      <type value="integer" />
-      <required value="true" />
-      <repeats value="false" />
-    </item>
-  </item>
-  <item>
-    <linkId value="report-no-events-group" />
-    <code>
-      <system value="http://loinc.org" />
-      <code value="90252-8" />
-      <display value="Report no events" />
-    </code>
-    <text value="Report no events" />
-    <type value="group" />
-    <required value="false" />
-    <repeats value="false" />
-    <item>
-      <linkId value="no-same-day-outcome-measures" />
+      <text value="Summary Data"/>
+      <type value="group"/>
+      <required value="true"/>
+      <repeats value="false"/>
+      <item>
+         <linkId value="total-facility-encounters-outpatient"/>
+         <code>
+            <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+            <code value="1890-3"/>
+            <display value="Number of Total Facility Encounters (for outpatient location)"/>
+         </code>
+         <text value="Number of Total Facility Encounters (for outpatient location)"/>
+         <type value="integer"/>
+         <required value="true"/>
+         <repeats value="false"/>
+      </item>
+   </item>
+   <item>
+      <linkId value="report-no-events-group"/>
       <code>
-        <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
-        <code value="1340-9" />
-        <display value="No Same Day Outcome Measures (events) reported this month" />
+         <system value="http://loinc.org"/>
+         <code value="90252-8"/>
+         <display value="Report no events"/>
       </code>
-      <text value="No Same Day Outcome Measures (events) reported this month" />
-      <type value="boolean" />
-      <required value="false" />
-      <repeats value="false" />
-    </item>
-  </item>
-  <item>
-    <linkId value="nhsn-comment" />
-    <code>
-      <system value="http://www.loinc.org" />
-      <code value="86468-6" />
-      <display value="Report Comment Section" />
-    </code>
-    <text value="Comments" />
-    <type value="text" />
-    <required value="false" />
-    <repeats value="false" />
-    <maxLength value="2000" />
-  </item>
+      <text value="Report no events"/>
+      <type value="group"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <item>
+         <linkId value="no-same-day-outcome-measures"/>
+         <code>
+            <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+            <code value="1340-9"/>
+            <display value="No Same Day Outcome Measures (events) reported this month"/>
+         </code>
+         <text value="No Same Day Outcome Measures (events) reported this month"/>
+         <type value="boolean"/>
+         <required value="false"/>
+         <repeats value="false"/>
+      </item>
+   </item>
+   <item>
+      <linkId value="nhsn-comment"/>
+      <code>
+         <system value="http://www.loinc.org"/>
+         <code value="86468-6"/>
+         <display value="Report Comment Section"/>
+      </code>
+      <text value="Comments"/>
+      <type value="text"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <maxLength value="2000"/>
+   </item>
 </Questionnaire>
