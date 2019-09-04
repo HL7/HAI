@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Questionnaire xmlns="http://hl7.org/fhir">
+<Questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="http://hl7.org/fhir"
+               xsi:schemaLocation="http://hl7.org/fhir ../../../../../../../../../../Dropbox/03%20Work/Lantana/Temp_Files/fhir-all-xsd/fhir-all.xsd">
    <id value="hai-questionnaire-los-denom"/>
    <meta>
       <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
@@ -9,9 +11,7 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
          <h1 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Late Onset Sepsis/Meningitis Denominator</h1>
-         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-            <p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men).</p>
-         </p>
+         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men).</p>
          <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Details</h2>
          <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <tr>

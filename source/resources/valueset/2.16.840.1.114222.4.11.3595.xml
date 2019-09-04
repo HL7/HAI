@@ -7,6 +7,13 @@
   <description value="The population summary data set being reported." />
   <compose>
     <include>
+      <system value="http://loinc.org" />
+      <concept>
+        <code value="86558-4" />
+        <display value="Summary data reporting healthcare personnel influenza vaccinations" />
+      </concept>
+    </include>
+    <include>
       <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277" />
       <concept>
         <code value="1879-6" />
@@ -43,13 +50,6 @@
       <concept>
         <code value="2543-7" />
         <display value="Hemovigilance Module -  Monthly Reporting Denominator" />
-      </concept>
-    </include>
-    <include>
-      <system value="http://loinc.org" />
-      <concept>
-        <code value="86558-4" />
-        <display value="Summary data reporting healthcare personnel influenza vaccinations" />
       </concept>
     </include>
   </compose>

@@ -12,6 +12,7 @@
   <status value="active" />
   <description
     value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire. A Population Summary Report records summary data for a group, such as the patients in a particular ward, during a specified period." />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Questionnaire" />
@@ -186,8 +187,8 @@
       <path value="Questionnaire.item.repeats" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item.options">
-      <path value="Questionnaire.item.options" />
+    <element id="Questionnaire.item.answerOption">
+      <path value="Questionnaire.item.answerOption" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item.item">
@@ -248,8 +249,8 @@
       <path value="Questionnaire.item.item.repeats" />
       <mustSupport value="true" />
     </element>
-    <element id="Questionnaire.item.item.options">
-      <path value="Questionnaire.item.item.options" />
+    <element id="Questionnaire.item.item.answerOption">
+      <path value="Questionnaire.item.item.answerOption" />
       <mustSupport value="true" />
     </element>
     <element id="Questionnaire.item.item.item">
