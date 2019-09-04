@@ -50,7 +50,7 @@
                <td>
                   <b>Version:</b>
                </td>
-               <td>Version: R1</td>
+               <td>Version: 2.0.0</td>
             </tr>
             <tr>
                <td>
@@ -86,7 +86,7 @@
                <td>
                   <b>Publisher:</b>
                </td>
-               <td>HL7</td>
+               <td>HL7 Structured Documents Work Group</td>
             </tr>
             <tr>
                <td>
@@ -112,174 +112,99 @@
          </table>
          <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
          <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
-         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Items</h2>
-         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform" border="1">
-            <tr>
-               <th align="left">Group</th>
-               <th align="left">text</th>
-               <th align="left">linkId</th>
-               <th align="left">type</th>
-               <th align="left">required</th>
-               <th align="left">repeats</th>
-               <th align="left">enableWhen</th>
-               <th align="left">answerValueSet</th>
-            </tr>
-            <tr>
-               <td/>
-               <td>Year and month data collected for this location</td>
-               <td>date-collected</td>
-               <td>date</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td/>
-               <td>Facility ID</td>
-               <td>facility</td>
-               <td>url</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td/>
-               <td>Date Admitted to Facility</td>
-               <td>date-admitted-to-facility</td>
-               <td>date</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td colspan="8">The Location within Facility Encounter Group represents an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded.</td>
-            </tr>
-            <tr>
-               <td/>
-               <td>Location Within Facility Encounter</td>
-               <td>location-within-facility-encounter-group</td>
-               <td>group</td>
-               <td/>
-               <td>false</td>
-               <td/>
-               <td/>
-               <tr>
-                  <td>Location Within Facility Encounter</td>
-                  <td>Facility Location Type</td>
-                  <td>facility-location-type</td>
-                  <td>choice</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td>
-                     <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19</a>
-                  </td>
-               </tr>
-               <tr>
-                  <td>Location Within Facility Encounter</td>
-                  <td>Facility Location</td>
-                  <td>facility-location</td>
-                  <td>url</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Location Within Facility Encounter</td>
-                  <td>Date admitted or transferred to location</td>
-                  <td>location-admit-transfer-date</td>
-                  <td>date</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Location Within Facility Encounter</td>
-                  <td>Disposition of infant</td>
-                  <td>infant-disposition</td>
-                  <td>choice</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td>
-                     <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30</a>
-                  </td>
-               </tr>
-               <tr>
-                  <td>Location Within Facility Encounter</td>
-                  <td>Disposition date if discharged, transferred, or expired</td>
-                  <td>disposition-date</td>
-                  <td>date</td>
-                  <td>false</td>
-                  <td>false</td>
-                  <td>infant-disposition = "Code: 183665006"<br/> or infant-disposition = "Code: 266751003"<br/> or infant-disposition = "Code: 371828006"<br/>
-                  </td>
-                  <td/>
-               </tr>
-            </tr>
-            <tr>
-               <td colspan="8">The risk factors group contains birth weight and gestational age</td>
-            </tr>
-            <tr>
-               <td/>
-               <td>Risk Factors</td>
-               <td>risk-factors</td>
-               <td>group</td>
-               <td/>
-               <td>false</td>
-               <td/>
-               <td/>
-               <tr>
-                  <td>Risk Factors</td>
-                  <td>Risk Factor: Birth weight (grams)</td>
-                  <td>risk-factor-birth-weight</td>
-                  <td>quantity</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Risk Factors</td>
-                  <td>Risk Factor: Gestational age (days)</td>
-                  <td>risk-factor-gestational-age</td>
-                  <td>quantity</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-            </tr>
-            <tr>
-               <td/>
-               <td>Comments</td>
-               <td>nhsn-comment</td>
-               <td>text</td>
-               <td>false</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-         </table>
+         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Items (<span style="color:red">*</span> required)</h2>
+         <ul xmlns:xsl="http://www.w3.org/1999/XSL/Transform" style="list-style:none;">
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Year and month data collected for this location</span> [<span style="font-style:italic">date-collected</span>] (date)
+    </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Facility ID</span> [<span style="font-style:italic">facility</span>] (url)
+    </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Date Admitted to Facility</span> [<span style="font-style:italic">date-admitted-to-facility</span>] (date)
+    </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Location Within Facility Encounter: The Location within Facility Encounter Group represents an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded.</span> [<span style="font-style:italic">location-within-facility-encounter-group</span>] (group)
+    <ul style="list-style:none;">
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Facility Location Type</span> [<span style="font-style:italic">facility-location-type</span>] (choice)
+    <ul>
+                        <li>answerValueSet: <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Facility Location</span> [<span style="font-style:italic">facility-location</span>] (url)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Date admitted or transferred to location</span> [<span style="font-style:italic">location-admit-transfer-date</span>] (date)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Disposition of infant</span> [<span style="font-style:italic">infant-disposition</span>] (choice)
+    <ul>
+                        <li>answerValueSet: <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Disposition date if discharged, transferred, or expired</span> [<span style="font-style:italic">disposition-date</span>] (date)
+    <ul>
+                        <li>Enable when: <span style="font-style:italic">infant-disposition</span> = "183665006" or <br/>
+                           <span style="font-style:italic">infant-disposition</span> = "266751003" or <br/>
+                           <span style="font-style:italic">infant-disposition</span> = "371828006"<br/>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Risk Factors: The risk factors group contains birth weight and gestational age.</span> [<span style="font-style:italic">risk-factors</span>] (group)
+    <ul style="list-style:none;">
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Risk Factor: Birth weight (grams)</span> [<span style="font-style:italic">risk-factor-birth-weight</span>] (quantity)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Gestational age known: set true if known and false if unknown</span> [<span style="font-style:italic">gestational-age-known</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Risk Factor: Gestational age (days)</span> [<span style="font-style:italic">risk-factor-gestational-age</span>] (quantity)
+    <ul>
+                        <li>Enable when: <span style="font-style:italic">gestational-age-known</span> = "true"<br/>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="font-weight:bold">Comments</span> [<span style="font-style:italic">nhsn-comment</span>] (text)
+    </li>
+         </ul>
       </div>
    </text>
    <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-denom"/>
    <identifier>
       <value value="hai-questionnaire-los-denom-v1"/>
    </identifier>
-   <version value="R1"/>
+   <version value="2.0.0"/>
    <name value="HAI_questionnaire_los_denom"/>
    <title value="Late Onset Sepsis/Meningitis Denominator"/>
    <status value="draft"/>
    <experimental value="false"/>
    <subjectType value="Patient"/>
    <date value="2019-04-01"/>
-   <publisher value="HL7"/>
+   <publisher value="HL7 Structured Documents Work Group"/>
    <description value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men)."/>
    <jurisdiction>
       <coding>
@@ -320,14 +245,10 @@
          <code value="46240-8"/>
          <display value="History of Hospitalizations+Outpatient visits Narrative"/>
       </code>
-      <text value="Location Within Facility Encounter"/>
+      <text value="Location Within Facility Encounter: The Location within Facility Encounter Group represents an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded."/>
       <type value="group"/>
+      <required value="true"/>
       <repeats value="false"/>
-      <item>
-         <linkId value="location-within-facility-encounter-group-display"/>
-         <text value="The Location within Facility Encounter Group represents an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded."/>
-         <type value="display"/>
-      </item>
       <item>
          <linkId value="facility-location-type"/>
          <text value="Facility Location Type"/>
@@ -397,14 +318,10 @@
          <code value="51898-5"/>
          <display value="Risk factors Document"/>
       </code>
-      <text value="Risk Factors"/>
+      <text value="Risk Factors: The risk factors group contains birth weight and gestational age."/>
       <type value="group"/>
+      <required value="true"/>
       <repeats value="false"/>
-      <item>
-         <linkId value="risk-factors-group-display"/>
-         <text value="The risk factors group contains birth weight and gestational age"/>
-         <type value="display"/>
-      </item>
       <item>
          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
             <valueCoding>
@@ -425,6 +342,13 @@
          <repeats value="false"/>
       </item>
       <item>
+         <linkId value="gestational-age-known"/>
+         <text value="Gestational age known: set true if known and false if unknown"/>
+         <type value="boolean"/>
+         <required value="true"/>
+         <repeats value="false"/>
+      </item>
+      <item>
          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
             <valueCoding>
                <system value="http://unitsofmeasure.org"/>
@@ -440,6 +364,11 @@
          </code>
          <text value="Risk Factor: Gestational age (days)"/>
          <type value="quantity"/>
+         <enableWhen>
+            <question value="gestational-age-known"/>
+            <operator value="="/>
+            <answerBoolean value="true"/>
+         </enableWhen>
          <required value="true"/>
          <repeats value="false"/>
       </item>

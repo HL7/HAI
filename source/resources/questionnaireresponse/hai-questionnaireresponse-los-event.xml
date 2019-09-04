@@ -2,10 +2,9 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
    <id value="hai-questionnaireresponse-los-event"/>
    <meta>
-      <versionId value="1"/>
-      <lastUpdated value="2019-03-05T16:59:54.000-05:00"/>
       <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse"/>
    </meta>
+   <language value="en-US"/>
    <text>
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
@@ -24,10 +23,16 @@
             </tr>
             <tr>
                <td>
+                  <b>Language:</b>
+               </td>
+               <td>en-US</td>
+            </tr>
+            <tr>
+               <td>
                   <b>Identifier:</b>
                </td>
                <td>
-                  <span title="Code system: urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2">20202201</span>
+                  <span title="Code system: urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2">20202202</span>
                </td>
             </tr>
             <tr>
@@ -60,226 +65,170 @@
             </tr>
          </table>
          <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
-         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform" class="bare">
-            <tr>
-               <td>
-                  <b>Facility ID</b>
-               </td>
-               <td>facility</td>
-               <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Event #</b>
-               </td>
-               <td>event-number</td>
-               <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Event Type</b>
-               </td>
-               <td>event-type</td>
-               <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">QuestionnaireResponse Answers</h2>
+         <ul xmlns:xsl="http://www.w3.org/1999/XSL/Transform" style="list-style:none;">
+            <li>
+               <span style="font-weight:bold">Facility ID</span> [<span style="font-style:italic">facility</span>]: 
+        <span style="text-decoration:underline">urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1:9W</span>
+            </li>
+            <li>
+               <span style="font-weight:bold">Event Number</span> [<span style="font-style:italic">event-number</span>]: 
+        <span style="text-decoration:underline">urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31</span>
+            </li>
+            <li>
+               <span style="font-weight:bold">Event Type</span> [<span style="font-style:italic">event-type</span>]: 
+        <ul>
+                  <span style="text-decoration:underline">
                      <li>Late-onset neonatal sepsis (disorder)</li>
                      <li>Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>
                      </li>
                      <li>Code: 765107002</li>
-                  </ul>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Date of Event</b>
-               </td>
-               <td>date-of-event</td>
-               <td>2018-01-02</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Facility Location</b>
-               </td>
-               <td>facility-location</td>
-               <td>
-                  <ul style="list-style:none; padding-left:0; margin:0 0;">
+                  </span>
+               </ul>
+            </li>
+            <li>
+               <span style="font-weight:bold">Date of Event</span> [<span style="font-style:italic">date-of-event</span>]: 
+        <span style="text-decoration:underline">2018-01-02</span>
+            </li>
+            <li>
+               <span style="font-weight:bold">Facility Location</span> [<span style="font-style:italic">facility-location</span>]: 
+        <ul>
+                  <span style="text-decoration:underline">
                      <li>Medical/Surgical Critical Care</li>
                      <li>Code system: <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259">http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259</a>
                      </li>
                      <li>Code: 1029-8</li>
-                  </ul>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Date Admitted to Facility:</b>
-               </td>
-               <td>date-admitted-to-facility</td>
-               <td>2018-01-01</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false.</b>
-               </td>
-               <td>inborn-outborn-observation</td>
-               <td>false</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Risk Factors: Contains central line present, birth weight, gestational age</b>
-               </td>
-               <td>risk-factors</td>
-               <tr>
-                  <td>
-                     <b>Risk Factor: Central line present prior to event, including umbilical catheter</b>
-                  </td>
-                  <td>risk-factor-central-line</td>
-                  <td>true</td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Risk Factor: Birth weight (grams)</b>
-                  </td>
-                  <td>risk-factor-birth-weight</td>
-                  <td>700g</td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Risk Factor: Gestational age (days)</b>
-                  </td>
-                  <td>risk-factor-gestational-age</td>
-                  <td>276d</td>
-               </tr>
-            </tr>
-            <tr>
-               <td>
-                  <b>Event Details</b>
-               </td>
-               <td>event-details</td>
-               <tr>
-                  <td>
-                     <b>Specific Event</b>
-                  </td>
-                  <td>infection-condition</td>
-                  <td>
-                     <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)</li>
-                        <li>Code system: <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277">http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277</a>
-                        </li>
-                        <li>Code: 3067-6</li>
-                     </ul>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Laboratory Criteria Used</b>
-                  </td>
-                  <td>criteria-used</td>
-                  <td>
-                     <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>Recognized pathogen from one or more blood cultures</li>
-                        <li>Code system: <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277">http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277</a>
-                        </li>
-                        <li>Code: 1951-3</li>
-                     </ul>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Died</b>
-                  </td>
-                  <td>died</td>
-                  <td>false</td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Discharge Date</b>
-                  </td>
-                  <td>discharge-date</td>
-                  <td>2018-01-12</td>
-               </tr>
-            </tr>
-            <tr>
-               <td>
-                  <b>Findings Group: Records whether infection organisms were identified and, if so, records details about them.</b>
-               </td>
-               <td>findings-group</td>
-               <tr>
-                  <td>
-                     <b>Pathogen Identified</b>
-                  </td>
-                  <td>pathogen-identified</td>
-                  <td>
-                     <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>Clostridium symbiosum (organism)</li>
-                        <li>Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                        </li>
-                        <li>Code: 48321006</li>
-                     </ul>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Pathogen Ranking</b>
-                  </td>
-                  <td>pathogen-ranking</td>
-                  <td>
-                     <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>First</li>
-                        <li>Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                        </li>
-                        <li>Code: 255216001</li>
-                     </ul>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Drug Susceptibility Test Group</b>
-                  </td>
-                  <td>drug-susceptibility-test-group</td>
-                  <tr>
-                     <td>
-                        <b>Drug Susceptibility Test</b>
-                     </td>
-                     <td>drug-susceptibility-test</td>
-                     <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                           <li>Clarithro Susc Islt</li>
-                           <li>Code system: <a href="http://loinc.org">http://loinc.org</a>
+                  </span>
+               </ul>
+            </li>
+            <li>
+               <span style="font-weight:bold">Date Admitted to Facility:</span> [<span style="font-style:italic">date-admitted-to-facility</span>]: 
+        <span style="text-decoration:underline">2018-01-01</span>
+            </li>
+            <li>
+               <span style="font-weight:bold">Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false.</span> [<span style="font-style:italic">inborn-outborn-observation</span>]: 
+        <span style="text-decoration:underline">false</span>
+            </li>
+            <li>
+               <span style="font-weight:bold">Risk Factors: Contains central line present, birth weight, gestational age</span> [<span style="font-style:italic">risk-factors</span>]: 
+        <ul style="list-style:none;">
+                  <li>
+                     <span style="font-weight:bold">Risk Factor: Central line present prior to event, including umbilical catheter</span> [<span style="font-style:italic">risk-factor-central-line</span>]: 
+        <span style="text-decoration:underline">true</span>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Risk Factor: Birth weight (grams)</span> [<span style="font-style:italic">risk-factor-birth-weight</span>]: 
+        <span style="text-decoration:underline">700g</span>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Gestational age known: set true if known and false if unknown</span> [<span style="font-style:italic">gestational-age-known</span>]: 
+        <span style="text-decoration:underline">true</span>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Risk Factor: Gestational age (days)</span> [<span style="font-style:italic">risk-factor-gestational-age</span>]: 
+        <span style="text-decoration:underline">276d</span>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="font-weight:bold">Event Details</span> [<span style="font-style:italic">event-details</span>]: 
+        <ul style="list-style:none;">
+                  <li>
+                     <span style="font-weight:bold">Specific Event</span> [<span style="font-style:italic">infection-condition</span>]: 
+        <ul>
+                        <span style="text-decoration:underline">
+                           <li>Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)</li>
+                           <li>Code system: <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277">http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277</a>
                            </li>
-                           <li>Code: 18907-6</li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <b>Drug Susceptibility Test Interpretation</b>
-                     </td>
-                     <td>drug-susceptibility-test-interpretation</td>
-                     <td>
-                        <ul style="list-style:none; padding-left:0; margin:0 0;">
-                           <li>Resistant</li>
-                           <li>Code system: <a href="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation">http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</a>
+                           <li>Code: 3067-6</li>
+                        </span>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Laboratory Criteria Used</span> [<span style="font-style:italic">criteria-used</span>]: 
+        <ul>
+                        <span style="text-decoration:underline">
+                           <li>Recognized pathogen from one or more blood cultures</li>
+                           <li>Code system: <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277">http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277</a>
                            </li>
-                           <li>Code: R</li>
-                        </ul>
-                     </td>
-                  </tr>
-               </tr>
-            </tr>
-            <tr>
-               <td>
-                  <b>Comments</b>
-               </td>
-               <td>nhsn-comment</td>
-               <td>NHSN text comment that is less than 2000 characters.</td>
-            </tr>
-         </table>
+                           <li>Code: 1951-3</li>
+                        </span>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Died</span> [<span style="font-style:italic">died</span>]: 
+        <span style="text-decoration:underline">false</span>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Discharge Date</span> [<span style="font-style:italic">discharge-date</span>]: 
+        <span style="text-decoration:underline">2018-01-12</span>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="font-weight:bold">Findings Group: Records whether infection organisms were identified and, if so, records details about them.</span> [<span style="font-style:italic">findings-group</span>]: 
+        <ul style="list-style:none;">
+                  <li>
+                     <span style="font-weight:bold">Pathogen Identified</span> [<span style="font-style:italic">pathogen-identified</span>]: 
+        <ul>
+                        <span style="text-decoration:underline">
+                           <li>Clostridium symbiosum (organism)</li>
+                           <li>Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                           </li>
+                           <li>Code: 48321006</li>
+                        </span>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Pathogen Ranking</span> [<span style="font-style:italic">pathogen-ranking</span>]: 
+        <ul>
+                        <span style="text-decoration:underline">
+                           <li>First</li>
+                           <li>Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                           </li>
+                           <li>Code: 255216001</li>
+                        </span>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Drug Susceptibility Test Group</span> [<span style="font-style:italic">drug-susceptibility-test-group</span>]: 
+        <ul style="list-style:none;">
+                        <li>
+                           <span style="font-weight:bold">Drug Susceptibility Test</span> [<span style="font-style:italic">drug-susceptibility-test</span>]: 
+        <ul>
+                              <span style="text-decoration:underline">
+                                 <li>Clarithro Susc Islt</li>
+                                 <li>Code system: <a href="http://loinc.org">http://loinc.org</a>
+                                 </li>
+                                 <li>Code: 18907-6</li>
+                              </span>
+                           </ul>
+                        </li>
+                        <li>
+                           <span style="font-weight:bold">Drug Susceptibility Test Interpretation</span> [<span style="font-style:italic">drug-susceptibility-test-interpretation</span>]: 
+        <ul>
+                              <span style="text-decoration:underline">
+                                 <li>Resistant</li>
+                                 <li>Code system: <a href="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation">http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</a>
+                                 </li>
+                                 <li>Code: R</li>
+                              </span>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="font-weight:bold">Comments</span> [<span style="font-style:italic">nhsn-comment</span>]: 
+        <span style="text-decoration:underline">NHSN text comment that is less than 2000 characters.</span>
+            </li>
+         </ul>
       </div>
    </text>
    <identifier>
       <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
-      <value value="20202201"/>
+      <value value="20202202"/>
    </identifier>
    <questionnaire value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event"/>
    <status value="completed"/>
@@ -300,7 +249,7 @@
    </item>
    <item>
       <linkId value="event-number"/>
-      <text value="Event #"/>
+      <text value="Event Number"/>
       <answer>
          <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31"/>
       </answer>
@@ -366,6 +315,13 @@
                <value value="700"/>
                <unit value="g"/>
             </valueQuantity>
+         </answer>
+      </item>
+      <item>
+         <linkId value="gestational-age-known"/>
+         <text value="Gestational age known: set true if known and false if unknown"/>
+         <answer>
+            <valueBoolean value="true"/>
          </answer>
       </item>
       <item>

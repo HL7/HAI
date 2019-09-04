@@ -2,8 +2,6 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
    <id value="hai-questionnaire-opc-sdom-event"/>
    <meta>
-      <versionId value="2"/>
-      <lastUpdated value="2019-03-11T00:49:08.000-04:00"/>
       <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
    </meta>
    <language value="en-US"/>
@@ -11,9 +9,7 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
          <h1 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Outpatient Procedure Component Same Day Outcome Measures Event Report</h1>
-         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-            <p>This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Same Day Outcome Measures Event Report. It records data on each patient who experienced one or more of the same day outcome measures events.</p>
-         </p>
+         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Same Day Outcome Measures Event Report. It records data on each patient who experienced one or more of the same day outcome measures events.</p>
          <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Details</h2>
          <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <tr>
@@ -52,7 +48,7 @@
                <td>
                   <b>Version:</b>
                </td>
-               <td>Version: R1</td>
+               <td>Version: 2.0.0</td>
             </tr>
             <tr>
                <td>
@@ -88,7 +84,7 @@
                <td>
                   <b>Publisher:</b>
                </td>
-               <td>HL7</td>
+               <td>HL7 Structured Documents Work Group</td>
             </tr>
             <tr>
                <td>
@@ -114,156 +110,72 @@
          </table>
          <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
          <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
-         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Items</h2>
-         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform" border="1">
-            <tr>
-               <th align="left">Group</th>
-               <th align="left">text</th>
-               <th align="left">linkId</th>
-               <th align="left">type</th>
-               <th align="left">required</th>
-               <th align="left">repeats</th>
-               <th align="left">enableWhen</th>
-               <th align="left">answerValueSet</th>
-            </tr>
-            <tr>
-               <td/>
-               <td>Facility ID</td>
-               <td>facility-id</td>
-               <td>url</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td/>
-               <td>Date of Encounter (Admission)</td>
-               <td>date-of-encounter</td>
-               <td>date</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td colspan="8">Group</td>
-            </tr>
-            <tr>
-               <td/>
-               <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-               <td>same-day-outcome-measures-event-details</td>
-               <td>group</td>
-               <td/>
-               <td>false</td>
-               <td/>
-               <td/>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Patient Burn</td>
-                  <td>same-day-outcome-measure-patient-burn</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Patient fall</td>
-                  <td>same-day-outcome-measure-patient-fall</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Hospital transfer/admission</td>
-                  <td>same-day-outcome-transfer-admission</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Wrong site</td>
-                  <td>same-day-outcome-measure-wrong-site</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Wrong side</td>
-                  <td>same-day-outcome-measure-wrong-side</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Wrong patient</td>
-                  <td>same-day-outcome-measure-wrong-patient</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Wrong procedure</td>
-                  <td>same-day-outcome-measure-wrong-procedure</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</td>
-                  <td>Same Day Outcome Measure: Wrong implant</td>
-                  <td>same-day-outcome-measure-wrong-implant</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-            </tr>
-            <tr>
-               <td/>
-               <td>Comments</td>
-               <td>nhsn-comment</td>
-               <td>text</td>
-               <td>false</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-         </table>
+         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Items (<span style="color:red">*</span> required)</h2>
+         <ul xmlns:xsl="http://www.w3.org/1999/XSL/Transform" style="list-style:none;">
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Facility ID</span> [<span style="font-style:italic">facility-id</span>] (url)
+    </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Date of Encounter (Admission)</span> [<span style="font-style:italic">date-of-encounter</span>] (date)
+    </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</span> [<span style="font-style:italic">same-day-outcome-measures-event-details</span>] (group)
+    <ul style="list-style:none;">
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Same Day Outcome Measure: Patient Burn</span> [<span style="font-style:italic">same-day-outcome-measure-patient-burn</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Same Day Outcome Measure: Patient fall</span> [<span style="font-style:italic">same-day-outcome-measure-patient-fall</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Same Day Outcome Measure: Hospital transfer/admission</span> [<span style="font-style:italic">same-day-outcome-transfer-admission</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Same Day Outcome Measure: Wrong site</span> [<span style="font-style:italic">same-day-outcome-measure-wrong-site</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Same Day Outcome Measure: Wrong side</span> [<span style="font-style:italic">same-day-outcome-measure-wrong-side</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Same Day Outcome Measure: Wrong patient</span> [<span style="font-style:italic">same-day-outcome-measure-wrong-patient</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Same Day Outcome Measure: Wrong procedure</span> [<span style="font-style:italic">same-day-outcome-measure-wrong-procedure</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Same Day Outcome Measure: Wrong implant</span> [<span style="font-style:italic">same-day-outcome-measure-wrong-implant</span>] (boolean)
+    </li>
+               </ul>
+            </li>
+            <li>
+               <span style="font-weight:bold">Comments</span> [<span style="font-style:italic">nhsn-comment</span>] (text)
+    </li>
+         </ul>
       </div>
    </text>
    <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-event"/>
    <identifier>
       <value value="hai-questionnaire-opc-sdom-event-v1"/>
    </identifier>
-   <version value="R1"/>
+   <version value="2.0.0"/>
    <name value="HAI_questionnaire_opc_sdom_event"/>
    <title value="Outpatient Procedure Component Same Day Outcome Measures Event Report"/>
    <status value="draft"/>
    <experimental value="false"/>
    <subjectType value="Patient"/>
    <date value="2019-04-01"/>
-   <publisher value="HL7"/>
+   <publisher value="HL7 Structured Documents Work Group"/>
    <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Same Day Outcome Measures Event Report. It records data on each patient who experienced one or more of the same day outcome measures events."/>
    <jurisdiction>
       <coding>
@@ -299,6 +211,7 @@
       </code>
       <text value="Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events"/>
       <type value="group"/>
+      <required value="true"/>
       <repeats value="false"/>
       <item>
          <linkId value="same-day-outcome-measure-patient-burn"/>

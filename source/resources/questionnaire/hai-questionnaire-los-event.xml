@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Questionnaire xmlns="http://hl7.org/fhir">
+<Questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="http://hl7.org/fhir"
+               xsi:schemaLocation="http://hl7.org/fhir ../../../../../../../../../../Dropbox/03%20Work/Lantana/Temp_Files/fhir-all-xsd/fhir-all.xsd">
    <id value="hai-questionnaire-los-event"/>
    <meta>
-      <versionId value="3"/>
-      <lastUpdated value="2019-03-13T19:43:37.000-04:00"/>
       <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
    </meta>
    <language value="en-US"/>
@@ -11,9 +11,7 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
          <h1 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Late Onset Sepsis/Meningitis Event (LOS)</h1>
-         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-            <p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.</p>
-         </p>
+         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.</p>
          <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Details</h2>
          <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <tr>
@@ -45,14 +43,14 @@
                   <b>Identifier:</b>
                </td>
                <td>
-                  <span>hai-questionnaire-los-event-v1</span>
+                  <span>hai-questionnaire-los-event-v2</span>
                </td>
             </tr>
             <tr>
                <td>
                   <b>Version:</b>
                </td>
-               <td>Version: R1</td>
+               <td>Version: 2.0.0</td>
             </tr>
             <tr>
                <td>
@@ -76,13 +74,13 @@
                <td>
                   <b>Date:</b>
                </td>
-               <td>2018-09-30</td>
+               <td>2019-04-01</td>
             </tr>
             <tr>
                <td>
                   <b>Publisher:</b>
                </td>
-               <td>HL7</td>
+               <td>HL7 Structured Documents Work Group</td>
             </tr>
             <tr>
                <td>
@@ -108,301 +106,164 @@
          </table>
          <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
          <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
-         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Items</h2>
-         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform" border="1">
-            <tr>
-               <th align="left">Group</th>
-               <th align="left">text</th>
-               <th align="left">linkId</th>
-               <th align="left">type</th>
-               <th align="left">required</th>
-               <th align="left">repeats</th>
-               <th align="left">enableWhen</th>
-               <th align="left">answerValueSet</th>
-            </tr>
-            <tr>
-               <td/>
-               <td>Facility ID</td>
-               <td>facility</td>
-               <td>url</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td/>
-               <td>Event #</td>
-               <td>event-number</td>
-               <td>url</td>
-               <td>false</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td/>
-               <td>Event Type</td>
-               <td>event-type</td>
-               <td>choice</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td>
-                  <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20</a>
-               </td>
-            </tr>
-            <tr>
-               <td/>
-               <td>Date of Event</td>
-               <td>date-of-event</td>
-               <td>date</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td/>
-               <td>Facility Location</td>
-               <td>facility-location</td>
-               <td>choice</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td>
-                  <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19</a>
-               </td>
-            </tr>
-            <tr>
-               <td/>
-               <td>Date Admitted to Facility:</td>
-               <td>date-admitted-to-facility</td>
-               <td>date</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td/>
-               <td>Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false.</td>
-               <td>inborn-outborn-observation</td>
-               <td>boolean</td>
-               <td>true</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-            <tr>
-               <td colspan="8">Group</td>
-            </tr>
-            <tr>
-               <td/>
-               <td>Risk Factors: Contains central line present, birth weight, gestational age</td>
-               <td>risk-factors</td>
-               <td>group</td>
-               <td/>
-               <td>false</td>
-               <td/>
-               <td/>
-               <tr>
-                  <td>Risk Factors: Contains central line present, birth weight, gestational age</td>
-                  <td>Risk Factor: Central line present prior to event, including umbilical catheter</td>
-                  <td>risk-factor-central-line</td>
-                  <td>boolean</td>
-                  <td>false</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Risk Factors: Contains central line present, birth weight, gestational age</td>
-                  <td>Risk Factor: Birth weight (grams)</td>
-                  <td>risk-factor-birth-weight</td>
-                  <td>quantity</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Risk Factors: Contains central line present, birth weight, gestational age</td>
-                  <td>Risk Factor: Gestational age (days)</td>
-                  <td>risk-factor-gestational-age</td>
-                  <td>quantity</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-            </tr>
-            <tr>
-               <td colspan="8">Group</td>
-            </tr>
-            <tr>
-               <td/>
-               <td>Event Details</td>
-               <td>event-details</td>
-               <td>group</td>
-               <td/>
-               <td>false</td>
-               <td/>
-               <td/>
-               <tr>
-                  <td>Event Details</td>
-                  <td>Specific Event</td>
-                  <td>infection-condition</td>
-                  <td>choice</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td>
-                     <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196</a>
-                  </td>
-               </tr>
-               <tr>
-                  <td>Event Details</td>
-                  <td>Laboratory Criteria Used</td>
-                  <td>criteria-used</td>
-                  <td>choice</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td>
-                     <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195</a>
-                  </td>
-               </tr>
-               <tr>
-                  <td>Event Details</td>
-                  <td>Died</td>
-                  <td>died</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Event Details</td>
-                  <td>Infection contributed to death</td>
-                  <td>los-contributed-to-death</td>
-                  <td>boolean</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td>died = "true"<br/>
-                  </td>
-                  <td/>
-               </tr>
-               <tr>
-                  <td>Event Details</td>
-                  <td>Discharge Date</td>
-                  <td>discharge-date</td>
-                  <td>date</td>
-                  <td>false</td>
-                  <td>false</td>
-                  <td/>
-                  <td/>
-               </tr>
-            </tr>
-            <tr>
-               <td colspan="8">Group</td>
-            </tr>
-            <tr>
-               <td/>
-               <td>Findings Group: Records whether infection organisms were identified and, if so, records details about them.</td>
-               <td>findings-group</td>
-               <td>group</td>
-               <td/>
-               <td>true</td>
-               <td/>
-               <td/>
-               <tr>
-                  <td>Findings Group: Records whether infection organisms were identified and, if so, records details about them.</td>
-                  <td>Pathogen Identified</td>
-                  <td>pathogen-identified</td>
-                  <td>choice</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td>
-                     <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16</a>
-                  </td>
-               </tr>
-               <tr>
-                  <td>Findings Group: Records whether infection organisms were identified and, if so, records details about them.</td>
-                  <td>Pathogen Ranking</td>
-                  <td>pathogen-ranking</td>
-                  <td>choice</td>
-                  <td>true</td>
-                  <td>false</td>
-                  <td/>
-                  <td>
-                     <a href="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking">http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking</a>
-                  </td>
-               </tr>
-               <tr>
-                  <td colspan="8">Group</td>
-               </tr>
-               <tr>
-                  <td>Findings Group: Records whether infection organisms were identified and, if so, records details about them.</td>
-                  <td>Drug Susceptibility Test Group</td>
-                  <td>drug-susceptibility-test-group</td>
-                  <td>group</td>
-                  <td/>
-                  <td>true</td>
-                  <td/>
-                  <td/>
-                  <tr>
-                     <td>Drug Susceptibility Test Group</td>
-                     <td>Drug Susceptibility Test</td>
-                     <td>drug-susceptibility-test</td>
-                     <td>choice</td>
-                     <td>true</td>
-                     <td>false</td>
-                     <td/>
-                     <td>
-                        <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15</a>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>Drug Susceptibility Test Group</td>
-                     <td>Drug Susceptibility Test Interpretation</td>
-                     <td>drug-susceptibility-test-interpretation</td>
-                     <td>choice</td>
-                     <td>false</td>
-                     <td>false</td>
-                     <td/>
-                     <td>
-                        <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13</a>
-                     </td>
-                  </tr>
-               </tr>
-            </tr>
-            <tr>
-               <td/>
-               <td>Comments</td>
-               <td>nhsn-comment</td>
-               <td>text</td>
-               <td>false</td>
-               <td>false</td>
-               <td/>
-               <td/>
-            </tr>
-         </table>
+         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Items (<span style="color:red">*</span> required)</h2>
+         <ul xmlns:xsl="http://www.w3.org/1999/XSL/Transform" style="list-style:none;">
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Facility ID</span> [<span style="font-style:italic">facility</span>] (url)
+    </li>
+            <li>
+               <span style="font-weight:bold">Event Number</span> [<span style="font-style:italic">event-number</span>] (url)
+    </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Event Type</span> [<span style="font-style:italic">event-type</span>] (choice)
+    <ul>
+                  <li>answerValueSet: <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20</a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Date of Event</span> [<span style="font-style:italic">date-of-event</span>] (date)
+    </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Facility Location</span> [<span style="font-style:italic">facility-location</span>] (choice)
+    <ul>
+                  <li>answerValueSet: <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19</a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Date Admitted to Facility:</span> [<span style="font-style:italic">date-admitted-to-facility</span>] (date)
+    </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false.</span> [<span style="font-style:italic">inborn-outborn-observation</span>] (boolean)
+    </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Risk Factors: Contains central line present, birth weight, gestational age</span> [<span style="font-style:italic">risk-factors</span>] (group)
+    <ul style="list-style:none;">
+                  <li>
+                     <span style="font-weight:bold">Risk Factor: Central line present prior to event, including umbilical catheter</span> [<span style="font-style:italic">risk-factor-central-line</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Risk Factor: Birth weight (grams)</span> [<span style="font-style:italic">risk-factor-birth-weight</span>] (quantity)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Gestational age known: set true if known and false if unknown</span> [<span style="font-style:italic">gestational-age-known</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Risk Factor: Gestational age (days)</span> [<span style="font-style:italic">risk-factor-gestational-age</span>] (quantity)
+    <ul>
+                        <li>Enable when: <span style="font-style:italic">gestational-age-known</span> = "true"<br/>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Event Details</span> [<span style="font-style:italic">event-details</span>] (group)
+    <ul style="list-style:none;">
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Specific Event</span> [<span style="font-style:italic">infection-condition</span>] (choice)
+    <ul>
+                        <li>answerValueSet: <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Laboratory Criteria Used</span> [<span style="font-style:italic">criteria-used</span>] (choice)
+    <ul>
+                        <li>answerValueSet: <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Died</span> [<span style="font-style:italic">died</span>] (boolean)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Infection contributed to death</span> [<span style="font-style:italic">los-contributed-to-death</span>] (boolean)
+    <ul>
+                        <li>Enable when: <span style="font-style:italic">died</span> = "true"<br/>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Discharge Date</span> [<span style="font-style:italic">discharge-date</span>] (date)
+    </li>
+               </ul>
+            </li>
+            <li>
+               <span style="color:red">* </span>
+               <span style="font-weight:bold">Findings Group: Records whether infection organisms were identified and, if so, records details about them.</span> [<span style="font-style:italic">findings-group</span>] (group, repeats)
+    <ul style="list-style:none;">
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Pathogen Identified</span> [<span style="font-style:italic">pathogen-identified</span>] (choice)
+    <ul>
+                        <li>answerValueSet: <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Pathogen Ranking</span> [<span style="font-style:italic">pathogen-ranking</span>] (choice)
+    <ul>
+                        <li>answerValueSet: <a href="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking">http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Drug Susceptibility Test Group</span> [<span style="font-style:italic">drug-susceptibility-test-group</span>] (group, repeats)
+    <ul style="list-style:none;">
+                        <li>
+                           <span style="color:red">* </span>
+                           <span style="font-weight:bold">Drug Susceptibility Test</span> [<span style="font-style:italic">drug-susceptibility-test</span>] (choice)
+    <ul>
+                              <li>answerValueSet: <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <span style="font-weight:bold">Drug Susceptibility Test Interpretation</span> [<span style="font-style:italic">drug-susceptibility-test-interpretation</span>] (choice)
+    <ul>
+                              <li>answerValueSet: <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="font-weight:bold">Comments</span> [<span style="font-style:italic">nhsn-comment</span>] (text)
+    </li>
+         </ul>
       </div>
    </text>
    <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event"/>
    <identifier>
-      <value value="hai-questionnaire-los-event-v1"/>
+      <value value="hai-questionnaire-los-event-v2"/>
    </identifier>
-   <version value="R1"/>
+   <version value="2.0.0"/>
    <name value="HAI_questionnaire_los_event"/>
    <title value="Late Onset Sepsis/Meningitis Event (LOS)"/>
    <status value="draft"/>
    <subjectType value="Patient"/>
-   <date value="2018-09-30"/>
-   <publisher value="HL7"/>
+   <date value="2019-04-01"/>
+   <publisher value="HL7 Structured Documents Work Group"/>
    <description value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present."/>
    <jurisdiction>
       <coding>
@@ -424,7 +285,7 @@
    </item>
    <item>
       <linkId value="event-number"/>
-      <text value="Event #"/>
+      <text value="Event Number"/>
       <type value="url"/>
       <required value="false"/>
       <repeats value="false"/>
@@ -480,6 +341,7 @@
       </code>
       <text value="Risk Factors: Contains central line present, birth weight, gestational age"/>
       <type value="group"/>
+      <required value="true"/>
       <repeats value="false"/>
       <item>
          <linkId value="risk-factor-central-line"/>
@@ -506,6 +368,13 @@
          <repeats value="false"/>
       </item>
       <item>
+         <linkId value="gestational-age-known"/>
+         <text value="Gestational age known: set true if known and false if unknown"/>
+         <type value="boolean"/>
+         <required value="true"/>
+         <repeats value="false"/>
+      </item>
+      <item>
          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
             <valueCoding>
                <system value="http://unitsofmeasure.org"/>
@@ -521,6 +390,11 @@
          </code>
          <text value="Risk Factor: Gestational age (days)"/>
          <type value="quantity"/>
+         <enableWhen>
+            <question value="gestational-age-known"/>
+            <operator value="="/>
+            <answerBoolean value="true"/>
+         </enableWhen>
          <required value="true"/>
          <repeats value="false"/>
       </item>
@@ -534,6 +408,7 @@
       </code>
       <text value="Event Details"/>
       <type value="group"/>
+      <required value="true"/>
       <repeats value="false"/>
       <item>
          <linkId value="infection-condition"/>
@@ -592,6 +467,7 @@
       </code>
       <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/>
       <type value="group"/>
+      <required value="true"/>
       <repeats value="true"/>
       <item>
          <linkId value="pathogen-identified"/>

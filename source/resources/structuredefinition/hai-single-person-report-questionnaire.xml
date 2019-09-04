@@ -111,6 +111,7 @@
       <patternCoding>
         <system value="http://loinc.org" />
         <code value="51897-7" />
+        <display value="Healthcare Associated Infection report Document"/>
       </patternCoding>
       <mustSupport value="true" />
     </element>
@@ -179,68 +180,6 @@
     <element id="Questionnaire.item.item">
       <path value="Questionnaire.item.item" />
       <mustSupport value="true" />
-    </element>
-    <element id="Questionnaire.item.item.extension">
-      <path value="Questionnaire.item.item.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <!--<element id="Questionnaire.item.item.extension:extensionQuestionnaireAllowedProfile">
-      <path value="Questionnaire.item.item.extension" />
-      <sliceName value="extensionQuestionnaireAllowedProfile" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-allowedProfile" />
-      </type>
-      <mustSupport value="true" />
-    </element>-->
-    <element id="Questionnaire.item.item.extension:extensionQuestionnaire-unit">
-      <path value="Questionnaire.item.item.extension" />
-      <sliceName value="extensionQuestionnaire-unit" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-unit" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Questionnaire.item.item.linkId">
-      <path value="Questionnaire.item.item.linkId" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Questionnaire.item.item.code">
-      <path value="Questionnaire.item.item.code" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Questionnaire.item.item.type">
-      <path value="Questionnaire.item.item.type" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Questionnaire.item.item.enableWhen">
-      <path value="Questionnaire.item.item.enableWhen" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Questionnaire.item.item.required">
-      <path value="Questionnaire.item.item.required" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Questionnaire.item.item.repeats">
-      <path value="Questionnaire.item.item.repeats" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Questionnaire.item.item.answerOption">
-      <path value="Questionnaire.item.item.answerOption" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Questionnaire.item.item.item">
-      <path value="Questionnaire.item.item.item" />
-      <mustSupport value="false" />
     </element>
   </differential>
 </StructureDefinition>

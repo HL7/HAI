@@ -127,21 +127,5 @@
       <definition value="The answer to the questionnaire question (item)" />
       <mustSupport value="true" />
     </element>
-    <element id="QuestionnaireResponse.item.item">
-      <path value="QuestionnaireResponse.item.item" />
-      <short value="item" />
-      <definition value="A nested questionnaire item (contained in a group)" />
-    </element>
-    <element id="QuestionnaireResponse.item.item.text">
-      <path value="QuestionnaireResponse.item.item.text" />
-      <short value="text" />
-      <definition value="Text description of the questionnaire item" />
-      <mustSupport value="true" />
-    </element>
-    <element id="QuestionnaireResponse.item.item.answer">
-      <path value="QuestionnaireResponse.item.item.answer" />
-      <definition value="The answer to the questionnaire question (item)" />
-      <mustSupport value="true" />
-    </element>
   </differential>
 </StructureDefinition>

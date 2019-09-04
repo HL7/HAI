@@ -2,8 +2,6 @@
 <QuestionnaireResponse xmlns="http://hl7.org/fhir">
    <id value="hai-questionnaireresponse-opc-proc-denom"/>
    <meta>
-      <versionId value="1"/>
-      <lastUpdated value="2019-03-13T23:52:39.000-04:00"/>
       <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse"/>
    </meta>
    <language value="en-US"/>
@@ -34,7 +32,7 @@
                   <b>Identifier:</b>
                </td>
                <td>
-                  <span title="Code system: urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2">20202209</span>
+                  <span title="Code system: urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2">20202203</span>
                </td>
             </tr>
             <tr>
@@ -67,158 +65,112 @@
             </tr>
          </table>
          <br xmlns:xsl="http://www.w3.org/1999/XSL/Transform"/>
-         <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform" class="bare">
-            <tr>
-               <td>
-                  <b>Facility ID</b>
-               </td>
-               <td>facility-id</td>
-               <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Event Number</b>
-               </td>
-               <td>event-number</td>
-               <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Date of encounter</b>
-               </td>
-               <td>encounter-date</td>
-               <td>2018-12-23</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Risk Factors</b>
-               </td>
-               <td>risk-factors</td>
-               <tr>
-                  <td>
-                     <b>Risk Factor: Wound class</b>
-                  </td>
-                  <td>risk-factor-wound-class</td>
-                  <td>
-                     <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>CDC Class II/Clean-contaminated</li>
-                        <li>Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                        </li>
-                        <li>Code: 418115006</li>
+         <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">QuestionnaireResponse Answers</h2>
+         <ul xmlns:xsl="http://www.w3.org/1999/XSL/Transform" style="list-style:none;">
+            <li>
+               <span style="font-weight:bold">Facility ID</span> [<span style="font-style:italic">facility-id</span>]: 
+        <span style="text-decoration:underline">urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1</span>
+            </li>
+            <li>
+               <span style="font-weight:bold">Event Number</span> [<span style="font-style:italic">event-number</span>]: 
+        <span style="text-decoration:underline">urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31</span>
+            </li>
+            <li>
+               <span style="font-weight:bold">Date of encounter</span> [<span style="font-style:italic">encounter-date</span>]: 
+        <span style="text-decoration:underline">2018-12-23</span>
+            </li>
+            <li>
+               <span style="font-weight:bold">Risk Factors</span> [<span style="font-style:italic">risk-factors</span>]: 
+        <ul style="list-style:none;">
+                  <li>
+                     <span style="font-weight:bold">Risk Factor: Wound class</span> [<span style="font-style:italic">risk-factor-wound-class</span>]: 
+        <ul>
+                        <span style="text-decoration:underline">
+                           <li>CDC Class II/Clean-contaminated</li>
+                           <li>Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                           </li>
+                           <li>Code: 418115006</li>
+                        </span>
                      </ul>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Risk Factor: Endoscopy used</b>
-                  </td>
-                  <td>risk-factor-endoscopy</td>
-                  <td>true</td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Risk Factor: Diabetes mellitus</b>
-                  </td>
-                  <td>risk-factor-diabetes-mellitus</td>
-                  <td>false</td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Risk Factor: height</b>
-                  </td>
-                  <td>risk-factor-height</td>
-                  <td>168cm</td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Risk Factor: height</b>
-                  </td>
-                  <td>risk-factor-weight</td>
-                  <td>68kg</td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Risk Factor: ASA Class</b>
-                  </td>
-                  <td>risk-factor-asa-class</td>
-                  <td>
-                     <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>ASA physical status class 1</li>
-                        <li>Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>
-                        </li>
-                        <li>Code: 413495001</li>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Risk Factor: Endoscopy used</span> [<span style="font-style:italic">risk-factor-endoscopy</span>]: 
+        <span style="text-decoration:underline">true</span>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Risk Factor: Diabetes mellitus</span> [<span style="font-style:italic">risk-factor-diabetes-mellitus</span>]: 
+        <span style="text-decoration:underline">false</span>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Risk Factor: height</span> [<span style="font-style:italic">risk-factor-height</span>]: 
+        <span style="text-decoration:underline">168cm</span>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Risk Factor: weight</span> [<span style="font-style:italic">risk-factor-weight</span>]: 
+        <span style="text-decoration:underline">68kg</span>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Risk Factor: ASA Class</span> [<span style="font-style:italic">risk-factor-asa-class</span>]: 
+        <ul>
+                        <span style="text-decoration:underline">
+                           <li>ASA physical status class 1</li>
+                           <li>Code system: <a href="http://snomed.info/sct">http://snomed.info/sct</a>
+                           </li>
+                           <li>Code: 413495001</li>
+                        </span>
                      </ul>
-                  </td>
-               </tr>
-            </tr>
-            <tr>
-               <td>
-                  <b>Procedure Details</b>
-               </td>
-               <td>procedure-details</td>
-               <tr>
-                  <td>
-                     <b>NHSN Procedure Code Category</b>
-                  </td>
-                  <td>nhsn-procedure-code-category</td>
-                  <td>
-                     <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>Appendix surgery</li>
-                        <li>Code system: <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277">http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277</a>
-                        </li>
-                        <li>Code: 2108-9</li>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="font-weight:bold">Procedure Details</span> [<span style="font-style:italic">procedure-details</span>]: 
+        <ul style="list-style:none;">
+                  <li>
+                     <span style="font-weight:bold">NHSN Procedure Code Category</span> [<span style="font-style:italic">nhsn-procedure-code-category</span>]: 
+        <ul>
+                        <span style="text-decoration:underline">
+                           <li>Appendix surgery</li>
+                           <li>Code system: <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277">http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277</a>
+                           </li>
+                           <li>Code: 2108-9</li>
+                        </span>
                      </ul>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>CPT Procedure Code</b>
-                  </td>
-                  <td>cpt-procedure-code</td>
-                  <td>
-                     <ul style="list-style:none; padding-left:0; margin:0 0;">
-                        <li>Laparoscopic Procedures on the Appendix</li>
-                        <li>Code system: <a href="http://www.ama-assn.org/go/cpt">http://www.ama-assn.org/go/cpt</a>
-                        </li>
-                        <li>Code: 44970</li>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">CPT Procedure Code</span> [<span style="font-style:italic">cpt-procedure-code</span>]: 
+        <ul>
+                        <span style="text-decoration:underline">
+                           <li>Laparoscopic Procedures on the Appendix</li>
+                           <li>Code system: <a href="http://www.ama-assn.org/go/cpt">http://www.ama-assn.org/go/cpt</a>
+                           </li>
+                           <li>Code: 44970</li>
+                        </span>
                      </ul>
-                  </td>
-               </tr>
-               <tr>
-                  <td>
-                     <b>Procedure duration</b>
-                  </td>
-                  <td>procedure-duration</td>
-                  <td>65min</td>
-               </tr>
-            </tr>
-            <tr>
-               <td>
-                  <b>General anesthesia</b>
-               </td>
-               <td>general-anesthesia</td>
-               <td>true</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Surgeon code</b>
-               </td>
-               <td>surgeon-code</td>
-               <td>urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1.1:987654</td>
-            </tr>
-            <tr>
-               <td>
-                  <b>Comments</b>
-               </td>
-               <td>nhsn-comment</td>
-               <td>NHSN text comment that is less than 2000 characters.</td>
-            </tr>
-         </table>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Procedure duration</span> [<span style="font-style:italic">procedure-duration</span>]: 
+        <span style="text-decoration:underline">65min</span>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <span style="font-weight:bold">General anesthesia</span> [<span style="font-style:italic">general-anesthesia</span>]: 
+        <span style="text-decoration:underline">true</span>
+            </li>
+            <li>
+               <span style="font-weight:bold">Surgeon code</span> [<span style="font-style:italic">surgeon-code</span>]: 
+        <span style="text-decoration:underline">urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1.1:987654</span>
+            </li>
+            <li>
+               <span style="font-weight:bold">Comments</span> [<span style="font-style:italic">nhsn-comment</span>]: 
+        <span style="text-decoration:underline">NHSN text comment that is less than 2000 characters.</span>
+            </li>
+         </ul>
       </div>
    </text>
    <identifier>
       <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
-      <value value="20202209"/>
+      <value value="20202203"/>
    </identifier>
    <questionnaire value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-proc-denom"/>
    <status value="completed"/>
@@ -291,7 +243,7 @@
       </item>
       <item>
          <linkId value="risk-factor-weight"/>
-         <text value="Risk Factor: height"/>
+         <text value="Risk Factor: weight"/>
          <answer>
             <valueQuantity>
                <value value="68"/>
