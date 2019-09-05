@@ -81,7 +81,7 @@
         <span style="text-decoration:underline">2019-01-01</span>
             </li>
             <li>
-               <span style="font-weight:bold">Location Within Facility Encounter: The Location within Facility Encounter Group represents an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded.</span> [<span style="font-style:italic">location-within-facility-encounter-group</span>]: 
+               <span style="font-weight:bold">Location Within Facility Encounter</span> [<span style="font-style:italic">location-within-facility-encounter-group</span>]: 
         <ul style="list-style:none;">
                   <li>
                      <span style="font-weight:bold">Facility Location Type</span> [<span style="font-style:italic">facility-location-type</span>]: 
@@ -120,7 +120,7 @@
                </ul>
             </li>
             <li>
-               <span style="font-weight:bold">Risk Factors: The risk factors group contains birth weight and gestational age.</span> [<span style="font-style:italic">risk-factors</span>]: 
+               <span style="font-weight:bold">Risk Factors</span> [<span style="font-style:italic">risk-factors</span>]: 
         <ul style="list-style:none;">
                   <li>
                      <span style="font-weight:bold">Risk Factor: Birth weight (grams)</span> [<span style="font-style:italic">risk-factor-birth-weight</span>]: 
@@ -180,7 +180,7 @@
    </item>
    <item>
       <linkId value="location-within-facility-encounter-group"/>
-      <text value="Location Within Facility Encounter: The Location within Facility Encounter Group represents an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded."/>
+      <text value="Location Within Facility Encounter"/>
       <item>
          <linkId value="facility-location-type"/>
          <text value="Facility Location Type"/>
@@ -227,7 +227,7 @@
    </item>
    <item>
       <linkId value="risk-factors"/>
-      <text value="Risk Factors: The risk factors group contains birth weight and gestational age."/>
+      <text value="Risk Factors"/>
       <item>
          <linkId value="risk-factor-birth-weight"/>
          <text value="Risk Factor: Birth weight (grams)"/>

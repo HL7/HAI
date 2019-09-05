@@ -14,11 +14,19 @@
     "valueString" : "C:\\Users\\minigrrl\\Documents\\Work\\SourceControl\\GitHub\\HL7\\FHIR\\HAI\\source\\pages"
   }],
   "url" : "http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai",
-  "version" : "1.1.0",
+  "version" : "2.0.0",
   "name" : "HealthcareAssociatedInfectionReports",
   "title" : "Healthcare Associated Infection Reports, FHIR STU 2 Ballot - US Realm",
   "status" : "draft",
   "experimental" : false,
+  "publisher" : "HL7 International - Structured Documents Work Group",
+  "contact" : [{
+    "name" : "HL7 International - Structured Documents Work Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/structure/"
+    }]
+  }],
   "description" : "This implementation guide (IG) specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.\n\nAs reports are modified and new report types are defined, CDC and Health Level Seven (HL7) will develop and publish additional constraints.\n\nThroughout this process, CDC remains the authority on NHSN data collection protocols. When healthcare enterprises choose to participate in NHSN, they must report to CDC occurrences such as specific reportable procedures, even those without complications, and events such as a bloodstream infection, either confirmed by a positive blood culture or supported by a patients clinical symptoms. This specification opens the channel for data submission by all applications compliant with the data coding requirements defined here.\n\nNote that participation in the NHSN requires enrollment and filing of reporting plans, which are not defined by this specification. For an overview of NHSN and full information on NHSN participation requirements, see: [http://www.cdc.gov/nhsn](http://www.cdc.gov/nhsn). Provisions of the Public Health Service Act protect all data reported to NHSN from discovery through the Freedom of Information Act (FOIA).",
   "packageId" : "hl7.fhir.us.hai",
   "license" : "CC0-1.0",

@@ -153,6 +153,8 @@
                <span style="color:red">* </span>
                <span style="font-weight:bold">Summary Data</span> [<span style="font-style:italic">summary-data-group</span>] (group)
     <ul style="list-style:none;">
+                  <li>This group contains specific counts for the type of report. [<span style="font-style:italic">summary-data-group-description</span>] (display)
+    </li>
                   <li>
                      <span style="color:red">* </span>
                      <span style="font-weight:bold">Number of Total Facility Encounters (for outpatient location)</span> [<span style="font-style:italic">total-facility-encounters-outpatient</span>] (integer)
@@ -163,6 +165,8 @@
                <span style="color:red">* </span>
                <span style="font-weight:bold">Report no events</span> [<span style="font-style:italic">report-no-events-group</span>] (group)
     <ul style="list-style:none;">
+                  <li>This group contains statements that there are no events to report for a particular type of event. [<span style="font-style:italic">report-no-events-group-description</span>] (display)
+    </li>
                   <li>
                      <span style="font-weight:bold">No Same Day Outcome Measures (events) reported this month</span> [<span style="font-style:italic">no-same-day-outcome-measures</span>] (boolean)
     </li>
@@ -251,6 +255,11 @@
       <required value="true"/>
       <repeats value="false"/>
       <item>
+         <linkId value="summary-data-group-description"/>
+         <text value="This group contains specific counts for the type of report."/>
+         <type value="display"/>
+      </item>
+      <item>
          <linkId value="total-facility-encounters-outpatient"/>
          <code>
             <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
@@ -274,6 +283,11 @@
       <type value="group"/>
       <required value="true"/>
       <repeats value="false"/>
+      <item>
+         <linkId value="report-no-events-group-description"/>
+         <text value="This group contains statements that there are no events to report for a particular type of event."/>
+         <type value="display"/>
+      </item>
       <item>
          <linkId value="no-same-day-outcome-measures"/>
          <code>

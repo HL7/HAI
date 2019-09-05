@@ -216,7 +216,7 @@
                </ul>
             </li>
             <li>
-               <span style="font-weight:bold">Findings Group: Records whether infection organisms were identified and, if so, records details about them.</span> [<span style="font-style:italic">findings-group</span>]: 
+               <span style="font-weight:bold">Findings Group</span> [<span style="font-style:italic">findings-group</span>]: 
         <ul style="list-style:none;">
                   <li>
                      <span style="font-weight:bold">Pathogen Identified</span> [<span style="font-style:italic">pathogen-identified</span>]: 
@@ -243,7 +243,7 @@
                </ul>
             </li>
             <li>
-               <span style="font-weight:bold">Findings Group: Records whether infection organisms were identified and, if so, records details about them.</span> [<span style="font-style:italic">findings-group</span>]: 
+               <span style="font-weight:bold">Findings Group</span> [<span style="font-style:italic">findings-group</span>]: 
         <ul style="list-style:none;">
                   <li>
                      <span style="font-weight:bold">Pathogen Identified</span> [<span style="font-style:italic">pathogen-identified</span>]: 
@@ -270,7 +270,7 @@
                </ul>
             </li>
             <li>
-               <span style="font-weight:bold">Findings Group: Records whether infection organisms were identified and, if so, records details about them.</span> [<span style="font-style:italic">findings-group</span>]: 
+               <span style="font-weight:bold">Findings Group</span> [<span style="font-style:italic">findings-group</span>]: 
         <ul style="list-style:none;">
                   <li>
                      <span style="font-weight:bold">Pathogen Identified</span> [<span style="font-style:italic">pathogen-identified</span>]: 
@@ -519,7 +519,7 @@
    </item>
    <item>
       <linkId value="findings-group"/>
-      <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/>
+      <text value="Findings Group"/>
       <item>
          <linkId value="pathogen-identified"/>
          <text value="Pathogen Identified"/>
@@ -545,7 +545,7 @@
    </item>
    <item>
       <linkId value="findings-group"/>
-      <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/>
+      <text value="Findings Group"/>
       <item>
          <linkId value="pathogen-identified"/>
          <text value="Pathogen Identified"/>
@@ -571,7 +571,7 @@
    </item>
    <item>
       <linkId value="findings-group"/>
-      <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/>
+      <text value="Findings Group"/>
       <item>
          <linkId value="pathogen-identified"/>
          <text value="Pathogen Identified"/>

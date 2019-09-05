@@ -76,7 +76,7 @@
         <span style="text-decoration:underline">2018-08-05</span>
             </li>
             <li>
-               <span style="font-weight:bold">Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</span> [<span style="font-style:italic">same-day-outcome-measures-event-details</span>]: 
+               <span style="font-weight:bold">Same Day Outcome Measures Event Details</span> [<span style="font-style:italic">same-day-outcome-measures-event-details</span>]: 
         <ul style="list-style:none;">
                   <li>
                      <span style="font-weight:bold">Same Day Outcome Measure: Patient Burn</span> [<span style="font-style:italic">same-day-outcome-measure-patient-burn</span>]: 
@@ -149,7 +149,7 @@
    </item>
    <item>
       <linkId value="same-day-outcome-measures-event-details"/>
-      <text value="Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events"/>
+      <text value="Same Day Outcome Measures Event Details"/>
       <item>
          <linkId value="same-day-outcome-measure-patient-burn"/>
          <text value="Same Day Outcome Measure: Patient Burn"/>

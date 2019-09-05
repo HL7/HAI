@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hai-population-summary-questionnaire" />
-  <meta>
-    <versionId value="6" />
-    <lastUpdated value="2019-09-04T06:00:00.000-04:00" />
-    <security>
-      <system value="https://trifolia-fhir.lantanagroup.com/security" />
-      <code value="user^s7DIn2HM^read" />
-    </security>
-    <security>
-      <system value="https://trifolia-fhir.lantanagroup.com/security" />
-      <code value="user^s7DIn2HM^write" />
-    </security>
-  </meta>
   <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire" />
   <version value="R1" />
   <name value="HAI_population_summary_questionnaire" />
@@ -158,7 +146,6 @@
         <valueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3595" />
       </binding>
     </element>
-
     <element id="Questionnaire.item">
       <path value="Questionnaire.item" />
       <min value="1" />

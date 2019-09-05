@@ -110,7 +110,7 @@
         <span style="text-decoration:underline">false</span>
             </li>
             <li>
-               <span style="font-weight:bold">Risk Factors: Contains central line present, birth weight, gestational age</span> [<span style="font-style:italic">risk-factors</span>]: 
+               <span style="font-weight:bold">Risk Factors</span> [<span style="font-style:italic">risk-factors</span>]: 
         <ul style="list-style:none;">
                   <li>
                      <span style="font-weight:bold">Risk Factor: Central line present prior to event, including umbilical catheter</span> [<span style="font-style:italic">risk-factor-central-line</span>]: 
@@ -157,6 +157,10 @@
                   </li>
                   <li>
                      <span style="font-weight:bold">Died</span> [<span style="font-style:italic">died</span>]: 
+        <span style="text-decoration:underline">true</span>
+                  </li>
+                  <li>
+                     <span style="font-weight:bold">Infection contributed to death</span> [<span style="font-style:italic">los-contributed-to-death</span>]: 
         <span style="text-decoration:underline">false</span>
                   </li>
                   <li>
@@ -166,7 +170,7 @@
                </ul>
             </li>
             <li>
-               <span style="font-weight:bold">Findings Group: Records whether infection organisms were identified and, if so, records details about them.</span> [<span style="font-style:italic">findings-group</span>]: 
+               <span style="font-weight:bold">Findings Group</span> [<span style="font-style:italic">findings-group</span>]: 
         <ul style="list-style:none;">
                   <li>
                      <span style="font-weight:bold">Pathogen Identified</span> [<span style="font-style:italic">pathogen-identified</span>]: 
@@ -299,7 +303,7 @@
    </item>
    <item>
       <linkId value="risk-factors"/>
-      <text value="Risk Factors: Contains central line present, birth weight, gestational age"/>
+      <text value="Risk Factors"/>
       <item>
          <linkId value="risk-factor-central-line"/>
          <text value="Risk Factor: Central line present prior to event, including umbilical catheter"/>
@@ -364,16 +368,16 @@
          <linkId value="died"/>
          <text value="Died"/>
          <answer>
+            <valueBoolean value="true"/>
+         </answer>
+      </item>
+      <item>
+         <linkId value="los-contributed-to-death"/>
+         <text value="Infection contributed to death"/>
+         <answer>
             <valueBoolean value="false"/>
          </answer>
       </item>
-      <!--<item>
-            <linkId value="los-contributed-to-death"/>
-            <text value="Infection contributed to death"/>
-            <answer>
-                <valueBoolean value="false"/>
-            </answer>
-        </item>-->
       <item>
          <linkId value="discharge-date"/>
          <text value="Discharge Date"/>
@@ -384,7 +388,7 @@
    </item>
    <item>
       <linkId value="findings-group"/>
-      <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/>
+      <text value="Findings Group"/>
       <item>
          <linkId value="pathogen-identified"/>
          <text value="Pathogen Identified"/>

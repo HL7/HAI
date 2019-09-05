@@ -145,8 +145,10 @@
     </li>
             <li>
                <span style="color:red">* </span>
-               <span style="font-weight:bold">Risk Factors: Contains central line present, birth weight, gestational age</span> [<span style="font-style:italic">risk-factors</span>] (group)
+               <span style="font-weight:bold">Risk Factors</span> [<span style="font-style:italic">risk-factors</span>] (group)
     <ul style="list-style:none;">
+                  <li>This group contains risk factors such as central line present, birth weight, and gestational age. [<span style="font-style:italic">risk-factors-group</span>] (display)
+    </li>
                   <li>
                      <span style="font-weight:bold">Risk Factor: Central line present prior to event, including umbilical catheter</span> [<span style="font-style:italic">risk-factor-central-line</span>] (boolean)
     </li>
@@ -172,6 +174,8 @@
                <span style="color:red">* </span>
                <span style="font-weight:bold">Event Details</span> [<span style="font-style:italic">event-details</span>] (group)
     <ul style="list-style:none;">
+                  <li>This group contains details aboout the late onset septis infection event. [<span style="font-style:italic">event-details-group</span>] (display)
+    </li>
                   <li>
                      <span style="color:red">* </span>
                      <span style="font-weight:bold">Specific Event</span> [<span style="font-style:italic">infection-condition</span>] (choice)
@@ -207,8 +211,10 @@
             </li>
             <li>
                <span style="color:red">* </span>
-               <span style="font-weight:bold">Findings Group: Records whether infection organisms were identified and, if so, records details about them.</span> [<span style="font-style:italic">findings-group</span>] (group, repeats)
+               <span style="font-weight:bold">Findings Group</span> [<span style="font-style:italic">findings-group</span>] (group, repeats)
     <ul style="list-style:none;">
+                  <li>This group records whether infection organisms were identified and, if so, records details about them. [<span style="font-style:italic">findings-group-description</span>] (display)
+    </li>
                   <li>
                      <span style="color:red">* </span>
                      <span style="font-weight:bold">Pathogen Identified</span> [<span style="font-style:italic">pathogen-identified</span>] (choice)
@@ -228,6 +234,8 @@
                   <li>
                      <span style="font-weight:bold">Drug Susceptibility Test Group</span> [<span style="font-style:italic">drug-susceptibility-test-group</span>] (group, repeats)
     <ul style="list-style:none;">
+                        <li>This group contains drug-susceptibility information such as the drug and the pathogen's susceptibility to it. [<span style="font-style:italic">drug-susceptibility-test-group-description</span>] (display)
+    </li>
                         <li>
                            <span style="color:red">* </span>
                            <span style="font-weight:bold">Drug Susceptibility Test</span> [<span style="font-style:italic">drug-susceptibility-test</span>] (choice)
@@ -339,10 +347,15 @@
          <code value="51898-5"/>
          <display value="Risk factors Document"/>
       </code>
-      <text value="Risk Factors: Contains central line present, birth weight, gestational age"/>
+      <text value="Risk Factors"/>
       <type value="group"/>
       <required value="true"/>
       <repeats value="false"/>
+      <item>
+         <linkId value="risk-factors-group"/>
+         <text value="This group contains risk factors such as central line present, birth weight, and gestational age."/>
+         <type value="display"/>
+      </item>
       <item>
          <linkId value="risk-factor-central-line"/>
          <code>
@@ -411,6 +424,11 @@
       <required value="true"/>
       <repeats value="false"/>
       <item>
+         <linkId value="event-details-group"/>
+         <text value="This group contains details aboout the late onset septis infection event."/>
+         <type value="display"/>
+      </item>
+      <item>
          <linkId value="infection-condition"/>
          <text value="Specific Event"/>
          <type value="choice"/>
@@ -465,10 +483,15 @@
          <code value="18769-0"/>
          <display value="Microbial susceptibility tests Set"/>
       </code>
-      <text value="Findings Group: Records whether infection organisms were identified and, if so, records details about them."/>
+      <text value="Findings Group"/>
       <type value="group"/>
       <required value="true"/>
       <repeats value="true"/>
+      <item>
+         <linkId value="findings-group-description"/>
+         <text value="This group records whether infection organisms were identified and, if so, records details about them."/>
+         <type value="display"/>
+      </item>
       <item>
          <linkId value="pathogen-identified"/>
          <text value="Pathogen Identified"/>
@@ -490,6 +513,11 @@
          <text value="Drug Susceptibility Test Group"/>
          <type value="group"/>
          <repeats value="true"/>
+         <item>
+            <linkId value="drug-susceptibility-test-group-description"/>
+            <text value="This group contains drug-susceptibility information such as the drug and the pathogen's susceptibility to it."/>
+            <type value="display"/>
+         </item>
          <item>
             <linkId value="drug-susceptibility-test"/>
             <text value="Drug Susceptibility Test"/>

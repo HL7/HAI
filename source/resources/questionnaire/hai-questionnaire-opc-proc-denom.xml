@@ -118,16 +118,14 @@
     </li>
             <li>
                <span style="color:red">* </span>
-               <span style="font-weight:bold">Event Number</span> [<span style="font-style:italic">event-number</span>] (url)
-    </li>
-            <li>
-               <span style="color:red">* </span>
                <span style="font-weight:bold">Date of encounter</span> [<span style="font-style:italic">encounter-date</span>] (date)
     </li>
             <li>
                <span style="color:red">* </span>
                <span style="font-weight:bold">Risk Factors</span> [<span style="font-style:italic">risk-factors</span>] (group)
     <ul style="list-style:none;">
+                  <li>This group contains procedure risk factors such as ASA class, diabetes mellitus, height, and weight. [<span style="font-style:italic">risk-factors-group-description</span>] (display)
+    </li>
                   <li>
                      <span style="font-weight:bold">Risk Factor: Wound class</span> [<span style="font-style:italic">risk-factor-wound-class</span>] (choice)
     <ul>
@@ -165,6 +163,12 @@
                <span style="color:red">* </span>
                <span style="font-weight:bold">Procedure Details</span> [<span style="font-style:italic">procedure-details</span>] (group)
     <ul style="list-style:none;">
+                  <li>This group contains details about the procedure. [<span style="font-style:italic">procedure-details-group-description</span>] (display)
+    </li>
+                  <li>
+                     <span style="color:red">* </span>
+                     <span style="font-weight:bold">Procedure ID</span> [<span style="font-style:italic">procedure-id</span>] (url)
+    </li>
                   <li>
                      <span style="color:red">* </span>
                      <span style="font-weight:bold">NHSN Procedure Code Category</span> [<span style="font-style:italic">nhsn-procedure-code-category</span>] (choice)
@@ -233,13 +237,6 @@
       <repeats value="false"/>
    </item>
    <item>
-      <linkId value="event-number"/>
-      <text value="Event Number"/>
-      <type value="url"/>
-      <required value="true"/>
-      <repeats value="false"/>
-   </item>
-   <item>
       <linkId value="encounter-date"/>
       <text value="Date of encounter"/>
       <type value="date"/>
@@ -257,6 +254,11 @@
       <type value="group"/>
       <required value="true"/>
       <repeats value="false"/>
+      <item>
+         <linkId value="risk-factors-group-description"/>
+         <text value="This group contains procedure risk factors such as ASA class, diabetes mellitus, height, and weight."/>
+         <type value="display"/>
+      </item>
       <item>
          <linkId value="risk-factor-wound-class"/>
          <code>
@@ -343,6 +345,18 @@
       <type value="group"/>
       <required value="true"/>
       <repeats value="false"/>
+      <item>
+         <linkId value="procedure-details-group-description"/>
+         <text value="This group contains details about the procedure."/>
+         <type value="display"/>
+      </item>
+      <item>
+         <linkId value="procedure-id"/>
+         <text value="Procedure ID"/>
+         <type value="url"/>
+         <required value="true"/>
+         <repeats value="false"/>
+      </item>
       <item>
          <linkId value="nhsn-procedure-code-category"/>
          <code>

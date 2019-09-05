@@ -122,8 +122,10 @@
     </li>
             <li>
                <span style="color:red">* </span>
-               <span style="font-weight:bold">Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events</span> [<span style="font-style:italic">same-day-outcome-measures-event-details</span>] (group)
+               <span style="font-weight:bold">Same Day Outcome Measures Event Details</span> [<span style="font-style:italic">same-day-outcome-measures-event-details</span>] (group)
     <ul style="list-style:none;">
+                  <li>This group contains details about same-day outcome measures events. [<span style="font-style:italic">same-day-outcome-measures-event-details-group-description</span>] (display)
+    </li>
                   <li>
                      <span style="color:red">* </span>
                      <span style="font-weight:bold">Same Day Outcome Measure: Patient Burn</span> [<span style="font-style:italic">same-day-outcome-measure-patient-burn</span>] (boolean)
@@ -209,10 +211,15 @@
          <code value="51899-3"/>
          <display value="Details Document"/>
       </code>
-      <text value="Same Day Outcome Measures Event Details: Contains details about same-day outcome measures events"/>
+      <text value="Same Day Outcome Measures Event Details"/>
       <type value="group"/>
       <required value="true"/>
       <repeats value="false"/>
+      <item>
+         <linkId value="same-day-outcome-measures-event-details-group-description"/>
+         <text value="This group contains details about same-day outcome measures events."/>
+         <type value="display"/>
+      </item>
       <item>
          <linkId value="same-day-outcome-measure-patient-burn"/>
          <code>

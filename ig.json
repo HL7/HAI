@@ -2,7 +2,7 @@
 	"tool": "jekyll",
 	"source": "implementationguide/hl7-fhir-us-hai.xml",
 	"version": "4.0.0",
-	"fixed-business-version": "1.1.0",
+	"fixed-business-version": "2.0.0",
 	"npm-name": "hl7.fhir.us.hai",
 	"license": "CC0-1.0",
 	"paths": {

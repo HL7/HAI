@@ -72,10 +72,6 @@
         <span style="text-decoration:underline">urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1</span>
             </li>
             <li>
-               <span style="font-weight:bold">Event Number</span> [<span style="font-style:italic">event-number</span>]: 
-        <span style="text-decoration:underline">urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31</span>
-            </li>
-            <li>
                <span style="font-weight:bold">Date of encounter</span> [<span style="font-style:italic">encounter-date</span>]: 
         <span style="text-decoration:underline">2018-12-23</span>
             </li>
@@ -125,6 +121,10 @@
             <li>
                <span style="font-weight:bold">Procedure Details</span> [<span style="font-style:italic">procedure-details</span>]: 
         <ul style="list-style:none;">
+                  <li>
+                     <span style="font-weight:bold">Procedure ID</span> [<span style="font-style:italic">procedure-id</span>]: 
+        <span style="text-decoration:underline">urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.5:21987654321</span>
+                  </li>
                   <li>
                      <span style="font-weight:bold">NHSN Procedure Code Category</span> [<span style="font-style:italic">nhsn-procedure-code-category</span>]: 
         <ul>
@@ -187,13 +187,6 @@
       <text value="Facility ID"/>
       <answer>
          <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1"/>
-      </answer>
-   </item>
-   <item>
-      <linkId value="event-number"/>
-      <text value="Event Number"/>
-      <answer>
-         <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.3:31"/>
       </answer>
    </item>
    <item>
@@ -266,6 +259,13 @@
    <item>
       <linkId value="procedure-details"/>
       <text value="Procedure Details"/>
+      <item>
+         <linkId value="procedure-id"/>
+         <text value="Procedure ID"/>
+         <answer>
+            <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.5:21987654321"/>
+         </answer>
+      </item>
       <item>
          <linkId value="nhsn-procedure-code-category"/>
          <text value="NHSN Procedure Code Category"/>

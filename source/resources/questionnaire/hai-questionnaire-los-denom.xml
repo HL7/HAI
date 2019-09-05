@@ -128,8 +128,10 @@
     </li>
             <li>
                <span style="color:red">* </span>
-               <span style="font-weight:bold">Location Within Facility Encounter: The Location within Facility Encounter Group represents an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded.</span> [<span style="font-style:italic">location-within-facility-encounter-group</span>] (group)
+               <span style="font-weight:bold">Location Within Facility Encounter</span> [<span style="font-style:italic">location-within-facility-encounter-group</span>] (group)
     <ul style="list-style:none;">
+                  <li>This group contains information detailing an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded. [<span style="font-style:italic">location-within-facility-encounter-group-description</span>] (display)
+    </li>
                   <li>
                      <span style="color:red">* </span>
                      <span style="font-weight:bold">Facility Location Type</span> [<span style="font-style:italic">facility-location-type</span>] (choice)
@@ -167,8 +169,10 @@
             </li>
             <li>
                <span style="color:red">* </span>
-               <span style="font-weight:bold">Risk Factors: The risk factors group contains birth weight and gestational age.</span> [<span style="font-style:italic">risk-factors</span>] (group)
+               <span style="font-weight:bold">Risk Factors</span> [<span style="font-style:italic">risk-factors</span>] (group)
     <ul style="list-style:none;">
+                  <li>This group contains risk factors such as birth weight and gestational age. [<span style="font-style:italic">risk-factors-group-description</span>] (display)
+    </li>
                   <li>
                      <span style="color:red">* </span>
                      <span style="font-weight:bold">Risk Factor: Birth weight (grams)</span> [<span style="font-style:italic">risk-factor-birth-weight</span>] (quantity)
@@ -245,10 +249,15 @@
          <code value="46240-8"/>
          <display value="History of Hospitalizations+Outpatient visits Narrative"/>
       </code>
-      <text value="Location Within Facility Encounter: The Location within Facility Encounter Group represents an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded."/>
+      <text value="Location Within Facility Encounter"/>
       <type value="group"/>
       <required value="true"/>
       <repeats value="false"/>
+      <item>
+         <linkId value="location-within-facility-encounter-group-description"/>
+         <text value="This group contains information detailing an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded."/>
+         <type value="display"/>
+      </item>
       <item>
          <linkId value="facility-location-type"/>
          <text value="Facility Location Type"/>
@@ -318,10 +327,15 @@
          <code value="51898-5"/>
          <display value="Risk factors Document"/>
       </code>
-      <text value="Risk Factors: The risk factors group contains birth weight and gestational age."/>
+      <text value="Risk Factors"/>
       <type value="group"/>
       <required value="true"/>
       <repeats value="false"/>
+      <item>
+         <linkId value="risk-factors-group-description"/>
+         <text value="This group contains risk factors such as birth weight and gestational age."/>
+         <type value="display"/>
+      </item>
       <item>
          <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
             <valueCoding>
