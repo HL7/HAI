@@ -9,7 +9,8 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
          <h1 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</h1>
-         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures. For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website (https://www.cdc.gov/nhsn/).</p>
+         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures.</p>
+         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website <a href="https://www.cdc.gov/nhsn/">https://www.cdc.gov/nhsn/</a>.</p>
          <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Details</h2>
          <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <tr>
@@ -190,7 +191,7 @@
    <subjectType value="Group"/>
    <date value="2019-04-01"/>
    <publisher value="HL7 Structured Documents Work Group"/>
-   <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures. For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website (https://www.cdc.gov/nhsn/)."/>
+   <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures.&#xA;&#xA;For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website [https://www.cdc.gov/nhsn/](https://www.cdc.gov/nhsn/).&#xA;"/>
    <jurisdiction>
       <coding>
          <system value="urn:iso:std:iso:3166"/>
