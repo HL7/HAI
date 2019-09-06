@@ -114,14 +114,23 @@
     </element>
     <element id="Questionnaire.code:sliceHAI.system">
       <path value="Questionnaire.code.system" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
       <fixedCode value="http://loinc.org" />
     </element>
     <element id="Questionnaire.code:sliceHAI.code">
       <path value="Questionnaire.code.code" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
       <fixedCode value="51897-7" />
     </element>
     <element id="Questionnaire.code:sliceHAI.display">
       <path value="Questionnaire.code.display" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
       <fixedCode value="Healthcare Associated Infection report Document" />
     </element>
     <element id="Questionnaire.code:slicePopulationSummaryReportType">
