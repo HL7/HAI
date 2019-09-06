@@ -1,5 +1,5 @@
 ---
-title: Late Onset Sepsis/Meningitis Denominator Mapping
+title: Late Onset Sepsis/Meningitis Denominator Mapping to CDA
 layout: default
 active: other
 ---
@@ -12,8 +12,6 @@ active: other
 {:toc} -->
 
 <!-- end TOC -->
-
-### Late Onset Sepsis/Meningitis Denominator Mapping to CDA
 
 <table class="codes">
   <thead>
@@ -116,7 +114,7 @@ active: other
     <tr>
       <td>risk-factor-gestational-age</td>
       <td>Risk Factor: Gestational age (days)</td>
-      <td>Gestational Age Observation/value/@nullFlavor="UNK"</td>
+      <td>Gestational Age Observation/value</td>
     </tr>
     <tr>
       <td>nhsn-comment</td>

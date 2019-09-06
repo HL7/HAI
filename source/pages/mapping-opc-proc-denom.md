@@ -1,5 +1,5 @@
 ---
-title: Outpatient Procedure Component Denominator for Procedure Mapping
+title: Outpatient Procedure Component Denominator for Procedure Mapping to CDA
 layout: default
 active: other
 ---
@@ -12,8 +12,6 @@ active: other
 {:toc} -->
 
 <!-- end TOC -->
-
-### Outpatient Procedure Component Denominator for Procedure Mapping to CDA
 
 <table class="codes">
   <thead>

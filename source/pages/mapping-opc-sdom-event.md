@@ -1,5 +1,5 @@
 ---
-title: Outpatient Procedure Component Same Day Outcome Measures Event Report Mapping
+title: Outpatient Procedure Component Same Day Outcome Measures Event Report Mapping to CDA
 layout: default
 active: other
 ---
@@ -12,8 +12,6 @@ active: other
 {:toc} -->
 
 <!-- end TOC -->
-
-### Outpatient Procedure Component Same Day Outcome Measures Event Report Mapping to CDA
 
 <table class="codes">
   <thead>

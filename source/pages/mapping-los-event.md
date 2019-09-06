@@ -1,5 +1,5 @@
 ---
-title: Late Onset Sepsis/Meningitis Event (LOS) Mapping
+title: Late Onset Sepsis/Meningitis Event (LOS) Mapping to CDA
 layout: default
 active: other
 ---
@@ -12,8 +12,6 @@ active: other
 {:toc} -->
 
 <!-- end TOC -->
-
-### Late Onset Sepsis/Meningitis Event (LOS) Mapping to CDA
 
 <table class="codes">
   <thead>

@@ -1,5 +1,5 @@
 ---
-title: Outpatient Procedure Component Surgical Site Infection (SSI) Event Mapping
+title: Outpatient Procedure Component Surgical Site Infection (SSI) Event Mapping to CDA
 layout: default
 active: other
 ---
@@ -12,8 +12,6 @@ active: other
 {:toc} -->
 
 <!-- end TOC -->
-
-### Outpatient Procedure Component Surgical Site Infection (SSI) Event Mapping to CDA
 
 <table class="codes">
   <thead>
