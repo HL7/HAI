@@ -6,8 +6,9 @@ active: Current Release
 
 
 <div>
-  <h2>Current Release (Ballot for STU 2 Release)</h2>
-  <p>This implementation guide is the ballot for the second STU FHIR release of the HAI reporting profiles. It adds two profiles, five reports (Questionnaire) and six value sets.</p>
+  <h2>Current Release (STU 2 Release)</h2>
+  <p>This implementation guide is second STU FHIR release of the HAI reporting profiles. It adds two profiles, five reports (Questionnaire) and six value sets.</p>
+  <p>This release of the IG is based on FHIR Version 4.0.0 (R4) whereas previous release were based on FHIR Release 3.0.1 (STU3). </p>
   
   <h3>Profiles</h3>
   <ul>

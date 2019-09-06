@@ -148,7 +148,7 @@
                      </ul>
                   </li>
                   <li>
-                     <span style="font-weight:bold">Procedure duration</span> [<span style="font-style:italic">procedure-duration</span>]: 
+                     <span style="font-weight:bold">Procedure duration (in minutes)</span> [<span style="font-style:italic">procedure-duration</span>]: 
         <span style="text-decoration:underline">65min</span>
                   </li>
                </ul>
@@ -290,7 +290,7 @@
       </item>
       <item>
          <linkId value="procedure-duration"/>
-         <text value="Procedure duration"/>
+         <text value="Procedure duration (in minutes)"/>
          <answer>
             <valueQuantity>
                <value value="65"/>

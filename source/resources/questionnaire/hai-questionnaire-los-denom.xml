@@ -11,7 +11,7 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
          <h1 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Late Onset Sepsis/Meningitis Denominator</h1>
-         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men).</p>
+         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men). For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website (https://www.cdc.gov/nhsn/).</p>
          <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Details</h2>
          <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <tr>
@@ -74,7 +74,7 @@
                <td>
                   <b>Subject Type:</b>
                </td>
-               <td>Patient</td>
+               <td>Patient (Source Patient Resource (US Core Patient))</td>
             </tr>
             <tr>
                <td>
@@ -209,7 +209,7 @@
    <subjectType value="Patient"/>
    <date value="2019-04-01"/>
    <publisher value="HL7 Structured Documents Work Group"/>
-   <description value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men)."/>
+   <description value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men). For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website (https://www.cdc.gov/nhsn/)."/>
    <jurisdiction>
       <coding>
          <system value="urn:iso:std:iso:3166"/>

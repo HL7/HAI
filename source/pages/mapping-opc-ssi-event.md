@@ -47,7 +47,8 @@ active: other
 <table class="codes">
   <thead>
     <tr>
-      <th>FHIR QuestionnaireResponse elements</th>
+      <th>item</th>
+      <th>item.linkId</th>
       <th>CDA Mapping</th>
     </tr>
   </thead>

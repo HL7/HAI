@@ -9,7 +9,7 @@
       <status value="generated"/>
       <div xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
          <h1 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Outpatient Procedure Component Denominator for Procedure</h1>
-         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Procedure. This report records datea on each patient having one of the NHSN procedures selected for monitoring.</p>
+         <p xmlns:xsl="http://www.w3.org/1999/XSL/Transform">This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Procedure. This report records date on each patient having one of the NHSN procedures selected for monitoring. For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website (https://www.cdc.gov/nhsn/).</p>
          <h2 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Questionnaire Details</h2>
          <table xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <tr>
@@ -72,7 +72,7 @@
                <td>
                   <b>Subject Type:</b>
                </td>
-               <td>Patient</td>
+               <td>Patient (Source Patient Resource (US Core Patient))</td>
             </tr>
             <tr>
                <td>
@@ -187,7 +187,7 @@
                   </li>
                   <li>
                      <span style="color:red">* </span>
-                     <span style="font-weight:bold">Procedure duration</span> [<span style="font-style:italic">procedure-duration</span>] (quantity)
+                     <span style="font-weight:bold">Procedure duration (in minutes)</span> [<span style="font-style:italic">procedure-duration</span>] (quantity)
     </li>
                </ul>
             </li>
@@ -217,7 +217,7 @@
    <subjectType value="Patient"/>
    <date value="2019-04-01"/>
    <publisher value="HL7 Structured Documents Work Group"/>
-   <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Procedure. This report records datea on each patient having one of the NHSN procedures selected for monitoring."/>
+   <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Procedure. This report records date on each patient having one of the NHSN procedures selected for monitoring. For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website (https://www.cdc.gov/nhsn/)."/>
    <jurisdiction>
       <coding>
          <system value="urn:iso:std:iso:3166"/>
@@ -384,13 +384,20 @@
          <answerValueSet value="http://hl7.org/fhir/ValueSet/cpt-all"/>
       </item>
       <item>
+         <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+            <valueCoding>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="min"/>
+               <display value="min"/>
+            </valueCoding>
+         </extension>
          <linkId value="procedure-duration"/>
          <code>
             <system value="http://loinc.org"/>
             <code value="89875-9"/>
             <display value="Procedure duration"/>
          </code>
-         <text value="Procedure duration"/>
+         <text value="Procedure duration (in minutes)"/>
          <type value="quantity"/>
          <required value="true"/>
          <repeats value="false"/>
