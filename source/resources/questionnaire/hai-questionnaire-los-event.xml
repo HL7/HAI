@@ -162,7 +162,6 @@
                      <span style="font-weight:bold">Gestational age known: set true if known and false if unknown</span> [<span style="font-style:italic">gestational-age-known</span>] (boolean)
     </li>
                   <li>
-                     <span style="color:red">* </span>
                      <span style="font-weight:bold">Risk Factor: Gestational age (days)</span> [<span style="font-style:italic">risk-factor-gestational-age</span>] (quantity)
     <ul>
                         <li>Enable when: <span style="font-style:italic">gestational-age-known</span> = "true"<br/>
@@ -198,7 +197,6 @@
                      <span style="font-weight:bold">Died</span> [<span style="font-style:italic">died</span>] (boolean)
     </li>
                   <li>
-                     <span style="color:red">* </span>
                      <span style="font-weight:bold">Infection contributed to death</span> [<span style="font-style:italic">los-contributed-to-death</span>] (boolean)
     <ul>
                         <li>Enable when: <span style="font-style:italic">died</span> = "true"<br/>
@@ -409,7 +407,7 @@
             <operator value="="/>
             <answerBoolean value="true"/>
          </enableWhen>
-         <required value="true"/>
+         <required value="false"/>
          <repeats value="false"/>
       </item>
    </item>
@@ -466,7 +464,7 @@
             <operator value="="/>
             <answerBoolean value="true"/>
          </enableWhen>
-         <required value="true"/>
+         <required value="false"/>
          <repeats value="false"/>
       </item>
       <item>

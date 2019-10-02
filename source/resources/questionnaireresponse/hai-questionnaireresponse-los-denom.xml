@@ -106,10 +106,10 @@
                      <span style="font-weight:bold">Disposition of infant</span> [<span style="font-style:italic">infant-disposition</span>]: 
         <ul>
                         <span style="text-decoration:underline">
-                           <li>No location change</li>
-                           <li>Code system: <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277">http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277</a>
+                          <li>Discharged from hospital (finding)</li>
+                          <li>Code system: <a href="http://snomed.info/sct">	http://snomed.info/sct</a>
                            </li>
-                           <li>Code: 1311-0</li>
+                           <li>Code: 183665006</li>
                         </span>
                      </ul>
                   </li>
@@ -211,9 +211,9 @@
          <text value="Disposition of infant"/>
          <answer>
             <valueCoding>
-               <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
-               <code value="1311-0"/>
-               <display value="No location change"/>
+              <system value="http://snomed.info/sct"/>
+               <code value="183665006"/>
+              <display value="Discharged from hospital (finding)"/>
             </valueCoding>
          </answer>
       </item>
