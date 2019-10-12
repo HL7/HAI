@@ -17,7 +17,7 @@
   "desc" : "FHIR STU Release 2",   
   "path" : "http://hl7.org/fhir/us/hai/STU2/",    
   "changes" : "releaseHistory.html",
-  "status" : "ballot",
+  "status" : "trial-use",
   "fhirversion": "4.0.0",
   "sequence" : "STU 2"
  },{
