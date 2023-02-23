@@ -1,0 +1,9 @@
+{
+	"package-id": "hl7.fhir.us.hai",
+	"title": "Healthcare Associated Infection Implementation Guide",
+	"introduction": "The Healthcare Associated Infection Implementation Implementation Guide is a US Realm Implementation Guide of the FHIR Specification that specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.",
+	"version": "current",
+	"desc": "Continuous Integration Build (latest in version control)",
+	"path": "http://build.fhir.org/ig/HL7/HAI",
+	"status": "draft"
+}

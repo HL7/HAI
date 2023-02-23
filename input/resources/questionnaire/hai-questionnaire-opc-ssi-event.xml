@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaire-opc-ssi-event"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2023-02-23T23:39:07.133+00:00"/>
+        <source value="#MfvTXoyj3VQjInjs"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
+    </meta>
+    <language value="en-US"/>
+    <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-ssi-event"/>
+    <identifier>
+        <value value="hai-questionnaire-opc-ssi-event-v1"/>
+    </identifier>
+    <version value="2.0.0"/>
+    <name value="HAI_questionnaire_opc_ssi_event"/>
+    <title value="Outpatient Procedure Component Surgical Site Infection (SSI) Event"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <subjectType value="Patient"/>
+    <date value="2019-04-01"/>
+    <publisher value="HL7 Structured Documents Work Group"/>
+    <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Surgical Site Infection Event. This report is for reporting data on each patient having a SSI event related to one of the NHSN operative procedures selected for monitoring.&#xA;&#xA;For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website [https://www.cdc.gov/nhsn/](https://www.cdc.gov/nhsn/).&#xA;"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <code>
+        <system value="http://loinc.org"/>
+        <code value="51897-7"/>
+        <display value="Healthcare Associated Infection report Document"/>
+    </code>
+    <item>
+        <linkId value="facility-id"/>
+        <text value="Facility ID"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="encounter-date"/>
+        <text value="Date of encounter"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="infection-details"/>
+        <text value="Infection details"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="infection-details-group-description"/>
+            <text value="This group records the infection type, with details. It records SSI level, all identification criteria used to identify this SSI event, and identified pathogen(s)."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <linkId value="event-type"/>
+            <text value="Event Type"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20"/>
+        </item>
+        <item>
+            <linkId value="event-date"/>
+            <text value="Date of event"/>
+            <type value="date"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="nhsn-procedure-code-category"/>
+            <text value="NHSN Procedure Code Category"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
+        </item>
+        <item>
+            <linkId value="primary-cpt-procedure-code"/>
+            <text value="Primary CPT Procedure Code"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/ValueSet/cpt-all"/>
+        </item>
+        <item>
+            <linkId value="procedure-id"/>
+            <text value="Procedure Id"/>
+            <type value="url"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="ssi-level"/>
+            <text value="Surgical Site Infection (SSI) Level"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196"/>
+        </item>
+        <item>
+            <linkId value="criteria-of-diagnosis"/>
+            <text value="Criteria of Diagnosis"/>
+            <type value="group"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <item>
+                <linkId value="criteria-of-diagnosis-group-description"/>
+                <text value="This group records the criteria used in the diagnosis of an infection."/>
+                <type value="display"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-abscess"/>
+                <code>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="128477000"/>
+                    <display value="Abscess"/>
+                </code>
+                <text value="Criteria of Diagnosis: Abscess"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-redness"/>
+                <code>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="386713009"/>
+                    <display value="Redness"/>
+                </code>
+                <text value="Criteria of Diagnosis: Redness"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-fever"/>
+                <code>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="386661006"/>
+                    <display value="Fever"/>
+                </code>
+                <text value="Criteria of Diagnosis: Fever"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-heat"/>
+                <code>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="304214002"/>
+                    <display value="Feels warm (finding)"/>
+                </code>
+                <text value="Criteria of Diagnosis: Heat"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-incision-purulent-drainage"/>
+                <code>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="255320000"/>
+                    <display value="Infection - suppurative (disorder)"/>
+                </code>
+                <text value="Criteria of Diagnosis: Purulent drainage"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-wound-dehisced"/>
+                <code>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="225553008"/>
+                    <display value="Wound dehiscence"/>
+                </code>
+                <text value="Criteria of Diagnosis: Wound spontaneously dehisced"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-incision-opened"/>
+                <code>
+                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <code value="1967-9"/>
+                    <display value="Incision deliberately opened or otherwise drained by physician"/>
+                </code>
+                <text value="Criteria of Diagnosis: Incision deliberately opened"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-evidence-found"/>
+                <code>
+                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <code value="1905-9"/>
+                    <display value="Other evidence of infection found on direct exam, during surgery, or by diagnostic tests"/>
+                </code>
+                <text value="Criteria of Diagnosis: Other evidence of infection found on invasive procedure, gross anatomic exam, or histopathologic exam"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-localized-swelling"/>
+                <code>
+                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <code value="1920-8"/>
+                    <display value="Localized swelling"/>
+                </code>
+                <text value="Criteria of Diagnosis: Localized swelling"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-pain-tenderness"/>
+                <code>
+                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <code value="1960-4"/>
+                    <display value="Pain or tenderness"/>
+                </code>
+                <text value="Criteria of Diagnosis: Pain or tenderness"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-organism-identified"/>
+                <code>
+                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <code value="1952-1"/>
+                    <display value="Positive culture"/>
+                </code>
+                <text value="Criteria of Diagnosis: Organism Identified"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-testing-not-performed"/>
+                <code>
+                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <code value="1901-8"/>
+                    <display value="Not cultured"/>
+                </code>
+                <text value="Criteria of Diagnosis: Culture or non-culture based testing not performed"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-imaging-test"/>
+                <code>
+                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <code value="1924-0"/>
+                    <display value="Radiographic evidence of infection"/>
+                </code>
+                <text value="Criteria of Diagnosis: Imaging test evidence of infection"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+            <item>
+                <linkId value="criteria-of-diagnosis-physician-diagnosis"/>
+                <code>
+                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <code value="1963-8"/>
+                    <display value="Physician Diagnosis of this event type"/>
+                </code>
+                <text value="Criteria of Diagnosis: Diagnosis of superficial SSI by surgeon or attending physician"/>
+                <type value="boolean"/>
+                <required value="true"/>
+                <repeats value="false"/>
+            </item>
+        </item>
+        <item>
+            <linkId value="ssi-detection-method-type"/>
+            <text value="Surveillence method type (active/passive) through which the SSI was detected"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.31"/>
+        </item>
+        <item>
+            <linkId value="ssi-detection-method"/>
+            <text value="Surveillence method through which the SSI was detected"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.29"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="findings-group"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="18769-0"/>
+            <display value="Microbial susceptibility tests Set"/>
+        </code>
+        <text value="Findings Group"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <item>
+            <linkId value="findings-group-description"/>
+            <text value="This group records whether infection organisms were identified and, if so, records details about them."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <linkId value="pathogen-identified"/>
+            <text value="Pathogen Identified"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16"/>
+        </item>
+        <item>
+            <linkId value="pathogen-ranking"/>
+            <text value="Pathogen Ranking"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <code>
+            <system value="http://www.loinc.org"/>
+            <code value="86468-6"/>
+            <display value="Report Comment Section"/>
+        </code>
+        <text value="Comments"/>
+        <type value="text"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <maxLength value="2000"/>
+    </item>
+</Questionnaire>

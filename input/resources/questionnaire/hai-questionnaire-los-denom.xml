@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaire-los-denom"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2023-02-23T23:10:23.885+00:00"/>
+        <source value="#iTdoRL6rk1Rkk2Uq"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-denom"/>
+    <identifier>
+        <value value="hai-questionnaire-los-denom-v1"/>
+    </identifier>
+    <version value="2.0.0"/>
+    <name value="HAI_questionnaire_los_denom"/>
+    <title value="Late Onset Sepsis/Meningitis Denominator"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <subjectType value="Patient"/>
+    <date value="2019-04-01"/>
+    <publisher value="HL7 Structured Documents Work Group"/>
+    <description value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men).&#xA;&#xA;For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website [https://www.cdc.gov/nhsn/](https://www.cdc.gov/nhsn/).&#xA;"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <code>
+        <system value="http://loinc.org"/>
+        <code value="51897-7"/>
+        <display value="Healthcare Associated Infection report Document"/>
+    </code>
+    <item>
+        <linkId value="date-collected"/>
+        <text value="Year and month data collected for this location"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="facility"/>
+        <text value="Facility ID"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="date-admitted-to-facility"/>
+        <text value="Date Admitted to Facility"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="location-within-facility-encounter-group"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="46240-8"/>
+            <display value="History of Hospitalizations+Outpatient visits Narrative"/>
+        </code>
+        <text value="Location Within Facility Encounter"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="location-within-facility-encounter-group-description"/>
+            <text value="This group contains information detailing an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <linkId value="facility-location-type"/>
+            <text value="Facility Location Type"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/>
+        </item>
+        <item>
+            <linkId value="facility-location"/>
+            <text value="Facility Location"/>
+            <type value="url"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="location-admit-transfer-date"/>
+            <text value="Date admitted or transferred to location"/>
+            <type value="date"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="infant-disposition"/>
+            <text value="Disposition of infant"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30"/>
+        </item>
+        <item>
+            <linkId value="disposition-date"/>
+            <text value="Disposition date if discharged, transferred, or expired"/>
+            <type value="date"/>
+            <enableWhen>
+                <question value="infant-disposition"/>
+                <operator value="="/>
+                <answerCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="183665006"/>
+                </answerCoding>
+            </enableWhen>
+            <enableWhen>
+                <question value="infant-disposition"/>
+                <operator value="="/>
+                <answerCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="266751003"/>
+                </answerCoding>
+            </enableWhen>
+            <enableWhen>
+                <question value="infant-disposition"/>
+                <operator value="="/>
+                <answerCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="371828006"/>
+                </answerCoding>
+            </enableWhen>
+            <required value="false"/>
+            <repeats value="false"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="risk-factors"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="51898-5"/>
+            <display value="Risk factors Document"/>
+        </code>
+        <text value="Risk Factors"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="risk-factors-group-description"/>
+            <text value="This group contains risk factors such as birth weight and gestational age."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+                <valueCoding>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="g"/>
+                    <display value="g"/>
+                </valueCoding>
+            </extension>
+            <linkId value="risk-factor-birth-weight"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="364589006"/>
+                <display value="Birth Weight"/>
+            </code>
+            <text value="Risk Factor: Birth weight (grams)"/>
+            <type value="quantity"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="gestational-age-known"/>
+            <text value="Gestational age known: set true if known and false if unknown"/>
+            <type value="boolean"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+                <valueCoding>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="d"/>
+                    <display value="d"/>
+                </valueCoding>
+            </extension>
+            <linkId value="risk-factor-gestational-age"/>
+            <code>
+                <system value="http://loinc.org"/>
+                <code value="76516-4"/>
+                <display value="Gestational age--at birth"/>
+            </code>
+            <text value="Risk Factor: Gestational age (days)"/>
+            <type value="quantity"/>
+            <enableWhen>
+                <question value="gestational-age-known"/>
+                <operator value="="/>
+                <answerBoolean value="true"/>
+            </enableWhen>
+            <required value="false"/>
+            <repeats value="false"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <code>
+            <system value="http://www.loinc.org"/>
+            <code value="86468-6"/>
+            <display value="Report Comment Section"/>
+        </code>
+        <text value="Comments"/>
+        <type value="text"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <maxLength value="2000"/>
+    </item>
+</Questionnaire>

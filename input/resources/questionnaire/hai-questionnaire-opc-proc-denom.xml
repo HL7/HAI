@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaire-opc-proc-denom"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2023-02-23T23:10:23.882+00:00"/>
+        <source value="#LIJF5xJ6uVnj0erj"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-proc-denom"/>
+    <identifier>
+        <value value="hai-questionnaire-opc-proc-denom-v1"/>
+    </identifier>
+    <version value="2.0.0"/>
+    <name value="HAI_questionnaire_opc_proc_denom"/>
+    <title value="Outpatient Procedure Component Denominator for Procedure"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <subjectType value="Patient"/>
+    <date value="2019-04-01"/>
+    <publisher value="HL7 Structured Documents Work Group"/>
+    <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Procedure. This report records date on each patient having one of the NHSN procedures selected for monitoring.&#xA;&#xA;For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website [https://www.cdc.gov/nhsn/](https://www.cdc.gov/nhsn/).&#xA;"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <code>
+        <system value="http://loinc.org"/>
+        <code value="51897-7"/>
+        <display value="Healthcare Associated Infection report Document"/>
+    </code>
+    <item>
+        <linkId value="facility-id"/>
+        <text value="Facility ID"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="encounter-date"/>
+        <text value="Date of encounter"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="risk-factors"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="51898-5"/>
+            <display value="Risk factors Document"/>
+        </code>
+        <text value="Risk Factors"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="risk-factors-group-description"/>
+            <text value="This group contains procedure risk factors such as ASA class, diabetes mellitus, height, and weight."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-wound-class"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="420089007"/>
+                <display value="CDC wound classification category"/>
+            </code>
+            <text value="Risk Factor: Wound class"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-endoscopy"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="423827005"/>
+                <display value="Endoscopy"/>
+            </code>
+            <text value="Risk Factor: Endoscopy used"/>
+            <type value="boolean"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-diabetes-mellitus"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="73211009"/>
+                <display value="Diabetes mellitus"/>
+            </code>
+            <text value="Risk Factor: Diabetes mellitus"/>
+            <type value="boolean"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-height"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="50373000"/>
+                <display value="Body Height"/>
+            </code>
+            <text value="Risk Factor: height"/>
+            <type value="quantity"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-weight"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="27113001"/>
+                <display value="Body Weight"/>
+            </code>
+            <text value="Risk Factor: weight"/>
+            <type value="quantity"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-asa-class"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="273270000"/>
+                <display value="American Society of Anesthesiologists physical status classification (assessment scale)"/>
+            </code>
+            <text value="Risk Factor: ASA Class"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.10"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="procedure-details"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="51899-3"/>
+            <display value="Details Document"/>
+        </code>
+        <text value="Procedure Details"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="procedure-details-group-description"/>
+            <text value="This group contains details about the procedure."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <linkId value="procedure-id"/>
+            <text value="Procedure ID"/>
+            <type value="url"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="nhsn-procedure-code-category"/>
+            <code>
+                <system value="http://loinc.org"/>
+                <code value="29300-1"/>
+                <display value="Procedure type"/>
+            </code>
+            <text value="NHSN Procedure Code Category"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
+        </item>
+        <item>
+            <linkId value="cpt-procedure-code"/>
+            <code>
+                <system value="http://loinc.org"/>
+                <code value="76448-0"/>
+                <display value="CPT billing code"/>
+            </code>
+            <text value="CPT Procedure Code"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/ValueSet/cpt-all"/>
+        </item>
+        <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+                <valueCoding>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="min"/>
+                    <display value="min"/>
+                </valueCoding>
+            </extension>
+            <linkId value="procedure-duration"/>
+            <code>
+                <system value="http://loinc.org"/>
+                <code value="89875-9"/>
+                <display value="Procedure duration"/>
+            </code>
+            <text value="Procedure duration (in minutes)"/>
+            <type value="quantity"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="general-anesthesia"/>
+        <text value="General anesthesia"/>
+        <type value="boolean"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="surgeon-code"/>
+        <text value="Surgeon code"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <code>
+            <system value="http://www.loinc.org"/>
+            <code value="86468-6"/>
+            <display value="Report Comment Section"/>
+        </code>
+        <text value="Comments"/>
+        <type value="text"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <maxLength value="2000"/>
+    </item>
+</Questionnaire>

@@ -1,1 +1,0 @@
-java -jar org.hl7.fhir.publisher.jar -ig %~dp0ig.json

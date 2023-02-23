@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-group-1"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-04-06T23:35:54.661+00:00"/>
+        <source value="#n6SKAsY7gMpREJj3"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p>Example group for population summary report</p>
+        </div>
+    </text>
+    <type value="person"/>
+    <actual value="true"/>
+</Group>

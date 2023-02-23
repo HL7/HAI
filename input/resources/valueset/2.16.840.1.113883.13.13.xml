@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.13.13"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-04-07T01:12:44.290+00:00"/>
+        <source value="#jLPriyiDKBL3EXSC"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13"/>
+    <name value="NHSNDrugSusceptibilityFindingCode"/>
+    <title value="NHSNDrugSusceptibilityFindingCode"/>
+    <status value="active"/>
+    <description value="Codes representing a drug susceptibility finding."/>
+    <compose>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <concept>
+                <code value="I"/>
+                <display value="Intermediate"/>
+            </concept>
+            <concept>
+                <code value="R"/>
+                <display value="Resistant"/>
+            </concept>
+            <concept>
+                <code value="S"/>
+                <display value="Susceptible"/>
+            </concept>
+            <concept>
+                <code value="NS"/>
+                <display value="Non-Susceptible"/>
+            </concept>
+            <concept>
+                <code value="S-DD"/>
+                <display value="Susceptible-dose dependant"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

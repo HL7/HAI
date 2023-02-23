@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaire-opc-sdom-denom"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2023-02-23T23:10:23.929+00:00"/>
+        <source value="#mFVDRpOB4qcfL7xy"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-denom"/>
+    <identifier>
+        <value value="hai-questionnaire-opc-sdom-denom-v1"/>
+    </identifier>
+    <version value="2.0.0"/>
+    <name value="HAI_questionnaire_opc_sdom_denom"/>
+    <title value="Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <subjectType value="Group"/>
+    <date value="2019-04-01"/>
+    <publisher value="HL7 Structured Documents Work Group"/>
+    <description value="This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures.&#xA;&#xA;For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website [https://www.cdc.gov/nhsn/](https://www.cdc.gov/nhsn/).&#xA;"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <code>
+        <system value="http://loinc.org"/>
+        <code value="51897-7"/>
+        <display value="Healthcare Associated Infection report Document"/>
+    </code>
+    <code>
+        <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+        <code value="1657-6"/>
+        <display value="Summary data reporting outpatient procedure component events at a facility"/>
+    </code>
+    <item>
+        <linkId value="facility-id"/>
+        <text value="Facility ID"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="report-period-start"/>
+        <text value="First day of period reported"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="report-period-end"/>
+        <text value="Last day of period reported"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="facility-location-id"/>
+        <text value="Facility Location Id"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
+    </item>
+    <item>
+        <linkId value="facility-location-type"/>
+        <text value="Facility Location Type"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/>
+    </item>
+    <item>
+        <linkId value="summary-data-group"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="51900-9"/>
+            <display value="Population Summary note"/>
+        </code>
+        <text value="Summary Data"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="summary-data-group-description"/>
+            <text value="This group contains specific counts for the type of report."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <linkId value="total-facility-encounters-outpatient"/>
+            <code>
+                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                <code value="1890-3"/>
+                <display value="Number of Total Facility Encounters (for outpatient location)"/>
+            </code>
+            <text value="Number of Total Facility Encounters (for outpatient location)"/>
+            <type value="integer"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="report-no-events-group"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="90252-8"/>
+            <display value="Report no events"/>
+        </code>
+        <text value="Report no events"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="report-no-events-group-description"/>
+            <text value="This group contains statements that there are no events to report for a particular type of event."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <linkId value="no-same-day-outcome-measures"/>
+            <code>
+                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                <code value="1340-9"/>
+                <display value="No Same Day Outcome Measures (events) reported this month"/>
+            </code>
+            <text value="No Same Day Outcome Measures (events) reported this month"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <code>
+            <system value="http://www.loinc.org"/>
+            <code value="86468-6"/>
+            <display value="Report Comment Section"/>
+        </code>
+        <text value="Comments"/>
+        <type value="text"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <maxLength value="2000"/>
+    </item>
+</Questionnaire>

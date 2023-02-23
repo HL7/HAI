@@ -1,0 +1,28 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="relationship_to_another_standard.html">Relationship to Another Standard</a></li>
+      <li><a href="audience.html">Audience</a></li>
+      <li><a href="acknowledgements.html">Acknowledgements</a></li>
+      <li><a href="release_history.html">Release History</a></li>    </ul>
+  </li>
+  <li><a href="downloads.html">Downloads</a></li>
+
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Mapping<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="mapping-los-event.html">mapping-los-event</a></li>
+      <li><a href="mapping-los-denom.html">mapping-los-denom</a></li>
+      <li><a href="mapping-opc-proc-denom.html">mapping-opc-proc-denom</a></li>
+      <li><a href="mapping-opc-sdom-event.html">mapping-opc-sdom-event</a></li>
+      <li><a href="mapping-opc-sdom-denom.html">mapping-opc-sdom-denom</a></li>
+      <li><a href="mapping-opc-ssi-event.html">mapping-opc-ssi-event</a></li>    </ul>
+  </li>  <li><a href="artifacts.html">Artifact Index</a></li>
+</ul>

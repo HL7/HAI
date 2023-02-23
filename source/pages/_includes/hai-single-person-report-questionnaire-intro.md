@@ -1,1 +1,0 @@
-This profile represents a Healthcare Associated Infection Singe-Person Report form as a FHIR Questionnaire.

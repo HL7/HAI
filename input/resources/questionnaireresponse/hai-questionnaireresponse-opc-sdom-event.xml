@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionnaireResponse
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaireresponse-opc-sdom-event"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2023-02-23T23:42:18.738+00:00"/>
+        <source value="#wzZs4r0E2kAmFNi8"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse"/>
+    </meta>
+    <language value="en-US"/>
+    <identifier>
+        <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
+        <value value="20202205"/>
+    </identifier>
+    <questionnaire value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-event"/>
+    <status value="completed"/>
+    <subject>
+        <reference value="Patient/hai-patient-1"/>
+        <display value="hai-patient-1"/>
+    </subject>
+    <author>
+        <reference value="Device/hai-authoring-device"/>
+        <display value="hai-authoring-device"/>
+    </author>
+    <item>
+        <linkId value="facility-id"/>
+        <text value="Facility ID"/>
+        <answer>
+            <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="date-of-encounter"/>
+        <text value="Date of Encounter (Admission)"/>
+        <answer>
+            <valueDate value="2018-08-05"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="same-day-outcome-measures-event-details"/>
+        <text value="Same Day Outcome Measures Event Details"/>
+        <item>
+            <linkId value="same-day-outcome-measure-patient-burn"/>
+            <text value="Same Day Outcome Measure: Patient Burn"/>
+            <answer>
+                <valueBoolean value="true"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="same-day-outcome-measure-patient-fall"/>
+            <text value="Same Day Outcome Measure: Patient fall"/>
+            <answer>
+                <valueBoolean value="true"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="same-day-outcome-transfer-admission"/>
+            <text value="Same Day Outcome Measure: Hospital transfer/admission"/>
+            <answer>
+                <valueBoolean value="false"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="same-day-outcome-measure-wrong-site"/>
+            <text value="Same Day Outcome Measure: Wrong site"/>
+            <answer>
+                <valueBoolean value="true"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="same-day-outcome-measure-wrong-side"/>
+            <text value="Same Day Outcome Measure: Wrong side"/>
+            <answer>
+                <valueBoolean value="false"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="same-day-outcome-measure-wrong-patient"/>
+            <text value="Same Day Outcome Measure: Wrong patient"/>
+            <answer>
+                <valueBoolean value="false"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="same-day-outcome-measure-wrong-procedure"/>
+            <text value="Same Day Outcome Measure: Wrong procedure"/>
+            <answer>
+                <valueBoolean value="false"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="same-day-outcome-measure-wrong-implant"/>
+            <text value="Same Day Outcome Measure: Wrong implant"/>
+            <answer>
+                <valueBoolean value="false"/>
+            </answer>
+        </item>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <text value="Comments"/>
+        <answer>
+            <valueString value="NHSN text comment that is less than 2000 characters."/>
+        </answer>
+    </item>
+</QuestionnaireResponse>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionnaireResponse
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaireresponse-opc-proc-denom"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2023-02-23T23:41:52.062+00:00"/>
+        <source value="#PIksGmcuIV6uKYC5"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse"/>
+    </meta>
+    <language value="en-US"/>
+    <identifier>
+        <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
+        <value value="20202203"/>
+    </identifier>
+    <questionnaire value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-proc-denom"/>
+    <status value="completed"/>
+    <subject>
+        <reference value="Patient/hai-patient-1"/>
+        <display value="hai-patient-1"/>
+    </subject>
+    <author>
+        <reference value="Device/hai-authoring-device"/>
+        <display value="hai-authoring-device"/>
+    </author>
+    <item>
+        <linkId value="facility-id"/>
+        <text value="Facility ID"/>
+        <answer>
+            <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="encounter-date"/>
+        <text value="Date of encounter"/>
+        <answer>
+            <valueDate value="2018-12-23"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="risk-factors"/>
+        <text value="Risk Factors"/>
+        <item>
+            <linkId value="risk-factor-wound-class"/>
+            <text value="Risk Factor: Wound class"/>
+            <answer>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="418115006"/>
+                    <display value="CDC Class II/Clean-contaminated"/>
+                </valueCoding>
+            </answer>
+        </item>
+        <item>
+            <linkId value="risk-factor-endoscopy"/>
+            <text value="Risk Factor: Endoscopy used"/>
+            <answer>
+                <valueBoolean value="true"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="risk-factor-diabetes-mellitus"/>
+            <text value="Risk Factor: Diabetes mellitus"/>
+            <answer>
+                <valueBoolean value="false"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="risk-factor-height"/>
+            <text value="Risk Factor: height"/>
+            <answer>
+                <valueQuantity>
+                    <value value="168"/>
+                    <unit value="cm"/>
+                </valueQuantity>
+            </answer>
+        </item>
+        <item>
+            <linkId value="risk-factor-weight"/>
+            <text value="Risk Factor: weight"/>
+            <answer>
+                <valueQuantity>
+                    <value value="68"/>
+                    <unit value="kg"/>
+                </valueQuantity>
+            </answer>
+        </item>
+        <item>
+            <linkId value="risk-factor-asa-class"/>
+            <text value="Risk Factor: ASA Class"/>
+            <answer>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="413495001"/>
+                    <display value="ASA physical status class 1"/>
+                </valueCoding>
+            </answer>
+        </item>
+    </item>
+    <item>
+        <linkId value="procedure-details"/>
+        <text value="Procedure Details"/>
+        <item>
+            <linkId value="procedure-id"/>
+            <text value="Procedure ID"/>
+            <answer>
+                <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.2.1.1.5:21987654321"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="nhsn-procedure-code-category"/>
+            <text value="NHSN Procedure Code Category"/>
+            <answer>
+                <valueCoding>
+                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <code value="2108-9"/>
+                    <display value="Appendix surgery"/>
+                </valueCoding>
+            </answer>
+        </item>
+        <item>
+            <linkId value="cpt-procedure-code"/>
+            <text value="CPT Procedure Code"/>
+            <answer>
+                <valueCoding>
+                    <system value="http://www.ama-assn.org/go/cpt"/>
+                    <code value="44970"/>
+                    <display value="Laparoscopic Procedures on the Appendix"/>
+                </valueCoding>
+            </answer>
+        </item>
+        <item>
+            <linkId value="procedure-duration"/>
+            <text value="Procedure duration (in minutes)"/>
+            <answer>
+                <valueQuantity>
+                    <value value="65"/>
+                    <unit value="min"/>
+                </valueQuantity>
+            </answer>
+        </item>
+    </item>
+    <item>
+        <linkId value="general-anesthesia"/>
+        <text value="General anesthesia"/>
+        <answer>
+            <valueBoolean value="true"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="surgeon-code"/>
+        <text value="Surgeon code"/>
+        <answer>
+            <valueUri value="urn:hl7ii:2.16.840.1.113883.3.117.1.1.5.1.1.1:987654"/>
+        </answer>
+    </item>
+    <item>
+        <linkId value="nhsn-comment"/>
+        <text value="Comments"/>
+        <answer>
+            <valueString value="NHSN text comment that is less than 2000 characters."/>
+        </answer>
+    </item>
+</QuestionnaireResponse>

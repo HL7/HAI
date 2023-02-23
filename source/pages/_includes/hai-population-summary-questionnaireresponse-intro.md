@@ -1,1 +1,0 @@
-This profile represents a response to the Healthcare Associated Infection Population Summary Questionnaire as a FHIR QuestionnaireResponse profile.

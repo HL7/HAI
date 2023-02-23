@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.114222.4.11.3595"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-04-07T01:14:04.698+00:00"/>
+        <source value="#RBebHqkghSmzeIzo"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3595"/>
+    <name value="NHSNPopulationSummaryReportTypeCode"/>
+    <title value="NHSNPopulationSummaryReportTypeCode"/>
+    <status value="active"/>
+    <description value="The population summary data set being reported."/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="86558-4"/>
+                <display value="Summary data reporting healthcare personnel influenza vaccinations"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+            <concept>
+                <code value="1879-6"/>
+                <display value="Summary data reporting catheter and ventilator use in a ICU/Other"/>
+            </concept>
+            <concept>
+                <code value="1880-4"/>
+                <display value="Summary data reporting catheter and ventilator use in a SCA"/>
+            </concept>
+            <concept>
+                <code value="1881-2"/>
+                <display value="Summary data reporting catheter and ventilator use in a NICU"/>
+            </concept>
+            <concept>
+                <code value="1884-6"/>
+                <display value="Summary data reporting Active Surveillance Testing"/>
+            </concept>
+            <concept>
+                <code value="2316-8"/>
+                <display value="Summary data reporting vascular access types for chronic hemodialysis patients"/>
+            </concept>
+            <concept>
+                <code value="1887-9"/>
+                <display value="Summary data reporting Antimicrobial Usage"/>
+            </concept>
+            <concept>
+                <code value="2410-9"/>
+                <display value="Summary data reporting antimicrobial resistance patterns at a facility"/>
+            </concept>
+            <concept>
+                <code value="1657-6"/>
+                <display value="Summary data reporting Outpatient procedure component events at a facility"/>
+            </concept>
+            <concept>
+                <code value="2543-7"/>
+                <display value="Hemovigilance Module -  Monthly Reporting Denominator"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
