@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-hai"/>
     <meta>
-        <versionId value="69"/>
-        <lastUpdated value="2023-02-24T00:48:41.361+00:00"/>
-        <source value="#rCQUlTFMpCqRDrJQ"/>
+        <versionId value="71"/>
+        <lastUpdated value="2023-02-24T01:33:27.382+00:00"/>
+        <source value="#y8sjAle3I8pi9nvx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai"/>
     <version value="2.0.0"/>
@@ -33,13 +33,7 @@
     <packageId value="hl7.fhir.us.hai"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn id="hl7fhiruscore">
-        <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-location">
-            <valueString value="http://hl7.org/fhir/us/core"/>
-        </extension>
-        <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-name">
-            <valueString value="USCoreR4"/>
-        </extension>
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.1"/>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
         <version value="5.0.1"/>
     </dependsOn>
