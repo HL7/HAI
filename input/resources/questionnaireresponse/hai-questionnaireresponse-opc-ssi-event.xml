@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaireresponse-opc-ssi-event"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-02-24T00:58:06.907+00:00"/>
-        <source value="#cHPzvzogmLGasqlH"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-02-24T02:51:26.828+00:00"/>
+        <source value="#Gtxv5bvJThAYnVUt"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse"/>
     </meta>
     <identifier>
@@ -46,7 +46,7 @@
                 <valueCoding>
                     <system value="http://snomed.info/sct"/>
                     <code value="433202001"/>
-                  <display value="Surgical site infection (disorder)"/>
+                    <display value="Surgical site infection (disorder)"/>
                 </valueCoding>
             </answer>
         </item>

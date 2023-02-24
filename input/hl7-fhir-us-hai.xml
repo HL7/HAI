@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-hai"/>
     <meta>
-        <versionId value="71"/>
-        <lastUpdated value="2023-02-24T01:33:27.382+00:00"/>
-        <source value="#y8sjAle3I8pi9nvx"/>
+        <versionId value="72"/>
+        <lastUpdated value="2023-02-24T03:27:01.993+00:00"/>
+        <source value="#iuIXdnh74nvUS4RH"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai"/>
     <version value="2.0.0"/>
@@ -240,6 +240,11 @@
             <description value="QuestionnaireResponse - Outpatient Procedure Component Surgical Site Infection Event example"/>
             <exampleBoolean value="true"/>
             <groupingId value="questionnaireresponse-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/expansion-parameters-hai"/></reference>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

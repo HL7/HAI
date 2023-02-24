@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueSet xmlns="http://hl7.org/fhir">
-  <id value="nhsn-pathogen-ranking" />
-  <meta>
-    <versionId value="3" />
-    <lastUpdated value="2020-04-07T01:13:57.956+00:00" />
-    <source value="#zkdNGPvuZb6m4Gkh" />
-  </meta>
-  <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking" />
-  <name value="NHSNPathogenRanking" />
-  <title value="NHSNPathogenRanking" />
-  <status value="draft" />
-  <experimental value="true" />
-  <description value="Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection." />
-  <compose>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <concept>
-        <code value="255216001" />
-        <display value="First" />
-      </concept>
-      <concept>
-        <code value="81170007" />
-        <display value="Second" />
-      </concept>
-      <concept>
-        <code value="70905002" />
-        <display value="Third" />
-      </concept>
-    </include>
-  </compose>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="nhsn-pathogen-ranking"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2023-02-24T03:22:31.730+00:00"/>
+        <source value="#24e9xftKi4MqYdGZ"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"/>
+    <name value="NHSNPathogenRanking"/>
+    <title value="NHSNPathogenRanking"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <description value="Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="255216001"/>
+                <display value="First"/>
+            </concept>
+            <concept>
+                <code value="81170007"/>
+                <display value="Second"/>
+            </concept>
+            <concept>
+                <code value="70905002"/>
+                <display value="Third"/>
+            </concept>
+        </include>
+    </compose>
 </ValueSet>

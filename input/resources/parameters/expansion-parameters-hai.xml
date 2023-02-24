@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters
+    xmlns="http://hl7.org/fhir">
+    <id value="expansion-parameters-hai"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-02-24T03:27:01.937+00:00"/>
+        <source value="#aCphdyqditPf6MQn"/>
+    </meta>
+    <parameter>
+        <name value="profile-url"/>
+        <valueString value="dc8fd4bc-091b-424a-8a3b-6198cf146891"/>
+    </parameter>
+    <parameter>
+        <name value="system-version"/>
+        <valueString value="http://snomed.info/sct|http://snomed.info/sct/731000124108"/>
+    </parameter>
+</Parameters>
