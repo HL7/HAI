@@ -46,7 +46,7 @@
                 <valueCoding>
                     <system value="http://snomed.info/sct"/>
                     <code value="433202001"/>
-                    <display value="Surgical Site Infection"/>
+                  <display value="Surgical site infection (disorder)"/>
                 </valueCoding>
             </answer>
         </item>
