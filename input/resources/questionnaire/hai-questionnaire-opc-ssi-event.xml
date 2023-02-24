@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-opc-ssi-event"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2023-02-24T01:10:04.506+00:00"/>
-        <source value="#YCFD3Djt1SoCMB5y"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-02-24T01:16:34.139+00:00"/>
+        <source value="#5MhlYvUPd4jL40lR"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
     </meta>
     <language value="en-US"/>
@@ -64,7 +64,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.20"/>
         </item>
         <item>
             <linkId value="event-date"/>
@@ -79,7 +79,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
         </item>
         <item>
             <linkId value="primary-cpt-procedure-code"/>
@@ -102,7 +102,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3196"/>
         </item>
         <item>
             <linkId value="criteria-of-diagnosis"/>
@@ -290,7 +290,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.31"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.5.9.31"/>
         </item>
         <item>
             <linkId value="ssi-detection-method"/>
@@ -298,7 +298,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.29"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.5.9.29"/>
         </item>
     </item>
     <item>
@@ -323,7 +323,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.16"/>
         </item>
         <item>
             <linkId value="pathogen-ranking"/>

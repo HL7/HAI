@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-los-event"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2023-02-24T01:10:04.503+00:00"/>
-        <source value="#Nb1mMKbenEUND3pt"/>
+        <versionId value="12"/>
+        <lastUpdated value="2023-02-24T01:16:34.271+00:00"/>
+        <source value="#9BPSzGdBY6Z2UhN1"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
     </meta>
     <language value="en-US"/>
@@ -182,7 +182,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3196"/>
         </item>
         <item>
             <linkId value="criteria-used"/>
@@ -190,7 +190,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3195"/>
         </item>
         <item>
             <linkId value="died"/>
@@ -246,7 +246,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.16"/>
         </item>
         <item>
             <linkId value="pathogen-ranking"/>
@@ -272,7 +272,7 @@
                 <type value="choice"/>
                 <required value="true"/>
                 <repeats value="false"/>
-                <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15"/>
+                <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.15"/>
             </item>
             <item>
                 <linkId value="drug-susceptibility-test-interpretation"/>
@@ -280,7 +280,7 @@
                 <type value="choice"/>
                 <required value="false"/>
                 <repeats value="false"/>
-                <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13"/>
+                <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.13"/>
             </item>
         </item>
     </item>
