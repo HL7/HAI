@@ -90,7 +90,45 @@
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
-        <element id="Questionnaire.code">
+      
+      <element id="Questionnaire.code">
+        <path value="Questionnaire.code" />
+        <slicing>
+          <discriminator>
+            <type value="value" />
+            <path value="$this" />
+          </discriminator>
+          <rules value="open" />
+        </slicing>
+        <min value="2" />
+        <max value="2" />
+        <mustSupport value="true" />
+      </element>
+      <element id="Questionnaire.code:HAI">
+        <path value="Questionnaire.code" />
+        <sliceName value="HAI" />
+        <min value="1" />
+        <max value="1" />
+        <patternCoding>
+          <system value="http://loinc.org" />
+          <code value="51897-7" />
+          <display value="Healthcare Associated Infection report Document" />
+        </patternCoding>
+        <mustSupport value="true" />
+      </element>
+      <element id="Questionnaire.code:PopulationSummaryReportType">
+        <path value="Questionnaire.code" />
+        <sliceName value="PopulationSummaryReportType" />
+        <min value="1" />
+        <max value="1" />
+        <mustSupport value="true" />
+        <binding>
+          <strength value="required" />
+          <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.20" />
+        </binding>
+      </element>
+      
+      <!--<element id="Questionnaire.code">
             <path value="Questionnaire.code"/>
             <slicing>
                 <discriminator>
@@ -135,7 +173,7 @@
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
-        </element>
+        </element>-->
         <element id="Questionnaire.code:populationSummaryReportType">
             <path value="Questionnaire.code"/>
             <sliceName value="populationSummaryReportType"/>
