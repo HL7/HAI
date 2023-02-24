@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-hai"/>
     <meta>
-        <versionId value="76"/>
-        <lastUpdated value="2023-02-24T03:35:04.585+00:00"/>
-        <source value="#ZL0jrUWnvQ8pKc0X"/>
+        <versionId value="78"/>
+        <lastUpdated value="2023-02-24T03:50:12.750+00:00"/>
+        <source value="#PsY2SzRagCDBtQdM"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai"/>
     <version value="2.1.0"/>
@@ -314,12 +314,16 @@
             </page>
         </page>
         <parameter>
-            <code value="copyrightyear"/>
-            <value value="2020+"/>
+            <code value="releaselabel"/>
+            <value value="STU 2.1"/>
         </parameter>
         <parameter>
-            <code value="releaselabel"/>
-            <value value="CI Build"/>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/expansion-parameters-hai.xml"/>
+        </parameter>
+        <parameter>
+            <code value="copyrightyear"/>
+            <value value="2020+"/>
         </parameter>
     </definition>
 </ImplementationGuide>
