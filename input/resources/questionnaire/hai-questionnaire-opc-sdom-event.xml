@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-opc-sdom-event"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-02-24T00:53:12.277+00:00"/>
-        <source value="#3qfSZLxxyCuRCBgD"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-02-24T00:57:56.194+00:00"/>
+        <source value="#nsLFdoXTEEhRqS5Z"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
     </meta>
     <language value="en-US"/>
@@ -16,7 +16,9 @@
             <h1>Outpatient Procedure Component Same Day Outcome Measures Event Report</h1>
             <p>This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Same Day Outcome Measures Event Report. It records data on each patient who experienced one or more of the same day outcome measures events.</p>
             <p>For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website 
+                
                 <a href="https://www.cdc.gov/nhsn/">https://www.cdc.gov/nhsn/</a>.
+            
             </p>
             <h2>Questionnaire Details</h2>
             <table>
@@ -110,6 +112,7 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>Healthcare Associated Infection report Document</li>
                             <li>Code system: 
+                                
                                 <a href="http://loinc.org">http://loinc.org</a>
                             </li>
                             <li>Code: 51897-7</li>
@@ -120,85 +123,113 @@
             <br/>
             <br/>
             <h2>Questionnaire Items (
+                
                 <span style="color:red">*</span> required)
+            
             </h2>
             <ul style="list-style:none;">
                 <li>
                     <span style="color:red">* </span>
                     <span style="font-weight:bold">Facility ID</span> [
+                    
                     <span style="font-style:italic">facility-id</span>] (url)
     
+                
                 </li>
                 <li>
                     <span style="color:red">* </span>
                     <span style="font-weight:bold">Date of Encounter (Admission)</span> [
+                    
                     <span style="font-style:italic">date-of-encounter</span>] (date)
     
+                
                 </li>
                 <li>
                     <span style="color:red">* </span>
                     <span style="font-weight:bold">Same Day Outcome Measures Event Details</span> [
+                    
                     <span style="font-style:italic">same-day-outcome-measures-event-details</span>] (group)
     
+                    
                     <ul style="list-style:none;">
                         <li>This group contains details about same-day outcome measures events. [
+                            
                             <span style="font-style:italic">same-day-outcome-measures-event-details-group-description</span>] (display)
     
+                        
                         </li>
                         <li>
                             <span style="color:red">* </span>
                             <span style="font-weight:bold">Same Day Outcome Measure: Patient Burn</span> [
+                            
                             <span style="font-style:italic">same-day-outcome-measure-patient-burn</span>] (boolean)
     
+                        
                         </li>
                         <li>
                             <span style="color:red">* </span>
                             <span style="font-weight:bold">Same Day Outcome Measure: Patient fall</span> [
+                            
                             <span style="font-style:italic">same-day-outcome-measure-patient-fall</span>] (boolean)
     
+                        
                         </li>
                         <li>
                             <span style="color:red">* </span>
                             <span style="font-weight:bold">Same Day Outcome Measure: Hospital transfer/admission</span> [
+                            
                             <span style="font-style:italic">same-day-outcome-transfer-admission</span>] (boolean)
     
+                        
                         </li>
                         <li>
                             <span style="color:red">* </span>
                             <span style="font-weight:bold">Same Day Outcome Measure: Wrong site</span> [
+                            
                             <span style="font-style:italic">same-day-outcome-measure-wrong-site</span>] (boolean)
     
+                        
                         </li>
                         <li>
                             <span style="color:red">* </span>
                             <span style="font-weight:bold">Same Day Outcome Measure: Wrong side</span> [
+                            
                             <span style="font-style:italic">same-day-outcome-measure-wrong-side</span>] (boolean)
     
+                        
                         </li>
                         <li>
                             <span style="color:red">* </span>
                             <span style="font-weight:bold">Same Day Outcome Measure: Wrong patient</span> [
+                            
                             <span style="font-style:italic">same-day-outcome-measure-wrong-patient</span>] (boolean)
     
+                        
                         </li>
                         <li>
                             <span style="color:red">* </span>
                             <span style="font-weight:bold">Same Day Outcome Measure: Wrong procedure</span> [
+                            
                             <span style="font-style:italic">same-day-outcome-measure-wrong-procedure</span>] (boolean)
     
+                        
                         </li>
                         <li>
                             <span style="color:red">* </span>
                             <span style="font-weight:bold">Same Day Outcome Measure: Wrong implant</span> [
+                            
                             <span style="font-style:italic">same-day-outcome-measure-wrong-implant</span>] (boolean)
     
+                        
                         </li>
                     </ul>
                 </li>
                 <li>
                     <span style="font-weight:bold">Comments</span> [
+                    
                     <span style="font-style:italic">nhsn-comment</span>] (text)
     
+                
                 </li>
             </ul>
         </div>
@@ -284,7 +315,7 @@
         <item>
             <linkId value="same-day-outcome-transfer-admission"/>
             <code>
-                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                 <code value="1645-1"/>
                 <display value="Hospital transer/admission"/>
             </code>
@@ -296,7 +327,7 @@
         <item>
             <linkId value="same-day-outcome-measure-wrong-site"/>
             <code>
-                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                 <code value="1646-9"/>
                 <display value="Wrong site"/>
             </code>
@@ -308,7 +339,7 @@
         <item>
             <linkId value="same-day-outcome-measure-wrong-side"/>
             <code>
-                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                 <code value="1647-7"/>
                 <display value="Wrong side"/>
             </code>
@@ -320,7 +351,7 @@
         <item>
             <linkId value="same-day-outcome-measure-wrong-patient"/>
             <code>
-                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                 <code value="1648-5"/>
                 <display value="Wrong patient"/>
             </code>
@@ -344,7 +375,7 @@
         <item>
             <linkId value="same-day-outcome-measure-wrong-implant"/>
             <code>
-                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                 <code value="1649-3"/>
                 <display value="Wrong implant"/>
             </code>

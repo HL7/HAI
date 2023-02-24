@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaireresponse-los-denom"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-02-23T23:53:22.490+00:00"/>
-        <source value="#soozqYvKMDeYBwRx"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-02-24T01:00:37.852+00:00"/>
+        <source value="#lEPxPMxzkTbg59d6"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse"/>
     </meta>
     <identifier>
@@ -51,7 +51,7 @@
             <text value="Facility Location Type"/>
             <answer>
                 <valueCoding>
-                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259"/>
+                    <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"/>
                     <code value="1039-7"/>
                     <display value="Neonatal Critical Care(Level II/III)"/>
                 </valueCoding>

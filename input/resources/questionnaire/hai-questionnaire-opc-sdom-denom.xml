@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-opc-sdom-denom"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-02-24T00:53:12.262+00:00"/>
-        <source value="#GAQKsVxzxzhgC62t"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-02-24T00:57:56.196+00:00"/>
+        <source value="#eiwEgnLdbnfO3b0b"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/>
     </meta>
     <language value="en-US"/>
@@ -16,7 +16,9 @@
             <h1>Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</h1>
             <p>This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Same Day Outcome Measures. It records the summary data for same outpatient procedures same day outcome measures.</p>
             <p>For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website 
+                
                 <a href="https://www.cdc.gov/nhsn/">https://www.cdc.gov/nhsn/</a>.
+            
             </p>
             <h2>Questionnaire Details</h2>
             <table>
@@ -110,6 +112,7 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>Healthcare Associated Infection report Document</li>
                             <li>Code system: 
+                                
                                 <a href="http://loinc.org">http://loinc.org</a>
                             </li>
                             <li>Code: 51897-7</li>
@@ -124,7 +127,8 @@
                         <ul style="list-style:none; padding-left:0; margin:0 0;">
                             <li>Summary data reporting outpatient procedure component events at a facility</li>
                             <li>Code system: 
-                                <a href="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277">http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277</a>
+                                
+                                <a href="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html">https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html</a>
                             </li>
                             <li>Code: 1657-6</li>
                         </ul>
@@ -134,40 +138,53 @@
             <br/>
             <br/>
             <h2>Questionnaire Items (
+                
                 <span style="color:red">*</span> required)
+            
             </h2>
             <ul style="list-style:none;">
                 <li>
                     <span style="color:red">* </span>
                     <span style="font-weight:bold">Facility ID</span> [
+                    
                     <span style="font-style:italic">facility-id</span>] (url)
     
+                
                 </li>
                 <li>
                     <span style="color:red">* </span>
                     <span style="font-weight:bold">First day of period reported</span> [
+                    
                     <span style="font-style:italic">report-period-start</span>] (date)
     
+                
                 </li>
                 <li>
                     <span style="color:red">* </span>
                     <span style="font-weight:bold">Last day of period reported</span> [
+                    
                     <span style="font-style:italic">report-period-end</span>] (date)
     
+                
                 </li>
                 <li>
                     <span style="color:red">* </span>
                     <span style="font-weight:bold">Facility Location Id</span> [
+                    
                     <span style="font-style:italic">facility-location-id</span>] (url)
     
+                
                 </li>
                 <li>
                     <span style="color:red">* </span>
                     <span style="font-weight:bold">Facility Location Type</span> [
+                    
                     <span style="font-style:italic">facility-location-type</span>] (choice)
     
+                    
                     <ul>
                         <li>answerValueSet: 
+                            
                             <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19</a>
                         </li>
                     </ul>
@@ -175,42 +192,56 @@
                 <li>
                     <span style="color:red">* </span>
                     <span style="font-weight:bold">Summary Data</span> [
+                    
                     <span style="font-style:italic">summary-data-group</span>] (group)
     
+                    
                     <ul style="list-style:none;">
                         <li>This group contains specific counts for the type of report. [
+                            
                             <span style="font-style:italic">summary-data-group-description</span>] (display)
     
+                        
                         </li>
                         <li>
                             <span style="color:red">* </span>
                             <span style="font-weight:bold">Number of Total Facility Encounters (for outpatient location)</span> [
+                            
                             <span style="font-style:italic">total-facility-encounters-outpatient</span>] (integer)
     
+                        
                         </li>
                     </ul>
                 </li>
                 <li>
                     <span style="color:red">* </span>
                     <span style="font-weight:bold">Report no events</span> [
+                    
                     <span style="font-style:italic">report-no-events-group</span>] (group)
     
+                    
                     <ul style="list-style:none;">
                         <li>This group contains statements that there are no events to report for a particular type of event. [
+                            
                             <span style="font-style:italic">report-no-events-group-description</span>] (display)
     
+                        
                         </li>
                         <li>
                             <span style="font-weight:bold">No Same Day Outcome Measures (events) reported this month</span> [
+                            
                             <span style="font-style:italic">no-same-day-outcome-measures</span>] (boolean)
     
+                        
                         </li>
                     </ul>
                 </li>
                 <li>
                     <span style="font-weight:bold">Comments</span> [
+                    
                     <span style="font-style:italic">nhsn-comment</span>] (text)
     
+                
                 </li>
             </ul>
         </div>
@@ -240,7 +271,7 @@
         <display value="Healthcare Associated Infection report Document"/>
     </code>
     <code>
-        <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+        <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
         <code value="1657-6"/>
         <display value="Summary data reporting outpatient procedure component events at a facility"/>
     </code>
@@ -299,7 +330,7 @@
         <item>
             <linkId value="total-facility-encounters-outpatient"/>
             <code>
-                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                 <code value="1890-3"/>
                 <display value="Number of Total Facility Encounters (for outpatient location)"/>
             </code>
@@ -328,7 +359,7 @@
         <item>
             <linkId value="no-same-day-outcome-measures"/>
             <code>
-                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                 <code value="1340-9"/>
                 <display value="No Same Day Outcome Measures (events) reported this month"/>
             </code>

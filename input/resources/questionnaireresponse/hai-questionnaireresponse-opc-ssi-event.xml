@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaireresponse-opc-ssi-event"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-02-23T23:53:22.498+00:00"/>
-        <source value="#slne1AgJ2ZTXKtaK"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-02-24T00:58:06.907+00:00"/>
+        <source value="#cHPzvzogmLGasqlH"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse"/>
     </meta>
     <identifier>
@@ -62,7 +62,7 @@
             <text value="NHSN Procedure Code Category"/>
             <answer>
                 <valueCoding>
-                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                     <code value="2108-9"/>
                     <display value="Appendix surgery"/>
                 </valueCoding>
@@ -91,7 +91,7 @@
             <text value="Surgical Site Infection (SSI) Level"/>
             <answer>
                 <valueCoding>
-                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                     <code value="1620-4"/>
                     <display value="Superficial incisional primary SSI"/>
                 </valueCoding>
@@ -204,7 +204,7 @@
             <text value="Surveillence method type (active/passive) through which the SSI was detected"/>
             <answer>
                 <valueCoding>
-                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                     <code value="1309-4"/>
                     <display value="Active SSI Detection Method"/>
                 </valueCoding>
@@ -215,7 +215,7 @@
             <text value="Surveillence method through which the SSI was detected"/>
             <answer>
                 <valueCoding>
-                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                     <code value="1321-9"/>
                     <display value="Review of patient's medical record"/>
                 </valueCoding>

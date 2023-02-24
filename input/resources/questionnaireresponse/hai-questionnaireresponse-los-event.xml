@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaireresponse-los-event"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-02-23T23:53:22.495+00:00"/>
-        <source value="#dl6JS3OSqqqvK4Zn"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-02-24T01:00:37.840+00:00"/>
+        <source value="#kBYp9GZKYUQz90q6"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse"/>
     </meta>
     <identifier>
@@ -59,7 +59,7 @@
         <text value="Facility Location"/>
         <answer>
             <valueCoding>
-                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259"/>
+                <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"/>
                 <code value="1029-8"/>
                 <display value="Medical/Surgical Critical Care"/>
             </valueCoding>
@@ -125,7 +125,7 @@
             <text value="Specific Event"/>
             <answer>
                 <valueCoding>
-                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                     <code value="3067-6"/>
                     <display value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)"/>
                 </valueCoding>
@@ -136,7 +136,7 @@
             <text value="Laboratory Criteria Used"/>
             <answer>
                 <valueCoding>
-                    <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.277"/>
+                    <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                     <code value="1951-3"/>
                     <display value="Recognized pathogen from one or more blood cultures"/>
                 </valueCoding>

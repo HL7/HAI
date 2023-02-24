@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaireresponse-opc-sdom-denom"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-02-23T23:53:22.489+00:00"/>
-        <source value="#EaG1AUGllOJsIMUU"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-02-24T01:00:37.812+00:00"/>
+        <source value="#qPbzkt3uoCC8FUCr"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaireresponse"/>
     </meta>
     <identifier>
@@ -55,7 +55,7 @@
         <text value="Facility Location Type"/>
         <answer>
             <valueCoding>
-                <system value="http://hl7.org/fhir/us/hai/CodeSystem/2.16.840.1.113883.6.259"/>
+                <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"/>
                 <code value="1029-8"/>
                 <display value="Medical/Surgical Critical Care"/>
             </valueCoding>
