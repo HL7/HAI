@@ -3,11 +3,248 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-los-denom"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-02-23T23:52:25.011+00:00"/>
-        <source value="#gDi4YtfAJ7YaUhVh"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-02-24T00:53:12.265+00:00"/>
+        <source value="#YH7eM7EIjtKjen9z"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
     </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <h1>Late Onset Sepsis/Meningitis Denominator</h1>
+            <p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Denominator. This report records the denominator information for neonatal component late onset sepsis and meningitis (LOS/Men).</p>
+            <p>For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website 
+                <a href="https://www.cdc.gov/nhsn/">https://www.cdc.gov/nhsn/</a>.
+            </p>
+            <h2>Questionnaire Details</h2>
+            <table>
+                <tr>
+                    <td>
+                        <b>Id:</b>
+                    </td>
+                    <td>hai-questionnaire-los-denom</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Profile:</b>
+                    </td>
+                    <td>http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Language:</b>
+                    </td>
+                    <td>en-US</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Url:</b>
+                    </td>
+                    <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-denom</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Identifier:</b>
+                    </td>
+                    <td>
+                        <span>hai-questionnaire-los-denom-v1</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Version:</b>
+                    </td>
+                    <td>Version: 2.0.0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Name:</b>
+                    </td>
+                    <td>HAI_questionnaire_los_denom</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Status:</b>
+                    </td>
+                    <td>draft</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Experimental:</b>
+                    </td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Subject Type:</b>
+                    </td>
+                    <td>Patient (Source Patient Resource (US Core Patient))</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Date:</b>
+                    </td>
+                    <td>2019-04-01</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Publisher:</b>
+                    </td>
+                    <td>HL7 Structured Documents Work Group</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Jurisdiction:</b>
+                    </td>
+                    <td>
+                        <span title="Code system: urn:iso:std:iso:3166">Code: US</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Code:</b>
+                    </td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>Healthcare Associated Infection report Document</li>
+                            <li>Code system: 
+                                <a href="http://loinc.org">http://loinc.org</a>
+                            </li>
+                            <li>Code: 51897-7</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <h2>Questionnaire Items (
+                <span style="color:red">*</span> required)
+            </h2>
+            <ul style="list-style:none;">
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Year and month data collected for this location</span> [
+                    <span style="font-style:italic">date-collected</span>] (date)
+    
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Facility ID</span> [
+                    <span style="font-style:italic">facility</span>] (url)
+    
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Date Admitted to Facility</span> [
+                    <span style="font-style:italic">date-admitted-to-facility</span>] (date)
+    
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Location Within Facility Encounter</span> [
+                    <span style="font-style:italic">location-within-facility-encounter-group</span>] (group)
+    
+                    <ul style="list-style:none;">
+                        <li>This group contains information detailing an encounter at a location within the facility. It contains the patient's location within the facility, the date admitted or transferred to that location, the disposition of the infant and, if the infant was discharged, transferred, or expired, the date on which this occurred is recorded. If the infant had no location change, no date is recorded. [
+                            <span style="font-style:italic">location-within-facility-encounter-group-description</span>] (display)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Facility Location Type</span> [
+                            <span style="font-style:italic">facility-location-type</span>] (choice)
+    
+                            <ul>
+                                <li>answerValueSet: 
+                                    <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Facility Location</span> [
+                            <span style="font-style:italic">facility-location</span>] (url)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Date admitted or transferred to location</span> [
+                            <span style="font-style:italic">location-admit-transfer-date</span>] (date)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Disposition of infant</span> [
+                            <span style="font-style:italic">infant-disposition</span>] (choice)
+    
+                            <ul>
+                                <li>answerValueSet: 
+                                    <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span style="font-weight:bold">Disposition date if discharged, transferred, or expired</span> [
+                            <span style="font-style:italic">disposition-date</span>] (date)
+    
+                            <ul>
+                                <li>Enable when: 
+                                    <span style="font-style:italic">infant-disposition</span> = "183665006" or 
+                                    <br/>
+                                    <span style="font-style:italic">infant-disposition</span> = "266751003" or 
+                                    <br/>
+                                    <span style="font-style:italic">infant-disposition</span> = "371828006"
+                                    <br/>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Risk Factors</span> [
+                    <span style="font-style:italic">risk-factors</span>] (group)
+    
+                    <ul style="list-style:none;">
+                        <li>This group contains risk factors such as birth weight and gestational age. [
+                            <span style="font-style:italic">risk-factors-group-description</span>] (display)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Risk Factor: Birth weight (grams)</span> [
+                            <span style="font-style:italic">risk-factor-birth-weight</span>] (quantity)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Gestational age known: set true if known and false if unknown</span> [
+                            <span style="font-style:italic">gestational-age-known</span>] (boolean)
+    
+                        </li>
+                        <li>
+                            <span style="font-weight:bold">Risk Factor: Gestational age (days)</span> [
+                            <span style="font-style:italic">risk-factor-gestational-age</span>] (quantity)
+    
+                            <ul>
+                                <li>Enable when: 
+                                    <span style="font-style:italic">gestational-age-known</span> = "true"
+                                    <br/>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="font-weight:bold">Comments</span> [
+                    <span style="font-style:italic">nhsn-comment</span>] (text)
+    
+                </li>
+            </ul>
+        </div>
+    </text>
     <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-denom"/>
     <identifier>
         <value value="hai-questionnaire-los-denom-v1"/>
@@ -75,7 +312,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.19"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/>
         </item>
         <item>
             <linkId value="facility-location"/>
@@ -97,7 +334,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.5.9.30"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.30"/>
         </item>
         <item>
             <linkId value="disposition-date"/>

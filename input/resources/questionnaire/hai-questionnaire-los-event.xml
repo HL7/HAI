@@ -3,11 +3,341 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-los-event"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-02-24T00:14:57.537+00:00"/>
-        <source value="#R4AmxfNLTzAXDdzh"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-02-24T00:53:12.250+00:00"/>
+        <source value="#oAO1hXXS9hlIjd1F"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
     </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <h1>Late Onset Sepsis/Meningitis Event (LOS)</h1>
+            <p>This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.</p>
+            <p>For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website 
+                <a href="https://www.cdc.gov/nhsn/">https://www.cdc.gov/nhsn/</a>.
+            </p>
+            <h2>Questionnaire Details</h2>
+            <table>
+                <tr>
+                    <td>
+                        <b>Id:</b>
+                    </td>
+                    <td>hai-questionnaire-los-event</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Profile:</b>
+                    </td>
+                    <td>http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Language:</b>
+                    </td>
+                    <td>en-US</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Url:</b>
+                    </td>
+                    <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Identifier:</b>
+                    </td>
+                    <td>
+                        <span>hai-questionnaire-los-event-v2</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Version:</b>
+                    </td>
+                    <td>Version: 2.0.0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Name:</b>
+                    </td>
+                    <td>HAI_questionnaire_los_event</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Status:</b>
+                    </td>
+                    <td>draft</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Subject Type:</b>
+                    </td>
+                    <td>Patient (Source Patient Resource (US Core Patient))</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Date:</b>
+                    </td>
+                    <td>2019-04-01</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Publisher:</b>
+                    </td>
+                    <td>HL7 Structured Documents Work Group</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Jurisdiction:</b>
+                    </td>
+                    <td>
+                        <span title="Code system: urn:iso:std:iso:3166">Code: US</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Code:</b>
+                    </td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>Healthcare Associated Infection report Document</li>
+                            <li>Code system: 
+                                <a href="http://loinc.org">http://loinc.org</a>
+                            </li>
+                            <li>Code: 51897-7</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <h2>Questionnaire Items (
+                <span style="color:red">*</span> required)
+            </h2>
+            <ul style="list-style:none;">
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Facility ID</span> [
+                    <span style="font-style:italic">facility</span>] (url)
+    
+                </li>
+                <li>
+                    <span style="font-weight:bold">Event Number</span> [
+                    <span style="font-style:italic">event-number</span>] (url)
+    
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Event Type</span> [
+                    <span style="font-style:italic">event-type</span>] (choice)
+    
+                    <ul>
+                        <li>answerValueSet: 
+                            <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Date of Event</span> [
+                    <span style="font-style:italic">date-of-event</span>] (date)
+    
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Facility Location</span> [
+                    <span style="font-style:italic">facility-location</span>] (choice)
+    
+                    <ul>
+                        <li>answerValueSet: 
+                            <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Date Admitted to Facility:</span> [
+                    <span style="font-style:italic">date-admitted-to-facility</span>] (date)
+    
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false.</span> [
+                    <span style="font-style:italic">inborn-outborn-observation</span>] (boolean)
+    
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Risk Factors</span> [
+                    <span style="font-style:italic">risk-factors</span>] (group)
+    
+                    <ul style="list-style:none;">
+                        <li>This group contains risk factors such as central line present, birth weight, and gestational age. [
+                            <span style="font-style:italic">risk-factors-group</span>] (display)
+    
+                        </li>
+                        <li>
+                            <span style="font-weight:bold">Risk Factor: Central line present prior to event, including umbilical catheter</span> [
+                            <span style="font-style:italic">risk-factor-central-line</span>] (boolean)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Risk Factor: Birth weight (grams)</span> [
+                            <span style="font-style:italic">risk-factor-birth-weight</span>] (quantity)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Gestational age known: set true if known and false if unknown</span> [
+                            <span style="font-style:italic">gestational-age-known</span>] (boolean)
+    
+                        </li>
+                        <li>
+                            <span style="font-weight:bold">Risk Factor: Gestational age (days)</span> [
+                            <span style="font-style:italic">risk-factor-gestational-age</span>] (quantity)
+    
+                            <ul>
+                                <li>Enable when: 
+                                    <span style="font-style:italic">gestational-age-known</span> = "true"
+                                    <br/>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Event Details</span> [
+                    <span style="font-style:italic">event-details</span>] (group)
+    
+                    <ul style="list-style:none;">
+                        <li>This group contains details aboout the late onset septis infection event. [
+                            <span style="font-style:italic">event-details-group</span>] (display)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Specific Event</span> [
+                            <span style="font-style:italic">infection-condition</span>] (choice)
+    
+                            <ul>
+                                <li>answerValueSet: 
+                                    <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Laboratory Criteria Used</span> [
+                            <span style="font-style:italic">criteria-used</span>] (choice)
+    
+                            <ul>
+                                <li>answerValueSet: 
+                                    <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Died</span> [
+                            <span style="font-style:italic">died</span>] (boolean)
+    
+                        </li>
+                        <li>
+                            <span style="font-weight:bold">Infection contributed to death</span> [
+                            <span style="font-style:italic">los-contributed-to-death</span>] (boolean)
+    
+                            <ul>
+                                <li>Enable when: 
+                                    <span style="font-style:italic">died</span> = "true"
+                                    <br/>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span style="font-weight:bold">Discharge Date</span> [
+                            <span style="font-style:italic">discharge-date</span>] (date)
+    
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Findings Group</span> [
+                    <span style="font-style:italic">findings-group</span>] (group, repeats)
+    
+                    <ul style="list-style:none;">
+                        <li>This group records whether infection organisms were identified and, if so, records details about them. [
+                            <span style="font-style:italic">findings-group-description</span>] (display)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Pathogen Identified</span> [
+                            <span style="font-style:italic">pathogen-identified</span>] (choice)
+    
+                            <ul>
+                                <li>answerValueSet: 
+                                    <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Pathogen Ranking</span> [
+                            <span style="font-style:italic">pathogen-ranking</span>] (choice)
+    
+                            <ul>
+                                <li>answerValueSet: 
+                                    <a href="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking">http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span style="font-weight:bold">Drug Susceptibility Test Group</span> [
+                            <span style="font-style:italic">drug-susceptibility-test-group</span>] (group, repeats)
+    
+                            <ul style="list-style:none;">
+                                <li>This group contains drug-susceptibility information such as the drug and the pathogen's susceptibility to it. [
+                                    <span style="font-style:italic">drug-susceptibility-test-group-description</span>] (display)
+    
+                                </li>
+                                <li>
+                                    <span style="color:red">* </span>
+                                    <span style="font-weight:bold">Drug Susceptibility Test</span> [
+                                    <span style="font-style:italic">drug-susceptibility-test</span>] (choice)
+    
+                                    <ul>
+                                        <li>answerValueSet: 
+                                            <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span style="font-weight:bold">Drug Susceptibility Test Interpretation</span> [
+                                    <span style="font-style:italic">drug-susceptibility-test-interpretation</span>] (choice)
+    
+                                    <ul>
+                                        <li>answerValueSet: 
+                                            <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="font-weight:bold">Comments</span> [
+                    <span style="font-style:italic">nhsn-comment</span>] (text)
+    
+                </li>
+            </ul>
+        </div>
+    </text>
     <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event"/>
     <identifier>
         <value value="hai-questionnaire-los-event-v2"/>
@@ -51,7 +381,7 @@
         <type value="choice"/>
         <required value="true"/>
         <repeats value="false"/>
-        <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.20"/>
+        <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.20"/>
     </item>
     <item>
         <linkId value="date-of-event"/>
@@ -66,7 +396,7 @@
         <type value="choice"/>
         <required value="true"/>
         <repeats value="false"/>
-        <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.19"/>
+        <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/>
     </item>
     <item>
         <linkId value="date-admitted-to-facility"/>
@@ -181,7 +511,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3196"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196"/>
         </item>
         <item>
             <linkId value="criteria-used"/>
@@ -189,7 +519,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3195"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195"/>
         </item>
         <item>
             <linkId value="died"/>
@@ -245,7 +575,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.16"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16"/>
         </item>
         <item>
             <linkId value="pathogen-ranking"/>
@@ -271,7 +601,7 @@
                 <type value="choice"/>
                 <required value="true"/>
                 <repeats value="false"/>
-                <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.15"/>
+                <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15"/>
             </item>
             <item>
                 <linkId value="drug-susceptibility-test-interpretation"/>
@@ -279,14 +609,14 @@
                 <type value="choice"/>
                 <required value="false"/>
                 <repeats value="false"/>
-                <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.13"/>
+                <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13"/>
             </item>
         </item>
     </item>
     <item>
         <linkId value="nhsn-comment"/>
         <code>
-            <system value="http://loinc.org"/>
+            <system value="http://www.loinc.org"/>
             <code value="86468-6"/>
             <display value="Report Comment Section"/>
         </code>

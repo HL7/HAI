@@ -3,11 +3,261 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-opc-proc-denom"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-02-23T23:52:25.012+00:00"/>
-        <source value="#dTcW0aG7MKzcUHNH"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-02-24T00:53:12.264+00:00"/>
+        <source value="#cygMX3lJ8z5VHTVH"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
     </meta>
+    <language value="en-US"/>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+            <h1>Outpatient Procedure Component Denominator for Procedure</h1>
+            <p>This Questionnaire instance defines the questions and possible answers in the Outpatient Procedure Component Denominator for Procedure. This report records date on each patient having one of the NHSN procedures selected for monitoring.</p>
+            <p>For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website 
+                <a href="https://www.cdc.gov/nhsn/">https://www.cdc.gov/nhsn/</a>.
+            </p>
+            <h2>Questionnaire Details</h2>
+            <table>
+                <tr>
+                    <td>
+                        <b>Id:</b>
+                    </td>
+                    <td>hai-questionnaire-opc-proc-denom</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Profile:</b>
+                    </td>
+                    <td>http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Language:</b>
+                    </td>
+                    <td>en-US</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Url:</b>
+                    </td>
+                    <td>http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-proc-denom</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Identifier:</b>
+                    </td>
+                    <td>
+                        <span>hai-questionnaire-opc-proc-denom-v1</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Version:</b>
+                    </td>
+                    <td>Version: 2.0.0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Name:</b>
+                    </td>
+                    <td>HAI_questionnaire_opc_proc_denom</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Status:</b>
+                    </td>
+                    <td>draft</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Experimental:</b>
+                    </td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Subject Type:</b>
+                    </td>
+                    <td>Patient (Source Patient Resource (US Core Patient))</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Date:</b>
+                    </td>
+                    <td>2019-04-01</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Publisher:</b>
+                    </td>
+                    <td>HL7 Structured Documents Work Group</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Jurisdiction:</b>
+                    </td>
+                    <td>
+                        <span title="Code system: urn:iso:std:iso:3166">Code: US</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Code:</b>
+                    </td>
+                    <td>
+                        <ul style="list-style:none; padding-left:0; margin:0 0;">
+                            <li>Healthcare Associated Infection report Document</li>
+                            <li>Code system: 
+                                <a href="http://loinc.org">http://loinc.org</a>
+                            </li>
+                            <li>Code: 51897-7</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <h2>Questionnaire Items (
+                <span style="color:red">*</span> required)
+            </h2>
+            <ul style="list-style:none;">
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Facility ID</span> [
+                    <span style="font-style:italic">facility-id</span>] (url)
+    
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Date of encounter</span> [
+                    <span style="font-style:italic">encounter-date</span>] (date)
+    
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Risk Factors</span> [
+                    <span style="font-style:italic">risk-factors</span>] (group)
+    
+                    <ul style="list-style:none;">
+                        <li>This group contains procedure risk factors such as ASA class, diabetes mellitus, height, and weight. [
+                            <span style="font-style:italic">risk-factors-group-description</span>] (display)
+    
+                        </li>
+                        <li>
+                            <span style="font-weight:bold">Risk Factor: Wound class</span> [
+                            <span style="font-style:italic">risk-factor-wound-class</span>] (choice)
+    
+                            <ul>
+                                <li>answerValueSet: 
+                                    <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Risk Factor: Endoscopy used</span> [
+                            <span style="font-style:italic">risk-factor-endoscopy</span>] (boolean)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Risk Factor: Diabetes mellitus</span> [
+                            <span style="font-style:italic">risk-factor-diabetes-mellitus</span>] (boolean)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Risk Factor: height</span> [
+                            <span style="font-style:italic">risk-factor-height</span>] (quantity)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Risk Factor: weight</span> [
+                            <span style="font-style:italic">risk-factor-weight</span>] (quantity)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Risk Factor: ASA Class</span> [
+                            <span style="font-style:italic">risk-factor-asa-class</span>] (choice)
+    
+                            <ul>
+                                <li>answerValueSet: 
+                                    <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.10">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.10</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Procedure Details</span> [
+                    <span style="font-style:italic">procedure-details</span>] (group)
+    
+                    <ul style="list-style:none;">
+                        <li>This group contains details about the procedure. [
+                            <span style="font-style:italic">procedure-details-group-description</span>] (display)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Procedure ID</span> [
+                            <span style="font-style:italic">procedure-id</span>] (url)
+    
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">NHSN Procedure Code Category</span> [
+                            <span style="font-style:italic">nhsn-procedure-code-category</span>] (choice)
+    
+                            <ul>
+                                <li>answerValueSet: 
+                                    <a href="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34">http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">CPT Procedure Code</span> [
+                            <span style="font-style:italic">cpt-procedure-code</span>] (choice)
+    
+                            <ul>
+                                <li>answerValueSet: 
+                                    <a href="http://hl7.org/fhir/ValueSet/cpt-all">http://hl7.org/fhir/ValueSet/cpt-all</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span style="color:red">* </span>
+                            <span style="font-weight:bold">Procedure duration (in minutes)</span> [
+                            <span style="font-style:italic">procedure-duration</span>] (quantity)
+    
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">General anesthesia</span> [
+                    <span style="font-style:italic">general-anesthesia</span>] (boolean)
+    
+                </li>
+                <li>
+                    <span style="color:red">* </span>
+                    <span style="font-weight:bold">Surgeon code</span> [
+                    <span style="font-style:italic">surgeon-code</span>] (url)
+    
+                </li>
+                <li>
+                    <span style="font-weight:bold">Comments</span> [
+                    <span style="font-style:italic">nhsn-comment</span>] (text)
+    
+                </li>
+            </ul>
+        </div>
+    </text>
     <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-proc-denom"/>
     <identifier>
         <value value="hai-questionnaire-opc-proc-denom-v1"/>
@@ -73,7 +323,7 @@
             <type value="choice"/>
             <required value="false"/>
             <repeats value="false"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.9"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9"/>
         </item>
         <item>
             <linkId value="risk-factor-endoscopy"/>
@@ -134,7 +384,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.10"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.10"/>
         </item>
     </item>
     <item>
@@ -171,7 +421,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
         </item>
         <item>
             <linkId value="cpt-procedure-code"/>
@@ -223,7 +473,7 @@
     <item>
         <linkId value="nhsn-comment"/>
         <code>
-            <system value="http://loinc.org"/>
+            <system value="http://www.loinc.org"/>
             <code value="86468-6"/>
             <display value="Report Comment Section"/>
         </code>

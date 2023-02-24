@@ -1,90 +1,58 @@
-<div>
-  <h2>Current Release (STU 2 Release)</h2>
-  <p>This implementation guide is second STU FHIR release of the HAI reporting profiles. It adds two profiles, five reports (Questionnaire) and six value sets.</p>
-  <p>This release of the IG is based on FHIR Version 4.0.0 (R4) whereas previous release were based on FHIR Release 3.0.1 (STU3). </p>
-  
-  <h3>Profiles</h3>
-  <ul>
-      <li><a href="StructureDefinition-hai-population-summary-questionnaire.html">hai-population-summary-questionnaire</a></li>
-      <li><a href="StructureDefinition-hai-population-summary-questionnaireresponse.html">hai-population-summary-questionnaireresponse</a></li>
-  </ul>
-  
-  <h3>HAI Single-Person Reports (Questionnaire)</h3>
-  <ul>
-    <li><a href="Questionnaire-hai-questionnaire-los-denom.html">Questionnaire Instance for Late Onset Sepsis/Meningitis Denominator</a></li>
-    <li><a href="Questionnaire-hai-questionnaire-opc-proc-denom.html">Questionnaire Instance for Outpatient Procedure Component Denominator for Procedure</a></li>
-    <li><a href="Questionnaire-hai-questionnaire-opc-sdom-event.html">Questionnaire Instance for Outpatient Procedure Component Same Day Outcome Measures Event Report</a></li>
-    <li><a href="Questionnaire-hai-questionnaire-opc-ssi-event.html">Questionnaire Instance for Outpatient Procedure Component Surgical Site Infection (SSI) Event</a></li>
-  </ul>
-  
-  <h3>HAI Population Summary Reports (Questionnaire)</h3>
-  <ul>
-    <li>
-      <a href="Questionnaire-hai-questionnaire-opc-sdom-denom.html">Questionnaire Instance for Outpatient Procedure Component Denominator for Same Day Outcome Measures Report</a>
-    </li>
-  </ul>
-  
-  
-  <h3>Value Sets</h3>
-  <ul>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.10.20.5.9.29.html">NHSNSSIDetectionMethod</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.10.20.5.9.30.html">NHSNLOS/MENDischargeDisposition</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.10.20.5.9.31.html">NHSNSSIDetectionMethodType</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.10.20.5.9.34.html">NHSNOPCProcedureCategoryCode</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.13.9.html">NHSNWoundClassCode</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.13.10.html">NHSNASAClassCode</a>
-    </li>
-  </ul>
-</div>
+Current Release (STU 2.1 Release)
+-------------------------------
+This implementation guide is the first update to the second STU FHIR release of the HAI reporting profiles. It udpates the FHIR Version to 4.0.1, updates the US Core Version to 5.0.1 and TODO
 
 
-<div>
-  <h2>STU 1 Release</h2>
-  <p>This implementation guide is the first FHIR release of the HAI reporting profiles. It adds one report (Questionnaire) and nine value sets.</p>
-  
-  <h3>HAI Single-Person Reports (Questionnaire)</h3>
-  <ul>
-    <li>
-      <a href="Questionnaire-hai-questionnaire-los-event.html">Late Onset Sepsis/Meningitis Event (LOS) Report</a>
-    </li>
-  </ul>
-  
-  <h3>Value Sets</h3>
-  <ul>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.13.19.html">NHSNHealthcareServiceLocationCode</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.13.20.html">NHSNInfectionTypeCode</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.13.13.html">NHSNDrugSusceptibilityFindingCode</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.13.15.html">NHSNDrugSusceptibilityTestsCode</a>
-    </li>
-    <li>
-      <a href="ValueSet-nhsn-pathogen-ranking.html">NHSNPathogenRanking</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.113883.13.16.html">NHSNPathogenCode</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.114222.4.11.3195.html">NHSNCriterionOfDiagnosisCode</a>
-    </li>
-    <li>
-      <a href="ValueSet-2.16.840.1.114222.4.11.3196.html">NHSNInfectionConditionCode</a>
-    </li>
-  </ul>
-</div>
+
+
+STU 2 Release
+-------------------------------
+
+This implementation guide is second STU FHIR release of the HAI reporting profiles. It adds two profiles, five reports (Questionnaire) and six value sets.
+
+This release of the IG is based on FHIR Version 4.0.0 (R4) whereas previous releases were based on FHIR Release 3.0.1 (STU3).
+
+### Profiles
+
+* [hai-population-summary-questionnaire](StructureDefinition-hai-population-summary-questionnaire.html)
+* [hai-population-summary-questionnaireresponse](StructureDefinition-hai-population-summary-questionnaireresponse.html)
+
+### HAI Single-Person Reports (Questionnaire)
+
+* [Questionnaire Instance for Late Onset Sepsis/Meningitis Denominator](Questionnaire-hai-questionnaire-los-denom.html)
+* [Questionnaire Instance for Outpatient Procedure Component Denominator for Procedure](Questionnaire-hai-questionnaire-opc-proc-denom.html)
+* [Questionnaire Instance for Outpatient Procedure Component Same Day Outcome Measures Event Report](Questionnaire-hai-questionnaire-opc-sdom-event.html)
+* [Questionnaire Instance for Outpatient Procedure Component Surgical Site Infection (SSI) Event](Questionnaire-hai-questionnaire-opc-ssi-event.html)
+
+### HAI Population Summary Reports (Questionnaire)
+
+* [Questionnaire Instance for Outpatient Procedure Component Denominator for Same Day Outcome Measures Report](Questionnaire-hai-questionnaire-opc-sdom-denom.html)
+
+### Value Sets
+
+* NHSNSSIDetectionMethod](ValueSet-2.16.840.1.113883.10.20.5.9.29.html) (in VSAC in latest release)
+* NHSNLOS/MENDischargeDisposition](ValueSet-2.16.840.1.113883.10.20.5.9.30.html) (in VSAC in latest release)
+* NHSNSSIDetectionMethodType](ValueSet-2.16.840.1.113883.10.20.5.9.31.html) (in VSAC in latest release)
+* NHSNOPCProcedureCategoryCode](ValueSet-2.16.840.1.113883.10.20.5.9.34.html) (in VSAC in latest release)
+* NHSNWoundClassCode](ValueSet-2.16.840.1.113883.13.9.html) (in VSAC in latest release)
+* NHSNASAClassCode](ValueSet-2.16.840.1.113883.13.10.html) (in VSAC in latest release)
+
+STU 1 Release
+-------------
+
+This implementation guide is the first FHIR release of the HAI reporting profiles. It adds one report (Questionnaire) and nine value sets.
+
+### HAI Single-Person Reports (Questionnaire)
+
+* [Late Onset Sepsis/Meningitis Event (LOS) Report](Questionnaire-hai-questionnaire-los-event.html)
+
+### Value Sets
+
+* NHSNHealthcareServiceLocationCode (in VSAC in latest release)
+* NHSNInfectionTypeCode (in VSAC in latest release)
+* NHSNDrugSusceptibilityFindingCode (in VSAC in latest release)
+* NHSNDrugSusceptibilityTestsCode (in VSAC in latest release)
+* NHSNPathogenRanking (in VSAC in latest release)
+* NHSNPathogenCode (in VSAC in latest release)
+* NHSNCriterionOfDiagnosisCode (in VSAC in latest release)
+* NHSNInfectionConditionCode (in VSAC in latest release)
