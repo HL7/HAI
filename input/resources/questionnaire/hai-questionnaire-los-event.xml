@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-los-event"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2023-02-24T01:16:34.271+00:00"/>
-        <source value="#9BPSzGdBY6Z2UhN1"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-02-24T01:35:54.069+00:00"/>
+        <source value="#TutCpWfFornPy4FG"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
     </meta>
     <language value="en-US"/>
@@ -287,7 +287,7 @@
     <item>
         <linkId value="nhsn-comment"/>
         <code>
-            <system value="http://www.loinc.org"/>
+            <system value="http://loinc.org"/>
             <code value="86468-6"/>
             <display value="Report Comment Section"/>
         </code>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-opc-ssi-event"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2023-02-24T01:16:34.139+00:00"/>
-        <source value="#5MhlYvUPd4jL40lR"/>
+        <versionId value="12"/>
+        <lastUpdated value="2023-02-24T01:35:54.061+00:00"/>
+        <source value="#tP7HDDAkX8upl5OX"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
     </meta>
     <language value="en-US"/>
@@ -337,7 +337,7 @@
     <item>
         <linkId value="nhsn-comment"/>
         <code>
-            <system value="http://www.loinc.org"/>
+            <system value="http://loinc.org"/>
             <code value="86468-6"/>
             <display value="Report Comment Section"/>
         </code>
