@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-population-summary-questionnaire"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-02-23T23:25:05.268+00:00"/>
-        <source value="#RemA5t9InqU2aVQl"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-02-24T01:26:42.832+00:00"/>
+        <source value="#ZHYyZF3GLNC70sBw"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/>
     <version value="R1"/>
@@ -107,34 +107,33 @@
             <max value="2"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Questionnaire.code:sliceHAI">
+        <element id="Questionnaire.code:codeHAI">
             <path value="Questionnaire.code"/>
-            <sliceName value="sliceHAI"/>
+            <sliceName value="codeHAI"/>
             <short value="Code for Healthcare Associated Infection Report (fixed)"/>
             <definition value="LOINC code 51897-7 to indicate that this is a Healthcare Associated Infection Report"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Questionnaire.code:sliceHAI.system">
+        <element id="Questionnaire.code:codeHAI.system">
             <path value="Questionnaire.code.system"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedCode value="http://loinc.org"/>
+            <fixedUri value="http://loinc.org"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Questionnaire.code:sliceHAI.code">
+        <element id="Questionnaire.code:codeHAI.code">
             <path value="Questionnaire.code.code"/>
             <min value="1"/>
             <max value="1"/>
             <fixedCode value="51897-7"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Questionnaire.code:sliceHAI.display">
+        <element id="Questionnaire.code:codeHAI.display">
             <path value="Questionnaire.code.display"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedCode value="Healthcare Associated Infection report Document"/>
             <mustSupport value="true"/>
         </element>
         <element id="Questionnaire.code:slicePopulationSummaryReportType">
