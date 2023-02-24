@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-hai"/>
     <meta>
-        <versionId value="72"/>
-        <lastUpdated value="2023-02-24T03:27:01.993+00:00"/>
-        <source value="#iuIXdnh74nvUS4RH"/>
+        <versionId value="73"/>
+        <lastUpdated value="2023-02-24T03:30:28.395+00:00"/>
+        <source value="#MDqCozxFEo8jQUWU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai"/>
     <version value="2.0.0"/>

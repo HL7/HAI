@@ -5,5 +5,7 @@
 	"version": "current",
 	"desc": "Continuous Integration Build (latest in version control)",
 	"path": "http://build.fhir.org/ig/HL7/HAI",
-	"status": "draft"
+	"status": "trial-use",
+	"milestone": true,
+	"sequence": "STU2"
 }
