@@ -286,7 +286,7 @@
     <item>
         <linkId value="nhsn-comment"/>
         <code>
-            <system value="http://www.loinc.org"/>
+            <system value="http://loinc.org"/>
             <code value="86468-6"/>
             <display value="Report Comment Section"/>
         </code>
