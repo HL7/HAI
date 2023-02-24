@@ -21,8 +21,8 @@ Note that participation in the NHSN requires enrollment and filing of reporting 
 </thead>
 <tbody>
 <tr>
-<td>HL7 International - Structured Documents Work Group</td>
-<td><a href="http://www.hl7.org/Special/committees/structure/" target="_new">http://www.hl7.org/Special/committees/structure/</a></td>
+<td>HL7 International - Structured Documents</td>
+<td><a href="http://www.hl7.org/Special/committees/structure" target="_new">http://www.hl7.org/Special/committees/structure</a></td>
 </tr>
 </tbody>
 </table>
