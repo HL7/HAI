@@ -3,12 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaireresponse-opc-sdom-denom"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-02-23T23:42:05.188+00:00"/>
-        <source value="#3QLQqfePD83Sz5qX"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-02-23T23:53:22.489+00:00"/>
+        <source value="#EaG1AUGllOJsIMUU"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaireresponse"/>
     </meta>
-    <language value="en-US"/>
     <identifier>
         <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
         <value value="20202204"/>

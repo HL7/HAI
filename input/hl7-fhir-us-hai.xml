@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-hai"/>
     <meta>
-        <versionId value="65"/>
-        <lastUpdated value="2023-02-23T23:15:31.264+00:00"/>
-        <source value="#nuGFz15QBIQpNE9E"/>
+        <versionId value="68"/>
+        <lastUpdated value="2023-02-24T00:12:03.683+00:00"/>
+        <source value="#9mlQ2h6DbOGMytmZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai"/>
     <version value="2.0.0"/>
@@ -55,69 +55,6 @@
         <grouping id="questionnaireresponse-examples">
             <name value="QuestionnaireResponse Examples"/>
         </grouping>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.113883.13.9"/>
-                <display value="Value Set: NHSNWoundClassCode"/>
-            </reference>
-            <name value="Value Set - NHSNWoundClassCode"/>
-            <description value="Codes representing NHSN wound class."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.113883.13.10"/>
-                <display value="Value Set: NHSNASAClassCode"/>
-            </reference>
-            <name value="Value Set - NHSNASAClassCode"/>
-            <description value="Physical status using the American Society of Anesthesiologists (ASA) Class Codes."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
-                <display value="Value Set: NHSNOPCProcedureCategoryCode"/>
-            </reference>
-            <name value="Value Set - NHSNOPCProcedureCategoryCode"/>
-            <description value="OPC Procedure Category Codes."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.31"/>
-                <display value="Value Set: NHSNSSIDetectionMethodType"/>
-            </reference>
-            <name value="Value Set - NHSNSSIDetectionMethodType"/>
-            <description value="The type of surveillance process by which the SSI was identified."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.29"/>
-                <display value="Value Set: NHSNSSIDetectionMethod"/>
-            </reference>
-            <name value="Value Set - NHSNSSIDetectionMethod"/>
-            <description value="Codes describing how the facility that performed the procedure detected the SSI."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.114222.4.11.3595"/>
-                <display value="Value Set: NHSNPopulationSummaryReportTypeCode"/>
-            </reference>
-            <name value="Value Set - NHSNPopulationSummaryReportTypeCode"/>
-            <description value="The population summary data set being reported."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/2.16.840.1.113883.6.277"/>
-                <display value="Code System: cdcNHSN"/>
-            </reference>
-            <name value="Code System - cdcNHSN"/>
-            <description value="CDC - National Healthcare Safety Network (NHSN) code system - A set of patient safety and healthcare personnel safety vocabulary concepts and associated identifiers maintained as a code system by the CDC's National Healthcare Safety Network."/>
-            <exampleBoolean value="false"/>
-        </resource>
         <resource>
             <reference>
                 <reference value="Device/hai-authoring-device"/>
@@ -183,15 +120,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CodeSystem/2.16.840.1.113883.6.259"/>
-                <display value="Code System: HSLOC"/>
-            </reference>
-            <name value="HSLOC Code System"/>
-            <description value="A classification of patient care locations within healthcare facilities for public health purposes."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Questionnaire/hai-questionnaire-los-denom"/>
                 <display value="Instance Questionnaire: Late Onset Sepsis/Meningitis Denominator"/>
             </reference>
@@ -229,69 +157,6 @@
             <description value="QuestionnaireResponse - Late Onset Sepsis/Meningitis Event (LOS) example"/>
             <exampleBoolean value="true"/>
             <groupingId value="questionnaireresponse-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.114222.4.11.3195"/>
-                <display value="Value Set: NHSNCriterionOfDiagnosisCode"/>
-            </reference>
-            <name value="ValueSet - NHSN Criterion Of Diagnosis Code"/>
-            <description value="Codes for criterion of diagnosis."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.113883.13.13"/>
-                <display value="Value Set: NHSNDrugSusceptibilityFindingCode"/>
-            </reference>
-            <name value="ValueSet - NHSN Drug Susceptibility Finding Code"/>
-            <description value="Codes representing a drug susceptibility finding."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.113883.13.15"/>
-                <display value="Value Set: NHSNDrugSusceptibilityTestsCode"/>
-            </reference>
-            <name value="ValueSet - NHSN Drug Susceptibility Tests Code"/>
-            <description value="Codes representing a drug susceptibility test."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.114222.4.11.3196"/>
-                <display value="Value Set: NHSNInfectionConditionCode"/>
-            </reference>
-            <name value="ValueSet - NHSN Infection Condition Code"/>
-            <description value="Codes to describe the infection condition."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.113883.13.20"/>
-                <display value="Value Set: NHSNInfectionTypeCode"/>
-            </reference>
-            <name value="ValueSet - NHSN Infection Type Code"/>
-            <description value="Codes representing a type of infection."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.113883.10.20.5.9.30"/>
-                <display value="Value Set: NHSNLOS/MENDischargeDisposition"/>
-            </reference>
-            <name value="ValueSet - NHSN LOS/MEN Discharge Disposition"/>
-            <description value="Disposition of infant."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/2.16.840.1.113883.13.16"/>
-                <display value="Value Set: NHSNPathogenCode"/>
-            </reference>
-            <name value="ValueSet - NHSN Pathogen Code"/>
-            <description value="Codes representing a pathogen."/>
-            <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>

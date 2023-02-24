@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-opc-proc-denom"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-02-23T23:10:23.882+00:00"/>
-        <source value="#LIJF5xJ6uVnj0erj"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-02-23T23:52:25.012+00:00"/>
+        <source value="#dTcW0aG7MKzcUHNH"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-proc-denom"/>
@@ -73,7 +73,7 @@
             <type value="choice"/>
             <required value="false"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.9"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.9"/>
         </item>
         <item>
             <linkId value="risk-factor-endoscopy"/>
@@ -134,7 +134,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.10"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.10"/>
         </item>
     </item>
     <item>
@@ -171,7 +171,7 @@
             <type value="choice"/>
             <required value="true"/>
             <repeats value="false"/>
-            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
+            <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.10.20.5.9.34"/>
         </item>
         <item>
             <linkId value="cpt-procedure-code"/>

@@ -8,6 +8,7 @@ This IG specifies a FHIR Questionnaire-based approach. This approach takes advan
 
 * The QuestionnaireResponse profile [Healthcare Associated Infection Population Summary Report QuestionnaireResponse](StructureDefinition-hai-population-summary-questionnaireresponse.html) defines constraints that all hospital-completed responses to HAI NHSN population summary report forms (QuestionnaireResponse instances) must conform to.
 
-* The [Questionnaire Instances & Examples page](questionnaireInstancesExamples.html) has links to:
+* The [Questionnaire Instances section](artifacts.html#questionnaire-instances) has links to:
     * Questionnaire instances that define the questions and possible answers for all the reports in this guide
+* The [QuestionnaireResponse Examples section](artifacts.html#questionnaireresponse-examples) has links to:
     * QuestionnaireResponse examples of completed QuestionnaireResponses for all the reports in this guide

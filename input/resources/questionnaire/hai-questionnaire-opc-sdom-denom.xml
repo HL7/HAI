@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaire-opc-sdom-denom"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-02-23T23:10:23.929+00:00"/>
-        <source value="#mFVDRpOB4qcfL7xy"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-02-23T23:52:25.013+00:00"/>
+        <source value="#wPUBtsx3WIfmJTFP"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-opc-sdom-denom"/>
@@ -71,7 +71,7 @@
         <type value="choice"/>
         <required value="true"/>
         <repeats value="false"/>
-        <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.19"/>
+        <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.19"/>
     </item>
     <item>
         <linkId value="summary-data-group"/>

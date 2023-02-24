@@ -3,12 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaireresponse-los-event"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-02-23T23:41:36.571+00:00"/>
-        <source value="#Fy0XTTSA2BJ2l9QK"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-02-23T23:53:22.495+00:00"/>
+        <source value="#dl6JS3OSqqqvK4Zn"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse"/>
     </meta>
-    <language value="en-US"/>
     <identifier>
         <system value="urn:oid:2.16.840.1.113883.3.117.1.1.5.2.1.1.2"/>
         <value value="20202202"/>
