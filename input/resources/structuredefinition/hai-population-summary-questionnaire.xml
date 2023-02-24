@@ -1,241 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
-    <id value="hai-population-summary-questionnaire"/>
-    <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-02-24T03:38:29.985+00:00"/>
-        <source value="#75SsHrHYrnRAStnW"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire"/>
-    <version value="R1"/>
-    <name value="HAI_population_summary_questionnaire"/>
-    <title value="Healthcare Associated Infection Population Summary Questionnaire"/>
-    <status value="active"/>
-    <publisher value="HL7 Structured Documents Work Group"/>
-    <description value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire. A Population Summary Report records summary data for a group, such as the patients in a particular ward, during a specified period."/>
-    <fhirVersion value="4.0.1"/>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <type value="Questionnaire"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="Questionnaire">
-            <path value="Questionnaire"/>
-            <short value="Healthcare Associated Infection Population Summary Questionnaire"/>
-            <definition value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire."/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.language">
-            <path value="Questionnaire.language"/>
-            <min value="1"/>
-            <patternCode value="en-US"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.text">
-            <path value="Questionnaire.text"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.identifier">
-            <path value="Questionnaire.identifier"/>
-            <short value="Globally unique identifier for the instance"/>
-            <definition value="Globally unique identifier for the instance."/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.title">
-            <path value="Questionnaire.title"/>
-            <short value="Title of the HAI report."/>
-            <definition value="Title of the HAI report."/>
-            <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.subjectType">
-            <path value="Questionnaire.subjectType"/>
-            <short value="A Group resource is the subject of the related QuestionnaireResponse"/>
-            <definition value="A Group resource is the subject of the related QuestionnaireResponse"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedCode value="Group"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.date">
-            <path value="Questionnaire.date"/>
-            <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.publisher">
-            <path value="Questionnaire.publisher"/>
-            <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.description">
-            <path value="Questionnaire.description"/>
-            <short value="Description of the population summary questionnaire."/>
-            <definition value="Description of the population summary questionnaire."/>
-            <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.jurisdiction">
-            <path value="Questionnaire.jurisdiction"/>
-            <min value="1"/>
-            <max value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="urn:iso:std:iso:3166"/>
-                    <code value="US"/>
-                </coding>
-            </patternCodeableConcept>
-            <mustSupport value="true"/>
-        </element>
-      
-      <element id="Questionnaire.code">
-        <path value="Questionnaire.code" />
-        <slicing>
-          <discriminator>
-            <type value="value" />
-            <path value="$this" />
-          </discriminator>
-          <rules value="open" />
-        </slicing>
-        <min value="2" />
-        <max value="2" />
-        <mustSupport value="true" />
-      </element>
-      <element id="Questionnaire.code:HAI">
-        <path value="Questionnaire.code" />
-        <sliceName value="HAI" />
-        <min value="1" />
-        <max value="1" />
-        <patternCoding>
-          <system value="http://loinc.org" />
-          <code value="51897-7" />
-          <display value="Healthcare Associated Infection report Document" />
-        </patternCoding>
-        <mustSupport value="true" />
-      </element>
-      <element id="Questionnaire.code:PopulationSummaryReportType">
-        <path value="Questionnaire.code" />
-        <sliceName value="PopulationSummaryReportType" />
-        <min value="1" />
-        <max value="1" />
-        <mustSupport value="true" />
-        <binding>
-          <strength value="required" />
-          <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.20" />
-        </binding>
-      </element>
-      
-      <!--<element id="Questionnaire.code">
-            <path value="Questionnaire.code"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="code"/>
-                </discriminator>
-                <discriminator>
-                    <type value="pattern"/>
-                    <path value="$this"/>
-                </discriminator>
-                <rules value="closed"/>
-            </slicing>
-            <min value="1"/>
-            <max value="2"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.code:codeHAI">
-            <path value="Questionnaire.code"/>
-            <sliceName value="codeHAI"/>
-            <short value="Code for Healthcare Associated Infection Report (fixed)"/>
-            <definition value="LOINC code 51897-7 to indicate that this is a Healthcare Associated Infection Report"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.code:codeHAI.system">
-            <path value="Questionnaire.code.system"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedUri value="http://loinc.org"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.code:codeHAI.code">
-            <path value="Questionnaire.code.code"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedCode value="51897-7"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.code:codeHAI.display">
-            <path value="Questionnaire.code.display"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>-->
-        <element id="Questionnaire.code:populationSummaryReportType">
-            <path value="Questionnaire.code"/>
-            <sliceName value="populationSummaryReportType"/>
-            <short value="Type of population summary report"/>
-            <definition value="Type of population summary report"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <description value="Codes describing the type of population summary report."/>
-                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3595"/>
-            </binding>
-        </element>
-        <element id="Questionnaire.item">
-            <path value="Questionnaire.item"/>
-            <short value="Items specific to the population summary questionnaire being modeled."/>
-            <definition value="Items specific to the population summary questionnaire being modeled."/>
-            <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.item.extension">
-            <path value="Questionnaire.item.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-        </element>
-        <element id="Questionnaire.item.linkId">
-            <path value="Questionnaire.item.linkId"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.item.code">
-            <path value="Questionnaire.item.code"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.item.type">
-            <path value="Questionnaire.item.type"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.item.enableWhen">
-            <path value="Questionnaire.item.enableWhen"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.item.required">
-            <path value="Questionnaire.item.required"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.item.repeats">
-            <path value="Questionnaire.item.repeats"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.item.answerOption">
-            <path value="Questionnaire.item.answerOption"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.item.item">
-            <path value="Questionnaire.item.item"/>
-            <mustSupport value="true"/>
-        </element>
-    </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="hai-population-summary-questionnaire" />
+  <meta>
+    <versionId value="8" />
+    <lastUpdated value="2023-02-24T03:38:29.985+00:00" />
+    <source value="#75SsHrHYrnRAStnW" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaire" />
+  <version value="R1" />
+  <name value="HAI_population_summary_questionnaire" />
+  <title value="Healthcare Associated Infection Population Summary Questionnaire" />
+  <status value="active" />
+  <publisher value="HL7 Structured Documents Work Group" />
+  <description value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire. A Population Summary Report records summary data for a group, such as the patients in a particular ward, during a specified period." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Questionnaire" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Questionnaire">
+      <path value="Questionnaire" />
+      <short value="Healthcare Associated Infection Population Summary Questionnaire" />
+      <definition value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.language">
+      <path value="Questionnaire.language" />
+      <min value="1" />
+      <patternCode value="en-US" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.text">
+      <path value="Questionnaire.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.identifier">
+      <path value="Questionnaire.identifier" />
+      <short value="Globally unique identifier for the instance" />
+      <definition value="Globally unique identifier for the instance." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.title">
+      <path value="Questionnaire.title" />
+      <short value="Title of the HAI report." />
+      <definition value="Title of the HAI report." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.subjectType">
+      <path value="Questionnaire.subjectType" />
+      <short value="A Group resource is the subject of the related QuestionnaireResponse" />
+      <definition value="A Group resource is the subject of the related QuestionnaireResponse" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCode value="Group" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.date">
+      <path value="Questionnaire.date" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.publisher">
+      <path value="Questionnaire.publisher" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.description">
+      <path value="Questionnaire.description" />
+      <short value="Description of the population summary questionnaire." />
+      <definition value="Description of the population summary questionnaire." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.jurisdiction">
+      <path value="Questionnaire.jurisdiction" />
+      <min value="1" />
+      <max value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="urn:iso:std:iso:3166" />
+          <code value="US" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.code">
+      <path value="Questionnaire.code" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.code:HAI">
+      <path value="Questionnaire.code" />
+      <sliceName value="HAI" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="51897-7" />
+        <display value="Healthcare Associated Infection report Document" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <!--<element id="Questionnaire.code:PopulationSummaryReportType">
+      <path value="Questionnaire.code" />
+      <sliceName value="PopulationSummaryReportType" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.20" />
+      </binding>
+    </element>-->
+    <element id="Questionnaire.code:populationSummaryReportType">
+      <path value="Questionnaire.code" />
+      <sliceName value="populationSummaryReportType" />
+      <short value="Type of population summary report" />
+      <definition value="Type of population summary report" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Codes describing the type of population summary report." />
+        <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3595" />
+      </binding>
+    </element>
+    <element id="Questionnaire.item">
+      <path value="Questionnaire.item" />
+      <short value="Items specific to the population summary questionnaire being modeled." />
+      <definition value="Items specific to the population summary questionnaire being modeled." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.extension">
+      <path value="Questionnaire.item.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.linkId">
+      <path value="Questionnaire.item.linkId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.code">
+      <path value="Questionnaire.item.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.type">
+      <path value="Questionnaire.item.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.enableWhen">
+      <path value="Questionnaire.item.enableWhen" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.required">
+      <path value="Questionnaire.item.required" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.repeats">
+      <path value="Questionnaire.item.repeats" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.answerOption">
+      <path value="Questionnaire.item.answerOption" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Questionnaire.item.item">
+      <path value="Questionnaire.item.item" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>
