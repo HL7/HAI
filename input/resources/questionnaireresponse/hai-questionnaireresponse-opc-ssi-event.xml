@@ -257,8 +257,8 @@
             <answer>
                 <valueCoding>
                     <system value="http://snomed.info/sct"/>
-                    <code value="103535006"/>
-                    <display value="Life form of parasite (organism)"/>
+                  <code value="22267009"/>
+                  <display value="Sarcina ventriculi (organism)"/>
                 </valueCoding>
             </answer>
         </item>

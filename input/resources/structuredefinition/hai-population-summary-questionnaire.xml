@@ -114,17 +114,6 @@
       </patternCoding>
       <mustSupport value="true" />
     </element>
-    <!--<element id="Questionnaire.code:PopulationSummaryReportType">
-      <path value="Questionnaire.code" />
-      <sliceName value="PopulationSummaryReportType" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.20" />
-      </binding>
-    </element>-->
     <element id="Questionnaire.code:populationSummaryReportType">
       <path value="Questionnaire.code" />
       <sliceName value="populationSummaryReportType" />
