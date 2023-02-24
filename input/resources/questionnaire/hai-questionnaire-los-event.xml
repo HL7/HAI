@@ -1,300 +1,300 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Questionnaire xmlns="http://hl7.org/fhir">
-  <id value="hai-questionnaire-los-event" />
-  <meta>
-    <versionId value="9" />
-    <lastUpdated value="2023-02-24T00:57:56.217+00:00" />
-    <source value="#cb4XqI9tOeL4iCeS" />
-    <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire" />
-  </meta>
-  <language value="en-US" />
-  <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event" />
-  <identifier>
-    <value value="hai-questionnaire-los-event-v2" />
-  </identifier>
-  <version value="2.0.0" />
-  <name value="HAI_questionnaire_los_event" />
-  <title value="Late Onset Sepsis/Meningitis Event (LOS)" />
-  <status value="draft" />
-  <subjectType value="Patient" />
-  <date value="2019-04-01" />
-  <publisher value="HL7 Structured Documents Work Group" />
-  <description
-    value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.&#xA;&#xA;For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website [https://www.cdc.gov/nhsn/](https://www.cdc.gov/nhsn/).&#xA;" />
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="US" />
-    </coding>
-  </jurisdiction>
-  <code>
-    <system value="http://loinc.org" />
-    <code value="51897-7" />
-    <display value="Healthcare Associated Infection report Document" />
-  </code>
-  <item>
-    <linkId value="facility" />
-    <text value="Facility ID" />
-    <type value="url" />
-    <required value="true" />
-    <repeats value="false" />
-  </item>
-  <item>
-    <linkId value="event-number" />
-    <text value="Event Number" />
-    <type value="url" />
-    <required value="false" />
-    <repeats value="false" />
-  </item>
-  <item>
-    <linkId value="event-type" />
-    <text value="Event Type" />
-    <type value="choice" />
-    <required value="true" />
-    <repeats value="false" />
-    <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.20" />
-  </item>
-  <item>
-    <linkId value="date-of-event" />
-    <text value="Date of Event" />
-    <type value="date" />
-    <required value="true" />
-    <repeats value="false" />
-  </item>
-  <item>
-    <linkId value="facility-location" />
-    <text value="Facility Location" />
-    <type value="choice" />
-    <required value="true" />
-    <repeats value="false" />
-    <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.19" />
-  </item>
-  <item>
-    <linkId value="date-admitted-to-facility" />
-    <text value="Date Admitted to Facility:" />
-    <type value="date" />
-    <required value="true" />
-    <repeats value="false" />
-  </item>
-  <item>
-    <linkId value="inborn-outborn-observation" />
+<Questionnaire
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-questionnaire-los-event"/>
+    <meta>
+        <versionId value="11"/>
+        <lastUpdated value="2023-02-24T01:10:04.503+00:00"/>
+        <source value="#Nb1mMKbenEUND3pt"/>
+        <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
+    </meta>
+    <language value="en-US"/>
+    <url value="http://hl7.org/fhir/us/hai/Questionnaire/hai-questionnaire-los-event"/>
+    <identifier>
+        <value value="hai-questionnaire-los-event-v2"/>
+    </identifier>
+    <version value="2.0.0"/>
+    <name value="HAI_questionnaire_los_event"/>
+    <title value="Late Onset Sepsis/Meningitis Event (LOS)"/>
+    <status value="draft"/>
+    <subjectType value="Patient"/>
+    <date value="2019-04-01"/>
+    <publisher value="HL7 Structured Documents Work Group"/>
+    <description value="This Questionnaire instance defines the questions and possible answers in the Late Onset Sepsis/Meningitis Event (LOS) Report. It records a late onset sepsis/meningitis infection event. For Late Onset Sepsis/Meningitis Event Reports, a Medicaid beneficiary number may be present.&#xA;&#xA;For further details on reporting healthcare-associated infections see the specific protocols and data collection forms on the NHSN website [https://www.cdc.gov/nhsn/](https://www.cdc.gov/nhsn/).&#xA;"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
     <code>
-      <system value="http://snomed.info/sct" />
-      <code value="445087001" />
-      <display value="Born before arrival to hospital (situation)" />
+        <system value="http://loinc.org"/>
+        <code value="51897-7"/>
+        <display value="Healthcare Associated Infection report Document"/>
     </code>
-    <text value="Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false." />
-    <type value="boolean" />
-    <required value="true" />
-    <repeats value="false" />
-  </item>
-  <item>
-    <linkId value="risk-factors" />
-    <code>
-      <system value="http://loinc.org" />
-      <code value="51898-5" />
-      <display value="Risk factors Document" />
-    </code>
-    <text value="Risk Factors" />
-    <type value="group" />
-    <required value="true" />
-    <repeats value="false" />
     <item>
-      <linkId value="risk-factors-group" />
-      <text value="This group contains risk factors such as central line present, birth weight, and gestational age." />
-      <type value="display" />
+        <linkId value="facility"/>
+        <text value="Facility ID"/>
+        <type value="url"/>
+        <required value="true"/>
+        <repeats value="false"/>
     </item>
     <item>
-      <linkId value="risk-factor-central-line" />
-      <code>
-        <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html" />
-        <code value="1006-6" />
-        <display value="central line including umbilical catheter" />
-      </code>
-      <text value="Risk Factor: Central line present prior to event, including umbilical catheter" />
-      <type value="boolean" />
-      <required value="false" />
-      <repeats value="false" />
+        <linkId value="event-number"/>
+        <text value="Event Number"/>
+        <type value="url"/>
+        <required value="false"/>
+        <repeats value="false"/>
     </item>
     <item>
-      <linkId value="risk-factor-birth-weight" />
-      <code>
-        <system value="http://snomed.info/sct" />
-        <code value="364589006" />
-        <display value="Birth Weight" />
-      </code>
-      <text value="Risk Factor: Birth weight (grams)" />
-      <type value="quantity" />
-      <required value="true" />
-      <repeats value="false" />
+        <linkId value="event-type"/>
+        <text value="Event Type"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.20"/>
     </item>
     <item>
-      <linkId value="gestational-age-known" />
-      <text value="Gestational age known: set true if known and false if unknown" />
-      <type value="boolean" />
-      <required value="true" />
-      <repeats value="false" />
+        <linkId value="date-of-event"/>
+        <text value="Date of Event"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
     </item>
     <item>
-      <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
-        <valueCoding>
-          <system value="http://unitsofmeasure.org" />
-          <code value="d" />
-          <display value="d" />
-        </valueCoding>
-      </extension>
-      <linkId value="risk-factor-gestational-age" />
-      <code>
-        <system value="http://loinc.org" />
-        <code value="76516-4" />
-        <display value="Gestational age--at birth" />
-      </code>
-      <text value="Risk Factor: Gestational age (days)" />
-      <type value="quantity" />
-      <enableWhen>
-        <question value="gestational-age-known" />
-        <operator value="=" />
-        <answerBoolean value="true" />
-      </enableWhen>
-      <required value="false" />
-      <repeats value="false" />
-    </item>
-  </item>
-  <item>
-    <linkId value="event-details" />
-    <code>
-      <system value="http://loinc.org" />
-      <code value="51899-3" />
-      <display value="Details Document" />
-    </code>
-    <text value="Event Details" />
-    <type value="group" />
-    <required value="true" />
-    <repeats value="false" />
-    <item>
-      <linkId value="event-details-group" />
-      <text value="This group contains details aboout the late onset septis infection event." />
-      <type value="display" />
+        <linkId value="facility-location"/>
+        <text value="Facility Location"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerValueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.13.19"/>
     </item>
     <item>
-      <linkId value="infection-condition" />
-      <text value="Specific Event" />
-      <type value="choice" />
-      <required value="true" />
-      <repeats value="false" />
-      <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196" />
+        <linkId value="date-admitted-to-facility"/>
+        <text value="Date Admitted to Facility:"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
     </item>
     <item>
-      <linkId value="criteria-used" />
-      <text value="Laboratory Criteria Used" />
-      <type value="choice" />
-      <required value="true" />
-      <repeats value="false" />
-      <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195" />
+        <linkId value="inborn-outborn-observation"/>
+        <code>
+            <system value="http://snomed.info/sct"/>
+            <code value="445087001"/>
+            <display value="Born before arrival to hospital (situation)"/>
+        </code>
+        <text value="Inborn/Outborn: If the infant was outborn (born at a location other than the reporting hospital), select true. If the infant was inborn (born at the reporting hospital) select false."/>
+        <type value="boolean"/>
+        <required value="true"/>
+        <repeats value="false"/>
     </item>
     <item>
-      <linkId value="died" />
-      <code>
-        <system value="http://snomed.info/sct" />
-        <code value="419099009" />
-        <display value="dead" />
-      </code>
-      <text value="Died" />
-      <type value="boolean" />
-      <required value="true" />
-      <repeats value="false" />
+        <linkId value="risk-factors"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="51898-5"/>
+            <display value="Risk factors Document"/>
+        </code>
+        <text value="Risk Factors"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="risk-factors-group"/>
+            <text value="This group contains risk factors such as central line present, birth weight, and gestational age."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-central-line"/>
+            <code>
+                <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
+                <code value="1006-6"/>
+                <display value="central line including umbilical catheter"/>
+            </code>
+            <text value="Risk Factor: Central line present prior to event, including umbilical catheter"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="risk-factor-birth-weight"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="364589006"/>
+                <display value="Birth Weight"/>
+            </code>
+            <text value="Risk Factor: Birth weight (grams)"/>
+            <type value="quantity"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="gestational-age-known"/>
+            <text value="Gestational age known: set true if known and false if unknown"/>
+            <type value="boolean"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit">
+                <valueCoding>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="d"/>
+                    <display value="d"/>
+                </valueCoding>
+            </extension>
+            <linkId value="risk-factor-gestational-age"/>
+            <code>
+                <system value="http://loinc.org"/>
+                <code value="76516-4"/>
+                <display value="Gestational age--at birth"/>
+            </code>
+            <text value="Risk Factor: Gestational age (days)"/>
+            <type value="quantity"/>
+            <enableWhen>
+                <question value="gestational-age-known"/>
+                <operator value="="/>
+                <answerBoolean value="true"/>
+            </enableWhen>
+            <required value="false"/>
+            <repeats value="false"/>
+        </item>
     </item>
     <item>
-      <linkId value="los-contributed-to-death" />
-      <text value="Infection contributed to death" />
-      <type value="boolean" />
-      <enableWhen>
-        <question value="died" />
-        <operator value="=" />
-        <answerBoolean value="true" />
-      </enableWhen>
-      <required value="false" />
-      <repeats value="false" />
+        <linkId value="event-details"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="51899-3"/>
+            <display value="Details Document"/>
+        </code>
+        <text value="Event Details"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <item>
+            <linkId value="event-details-group"/>
+            <text value="This group contains details aboout the late onset septis infection event."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <linkId value="infection-condition"/>
+            <text value="Specific Event"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3196"/>
+        </item>
+        <item>
+            <linkId value="criteria-used"/>
+            <text value="Laboratory Criteria Used"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.114222.4.11.3195"/>
+        </item>
+        <item>
+            <linkId value="died"/>
+            <code>
+                <system value="http://snomed.info/sct"/>
+                <code value="419099009"/>
+                <display value="dead"/>
+            </code>
+            <text value="Died"/>
+            <type value="boolean"/>
+            <required value="true"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="los-contributed-to-death"/>
+            <text value="Infection contributed to death"/>
+            <type value="boolean"/>
+            <enableWhen>
+                <question value="died"/>
+                <operator value="="/>
+                <answerBoolean value="true"/>
+            </enableWhen>
+            <required value="false"/>
+            <repeats value="false"/>
+        </item>
+        <item>
+            <linkId value="discharge-date"/>
+            <text value="Discharge Date"/>
+            <type value="date"/>
+            <required value="false"/>
+            <repeats value="false"/>
+        </item>
     </item>
     <item>
-      <linkId value="discharge-date" />
-      <text value="Discharge Date" />
-      <type value="date" />
-      <required value="false" />
-      <repeats value="false" />
+        <linkId value="findings-group"/>
+        <code>
+            <system value="http://loinc.org"/>
+            <code value="18769-0"/>
+            <display value="Microbial susceptibility tests Set"/>
+        </code>
+        <text value="Findings Group"/>
+        <type value="group"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <item>
+            <linkId value="findings-group-description"/>
+            <text value="This group records whether infection organisms were identified and, if so, records details about them."/>
+            <type value="display"/>
+        </item>
+        <item>
+            <linkId value="pathogen-identified"/>
+            <text value="Pathogen Identified"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16"/>
+        </item>
+        <item>
+            <linkId value="pathogen-ranking"/>
+            <text value="Pathogen Ranking"/>
+            <type value="choice"/>
+            <required value="true"/>
+            <repeats value="false"/>
+            <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"/>
+        </item>
+        <item>
+            <linkId value="drug-susceptibility-test-group"/>
+            <text value="Drug Susceptibility Test Group"/>
+            <type value="group"/>
+            <repeats value="true"/>
+            <item>
+                <linkId value="drug-susceptibility-test-group-description"/>
+                <text value="This group contains drug-susceptibility information such as the drug and the pathogen's susceptibility to it."/>
+                <type value="display"/>
+            </item>
+            <item>
+                <linkId value="drug-susceptibility-test"/>
+                <text value="Drug Susceptibility Test"/>
+                <type value="choice"/>
+                <required value="true"/>
+                <repeats value="false"/>
+                <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15"/>
+            </item>
+            <item>
+                <linkId value="drug-susceptibility-test-interpretation"/>
+                <text value="Drug Susceptibility Test Interpretation"/>
+                <type value="choice"/>
+                <required value="false"/>
+                <repeats value="false"/>
+                <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13"/>
+            </item>
+        </item>
     </item>
-  </item>
-  <item>
-    <linkId value="findings-group" />
-    <code>
-      <system value="http://loinc.org" />
-      <code value="18769-0" />
-      <display value="Microbial susceptibility tests Set" />
-    </code>
-    <text value="Findings Group" />
-    <type value="group" />
-    <required value="true" />
-    <repeats value="true" />
     <item>
-      <linkId value="findings-group-description" />
-      <text value="This group records whether infection organisms were identified and, if so, records details about them." />
-      <type value="display" />
+        <linkId value="nhsn-comment"/>
+        <code>
+            <system value="http://www.loinc.org"/>
+            <code value="86468-6"/>
+            <display value="Report Comment Section"/>
+        </code>
+        <text value="Comments"/>
+        <type value="text"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <maxLength value="2000"/>
     </item>
-    <item>
-      <linkId value="pathogen-identified" />
-      <text value="Pathogen Identified" />
-      <type value="choice" />
-      <required value="true" />
-      <repeats value="false" />
-      <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.16" />
-    </item>
-    <item>
-      <linkId value="pathogen-ranking" />
-      <text value="Pathogen Ranking" />
-      <type value="choice" />
-      <required value="true" />
-      <repeats value="false" />
-      <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking" />
-    </item>
-    <item>
-      <linkId value="drug-susceptibility-test-group" />
-      <text value="Drug Susceptibility Test Group" />
-      <type value="group" />
-      <repeats value="true" />
-      <item>
-        <linkId value="drug-susceptibility-test-group-description" />
-        <text value="This group contains drug-susceptibility information such as the drug and the pathogen's susceptibility to it." />
-        <type value="display" />
-      </item>
-      <item>
-        <linkId value="drug-susceptibility-test" />
-        <text value="Drug Susceptibility Test" />
-        <type value="choice" />
-        <required value="true" />
-        <repeats value="false" />
-        <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.15" />
-      </item>
-      <item>
-        <linkId value="drug-susceptibility-test-interpretation" />
-        <text value="Drug Susceptibility Test Interpretation" />
-        <type value="choice" />
-        <required value="false" />
-        <repeats value="false" />
-        <answerValueSet value="http://hl7.org/fhir/us/hai/ValueSet/2.16.840.1.113883.13.13" />
-      </item>
-    </item>
-  </item>
-  <item>
-    <linkId value="nhsn-comment" />
-    <code>
-      <system value="http://www.loinc.org" />
-      <code value="86468-6" />
-      <display value="Report Comment Section" />
-    </code>
-    <text value="Comments" />
-    <type value="text" />
-    <required value="false" />
-    <repeats value="false" />
-    <maxLength value="2000" />
-  </item>
 </Questionnaire>
