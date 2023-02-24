@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-single-person-report-questionnaire"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-02-23T20:56:21.359+00:00"/>
-        <source value="#pYw0A4iZ9yx7WSz7"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-02-24T01:30:34.762+00:00"/>
+        <source value="#13GudmCSz4rHmQwY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
     <version value="R1"/>
@@ -52,6 +52,15 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Questionnaire.subjectType">
+            <path value="Questionnaire.subjectType"/>
+            <short value="Patient Resource (US Core Patient) is the subject of the related QuestionnaireResponse"/>
+            <definition value="Patient Resource (US Core Patient) is the subject of the related QuestionnaireResponse for single person reports."/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="Patient"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Questionnaire.date">
             <path value="Questionnaire.date"/>
             <min value="1"/>
@@ -92,15 +101,6 @@
                 <code value="51897-7"/>
                 <display value="Healthcare Associated Infection report Document"/>
             </patternCoding>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Questionnaire.subjectType">
-            <path value="Questionnaire.subjectType"/>
-            <short value="Patient Resource (US Core Patient) is the subject of the related QuestionnaireResponse"/>
-            <definition value="Patient Resource (US Core Patient) is the subject of the related QuestionnaireResponse for single person reports."/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedCode value="Patient"/>
             <mustSupport value="true"/>
         </element>
         <element id="Questionnaire.item">
