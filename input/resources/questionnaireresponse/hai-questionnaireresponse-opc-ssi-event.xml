@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hai-questionnaireresponse-opc-ssi-event"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-02-24T02:51:26.828+00:00"/>
-        <source value="#Gtxv5bvJThAYnVUt"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-02-24T04:47:25.184+00:00"/>
+        <source value="#mvn46QaKWJ7Nyg9L"/>
         <profile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaireresponse"/>
     </meta>
     <identifier>
@@ -257,8 +257,8 @@
             <answer>
                 <valueCoding>
                     <system value="http://snomed.info/sct"/>
-                  <code value="22267009"/>
-                  <display value="Sarcina ventriculi (organism)"/>
+                    <code value="22267009"/>
+                    <display value="Sarcina ventriculi (organism)"/>
                 </valueCoding>
             </answer>
         </item>

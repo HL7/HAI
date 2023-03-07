@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="nhsn-pathogen-ranking"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-02-24T03:22:31.730+00:00"/>
-        <source value="#24e9xftKi4MqYdGZ"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-03-07T04:16:17.356+00:00"/>
+        <source value="#nflQ3wYGFw2gRYkB"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"/>
     <name value="NHSNPathogenRanking"/>
@@ -13,6 +13,7 @@
     <status value="draft"/>
     <experimental value="true"/>
     <description value="Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection."/>
+    <copyright value="This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org."/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>

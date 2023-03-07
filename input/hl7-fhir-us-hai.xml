@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-hai"/>
     <meta>
-        <versionId value="78"/>
-        <lastUpdated value="2023-02-24T03:50:12.750+00:00"/>
-        <source value="#PsY2SzRagCDBtQdM"/>
+        <versionId value="79"/>
+        <lastUpdated value="2023-03-07T04:16:17.514+00:00"/>
+        <source value="#mTYwhwFtBq4redeo"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai"/>
     <version value="2.1.0"/>
@@ -157,7 +157,7 @@
                 <reference value="ValueSet/nhsn-pathogen-ranking"/>
                 <display value="Value Set: nhsn-pathogen-ranking"/>
             </reference>
-            <name value="ValueSet - NHSN Pathogen Ranking"/>
+            <name value="NHSNPathogenRanking"/>
             <description value="Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection."/>
             <exampleBoolean value="false"/>
         </resource>
