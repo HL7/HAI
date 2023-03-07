@@ -1,1 +1,9 @@
 == Suppressed Messages ==
+# External terminology
+Code System URI 'https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html' is unknown so the code cannot be validated
+Code System URI 'https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+Resolved system http://loinc.org, but the definition is not complete, so assuming value set include is correct
+Resolved system http://snomed.info/sct, but the definition is not complete, so assuming value set include is correct
+Resolved system https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html, but the definition is not complete, so assuming value set include is correct
+Resolved system https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html, but the definition is not complete, so assuming value set include is correct
