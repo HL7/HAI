@@ -9,7 +9,7 @@
   <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai" />
   <version value="2.1.0" />
   <name value="HealthcareAssociatedInfectionReports" />
-  <title value="NHSN Healthcare Associated Infection Reports, Release 1, STU 2 —US Realm" />
+  <title value="NHSN Healthcare Associated Infection Reports" />
   <status value="draft" />
   <experimental value="false" />
   <publisher value="HL7 International - Structured Documents Work Group" />
