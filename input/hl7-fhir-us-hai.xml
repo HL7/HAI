@@ -251,7 +251,7 @@
     </resource>
     <page>
       <nameUrl value="index.html" />
-      <title value="Healthcare Associated Infection Reports (FHIR)" />
+      <title value="Home" />
       <generation value="markdown" />
       <page>
         <nameUrl value="relationship_to_another_standard.html" />
