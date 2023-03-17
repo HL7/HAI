@@ -1,329 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide
-    xmlns="http://hl7.org/fhir">
-    <id value="hl7-fhir-us-hai"/>
-    <meta>
-        <versionId value="80"/>
-        <lastUpdated value="2023-03-07T04:39:27.632+00:00"/>
-        <source value="#ApXwQ1PzpijU14D1"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai"/>
-    <version value="2.1.0"/>
-    <name value="HealthcareAssociatedInfectionReports"/>
-    <title value="Healthcare Associated Infection Reports, FHIR STU 2 Ballot - US Realm"/>
-    <status value="draft"/>
-    <experimental value="false"/>
-    <publisher value="HL7 International - Structured Documents Work Group"/>
-    <contact>
-        <name value="HL7 International - Structured Documents"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/structure"/>
-        </telecom>
-    </contact>
-    <description value="This implementation guide (IG) specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.&#xA;&#xA;As reports are modified and new report types are defined, CDC and Health Level Seven (HL7) will develop and publish additional constraints.&#xA;&#xA;Throughout this process, CDC remains the authority on NHSN data collection protocols. When healthcare enterprises choose to participate in NHSN, they must report to CDC occurrences such as specific reportable procedures, even those without complications, and events such as a bloodstream infection, either confirmed by a positive blood culture or supported by a patients clinical symptoms. This specification opens the channel for data submission by all applications compliant with the data coding requirements defined here.&#xA;&#xA;Note that participation in the NHSN requires enrollment and filing of reporting plans, which are not defined by this specification. For an overview of NHSN and full information on NHSN participation requirements, see: [http://www.cdc.gov/nhsn](http://www.cdc.gov/nhsn). Provisions of the Public Health Service Act protect all data reported to NHSN from discovery through the Freedom of Information Act (FOIA)."/>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-        </coding>
-        <text value="United States of America"/>
-    </jurisdiction>
-    <packageId value="hl7.fhir.us.hai"/>
-    <fhirVersion value="4.0.1"/>
-    <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
-        <packageId value="hl7.fhir.us.core"/>
-        <version value="5.0.1"/>
-    </dependsOn>
-    <dependsOn id="vsac">
-        <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
-        <packageId value="us.nlm.vsac"/>
-        <version value="0.9.0"/>
-    </dependsOn>
-    <definition>
-        <grouping id="questionnaire-instances">
-            <name value="Questionnaire Instances"/>
-        </grouping>
-        <grouping id="questionnaireresponse-examples">
-            <name value="QuestionnaireResponse Examples"/>
-        </grouping>
-        <resource>
-            <reference>
-                <reference value="Device/hai-authoring-device"/>
-                <display value="Example Device: HAI Authoring Device"/>
-            </reference>
-            <name value="Device - HAI Authoring"/>
-            <description value="Device - HAI Authoring example"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Group/hai-group-1"/>
-                <display value="Example Group: HAI Group 1"/>
-            </reference>
-            <name value="Group: HAI Group 1"/>
-            <description value="Group: HAI Group 1 example"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/hai-patient-1"/>
-                <display value="Example Patient: HAI Patient 1"/>
-            </reference>
-            <name value="US Core Patient: HAI Patient 1"/>
-            <description value="US Core Patient: HAI Patient 1 example"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/hai-population-summary-questionnaire"/>
-                <display value="Profile Questionnaire: HAI Population Summary"/>
-            </reference>
-            <name value="Healthcare Associated Infection Population Summary Questionnaire"/>
-            <description value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire. A Population Summary Report records summary data for a group, such as the patients in a particular ward, during a specified period."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/hai-population-summary-questionnaireresponse"/>
-                <display value="Profile QuestionnaireResponse: HAI Population Summary"/>
-            </reference>
-            <name value="Healthcare Associated Infection Population Summary QuestionnaireResponse"/>
-            <description value="This profile represents a response to the Healthcare Associated Infection Population Summary Questionnaire as a FHIR QuestionnaireResponse profile."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/hai-single-person-report-questionnaire"/>
-                <display value="Profile Questionnaire: HAI Single Person Report"/>
-            </reference>
-            <name value="Healthcare Associated Infection Single-Person Report Questionnaire"/>
-            <description value="This profile represents a Healthcare Associated Infection Singe-Person Report form as a FHIR Questionnaire."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/hai-single-person-report-questionnaireresponse"/>
-                <display value="Profile QuestionnaireResponse: HAI Single Person Report"/>
-            </reference>
-            <name value="Healthcare Associated Infection Single-Person Report QuestionnaireResponse"/>
-            <description value="This profile represents a response to the Healthcare Associated Infection Single-Person Report Questionnaire as a FHIR QuestionnaireResponse profile."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Questionnaire/hai-questionnaire-los-denom"/>
-                <display value="Instance Questionnaire: Late Onset Sepsis/Meningitis Denominator"/>
-            </reference>
-            <name value="Questionnaire - Late Onset Sepsis/Meningitis Denominator"/>
-            <description value="Questionnaire - Late Onset Sepsis/Meningitis Denominator instance"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaire-instances"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="QuestionnaireResponse/hai-questionnaireresponse-los-denom"/>
-                <display value="Example QuestionnaireResponse: Late Onset Sepsis/Meningitis Denominator"/>
-            </reference>
-            <name value="QuestionnaireResponse - Late Onset Sepsis/Meningitis Denominator"/>
-            <description value="QuestionnaireResponse - Late Onset Sepsis/Meningitis Denominator example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaireresponse-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Questionnaire/hai-questionnaire-los-event"/>
-                <display value="Instance Questionnaire: Late Onset Sepsis/Meningitis Event (LOS)"/>
-            </reference>
-            <name value="Questionnaire - Late Onset Sepsis/Meningitis Event (LOS)"/>
-            <description value="Questionnaire - Late Onset Sepsis/Meningitis Event (LOS) instance"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaire-instances"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="QuestionnaireResponse/hai-questionnaireresponse-los-event"/>
-                <display value="Example QuestionnaireResponse: hai-questionnaireresponse-los-event.xml"/>
-            </reference>
-            <name value="QuestionnaireResponse - Late Onset Sepsis/Meningitis Event (LOS)"/>
-            <description value="QuestionnaireResponse - Late Onset Sepsis/Meningitis Event (LOS) example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaireresponse-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/nhsn-pathogen-ranking"/>
-                <display value="Value Set: nhsn-pathogen-ranking"/>
-            </reference>
-            <name value="NHSNPathogenRanking"/>
-            <description value="Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Questionnaire/hai-questionnaire-opc-proc-denom"/>
-                <display value="Instance Questionnaire: hai-questionnaire-opc-proc-denom"/>
-            </reference>
-            <name value="Questionnaire - Outpatient Procedure Component Denominator for Procedure"/>
-            <description value="Questionnaire - Outpatient Procedure Component Denominator for Procedure instance"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaire-instances"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-proc-denom"/>
-                <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-proc-denom"/>
-            </reference>
-            <name value="QuestionnaireResponse - Outpatient Procedure Component Denominator for Procedure"/>
-            <description value="QuestionnaireResponse - Outpatient Procedure Component Denominator for Procedure example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaireresponse-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Questionnaire/hai-questionnaire-opc-sdom-denom"/>
-                <display value="Instance Questionnaire: Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"/>
-            </reference>
-            <name value="Questionnaire - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"/>
-            <description value="Questionnaire - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report instance"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaire-instances"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-denom"/>
-                <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-sdom-denom"/>
-            </reference>
-            <name value="QuestionnaireResponse - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"/>
-            <description value="QuestionnaireResponse - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaireresponse-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Questionnaire/hai-questionnaire-opc-sdom-event"/>
-                <display value="Instance Questionnaire: Outpatient Procedure Component Same Day Outcome Measures Event"/>
-            </reference>
-            <name value="Questionnaire - Outpatient Procedure Component Same Day Outcome Measures Event"/>
-            <description value="Questionnaire - Outpatient Procedure Component Same Day Outcome Measures Event instance"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaire-instances"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-event"/>
-                <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-sdom-event"/>
-            </reference>
-            <name value="QuestionnaireResponse - Outpatient Procedure Component Same Day Outcome Measures Event"/>
-            <description value="QuestionnaireResponse - Outpatient Procedure Component Same Day Outcome Measures Event example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaireresponse-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Questionnaire/hai-questionnaire-opc-ssi-event"/>
-                <display value="Instance Questionnaire: hai-questionnaire-opc-ssi-event"/>
-            </reference>
-            <name value="Questionnaire - Outpatient Procedure Component Surgical Site Infection Event"/>
-            <description value="Questionnaire - Outpatient Procedure Component Surgical Site Infection Event instance"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaire-instances"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-ssi-event"/>
-                <display value="Example  QuestionnaireResponse: hai-questionnaireresponse-opc-ssi-event"/>
-            </reference>
-            <name value="QuestionnaireResponse - Outpatient Procedure Component Surgical Site Infection Event"/>
-            <description value="QuestionnaireResponse - Outpatient Procedure Component Surgical Site Infection Event example"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="questionnaireresponse-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Parameters/expansion-parameters-hai"/></reference>
-            <name value="Parameters - SNOMED US Version"/>
-            <description value="Parameters - SNOMED US Version"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <page>
-            <nameUrl value="index.html"/>
-            <title value="Healthcare Associated Infection Reports (FHIR)"/>
-            <generation value="markdown"/>
-            <page>
-                <nameUrl value="relationship_to_another_standard.html"/>
-                <title value="Relationship to Another Standard"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="audience.html"/>
-                <title value="Audience"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="design_considerations.html"/>
-                <title value="Design Considerations"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="acknowledgements.html"/>
-                <title value="Acknowledgements"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="downloads.html"/>
-                <title value="Downloads"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="release_history.html"/>
-                <title value="Release History"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="mapping-los-event.html"/>
-                <title value="mapping-los-event"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="mapping-los-denom.html"/>
-                <title value="mapping-los-denom"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="mapping-opc-proc-denom.html"/>
-                <title value="mapping-opc-proc-denom"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="mapping-opc-sdom-event.html"/>
-                <title value="mapping-opc-sdom-event"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="mapping-opc-sdom-denom.html"/>
-                <title value="mapping-opc-sdom-denom"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="mapping-opc-ssi-event.html"/>
-                <title value="mapping-opc-ssi-event"/>
-                <generation value="markdown"/>
-            </page>
-        </page>
-        <parameter>
-            <code value="releaselabel"/>
-            <value value="STU 2.1"/>
-        </parameter>
-        <parameter>
-            <code value="path-expansion-params"/>
-            <value value="resources/parameters/expansion-parameters-hai.xml"/>
-        </parameter>
-        <parameter>
-            <code value="copyrightyear"/>
-            <value value="2020+"/>
-        </parameter>
-    </definition>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7-fhir-us-hai" />
+  <meta>
+    <versionId value="80" />
+    <lastUpdated value="2023-03-07T04:39:27.632+00:00" />
+    <source value="#ApXwQ1PzpijU14D1" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai" />
+  <version value="2.1.0" />
+  <name value="HealthcareAssociatedInfectionReports" />
+  <title value="NHSN Healthcare Associated Infection Reports, Release 1, STU 2 —US Realm" />
+  <status value="draft" />
+  <experimental value="false" />
+  <publisher value="HL7 International - Structured Documents Work Group" />
+  <contact>
+    <name value="HL7 International - Structured Documents" />
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/structure" />
+    </telecom>
+  </contact>
+  <description
+    value="This implementation guide (IG) specifies standards for electronic submission of Healthcare Associated Infection (HAI) reports to the National Healthcare Safety Network (NHSN) of the Centers for Disease Control and Prevention (CDC). This IG contains a library of FHIR profiles for electronic submission of HAI reports to the NHSN.&#xA;&#xA;As reports are modified and new report types are defined, CDC and Health Level Seven (HL7) will develop and publish additional constraints.&#xA;&#xA;Throughout this process, CDC remains the authority on NHSN data collection protocols. When healthcare enterprises choose to participate in NHSN, they must report to CDC occurrences such as specific reportable procedures, even those without complications, and events such as a bloodstream infection, either confirmed by a positive blood culture or supported by a patients clinical symptoms. This specification opens the channel for data submission by all applications compliant with the data coding requirements defined here.&#xA;&#xA;Note that participation in the NHSN requires enrollment and filing of reporting plans, which are not defined by this specification. For an overview of NHSN and full information on NHSN participation requirements, see: [http://www.cdc.gov/nhsn](http://www.cdc.gov/nhsn). Provisions of the Public Health Service Act protect all data reported to NHSN from discovery through the Freedom of Information Act (FOIA)." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+    <text value="United States of America" />
+  </jurisdiction>
+  <packageId value="hl7.fhir.us.hai" />
+  <fhirVersion value="4.0.1" />
+  <dependsOn id="hl7fhiruscore">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core" />
+    <packageId value="hl7.fhir.us.core" />
+    <version value="5.0.1" />
+  </dependsOn>
+  <dependsOn id="vsac">
+    <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac" />
+    <packageId value="us.nlm.vsac" />
+    <version value="0.9.0" />
+  </dependsOn>
+  <definition>
+    <grouping id="questionnaire-instances">
+      <name value="Questionnaire Instances" />
+    </grouping>
+    <grouping id="questionnaireresponse-examples">
+      <name value="QuestionnaireResponse Examples" />
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="Device/hai-authoring-device" />
+        <display value="Example Device: HAI Authoring Device" />
+      </reference>
+      <name value="Device - HAI Authoring" />
+      <description value="Device - HAI Authoring example" />
+      <exampleBoolean value="true" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Group/hai-group-1" />
+        <display value="Example Group: HAI Group 1" />
+      </reference>
+      <name value="Group: HAI Group 1" />
+      <description value="Group: HAI Group 1 example" />
+      <exampleBoolean value="true" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/hai-patient-1" />
+        <display value="Example Patient: HAI Patient 1" />
+      </reference>
+      <name value="US Core Patient: HAI Patient 1" />
+      <description value="US Core Patient: HAI Patient 1 example" />
+      <exampleBoolean value="true" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hai-population-summary-questionnaire" />
+        <display value="Profile Questionnaire: HAI Population Summary" />
+      </reference>
+      <name value="Healthcare Associated Infection Population Summary Questionnaire" />
+      <description value="This profile represents a Healthcare Associated Infection Population Summary form as a FHIR Questionnaire. A Population Summary Report records summary data for a group, such as the patients in a particular ward, during a specified period." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hai-population-summary-questionnaireresponse" />
+        <display value="Profile QuestionnaireResponse: HAI Population Summary" />
+      </reference>
+      <name value="Healthcare Associated Infection Population Summary QuestionnaireResponse" />
+      <description value="This profile represents a response to the Healthcare Associated Infection Population Summary Questionnaire as a FHIR QuestionnaireResponse profile." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hai-single-person-report-questionnaire" />
+        <display value="Profile Questionnaire: HAI Single Person Report" />
+      </reference>
+      <name value="Healthcare Associated Infection Single-Person Report Questionnaire" />
+      <description value="This profile represents a Healthcare Associated Infection Singe-Person Report form as a FHIR Questionnaire." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hai-single-person-report-questionnaireresponse" />
+        <display value="Profile QuestionnaireResponse: HAI Single Person Report" />
+      </reference>
+      <name value="Healthcare Associated Infection Single-Person Report QuestionnaireResponse" />
+      <description value="This profile represents a response to the Healthcare Associated Infection Single-Person Report Questionnaire as a FHIR QuestionnaireResponse profile." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hai-questionnaire-los-denom" />
+        <display value="Instance Questionnaire: Late Onset Sepsis/Meningitis Denominator" />
+      </reference>
+      <name value="Questionnaire - Late Onset Sepsis/Meningitis Denominator" />
+      <description value="Questionnaire - Late Onset Sepsis/Meningitis Denominator instance" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaire-instances" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-los-denom" />
+        <display value="Example QuestionnaireResponse: Late Onset Sepsis/Meningitis Denominator" />
+      </reference>
+      <name value="QuestionnaireResponse - Late Onset Sepsis/Meningitis Denominator" />
+      <description value="QuestionnaireResponse - Late Onset Sepsis/Meningitis Denominator example" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaireresponse-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hai-questionnaire-los-event" />
+        <display value="Instance Questionnaire: Late Onset Sepsis/Meningitis Event (LOS)" />
+      </reference>
+      <name value="Questionnaire - Late Onset Sepsis/Meningitis Event (LOS)" />
+      <description value="Questionnaire - Late Onset Sepsis/Meningitis Event (LOS) instance" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaire-instances" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-los-event" />
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-los-event.xml" />
+      </reference>
+      <name value="QuestionnaireResponse - Late Onset Sepsis/Meningitis Event (LOS)" />
+      <description value="QuestionnaireResponse - Late Onset Sepsis/Meningitis Event (LOS) example" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaireresponse-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/nhsn-pathogen-ranking" />
+        <display value="Value Set: nhsn-pathogen-ranking" />
+      </reference>
+      <name value="NHSNPathogenRanking" />
+      <description value="Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection." />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hai-questionnaire-opc-proc-denom" />
+        <display value="Instance Questionnaire: hai-questionnaire-opc-proc-denom" />
+      </reference>
+      <name value="Questionnaire - Outpatient Procedure Component Denominator for Procedure" />
+      <description value="Questionnaire - Outpatient Procedure Component Denominator for Procedure instance" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaire-instances" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-proc-denom" />
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-proc-denom" />
+      </reference>
+      <name value="QuestionnaireResponse - Outpatient Procedure Component Denominator for Procedure" />
+      <description value="QuestionnaireResponse - Outpatient Procedure Component Denominator for Procedure example" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaireresponse-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hai-questionnaire-opc-sdom-denom" />
+        <display value="Instance Questionnaire: Outpatient Procedure Component Denominator for Same Day Outcome Measures Report" />
+      </reference>
+      <name value="Questionnaire - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report" />
+      <description value="Questionnaire - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report instance" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaire-instances" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-denom" />
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-sdom-denom" />
+      </reference>
+      <name value="QuestionnaireResponse - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report" />
+      <description value="QuestionnaireResponse - Outpatient Procedure Component Denominator for Same Day Outcome Measures Report example" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaireresponse-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hai-questionnaire-opc-sdom-event" />
+        <display value="Instance Questionnaire: Outpatient Procedure Component Same Day Outcome Measures Event" />
+      </reference>
+      <name value="Questionnaire - Outpatient Procedure Component Same Day Outcome Measures Event" />
+      <description value="Questionnaire - Outpatient Procedure Component Same Day Outcome Measures Event instance" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaire-instances" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-sdom-event" />
+        <display value="Example QuestionnaireResponse: hai-questionnaireresponse-opc-sdom-event" />
+      </reference>
+      <name value="QuestionnaireResponse - Outpatient Procedure Component Same Day Outcome Measures Event" />
+      <description value="QuestionnaireResponse - Outpatient Procedure Component Same Day Outcome Measures Event example" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaireresponse-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/hai-questionnaire-opc-ssi-event" />
+        <display value="Instance Questionnaire: hai-questionnaire-opc-ssi-event" />
+      </reference>
+      <name value="Questionnaire - Outpatient Procedure Component Surgical Site Infection Event" />
+      <description value="Questionnaire - Outpatient Procedure Component Surgical Site Infection Event instance" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaire-instances" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/hai-questionnaireresponse-opc-ssi-event" />
+        <display value="Example  QuestionnaireResponse: hai-questionnaireresponse-opc-ssi-event" />
+      </reference>
+      <name value="QuestionnaireResponse - Outpatient Procedure Component Surgical Site Infection Event" />
+      <description value="QuestionnaireResponse - Outpatient Procedure Component Surgical Site Infection Event example" />
+      <exampleBoolean value="true" />
+      <groupingId value="questionnaireresponse-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/expansion-parameters-hai" />
+      </reference>
+      <name value="Parameters - SNOMED US Version" />
+      <description value="Parameters - SNOMED US Version" />
+      <exampleBoolean value="true" />
+    </resource>
+    <page>
+      <nameUrl value="index.html" />
+      <title value="Healthcare Associated Infection Reports (FHIR)" />
+      <generation value="markdown" />
+      <page>
+        <nameUrl value="relationship_to_another_standard.html" />
+        <title value="Relationship to Another Standard" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="audience.html" />
+        <title value="Audience" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="design_considerations.html" />
+        <title value="Design Considerations" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="acknowledgements.html" />
+        <title value="Acknowledgements" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="downloads.html" />
+        <title value="Downloads" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="release_history.html" />
+        <title value="Release History" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="mapping-los-event.html" />
+        <title value="mapping-los-event" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="mapping-los-denom.html" />
+        <title value="mapping-los-denom" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="mapping-opc-proc-denom.html" />
+        <title value="mapping-opc-proc-denom" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="mapping-opc-sdom-event.html" />
+        <title value="mapping-opc-sdom-event" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="mapping-opc-sdom-denom.html" />
+        <title value="mapping-opc-sdom-denom" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="mapping-opc-ssi-event.html" />
+        <title value="mapping-opc-ssi-event" />
+        <generation value="markdown" />
+      </page>
+    </page>
+    <parameter>
+      <code value="releaselabel" />
+      <value value="STU 2.1" />
+    </parameter>
+    <parameter>
+      <code value="path-expansion-params" />
+      <value value="resources/parameters/expansion-parameters-hai.xml" />
+    </parameter>
+    <parameter>
+      <code value="copyrightyear" />
+      <value value="2020+" />
+    </parameter>
+  </definition>
 </ImplementationGuide>
