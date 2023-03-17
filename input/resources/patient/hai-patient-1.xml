@@ -15,6 +15,13 @@
         <display value="White" />
       </valueCoding>
     </extension>
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238" />
+        <code value="1002-5" />
+        <display value="American Indian/Alaska Native" />
+      </valueCoding>
+    </extension>
     <extension url="text">
       <valueString value="White" />
     </extension>
