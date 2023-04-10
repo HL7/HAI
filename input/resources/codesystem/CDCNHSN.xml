@@ -13,7 +13,7 @@
         <value value="urn:oid:2.16.840.1.113883.6.277"/>
     </identifier>
   <identifier>
-    <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
+    <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem"/>
     <value value="cdcnhsn.html"/>
   </identifier>
     <version value="3.0.1"/>
