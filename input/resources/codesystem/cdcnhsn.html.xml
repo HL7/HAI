@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem
     xmlns="http://hl7.org/fhir">
-    <id value="cdcnhsn"/>
+    <id value="cdcnhsn.html"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2023-04-10T00:54:37.342+00:00"/>
-        <source value="#4AFlX69XTRmUC83Y"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-04-10T01:16:54.359+00:00"/>
+        <source value="#A98OzOYC02VHaoBX"/>
     </meta>
     <url value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="2.16.840.1.113883.6.277"/>
+        <value value="urn:oid:2.16.840.1.113883.6.277"/>
     </identifier>
     <identifier>
         <system value="http://terminology.hl7.org/CodeSystem"/>
@@ -19,7 +19,7 @@
     <identifier>
         <use value="official"/>
         <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem"/>
-        <value value="cdcnhsn"/>
+        <value value="cdcnhsn.html"/>
     </identifier>
     <name value="CDCNHSN"/>
     <title value="NHSN Surveillance System Codes (CDCNHSN)"/>
@@ -27,6 +27,7 @@
     <experimental value="false"/>
     <publisher value="U.S. Centers for Disease Control and Prevention (CDC), National Healthcare Safety Network (NHSN)"/>
     <description value="A fragment of the set of healthcare surveillance vocabulary concepts and associated identifiers intended solely for data submissions to the National Healthcare Safety Network (NHSN). Other uses are not recommended.&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;The CDCNHSN code system is highly specialized to meet the needs of NHSN surveillance reporting, is undergoing changes, and is not recommended for creating value sets to be used outside of NHSN."/>
+    <caseSensitive value="false"/>
     <content value="fragment"/>
     <concept>
         <code value="1601-4"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-hai"/>
     <meta>
-        <versionId value="95"/>
-        <lastUpdated value="2023-04-10T01:06:14.613+00:00"/>
-        <source value="#j1P3rdaYeep9Hxfs"/>
+        <versionId value="97"/>
+        <lastUpdated value="2023-04-10T01:15:47.118+00:00"/>
+        <source value="#oTu8A3lfBX9YLs4T"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai"/>
     <version value="2.1.0"/>
@@ -250,8 +250,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CodeSystem/cdcnhsn"/>
-                <display value="CDCNHSN"/>
+                <reference value="CodeSystem/cdcnhsn.html"/>
+                <display value="NHSN Surveillance System Codes (CDCNHSN)"/>
             </reference>
             <name value="NHSN Surveillance System Codes (CDCNHSN)"/>
             <description value="A fragment of the set of healthcare surveillance vocabulary concepts and associated identifiers intended solely for data submissions to the National Healthcare Safety Network (NHSN). Other uses are not recommended.&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;The CDCNHSN code system is highly specialized to meet the needs of NHSN surveillance reporting, is undergoing changes, and is not recommended for creating value sets to be used outside of NHSN."/>
