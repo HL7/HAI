@@ -17,3 +17,5 @@ org.hl7.fhir.publisher.jar
 /source/resources/narrative
 /source/resources/html
 /source/transform/profile_xsl
+/input/NHSNInfectionConditionCode.xlsx
+/input/~$NHSNInfectionConditionCode.xlsx

@@ -1,91 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Patient xmlns="http://hl7.org/fhir">
-  <id value="hai-patient-1" />
-  <meta>
-    <versionId value="2" />
-    <lastUpdated value="2020-04-06T23:35:24.115+00:00" />
-    <source value="#fyiLu4EukEtzxtWP" />
-    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
-  </meta>
-  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-    <extension url="ombCategory">
-      <valueCoding>
-        <system value="urn:oid:2.16.840.1.113883.6.238" />
-        <code value="2106-3" />
-        <display value="White" />
-      </valueCoding>
+<Patient
+    xmlns="http://hl7.org/fhir">
+    <id value="hai-patient-1"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2023-03-17T03:21:28.426+00:00"/>
+        <source value="#hv5RiGYBHgQSIyMl"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">Ned 
+                <b>NUCLEAR </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>959595</td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>
+                            <span>25 November 1954</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="2106-3"/>
+                <display value="White"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="White"/>
+        </extension>
     </extension>
-    <extension url="ombCategory">
-      <valueCoding>
-        <system value="urn:oid:2.16.840.1.113883.6.238" />
-        <code value="1002-5" />
-        <display value="American Indian/Alaska Native" />
-      </valueCoding>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="2186-5"/>
+                <display value="Not Hispanic or Latino"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Not Hispanic or Latino"/>
+        </extension>
     </extension>
-    <extension url="text">
-      <valueString value="White" />
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+        <valueCode value="M"/>
     </extension>
-  </extension>
-  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
-    <extension url="ombCategory">
-      <valueCoding>
-        <system value="urn:oid:2.16.840.1.113883.6.238" />
-        <code value="2186-5" />
-        <display value="Not Hispanic or Latino" />
-      </valueCoding>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                <code value="ASKU"/>
+                <display value="asked but unknown"/>
+            </coding>
+            <text value="asked but unknown"/>
+        </valueCodeableConcept>
     </extension>
-    <extension url="text">
-      <valueString value="Not Hispanic or Latino" />
-    </extension>
-  </extension>
-  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
-    <valueCode value="M" />
-  </extension>
-  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity">
-    <valueCodeableConcept>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
-        <code value="ASKU" />
-        <display value="asked but unknown" />
-      </coding>
-      <text value="asked but unknown" />
-    </valueCodeableConcept>
-  </extension>
-  <identifier>
-    <type>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-        <code value="MA" />
-      </coding>
-    </type>
-    <system value="urn:oid:2.16.840.1.113883.19.5" />
-    <value value="959595" />
-  </identifier>
-  <identifier>
-    <type>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-        <code value="SS" />
-      </coding>
-    </type>
-    <system value="urn:oid:2.16.840.1.113883.4.1" />
-    <value value="12345" />
-  </identifier>
-  <identifier>
-    <type>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-        <code value="MR" />
-      </coding>
-    </type>
-    <system value="urn:oid:2.16.840.1.113883.4.338" />
-    <value value="12345" />
-  </identifier>
-  <name>
-    <use value="official" />
-    <family value="Nuclear" />
-    <given value="Ned" />
-  </name>
-  <gender value="male" />
-  <birthDate value="1954-11-25" />
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="MA"/>
+            </coding>
+        </type>
+        <system value="urn:oid:2.16.840.1.113883.19.5"/>
+        <value value="959595"/>
+    </identifier>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="SS"/>
+            </coding>
+        </type>
+        <system value="urn:oid:2.16.840.1.113883.4.1"/>
+        <value value="12345"/>
+    </identifier>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="MR"/>
+            </coding>
+        </type>
+        <system value="urn:oid:2.16.840.1.113883.4.338"/>
+        <value value="12345"/>
+    </identifier>
+    <name>
+        <use value="official"/>
+        <family value="Nuclear"/>
+        <given value="Ned"/>
+    </name>
+    <gender value="male"/>
+    <birthDate value="1954-11-25"/>
 </Patient>
