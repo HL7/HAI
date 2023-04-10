@@ -3,19 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="CDCNHSN"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-04-10T03:22:05.396+00:00"/>
-        <source value="#CaSIkesqqjwwAqJn"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-04-10T03:47:48.384+00:00"/>
+        <source value="#glSudYm2UhmIiwYG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/CodeSystem/CDCNHSN"/>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:oid:2.16.840.1.113883.6.277"/>
     </identifier>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
-  </identifier>
+    <identifier>
+        <use value="official"/>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
+    </identifier>
     <version value="3.0.1"/>
     <name value="CDCNHSN"/>
     <title value="NHSN Surveillance System Codes"/>
