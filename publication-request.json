@@ -4,6 +4,6 @@
 	"desc": "Update to FHIR STU Release 2",
 	"path": "http://hl7.org/fhir/us/hai/STU2.1",
 	"status": "trial-use",
-	"milestone": true,
+	"mode": "milestone",
 	"sequence": "STU2"
 }
