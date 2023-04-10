@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem
     xmlns="http://hl7.org/fhir">
-    <id value="cdcnhsn.html"/>
+    <id value="cdcnhsn"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-04-10T01:22:25.746+00:00"/>
-        <source value="#Bw9xDrrdF4bPwQDb"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-04-10T01:32:06.904+00:00"/>
+        <source value="#JZGjEIdTNr5brSFA"/>
     </meta>
-    <url value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
+    <url value="http://hl7.org/fhir/us/hai/CodeSystem/cdcnhsn"/>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:oid:2.16.840.1.113883.6.277"/>

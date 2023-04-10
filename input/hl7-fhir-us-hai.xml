@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-hai"/>
     <meta>
-        <versionId value="98"/>
-        <lastUpdated value="2023-04-10T01:25:57.249+00:00"/>
-        <source value="#1hCYyyK2Oog5DbVV"/>
+        <versionId value="99"/>
+        <lastUpdated value="2023-04-10T01:32:07.583+00:00"/>
+        <source value="#l9KqZDYlCflUWVHa"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ImplementationGuide/hl7-fhir-us-hai"/>
     <version value="2.1.0"/>
@@ -250,7 +250,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CodeSystem/cdcnhsn.html"/>
+                <reference value="CodeSystem/cdcnhsn"/>
                 <display value="NHSN Surveillance System Codes (CDCNHSN)"/>
             </reference>
             <name value="NHSN Surveillance System Codes (CDCNHSN)"/>
