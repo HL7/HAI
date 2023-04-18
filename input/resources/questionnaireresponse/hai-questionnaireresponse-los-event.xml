@@ -135,9 +135,9 @@
       <text value="Laboratory Criteria Used" />
       <answer>
         <valueCoding>
-          <system value="http://snomed.info/sct" />
-          <code value="1023001" />
-          <display value="Apnea (finding)" />
+          <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html" />
+          <code value="1951-3" />
+          <display value="Recognized pathogen from one or more blood cultures" />
         </valueCoding>
       </answer>
     </item>
