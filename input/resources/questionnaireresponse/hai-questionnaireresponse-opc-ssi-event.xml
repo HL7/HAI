@@ -92,7 +92,7 @@
             <answer>
                 <valueCoding>
                     <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
-                    <system value="2020-11" />
+                    <version value="2020-11" />
                     <code value="1620-4"/>
                     <display value="Superficial incisional primary SSI"/>
                 </valueCoding>
