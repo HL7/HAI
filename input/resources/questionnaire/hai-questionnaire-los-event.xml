@@ -13,7 +13,6 @@
     <identifier>
         <value value="hai-questionnaire-los-event-v2"/>
     </identifier>
-    <version value="2.0.0"/>
     <name value="HAI_questionnaire_los_event"/>
     <title value="Late Onset Sepsis/Meningitis Event (LOS)"/>
     <status value="draft"/>

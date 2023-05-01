@@ -13,7 +13,6 @@
     <identifier>
         <value value="hai-questionnaire-opc-proc-denom-v1"/>
     </identifier>
-    <version value="2.0.0"/>
     <name value="HAI_questionnaire_opc_proc_denom"/>
     <title value="Outpatient Procedure Component Denominator for Procedure"/>
     <status value="draft"/>

@@ -13,7 +13,6 @@
     <identifier>
         <value value="hai-questionnaire-los-denom-v1"/>
     </identifier>
-    <version value="2.0.0"/>
     <name value="HAI_questionnaire_los_denom"/>
     <title value="Late Onset Sepsis/Meningitis Denominator"/>
     <status value="draft"/>

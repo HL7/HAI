@@ -8,7 +8,6 @@
         <source value="#LTI3mijK5KWMfHlY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-population-summary-questionnaireresponse"/>
-    <version value="R1"/>
     <name value="HAI_population_summary_questionnaireresponse"/>
     <title value="Healthcare Associated Infection Population Summary QuestionnaireResponse"/>
     <status value="active"/>
