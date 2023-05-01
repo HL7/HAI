@@ -137,6 +137,7 @@
             <answer>
                 <valueCoding>
                     <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html" />
+                    <version value="2020-11" />
                     <code value="1951-3" />
                     <display value="Recognized pathogen from one or more blood cultures" />
                 </valueCoding>
