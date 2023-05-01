@@ -16,7 +16,7 @@
         <system value="urn:ietf:rfc:3986"/>
         <value value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
     </identifier>-->
-  <version value="3.0.1" />
+  <version value="3.0.0" />
   <name value="CDCNHSN" />
   <title value="NHSN Surveillance System Codes" />
   <status value="active" />
