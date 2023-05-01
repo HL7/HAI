@@ -15,4 +15,8 @@
         <name value="system-version"/>
         <valueString value="http://snomed.info/sct|http://snomed.info/sct/731000124108"/>
     </parameter>
+    <parameter>
+        <name value="system-version"/>
+        <valueString value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html/2020-11"/>
+    </parameter>
 </Parameters>
