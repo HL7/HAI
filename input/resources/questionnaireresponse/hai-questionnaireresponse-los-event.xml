@@ -125,7 +125,6 @@
             <answer>
                 <valueCoding>
                     <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html" />
-                    <version value="2020-11" />
                     <code value="3067-6" />
                     <display value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)" />
                 </valueCoding>
@@ -137,7 +136,6 @@
             <answer>
                 <valueCoding>
                     <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html" />
-                    <version value="2020-11" />
                     <code value="1951-3" />
                     <display value="Recognized pathogen from one or more blood cultures" />
                 </valueCoding>
