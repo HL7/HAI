@@ -17,6 +17,6 @@
     </parameter>
     <parameter>
         <name value="system-version"/>
-        <valueString value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html/2020-11"/>
+        <valueString value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html|https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html/2020-11"/>
     </parameter>
 </Parameters>
