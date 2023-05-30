@@ -11,4 +11,4 @@ Unknown Code '1309-4' in the system 'https://www.cdc.gov/nhsn/cdaportal/terminol
 Unknown Code '1321-9' in the system 'https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
 
 # US Core Variance Request (waiting for approval): https://jira.hl7.org/browse/FHIR-41350
-US FHIR Usage rules require that all profiles on QuestionnaireResponse derive from the core US profile. Comparison with US Core QuestionnaireResponse Profile
+US FHIR Usage rules require that all profiles on QuestionnaireResponse derive from the core US profile

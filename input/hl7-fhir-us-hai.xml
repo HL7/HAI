@@ -10,7 +10,7 @@
     <version value="2.1.0" />
     <name value="HealthcareAssociatedInfectionReports" />
     <title value="NHSN Healthcare Associated Infection (HAI) Reports" />
-    <status value="draft" />
+    <status value="active" />
     <experimental value="false" />
     <publisher value="HL7 International - Structured Documents Work Group" />
     <contact>

@@ -6,8 +6,8 @@
     <version value="1.0.0" />
     <name value="NHSNPathogenRanking"/>
     <title value="NHSNPathogenRanking"/>
-    <status value="draft"/>
-    <experimental value="true"/>
+    <status value="active"/>
+    <experimental value="false"/>
     <description value="Ordinal rankings for the relative importance of a pathogen in that set with respect to its role in the infection."/>
     <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
     <compose>
