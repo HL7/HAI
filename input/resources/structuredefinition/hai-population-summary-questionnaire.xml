@@ -32,6 +32,12 @@
             <path value="Questionnaire.text"/>
             <mustSupport value="true"/>
         </element>
+        <element id="Questionnaire.url">
+            <path value="Questionnaire.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Questionnaire.identifier">
             <path value="Questionnaire.identifier"/>
             <short value="Globally unique identifier for the instance"/>

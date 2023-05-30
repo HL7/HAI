@@ -42,12 +42,6 @@
             <path value="QuestionnaireResponse.questionnaire"/>
             <short value="Points to the single-person report questionnaire instance being answered."/>
             <definition value="Points to the single-person report questionnaire instance being answered."/>
-            <min value="1"/>
-            <type>
-                <code value="canonical"/>
-                <targetProfile value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
-            </type>
-            <mustSupport value="true"/>
         </element>
         <element id="QuestionnaireResponse.status">
             <path value="QuestionnaireResponse.status"/>
