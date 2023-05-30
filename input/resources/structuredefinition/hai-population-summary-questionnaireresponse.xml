@@ -52,6 +52,10 @@
             <path value="QuestionnaireResponse.subject"/>
             <short value="The subject of a population summary is a group."/>
             <definition value="The subject of a population summary is a group."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="QuestionnaireResponse.authored">
