@@ -8,6 +8,7 @@
         <source value="#Fxh9zPZwKhYNFGsC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/hai/ValueSet/nhsn-pathogen-ranking"/>
+    <version value="2.1.0" />
     <name value="NHSNPathogenRanking"/>
     <title value="NHSNPathogenRanking"/>
     <status value="draft"/>
