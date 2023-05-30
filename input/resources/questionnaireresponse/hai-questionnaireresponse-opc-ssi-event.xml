@@ -93,7 +93,7 @@
                 <valueCoding>
                     <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html"/>
                     <code value="1620-4"/>
-                    <display value="Superficial incisional primary SSI"/>
+                    <display value="Superficial incisional primary surgical site infection (SSI)"/>
                 </valueCoding>
             </answer>
         </item>
