@@ -126,7 +126,7 @@
                 <valueCoding>
                     <system value="https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/cdcnhsn.html" />
                     <code value="3067-6" />
-                    <display value="Neonatal Laboratory Confirmed Bloodstream Infection (NLCBI 2)" />
+                    <display value="Neonatal Laboratory Confirmed Bloodstream Infection 2 (NLCBI 2)" />
                 </valueCoding>
             </answer>
         </item>
