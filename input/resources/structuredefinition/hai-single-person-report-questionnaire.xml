@@ -2,13 +2,9 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="hai-single-person-report-questionnaire"/>
-    <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-02-24T01:30:34.762+00:00"/>
-        <source value="#13GudmCSz4rHmQwY"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/hai/StructureDefinition/hai-single-person-report-questionnaire"/>
-    <name value="HAI_single_person_report_questionnaire"/>
+    <version value="2.1.0" />
+    <name value="HAISinglePersonReportQuestionnaire"/>
     <title value="Healthcare Associated Infection Single-Person Report Questionnaire"/>
     <status value="active"/>
     <publisher value="HL7 Structured Documents Work Group"/>
