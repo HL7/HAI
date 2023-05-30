@@ -14,7 +14,6 @@
     <abstract value="false"/>
     <type value="QuestionnaireResponse"/>
     <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"/>
-<!--    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>-->
     <derivation value="constraint"/>
     <differential>
         <element id="QuestionnaireResponse">
@@ -53,23 +52,6 @@
         <element id="QuestionnaireResponse.status">
             <path value="QuestionnaireResponse.status"/>
             <patternCode value="completed"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="QuestionnaireResponse.subject">
-            <path value="QuestionnaireResponse.subject"/>
-            <short value="Patient is the subject of the questionnaire response."/>
-            <definition value="In a single-person report the patient is the subject of the questionnaire response."/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-            </type>
-        </element>
-        <element id="QuestionnaireResponse.authored">
-            <path value="QuestionnaireResponse.authored"/>
-            <short value="Creation date of the QuestionnaireResponse."/>
-            <definition value="Creation date of the QuestionnaireResponse."/>
-            <mustSupport value="true"/>
         </element>
         <element id="QuestionnaireResponse.author">
             <path value="QuestionnaireResponse.author"/>
@@ -81,14 +63,12 @@
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
-            <mustSupport value="true"/>
         </element>
         <element id="QuestionnaireResponse.item">
             <path value="QuestionnaireResponse.item"/>
             <short value="item"/>
             <definition value="A questionnaire item"/>
             <min value="1"/>
-            <mustSupport value="true"/>
         </element>
         <element id="QuestionnaireResponse.item.text">
             <path value="QuestionnaireResponse.item.text"/>
