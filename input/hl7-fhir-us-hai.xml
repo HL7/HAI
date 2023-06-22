@@ -37,6 +37,11 @@
         <packageId value="hl7.fhir.us.core" />
         <version value="5.0.1" />
     </dependsOn>
+    <dependsOn id="hl7fhiruvsdc">
+        <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc" />
+        <packageId value="hl7.fhir.uv.sdc" />
+        <version value="3.0.0" />
+    </dependsOn>
     <dependsOn id="vsac">
         <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac" />
         <packageId value="us.nlm.vsac" />
