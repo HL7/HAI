@@ -25,6 +25,7 @@
         <element id="QuestionnaireResponse.id">
             <path value="QuestionnaireResponse.id"/>
             <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="QuestionnaireResponse.text">
             <path value="QuestionnaireResponse.text"/>
@@ -39,7 +40,7 @@
         </element>
         <element id="QuestionnaireResponse.questionnaire">
             <path value="QuestionnaireResponse.questionnaire"/>
-            <short value="Points to the population summary Questionnaire instance being answered."/>
+            <short value="References the population summary Questionnaire instance being answered."/>
         </element>
         <element id="QuestionnaireResponse.status">
             <path value="QuestionnaireResponse.status"/>
@@ -58,7 +59,7 @@
         <element id="QuestionnaireResponse.author">
             <path value="QuestionnaireResponse.author"/>
             <short value="Software or infection control professional"/>
-            <definition value="In a single-person report, the author may be software (US Core Device) or may be a person in the role of infection control professional (ICP) (US Core Practitioner). "/>
+            <definition value="In a single-person report, the author may be software (US Core Device) or may be a person in the role of infection control professional (ICP) (US Core Practitioner)."/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
