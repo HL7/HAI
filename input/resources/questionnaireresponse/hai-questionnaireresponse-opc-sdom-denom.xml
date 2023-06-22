@@ -18,6 +18,7 @@
         <reference value="Group/hai-group-1"/>
         <display value="hai-group-1"/>
     </subject>
+    <authored value="2020-03-29T22:38:59.084Z"/>
     <author>
         <reference value="Device/hai-authoring-device"/>
         <display value="hai-authoring-device"/>
