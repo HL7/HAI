@@ -13,7 +13,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Questionnaire"/>
-    <baseDefinition value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Questionnaire">
