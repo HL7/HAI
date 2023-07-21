@@ -15,7 +15,7 @@
     </identifier>
     <name value="HAI_questionnaire_opc_ssi_event"/>
     <title value="Outpatient Procedure Component Surgical Site Infection (SSI) Event"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <subjectType value="Patient"/>
     <date value="2019-04-01"/>

@@ -15,7 +15,7 @@
     </identifier>
     <name value="HAI_questionnaire_los_denom"/>
     <title value="Late Onset Sepsis/Meningitis Denominator"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <subjectType value="Patient"/>
     <date value="2019-04-01"/>

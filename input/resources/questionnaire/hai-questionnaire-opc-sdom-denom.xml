@@ -15,7 +15,7 @@
     </identifier>
     <name value="HAI_questionnaire_opc_sdom_denom"/>
     <title value="Outpatient Procedure Component Denominator for Same Day Outcome Measures Report"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <subjectType value="Group"/>
     <date value="2019-04-01"/>

@@ -15,7 +15,8 @@
     </identifier>
     <name value="HAI_questionnaire_los_event"/>
     <title value="Late Onset Sepsis/Meningitis Event (LOS)"/>
-    <status value="draft"/>
+    <status value="active"/>
+    <experimental value="false"/>
     <subjectType value="Patient"/>
     <date value="2019-04-01"/>
     <publisher value="HL7 Structured Documents Work Group"/>
