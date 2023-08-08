@@ -16,7 +16,7 @@ It makes the following updates:
 ### STU 2 Release
 -------------------------------
 
-This implementation guide is second STU FHIR release of the HAI reporting profiles. It adds two profiles, five reports (Questionnaire) and six value sets.
+This implementation guide is the second STU FHIR release of the HAI reporting profiles. It adds two profiles, five reports (Questionnaire) and six value sets.
 
 This release of the IG is based on FHIR Version 4.0.0 (R4) whereas previous releases were based on FHIR Release 3.0.1 (STU3).
 
