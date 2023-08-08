@@ -5,7 +5,7 @@ This implementation guide is the first update to the second STU FHIR release of 
 
 It makes the following changes:
 * updates FHIR Version to 4.0.1 (R4) (from FHIR Version 4.0.0)
-* updates the US Core dependency to US Core Version to 5.0.1 (from US Core Version 3.0.0)
+* updates the US Core dependency to [US Core Version 5.0.1](http://hl7.org/fhir/us/core/STU5.0.1/) (from US Core Version 3.0.0)
 * makes updates to the examples to illustrate birth sex, gender identity, and multiple races in the US Core Patient
 
 
@@ -35,12 +35,12 @@ This release of the IG is based on FHIR Version 4.0.0 (R4) whereas previous rele
 
 #### Value Sets
 
-* NHSNSSIDetectionMethod](ValueSet-2.16.840.1.113883.10.20.5.9.29.html) (in VSAC in latest release)
-* NHSNLOS/MENDischargeDisposition](ValueSet-2.16.840.1.113883.10.20.5.9.30.html) (in VSAC in latest release)
-* NHSNSSIDetectionMethodType](ValueSet-2.16.840.1.113883.10.20.5.9.31.html) (in VSAC in latest release)
-* NHSNOPCProcedureCategoryCode](ValueSet-2.16.840.1.113883.10.20.5.9.34.html) (in VSAC in latest release)
-* NHSNWoundClassCode](ValueSet-2.16.840.1.113883.13.9.html) (in VSAC in latest release)
-* NHSNASAClassCode](ValueSet-2.16.840.1.113883.13.10.html) (in VSAC in latest release)
+* [NHSNSSIDetectionMethod](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.10.20.5.9.29/expansion/Latest) (in VSAC in latest release)
+* [NHSNLOS/MENDischargeDisposition](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.10.20.5.9.30.html) (in VSAC in latest release)
+* [NHSNSSIDetectionMethodType](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.10.20.5.9.31.html) (in VSAC in latest release)
+* [NHSNOPCProcedureCategoryCode](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.10.20.5.9.34.html) (in VSAC in latest release)
+* [NHSNWoundClassCode](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.13.9.html) (in VSAC in latest release)
+* [NHSNASAClassCode](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.13.10.html) (in VSAC in latest release)
 
 ### STU 1 Release
 -------------
@@ -53,11 +53,11 @@ This implementation guide is the first FHIR release of the HAI reporting profile
 
 #### Value Sets
 
-* NHSNHealthcareServiceLocationCode (in VSAC in latest release)
-* NHSNInfectionTypeCode (in VSAC in latest release)
-* NHSNDrugSusceptibilityFindingCode (in VSAC in latest release)
-* NHSNDrugSusceptibilityTestsCode (in VSAC in latest release)
-* NHSNPathogenRanking (in VSAC in latest release)
-* NHSNPathogenCode (in VSAC in latest release)
-* NHSNCriterionOfDiagnosisCode (in VSAC in latest release)
-* NHSNInfectionConditionCode (in VSAC in latest release)
+* [NHSNHealthcareServiceLocationCode](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.13.19/expansion/Latest) (in VSAC in latest release)
+* [NHSNInfectionTypeCode](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.13.20/expansion/Latest) (in VSAC in latest release)
+* [NHSNDrugSusceptibilityFindingCode](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.13.13/expansion/Latest) (in VSAC in latest release)
+* [NHSNDrugSusceptibilityTestsCode](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.13.15/expansion/Latest) (in VSAC in latest release)
+* [NHSNPathogenCode](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.13.16/expansion/Latest) (in VSAC in latest release)
+* [NHSNCriterionOfDiagnosisCode](https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.3195/expansion/Latest) (in VSAC in latest release)
+* [NHSNInfectionConditionCode](https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.3196/expansion/Latest) (in VSAC in latest release)
+* [NHSNPathogenRanking](ValueSet-nhsn-pathogen-ranking.html)
