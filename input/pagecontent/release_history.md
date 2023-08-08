@@ -3,10 +3,13 @@
 
 This implementation guide is the first update to the second STU FHIR release of the HAI reporting profiles. 
 
-It makes the following changes:
-* updates FHIR Version to 4.0.1 (R4) (from FHIR Version 4.0.0)
-* updates the US Core dependency to [US Core Version 5.0.1](http://hl7.org/fhir/us/core/STU5.0.1/) (from US Core Version 3.0.0)
-* makes updates to the examples to illustrate birth sex, gender identity, and multiple races in the US Core Patient
+It makes the following updates:
+* FHIR Version to 4.0.1 (R4) (from FHIR Version 4.0.0)
+  * no changes to profiles or examples were needed after this change 
+* US Core dependency to [US Core Version 5.0.1](http://hl7.org/fhir/us/core/STU5.0.1/) (from US Core Version 3.0.0): US Core version update changes relevant to this IG (i.e. changes resulting in updates to the IG):
+  * [US Core Patient](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html) now contains [US Core Gender Identity Extension](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-genderIdentity.html)
+  * [Healthcare Associated Infection Single-Person Report QuestionnaireResponse](StructureDefinition-hai-single-person-report-questionnaireresponse.html) now based on [US Core QuestionnaireResponse Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-questionnaireresponse.html) (previously based on base FHIR resource QuestionnaireResponse)
+* examples to illustrate birth sex, gender identity, and multiple races in the US Core Patient
 
 
 
