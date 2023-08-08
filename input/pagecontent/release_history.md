@@ -1,6 +1,6 @@
 Current Release (STU 2.1 Release)
 -------------------------------
-This implementation guide is the first update to the second STU FHIR release of the HAI reporting profiles. It udpates the FHIR Version to 4.0.1, updates the US Core Version to 5.0.1 and TODO
+This implementation guide is the first update to the second STU FHIR release of the HAI reporting profiles. It udpates the FHIR Version to 4.0.1, updates the US Core Version to 5.0.1, and makes updates to the examples to illustrate birth sex, gender identity, and multiple races in the US Core Patient.
 
 
 
