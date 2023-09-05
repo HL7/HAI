@@ -76,7 +76,7 @@
                 <valueCoding>
                     <system value="http://www.ama-assn.org/go/cpt"/>
                     <code value="44970"/>
-                    <display value="Laparoscopic Procedures on the Appendix"/>
+                    <display value="Laparoscopy, surgical, appendectomy"/>
                 </valueCoding>
             </answer>
         </item>
